@@ -1,0 +1,65 @@
+setLocation(TestIf)
+if(var == 1 & (var2 == 2))
+	log(Log;True1)
+endif
+
+wait(0.1)
+
+if(var == 1 & var2 == 2)
+	log(Log;True2)
+else
+	log(Log;False2)
+endif
+
+wait(0.1)
+
+if(var == 1 & var2 == 2)
+	log(Log;True3)
+	log(Warning;True3)
+else
+	log(Log;False3)
+endif
+
+wait(0.1)
+
+if(var == 1 & var2 == 2)
+else
+	log(Log;False4)
+endif
+
+wait(0.1)
+
+if(var == 1 & var2 == 2)	
+else
+endif
+	
+wait(0.1)
+
+
+if(var == 1 & var2 == 2)
+	if(var4 = 2)
+
+		log(Log;True5)
+
+	else
+
+		log(Warning;True5)
+	endif
+else
+
+
+
+	log(Error;False5)
+	if(var4 = 5)
+	
+
+		log(Log;False5)
+
+	else
+	
+
+		log(Warning;False5)
+	endif
+	log(Log;False5)
+		
+endif

@@ -1,0 +1,34 @@
+# Settings
+# This file contains additional settings that can be queried with the settings container
+# It does not contain all settings (not the locals, nor the screen settings for instance)
+# Usually, this is for parameters in WorldComponents and GUIComponents that you want to save globaly (The highlight's parameters for instance)
+# These settings are automatically shown in the settings if possible. Currently, only Color, Int/UInt set as dropdown, Bool and Float are supported.
+
+# To add a setting
+# ID TYPE DEFAULT_VALUE TAB LABEL
+# ID TYPE DEFAULT_VALUE TAB LABEL (DROPDOWN_LABEL_1,DROPDOWN_LABEL_2,...,DROPDOWN_LABEL_X) (If Type is Int or UInt. The settings will appear as a dropdown with X entries)
+# ID TYPE DEFAULT_VALUE TAB LABEL (SLIDER_MIN,SLIDER_MAX) (If Type is Float. By default, slider values are [0,1])
+
+# ID = The setting's ID. This will be what you will use to query this with the settings container
+# TYPE = The setting's data type. Can be : Bool, String, Int, UInt, Float, Color, Vector2, Vector3, Vector4
+# DEFAULT_VALUE = The default value for the setting. For Vectors and Colors, write them like this : (X,Y,Z,W). Colors can also be writen in hex : #RRGGBB
+# TAB = The visual tab the setting will be shown in in the settings menu
+# LABEL = The label used in the settings menu for this setting
+#
+# DROPDOWN_LABEL_X = You may flag a Int and UInt setting as a dropdown, simply add the keys to the labels you want to use after the LABEL
+# SLIDER_MIN = You may add this to a Float setting to set a different minimum value for the slider (default is 0)
+# SLIDER_MAX = You may add this to a Float setting to set a different maximum value for the slider (default is 1)
+
+BackgroundManager_EnableWeatherEffects Bool true SettingsMenu_Graphics SettingsMenu_Game_InteractionMode_Weather
+
+InteractionMode_HighlightType Int 2 SettingsMenu_Game SettingsMenu_Game_InteractionMode_HighlightType (SettingsMenu_Game_InteractionMode_HighlightType_None,SettingsMenu_Game_InteractionMode_HighlightType_Selected,SettingsMenu_Game_InteractionMode_HighlightType_All)
+InteractionMode_HighlightStrength Float 0.5 SettingsMenu_Game SettingsMenu_Game_InteractionMode_HighlightStrength (0,1)
+InteractionMode_HighlightColor Color #37afbf SettingsMenu_Game SettingsMenu_Game_InteractionMode_HighlightColor
+InteractionMode_SelectedColor Color #57bf45 SettingsMenu_Game SettingsMenu_Game_InteractionMode_SelectionColor
+
+DialogUI_BackgroundOpacity Float 1 SettingsMenu_Game SettingsMenu_Game_DialogUI_BackgroundOpacity (0.1,1)
+
+ANSLManager_AutoplayTimer Float 4 SettingsMenu_Game SettingsMenu_Game_ANSLManager_AutoplayTimer (0.1,10)
+
+FlowStateHandler_ToggleAutoplay Bool true SettingsMenu_Game SettingsMenu_Game_FlowStateHandler_ToggleAutoplay
+FlowStateHandler_ToggleSkipMode Bool false SettingsMenu_Game SettingsMenu_Game_FlowStateHandler_ToggleSkipMode

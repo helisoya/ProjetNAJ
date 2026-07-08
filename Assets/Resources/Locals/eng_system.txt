@@ -1,0 +1,114 @@
+# ------------------------------------------------------------------------
+# -------------------------- ANF Menus -----------------------------------
+# ------------------------------------------------------------------------
+
+PauseMenu_Resume = Resume
+PauseMenu_History = History
+PauseMenu_Save = Save
+PauseMenu_Load = Load
+PauseMenu_Quests = Quests
+PauseMenu_Logs = Logs
+PauseMenu_Options = Settings
+PauseMenu_MainMenu = Main Menu
+PauseMenu_NewGame = New Game
+PauseMenu_Quit = Quit
+
+SaveMenu_Title_Save = Select a slot to save to
+SaveMenu_Title_Load = Select a slot to load from
+
+SaveMenu_Popup_Title = Use this slot ?
+SaveMenu_Popup_Confirm = Confirm
+SaveMenu_Popup_Cancel = Cancel
+
+QuestsMenu_Title = Quests
+QuestsMenu_Objectives = Objectives
+
+LogsMenu_Title = Logs
+LogsMenu_Popup = New Log
+
+HistoryMenu_Title = History
+
+InputReminder_Autoplay = Autoplay
+InputReminder_SkipMode = Skip
+InputReminder_PauseMenu = Pause
+
+SettingsMenu_Title = Settings
+
+SettingsMenu_Graphics = Graphics
+SettingsMenu_Graphics_Fullscreen = Fullscreen
+SettingsMenu_Graphics_Resolution = Resolution
+SettingsMenu_Graphics_VSync = VSync
+SettingsMenu_Graphics_AntiAliasing = AntiAliasing
+SettingsMenu_Graphics_Shadows = Shadows
+SettingsMenu_Graphics_Shadows_1 = Very Low
+SettingsMenu_Graphics_Shadows_2 = Low
+SettingsMenu_Graphics_Shadows_3 = Medium
+SettingsMenu_Graphics_Shadows_4 = High
+
+SettingsMenu_Sound = Sound
+SettingsMenu_Sound_Music = Music
+SettingsMenu_Sound_Ambient = Ambient
+SettingsMenu_Sound_Sfx = Sfx
+SettingsMenu_Sound_Voice = Voices
+
+SettingsMenu_Text = Text
+
+SettingsMenu_Text_Channel_0_Font = UI Font
+SettingsMenu_Text_Channel_0_Size = UI Size
+SettingsMenu_Text_Channel_0_Color = UI Color
+
+SettingsMenu_Text_Channel_1_Font = Dialog Font
+SettingsMenu_Text_Channel_1_Size = Dialog Size
+SettingsMenu_Text_Channel_1_Color = Dialog Color
+
+SettingsMenu_Text_Language = Languages
+SettingsMenu_Text_Language_eng = English
+SettingsMenu_Text_Language_fra = Français
+
+SettingsMenu_Text_Sizes_0 = 8
+SettingsMenu_Text_Sizes_1 = 12
+SettingsMenu_Text_Sizes_2 = 18
+SettingsMenu_Text_Sizes_3 = 20
+SettingsMenu_Text_Sizes_4 = 24
+SettingsMenu_Text_Sizes_5 = 26
+
+SettingsMenu_Keyboard = Keyboard inputs
+SettingsMenu_Gamepad = Gamepad inputs
+SettingsMenu_Rebinding = Input key for : {0}
+
+SettingsMenu_Inputs_Autoplay = Autoplay
+SettingsMenu_Inputs_SkipMode = Skip
+SettingsMenu_Inputs_PauseMenu = Pause
+
+SettingsMenu_Game = Game
+
+SettingsMenu_Game_InteractionMode_HighlightType = Interaction highlight
+SettingsMenu_Game_InteractionMode_HighlightType_None = None
+SettingsMenu_Game_InteractionMode_HighlightType_Selected = Only Selected
+SettingsMenu_Game_InteractionMode_HighlightType_All = All
+SettingsMenu_Game_InteractionMode_HighlightStrength = Interaction highlight strength
+SettingsMenu_Game_InteractionMode_HighlightColor = Interaction highlight color
+SettingsMenu_Game_InteractionMode_SelectionColor = Interaction selection color
+
+SettingsMenu_Game_InteractionMode_Weather = Weather effects
+
+SettingsMenu_Game_DialogUI_BackgroundOpacity = Dialog box opacity
+
+SettingsMenu_Game_ANSLManager_AutoplayTimer = Autoplay timer
+
+SettingsMenu_Game_FlowStateHandler_ToggleAutoplay = Toggle (Autoplay)
+SettingsMenu_Game_FlowStateHandler_ToggleSkipMode = Toggle (Skip Mode)
+
+SettingsMenu_ColorPicker_H = H
+SettingsMenu_ColorPicker_S = S
+SettingsMenu_ColorPicker_V = V
+SettingsMenu_ColorPicker_Confirm = Confirm
+SettingsMenu_ColorPicker_Cancel = Cancel
+
+SettingsMenu_Reset = Reset
+
+NewGameMenu_Title = New Game
+NewGameMenu_Desc = Enter your name
+NewGameMenu_Confirm = Confirm
+
+GeneralMenu_Unknown = ???

@@ -1,0 +1,17 @@
+setLocation(TestStatics)
+
+block
+setBackground(TestBackground)
+addStatic(TestStatic)
+setStaticPosition(TestStatic;Test)
+addStatic(TestStatic2)
+endblock
+
+setStaticRotation(TestStatic;0;45;0;1;false)
+setStaticPosition(TestStatic2;Test2;1;true)
+
+setInteractionScript(TestStatic;Statics_1)
+setInteractionScript(TestStatic2;Statics_2)
+setInteractionScript(Exit;Statics_Exit)
+
+interaction()

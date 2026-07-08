@@ -1,0 +1,64 @@
+# ---------------------------------------------------------
+# -------------------- Tests ------------------------------
+# ---------------------------------------------------------
+
+Test_Character = Homme
+
+Test_Dialog_1 = Ceci est un dialogue de test, {MC}.
+Test_Dialog_2 = Ceci est un dialogue additif.
+Test_Dialog_3 = Ceci est [speed 0.25]<b>un texte plus lent.</b>[wait 1, defaultSpeed] Ok, beaucoup mieux.
+Test_Dialog_4 = [speed 0.001]super judge racing ![defaultSpeed] Bon, stop.
+Test_Dialog_5 = Ce texte n'aura pas besoin d'input utilisateur, {MC}...
+Test_Dialog_6 = Yep !
+
+Test_Choice_1 = Tu veux voir un Caribou ?
+Test_Choice_Yes_1 = Désolé. Il a pris la fuite...
+Test_Choice_No_1 = Oh, dommage...
+Test_Choice_2 = Bon. C'est ici que je m'en vais.
+
+Test_Character_1 = Bonjour. Je suis un être humain.
+Test_Character_2 = Eh Eh Eh.
+
+Test_Character_3 = Oh, bien le bonjour, mon ami. Besoin d'aide ?
+
+Test_Quests_1 = Les 2 quêtes ont été commençées.
+Test_Quests_2 = Quête 1 à l'état 1
+Test_Quests_3 = Quête 2 à l'état 2
+Test_Quests_4 = Quête 1 réussi
+Test_Quests_5 = Quête 2 echoué
+
+Test_Map_Start = Début du test de la map.
+Test_Map_Village = Bienvenue dans mon village.
+Test_Map_Shack = Vous pouvez maintenant accéder à l'Ile désertée.
+Test_Map_TurtleIsland = Tutel...
+Test_Map_DesertedIsland = Vous êtes soudainement coincé ici...
+
+Map_ANFDemo_OldFortress = Vielle forteresse
+Map_ANFDemo_PeteShack = Cabane de Pete
+Map_ANFDemo_Village = Village Pirate
+Map_ANFDemo_TurtleIsland = Ile de la tortue
+Map_ANFDemo_DesertedIsland = Ile désertée
+
+QuestCategory_testQuest = Quêtes test
+
+Quest_anfTestQuest_1_name = Sauver Harold
+Quest_anfTestQuest_1_desc = Harold a besoin de mon aide. Il a été attaqué par un lapin sauvage.
+Quest_anfTestQuest_1_0 = Trouvez Harold.
+Quest_anfTestQuest_1_1 = Tuez le lapin.
+Quest_anfTestQuest_1_done = J'ai sauvé Harold du lapin.
+Quest_anfTestQuest_1_canceled = Harold est mort.
+
+Quest_anfTestQuest_2_name = Une longue aventure
+Quest_anfTestQuest_2_desc = Je dois atteindre la terre promise de Caribou.
+Quest_anfTestQuest_2_0 = Prenez votre voiture.
+Quest_anfTestQuest_2_1 = Allez sur l'autoroute A36.
+Quest_anfTestQuest_2_2 = Conduisez beaucoup.
+Quest_anfTestQuest_2_3 = Prenez un ferry vers le Canada.
+Quest_anfTestQuest_2_done = J'ai réussi à trouver la terre promise.
+Quest_anfTestQuest_2_canceled = Je me suis perdu.
+
+Log_TestLog1_name = Pirates
+Log_TestLog1_desc = Tu es un pirate.
+
+Log_TestLog2_name = ANF
+Log_TestLog2_desc = ANF est un framework.

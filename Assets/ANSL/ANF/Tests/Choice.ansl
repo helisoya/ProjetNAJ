@@ -1,0 +1,12 @@
+setLocation(TestChoice)
+setLocals(test)
+dialog(Test_Character;null;Test_Choice_1)
+
+choice(Choice_Generic)
+choice Choice_Yes:
+	load(Choice_Yes)
+choice Choice_No:
+	load(Choice_No)
+endchoice
+
+dialog(Test_Character;null;Test_Choice_2)

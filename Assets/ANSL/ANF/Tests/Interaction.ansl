@@ -1,0 +1,6 @@
+setLocation(TestInteraction)
+setBackground(TestBackgroundInteraction)
+setInteractionScript(Test;Interaction_Cube1)
+setInteractionScript(Test2;Interaction_Cube2)
+
+interaction()

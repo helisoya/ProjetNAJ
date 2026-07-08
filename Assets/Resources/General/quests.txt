@@ -1,0 +1,27 @@
+# Place quests here.
+# Quests are simply an abstraction of a variable.
+# Important variable values : 
+# -1 : Not Started
+# 0-99 : In progress (0 is quest state 1, 99 is quest state 100)
+# 100 : Quest Completed
+# 101 : Quest failed/canceled (marked as completed, but technically failed) 
+
+# Template
+# [CATEGORY_NAME]
+# VARIABLE_ID MAX_QUEST_STATE
+#
+# VARIABLE_ID = The variable linked to the quest
+# MAX_QUEST_STATE = The max state value (Which quest state is the last one ? Ex : 1 means states 0 and 1 are consired valid states)
+#					   Not setting this variable properly will result in visual problems when rendering the current objective for this quest
+
+# Quest localization keys are :
+# QuestCategory_CATEGORY = Category name
+# Quest_VARIABLEID_name = Quest name
+# Quest_VARIABLEID_desc = Quest description
+# Quest_VARIABLEID_0-99 = Quest curren objective (state 0 to 99)
+# Quest_VARIABLEID_done = Quest done message
+# Quest_VARIABLEID_canceled = Quest canceled/failed message
+
+[testQuest]
+anfTestQuest_1 1
+anfTestQuest_2 3

@@ -1,0 +1,32 @@
+# Define macros here
+# Macros can be defined in any .defines file inside the ANSL source folder
+# Macros can be used in any ANSL script to speed up scripting
+# When compiling, the ANSL compiler will replace calls to macros with the macros content 
+
+# Define macros like this
+# Define MacroName(Parameter1;Parameter2;...)
+# To use a parameter inside a macro, use {ParameterName}
+
+# Example :
+# Define UselessTimer(Time)
+# wait({Time})
+# log(Waited for {Time};Log)
+# EndDefine
+#
+# In this case, calling the macro will copy its content (wait & print) to the required spot in the script
+
+# To call a macro in an ANSL script, use :, followed by its name, and specify the parameters if needed
+# Example :       :UselessTimer(5)
+# Be mindful of parameter types, macros will not check anything on their own.
+# Also, macros have priority over functions. Don't call a macro with an existing function name or you will not be able to call the function anymore.
+# Don't call a macro inside the same macro. This will not end well.
+
+Define DebugMacro(Name)
+log(Hello from {Name};Log)
+wait(2)
+EndDefine
+
+Define DebugMacro2()
+log(Hello from Mr.Caribou;Log)
+wait(1)
+EndDefine

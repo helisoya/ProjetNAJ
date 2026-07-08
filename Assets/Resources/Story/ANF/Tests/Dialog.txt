@@ -1,0 +1,10 @@
+49|TestDialog
+48|test
+6|Test_Character|null|Test_Dialog_1
+6|Test_Character|null|Test_Dialog_2|true
+6|{MC}|null|Test_Dialog_3
+6|{MC}|null|Test_Dialog_4|true
+62|0.1
+6|null|null|Test_Dialog_5|false|true
+62|0.5
+6|null|null|Test_Dialog_6|true|false|true

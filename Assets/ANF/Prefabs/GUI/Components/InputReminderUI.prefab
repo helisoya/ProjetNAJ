@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7052705504116219717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6026568642740495560}
+  - component: {fileID: 9078231338013344640}
+  m_Layer: 5
+  m_Name: InputReminderUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6026568642740495560
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7052705504116219717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2189292944381061338}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &9078231338013344640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7052705504116219717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772b54bf5eec58540978c1e31666eadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ANF.GUI.InputReminderUI
+  canBeSaved: 0
+  enabledByDefault: 1
+  root: {fileID: 7052705504116219717}
+  hideRootWhenClosed: 1
+  lockComponents: []
+  canvasGroup: {fileID: 4330805141171388405}
+  reminderRoot: {fileID: 2189292944381061338}
+  reminderPrefab: {fileID: 4055862266548479230, guid: 153b1605ab25a6a478d3d96ad081b487, type: 3}
+  registeredReminders:
+    _serializedList:
+    - Key: autoplay
+      Value:
+        enabled: 1
+        labelKey: InputReminder_Autoplay
+        inputAction: {fileID: -845975696802725631, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+        keyboardBindingIndex: 1
+        gamepadBindingIndex: 0
+        clickAction:
+          rid: 4686672861036544148
+        instanceButton: {fileID: 0}
+    - Key: skipMode
+      Value:
+        enabled: 1
+        labelKey: InputReminder_SkipMode
+        inputAction: {fileID: 13275503701136475, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+        keyboardBindingIndex: 1
+        gamepadBindingIndex: 0
+        clickAction:
+          rid: 4686672861036544149
+        instanceButton: {fileID: 0}
+    - Key: pauseMenu
+      Value:
+        enabled: 1
+        labelKey: InputReminder_PauseMenu
+        inputAction: {fileID: -8007380611768804637, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+        keyboardBindingIndex: 0
+        gamepadBindingIndex: 1
+        clickAction:
+          rid: 4686672875918983274
+        instanceButton: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4686672861036544148
+      type: {class: InputReminderActionAutoPlay, ns: ANF.Persistent, asm: Assembly-CSharp}
+      data: 
+    - rid: 4686672861036544149
+      type: {class: InputReminderActionSkipMode, ns: ANF.Persistent, asm: Assembly-CSharp}
+      data: 
+    - rid: 4686672875918983274
+      type: {class: InputReminderActionPauseMenu, ns: ANF.Persistent, asm: Assembly-CSharp}
+      data: 
+--- !u!1 &7862363623091927808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2189292944381061338}
+  - component: {fileID: 7736667888330231012}
+  - component: {fileID: 4330805141171388405}
+  m_Layer: 5
+  m_Name: ReminderRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2189292944381061338
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7862363623091927808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6026568642740495560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 23.1}
+  m_SizeDelta: {x: 0, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7736667888330231012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7862363623091927808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 5
+    m_Right: 5
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 5
+  m_Spacing: 15
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!225 &4330805141171388405
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7862363623091927808}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

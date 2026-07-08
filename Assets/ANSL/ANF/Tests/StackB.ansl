@@ -1,0 +1,5 @@
+log(Log;Hello from B)
+loadScript(/ANF/Tests/StackC)
+log(Log;Hello Again from B)
+loadScript(StackC)
+log(Log;Back to B)

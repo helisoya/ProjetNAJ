@@ -1,0 +1,6 @@
+setLocation(TestAudio)
+playMusic(Test1)
+wait(4)
+playMusic(Test2)
+wait(4)
+playMusic(null)

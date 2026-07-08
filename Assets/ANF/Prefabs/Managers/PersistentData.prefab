@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6426886682021438320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023997854774594662}
+  - component: {fileID: 1840806801126421610}
+  m_Layer: 0
+  m_Name: PersistentData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2023997854774594662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6426886682021438320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 331.3112, y: 463.57632, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 36138805125881939}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1840806801126421610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6426886682021438320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0aa906c962ad4140ba0f6ce2fecdcbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ANF.Manager.PersistentDataManager
+  anfSettings: {fileID: 11400000, guid: 85adbd51737aa93488f97abfb7306fb0, type: 2}
+  anfInput: {fileID: 8947892447936244164}
+--- !u!1 &8108207925957008236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36138805125881939}
+  - component: {fileID: 8947892447936244164}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36138805125881939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108207925957008236}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023997854774594662}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8947892447936244164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108207925957008236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a122065c9d33802439db42bdf9636ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFInput
+  inputMap: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  xboxIcons:
+    buttonSouth: {fileID: -1467848576, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    buttonNorth: {fileID: -322368226, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    buttonEast: {fileID: -801056094, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    buttonWest: {fileID: -776860707, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    startButton: {fileID: -902617547, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    selectButton: {fileID: 1916954223, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftTrigger: {fileID: 871218275, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightTrigger: {fileID: -1312415393, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftShoulder: {fileID: 268945452, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightShoulder: {fileID: 2009481974, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    dpad: {fileID: 1275368040, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    dpadUp: {fileID: -1636080491, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    dpadDown: {fileID: 49293886, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    dpadLeft: {fileID: -1197394138, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    dpadRight: {fileID: -1867965792, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftStick: {fileID: -1069629056, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftStickUp: {fileID: 347358168, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftStickDown: {fileID: 1400071124, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftStickRight: {fileID: 908391410, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftStickLeft: {fileID: -1618803061, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightStick: {fileID: 913064596, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightStickUp: {fileID: 615632048, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightStickDown: {fileID: 98729019, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightStickLeft: {fileID: -428064361, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightStickRight: {fileID: -1938625989, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    leftStickPress: {fileID: 1122060368, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+    rightStickPress: {fileID: 59248824, guid: 1d3de64ba3839d6429349e5af2662d3f, type: 3}
+  keyboardIcons:
+    _serializedList:
+    - Key: enter
+      Value: {fileID: -1431779759, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: a
+      Value: {fileID: 1288071641, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: b
+      Value: {fileID: -952251364, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: c
+      Value: {fileID: 350192588, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: d
+      Value: {fileID: -82328493, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: e
+      Value: {fileID: -836994121, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f
+      Value: {fileID: -1565503052, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: g
+      Value: {fileID: 294776883, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: h
+      Value: {fileID: -1408648705, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: i
+      Value: {fileID: 894396165, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: j
+      Value: {fileID: -1753018382, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: k
+      Value: {fileID: 2121015725, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: l
+      Value: {fileID: 859257794, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: m
+      Value: {fileID: 104630643, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: n
+      Value: {fileID: -2093108068, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: o
+      Value: {fileID: -1963785815, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: p
+      Value: {fileID: 21647763, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: q
+      Value: {fileID: -705754297, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: r
+      Value: {fileID: 163175921, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: s
+      Value: {fileID: -908201896, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: t
+      Value: {fileID: 1787907748, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: u
+      Value: {fileID: -1685085207, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: v
+      Value: {fileID: -536320768, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: w
+      Value: {fileID: -1146656218, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: x
+      Value: {fileID: -2103248140, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: y
+      Value: {fileID: 2066822422, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: z
+      Value: {fileID: -1056580730, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: backquote
+      Value: {fileID: 16055423, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: minus
+      Value: {fileID: -638575353, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: equals
+      Value: {fileID: 1927506746, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 0
+      Value: {fileID: 1059416535, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 1
+      Value: {fileID: -782029315, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 2
+      Value: {fileID: 2145483547, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 3
+      Value: {fileID: -434499700, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 4
+      Value: {fileID: -1271388327, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 5
+      Value: {fileID: 866547023, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 6
+      Value: {fileID: -1597723281, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 7
+      Value: {fileID: -1634229028, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 8
+      Value: {fileID: 1530759338, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: 9
+      Value: {fileID: 1687394529, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f1
+      Value: {fileID: -846334250, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f2
+      Value: {fileID: 1879747944, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f3
+      Value: {fileID: -1331088468, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f4
+      Value: {fileID: -1472330645, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f5
+      Value: {fileID: -623714446, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f6
+      Value: {fileID: 1595832643, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f7
+      Value: {fileID: -1957983492, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f8
+      Value: {fileID: -2140882229, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f9
+      Value: {fileID: 419936017, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f10
+      Value: {fileID: -561162655, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f11
+      Value: {fileID: 624278072, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: f12
+      Value: {fileID: 1248234020, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: escape
+      Value: {fileID: -1836345775, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: tab
+      Value: {fileID: -1345047060, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: backspace
+      Value: {fileID: -472011162, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: capsLock
+      Value: {fileID: -1708190580, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: leftShift
+      Value: {fileID: -1490854978, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: leftCtrl
+      Value: {fileID: 1011690877, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: rightCtrl
+      Value: {fileID: 2128677983, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: leftAlt
+      Value: {fileID: 770086641, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: rightAlt
+      Value: {fileID: 1361861753, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: space
+      Value: {fileID: 202145793, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: OEM1
+      Value: {fileID: 839113509, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: semicolon
+      Value: {fileID: 306812748, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: comma
+      Value: {fileID: 1452854912, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: period
+      Value: {fileID: 1820009717, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: slash
+      Value: {fileID: -725390732, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: quote
+      Value: {fileID: -1328550569, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: backslash
+      Value: {fileID: -145118207, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: leftBracket
+      Value: {fileID: 1221871006, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: rightBracket
+      Value: {fileID: 1584441271, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: rightShift
+      Value: {fileID: 2001817293, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: delete
+      Value: {fileID: -1934182789, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad0
+      Value: {fileID: -1022340918, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad1
+      Value: {fileID: -659212450, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad2
+      Value: {fileID: -753139333, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad3
+      Value: {fileID: 1428031280, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad4
+      Value: {fileID: 1814016575, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad5
+      Value: {fileID: 898539372, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad6
+      Value: {fileID: 1621278115, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad7
+      Value: {fileID: 418598837, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad8
+      Value: {fileID: -1508141781, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpad9
+      Value: {fileID: 1931935306, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpadDivide
+      Value: {fileID: -1580670417, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpadMultiply
+      Value: {fileID: 1430275688, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpadPlus
+      Value: {fileID: 1464478535, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpadMinus
+      Value: {fileID: -2096448764, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpadPeriod
+      Value: {fileID: -1436361557, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numpadEnter
+      Value: {fileID: -1285900232, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: numLock
+      Value: {fileID: 1430275688, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: printScreen
+      Value: {fileID: -938593095, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: insert
+      Value: {fileID: 1389062538, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: end
+      Value: {fileID: -824236723, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: home
+      Value: {fileID: 41821341, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: pause
+      Value: {fileID: -1316793671, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: leftArrow
+      Value: {fileID: 2015966459, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: rightArrow
+      Value: {fileID: 363414773, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: upArrow
+      Value: {fileID: 635166536, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+    - Key: downArrow
+      Value: {fileID: 419970747, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}
+  defaultIcon: {fileID: -1519366873, guid: b8a823e21063e294bbd03db5be0ae9f3, type: 3}

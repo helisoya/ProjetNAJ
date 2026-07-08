@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 02f9750464c1efb419e8ee1f532b4ad1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - m_VisualTreeAsset: {fileID: 9197481963319205126, guid: 97a30ae8205e8f747a5e847473793a70, type: 3}
+  - defaultButtonSprite: {fileID: 21300000, guid: 02481fe7ccaba1a40b10cfce24a9990c, type: 3}
+  - defaultBackgroundSprite: {fileID: 21300000, guid: 879ff088fd0bbc14b8288ed081bceb78, type: 3}
+  - maps: {fileID: 11400000, guid: 75436edf9acfa5e468509fb5a79dbf49, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,10 @@
+# Logs
+
+# You can define a new log by adding its Id here
+# A log is associated to a sprite of the same name, located in the defined Resources subfolder 
+# The relevant locals for logs are :
+# Log_ID_name = The log's name
+# Log_ID_desc = The log's description
+
+TestLog1
+TestLog2

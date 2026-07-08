@@ -1,0 +1,216 @@
+# Game Items
+# KEY DEFAULT_VALUE
+
+# ANF Demo Variables
+
+anfDemoProgress 0
+anfTestQuest_1 -1
+anfTestQuest_2 -1
+
+
+# Weather
+night 0
+rain 0
+nightIncrement 0
+
+# Temp variables
+tempVar_1 0
+
+# Main Quests
+
+mainQuest_1 -1
+mainQuest_2 -1
+mainQuest_3 -1
+mainQuest_4 -1
+
+# These starts at 0, since 0 is the "join them" quest
+# 1 is the actual starting quest for the branch
+rebelQuest_0 -1
+rebelQuest_1 -1
+rebelQuest_2 -1
+rebelQuest_3 -1
+rebelQuest_4 -1
+rebelQuest_5 -1
+rebelQuest_6 -1
+
+marklichtQuest_0 -1
+marklichtQuest_1 -1
+marklichtQuest_2 -1
+marklichtQuest_3 -1
+marklichtQuest_4 -1
+marklichtQuest_5 -1
+marklichtQuest_6 -1
+
+merchantQuest_1 -1
+merchantQuest_2 -1
+merchantQuest_3 -1
+merchantQuest_4 -1
+merchantQuest_5 -1
+merchantQuest_6 -1
+
+# Arcs
+arcQuest_Guard_1 -1
+arcQuest_Guard_2 -1
+arcQuest_Guard_3 -1
+arcQuest_Guard_4 -1
+
+arcQuest_Jackwell_1 -1
+arcQuest_Jackwell_2 -1
+arcQuest_Jackwell_3 -1
+arcQuest_Jackwell_4 -1
+
+arcQuest_Order_1 -1
+arcQuest_Order_2 -1
+arcQuest_Order_3 -1
+arcQuest_Order_4 -1
+
+arcQuest_Sam_1 -1
+arcQuest_Sam_2 -1
+arcQuest_Sam_3 -1
+arcQuest_Sam_4 -1
+
+arcQuest_Dragon_1 -1
+arcQuest_Dragon_2 -1
+arcQuest_Dragon_3 -1
+arcQuest_Dragon_4 -1
+
+# Faction Quests
+factionQuest_Merchant_1 -1
+factionQuest_Merchant_2 -1
+
+factionQuest_Rebel_1 -1
+factionQuest_Rebel_2 -1
+
+factionQuest_Marklicht_1 -1
+factionQuest_Marklicht_2 -1
+
+# Secondary Quests
+secondaryQuest_Iberty_Catacombs -1
+secondaryQuest_Iberty_Port -1
+secondaryQuest_Iberty_Doctor -1
+
+secondaryQuest_Kalia_Max -1
+secondaryQuest_Kalia_Shop -1
+secondaryQuest_Kalia_Delivery -1
+
+secondaryQuest_Vorlan_Soldier -1
+secondaryQuest_Vorlan_Inn -1
+secondaryQuest_Vorlan_Mayor -1
+
+secondaryQuest_Tolau_Fisherman -1
+secondaryQuest_Tolau_Mayor -1
+secondaryQuest_Tolau_Inn -1
+
+secondaryQuest_HopeHarbor_Cottage -1
+secondaryQuest_HopeHarbor_Keeper -1
+secondaryQuest_HopeHarbor_Inn -1
+
+secondaryQuest_Libertville_Shop -1
+secondaryQuest_Libertville_Courier -1
+secondaryQuest_Libertville_Academy -1
+
+# Flags
+cutscene_EntranceVorlan 0
+
+# Locations
+
+canTravel_Region_Kalia_Iberty 1
+canTravel_Region_Kalia_City 1
+canTravel_Region_Kalia_Farm 1
+canTravel_Region_Kalia_Camp 1
+canTravel_Region_Kalia_Shrine 1
+canTravel_Region_Kalia_Outpost 1
+canTravel_Region_Kalia_Forest 1
+
+canTravel_City_Iberty_Region 1
+canTravel_City_Iberty_Doctor 1
+canTravel_City_Iberty_Shop 1
+canTravel_City_Iberty_CityHall 1
+canTravel_City_Iberty_Catacombs 1
+canTravel_City_Iberty_Port 1
+
+canTravel_City_Kalia_Region 1
+canTravel_City_Kalia_Palace 1
+canTravel_City_Kalia_Shop 1
+canTravel_City_Kalia_Plaza 1
+canTravel_City_Kalia_Park 1
+canTravel_City_Kalia_Lighthouse 1
+canTravel_City_Kalia_Docks 1
+canTravel_City_Kalia_Jackwell 1
+canTravel_City_Kalia_BarGUARD 1
+canTravel_City_Kalia_RebelHQ 1
+
+canTravel_Region_Forest_ToKalia 1
+canTravel_Region_Forest_ToMarklicht 1
+canTravel_Region_Forest_ToOrkva 1
+canTravel_Region_Forest_Field 1
+canTravel_Region_Forest_OrderHQ 1
+canTravel_Region_Forest_Crag 1
+canTravel_Region_Forest_Cavern 1
+canTravel_Region_Forest_Vasalia 1
+canTravel_Region_Forest_Camp1 1
+canTravel_Region_Forest_Camp2 1
+canTravel_Region_Forest_Camp3 1
+canTravel_Region_Forest_Village 1
+
+canTravel_Region_Orkva_ToForest 1
+canTravel_Region_Orkva_ToMirageIsland 1
+canTravel_Region_Orkva_FortWall 1
+canTravel_Region_Orkva_Vorlan 1
+canTravel_Region_Orkva_Tolau 1
+canTravel_Region_Orkva_Farm 1
+canTravel_Region_Orkva_MilitaryBase 1
+canTravel_Region_Orkva_Village 1
+canTravel_Region_Orkva_Okville 1
+canTravel_Region_Orkva_Prison 1
+canTravel_Region_Orkva_Shrine 1
+
+canTravel_City_Vorlan_ToOrkva 1
+canTravel_City_Vorlan_Shop 1
+canTravel_City_Vorlan_Inn 1
+canTravel_City_Vorlan_Checkpoint 1
+canTravel_City_Vorlan_CityHall 1
+canTravel_City_Vorlan_Plaza 1
+
+canTravel_City_Okville_ToOrkva 1
+canTravel_City_Okville_Shop 1
+canTravel_City_Okville_TrainStation 1
+canTravel_City_Okville_Shrine 1
+canTravel_City_Okville_CityHall 1
+
+canTravel_City_Tolau_ToOrkva 1
+canTravel_City_Tolau_Shop 1
+canTravel_City_Tolau_Boathouse 1
+canTravel_City_Tolau_Lighthouse 1
+canTravel_City_Tolau_Port 1
+canTravel_City_Tolau_Plaza 1
+canTravel_City_Tolau_Courthouse 1
+canTravel_City_Tolau_CityHall 1
+canTravel_City_Tolau_Residences 1
+canTravel_City_Tolau_Inn 1
+
+canTravel_Region_MirageIsland_ToOrkva 1
+canTravel_Region_MirageIsland_Cottage 1
+canTravel_Region_MirageIsland_Forest 1
+canTravel_Region_MirageIsland_HopeHarbor 1
+
+canTravel_City_HopeHarbor_ToIsland 1
+canTravel_City_HopeHarbor_Docks 1
+canTravel_City_HopeHarbor_Lighthouse 1
+canTravel_City_HopeHarbor_Inn 1
+
+canTravel_Region_Marklicht_ToForest 1
+canTravel_Region_Marklicht_BorderFortress 1
+canTravel_Region_Marklicht_Forest 1
+canTravel_Region_Marklicht_LibertFarm 1
+canTravel_Region_Marklicht_Libertville 1
+canTravel_Region_Marklicht_LibertFort 1
+canTravel_Region_Marklicht_BorderWall 1
+canTravel_Region_Marklicht_Mountains 1
+
+canTravel_City_Libertville_ToMarklicht 1
+canTravel_City_Libertville_TrainStation 1
+canTravel_City_Libertville_Inn 1
+canTravel_City_Libertville_Shop 1
+canTravel_City_Libertville_Plaza 1
+canTravel_City_Libertville_MilitaryAcademy 1

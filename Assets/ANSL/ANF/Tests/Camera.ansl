@@ -1,0 +1,6 @@
+setLocation(TestCamera)
+setBackground(TestBackground)
+setCameraPosition(0;1;0;1;true)
+setCameraRotation(-45;0;20;4;true)
+setCameraPosition(default;2;false)
+setCameraRotation(0;30;0;1;false)

@@ -1,0 +1,63 @@
+# ---------------------------------------------------------
+# -------------------- Tests ------------------------------
+# ---------------------------------------------------------
+
+Test_Character = Man
+
+Test_Dialog_1 = This is a test dialog, {MC}.
+Test_Dialog_2 = This is an additive dialog.
+Test_Dialog_3 = This is [speed 0.25]<b>a slower text.</b>[wait 1, defaultSpeed] Okay, much better.
+Test_Dialog_4 = [speed 0.001]super judge racing ![defaultSpeed] Okay, stop.
+Test_Dialog_5 = This text won't require end input, {MC}...
+Test_Dialog_6 = Yep !
+
+Test_Choice_1 = Do you want to see a caribou ?
+Test_Choice_Yes_1 = Sorry. It got away...
+Test_Choice_No_1 = Oh, sad...
+Test_Choice_2 = Okay, this is where I get of.
+
+Test_Character_1 = Hello. I am a person.
+Test_Character_2 = Eh Eh Eh.
+
+Test_Character_3 = Oh, hello there, my friend. Do you need help ?
+Test_Quests_1 = Both quests started
+Test_Quests_2 = Quest 1 to state 1
+Test_Quests_3 = Quest 2 to state 2
+Test_Quests_4 = Quest 1 end
+Test_Quests_5 = Quest 2 failed
+
+Test_Map_Start = Map test start.
+Test_Map_Village = Welcome to the village.
+Test_Map_Shack = You can now access the deserted Island.
+Test_Map_TurtleIsland = Tutel...
+Test_Map_DesertedIsland = You are suddenly stuck here...
+
+Map_ANFDemo_OldFortress = Old Fortress
+Map_ANFDemo_PeteShack = Pete's Shack
+Map_ANFDemo_Village = Pirate Village
+Map_ANFDemo_TurtleIsland = Turtle Island
+Map_ANFDemo_DesertedIsland = Deserted Island
+
+QuestCategory_testQuest = Test Quests
+
+Quest_anfTestQuest_1_name = Saving Harold
+Quest_anfTestQuest_1_desc = Harold needs my help. He has been attacked by a roaming rabbit.
+Quest_anfTestQuest_1_0 = Find Harold.
+Quest_anfTestQuest_1_1 = Kill the rabbit.
+Quest_anfTestQuest_1_done = I saved Harold from the rabbit.
+Quest_anfTestQuest_1_canceled = Harold died.
+
+Quest_anfTestQuest_2_name = A long journey
+Quest_anfTestQuest_2_desc = I need to get to the promised land of Caribou.
+Quest_anfTestQuest_2_0 = Take your car.
+Quest_anfTestQuest_2_1 = Go to the A36 highway.
+Quest_anfTestQuest_2_2 = Drive a lot.
+Quest_anfTestQuest_2_3 = Find a ferry to Canada.
+Quest_anfTestQuest_2_done = I managed to find the promised land.
+Quest_anfTestQuest_2_canceled = I got lost.
+
+Log_TestLog1_name = Pirates
+Log_TestLog1_desc = You are a pirate.
+
+Log_TestLog2_name = ANF
+Log_TestLog2_desc = ANF is a framework.

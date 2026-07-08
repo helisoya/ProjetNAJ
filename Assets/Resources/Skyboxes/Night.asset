@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22eac46962755b34f9cde13540a99af4, type: 3}
+  m_Name: Night
+  m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.SkyboxData
+  skybox: {fileID: 8900000, guid: 596fdd1c15b9bda4cab8ab25089edd10, type: 3}
+  sunColor: {r: 0.34509805, g: 0.34509805, b: 0.34509805, a: 1}

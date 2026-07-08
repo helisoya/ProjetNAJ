@@ -1,0 +1,3 @@
+dialog(Test_Character;null;Test_Map_Shack)
+variable(anfDemoProgress;=;1)
+map(Map_ANFDemo;TestMap;PeteShack)

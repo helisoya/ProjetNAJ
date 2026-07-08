@@ -1,0 +1,17 @@
+setLocation(TestFade)
+
+fadeBg(1;true;1)
+	
+wait(1)
+
+fadeBg(0;false)
+
+wait(0.5)
+
+fadeFgColor(1;0;0;1;false;1)
+autosave()
+fadeFg(1;true)
+
+wait(1)
+
+setFg(0.25)

@@ -1,0 +1,16 @@
+setLocation(TestSwitch)
+
+switch(random)
+case 0:
+	log(Log;Is at 0)
+case default:
+	log(Log;Default)
+case 8:
+	log(Log;Is 8)
+case 1:
+	if(random == 1)
+		log(Error;Is at 1)
+	endif
+case 5:
+	log(Log;Is at 5)
+endswitch

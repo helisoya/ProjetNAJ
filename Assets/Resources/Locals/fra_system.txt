@@ -1,0 +1,114 @@
+# ------------------------------------------------------------------------
+# -------------------------- ANF Menus -----------------------------------
+# ------------------------------------------------------------------------
+
+PauseMenu_Resume = Continuer
+PauseMenu_History = Historique
+PauseMenu_Save = Sauvegarder
+PauseMenu_Load = Charger
+PauseMenu_Quests = Quêtes
+PauseMenu_Logs = Journal
+PauseMenu_Options = Options
+PauseMenu_MainMenu = Ecran Titre
+PauseMenu_NewGame = Nouvelle Partie
+PauseMenu_Quit = Quitter
+
+SaveMenu_Title_Save = Sélectionnez un slot ou sauvegarder
+SaveMenu_Title_Load = Sélectionnez un slot à charger
+
+SaveMenu_Popup_Title = Utiliser ce slot ?
+SaveMenu_Popup_Confirm = Confirmer
+SaveMenu_Popup_Cancel = Annuler
+
+QuestsMenu_Title = Quêtes
+QuestsMenu_Objectives = Objectifs
+
+LogsMenu_Title = Journal
+LogsMenu_Popup = Nouvelle entrée
+
+HistoryMenu_Title = Historique
+
+InputReminder_Autoplay = Mode auto
+InputReminder_SkipMode = Avance Rapide
+InputReminder_PauseMenu = Pause
+
+SettingsMenu_Title = Options
+
+SettingsMenu_Graphics = Ecran
+SettingsMenu_Graphics_Fullscreen = Plein écran
+SettingsMenu_Graphics_Resolution = Résolution
+SettingsMenu_Graphics_VSync = VSync
+SettingsMenu_Graphics_AntiAliasing = AntiAliasing
+SettingsMenu_Graphics_Shadows = Ombres
+SettingsMenu_Graphics_Shadows_1 = Très basse
+SettingsMenu_Graphics_Shadows_2 = Basse
+SettingsMenu_Graphics_Shadows_3 = Moyenne
+SettingsMenu_Graphics_Shadows_4 = Haute
+
+SettingsMenu_Sound = Son
+SettingsMenu_Sound_Music = Musique
+SettingsMenu_Sound_Ambient = Ambiance
+SettingsMenu_Sound_Sfx = Sfx
+SettingsMenu_Sound_Voice = Voix
+
+SettingsMenu_Text = Texte
+
+SettingsMenu_Text_Channel_0_Font = Police UI
+SettingsMenu_Text_Channel_0_Size = Taille UI
+SettingsMenu_Text_Channel_0_Color = Couleur UI
+
+SettingsMenu_Text_Channel_1_Font = Police dialogue
+SettingsMenu_Text_Channel_1_Size = Taille dialogue
+SettingsMenu_Text_Channel_1_Color = Couleur dialogue
+
+SettingsMenu_Text_Language = Langues
+SettingsMenu_Text_Language_eng = English
+SettingsMenu_Text_Language_fra = Français
+
+SettingsMenu_Text_Sizes_0 = 8
+SettingsMenu_Text_Sizes_1 = 12
+SettingsMenu_Text_Sizes_2 = 18
+SettingsMenu_Text_Sizes_3 = 20
+SettingsMenu_Text_Sizes_4 = 24
+SettingsMenu_Text_Sizes_5 = 26
+
+SettingsMenu_Keyboard = Contrôles clavier
+SettingsMenu_Gamepad = Contrôles manette
+SettingsMenu_Rebinding = Entrez touche pour : {0}
+
+SettingsMenu_Inputs_Autoplay = Mode Automatique
+SettingsMenu_Inputs_SkipMode = Avance Rapide
+SettingsMenu_Inputs_PauseMenu = Pause
+
+SettingsMenu_Game = Jeu
+
+SettingsMenu_Game_InteractionMode_HighlightType = Surbrillance intéraction
+SettingsMenu_Game_InteractionMode_HighlightType_None = Aucune
+SettingsMenu_Game_InteractionMode_HighlightType_Selected = Sélectionné uniquement
+SettingsMenu_Game_InteractionMode_HighlightType_All = Tout
+SettingsMenu_Game_InteractionMode_HighlightStrength = Force surbrillance intéraction
+SettingsMenu_Game_InteractionMode_HighlightColor = Couleur surbrillance base
+SettingsMenu_Game_InteractionMode_SelectionColor = Couleur surbrillance sélectionné
+
+SettingsMenu_Game_InteractionMode_Weather = Effet météo
+
+SettingsMenu_Game_DialogUI_BackgroundOpacity = Opacité boite dialogue
+
+SettingsMenu_Game_ANSLManager_AutoplayTimer = Pause (mode automatique)
+
+SettingsMenu_Game_FlowStateHandler_ToggleAutoplay = Toggle (Mode automatique)
+SettingsMenu_Game_FlowStateHandler_ToggleSkipMode = Toggle (Avance Rapide)
+
+SettingsMenu_ColorPicker_H = H
+SettingsMenu_ColorPicker_S = S
+SettingsMenu_ColorPicker_V = V
+SettingsMenu_ColorPicker_Confirm = Confirmer
+SettingsMenu_ColorPicker_Cancel = Annuler
+
+SettingsMenu_Reset = Réinitialiser
+
+NewGameMenu_Title = Nouvelle partie
+NewGameMenu_Desc = Entrez votre nom
+NewGameMenu_Confirm = Confirmer
+
+GeneralMenu_Unknown = ???

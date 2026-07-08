@@ -1,0 +1,20 @@
+setLocation(TestIf Alt)
+if(random == 0 & random < 1)
+	log(Log;Setting to 5)
+	variable(random;=;5)
+endif
+
+if(random != 5)
+	log(Error;Should be at 5)
+else
+	log(Log;Is at 5, removing 1)
+	variable(random;-;1)
+endif
+
+if(random == 4)
+	log(Log;Is at 4)
+else
+	log(Error;Should be at 4)
+endif
+
+log(Log;End)

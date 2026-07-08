@@ -1,0 +1,14 @@
+setLocation(TestCharacter)
+setLocals(test)
+
+block
+setBackground(TestBackground2)
+addCharacter(TestCharacter;false;Test)
+endblock
+
+dialog(Test_Character;TestCharacter;Test_Character_1)
+setCharacterEye(TestCharacter;Mad)
+dialog(Test_Character;TestCharacter;Test_Character_2)
+
+setInteractionScript(TestCharacter;Character_End)
+interaction()
