@@ -83,7 +83,7 @@ MonoBehaviour:
         canBeSaved: 1
         enabledByDefault: 1
         fadeAllName: fadeAll
-        startInDebugMode: 0
+        startInDebugMode: 1
         debugModeScript: /ANF/Tests/Background
         autoLoadSaveFile: 0
         saveFileToAutoLoad: autosave
@@ -92,7 +92,7 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        backgroundType: 0
+        backgroundType: 1
         asyncLoading: 0
         prefabPath: Backgrounds/
         skyboxDataPath: Skyboxes/

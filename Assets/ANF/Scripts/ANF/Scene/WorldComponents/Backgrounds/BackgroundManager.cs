@@ -320,7 +320,7 @@ namespace ANF.Scene
 
             if (backgroundType == BackgroundType.Scene)
             {
-                operation = SceneManager.UnloadSceneAsync(currentBackgroundID);
+                operation = SceneManager.UnloadSceneAsync(currentBackgroundID, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
             }
             else if (backgroundType == BackgroundType.Prefab)
             {
