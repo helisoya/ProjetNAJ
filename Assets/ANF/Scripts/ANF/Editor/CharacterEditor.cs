@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Animations;
@@ -40,11 +41,16 @@ namespace ANF.Editor
             GUILayout.Space(50);
 
             ANF.Scene.Character character = target.GetComponent<ANF.Scene.Character>();
-            string pathToAnimations = "Assets/Resources/Animations/Characters/" + character.GetCharacterName() + "/";
+            string pathToAnimations;
 
             if (character.GetAnimator().runtimeAnimatorController &&
                 character.GetAnimator().runtimeAnimatorController is AnimatorController)
             {
+                pathToAnimations = AssetDatabase.GetAssetPath(character.GetAnimator().runtimeAnimatorController);
+                pathToAnimations = Path.GetDirectoryName(pathToAnimations).Replace('\\','/') + '/';
+
+                GUILayout.Label($"Path to animations : {pathToAnimations}");
+
                 AnimatorController animator = target.GetComponent<ANF.Scene.Character>().GetAnimator().runtimeAnimatorController as AnimatorController;
                 DrawBodyAnimations(animator, pathToAnimations, 0);
                 GUILayout.Space(15);
@@ -56,6 +62,10 @@ namespace ANF.Editor
             {
                 if (GUILayout.Button("Create Controller"))
                 {
+                    pathToAnimations = EditorPrefs.GetString("ANF_CG_ANIM_FOLDER", "Assets/Animations/Characters/");
+                    if (!pathToAnimations.EndsWith('/'))
+                        pathToAnimations += '/';
+
                     CreateDefaultController(character, pathToAnimations);
                 }
             }
@@ -200,6 +210,10 @@ namespace ANF.Editor
                 if (state.state.name.Equals(newStateName))
                     return;
 
+            DirectoryInfo dir = new DirectoryInfo(pathToAnimations);
+            if (!dir.Exists)
+                dir.Create();
+
             if (clip == null && createIfNull)
             {
                 clip = new AnimationClip();
@@ -236,6 +250,10 @@ namespace ANF.Editor
             foreach (ChildAnimatorState state in stateMachine.states)
                 if (state.state.name.Equals(newStateName))
                     return;
+
+            DirectoryInfo dir = new DirectoryInfo(pathToAnimations);
+            if (!dir.Exists)
+                dir.Create();
 
             if (clipNormal == null && createIfNull)
             {

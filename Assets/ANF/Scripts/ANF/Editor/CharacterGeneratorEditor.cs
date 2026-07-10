@@ -1,3 +1,4 @@
+using System.IO;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Animations;
@@ -24,6 +25,7 @@ namespace ANF.Editor
         private Vector3Field interactionBoxCenterField;
         private Vector3Field interactionBoxSizeField;
         private Toggle createTemplateAnimationsToggle;
+        private TextField animationsPathField;
         private CharacterGeneratorType type;
 
         public enum CharacterGeneratorType
@@ -58,6 +60,7 @@ namespace ANF.Editor
         public void CreateGUIElements()
         {
             VisualElement root = rootVisualElement;
+            root.style.flexWrap = Wrap.Wrap;
 
             Label label = new Label("Character Generator");
             root.Add(label);
@@ -65,11 +68,13 @@ namespace ANF.Editor
             if (type == CharacterGeneratorType.Default)
             {
                 Label desc = new Label("Generates a character. This character will not have eyes / mouths setup by default.");
+                desc.style.flexWrap = Wrap.Wrap;
                 root.Add(desc);
             }
             else if (type == CharacterGeneratorType.MouthEyeSprites)
             {
                 Label desc = new Label("Generates a character. Eyes & Mouth sprite renderer will be generated as well. Check the default test character if you want to see the end result.");
+                desc.style.flexWrap = Wrap.Wrap;
                 root.Add(desc);
             }
 
@@ -165,10 +170,14 @@ namespace ANF.Editor
 
             }
 
+            animationsPathField = new TextField("Animation's path (A subfolder will be created)");
+            root.Add(animationsPathField);
+
             createTemplateAnimationsToggle = new Toggle("Create Template Animations");
             root.Add(createTemplateAnimationsToggle);
 
             createTemplateAnimationsToggle.SetValueWithoutNotify(EditorPrefs.GetBool("ANF_CG_CREATETEMPLATE", true));
+            animationsPathField.SetValueWithoutNotify(EditorPrefs.GetString("ANF_CG_ANIM_FOLDER", "Assets/Animations/Characters/"));
 
 
             Button button = new Button();
@@ -201,16 +210,19 @@ namespace ANF.Editor
         public void OnGenerate()
         {
             if (type == CharacterGeneratorType.MouthEyeSprites && (spriteMaterialField.value == null || eyesField.value == null ||
-                mouthField.value == null || string.IsNullOrEmpty(hierarchyField.value)))
+                mouthField.value == null || string.IsNullOrEmpty(hierarchyField.value)) && string.IsNullOrEmpty(animationsPathField.value))
                 return;
 
             if (modelField.value == null || interactionIconField.value == null || string.IsNullOrEmpty(characterIdField.value))
                 return;
 
+
+            EditorPrefs.SetString("ANF_CG_NAME", characterIdField.value);
             EditorPrefs.SetString("ANF_CG_NAME", characterIdField.value);
             EditorPrefs.SetString("ANF_CG_MODEL", AssetDatabase.GetAssetPath(modelField.value));
             EditorPrefs.SetString("ANF_CG_INTERACTION", AssetDatabase.GetAssetPath(interactionIconField.value));
             EditorPrefs.SetBool("ANF_CG_CREATETEMPLATE", createTemplateAnimationsToggle.value);
+            EditorPrefs.SetString("ANF_CG_ANIM_FOLDER", animationsPathField.value);
 
             EditorPrefs.SetFloat("ANF_CG_INTERACTION_BOX_CENTER_X", interactionBoxCenterField.value.x);
             EditorPrefs.SetFloat("ANF_CG_INTERACTION_BOX_CENTER_Y", interactionBoxCenterField.value.y);
@@ -285,19 +297,18 @@ namespace ANF.Editor
             interactableRoot.transform.localScale = Vector3.one;
 
             // Generate Animations
-            string pathToAnimations = "Assets/Resources/Animations/Characters/" + characterIdField.value + "/";
-            if (!AssetDatabase.IsValidFolder("Assets/Resources/Animations/Characters/" + characterIdField.value))
-                AssetDatabase.CreateFolder("Assets/Resources/Animations/Characters", characterIdField.value);
+            string pathToAnimations = animationsPathField.value;
+            if (!pathToAnimations.EndsWith('/'))
+                pathToAnimations += '/';
+            pathToAnimations += characterIdField.value + "/";
 
-            if (!AssetDatabase.IsValidFolder("Assets/Resources/Animations/Characters/" + characterIdField.value + "/Body"))
-                AssetDatabase.CreateFolder("Assets/Resources/Animations/Characters/" + characterIdField.value, "Body");
+            DirectoryInfo dir = new DirectoryInfo(pathToAnimations);
+            if (!dir.Exists)
+                dir.Create();
 
-            if (!AssetDatabase.IsValidFolder("Assets/Resources/Animations/Characters/" + characterIdField.value + "/Eye"))
-                AssetDatabase.CreateFolder("Assets/Resources/Animations/Characters/" + characterIdField.value, "Eye");
-
-            if (!AssetDatabase.IsValidFolder("Assets/Resources/Animations/Characters/" + characterIdField.value + "/Mouth"))
-                AssetDatabase.CreateFolder("Assets/Resources/Animations/Characters/" + characterIdField.value, "Mouth");
-
+            dir.CreateSubdirectory("Body");
+            dir.CreateSubdirectory("Eye");
+            dir.CreateSubdirectory("Mouth");
 
             if (type == CharacterGeneratorType.MouthEyeSprites)
             {
