@@ -20,6 +20,22 @@ namespace ANF.Scene
         [Tooltip("This list should contain all interactable objects relating to the background. (Doors, ...)")]
         [SerializeField] private InteractableObject[] interactableObjects;
 
+#if UNITY_EDITOR
+        void OnDrawGizmos()
+        {
+
+            UnityEditor.SceneView sceneView = UnityEditor.SceneView.currentDrawingSceneView;
+            if (sceneView && sceneView.camera)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawFrustum(new Vector3(0, 1, -10), sceneView.camera.fieldOfView,
+                50.0f, 0.01f,
+                sceneView.camera.aspect);
+            }
+
+        }
+#endif
+
         void Awake()
         {
             if (defaultData != null & sunLight)

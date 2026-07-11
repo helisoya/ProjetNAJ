@@ -16,11 +16,11 @@
 
 # Quest localization keys are :
 # QuestCategory_CATEGORY = Category name
-# Quest_VARIABLEID_name = Quest name
-# Quest_VARIABLEID_desc = Quest description
+# Quest_VARIABLEID_Name = Quest name
+# Quest_VARIABLEID_Desc = Quest description
 # Quest_VARIABLEID_0-99 = Quest curren objective (state 0 to 99)
-# Quest_VARIABLEID_done = Quest done message
-# Quest_VARIABLEID_canceled = Quest canceled/failed message
+# Quest_VARIABLEID_Done = Quest done message
+# Quest_VARIABLEID_Canceled = Quest canceled/failed message
 
 [testQuest]
 anfTestQuest_1 1

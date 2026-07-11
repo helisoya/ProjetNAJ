@@ -35,7 +35,7 @@ namespace ANF.GUI
             root.localScale = Vector2.one * 0.8f;
 
             if (isUnlocked)
-                label.SetNewKey($"Log_{data}_name");
+                label.SetNewKey($"Log_{data}_Name");
             else
                 label.SetNewKey("GeneralMenu_Unknown");
         }

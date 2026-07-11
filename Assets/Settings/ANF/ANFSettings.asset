@@ -53,6 +53,9 @@ MonoBehaviour:
   - id: 
     data:
       rid: 3436800145698848844
+  - id: 
+    data:
+      rid: 5696403972586471542
   additionalParts:
   - rid: 5904633703666286681
   references:
@@ -151,6 +154,9 @@ MonoBehaviour:
         defaultVSyncCount: 1
         defaultAntiAliasing: 2
         defaultShadowCascadeCount: 4
+    - rid: 5696403972586471542
+      type: {class: NAJCaseInventoryContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}
+      data: 
     - rid: 5904633703666286681
       type: {class: ANSLSettings, ns: ANF.Persistent, asm: Assembly-CSharp}
       data:

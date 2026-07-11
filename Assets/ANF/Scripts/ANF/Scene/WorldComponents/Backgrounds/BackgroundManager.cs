@@ -39,14 +39,16 @@ namespace ANF.Scene
         private LerpInstanceFloat lerpSkybox;
 
         private AsyncOperation currentOperation;
+        private bool asyncWaitForNextFrame = false;
         private string cachedNextBackgroundID;
         public bool loadingBackground { get; private set; }
         public bool unloadingBackground { get; private set; }
-        public bool lerpingSkybox { 
+        public bool lerpingSkybox
+        {
             get
             {
                 return (lerpSkybox != null && lerpSkybox.lerping) || (lerpSunColor != null && lerpSunColor.lerping);
-            } 
+            }
         }
 
         public override WorldComponent CloneComponent()
@@ -79,7 +81,7 @@ namespace ANF.Scene
             skipModeEnabled = enabled;
             if (lerpSkybox != null && lerpSkybox.lerping)
                 lerpSkybox.ChangeDuration(0.1f);
-            
+
             if (lerpSunColor != null && lerpSunColor.lerping)
                 lerpSunColor.ChangeDuration(0.1f);
         }
@@ -206,6 +208,7 @@ namespace ANF.Scene
                 currentOperation = LoadBackground(cachedNextBackgroundID);
 
                 loadingBackground = backgroundType == BackgroundType.Scene || (asyncLoading && !forceSync);
+                asyncWaitForNextFrame = loadingBackground;
 
                 if (!loadingBackground)
                     EndBackgroundLoading();
@@ -253,12 +256,12 @@ namespace ANF.Scene
                 if (currentCachedData == null)
                 {
                     currentCachedData = currentBackground.GetDefaultData();
-                    if(currentCachedData.skyboxData != null)
+                    if (currentCachedData.skyboxData != null)
                     {
                         SetSkybox(currentCachedData.skyboxData);
                     }
                 }
-                    
+
 
                 if (currentCachedData.skyboxData == null)
                 {
@@ -268,8 +271,8 @@ namespace ANF.Scene
 
                 currentBackground.SetLightDirection(currentCachedData.currentLightDirection);
                 currentBackground.SetWeatherEffect(currentCachedData.currentWeatherEffect);
-                
-                if(lerpSunColor != null && lerpSunColor.lerping)
+
+                if (lerpSunColor != null && lerpSunColor.lerping)
                     currentBackground.SetSunColor(lerpSunColor.Get());
                 else
                     currentBackground.SetSunColor(currentCachedData.skyboxData.sunColor);
@@ -352,8 +355,8 @@ namespace ANF.Scene
                     OnEnableWeatherEffectsChange);
 
             RenderSettings.skybox = new Material(skyboxMaterial);
-            RenderSettings.skybox.SetFloat("_Lerp",0.0f);
-            if(defaultSkybox != null)
+            RenderSettings.skybox.SetFloat("_Lerp", 0.0f);
+            if (defaultSkybox != null)
             {
                 RenderSettings.skybox.SetTexture("_Current", defaultSkybox.skybox);
                 RenderSettings.skybox.SetTexture("_Target", defaultSkybox.skybox);
@@ -380,12 +383,18 @@ namespace ANF.Scene
                 if (currentOperation != null && !currentOperation.isDone)
                     return;
 
+                if (asyncWaitForNextFrame)
+                {
+                    asyncWaitForNextFrame = false;
+                    return;
+                }
+
                 EndBackgroundLoading();
             }
 
-            if(lerpSkybox != null && lerpSkybox.lerping)
+            if (lerpSkybox != null && lerpSkybox.lerping)
             {
-                RenderSettings.skybox.SetFloat("_Lerp",lerpSkybox.Update());
+                RenderSettings.skybox.SetFloat("_Lerp", lerpSkybox.Update());
             }
 
             if (lerpSunColor != null && lerpSunColor.lerping)

@@ -79,7 +79,7 @@ namespace ANF.GUI
             allLogs.Sort((string o1, string o2) =>
             {
                 if (locals != null)
-                    return locals.GetLocal($"Log_{o1}_name").CompareTo(locals.GetLocal($"Log_{o2}_name"));
+                    return locals.GetLocal($"Log_{o1}_Name").CompareTo(locals.GetLocal($"Log_{o2}_Name"));
                 return o1.CompareTo(o2);
             });
 
@@ -228,8 +228,8 @@ namespace ANF.GUI
             if (audioManager != null)
                 audioManager.PlayUICursorConfirmSFX();
 
-            logNameText.SetNewKey($"Log_{logId}_name");
-            logDescText.SetNewKey($"Log_{logId}_desc");
+            logNameText.SetNewKey($"Log_{logId}_Name");
+            logDescText.SetNewKey($"Log_{logId}_Desc");
 
             Sprite sprite = logsContainer.GetLogSprite(logId);
 

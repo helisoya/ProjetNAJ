@@ -41,24 +41,24 @@ Map_ANFDemo_DesertedIsland = Ile désertée
 
 QuestCategory_testQuest = Quêtes test
 
-Quest_anfTestQuest_1_name = Sauver Harold
-Quest_anfTestQuest_1_desc = Harold a besoin de mon aide. Il a été attaqué par un lapin sauvage.
+Quest_anfTestQuest_1_Name = Sauver Harold
+Quest_anfTestQuest_1_Desc = Harold a besoin de mon aide. Il a été attaqué par un lapin sauvage.
 Quest_anfTestQuest_1_0 = Trouvez Harold.
 Quest_anfTestQuest_1_1 = Tuez le lapin.
-Quest_anfTestQuest_1_done = J'ai sauvé Harold du lapin.
-Quest_anfTestQuest_1_canceled = Harold est mort.
+Quest_anfTestQuest_1_Done = J'ai sauvé Harold du lapin.
+Quest_anfTestQuest_1_Canceled = Harold est mort.
 
-Quest_anfTestQuest_2_name = Une longue aventure
-Quest_anfTestQuest_2_desc = Je dois atteindre la terre promise de Caribou.
+Quest_anfTestQuest_2_Name = Une longue aventure
+Quest_anfTestQuest_2_Desc = Je dois atteindre la terre promise de Caribou.
 Quest_anfTestQuest_2_0 = Prenez votre voiture.
 Quest_anfTestQuest_2_1 = Allez sur l'autoroute A36.
 Quest_anfTestQuest_2_2 = Conduisez beaucoup.
 Quest_anfTestQuest_2_3 = Prenez un ferry vers le Canada.
-Quest_anfTestQuest_2_done = J'ai réussi à trouver la terre promise.
-Quest_anfTestQuest_2_canceled = Je me suis perdu.
+Quest_anfTestQuest_2_Done = J'ai réussi à trouver la terre promise.
+Quest_anfTestQuest_2_Canceled = Je me suis perdu.
 
-Log_TestLog1_name = Pirates
-Log_TestLog1_desc = Tu es un pirate.
+Log_TestLog1_Name = Pirates
+Log_TestLog1_Desc = Tu es un pirate.
 
-Log_TestLog2_name = ANF
-Log_TestLog2_desc = ANF est un framework.
+Log_TestLog2_Name = ANF
+Log_TestLog2_Desc = ANF est un framework.

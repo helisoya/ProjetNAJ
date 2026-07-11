@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ANF/Scenes/ANF_Test/Backgrounds/TestBackground2.unity
     guid: 534859a3d578afb438b51d3e9be30dc6
+  - enabled: 1
+    path: Assets/ANF/Scenes/ANF_Test/Backgrounds/TestBackgroundInteraction.unity
+    guid: 4302daa8f2840fa458272dd4a90df6ec
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

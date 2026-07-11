@@ -1,0 +1,16 @@
+# Evidence
+
+# You can define a new evidence by adding its Id here
+# Evidence can be associated with images, located in the defined Resources subfolder
+# Evidence images have the format Evidence_ID_ImageNumber (Ex : Evidence_TestEvidence2_0)
+
+# To add an evidence :
+# Write EvidenceID 
+# Or EvidenceID NumberOfImages
+
+# The relevant locals for evidences are :
+# Evidence_ID_Name = The evidence's name
+# Evidence_ID_Desc = The evidence's description
+
+TestEvidence1
+TestEvidence2 3

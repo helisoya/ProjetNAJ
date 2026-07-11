@@ -42,18 +42,18 @@ namespace ANF.Utils
         /// Find all Valid ANSL Functions (Registered and Enabled)
         /// </summary>
         /// <returns>All Valid ANSL Functions</returns>
-        public static List<KeyValuePair<Type,uint>> GetValidANSLFunctionsList(ANFSettings settings)
+        public static List<KeyValuePair<Type, uint>> GetValidANSLFunctionsList(ANFSettings settings)
         {
             List<KeyValuePair<Type, uint>> output = new List<KeyValuePair<Type, uint>>();
 
 
-            if(settings.FindAdditionalPart(out ANSLSettings anslSettings))
+            if (settings.FindAdditionalPart(out ANSLSettings anslSettings))
             {
-                foreach(ANSLSettings.ANSLFunctionSettingsData data in anslSettings.registeredFunctions)
+                foreach (ANSLSettings.ANSLFunctionSettingsData data in anslSettings.registeredFunctions)
                 {
-                    if(data.enabled)
+                    if (data.enabled)
                     {
-                        output.Add(new KeyValuePair<Type, uint>(Type.GetType(data.typeName),data.id));
+                        output.Add(new KeyValuePair<Type, uint>(Type.GetType(data.typeName), data.id));
                     }
                 }
             }
@@ -126,11 +126,11 @@ namespace ANF.Utils
             if (!string.IsNullOrEmpty(currentFilepath) && !nextFilePath.StartsWith('/'))
             {
                 split = currentFilepath.Split('/', StringSplitOptions.RemoveEmptyEntries);
-                for(int i = 0; i < split.Length - 1;i++) // Skip last part (actual filename)
+                for (int i = 0; i < split.Length - 1; i++) // Skip last part (actual filename)
                 {
                     if (split[i].Equals(".."))
                     {
-                        if(parts.Count > 0)
+                        if (parts.Count > 0)
                             parts.RemoveAt(parts.Count - 1);
                         else
                             return null;
@@ -160,7 +160,7 @@ namespace ANF.Utils
 
 
             string result = "";
-            for(int i = 0; i < parts.Count;i++)
+            for (int i = 0; i < parts.Count; i++)
             {
                 result += parts[i];
                 if (i < parts.Count - 1)
@@ -187,7 +187,7 @@ namespace ANF.Utils
 
             StreamWriter outStream = new StreamWriter(targetFile, false);
 
-            List<KeyValuePair<Type,uint>> functions = GetValidANSLFunctionsList(settings);
+            List<KeyValuePair<Type, uint>> functions = GetValidANSLFunctionsList(settings);
 
             outStream.Write("{");
 
@@ -221,7 +221,9 @@ namespace ANF.Utils
         public static List<ANSLError> CompileAll(ANFSettings settings)
         {
             List<ANSLError> errors = new List<ANSLError>();
-            List<KeyValuePair<Type,uint>> functions = GetValidANSLFunctionsList(settings);
+
+#if UNITY_EDITOR
+            List<KeyValuePair<Type, uint>> functions = GetValidANSLFunctionsList(settings);
             ANSLCompiler compiler = new ANSLCompiler();
 
             if (!settings.FindAdditionalPart(out ANSLSettings anslSettings))
@@ -235,6 +237,35 @@ namespace ANF.Utils
                 return errors;
             }
 
+            int totalProgress = 1;
+            int currentProgress = 0;
+            List<string> anslFiles = new List<string>();
+            List<string> definesFiles = new List<string>();
+
+            Stack<string> directories = new Stack<string>();
+            directories.Push(anslSettings.anslSourceFolder);
+
+            while (directories.Count > 0)
+            {
+                string directory = directories.Pop();
+
+                foreach (string subDir in Directory.GetDirectories(directory))
+                    directories.Push(subDir);
+
+                foreach (string file in Directory.GetFiles(directory))
+                {
+                    if (file.EndsWith(".defines"))
+                        definesFiles.Add(file);
+                    else if (file.EndsWith(".ansl"))
+                        anslFiles.Add(file);
+                }
+            }
+
+            totalProgress += anslFiles.Count + definesFiles.Count;
+
+
+            UnityEditor.EditorUtility.DisplayProgressBar("ANSL Compilation", "Checking Functions", 0.0f);
+
             if (CheckANSLFunctions(functions, errors))
             {
                 Dictionary<string, KeyValuePair<ANSLFunction, uint>> functionInstances = new Dictionary<string, KeyValuePair<ANSLFunction, uint>>();
@@ -243,53 +274,36 @@ namespace ANF.Utils
                     ANSLFunctionAttribute attribute = type.Key.GetCustomAttribute<ANSLFunctionAttribute>();
                     if (attribute != null)
                     {
-                        functionInstances.Add(attribute.functionBody, new KeyValuePair<ANSLFunction,uint>((ANSLFunction)type.Key.Instantiate(),type.Value));
+                        functionInstances.Add(attribute.functionBody, new KeyValuePair<ANSLFunction, uint>((ANSLFunction)type.Key.Instantiate(), type.Value));
                     }
                 }
 
                 // Compile Defines
-                Stack<string> directories = new Stack<string>();
-                directories.Push(anslSettings.anslSourceFolder);
-
-                while (directories.Count > 0)
+                foreach (string file in definesFiles)
                 {
-                    string directory = directories.Pop();
-
-                    foreach (string subDir in Directory.GetDirectories(directory))
-                        directories.Push(subDir);
-
-                    foreach (string file in Directory.GetFiles(directory))
-                    {
-                        if (file.EndsWith(".defines"))
-                            compiler.CompileANSLMacros(file, errors);
-                    }
+                    currentProgress++;
+                    UnityEditor.EditorUtility.DisplayProgressBar("ANSL Compilation", file, (float)currentProgress / totalProgress);
+                    compiler.CompileANSLMacros(file, errors);
                 }
 
                 if (errors.Count > 0)
+                {
+                    UnityEditor.EditorUtility.ClearProgressBar();
                     return errors;
+                }
 
                 // Compile regular files
-
-                directories.Clear();
-                directories.Push(anslSettings.anslSourceFolder);
-
-                while (directories.Count > 0)
+                foreach (string file in anslFiles)
                 {
-                    string directory = directories.Pop();
-
-                    foreach (string subDir in Directory.GetDirectories(directory))
-                        directories.Push(subDir);
-
-                    foreach (string file in Directory.GetFiles(directory))
-                    {
-                        if (file.EndsWith(".ansl"))
-                        {
-                            string destPath = "Assets/Resources/" + anslSettings.anslDestinationFolder + file.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", ".txt");
-                            compiler.Compile(file, destPath, functionInstances, errors);
-                        }
-                    }
+                    currentProgress++;
+                    UnityEditor.EditorUtility.DisplayProgressBar("ANSL Compilation", file, (float)currentProgress / totalProgress);
+                    string destPath = "Assets/Resources/" + anslSettings.anslDestinationFolder + file.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", ".txt");
+                    compiler.Compile(file, destPath, functionInstances, errors);
                 }
             }
+
+            UnityEditor.EditorUtility.ClearProgressBar();
+#endif
 
             return errors;
         }
