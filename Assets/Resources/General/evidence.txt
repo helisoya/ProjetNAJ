@@ -1,16 +1,36 @@
-# Evidence
+# Evidence/Profile
 
-# You can define a new evidence by adding its Id here
-# Evidence can be associated with images, located in the defined Resources subfolder
-# Evidence images have the format Evidence_ID_ImageNumber (Ex : Evidence_TestEvidence2_0)
+# You can define a new evidence/profile by adding its Id here
+# By default, each entry will be linked with an icon of the same name, located in the Resources folder
+# Evidence can also be associated with additional images, located in the defined Resources subfolder
+# Evidence additional images have the format Evidence_ID_ImageNumber (Ex : Evidence_TestEvidence2_0)
 
-# To add an evidence :
-# Write EvidenceID 
-# Or EvidenceID NumberOfImages
+# To add an evidence/profile, you can Write :
+# Evidence ID [NumberOfAdditionalImages] 
+# Profile ID
 
 # The relevant locals for evidences are :
 # Evidence_ID_Name = The evidence's name
 # Evidence_ID_Desc = The evidence's description
+# Profile_ID_Name = The profile's name
+# Profile_ID_Desc = The profile's description
 
-TestEvidence1
-TestEvidence2 3
+Evidence TestEvidence1
+Evidence TestEvidence2 3
+Evidence TestEvidence3 1
+Evidence TestEvidence4 5
+Evidence TestEvidence5
+Evidence TestEvidence6
+Evidence TestEvidence7
+Evidence TestEvidence8 2
+Evidence TestEvidence9
+
+Profile TestProfile1
+Profile TestProfile2
+Profile TestProfile3
+Profile TestProfile4
+Profile TestProfile5
+Profile TestProfile6
+Profile TestProfile7
+Profile TestProfile8
+Profile TestProfile9

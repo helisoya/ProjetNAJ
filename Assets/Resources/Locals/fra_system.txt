@@ -112,3 +112,18 @@ NewGameMenu_Desc = Entrez votre nom
 NewGameMenu_Confirm = Confirmer
 
 GeneralMenu_Unknown = ???
+
+# ------------------------------------------------------------------------
+# -------------------------- NAJ Menus -----------------------------------
+# ------------------------------------------------------------------------
+
+InputReminder_Inventory = Inventaire
+InputReminder_Back = Retour
+InputReminder_Profiles = Profiles
+InputReminder_Evidence = Preuves
+InputReminder_Check = Examiner
+InputReminder_Present = Présenter
+
+SettingsMenu_Inputs_Inventory = Inventaire
+SettingsMenu_Inputs_InventorySwitch = Basculer (Inventaire)
+SettingsMenu_Inputs_InventoryPresent = Présenter (Inventaire)

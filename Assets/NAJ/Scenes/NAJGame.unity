@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Manager.ANFManager
   uiRoot: {fileID: 740851709}
-  sceneData: {fileID: 11400000, guid: d04742e26d55bbe4f9ad3570c01df3f2, type: 2}
+  sceneData: {fileID: 11400000, guid: 617d34d8614c82a499ee47e1cbc53280, type: 2}
 --- !u!1001 &8011574948649070489
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,0 +1,25 @@
+{
+  "name": "ansl",
+  "displayName": "ansl",
+  "description": "Adventure Novel Scripting Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ansl",
+      "aliases": ["Adventure Novel Scripting Language", "ansl"],
+      "extensions": [".ansl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ansl",
+      "scopeName": "file.ansl",
+      "path": "./syntaxes/ansl.tmLanguage.json"
+    }]
+  }
+}

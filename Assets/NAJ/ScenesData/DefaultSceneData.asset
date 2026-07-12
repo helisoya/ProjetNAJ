@@ -46,12 +46,14 @@ MonoBehaviour:
     data: {fileID: 237637143809057935, guid: 6cf9e0c16fec62f4d9fca3a93dc77fe6, type: 3}
   - id: 
     data: {fileID: 7502116054405208522, guid: e70c0214d98967445badb02e7039cadc, type: 3}
+  - id: 
+    data: {fileID: 5926109112217851707, guid: d7705a57bee67754ebb525fa542c0f56, type: 3}
   - id: fadeFg
     data: {fileID: 1331905330795673416, guid: 0ad70345a8ff7dd468003a14eec462be, type: 3}
   - id: 
-    data: {fileID: 9078231338013344640, guid: 0d738e11342e94440830eb4f5fe17177, type: 3}
+    data: {fileID: 9078231338013344640, guid: 720661e4fab69d14ca6b0fc1c88d3f92, type: 3}
   - id: 
-    data: {fileID: 4893906188555742882, guid: 5e9406e5045fab749aceee05976bcd15, type: 3}
+    data: {fileID: 4893906188555742882, guid: 438213e2fb9a76e4088031c20e0ed578, type: 3}
   - id: 
     data: {fileID: 4813586622291847291, guid: 8059e479ea9479f479ea903f59b46f8f, type: 3}
   - id: 
@@ -61,7 +63,7 @@ MonoBehaviour:
   - id: 
     data: {fileID: 5462081781506776728, guid: edc56737f42790e40819bcb973af9e17, type: 3}
   - id: 
-    data: {fileID: 6123419753822969047, guid: 69357696a595c4647ac53d368488e61b, type: 3}
+    data: {fileID: 6123419753822969047, guid: 8c0175ffba14bb8469c0e488a0977164, type: 3}
   - id: fadeAll
     data: {fileID: 1331905330795673416, guid: 9299cd766ec312648ad187dbaab961ff, type: 3}
   changeSceneUseFading: 1
@@ -83,8 +85,8 @@ MonoBehaviour:
         canBeSaved: 1
         enabledByDefault: 1
         fadeAllName: fadeAll
-        startInDebugMode: 0
-        debugModeScript: /ANF/Tests/Background
+        startInDebugMode: 1
+        debugModeScript: /NAJ/Tests/Inventory
         autoLoadSaveFile: 0
         saveFileToAutoLoad: autosave
     - rid: 3436799676236169305
@@ -92,8 +94,8 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        backgroundType: 0
-        asyncLoading: 0
+        backgroundType: 1
+        asyncLoading: 1
         prefabPath: Backgrounds/
         skyboxDataPath: Skyboxes/
         defaultSkybox: {fileID: 11400000, guid: 3c393467ae28b4f4f89d8d01c5af0816, type: 2}

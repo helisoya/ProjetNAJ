@@ -24,7 +24,6 @@ namespace ANF.GUI
         [SerializeField] private InputReminderUIButton reminderPrefab;
         [SerializeField] private SerializedDictionary<string, InputReminderData> registeredReminders;
 
-
         public override void OnInitialize()
         {
             canvasGroup.alpha = 0;
@@ -108,6 +107,41 @@ namespace ANF.GUI
             {
                 if (registeredReminders.ContainsKey(key))
                     SetReminderEnabled(key, json.GetBool(key));
+            }
+        }
+
+        /// <summary>
+		/// Gets the state of all registered reminders
+		/// </summary>
+		/// <returns>Their state</returns>
+        public bool[] GetRemindersState()
+        {
+            bool[] result = new bool[registeredReminders.Count];
+
+            int i = 0;
+            foreach (string key in registeredReminders.Keys)
+            {
+                result[i] = registeredReminders[key].enabled;
+                i++;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+		/// Sets the state of all registered reminders
+		/// </summary>
+		/// <param name="state">Their new state</param>
+        public void SetRemindersState(bool[] state)
+        {
+            if (state == null || state.Length != registeredReminders.Count)
+                return;
+
+            int i = 0;
+            foreach (string key in registeredReminders.Keys)
+            {
+                SetReminderEnabled(key, state[i]);
+                i++;
             }
         }
 

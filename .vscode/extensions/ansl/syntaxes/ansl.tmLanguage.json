@@ -1,0 +1,168 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Adventure Novel Scripting Language",
+	"patterns": [
+		{ "include": "#keywords" },
+		{ "include": "#comments" },
+		{ "include": "#constants" },
+		{ "include": "#commands" },
+		{ "include": "#choice" },
+		{ "include": "#examination" },
+		{ "include": "#choice-entry" },
+		{ "include": "#trad-entry" }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.ansl",
+					"match": "\\b(interact)\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.single.ansl",
+					"begin": "\\#",
+					"end": "\\\n"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.single.ansl",
+					"match": "\\b(true|false|null)\\b"
+				}
+			]
+		},
+		"commands": {
+			"patterns": [
+				{
+					"name": "command.global.ansl",
+					"begin": "(?x)\n  \\b(?=\n    ([[:alpha:]_]\\w*) \\s* (\\()\n  )\n",
+					"end": "(\n)",
+					"patterns": [
+						{ "include": "#function-if" },
+						{ "include": "#function-name" },
+						{ "include": "#function-arguments" },
+						{ "include": "#constants" },
+						{ "include": "#function-end" }
+					]
+				}
+			]
+		},
+		"function-if": {
+			"patterns": [
+				{
+					"name": "keyword.control.ansl",
+					"match": "if"
+				}
+			]
+		},
+		"function-name": {
+			"patterns": [
+				{
+					"name": "command.name.ansl",
+					"match": "(?x)\n  \\b ([[:alpha:]_]\\w*) \\b\n"
+				}
+			]
+		},
+		"function-arguments": {
+			"begin": "(\\()",
+			"end": "(?=\\))(?!\\)\\s*\\()",
+			"beginCaptures": { "1": { "name": "command.definition.separator.ansl" } },
+			"contentName": "command.arguments.ansl",
+			"patterns": [
+				{ "include": "#constants" },
+				{
+					"name": "command.number.ansl",
+					"match": "(![_]\\d)"
+				},
+				{
+					"name": "command.separator.ansl",
+					"match": "(;|<|&|>|=)"
+				},
+				{
+					"match": "(?x)\n  (?:(?<=[;(])|^) \\s* (\\*{1,2})\n",
+					"captures": { "1": { "name": "command.keyword.operator.arguments.ansl" } }
+				},
+				{
+					"name": "command.keyword.operator.assignement.arguments.ansl",
+					"match": "=(?!=)"
+				},
+				{
+					"match": "\\s*(\\))\\s*(\\()",
+					"captures": {
+						"1": { "name": "command.punctuation.definition.arguments.end.ansl" },
+						"2": { "name": "command.punctuation.definition.arguments.begin.ansl" }
+					}
+				}
+			]
+		},
+		"function-end": {
+			"begin": "^\\)",
+			"end": "\n",
+			"contentName": "command.end.ansl",
+			"patterns": [
+				{ "include": "#function-name" },
+				{ "include": "#function-arguments" },
+				{ "include": "#constants" }
+			]
+		},
+		"choice": {
+			"begin": "^choice",
+			"end": "$",
+			"name": "keyword.control.ansl",
+			"patterns": [
+				{
+					"match": "choice",
+					"name": "keyword.control.ansl"
+				}
+			]
+		},
+		"examination": {
+			"begin": "^examination",
+			"end": "$",
+			"name": "keyword.control.ansl",
+			"patterns": [
+				{
+					"match": "examination",
+					"name": "keyword.control.ansl"
+				},
+				{
+					"begin": " ",
+					"end": "$",
+					"name": "choice.id.ansl"
+				}
+			]
+		},
+		"choice-entry": {
+			"begin": "^\t",
+			"end": "$",
+			"name": "choice.id.ansl",
+			"patterns": [
+				{
+					"begin": "\t",
+					"end": " ",
+					"name": "choice.id.ansl"
+				},
+				{
+					"begin": " ",
+					"end": "$",
+					"name": "choice.chapter.ansl"
+				}
+			]
+		},
+		"trad-entry": {
+			"match": "^([^()\t]*)( = )([^()\t]*)$",
+			"captures": {
+				"1": { "name": "trad.key.ansl" },
+				"2": { "name": "command.separator.ansl" },
+				"3": { "name": "trad.value.ansl" }
+			}
+		}
+	},
+	"scopeName": "file.ansl"
+}

@@ -49,10 +49,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772b54bf5eec58540978c1e31666eadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.GUI.InputReminderUI
-  canBeSaved: 0
+  canBeSaved: 1
   enabledByDefault: 1
   root: {fileID: 7052705504116219717}
-  hideRootWhenClosed: 1
+  hideRootWhenClosed: 0
   lockComponents: []
   canvasGroup: {fileID: 4330805141171388405}
   reminderRoot: {fileID: 2189292944381061338}

@@ -1,0 +1,15 @@
+# ---------------------------------------------------------
+# -------------------- Tests ------------------------------
+# ---------------------------------------------------------
+
+Test_Character = Man
+
+Test_Inventory_1 = Adding Default Items
+Test_Inventory_2 = Adding New Evidence
+Test_Inventory_3 = Adding New Profiles
+Test_Inventory_4 = Give Profile 3
+Test_Inventory_5 = Give Profile 5 or Evidence 2
+Test_Inventory_6 = Give Evidence 8
+Test_Inventory_7 = Give Profile 7
+Test_Inventory_8 = Clearing Evidence
+Test_Inventory_9 = Clearing Profiles
