@@ -484,6 +484,18 @@ namespace NAJ.GUI
             }
         }
 
+        private void OnMouseScroll(InputAction.CallbackContext context)
+        {
+            if (isEnabled && !isPaused)
+            {
+                Vector2 value = context.ReadValue<Vector2>();
+
+                if ((value.y < 0 && inEvidenceMode) ||
+                    (value.y > 0 && !inEvidenceMode))
+                    SwitchMode();
+            }
+        }
+
 
         private void OnMove(InputAction.CallbackContext context)
         {
@@ -724,6 +736,7 @@ namespace NAJ.GUI
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled += OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("InventorySwitch").performed += OnInventorySwitch;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MouseScroll").performed += OnMouseScroll;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPresent;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed += OnPauseInput;
         }
@@ -734,6 +747,7 @@ namespace NAJ.GUI
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("InventorySwitch").performed -= OnInventorySwitch;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MouseScroll").performed -= OnMouseScroll;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPresent;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed -= OnPauseInput;
         }
