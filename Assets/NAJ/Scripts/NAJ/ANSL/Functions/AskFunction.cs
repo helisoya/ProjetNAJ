@@ -25,6 +25,9 @@ namespace NAJ.ANSL
         private bool waitingForItem = false;
         private InventoryUI.InventoryMode previousMode = InventoryUI.InventoryMode.ViewOnly;
         private InventoryUI inventoryUI;
+        private uint goodIdx;
+        private uint badIdx;
+        private string[] anwsers;
 
         public override FunctionParameterType[][] GetParametersTemplates()
         {
@@ -98,7 +101,7 @@ namespace NAJ.ANSL
                     continue;
                 }
 
-                if (currentNextLine.StartsWith("wrong"))
+                if (currentNextLine.Equals("wrong"))
                 {
                     if (!compilingTrues)
                     {
@@ -128,7 +131,7 @@ namespace NAJ.ANSL
 
                     compilingTrues = false;
                 }
-                else if (currentNextLine.StartsWith("endask"))
+                else if (currentNextLine.Equals("endask"))
                 {
                     if (currentNextLine.Length != "endask".Length)
                     {
@@ -211,6 +214,9 @@ namespace NAJ.ANSL
         {
             waitingForItem = true;
             if (parameters.GetParameter(0, out string type) &&
+                parameters.GetParameter(1, out goodIdx) &&
+                parameters.GetParameter(2, out badIdx) &&
+                parameters.GetParameter(3, out anwsers) &&
                 manager.GetGUIManager().GetComponent(out inventoryUI))
             {
                 previousMode = inventoryUI.currentMode;
@@ -252,28 +258,23 @@ namespace NAJ.ANSL
                     inventoryUI.SetCurrentMode(previousMode);
                     waitingForItem = false;
 
-                    if (parameters.GetParameter(1, out uint goodIdx) &&
-                    parameters.GetParameter(2, out uint badIdx) &&
-                    parameters.GetParameter(3, out string[] anwsers))
+                    string selectedItem = inventoryUI.selectedItem;
+                    bool found = false;
+
+                    foreach (string anwser in anwsers)
                     {
-                        string selectedItem = inventoryUI.selectedItem;
-                        bool found = false;
-
-                        foreach (string anwser in anwsers)
+                        if (anwser.Equals(selectedItem))
                         {
-                            if (anwser.Equals(selectedItem))
-                            {
-                                found = true;
-                                break;
-                            }
+                            found = true;
+                            break;
                         }
-
-                        EndProcess();
-                        if (found)
-                            context.SetLineCounter(goodIdx);
-                        else
-                            context.SetLineCounter(badIdx);
                     }
+
+                    EndProcess();
+                    if (found)
+                        context.SetLineCounter(goodIdx);
+                    else
+                        context.SetLineCounter(badIdx);
                 }
             }
             else
@@ -293,6 +294,9 @@ namespace NAJ.ANSL
             {
                 json.Add("waitingForItem", waitingForItem);
                 json.Add("previousMode", (int)previousMode);
+                json.Add("goodIdx", goodIdx);
+                json.Add("badIdx", badIdx);
+                json.Add("anwsers", anwsers);
             }
         }
 
@@ -302,6 +306,12 @@ namespace NAJ.ANSL
                 waitingForItem = json.GetBool("waitingForItem");
             if (json.ContainsKey("previousMode"))
                 previousMode = (InventoryUI.InventoryMode)json.GetInt("previousMode");
+            if (json.ContainsKey("goodIdx"))
+                goodIdx = json.GetJNumber("goodIdx").AsUInt();
+            if (json.ContainsKey("badIdx"))
+                badIdx = json.GetJNumber("badIdx").AsUInt();
+            if (json.ContainsKey("anwsers"))
+                anwsers = json.GetJArray("anwsers").AsStringArray();
         }
 
 

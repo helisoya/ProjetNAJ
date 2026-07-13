@@ -52,21 +52,8 @@ namespace ANF.ANSL
                     continue;
                 }
 
-                if (currentNextLine.StartsWith("endblock"))
+                if (currentNextLine.Equals("endblock"))
                 {
-                    if (currentNextLine.Length != "endblock".Length)
-                    {
-                        // Unknown character
-                        errors.Add(new ANSLUtils.ANSLError()
-                        {
-                            type = ANSLUtils.ANSLErrorType.ERROR,
-                            filePath = compiler.GetSourceFilepath(),
-                            line = compiler.GetCurrentLineCounter(),
-                            errorMessage = $"Unknown character at the end of the line : {currentNextLine}."
-                        });
-                        return false;
-                    }
-
                     foundEnd = true;
                     canContinue = false;
                 }

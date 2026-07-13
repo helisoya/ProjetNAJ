@@ -74,7 +74,7 @@ namespace ANF.ANSL
                     continue;
                 }
 
-                if (currentNextLine.StartsWith("endswitch"))
+                if (currentNextLine.Equals("endswitch"))
                 {
                     if (currentNextLine.Length != "endswitch".Length)
                     {

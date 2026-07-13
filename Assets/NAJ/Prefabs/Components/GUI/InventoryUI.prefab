@@ -1750,7 +1750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703613a539944b249a819a0057c7b935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NAJ.GUI.InventoryUI
-  canBeSaved: 0
+  canBeSaved: 1
   enabledByDefault: 0
   root: {fileID: 8789518158234457186}
   hideRootWhenClosed: 0

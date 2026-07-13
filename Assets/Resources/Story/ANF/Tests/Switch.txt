@@ -1,15 +1,15 @@
-56|TestSwitch
-65|random|4|0|2|8|6|1|8|5|13
-22|Log|Is at 0
-20|15
-22|Log|Default
-20|15
-22|Log|Is 8
-20|15
-18|9|11|random == 1
-22|Error|Is at 1
-20|12
-20|12
-20|15
-22|Log|Is at 5
-20|15
+57|TestSwitch
+66|random|4|0|2|8|6|1|8|5|13
+23|Log|Is at 0
+21|15
+23|Log|Default
+21|15
+23|Log|Is 8
+21|15
+19|9|11|random == 1
+23|Error|Is at 1
+21|12
+21|12
+21|15
+23|Log|Is at 5
+21|15

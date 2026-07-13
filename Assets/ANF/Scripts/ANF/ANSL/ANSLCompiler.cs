@@ -424,6 +424,8 @@ namespace ANF.ANSL
                 cachedCurrentLineClean = cachedCurrentLine.Replace("\t", "");
                 while (cachedCurrentLineClean.StartsWith(" ") && cachedCurrentLineClean.Length > 0)
                     cachedCurrentLineClean = cachedCurrentLineClean.Substring(1);
+                while (cachedCurrentLineClean.EndsWith(" ") && cachedCurrentLineClean.Length > 0)
+                    cachedCurrentLineClean = cachedCurrentLineClean.Substring(0,cachedCurrentLine.Length-1);
 
                 if (cachedCurrentLineClean.StartsWith('#'))
                 {
@@ -446,6 +448,8 @@ namespace ANF.ANSL
             cachedCurrentLineClean = cachedCurrentLine.Replace("\t", "");
             while (cachedCurrentLineClean.StartsWith(" ") && cachedCurrentLineClean.Length > 0)
                 cachedCurrentLine = cachedCurrentLineClean.Substring(1);
+            while (cachedCurrentLineClean.EndsWith(" ") && cachedCurrentLineClean.Length > 0)
+                cachedCurrentLineClean = cachedCurrentLineClean.Substring(0, cachedCurrentLine.Length - 1);
         }
 
         /// <summary>

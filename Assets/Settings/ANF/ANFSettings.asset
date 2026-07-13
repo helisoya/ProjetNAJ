@@ -173,206 +173,209 @@ MonoBehaviour:
         - typeName: NAJ.ANSL.AskFunction
           id: 2
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveAllEvidenceFunction
+        - typeName: NAJ.ANSL.ExaminationFunction
           id: 3
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveAllProfileFunction
+        - typeName: NAJ.ANSL.RemoveAllEvidenceFunction
           id: 4
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveEvidenceFunction
+        - typeName: NAJ.ANSL.RemoveAllProfileFunction
           id: 5
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveProfileFunction
+        - typeName: NAJ.ANSL.RemoveEvidenceFunction
           id: 6
           enabled: 1
-        - typeName: ANF.ANSL.AddCharacterFunction
+        - typeName: NAJ.ANSL.RemoveProfileFunction
           id: 7
           enabled: 1
-        - typeName: ANF.ANSL.AddStaticFunction
+        - typeName: ANF.ANSL.AddCharacterFunction
           id: 8
           enabled: 1
-        - typeName: ANF.ANSL.AutoSaveFunction
+        - typeName: ANF.ANSL.AddStaticFunction
           id: 9
           enabled: 1
-        - typeName: ANF.ANSL.BlockFunction
+        - typeName: ANF.ANSL.AutoSaveFunction
           id: 10
           enabled: 1
-        - typeName: ANF.ANSL.ChoiceFunction
+        - typeName: ANF.ANSL.BlockFunction
           id: 11
           enabled: 1
-        - typeName: ANF.ANSL.ClearStack
+        - typeName: ANF.ANSL.ChoiceFunction
           id: 12
           enabled: 1
-        - typeName: ANF.ANSL.DialogFunction
+        - typeName: ANF.ANSL.ClearStack
           id: 13
           enabled: 1
-        - typeName: ANF.ANSL.FadeBgColorFunction
+        - typeName: ANF.ANSL.DialogFunction
           id: 14
           enabled: 1
-        - typeName: ANF.ANSL.FadeBgFunction
+        - typeName: ANF.ANSL.FadeBgColorFunction
           id: 15
           enabled: 1
-        - typeName: ANF.ANSL.FadeFgColorFunction
+        - typeName: ANF.ANSL.FadeBgFunction
           id: 16
           enabled: 1
-        - typeName: ANF.ANSL.FadeFgFunction
+        - typeName: ANF.ANSL.FadeFgColorFunction
           id: 17
           enabled: 1
-        - typeName: ANF.ANSL.IfFunction
+        - typeName: ANF.ANSL.FadeFgFunction
           id: 18
           enabled: 1
-        - typeName: ANF.ANSL.InteractionFunction
+        - typeName: ANF.ANSL.IfFunction
           id: 19
           enabled: 1
-        - typeName: ANF.ANSL.JumpToFunction
+        - typeName: ANF.ANSL.InteractionFunction
           id: 20
           enabled: 1
-        - typeName: ANF.ANSL.LoadScriptFunction
+        - typeName: ANF.ANSL.JumpToFunction
           id: 21
           enabled: 1
-        - typeName: ANF.ANSL.LogFunction
+        - typeName: ANF.ANSL.LoadScriptFunction
           id: 22
           enabled: 1
-        - typeName: ANF.ANSL.MapFunction
+        - typeName: ANF.ANSL.LogFunction
           id: 23
           enabled: 1
-        - typeName: ANF.ANSL.PauseContextFunction
+        - typeName: ANF.ANSL.MapFunction
           id: 24
           enabled: 1
-        - typeName: ANF.ANSL.PlayAmbientFunction
+        - typeName: ANF.ANSL.PauseContextFunction
           id: 25
           enabled: 1
-        - typeName: ANF.ANSL.PlayerNameFunction
+        - typeName: ANF.ANSL.PlayAmbientFunction
           id: 26
           enabled: 1
-        - typeName: ANF.ANSL.PlayMusicFunction
+        - typeName: ANF.ANSL.PlayerNameFunction
           id: 27
           enabled: 1
-        - typeName: ANF.ANSL.PlaySFXFunction
+        - typeName: ANF.ANSL.PlayMusicFunction
           id: 28
           enabled: 1
-        - typeName: ANF.ANSL.PlayVoiceFunction
+        - typeName: ANF.ANSL.PlaySFXFunction
           id: 29
           enabled: 1
-        - typeName: ANF.ANSL.RandomFunction
+        - typeName: ANF.ANSL.PlayVoiceFunction
           id: 30
           enabled: 1
-        - typeName: ANF.ANSL.RemoveCharacterFunction
+        - typeName: ANF.ANSL.RandomFunction
           id: 31
           enabled: 1
-        - typeName: ANF.ANSL.RemoveStaticFunction
+        - typeName: ANF.ANSL.RemoveCharacterFunction
           id: 32
           enabled: 1
-        - typeName: ANF.ANSL.ReturnFunction
+        - typeName: ANF.ANSL.RemoveStaticFunction
           id: 33
           enabled: 1
-        - typeName: ANF.ANSL.SetBackgroundFunction
+        - typeName: ANF.ANSL.ReturnFunction
           id: 34
           enabled: 1
-        - typeName: ANF.ANSL.SetBgColorFunction
+        - typeName: ANF.ANSL.SetBackgroundFunction
           id: 35
           enabled: 1
-        - typeName: ANF.ANSL.SetBgFunction
+        - typeName: ANF.ANSL.SetBgColorFunction
           id: 36
           enabled: 1
-        - typeName: ANF.ANSL.SetCameraPositionFunction
+        - typeName: ANF.ANSL.SetBgFunction
           id: 37
           enabled: 1
-        - typeName: ANF.ANSL.SetCameraRotationFunction
+        - typeName: ANF.ANSL.SetCameraPositionFunction
           id: 38
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterAlphaFunction
+        - typeName: ANF.ANSL.SetCameraRotationFunction
           id: 39
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterBodyFunction
+        - typeName: ANF.ANSL.SetCharacterAlphaFunction
           id: 40
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterBoolFunction
+        - typeName: ANF.ANSL.SetCharacterBodyFunction
           id: 41
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterEyeFunction
+        - typeName: ANF.ANSL.SetCharacterBoolFunction
           id: 42
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterFloatFunction
+        - typeName: ANF.ANSL.SetCharacterEyeFunction
           id: 43
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterIntFunction
+        - typeName: ANF.ANSL.SetCharacterFloatFunction
           id: 44
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterMouthFunction
+        - typeName: ANF.ANSL.SetCharacterIntFunction
           id: 45
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterPositionFunction
+        - typeName: ANF.ANSL.SetCharacterMouthFunction
           id: 46
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterRotationFunction
+        - typeName: ANF.ANSL.SetCharacterPositionFunction
           id: 47
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterTriggerFunction
+        - typeName: ANF.ANSL.SetCharacterRotationFunction
           id: 48
           enabled: 1
-        - typeName: ANF.ANSL.SetFgColorFunction
+        - typeName: ANF.ANSL.SetCharacterTriggerFunction
           id: 49
           enabled: 1
-        - typeName: ANF.ANSL.SetFgFunction
+        - typeName: ANF.ANSL.SetFgColorFunction
           id: 50
           enabled: 1
-        - typeName: ANF.ANSL.SetGamepadVibrationFunction
+        - typeName: ANF.ANSL.SetFgFunction
           id: 51
           enabled: 1
-        - typeName: ANF.ANSL.SetInteractionHiddenFunction
+        - typeName: ANF.ANSL.SetGamepadVibrationFunction
           id: 52
           enabled: 1
-        - typeName: ANF.ANSL.SetInteractionScriptFunction
+        - typeName: ANF.ANSL.SetInteractionHiddenFunction
           id: 53
           enabled: 1
-        - typeName: ANF.ANSL.SetLightDirectionFunction
+        - typeName: ANF.ANSL.SetInteractionScriptFunction
           id: 54
           enabled: 1
-        - typeName: ANF.ANSL.SetLocalsFunction
+        - typeName: ANF.ANSL.SetLightDirectionFunction
           id: 55
           enabled: 1
-        - typeName: ANF.ANSL.SetLocationFunction
+        - typeName: ANF.ANSL.SetLocalsFunction
           id: 56
           enabled: 1
-        - typeName: ANF.ANSL.SetSkyboxFunction
+        - typeName: ANF.ANSL.SetLocationFunction
           id: 57
           enabled: 1
-        - typeName: ANF.ANSL.SetStaticAlphaFunction
+        - typeName: ANF.ANSL.SetSkyboxFunction
           id: 58
           enabled: 1
-        - typeName: ANF.ANSL.SetStaticPositionFunction
+        - typeName: ANF.ANSL.SetStaticAlphaFunction
           id: 59
           enabled: 1
-        - typeName: ANF.ANSL.SetStaticRotationFunction
+        - typeName: ANF.ANSL.SetStaticPositionFunction
           id: 60
           enabled: 1
-        - typeName: ANF.ANSL.SetWeatherEffectFunction
+        - typeName: ANF.ANSL.SetStaticRotationFunction
           id: 61
           enabled: 1
-        - typeName: ANF.ANSL.ShowDialogWindowFunction
+        - typeName: ANF.ANSL.SetWeatherEffectFunction
           id: 62
           enabled: 1
-        - typeName: ANF.ANSL.ShowInputReminderFunction
+        - typeName: ANF.ANSL.ShowDialogWindowFunction
           id: 63
           enabled: 1
-        - typeName: ANF.ANSL.StopContextFunction
+        - typeName: ANF.ANSL.ShowInputReminderFunction
           id: 64
           enabled: 1
-        - typeName: ANF.ANSL.SwitchFunction
+        - typeName: ANF.ANSL.StopContextFunction
           id: 65
           enabled: 1
-        - typeName: ANF.ANSL.UnlockLogFunction
+        - typeName: ANF.ANSL.SwitchFunction
           id: 66
           enabled: 1
-        - typeName: ANF.ANSL.VariableFunction
+        - typeName: ANF.ANSL.UnlockLogFunction
           id: 67
           enabled: 1
-        - typeName: ANF.ANSL.waitForContextEndFunction
+        - typeName: ANF.ANSL.VariableFunction
           id: 68
           enabled: 1
-        - typeName: ANF.ANSL.WaitFunction
+        - typeName: ANF.ANSL.waitForContextEndFunction
           id: 69
+          enabled: 1
+        - typeName: ANF.ANSL.WaitFunction
+          id: 70
           enabled: 1
     - rid: 6964546988055199858
       type: {class: PlayerLocals, ns: ANF.Locals, asm: Assembly-CSharp}

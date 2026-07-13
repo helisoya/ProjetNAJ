@@ -83,7 +83,7 @@ namespace ANF.ANSL
                     continue;
                 }
 
-                if (currentNextLine.StartsWith("else"))
+                if (currentNextLine.Equals("else"))
                 {
                     if (!compilingTrues)
                     {
@@ -113,7 +113,7 @@ namespace ANF.ANSL
 
                     compilingTrues = false;
                 }
-                else if (currentNextLine.StartsWith("endif"))
+                else if (currentNextLine.Equals("endif"))
                 {
                     if (currentNextLine.Length != "endif".Length)
                     {

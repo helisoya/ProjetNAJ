@@ -80,19 +80,8 @@ namespace ANF.ANSL
                     continue;
                 }
 
-                if (currentNextLine.StartsWith("endchoice"))
+                if (currentNextLine.Equals("endchoice"))
                 {
-                    if (currentNextLine.Length != "endchoice".Length)
-                    {
-                        errors.Add(new ANSLUtils.ANSLError()
-                        {
-                            type = ANSLUtils.ANSLErrorType.ERROR,
-                            filePath = compiler.GetSourceFilepath(),
-                            line = compiler.GetCurrentLineCounter(),
-                            errorMessage = $"Unknown token after the endchoice : {currentNextLine}."
-                        });
-                        return false;
-                    }
 
                     foundEnd = true;
                     canContinue = false;
