@@ -2,6 +2,7 @@ using ANF.Utils;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using static ANF.Utils.ANSLUtils;
 
@@ -22,7 +23,7 @@ namespace ANF.ANSL
 
         private StreamWriter outStream;
         private List<string> inLines;
-        private Dictionary<string, KeyValuePair<ANSLFunction, uint>> functions;
+        private List<KeyValuePair<ANSLFunction, uint>> functions;
         private List<ANSLUtils.ANSLError> errors;
         private List<ANSLMacroData> macros;
 
@@ -33,7 +34,7 @@ namespace ANF.ANSL
         /// <returns>The function's id</returns>
         public uint GetRegisteredFunctionId<T>()
         {
-            foreach(KeyValuePair<ANSLFunction, uint> pair in functions.Values)
+            foreach (KeyValuePair<ANSLFunction, uint> pair in functions)
             {
                 if (pair.Key.GetType() == typeof(T))
                     return pair.Value;
@@ -50,7 +51,7 @@ namespace ANF.ANSL
         /// <returns>True if there was no errors</returns>
         public bool CompileANSLMacros(string sourceFile, List<ANSLUtils.ANSLError> errors)
         {
-            if(macros == null)
+            if (macros == null)
                 macros = new List<ANSLMacroData>();
 
             if (!File.Exists(sourceFile))
@@ -83,15 +84,15 @@ namespace ANF.ANSL
             string currentLine;
 
 
-            for(int i = 0; i < inLines.Length; i++)
+            for (int i = 0; i < inLines.Length; i++)
             {
                 currentLine = inLines[i];
                 if (currentLine.StartsWith('#') || string.IsNullOrEmpty(currentLine) || string.IsNullOrWhiteSpace(currentLine))
                     continue;
 
-                if(currentLine.StartsWith("Define "))
+                if (currentLine.StartsWith("Define "))
                 {
-                    if(macroData != null)
+                    if (macroData != null)
                     {
                         errors.Add(new ANSLError()
                         {
@@ -103,7 +104,7 @@ namespace ANF.ANSL
                         return false;
                     }
 
-                    currentLine = currentLine.Substring("Define ".Length).Replace(" ","").Replace("\t","");
+                    currentLine = currentLine.Substring("Define ".Length).Replace(" ", "").Replace("\t", "");
                     int idxStart = currentLine.IndexOf('(');
                     int idxEnd = currentLine.IndexOf(')');
 
@@ -119,7 +120,7 @@ namespace ANF.ANSL
                         });
                     }
 
-                    if(idxEnd != currentLine.Length-1)
+                    if (idxEnd != currentLine.Length - 1)
                     {
                         errors.Add(new ANSLError()
                         {
@@ -130,7 +131,7 @@ namespace ANF.ANSL
                         });
                     }
 
-                    if(idxStart == 0)
+                    if (idxStart == 0)
                     {
                         errors.Add(new ANSLError()
                         {
@@ -140,10 +141,10 @@ namespace ANF.ANSL
                             errorMessage = $"No Macro name detected"
                         });
                     }
-                    
+
                     macroData = new ANSLMacroData(currentLine.Substring(0, idxStart));
 
-                    if(idxStart +1 != idxEnd)
+                    if (idxStart + 1 != idxEnd)
                     {
                         string[] parameterSplit = currentLine.Substring(idxStart + 1, currentLine.Length - idxStart - 2).Split(';');
 
@@ -155,9 +156,9 @@ namespace ANF.ANSL
                         }
                     }
                 }
-                else if(currentLine.StartsWith("EndDefine"))
+                else if (currentLine.StartsWith("EndDefine"))
                 {
-                    if(macroData == null)
+                    if (macroData == null)
                     {
                         errors.Add(new ANSLError()
                         {
@@ -173,7 +174,7 @@ namespace ANF.ANSL
                 }
                 else
                 {
-                    if(macroData != null)
+                    if (macroData != null)
                     {
                         macroData.content.Add(currentLine);
                     }
@@ -191,7 +192,7 @@ namespace ANF.ANSL
                 }
             }
 
-            if(macroData != null)
+            if (macroData != null)
             {
                 errors.Add(new ANSLError()
                 {
@@ -213,7 +214,7 @@ namespace ANF.ANSL
         /// <param name="destinationFile">The destination file</param>
         /// <param name="functions">The function list</param>
         /// <param name="errors">The global error list</param>
-        public bool Compile(string sourceFile, string destinationFile, Dictionary<string, KeyValuePair<ANSLFunction, uint>> functions, List<ANSLUtils.ANSLError> errors)
+        public bool Compile(string sourceFile, string destinationFile, List<KeyValuePair<ANSLFunction, uint>> functions, List<ANSLUtils.ANSLError> errors)
         {
             sourceFilepath = sourceFile;
             this.errors = errors;
@@ -236,11 +237,11 @@ namespace ANF.ANSL
                 return false;
             }
 
-            for(int i = 0; i < inLines.Count;i++)
+            for (int i = 0; i < inLines.Count; i++)
             {
-                string line = inLines[i].Replace("\t", "").Replace(" ","");
+                string line = inLines[i].Replace("\t", "").Replace(" ", "");
 
-                if(!string.IsNullOrEmpty(line) && line.StartsWith(':'))
+                if (!string.IsNullOrEmpty(line) && line.StartsWith(':'))
                 {
                     line = line.Substring(1);
                     int startIdx = line.IndexOf('(');
@@ -258,15 +259,15 @@ namespace ANF.ANSL
                         return false;
                     }
 
-                    string name = line.Substring(0,startIdx);
+                    string name = line.Substring(0, startIdx);
 
                     foreach (ANSLMacroData macroData in macros)
                     {
-                        if(name.Equals(macroData.name))
+                        if (name.Equals(macroData.name))
                         {
                             string[] parameters = new string[] { };
 
-                            if(startIdx + 1 != endIdx)
+                            if (startIdx + 1 != endIdx)
                                 parameters = line.Substring(startIdx + 1, line.Length - startIdx - 2).Split(';');
 
                             if (macroData.parameters.Count != parameters.Length)
@@ -281,11 +282,11 @@ namespace ANF.ANSL
                                 return false;
                             }
                             int newLineIndex = i;
-                            foreach(string macroLine in macroData.content)
+                            foreach (string macroLine in macroData.content)
                             {
                                 string processedLine = new string(macroLine);
 
-                                for(int j = 0; j < parameters.Length;j++)
+                                for (int j = 0; j < parameters.Length; j++)
                                 {
                                     if (string.IsNullOrEmpty(macroData.parameters[j]))
                                         continue;
@@ -367,8 +368,10 @@ namespace ANF.ANSL
             if (!string.IsNullOrEmpty(line) && !string.IsNullOrWhiteSpace(line))
             {
                 bool found = false;
-                foreach (string body in functions.Keys)
+                foreach (KeyValuePair<ANSLFunction, uint> pair in functions)
                 {
+                    string body = pair.Key.GetType().GetCustomAttribute<ANSLFunctionAttribute>().functionBody;
+
                     if (string.IsNullOrEmpty(body)) // Skip undefined functions
                         continue;
 
@@ -377,7 +380,7 @@ namespace ANF.ANSL
                         found = true;
 
                         // Compile with this function
-                        if (functions[body].Key.Compile(out List<string> result, line, functions[body].Value, this, errors, outputLine))
+                        if (pair.Key.Compile(out List<string> result, line, pair.Value, this, errors, outputLine))
                         {
                             foreach (string compiledLine in result)
                             {
@@ -425,7 +428,7 @@ namespace ANF.ANSL
                 while (cachedCurrentLineClean.StartsWith(" ") && cachedCurrentLineClean.Length > 0)
                     cachedCurrentLineClean = cachedCurrentLineClean.Substring(1);
                 while (cachedCurrentLineClean.EndsWith(" ") && cachedCurrentLineClean.Length > 0)
-                    cachedCurrentLineClean = cachedCurrentLineClean.Substring(0,cachedCurrentLine.Length-1);
+                    cachedCurrentLineClean = cachedCurrentLineClean.Substring(0, cachedCurrentLine.Length - 1);
 
                 if (cachedCurrentLineClean.StartsWith('#'))
                 {
@@ -519,7 +522,7 @@ namespace ANF.ANSL
             inLines = null;
         }
     }
-    
+
     /// <summary>
     /// Represents the data of an ANSL macro
     /// </summary>

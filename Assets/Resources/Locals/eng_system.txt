@@ -123,7 +123,8 @@ InputReminder_Profiles = Profiles
 InputReminder_Evidence = Evidence
 InputReminder_Check = Check
 InputReminder_Present = Present
+InputReminder_Press = Press
 
 SettingsMenu_Inputs_Inventory = Inventory
 SettingsMenu_Inputs_InventorySwitch = Switch (Inventory)
-SettingsMenu_Inputs_InventoryPresent = Present (Inventory)
+SettingsMenu_Inputs_InventoryPresent = Present Evidence/Press

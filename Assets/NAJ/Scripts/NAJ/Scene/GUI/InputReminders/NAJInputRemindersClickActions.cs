@@ -80,5 +80,23 @@ namespace NAJ.GUI
         {
         }
     }
+
+    /// <summary>
+    /// Input Reminder Action for pressing on a statement
+    /// </summary>
+    [System.Serializable]
+    public class NAJExaminationPressAction : InputReminderAction
+    {
+        public override void OnDown(ANFManager manager)
+        {
+            if (manager.GetGUIManager().GetComponent(out ExaminationUI examinationUI) &&
+                examinationUI.isEnabled && !examinationUI.isPaused)
+                examinationUI.TryPress();
+        }
+
+        public override void OnUp(ANFManager manager)
+        {
+        }
+    }
 }
 

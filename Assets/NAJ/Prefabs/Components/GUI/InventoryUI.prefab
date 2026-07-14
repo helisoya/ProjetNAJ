@@ -1758,7 +1758,6 @@ MonoBehaviour:
   guiToPauseOnEnable:
   - fadeBg
   - fadeFg
-  - ANF.GUI.DialogUI
   - ANF.GUI.ChoiceUI
   - ANF.GUI.MapUI
   bgTransform: {fileID: 7774984039670982492}
@@ -1781,6 +1780,7 @@ MonoBehaviour:
   - autoplay
   - skipMode
   - inventory
+  - press
   checkGroup: {fileID: 7541645160196183}
   checkImage: {fileID: 3632330610854831030}
   checkLeft: {fileID: 337295671106804882}

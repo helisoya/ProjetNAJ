@@ -123,7 +123,8 @@ InputReminder_Profiles = Profiles
 InputReminder_Evidence = Preuves
 InputReminder_Check = Examiner
 InputReminder_Present = Présenter
+InputReminder_Press = Presser
 
 SettingsMenu_Inputs_Inventory = Inventaire
 SettingsMenu_Inputs_InventorySwitch = Basculer (Inventaire)
-SettingsMenu_Inputs_InventoryPresent = Présenter (Inventaire)
+SettingsMenu_Inputs_InventoryPresent = Présenter Preuve/Presser

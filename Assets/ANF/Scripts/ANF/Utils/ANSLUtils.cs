@@ -268,13 +268,14 @@ namespace ANF.Utils
 
             if (CheckANSLFunctions(functions, errors))
             {
-                Dictionary<string, KeyValuePair<ANSLFunction, uint>> functionInstances = new Dictionary<string, KeyValuePair<ANSLFunction, uint>>();
+                List<KeyValuePair<ANSLFunction, uint>> functionInstances = new List<KeyValuePair<ANSLFunction, uint>>();
                 foreach (KeyValuePair<Type, uint> type in functions)
                 {
                     ANSLFunctionAttribute attribute = type.Key.GetCustomAttribute<ANSLFunctionAttribute>();
                     if (attribute != null)
                     {
-                        functionInstances.Add(attribute.functionBody, new KeyValuePair<ANSLFunction, uint>((ANSLFunction)type.Key.Instantiate(), type.Value));
+                        functionInstances.Add(new KeyValuePair<ANSLFunction, uint>((ANSLFunction)type.Key.Instantiate(), type.Value));
+
                     }
                 }
 

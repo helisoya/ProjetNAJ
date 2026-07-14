@@ -157,6 +157,14 @@ namespace NAJ.GUI
         }
 
         /// <summary>
+		/// Clears the currently selected item
+		/// </summary>
+        public void ClearSelectedItem()
+        {
+            selectedItem = null;
+        }
+
+        /// <summary>
 		/// Tries to toggles the menu if possible
 		/// </summary>
 		/// <param name="enabled">True if the menu should be enabled</param>
@@ -223,6 +231,7 @@ namespace NAJ.GUI
                 inCheckMode = false;
                 checkGroup.alpha = 0.0f;
                 checkGroup.blocksRaycasts = false;
+                selectedItem = null;
 
                 evidenceRoot.anchoredPosition = new Vector2(0.0f, inEvidenceMode ? 40.0f : 110.0f);
                 profilesRoot.anchoredPosition = new Vector2(0.0f, inEvidenceMode ? -30.0f : 40.0f);

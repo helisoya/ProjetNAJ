@@ -1,0 +1,96 @@
+setLocals(testNAJ)
+setLocation(TestCrossExamination)
+
+addEvidence(TestEvidence1)
+addEvidence(TestEvidence2)
+addEvidence(TestEvidence3)
+addEvidence(TestEvidence4)
+addEvidence(TestEvidence5)
+addEvidence(TestEvidence6)
+addEvidence(TestEvidence7)
+addEvidence(TestEvidence8)
+addEvidence(TestEvidence9)
+
+addProfile(TestProfile1)
+addProfile(TestProfile2)
+addProfile(TestProfile3)
+addProfile(TestProfile4)
+addProfile(TestProfile5)
+addProfile(TestProfile6)
+addProfile(TestProfile7)
+addProfile(TestProfile8)
+addProfile(TestProfile9)
+
+dialog(null;null;Test_Examination_1)
+
+examination
+part 1 press
+dialog(null;null;Test_Examination_2;false;true)
+press 1
+dialog(null;null;Test_Examination_3)
+
+part 2 press
+dialog(null;null;Test_Examination_4;false;true)
+press 2
+dialog(null;null;Test_Examination_5)
+
+loop
+dialog(null;null;Test_Examination_6)
+
+fail
+dialog(null;null;Test_Examination_7)
+endexamination
+
+dialog(null;null;Test_Examination_8)
+dialog(null;null;Test_Examination_9)
+
+clearExaminationData()
+
+examination
+part 1
+dialog(null;null;Test_Examination_10;false;true)
+press 1
+dialog(null;null;Test_Examination_11)
+
+part 2 present Evidence/TestEvidence2
+dialog(null;null;Test_Examination_12;false;true)
+press 2
+dialog(null;null;Test_Examination_13)
+
+loop
+dialog(null;null;Test_Examination_14)
+
+fail
+dialog(null;null;Test_Examination_15)
+endexamination
+
+dialog(null;null;Test_Examination_16)
+dialog(null;null;Test_Examination_17)
+
+clearExaminationData()
+
+examination
+part 1
+dialog(null;null;Test_Examination_18;false;true)
+press 1
+dialog(null;null;Test_Examination_19)
+
+part 2
+dialog(null;null;Test_Examination_20;false;true)
+press 2
+dialog(null;null;Test_Examination_21)
+
+part 3
+dialog(null;null;Test_Examination_22;false;true)
+press 3
+dialog(null;null;Test_Examination_23)
+setExaminationPart(4)
+load(CrossExamination2)
+return()
+
+loop
+dialog(null;null;Test_Examination_26)
+
+fail
+dialog(null;null;Test_Examination_27)
+endexamination

@@ -13,3 +13,35 @@ Test_Inventory_6 = Give Evidence 8
 Test_Inventory_7 = Give Profile 7
 Test_Inventory_8 = Clearing Evidence
 Test_Inventory_9 = Clearing Profiles
+
+Test_Examination_1 = Testing Statement Pressing (Press all to win)
+
+Test_Examination_2 = Press me !
+Test_Examination_3 = Yay.
+Test_Examination_4 = Press me to win !
+Test_Examination_5 = Yipee.
+Test_Examination_6 = Maybe I should... press.
+Test_Examination_7 = How did you even manage to fail this ?
+Test_Examination_8 = Victory.
+
+Test_Examination_9 = Testing Presenting Evidence (Present Evidence 2)
+Test_Examination_10 = I like turtles.
+Test_Examination_11 = Yes.
+Test_Examination_12 = Evidence 2 doesn't exist !
+Test_Examination_13 = I swear.
+Test_Examination_14 = Maybe I should... present Evidence 2 on statement 2.
+Test_Examination_15 = Nope.
+Test_Examination_16 = Victory yet again.
+
+Test_Examination_17 = Testing Additional Statements (Press Statement 3 & Present Profile 5)
+Test_Examination_18 = Nothing to say.
+Test_Examination_19 = Yep.
+Test_Examination_20 = I aknowledge that evidence 2 is a thing.
+Test_Examination_21 = For real this time.
+Test_Examination_22 = But...
+Test_Examination_23 = Maybe Profile 5 is a lie after all.
+Test_Examination_24 = Profile 5 doesn't exist.
+Test_Examination_25 = Yeah.
+Test_Examination_26 = Hmm... Fascinating...
+Test_Examination_27 = Nope.
+Test_Examination_28 = GUH !

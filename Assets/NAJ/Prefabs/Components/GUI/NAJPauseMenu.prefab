@@ -209,6 +209,7 @@ MonoBehaviour:
   - ANF.GUI.MapUI
   - ANF.GUI.InputReminderUI
   - NAJ.GUI.InventoryUI
+  - NAJ.GUI.ExaminationUI
   mainMenuMode: 0
   transitionDuration: 0.5
   buttonsRoot: {fileID: 2752175258711624528}

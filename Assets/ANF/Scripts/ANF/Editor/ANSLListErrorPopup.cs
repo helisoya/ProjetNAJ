@@ -58,14 +58,14 @@ namespace ANF.Editor
                     GUILayout.Label(data[i].type.ToString(), options);
                     if (data[i].type == ANSLUtils.ANSLErrorType.FUNCTION)
                     {
-                        GUILayout.Label(data[i].filePath, options);
+                        GUILayout.Label(data[i].filePath, EditorStyles.wordWrappedLabel, options);
                     }
                     else
                     {
-                        GUILayout.Label($"{data[i].filePath}, {data[i].line}", options);
+                        GUILayout.Label($"{data[i].filePath}, {data[i].line}", EditorStyles.wordWrappedLabel, options);
                     }
 
-                    GUILayout.Label(data[i].errorMessage, options);
+                    GUILayout.Label(data[i].errorMessage, EditorStyles.wordWrappedLabel, options);
                     GUILayout.EndHorizontal();
                 }
                 GUILayout.EndScrollView();

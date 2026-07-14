@@ -1,0 +1,29 @@
+examination
+part 1
+dialog(null;null;Test_Examination_18;false;true)
+press 1
+dialog(null;null;Test_Examination_19)
+
+part 2
+dialog(null;null;Test_Examination_20;false;true)
+press 2
+dialog(null;null;Test_Examination_21)
+
+part 3
+dialog(null;null;Test_Examination_22;false;true)
+press 3
+dialog(null;null;Test_Examination_23)
+
+part 4 present Profile/TestProfile5
+dialog(null;null;Test_Examination_24;false;true)
+press 4
+dialog(null;null;Test_Examination_25)
+
+loop
+dialog(null;null;Test_Examination_26)
+
+fail
+dialog(null;null;Test_Examination_27)
+endexamination
+
+dialog(null;null;Test_Examination_28)

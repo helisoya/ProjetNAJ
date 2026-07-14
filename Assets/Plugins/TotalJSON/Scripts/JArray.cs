@@ -1087,6 +1087,33 @@ namespace Leguar.TotalJSON
         }
 
         /// <summary>
+        /// Get this array as uint array. All the values in this array must be numbers inside uint range.
+        /// </summary>
+        /// <returns>
+        /// Array of uints.
+        /// </returns>
+        /// <exception cref="JValueTypeException">
+        /// If any value in array is other than number.
+        /// </exception>
+        public uint[] AsUIntArray()
+        {
+            int count = values.Count;
+            uint[] array = new uint[count];
+            for (int n = 0; n < count; n++)
+            {
+                if (values[n] is JNumber)
+                {
+                    array[n] = ((JNumber)(values[n])).AsUInt();
+                }
+                else
+                {
+                    throw (new JValueTypeException(n, values[n], "JNumber"));
+                }
+            }
+            return array;
+        }
+
+        /// <summary>
         /// Get this array as string array. All the values in this array must be strings or nulls.
         /// </summary>
         /// <returns>
