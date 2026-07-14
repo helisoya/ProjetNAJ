@@ -1,43 +1,43 @@
-62|TestIf
-24|2|4|var == 1 & (var2 == 2)
-28|Log|True1
-26|5
-26|5
-75|0.1
-24|7|9|var == 1 & var2 == 2
-28|Log|True2
-26|11
-28|Log|False2
-26|11
-75|0.1
-24|13|16|var == 1 & var2 == 2
-28|Log|True3
-28|Warning|True3
-26|18
-28|Log|False3
-26|18
-75|0.1
-24|20|21|var == 1 & var2 == 2
-26|23
-28|Log|False4
-26|23
-75|0.1
-24|25|26|var == 1 & var2 == 2
-26|27
-26|27
-75|0.1
-24|29|35|var == 1 & var2 == 2
-24|30|32|var4 = 2
-28|Log|True5
-26|34
-28|Warning|True5
-26|34
-26|43
-28|Error|False5
-24|37|39|var4 = 5
-28|Log|False5
-26|41
-28|Warning|False5
-26|41
-28|Log|False5
-26|43
+64|TestIf
+26|2|4|var == 1 & (var2 == 2)
+30|Log|True1
+28|5
+28|5
+77|0.1
+26|7|9|var == 1 & var2 == 2
+30|Log|True2
+28|11
+30|Log|False2
+28|11
+77|0.1
+26|13|16|var == 1 & var2 == 2
+30|Log|True3
+30|Warning|True3
+28|18
+30|Log|False3
+28|18
+77|0.1
+26|20|21|var == 1 & var2 == 2
+28|23
+30|Log|False4
+28|23
+77|0.1
+26|25|26|var == 1 & var2 == 2
+28|27
+28|27
+77|0.1
+26|29|35|var == 1 & var2 == 2
+26|30|32|var4 = 2
+30|Log|True5
+28|34
+30|Warning|True5
+28|34
+28|43
+30|Error|False5
+26|37|39|var4 = 5
+30|Log|False5
+28|41
+30|Warning|False5
+28|41
+30|Log|False5
+28|43

@@ -41,6 +41,8 @@ MonoBehaviour:
   - id: fadeBg
     data: {fileID: 1331905330795673416, guid: 0ad70345a8ff7dd468003a14eec462be, type: 3}
   - id: 
+    data: {fileID: 4819362235645791672, guid: 3132377f1733fd64ea1ea0e37f233582, type: 3}
+  - id: 
     data: {fileID: 5724826130367448010, guid: 022905ec658687a479fc48d91f16fa39, type: 3}
   - id: 
     data: {fileID: 6844632179404603474, guid: d732c073e0f794a4ab38f63bc1a57be0, type: 3}
@@ -88,7 +90,7 @@ MonoBehaviour:
         enabledByDefault: 1
         fadeAllName: fadeAll
         startInDebugMode: 1
-        debugModeScript: /NAJ/Tests/CrossExamination
+        debugModeScript: /NAJ/Tests/EvidenceInfo
         autoLoadSaveFile: 0
         saveFileToAutoLoad: autosave
     - rid: 3436799676236169305
