@@ -219,7 +219,7 @@ MonoBehaviour:
   canBeSaved: 1
   enabledByDefault: 0
   root: {fileID: 7410221658803160573}
-  hideRootWhenClosed: 1
+  hideRootWhenClosed: 0
   lockComponents: []
   canvasGroup: {fileID: 7212553144297091597}
   leftArrow: {fileID: 2464544902750487833}
@@ -227,6 +227,18 @@ MonoBehaviour:
   iconsRoot: {fileID: 1245802086304525528}
   prefabIcon: {fileID: 832634123774320076, guid: 9982a3619a103fa49ade37cc7d8dd826, type: 3}
   transitionDuration: 0.5
+  onPressPart:
+    m_PersistentCalls:
+      m_Calls: []
+  onGoLeft:
+    m_PersistentCalls:
+      m_Calls: []
+  onGoRight:
+    m_PersistentCalls:
+      m_Calls: []
+  onChangePart:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7842603789220228237
 GameObject:
   m_ObjectHideFlags: 0

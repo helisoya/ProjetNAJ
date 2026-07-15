@@ -49,6 +49,8 @@ MonoBehaviour:
   - id: 
     data: {fileID: 237637143809057935, guid: 6cf9e0c16fec62f4d9fca3a93dc77fe6, type: 3}
   - id: 
+    data: {fileID: 2868892919424814067, guid: 699f3d6f850bf21438a4c3235dc549bc, type: 3}
+  - id: 
     data: {fileID: 7502116054405208522, guid: e70c0214d98967445badb02e7039cadc, type: 3}
   - id: 
     data: {fileID: 5926109112217851707, guid: d7705a57bee67754ebb525fa542c0f56, type: 3}
@@ -88,9 +90,8 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        fadeAllName: fadeAll
         startInDebugMode: 1
-        debugModeScript: /NAJ/Tests/EvidenceInfo
+        debugModeScript: /NAJ/Tests/CrossExamination
         autoLoadSaveFile: 0
         saveFileToAutoLoad: autosave
     - rid: 3436799676236169305

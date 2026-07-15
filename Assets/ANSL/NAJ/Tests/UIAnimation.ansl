@@ -1,0 +1,12 @@
+setLocals(testNAJ)
+setLocation(TestUIAnimations)
+
+dialog(null;null;Test_UIAnimation_1)
+
+playUIAnimation(TestAnimation;true)
+
+dialog(null;null;Test_UIAnimation_2)
+
+playUIAnimation(TestAnimation;false)
+
+dialog(null;null;Test_UIAnimation_3)

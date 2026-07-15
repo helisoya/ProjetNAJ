@@ -81,6 +81,7 @@ namespace NAJ.ANSL
 
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPress;
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
+                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
 
                 if (manager.GetGUIManager().GetComponent(out InputReminderUI inputReminderUI))
                     inputReminderUI.SetReminderEnabled("press", true);
@@ -124,6 +125,13 @@ namespace NAJ.ANSL
                 OnPress();
         }
 
+        private void OnNext(InputAction.CallbackContext context)
+        {
+            if (context.ReadValueAsButton() && inProgress && !inventoryUI.isEnabled && inventoryUI.selectedItem == null
+                && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
+                OnGoRight();
+        }
+
         private void OnMove(InputAction.CallbackContext context)
         {
             if (inProgress && !inventoryUI.isEnabled
@@ -160,6 +168,7 @@ namespace NAJ.ANSL
 
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPress;
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
+                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
             }
 
             if (detectedPress)
@@ -255,6 +264,7 @@ namespace NAJ.ANSL
 
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed -= OnPress;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnNext;
 
             examinationUI = null;
             inventoryUI = null;

@@ -1760,6 +1760,7 @@ MonoBehaviour:
   - fadeFg
   - ANF.GUI.ChoiceUI
   - ANF.GUI.MapUI
+  - NAJ.GUI.AnimationUI
   bgTransform: {fileID: 7774984039670982492}
   canvasGroup: {fileID: 5952862131520930980}
   transitionDuration: 0.5

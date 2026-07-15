@@ -1,18 +1,10 @@
-using System.Collections.Generic;
 using ANF.GUI;
 using ANF.Locals;
 using ANF.Persistent;
-using ANF.Scene;
-using ANF.Utils;
 using DG.Tweening;
 using Leguar.TotalJSON;
-using NAJ.ANSL;
 using NAJ.Persistent;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 

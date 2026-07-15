@@ -50,3 +50,7 @@ Test_EvidenceInfo_1 = Here's evidence 1.
 Test_EvidenceInfo_2 = Here's evidence 2.
 Test_EvidenceInfo_3 = Here's evidence 3.
 Test_EvidenceInfo_4 = No more evidence to show.
+
+Test_UIAnimation_1 = Test Start
+Test_UIAnimation_2 = Wow.
+Test_UIAnimation_3 = Not waiting for end.

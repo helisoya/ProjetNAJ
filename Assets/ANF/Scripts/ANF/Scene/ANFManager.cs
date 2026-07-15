@@ -12,12 +12,24 @@ namespace ANF.Scene
     /// </summary>
     public class ANFManager : MonoBehaviour, Jsonable
     {
+        /// <summary>
+        /// Represents the load state for the scene
+        /// </summary>
+        private enum LoadState
+        {
+            WaitingForCleanUp,
+            Loaded
+        }
+
         [Header("General")]
         [SerializeField] private RectTransform uiRoot;
         [SerializeField] private ANFSceneData sceneData;
 
         private bool isChangingScene = false;
         private string nextSceneToLoad = null;
+
+        private LoadState currentLoadState;
+        private AsyncOperation cleanupOperation;
 
         private World world;
         private GUIManager guiManager;
@@ -42,6 +54,20 @@ namespace ANF.Scene
 
         void Update()
         {
+            if(currentLoadState == LoadState.WaitingForCleanUp)
+            {
+                if (!cleanupOperation.isDone)
+                    return;
+
+                currentLoadState = LoadState.Loaded;
+                OnStartComponents();
+
+                if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
+                {
+                    fade.FadeAlphaTo(0);
+                }
+            }
+
             if (isChangingScene)
             {
                 if (sceneData.changeSceneUseFading &&
@@ -64,7 +90,14 @@ namespace ANF.Scene
         void Start()
         {
             InitializeComponents();
-            OnStartComponents();
+
+            if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
+            {
+                fade.FadeAlphaTo(1, true);
+            }
+
+            cleanupOperation = Resources.UnloadUnusedAssets();
+            currentLoadState = LoadState.WaitingForCleanUp;
         }
 
         /// <summary>

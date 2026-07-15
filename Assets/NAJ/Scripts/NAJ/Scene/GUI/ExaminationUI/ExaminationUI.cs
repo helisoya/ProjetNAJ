@@ -43,9 +43,6 @@ namespace NAJ.GUI
         public UnityEvent onGoRight;
         public UnityEvent<uint> onChangePart;
 
-        private AudioManager audioManager;
-
-
         public override void OnInitialize()
         {
             onPressPart = new UnityEvent();
@@ -81,7 +78,7 @@ namespace NAJ.GUI
 
         public override void OnStart()
         {
-            PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
         }
 
         public override void OnUpdate()
