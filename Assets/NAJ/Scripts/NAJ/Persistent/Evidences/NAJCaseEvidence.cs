@@ -30,7 +30,7 @@ namespace NAJ.Persistent
         /// <returns>The evidence's description key</returns>
         public string GetDescKey()
         {
-            return $"Evidence_{id}_Name";
+            return $"Evidence_{id}_Desc";
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace NAJ.Persistent
         /// <returns>The profile's description key</returns>
         public string GetDescKey()
         {
-            return $"Profile_{id}_Name";
+            return $"Profile_{id}_Desc";
         }
 
         /// <summary>
@@ -154,7 +154,7 @@ namespace NAJ.Persistent
             if (sprites == null || sprites.Length == 0)
                 return null;
 
-            foreach(Sprite sprite in sprites)
+            foreach (Sprite sprite in sprites)
             {
                 if (sprite.name.Equals(iconKey))
                     return sprite;

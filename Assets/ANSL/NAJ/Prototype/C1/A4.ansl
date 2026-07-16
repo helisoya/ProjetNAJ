@@ -1,0 +1,16 @@
+setCharacterAlpha(Sherif;0;0.5;true)
+setCharacterPosition(Sherif;Front)
+setCharacterAlpha(Sherif;1;0.5;false)
+
+dialog(Prototype_Rann;null;Prototype_A_31)
+
+setCharacterRotation(Sherif;0;180;0;0.5;false)
+
+addProfile(C1_Sherif)
+
+dialog(Prototype_Sherif;Sherif;Prototype_A_32)
+
+setFg(1)
+wait(1)
+
+load(B)

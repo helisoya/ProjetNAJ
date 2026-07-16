@@ -1,0 +1,13 @@
+dialog(Prototype_Sartt;Sartt;Prototype_A_27)
+dialog(Prototype_Rann;null;Prototype_A_28)
+dialog(Prototype_Rann;null;Prototype_A_29)
+dialog(Prototype_Rann;null;Prototype_A_30)
+
+addCharacter(Sherif;true;SherifSpot)
+setCharacterAlpha(Sherif;1;0.5;false)
+
+setInteractionHidden(Exit;true)
+setInteractionHidden(Sartt;true)
+setInteractionScript(Sherif;A4)
+
+interaction()

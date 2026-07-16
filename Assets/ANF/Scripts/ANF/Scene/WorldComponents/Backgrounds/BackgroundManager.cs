@@ -39,7 +39,7 @@ namespace ANF.Scene
         private LerpInstanceFloat lerpSkybox;
 
         private AsyncOperation currentOperation;
-        private bool asyncWaitForNextFrame = false;
+        private int asyncWaitForNextFrames = 0;
         private string cachedNextBackgroundID;
         public bool loadingBackground { get; private set; }
         public bool unloadingBackground { get; private set; }
@@ -208,7 +208,7 @@ namespace ANF.Scene
                 currentOperation = LoadBackground(cachedNextBackgroundID);
 
                 loadingBackground = backgroundType == BackgroundType.Scene || (asyncLoading && !forceSync);
-                asyncWaitForNextFrame = loadingBackground;
+                asyncWaitForNextFrames = loadingBackground ? 2 : 0;
 
                 if (!loadingBackground)
                     EndBackgroundLoading();
@@ -383,9 +383,9 @@ namespace ANF.Scene
                 if (currentOperation != null && !currentOperation.isDone)
                     return;
 
-                if (asyncWaitForNextFrame)
+                if (asyncWaitForNextFrames > 0)
                 {
-                    asyncWaitForNextFrame = false;
+                    asyncWaitForNextFrames--;
                     return;
                 }
 

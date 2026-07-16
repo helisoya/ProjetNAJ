@@ -80,10 +80,24 @@ namespace ANF.Scene
             if (objects.ContainsKey(name))
             {
                 objects[name].Remove(manager);
+                Object.Destroy(objects[name].gameObject);
                 objects.Remove(name);
                 return true;
             }
             return false;
+        }
+
+        /// <summary>
+		/// Removes all scene objects from the database
+		/// </summary>
+        public void RemoveAllSceneObjects()
+        {
+            foreach (string name in objects.Keys)
+            {
+                objects[name].Remove(manager);
+                Object.Destroy(objects[name].gameObject);
+            }
+            objects.Clear();
         }
 
         /// <summary>

@@ -7,7 +7,7 @@ namespace ANF.ANSL
     /// The Set Background function can be used to change the current background
     /// </summary>
     [ANSLFunctionAttribute(
-        
+
         functionBody: "setBackground",
         functionAutoComplete: new string[] {
             "setBackground(Background)",
@@ -57,7 +57,7 @@ namespace ANF.ANSL
             if (backgroundManager == null)
                 manager.GetWorld().GetComponent<BackgroundManager>(out backgroundManager);
 
-            if (backgroundManager != null && (backgroundManager.loadingBackground || backgroundManager.loadingBackground))
+            if (backgroundManager != null && (backgroundManager.unloadingBackground || backgroundManager.loadingBackground))
                 return;
 
             waitingForLoading = false;

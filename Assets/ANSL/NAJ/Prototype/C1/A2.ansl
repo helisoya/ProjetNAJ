@@ -1,0 +1,13 @@
+fadeFg(1;true)
+
+setBackground(CrashSite)
+
+addCharacter(Sartt;false;SarttSpot)
+
+fadeFg(0;false)
+
+
+setInteractionHidden(Exit;true)
+setInteractionScript(Sartt;A3)
+
+interaction()

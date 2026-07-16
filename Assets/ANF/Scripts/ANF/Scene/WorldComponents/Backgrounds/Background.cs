@@ -131,6 +131,10 @@ namespace ANF.Scene
                     interactionMode.Register(interactableObject);
                 }
             }
+
+            Camera[] cameras = transform.GetComponentsInChildren<Camera>();
+            foreach (Camera cam in cameras)
+                cam.gameObject.SetActive(false);
         }
 
         public void OnRemove(ANFManager manager)

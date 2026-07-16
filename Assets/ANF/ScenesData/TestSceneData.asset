@@ -82,9 +82,8 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        fadeAllName: fadeAll
         startInDebugMode: 1
-        debugModeScript: /ANF/Tests/Switch
+        debugModeScript: /ANF/Tests/Interaction
         autoLoadSaveFile: 0
         saveFileToAutoLoad: autosave
     - rid: 3436799676236169305

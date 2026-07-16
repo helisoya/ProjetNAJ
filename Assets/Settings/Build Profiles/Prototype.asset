@@ -24,6 +24,12 @@ MonoBehaviour:
     m_path: Assets/NAJ/Scenes/NAJMainMenu.unity
   - m_enabled: 1
     m_path: Assets/NAJ/Scenes/NAJGame.unity
+  - m_enabled: 1
+    m_path: Assets/NAJ/Scenes/Backgrounds/Prototype/Boat.unity
+  - m_enabled: 1
+    m_path: Assets/NAJ/Scenes/Backgrounds/Prototype/Beach.unity
+  - m_enabled: 1
+    m_path: Assets/NAJ/Scenes/Backgrounds/Prototype/CrashSite.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

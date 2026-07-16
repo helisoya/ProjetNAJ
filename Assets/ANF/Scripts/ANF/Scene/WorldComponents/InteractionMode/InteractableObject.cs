@@ -37,7 +37,7 @@ namespace ANF.Scene
 		/// <returns>Its approximate visual position</returns>
         public Vector3 GetApproximateVisualPosition()
         {
-            return interactionCollider.bounds.center;
+            return interactionCollider.transform.position + interactionCollider.transform.rotation * interactionCollider.bounds.center;
         }
 
         /// <summary>

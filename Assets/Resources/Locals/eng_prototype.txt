@@ -13,44 +13,44 @@ Prototype_Sartt = Captain
 # -------------------- Evidence ---------------------------
 # ---------------------------------------------------------
 
-Evidence_C1_Herbarium_name = Herbarium
-Evidence_C1_Herbarium_desc = My book. Nobody knows about its existence. I horribly miswrote my name as "Patotaa".
+Evidence_C1_Herbarium_Name = Herbarium
+Evidence_C1_Herbarium_Desc = My book. Nobody knows about its existence. I horribly miswrote my name as "Patotaa".
 
-Evidence_C1_Coat_name = Coat
-Evidence_C1_Coat_desc = My coat. Is torn and wet from the crash.
+Evidence_C1_Coat_Name = Coat
+Evidence_C1_Coat_Desc = My coat. Is torn and wet from the crash.
 
-Evidence_C1_Injury_name = Leg Injury
-Evidence_C1_Injury_desc = I am injured and cannot run.
+Evidence_C1_Injury_Name = Leg Injury
+Evidence_C1_Injury_Desc = I am injured and cannot run.
 
-Evidence_C1_Knife_name = Knife
-Evidence_C1_Knife_desc = Murder Weapon. Bear my prints on the blade, and unknown ones on the handle.
+Evidence_C1_Knife_Name = Knife
+Evidence_C1_Knife_Desc = Murder Weapon. Bear my prints on the blade, and unknown ones on the handle.
 
-Evidence_C1_AutopsyReport_name = Autopsy Report
-Evidence_C1_AutopsyReport_desc = Cause of death : Direct hit to the heart.
+Evidence_C1_AutopsyReport_Name = Autopsy Report
+Evidence_C1_AutopsyReport_Desc = Cause of death : Direct hit to the heart.
 
-Evidence_C1_DebtReport_name = Debt Report
-Evidence_C1_DebtReport_desc = Says "Yeah, I owe lots of lettuce to the captain".
+Evidence_C1_DebtReport_Name = Debt Report
+Evidence_C1_DebtReport_Desc = Says "Yeah, I owe lots of lettuce to the captain".
 
-Evidence_C1_DeathMessage_name = Death Message
-Evidence_C1_DeathMessage_desc = "Patotaa" written in the captain's blood.
+Evidence_C1_DeathMessage_Name = Death Message
+Evidence_C1_DeathMessage_Desc = "Patotaa" written in the captain's blood.
 
-Profile_C1_Rann_name = Mr.Potato
-Profile_C1_Rann_desc = Yeah, I'm a turtle.
+Profile_C1_Rann_Name = Mr.Potato
+Profile_C1_Rann_Desc = Yeah, I'm a turtle.
 
-Profile_C1_Sartt_name = Captain
-Profile_C1_Sartt_desc = Very Nice individual.
+Profile_C1_Sartt_Name = Captain
+Profile_C1_Sartt_Desc = Very Nice individual.
 
-Profile_C1_Gerald_name = Dude
-Profile_C1_Gerald_desc = Yeah, he's dude. He saw my secret herbarium though...
+Profile_C1_Gerald_Name = Dude
+Profile_C1_Gerald_Desc = Yeah, he's dude. He saw my secret herbarium though...
 
-Profile_C1_Judge_name = Judge
-Profile_C1_Judge_desc = I can't believe this is going to get out BEFORE Ace JMIN !
+Profile_C1_Judge_Name = Judge
+Profile_C1_Judge_Desc = I can't believe this is going to get out BEFORE Ace JMIN !
 
-Profile_C1_Sherif_name = Blue Badger
-Profile_C1_Sherif_desc = No one knows how he got here.
+Profile_C1_Sherif_Name = Blue Badger
+Profile_C1_Sherif_Desc = No one knows how he got here.
 
-Profile_C1_Juno_name = Witness
-Profile_C1_Juno_desc = I think witness see things and they are payed to say stuff. Or maybe not. Idk...
+Profile_C1_Juno_Name = Witness
+Profile_C1_Juno_Desc = I think witness see things and they are payed to say stuff. Or maybe not. Idk...
 
 # ---------------------------------------------------------
 # ------------------- Prototype ---------------------------
@@ -74,7 +74,7 @@ Prototype_A_15 = Sorry. I'll keep quiet about it.
 Prototype_A_16 = <color=green>Added Herbarium to inventory.</color>
 Prototype_A_17 = Are you ready to explore the unknown and find treasures or something ?
 Prototype_A_18 = Ready and waiting.
-Prototype_A_19 = [One Very Nice Boat Trip Later]
+Prototype_A_19 = (One Very Nice Boat Trip Later)
 Prototype_A_20 = Oh no. We crashed :'(
 Prototype_A_21 = What's more. My coat is torn, wet, and my leg is injured.
 Prototype_A_22 = I even got thrown overboard...
@@ -186,7 +186,7 @@ Prototype_E_5 = ... Shit.
 Prototype_E_6 = Uh, I'll go check.
 Prototype_E_7 = We'll make a short recess then. I can't believe you forgot to search the boat.
 Prototype_E_8 = Hey, I'm short handed... literally.
-Prototype_E_9 = [One Short Recess Later]
+Prototype_E_9 = (One Short Recess Later)
 
 Prototype_E_10 = And this is how Harold and I vanquished the Knight of Runan.
 Prototype_E_11 = I never knew this was yet another spin off... I thought I was going to be the main character.
