@@ -1,0 +1,338 @@
+# ---------------------------------------------------------
+# -------------------- Names ------------------------------
+# ---------------------------------------------------------
+
+Prototype_Rann = Mr. Potato
+Prototype_Juno = Witness
+Prototype_Sherif = Blue Badger
+Prototype_Judge = Judge
+Prototype_Gerald = Dude
+Prototype_Sartt = Captain
+
+# ---------------------------------------------------------
+# -------------------- Evidence ---------------------------
+# ---------------------------------------------------------
+
+Evidence_C1_Herbarium_name = Herbarium
+Evidence_C1_Herbarium_desc = My book. Nobody knows about its existence. I horribly miswrote my name as "Patotaa".
+
+Evidence_C1_Coat_name = Coat
+Evidence_C1_Coat_desc = My coat. Is torn and wet from the crash.
+
+Evidence_C1_Injury_name = Leg Injury
+Evidence_C1_Injury_desc = I am injured and cannot run.
+
+Evidence_C1_Knife_name = Knife
+Evidence_C1_Knife_desc = Murder Weapon. Bear my prints on the blade, and unknown ones on the handle.
+
+Evidence_C1_AutopsyReport_name = Autopsy Report
+Evidence_C1_AutopsyReport_desc = Cause of death : Direct hit to the heart.
+
+Evidence_C1_DebtReport_name = Debt Report
+Evidence_C1_DebtReport_desc = Says "Yeah, I owe lots of lettuce to the captain".
+
+Evidence_C1_DeathMessage_name = Death Message
+Evidence_C1_DeathMessage_desc = "Patotaa" written in the captain's blood.
+
+Profile_C1_Rann_name = Mr.Potato
+Profile_C1_Rann_desc = Yeah, I'm a turtle.
+
+Profile_C1_Sartt_name = Captain
+Profile_C1_Sartt_desc = Very Nice individual.
+
+Profile_C1_Gerald_name = Dude
+Profile_C1_Gerald_desc = Yeah, he's dude. He saw my secret herbarium though...
+
+Profile_C1_Judge_name = Judge
+Profile_C1_Judge_desc = I can't believe this is going to get out BEFORE Ace JMIN !
+
+Profile_C1_Sherif_name = Blue Badger
+Profile_C1_Sherif_desc = No one knows how he got here.
+
+Profile_C1_Juno_name = Witness
+Profile_C1_Juno_desc = I think witness see things and they are payed to say stuff. Or maybe not. Idk...
+
+# ---------------------------------------------------------
+# ------------------- Prototype ---------------------------
+# ---------------------------------------------------------
+
+Prototype_A_1 = I love boats.
+Prototype_A_2 = Me too.
+Prototype_A_3 = Hi captain.
+Prototype_A_4 = Hi, Mr. Potato.
+Prototype_A_5 = Where are we going ?
+Prototype_A_6 = Oh...
+Prototype_A_7 = Don't worry. He's busy and very cool.
+Prototype_A_8 = Uh ?
+Prototype_A_9 = Yeah, I'm Dude.
+Prototype_A_10 = Nice to meet you, Patotaa.
+Prototype_A_11 = That's not my name...
+Prototype_A_12 = Oh...
+Prototype_A_13 = Guess the name on your herbarium was wrong then.
+Prototype_A_14 = Oh no. Forget about it. It's a secret book.
+Prototype_A_15 = Sorry. I'll keep quiet about it.
+Prototype_A_16 = <color=green>Added Herbarium to inventory.</color>
+Prototype_A_17 = Are you ready to explore the unknown and find treasures or something ?
+Prototype_A_18 = Ready and waiting.
+Prototype_A_19 = [One Very Nice Boat Trip Later]
+Prototype_A_20 = Oh no. We crashed :'(
+Prototype_A_21 = What's more. My coat is torn, wet, and my leg is injured.
+Prototype_A_22 = I even got thrown overboard...
+Prototype_A_23 = I should find my way back to the ship...
+Prototype_A_24 = <color=green>Added Injury to inventory.</color>
+Prototype_A_25 = <color=green>Added Coat to inventory.</color>
+Prototype_A_26 = <color=green>Move by using the mouse or the keyboard (Point & Click).</color>
+
+Prototype_A_27 = I AM DEAD. NOT A BIG SURPRISE.
+Prototype_A_28 = NOOOOOOOOOOOOOOOO ! The captain is dead ! 
+Prototype_A_29 = There's is a knife on his back. Was it murder ?!
+Prototype_A_30 = I need to find help, fast !
+
+Prototype_A_31 = Sir ! This is terrible, someone died.
+Prototype_A_32 = Shut up.
+
+
+Prototype_B_1 = We begin today our trial of... this turtle.
+Prototype_B_2 = I didn't kill the captain !
+Prototype_B_3 = Shut up.
+Prototype_B_4 = Mr. Blue Badger. Explain the facts to me, please.
+Prototype_B_5 = They killed the captain, plain and simple.
+Prototype_B_6 = Here's the autopsy report.
+Prototype_B_7 = <color=green>Autopsy report added to inventory.</color>
+Prototype_B_8 = We even have a witness. Let's hear her story.
+Prototype_B_9 = Hi.
+Prototype_B_10 = Are you the witness ? What is your name ?
+Prototype_B_11 = I am Witness, the Witness.
+Prototype_B_12 = I can tell you what I saw that day.
+
+Prototype_E1_1 = I was looking for stuff.
+Prototype_E1_1_Press_1 = What kind of stuff ?
+Prototype_E1_1_Press_2 = ...
+Prototype_E1_1_Press_3 = The new and improved MUSHROOMS.
+Prototype_E1_1_Press_4 = Okay, whatever.
+
+Prototype_E1_2 = Then I saw someone stab the nice captain.
+Prototype_E1_2_Press_1 = Was it really me ?
+Prototype_E1_2_Press_2 = Blue Badger said so. He would never lie.
+Prototype_E1_2_Press_3 = Yeah.
+
+Prototype_E1_3 = I screamed and they ran away.
+Prototype_E1_3_Press_1 = Where did they run off to ?
+Prototype_E1_3_Press_2 = Back to the boat I think.
+
+Prototype_E1_Loop_1 = I think I see what's wrong here.
+Prototype_E1_Loop_2 = I should present evidence as soon as possible.
+
+Prototype_E_Fail_1 = I think that this is wrong.
+Prototype_E_Fail_2 = I'm looking at the internet solution and...
+Prototype_E_Fail_3 = It seems YOU are wrong.
+Prototype_E_Fail_4 = Oh.
+
+Prototype_C_1 = I couldn't have ran away like you said.
+Prototype_C_2 = Look at my injury !
+Prototype_C_3 = Oh.
+Prototype_C_4 = Can you prove WHEN you got injured ?
+Prototype_C_5 = For all I care, you got injured AFTER the murder.
+Prototype_C_6 = Well... No...
+Prototype_C_7 = Shut up.
+Prototype_C_8 = Stop it, please.
+Prototype_C_9 = Witness, tell us more about the figure.
+Prototype_C_10 = Okay.
+
+
+Prototype_E1_1 = I couldn't see much.
+Prototype_E1_1_Press_1 = How much could you see then ?
+Prototype_E1_1_Press_2 = I was going to say that.
+
+Prototype_E1_2 = But they had a coat ! A fancy sailor one at that.
+Prototype_E1_2_Press_1 = Was there anything special about that coat ?
+Prototype_E1_2_Press_2 = It was bloody I think.
+Prototype_E1_2_Press_3 = Good, good.
+
+Prototype_E1_3 = The coat was bloody.
+Prototype_E1_3_Press_1 = Are you sure about it ?
+Prototype_E1_3_Press_2 = Yes, I'm sure it was.
+
+Prototype_E1_Loop_1 = That coat seems interesting.
+Prototype_E1_Loop_2 = I should press on it more.
+
+Prototype_D_1 = Once again, look at my coat.
+Prototype_D_2 = There isn't even a speck of blood.
+Prototype_D_3 = You could have swapped coats. My point stands.
+Prototype_D_4 = Okay, let's hear it then.
+Prototype_D_5 = Turt- I mean, Defendant, tell me.
+Prototype_D_6 = If you are innocent. Who killed the captain ?
+Prototype_D_7 = Hmm... Who indeed ?
+
+Prototype_Q1_Title = Who killed the captain ?
+Prototype_Q1_Me = Me
+Prototype_Q1_Sailor = A sailor
+Prototype_Q1_BlueBadger = The Blue Badger
+
+Prototype_Q1_Me_1 = Are you sure ?
+Prototype_Q1_Me_2 = Actually, no.
+
+Prototype_Q1_BlueBadger_1 = ...
+Prototype_Q1_BlueBadger_2 = You know what ?
+Prototype_Q1_BlueBadger_3 = I'll make you suffer.
+Prototype_Q1_BlueBadger_4 = Behold my badger powers !
+Prototype_Q1_BlueBadger_5 = Guh !
+
+Prototype_E_1 = A sailor must have done it !
+Prototype_E_2 = The witness did see someone in a sailor coat after all.
+Prototype_E_3 = I guess. Blue Badger...
+Prototype_E_4 = Did you find any other survivors ?
+Prototype_E_5 = ... Shit.
+Prototype_E_6 = Uh, I'll go check.
+Prototype_E_7 = We'll make a short recess then. I can't believe you forgot to search the boat.
+Prototype_E_8 = Hey, I'm short handed... literally.
+Prototype_E_9 = [One Short Recess Later]
+
+Prototype_E_10 = And this is how Harold and I vanquished the Knight of Runan.
+Prototype_E_11 = I never knew this was yet another spin off... I thought I was going to be the main character.
+Prototype_E_12 = Don't worry. He's going to be featured only in case 3. As for you... I have a nice spot for you.
+Prototype_E_13 = So...
+Prototype_E_14 = I found several things.
+Prototype_E_15 = First, someone owed a lot of lettuce to the captain.
+Prototype_E_16 = A whole goat worth of lettuce from what I understood.
+Prototype_E_17 = Wha...
+Prototype_E_18 = <color=green>Debt report added to inventory</color>
+Prototype_E_19 = I also missed a message apparently left from the captain. He wrote "Patotaa".
+Prototype_E_20 = What ?!
+Prototype_E_21 = And how did he spell my name...
+Prototype_E_22 = Guess he didn't know how to write.
+Prototype_E_23 = <color=green>Death Message added to inventory</color>
+Prototype_E_24 = I also found this dude here.
+Prototype_E_25 = He tells me he has things to say.
+Prototype_E_26 = Yeah, I'm Dude.
+Prototype_E_27 = Let me tell you, I'm not happy about all this.
+Prototype_E_28 = The badger didn't tell me the details, but the captain was a cool and nice guy.
+Prototype_E_28 = Okay, let's hear you then.
+
+
+
+Prototype_E3_1 = After the crash, I went to the bridge.
+Prototype_E3_1_Press_1 = Why ?
+Prototype_E3_1_Press_2 = Why not ?
+
+Prototype_E3_2 = But then, I tripped and got knocked out.
+Prototype_E3_2_Press_1 = Are you serious ?
+Prototype_E3_2_Press_2 = Yeah, I am.
+
+Prototype_E3_3 = I didn't see who stabbed the captain in the lungs.
+Prototype_E3_3_Press_1 = Are you sure about it ?
+Prototype_E3_3_Press_2 = Yeah, I'm sure.
+
+Prototype_E3_Loop_1 = That detail seems oddly specific
+Prototype_E3_Loop_2 = I wonder...
+
+Prototype_F_1 = How did you know the captain was stabbed if you got knocked out ?
+Prototype_F_2 = Furthermore, how did you end up thinking he got stabbed in the lungs ?
+Prototype_F_3 = Uh..................
+Prototype_F_4 = Oh, right. Let me rephrase that.
+
+
+Prototype_E4_1 = I was actually half awake.
+Prototype_E4_1_Press_1 = Really.
+Prototype_E4_1_Press_2 = Yeah ?
+
+Prototype_E4_2 = I heard the captain being assaulted by a turtle.
+Prototype_E4_2_Press_1 = Did you hear what they said ?
+Prototype_E4_2_Press_2 = Something about money and lettuce ? I don't know...
+
+Prototype_E4_3 = The captain died screaming for his life.
+Prototype_E4_3_Press_1 = Was it really the captain that was screaming ?
+Prototype_E4_3_Press_2 = Yeah, I'm sure of it.
+
+Prototype_E4_Loop_1 = I should press some more.
+Prototype_E4_Loop_2 = Maybe something will come up...
+
+Prototype_G_1 = Okay, sounds right.
+Prototype_G_2 = In virtue of my powerful hammer, I declare the defendant.
+Prototype_G_3 = Hold on ! Something is wrong here !
+Prototype_G_4 = What is ?
+
+Prototype_Q2_Title = What is problematic ?
+Prototype_Q2_ThingsMissing = Things are missing
+Prototype_Q2_Asleep = He was asleep
+Prototype_Q2_WholeExchange = He didn't hear the whole exchange
+
+Prototype_Q1_Asleep_1 = That's not relevant.
+Prototype_Q1_Asleep_2 = Ah...
+
+Prototype_Q1_WholeExchange_1 = It was all about lettuce. What more could I say about it ?
+Prototype_Q1_WholeExchange_2 = Ah, right...
+
+Prototype_H_1 = His account contradicts the other Witness's.
+Prototype_H_2 = She didn't hear the captain scream, and I'm quite sure she didn't hear a talk about lettuce.
+Prototype_H_3 = Guh !
+Prototype_H_4 = Wait, wait ! I must have been sleeping more than I thought...
+Prototype_H_5 = Hey, let me see the knife ! I can prove that they did it !
+Prototype_H_6 = ... Where is the knife actually ?
+Prototype_H_7 = Oh, right. Oops. Forgot to show it to you.
+Prototype_H_8 = <color=green>Knife added to inventory</color>
+Prototype_H_9 = ... Yeah, I get it now.
+Prototype_H_10 = I'll prove once and for all that the turtle did it.
+
+
+Prototype_E5_1 = Look at this knife
+Prototype_E5_1_Press_1 = I'm looking at it.
+Prototype_E5_1_Press_2 = Cool.
+
+Prototype_E5_2 = As you can see, the turtle's print are on it !
+Prototype_E5_2_Press_1 = But...
+Prototype_E5_2_Press_2 = No but ! You did it !
+
+Prototype_E5_3 = The dying message of the captain, "Patotaa" proves they did it !
+Prototype_E5_3_Press_1 = But it's misspelt !
+Prototype_E5_3_Press_2 = Not but !
+
+Prototype_E5_Loop_1 = I should press some more.
+Prototype_E5_Loop_2 = Maybe something will come up..
+
+Prototype_E5_Present1_1 = Look at where the prints are. It doesn't make sense.
+Prototype_E5_Present1_2 = Nobody can kill someone while holding a knife's blade. They would cut themself.
+Prototype_E5_Present1_3 = Oh.
+Prototype_E5_Present1_4 = But wait ! There's more !
+
+Prototype_I_1 = I know how the message was misspelt. Look at this book.
+Prototype_I_2 = Nice book... "Patotaa" ???
+Prototype_I_3 = Right, and this book is secret. Nobody knows about it except for...
+Prototype_I_4 = Hey. Are you saying I killed the captain ?
+Prototype_I_5 = He was so nice to me. Why would I even do that ?
+Prototype_I_6 = Tell us about your relationship with him.
+Prototype_I_7 = Fine.
+
+Prototype_E6_1 = I was a simple farmer back then
+Prototype_E6_1_Press_1 = What did you farm ?
+Prototype_E6_1_Press_2 = Lettuce. Not the average ones at that.
+Prototype_E6_1_Press_3 = I farmed... Cool Lettuce.
+
+Prototype_E6_2 = Then he came and told me to join his crew
+Prototype_E6_2_Press_1 = Why ?
+Prototype_E6_2_Press_2 = At the time, the lettuce mafia wanted to kill me.
+Prototype_E6_2_Press_3 = The nice captain came and told me he would shield me from evil.
+Prototype_E6_2_Press_4 = All I had to do was join him.
+
+Prototype_E6_3 = I had a little lettuce problem, and he covered for me
+Prototype_E6_3_Press_1 = How ?
+Prototype_E6_3_Press_2 = With money of course. I'm poor. I'm just Dude, you know ?
+
+Prototype_E6_4 = Nothing suspicious at all, see ?
+Prototype_E6_4_Press_1 = I can't see words, only hear them.
+Prototype_E6_4_Press_2 = Skill issue.
+
+Prototype_E6_Loop_1 = Hmm....
+Prototype_E6_Loop_2 = Is he lying ?
+
+Prototype_J_1 = You owed lettuce to him, didn't you ?
+Prototype_J_2 = Look at this paper. This is your handwriting, isn't it ?
+Prototype_J_3 = Noooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Prototype_J_4 = All the lettuce belongs to me ! He can't get it !
+Prototype_J_5 = I killed him because of that. He wanted my lettuce !
+Prototype_J_6 = Okay, Guilty. Death Sentence, too.
+Prototype_J_7 = Good job, Potato.
+Prototype_J_8 = But don't think I'll forget you.
+Prototype_J_9 = You may have defeated me today, but I'll keep my eyes on you...
+Prototype_J_10 = Spooky.
+Prototype_J_11 = The End.

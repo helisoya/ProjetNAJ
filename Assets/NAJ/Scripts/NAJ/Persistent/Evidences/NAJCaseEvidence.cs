@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 namespace NAJ.Persistent
@@ -11,6 +12,8 @@ namespace NAJ.Persistent
         public string id;
         public bool canCheck;
         public uint checkImagesCount;
+        public string iconSpriteSheet;
+        public string checkImagesSpriteSheet;
 
         /// <summary>
 		/// Gets the key to the evidence's name
@@ -48,6 +51,56 @@ namespace NAJ.Persistent
         {
             return $"Evidence_{id}_{imageIndex}";
         }
+
+        /// <summary>
+        /// Loads the Icon from the resources folder
+        /// </summary>
+        /// <returns>The icon if found</returns>
+        public Sprite LoadIcon()
+        {
+            string iconKey = GetIconKey();
+
+            if (string.IsNullOrEmpty(iconSpriteSheet))
+                return Resources.Load<Sprite>("Evidence/Icons/" + iconKey);
+
+            Sprite[] sprites = Resources.LoadAll<Sprite>("Evidence/Icons/" + iconSpriteSheet);
+
+            if (sprites == null || sprites.Length == 0)
+                return null;
+
+            foreach (Sprite sprite in sprites)
+            {
+                if (sprite.name.Equals(iconKey))
+                    return sprite;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Loads the Check Image from the resources folder
+        /// </summary>
+        /// <returns>The image if found</returns>
+        public Sprite LoadCheckImage(uint imageIndex)
+        {
+            string imageKey = GetImageKey(imageIndex);
+
+            if (string.IsNullOrEmpty(checkImagesSpriteSheet))
+                return Resources.Load<Sprite>("Evidence/Check/" + imageKey);
+
+            Sprite[] sprites = Resources.LoadAll<Sprite>("Evidence/Check/" + checkImagesSpriteSheet);
+
+            if (sprites == null || sprites.Length == 0)
+                return null;
+
+            foreach (Sprite sprite in sprites)
+            {
+                if (sprite.name.Equals(imageKey))
+                    return sprite;
+            }
+
+            return null;
+        }
     }
 
     /// <summary>
@@ -56,6 +109,7 @@ namespace NAJ.Persistent
     public struct NAJCaseProfile
     {
         public string id;
+        public string iconSpriteSheet;
 
         /// <summary>
 		/// Gets the key to the profile's name
@@ -82,6 +136,31 @@ namespace NAJ.Persistent
         public string GetIconKey()
         {
             return $"Profile_{id}";
+        }
+
+        /// <summary>
+        /// Loads the Icon from the resources folder
+        /// </summary>
+        /// <returns>The icon if found</returns>
+        public Sprite LoadIcon()
+        {
+            string iconKey = GetIconKey();
+
+            if (string.IsNullOrEmpty(iconSpriteSheet))
+                return Resources.Load<Sprite>("Evidence/Icons/" + iconKey);
+
+            Sprite[] sprites = Resources.LoadAll<Sprite>("Evidence/Icons/" + iconSpriteSheet);
+
+            if (sprites == null || sprites.Length == 0)
+                return null;
+
+            foreach(Sprite sprite in sprites)
+            {
+                if (sprite.name.Equals(iconKey))
+                    return sprite;
+            }
+
+            return null;
         }
     }
 }

@@ -6,8 +6,8 @@
 # Evidence additional images have the format Evidence_ID_ImageNumber (Ex : Evidence_TestEvidence2_0)
 
 # To add an evidence/profile, you can Write :
-# Evidence ID [NumberOfAdditionalImages] 
-# Profile ID
+# Evidence ID [SpriteSheetName] [NumberOfAdditionalImages] [AdditionalImageSpriteSheet]
+# Profile ID [SpriteSheetName]
 
 # The relevant locals for evidences are :
 # Evidence_ID_Name = The evidence's name
@@ -15,22 +15,40 @@
 # Profile_ID_Name = The profile's name
 # Profile_ID_Desc = The profile's description
 
-Evidence TestEvidence1
-Evidence TestEvidence2 3
-Evidence TestEvidence3 1
-Evidence TestEvidence4 5
-Evidence TestEvidence5
-Evidence TestEvidence6
-Evidence TestEvidence7
-Evidence TestEvidence8 2
-Evidence TestEvidence9
+# Tests
+Evidence TestEvidence1 PlaceHolders
+Evidence TestEvidence2 PlaceHolders 3 PlaceHolders2
+Evidence TestEvidence3 PlaceHolders 1 PlaceHolders3
+Evidence TestEvidence4 PlaceHolders 5 PlaceHolders4
+Evidence TestEvidence5 PlaceHolders
+Evidence TestEvidence6 PlaceHolders
+Evidence TestEvidence7 PlaceHolders
+Evidence TestEvidence8 PlaceHolders 2 PlaceHolders8
+Evidence TestEvidence9 PlaceHolders
 
-Profile TestProfile1
-Profile TestProfile2
-Profile TestProfile3
-Profile TestProfile4
-Profile TestProfile5
-Profile TestProfile6
-Profile TestProfile7
-Profile TestProfile8
-Profile TestProfile9
+Profile TestProfile1 PlaceHolders2
+Profile TestProfile2 PlaceHolders2
+Profile TestProfile3 PlaceHolders2
+Profile TestProfile4 PlaceHolders2
+Profile TestProfile5 PlaceHolders2
+Profile TestProfile6 PlaceHolders2
+Profile TestProfile7 PlaceHolders2
+Profile TestProfile8 PlaceHolders2
+Profile TestProfile9 PlaceHolders2
+
+# Case 1
+
+Evidence C1_Herbarium C1
+Evidence C1_Injury C1
+Evidence C1_Coat C1
+Evidence C1_Knife C1
+Evidence C1_AutopsyReport C1
+Evidence C1_DebtReport C1
+Evidence C1_DeathMessage C1
+
+Profile C1_Rann C1
+Profile C1_Sartt C1
+Profile C1_Gerald C1
+Profile C1_Judge C1
+Profile C1_Sherif C1
+Profile C1_Juno C1

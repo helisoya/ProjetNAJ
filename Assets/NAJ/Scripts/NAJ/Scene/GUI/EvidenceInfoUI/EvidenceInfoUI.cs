@@ -136,13 +136,13 @@ namespace NAJ.GUI
                 {
                     nameKey = evidence.GetNameKey();
                     descKey = evidence.GetDescKey();
-                    sprite = Resources.Load<Sprite>("Evidence/Icons/" + evidence.GetIconKey());
+                    sprite = evidence.LoadIcon();
                 }
                 else if (!isEvidence && inventoryContainer.GetAllProfiles().TryGetValue(currentItem, out NAJCaseProfile profile))
                 {
                     nameKey = profile.GetNameKey();
                     descKey = profile.GetDescKey();
-                    sprite = Resources.Load<Sprite>("Evidence/Icons/" + profile.GetIconKey());
+                    sprite = profile.LoadIcon();
                 }
 
                 if (currentStatus == Status.ShowLeft)

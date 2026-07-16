@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad481a16d6eac646a792c6507ea0c64, type: 3}
+  m_Name: MainMenuSceneData
+  m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.ANFSceneData
+  registeredWorldComponents:
+  - id: 
+    data:
+      rid: 3436799676236169305
+  - id: 
+    data:
+      rid: 3436800196703420487
+  registeredGUIComponents:
+  - id: 
+    data: {fileID: 4893906188555742882, guid: e8c985bdeb1bdc345833a962ece4ce14, type: 3}
+  - id: 
+    data: {fileID: 4866723388494020783, guid: b7809b1dcef6c9849bdd1921d76beb85, type: 3}
+  - id: 
+    data: {fileID: 4813586622291847291, guid: 8059e479ea9479f479ea903f59b46f8f, type: 3}
+  - id: 
+    data: {fileID: 6123419753822969047, guid: 8c0175ffba14bb8469c0e488a0977164, type: 3}
+  - id: fadeAll
+    data: {fileID: 1331905330795673416, guid: 9299cd766ec312648ad187dbaab961ff, type: 3}
+  changeSceneUseFading: 1
+  changeSceneFadingName: fadeAll
+  references:
+    version: 2
+    RefIds:
+    - rid: 3436799676236169305
+      type: {class: BackgroundManager, ns: ANF.Scene, asm: Assembly-CSharp}
+      data:
+        canBeSaved: 1
+        enabledByDefault: 1
+        backgroundType: 0
+        asyncLoading: 0
+        prefabPath: Backgrounds/
+        skyboxDataPath: Skyboxes/
+        defaultSkybox: {fileID: 11400000, guid: 3c393467ae28b4f4f89d8d01c5af0816, type: 2}
+        skyboxMaterial: {fileID: 2100000, guid: 79f3e4c0b85311347b7292b2aa8d2833, type: 2}
+    - rid: 3436800196703420487
+      type: {class: MainMenuManager, ns: ANF.Scene, asm: Assembly-CSharp}
+      data:
+        canBeSaved: 1
+        enabledByDefault: 1
+        defaultBackground: TestBackground
+        defaultWeather: 
+        defaultSkybox: Day
+        backgroundType: 1

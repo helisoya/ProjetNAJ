@@ -43,7 +43,7 @@ namespace NAJ.Persistent
                 {
                     string[] split = line.Split(' ');
 
-                    if (split.Length != 2 && split.Length != 3)
+                    if (split.Length < 2 || split.Length > 5)
                         continue;
 
                     switch (split[0].ToLower())
@@ -51,18 +51,74 @@ namespace NAJ.Persistent
                         case "evidence":
                             NAJCaseEvidence evidence = new NAJCaseEvidence();
                             evidence.id = split[1];
-                            evidence.canCheck = split.Length == 3;
+                            evidence.canCheck = false;
 
-                            if (evidence.canCheck &&
-                            !uint.TryParse(split[2], out evidence.checkImagesCount))
-                                continue;
+                            if (split.Length >= 3)
+                            {
+                                // Check if n°3 is a number of addional images, or a spritesheet
+
+                                if(!uint.TryParse(split[2], out evidence.checkImagesCount))
+                                {
+                                    evidence.iconSpriteSheet = split[2];
+                                }
+                                else
+                                {
+                                    evidence.canCheck = true;
+                                    evidence.iconSpriteSheet = null;
+                                }
+                            }
+
+                            if(split.Length >= 4)
+                            {
+                                if(evidence.canCheck)
+                                {
+                                    if(split.Length == 5)
+                                    {
+                                        // One too many parameters
+                                        continue;
+                                    }
+
+                                    // n°3 was a number of images
+                                    evidence.checkImagesSpriteSheet = split[3];
+                                }
+                                else
+                                {
+                                    // Could be Number of images
+
+                                    if (!uint.TryParse(split[3], out evidence.checkImagesCount))
+                                    {
+                                        // Should not happen, this means a sprite sheet was linked to no images
+                                        continue;
+                                    }
+                                    else
+                                    {
+                                        evidence.canCheck = true;
+                                    }
+                                }
+                            }
+
+                            if (split.Length == 5)
+                            {
+                                // n°5 can only be a spritesheet
+                                evidence.checkImagesSpriteSheet = split[4];
+                            }
 
                             knownEvidence.Add(evidence.id, evidence);
 
                             break;
                         case "profile":
-                            if (split.Length == 2)
-                                knownProfiles.Add(split[1], new NAJCaseProfile() { id = split[1] });
+                            if (split.Length > 3)
+                                continue;
+
+                            NAJCaseProfile profile = new NAJCaseProfile();
+                            profile.id = split[1];
+
+                            if (split.Length == 3)
+                                profile.iconSpriteSheet = split[2];
+                            else
+                                profile.iconSpriteSheet = null;
+
+                            knownProfiles.Add(profile.id, profile);
                             break;
                     }
                 }

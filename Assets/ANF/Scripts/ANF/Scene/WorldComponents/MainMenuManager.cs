@@ -20,7 +20,6 @@ namespace ANF.Scene
             UseDefault,
             UseAutosave
         }
-        [SerializeField] private string fadeAllName = "fadeAll";
         [SerializeField] private string defaultBackground = "";
         [SerializeField] private string defaultWeather = "";
         [SerializeField] private string defaultSkybox = "";
@@ -33,7 +32,6 @@ namespace ANF.Scene
             {
                 canBeSaved = canBeSaved,
                 enabledByDefault = enabledByDefault,
-                fadeAllName = fadeAllName,
                 defaultBackground = defaultBackground,
                 backgroundType = backgroundType
             };

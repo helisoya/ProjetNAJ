@@ -117,6 +117,12 @@ GeneralMenu_Unknown = ???
 # -------------------------- NAJ Menus -----------------------------------
 # ------------------------------------------------------------------------
 
+CaseSelectionMenu_Title = Case Selection
+CaseSelectionMenu_Select = Select
+CaseSelectionMenu_Confirm = Start this case ?
+CaseSelectionMenu_Yes = Yes
+CaseSelectionMenu_No = No
+
 InputReminder_Inventory = Inventory
 InputReminder_Back = Back
 InputReminder_Profiles = Profiles

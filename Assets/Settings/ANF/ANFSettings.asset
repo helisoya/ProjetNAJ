@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bfc7de97ad5247b9061be4feb35ce, type: 3}
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
-  startingScript: /ANF/Tests/Statics
-  mainMenuScene: ANFMainMenu
-  gameScene: ANFGame
+  startingScript: /NAJ/Prototype/C1/EntryPoint
+  mainMenuScene: NAJMainMenu
+  gameScene: NAJGame
   saveFolder: Saves/
   saveSlotsAmount: 11
   generalDataPath: General/
@@ -56,6 +56,9 @@ MonoBehaviour:
   - id: 
     data:
       rid: 3436800145698848844
+  - id: 
+    data:
+      rid: 5904633997122076775
   additionalParts:
   - rid: 5904633703666286681
   references:
@@ -401,6 +404,9 @@ MonoBehaviour:
         - typeName: ANF.ANSL.WaitFunction
           id: 78
           enabled: 1
+    - rid: 5904633997122076775
+      type: {class: CaseCompletionContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}
+      data: 
     - rid: 6964546988055199858
       type: {class: PlayerLocals, ns: ANF.Locals, asm: Assembly-CSharp}
       data: 

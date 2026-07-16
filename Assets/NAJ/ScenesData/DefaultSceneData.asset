@@ -90,7 +90,7 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        startInDebugMode: 1
+        startInDebugMode: 0
         debugModeScript: /NAJ/Tests/CrossExamination
         autoLoadSaveFile: 0
         saveFileToAutoLoad: autosave

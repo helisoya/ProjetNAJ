@@ -201,9 +201,9 @@ namespace NAJ.GUI
                     data.id = list[i];
                     data.isEvidence = isEvidence;
                     if (isEvidence)
-                        data.icon = Resources.Load<Sprite>("Evidence/Icons/" + allEvidence[data.id].GetIconKey());
+                        data.icon = allEvidence[data.id].LoadIcon();
                     else
-                        data.icon = Resources.Load<Sprite>("Evidence/Icons/" + allProfiles[data.id].GetIconKey());
+                        data.icon = allProfiles[data.id].LoadIcon();
 
                     if (data.icon == null)
                         data.icon = defaultIcon;
@@ -418,7 +418,7 @@ namespace NAJ.GUI
                 NAJCaseEvidence evidence = allEvidence[currentID];
                 if (evidence.canCheck && id < evidence.checkImagesCount)
                 {
-                    checkImage.sprite = Resources.Load<Sprite>("Evidence/Check/" + evidence.GetImageKey(id));
+                    checkImage.sprite = evidence.LoadCheckImage(id);
 
                     for (uint i = 0; i < evidence.checkImagesCount; i++)
                         checkTabs[i].SetIsActiveTab(i == id);
