@@ -223,9 +223,15 @@ namespace ANF.GUI
             SetCurrentButton((currentButtonIndex + currentButtonInputSide + buttons.Length) % buttons.Length);
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             OnUnRegisterInputs();
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         public override void OnSave(JSON json)

@@ -31,5 +31,5 @@ dialog(null;null;Test_EvidenceInfo_2)
 showEvidenceInfo(Evidence/TestEvidence3;Full)
 dialog(null;null;Test_EvidenceInfo_3)
 
-HideEvidenceInfo()
+hideEvidenceInfo()
 dialog(null;null;Test_EvidenceInfo_4)

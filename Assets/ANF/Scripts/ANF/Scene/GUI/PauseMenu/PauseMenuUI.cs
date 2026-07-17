@@ -125,10 +125,16 @@ namespace ANF.GUI
         {
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Pause").performed -= OnPauseInput;
             OnUnRegisterInputs();
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         public override void OnRegisterInputs()

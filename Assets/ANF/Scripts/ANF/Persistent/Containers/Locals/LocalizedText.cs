@@ -78,7 +78,7 @@ namespace ANF.Locals
             if (locals != null && !disableLocalization)
                 txt = locals.GetLocal(localKey);
 
-            if (PersistentDataManager.instance.GetPlayerData().GetComponent<PlayerVariableContainer>(out PlayerVariableContainer playerVariableContainer))
+            if (txt != null && PersistentDataManager.instance.GetPlayerData().GetComponent<PlayerVariableContainer>(out PlayerVariableContainer playerVariableContainer))
                 txt = txt.Replace("{MC}", playerVariableContainer.GetPlayerName());
 
             if (injectors != null && injectors.Length > 0)

@@ -18,10 +18,10 @@ namespace NAJ.ANSL
     /// </summary>
     [ANSLFunctionAttribute(
 
-        functionBody: "HideEvidenceInfo",
+        functionBody: "hideEvidenceInfo",
         functionAutoComplete: new string[]
         {
-            "HideEvidenceInfo()"
+            "hideEvidenceInfo()"
         },
         functionDesc: "Hides the currently visible evidence infos")]
     public class HideEvidenceInfoFunction : ANSLFunction

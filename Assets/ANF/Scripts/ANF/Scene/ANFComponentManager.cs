@@ -57,10 +57,29 @@ namespace ANF.Scene
         /// <summary>
         /// Calls the On Change Scene callback on all components
         /// </summary>
-        public void OnChangeScene()
+        /// <returns>True if the cleanup is done</returns>
+        public bool OnChangeScene()
         {
+            bool finished = true;
             foreach (T component in components.Values)
-                component.OnChangeScene();
+                if (!component.OnChangeScene())
+                    finished = false;
+
+            return finished;
+        }
+
+        /// <summary>
+        /// Checks if some components are still cleaning up for scene change
+        /// </summary>
+        /// <returns>True if the cleanup is still ongoing</returns>
+        public bool IsCleaningUpForSceneChange()
+        {
+            bool cleaningUp = false;
+            foreach (T component in components.Values)
+                if (component.IsCleaningUpForSceneChange())
+                    cleaningUp = true;
+
+            return cleaningUp;
         }
     }
 }

@@ -373,9 +373,15 @@ namespace ANF.GUI
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
         }
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             OnUnRegisterInputs();
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
     }
 }

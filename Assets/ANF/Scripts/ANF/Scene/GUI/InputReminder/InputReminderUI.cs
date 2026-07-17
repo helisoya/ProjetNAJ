@@ -11,9 +11,7 @@ using UnityEngine.UI;
 namespace ANF.GUI
 {
     /// <summary>
-	/// Represents the component responsible for showing dialogs.
-    /// Dialogs can comprise commands.
-    /// Ex : I want [wait 5,speed 0.5] A CARIBOU [defaultSpeed] tomorrow
+	/// Handles the various visual input reminders
 	/// </summary>
     [System.Serializable]
     public class InputReminderUI : GUIComponent
@@ -154,8 +152,14 @@ namespace ANF.GUI
         {
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         [System.Serializable]

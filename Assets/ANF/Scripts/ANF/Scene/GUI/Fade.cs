@@ -144,8 +144,14 @@ namespace ANF.GUI
         {
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         public override void OnLoad(JSON json)

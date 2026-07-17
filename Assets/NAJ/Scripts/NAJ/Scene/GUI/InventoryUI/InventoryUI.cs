@@ -761,11 +761,17 @@ namespace NAJ.GUI
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed -= OnPauseInput;
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             if (isEnabled)
                 OnUnRegisterInputs();
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Inventory").performed -= OnInventoryInput;
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         public override void OnSave(JSON json)

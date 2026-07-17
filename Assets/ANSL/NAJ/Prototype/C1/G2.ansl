@@ -1,0 +1,37 @@
+choice(Prototype_Q2_Title)
+choice Prototype_Q2_ThingsMissing:
+	load(H)
+	return()
+
+choice Prototype_Q2_Asleep:
+
+	setCameraPosition(JudgeCam)
+	setCameraRotation(JudgeCam)
+	dialog(Prototype_Judge;Judge;Prototype_Q1_Asleep_1)
+
+	setCameraPosition(DefenseCam)
+	setCameraRotation(DefenseCam)
+	dialog(Prototype_Rann;null;Prototype_Q1_Asleep_2)
+
+	setCameraPosition(JudgeCam)
+	setCameraRotation(JudgeCam)
+
+	load(G2)
+	return()
+
+choice Prototype_Q2_WholeExchange:
+
+	setCameraPosition(WitnessCam)
+	setCameraRotation(WitnessCam)
+	dialog(Prototype_Gerald;Gerald;Prototype_Q1_WholeExchange_1)
+
+	setCameraPosition(DefenseCam;0.5;false)
+	setCameraRotation(DefenseCam;0.5;true)
+	dialog(Prototype_Rann;null;Prototype_Q1_WholeExchange_2)
+
+	setCameraPosition(JudgeCam)
+	setCameraRotation(JudgeCam)
+
+	load(G2)
+	return()
+endchoice

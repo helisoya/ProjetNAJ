@@ -190,12 +190,19 @@ namespace ANF.ANSL
         {
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             foreach (ANSLContext context in contexts)
             {
                 context.Cleanup();
             }
+
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         public override void OnSave(JSON json)

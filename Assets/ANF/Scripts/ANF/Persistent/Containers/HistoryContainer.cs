@@ -45,7 +45,7 @@ namespace ANF.Persistent
             });
 
             if (data.Count > maxDialogs)
-                data.RemoveRange(maxDialogs - 1, data.Count - maxDialogs);
+                data.RemoveRange(maxDialogs, data.Count - maxDialogs);
         }
 
         /// <summary>

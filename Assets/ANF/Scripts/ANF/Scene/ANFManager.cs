@@ -2,8 +2,10 @@ using ANF.GUI;
 using ANF.Utils;
 using DG.Tweening;
 using Leguar.TotalJSON;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 namespace ANF.Scene
 {
@@ -26,6 +28,8 @@ namespace ANF.Scene
         [SerializeField] private ANFSceneData sceneData;
 
         private bool isChangingScene = false;
+        private bool waitingForCleanup = false;
+        private bool initializedCleanup;
         private string nextSceneToLoad = null;
 
         private LoadState currentLoadState;
@@ -78,6 +82,29 @@ namespace ANF.Scene
                         return;
                 }
 
+                if(!initializedCleanup)
+                {
+                    initializedCleanup = true;
+
+                    waitingForCleanup = guiManager.OnChangeScene();
+
+                    if (!world.OnChangeScene())
+                        waitingForCleanup = false;
+
+                    if (waitingForCleanup)
+                        return;
+                }
+                else if(waitingForCleanup)
+                {
+                    if (world.IsCleaningUpForSceneChange() ||
+                       guiManager.IsCleaningUpForSceneChange())
+                        return;
+
+                    waitingForCleanup = false;
+                }
+
+
+                
                 SceneManager.LoadScene(nextSceneToLoad);
             }
             else
@@ -127,15 +154,13 @@ namespace ANF.Scene
             if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
             {
                 DOTween.KillAll(false);
-                guiManager.OnChangeScene();
-                world.OnChangeScene();
-
-                isChangingScene = true;
-                nextSceneToLoad = nextScene;
 
                 fade.SetEnabled(true);
                 fade.SetPaused(false);
                 fade.FadeAlphaTo(1);
+
+                isChangingScene = true;
+                nextSceneToLoad = nextScene;
             }
             else
             {

@@ -1,0 +1,14 @@
+setCameraPosition(JudgeCam)
+setCameraRotation(JudgeCam)
+dialog(Prototype_Judge;Judge;Prototype_G_1)
+dialog(Prototype_Judge;Judge;Prototype_G_2)
+
+setCameraPosition(DefenseCam)
+setCameraRotation(DefenseCam)
+dialog(Prototype_Rann;null;Prototype_G_3)
+
+setCameraPosition(JudgeCam)
+setCameraRotation(JudgeCam)
+dialog(Prototype_Judge;Judge;Prototype_G_4)
+
+load(G2)

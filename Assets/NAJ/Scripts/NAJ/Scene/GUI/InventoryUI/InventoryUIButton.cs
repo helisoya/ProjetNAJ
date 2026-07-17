@@ -78,7 +78,7 @@ namespace NAJ.GUI
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            if (data.isValid)
+            if (data.isValid && eventData.button == PointerEventData.InputButton.Left)
             {
                 menu.TryPresentCurrentEvidence();
             }

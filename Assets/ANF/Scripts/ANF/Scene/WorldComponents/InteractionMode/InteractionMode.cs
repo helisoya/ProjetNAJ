@@ -522,7 +522,7 @@ namespace ANF.Scene
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MouseClick").performed -= OnMouseClick;
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             if (currentIcon && inInteractionMode)
                 currentIcon.gameObject.SetActive(false);
@@ -534,6 +534,12 @@ namespace ANF.Scene
                 settings.Unregister("InteractionMode_HighlightColor", OnHighlightColorChange);
                 settings.Unregister("InteractionMode_SelectedColor", OnSelectedColorChange);
             }
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         /// <summary>

@@ -162,12 +162,18 @@ namespace ANF.Scene
             }
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             foreach (Type obj in objects.Values)
             {
                 obj.Remove(manager);
             }
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
     }
 

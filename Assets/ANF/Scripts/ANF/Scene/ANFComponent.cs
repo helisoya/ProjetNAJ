@@ -63,7 +63,14 @@ namespace ANF.Scene
         /// <summary>
 		/// Called before changing scenes
 		/// </summary>
-        public abstract void OnChangeScene();
+        /// <returns>True if the cleanup is done</returns>
+        public abstract bool OnChangeScene();
+
+        /// <summary>
+        /// Checks if the component is still cleaning up
+        /// </summary>
+        /// <returns>True if still cleaning up</returns>
+        public abstract bool IsCleaningUpForSceneChange();
 
         /// <summary>
         /// Changes if the component is enabled or not

@@ -182,9 +182,15 @@ namespace ANF.GUI
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed -= OnPauseInput;
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             OnUnRegisterInputs();
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         public override void OnSave(JSON json)

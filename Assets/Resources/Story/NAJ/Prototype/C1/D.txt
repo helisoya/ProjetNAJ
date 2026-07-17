@@ -1,0 +1,16 @@
+48|DefenseCam|0.5|false
+49|DefenseCam|0.5|true
+22|Prototype_Rann|null|Prototype_D_1
+22|Prototype_Rann|null|Prototype_D_2
+48|ProsecutionCam|0.5|false
+49|ProsecutionCam|0.5|true
+22|Prototype_Sherif|Sherif|Prototype_D_3
+48|JudgeCam
+49|JudgeCam
+22|Prototype_Judge|Judge|Prototype_D_4
+22|Prototype_Judge|Judge|Prototype_D_5
+22|Prototype_Judge|Judge|Prototype_D_6
+48|DefenseCam
+49|DefenseCam
+22|Prototype_Rann|null|Prototype_D_7
+30|D2

@@ -365,10 +365,16 @@ namespace ANF.GUI
         {
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
                 settings.Unregister("DialogUI_BackgroundOpacity", OnBackgroundOpacityChange);
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
 
         /// <summary>

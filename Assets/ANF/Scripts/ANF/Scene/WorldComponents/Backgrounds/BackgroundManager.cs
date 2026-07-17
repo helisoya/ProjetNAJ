@@ -495,7 +495,7 @@ namespace ANF.Scene
 
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))
                 settings.Unregister("BackgroundManager_EnableWeatherEffects", OnEnableWeatherEffectsChange);
@@ -505,8 +505,17 @@ namespace ANF.Scene
                 currentBackground.OnRemove(manager);
                 // Not optimal
                 if (backgroundType == BackgroundType.Scene)
-                    SceneManager.UnloadSceneAsync(currentBackgroundID);
+                    currentOperation = SceneManager.UnloadSceneAsync(currentBackgroundID);
+
+                unloadingBackground = currentOperation != null;
             }
+
+            return !unloadingBackground;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return currentOperation != null && !currentOperation.isDone;
         }
 
         /// <summary>

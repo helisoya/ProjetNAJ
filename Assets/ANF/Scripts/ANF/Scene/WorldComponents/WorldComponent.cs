@@ -95,6 +95,7 @@ namespace ANF.Scene
         public abstract void OnLoad(JSON json);
         public abstract void OnRegisterInputs();
         public abstract void OnUnRegisterInputs();
-        public abstract void OnChangeScene();
+        public abstract bool OnChangeScene();
+        public abstract bool IsCleaningUpForSceneChange();
     }
 }

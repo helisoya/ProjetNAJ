@@ -2,7 +2,7 @@ setBackground(Boat)
 
 fadeFg(0;false)
 
-
+dialog(null;null;Prototype_A_0)
 dialog(Prototype_Rann;null;Prototype_A_1)
 
 addCharacter(Sartt;true;Front)
@@ -46,7 +46,7 @@ dialog(Prototype_Gerald;Gerald;Prototype_A_15)
 
 showEvidenceInfo(Evidence/C1_Herbarium;Full)
 dialog(null;null;Prototype_A_16)
-HideEvidenceInfo()
+hideEvidenceInfo()
 
 dialog(Prototype_Gerald;Gerald;Prototype_A_17)
 
@@ -69,13 +69,13 @@ addEvidence(C1_Injury)
 
 showEvidenceInfo(Evidence/C1_Injury;Full)
 dialog(null;null;Prototype_A_24)
-HideEvidenceInfo()
+hideEvidenceInfo()
 wait(0.5)
 
 addEvidence(C1_Coat)
 showEvidenceInfo(Evidence/C1_Coat;Full)
 dialog(null;null;Prototype_A_25)
-HideEvidenceInfo()
+hideEvidenceInfo()
 
 dialog(null;null;Prototype_A_26)
 

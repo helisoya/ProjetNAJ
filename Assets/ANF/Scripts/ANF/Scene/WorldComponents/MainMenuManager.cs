@@ -119,8 +119,14 @@ namespace ANF.Scene
         {
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
     }
 

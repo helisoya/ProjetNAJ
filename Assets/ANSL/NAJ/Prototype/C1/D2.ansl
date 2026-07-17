@@ -1,0 +1,32 @@
+choice(Prototype_Q1_Title)
+choice Prototype_Q1_Me:
+	setCameraPosition(JudgeCam)
+	setCameraRotation(JudgeCam)
+	dialog(Prototype_Judge;Judge;Prototype_Q1_Me_1)
+
+	setCameraPosition(DefenseCam)
+	setCameraRotation(DefenseCam)
+	dialog(Prototype_Rann;null;Prototype_Q1_Me_2)
+
+	load(D2)
+	return()
+
+choice Prototype_Q1_Sailor:
+	load(E)
+	return()
+
+choice Prototype_Q1_BlueBadger:
+	setCameraPosition(ProsecutionCam;0.5;false)
+	setCameraRotation(ProsecutionCam;0.5;true)
+	dialog(Prototype_Sherif;Sherif;Prototype_Q1_BlueBadger_1)
+	dialog(Prototype_Sherif;Sherif;Prototype_Q1_BlueBadger_2)
+	dialog(Prototype_Sherif;Sherif;Prototype_Q1_BlueBadger_3)
+	dialog(Prototype_Sherif;Sherif;Prototype_Q1_BlueBadger_4)
+
+	setCameraPosition(DefenseCam)
+	setCameraRotation(DefenseCam)
+	dialog(Prototype_Rann;null;Prototype_Q1_BlueBadger_5)
+
+	load(D2)
+	return()
+endchoice

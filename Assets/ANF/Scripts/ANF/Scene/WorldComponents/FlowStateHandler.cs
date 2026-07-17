@@ -55,6 +55,24 @@ namespace ANF.Scene
             manager.GetGUIManager().Invoke("OnSkipModeToggle", skipMode);
         }
 
+        /// <summary>
+        /// Gets if the skip mode is in toggle mode or not
+        /// </summary>
+        /// <returns></returns>
+        public bool GetSkipModeToggleEnabled()
+        {
+            return skipModeToggle;
+        }
+            
+        /// <summary>
+        /// Gets if the autoplay is in toggle mode or not
+        /// </summary>
+        /// <returns></returns>
+        public bool GetAutoplayToggleEnabled()
+        {
+            return autoplayToggle;
+        }
+
         private void OnAutoPlayInput(InputAction.CallbackContext context)
         {
             if(!autoplayToggle || context.ReadValueAsButton())
@@ -152,7 +170,7 @@ namespace ANF.Scene
             playerInput.actions.FindAction("SkipMode").performed -= OnSkipModeInput;
         }
 
-        public override void OnChangeScene()
+        public override bool OnChangeScene()
         {
             OnUnRegisterInputs();
 
@@ -161,6 +179,12 @@ namespace ANF.Scene
                 settings.Unregister("FlowStateHandler_ToggleAutoplay", OnAutoPlayToggleChange);
                 settings.Unregister("FlowStateHandler_ToggleSkipMode", OnSkipModeToggleChange);
             }
+            return true;
+        }
+
+        public override bool IsCleaningUpForSceneChange()
+        {
+            return false;
         }
     }
 }

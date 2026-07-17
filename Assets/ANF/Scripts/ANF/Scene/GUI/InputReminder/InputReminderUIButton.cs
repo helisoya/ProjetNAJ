@@ -121,7 +121,8 @@ namespace ANF.Persistent
 
         public override void OnUp(ANFManager manager)
         {
-            if (manager.GetWorld().GetComponent<FlowStateHandler>(out FlowStateHandler flowState))
+            if (manager.GetWorld().GetComponent<FlowStateHandler>(out FlowStateHandler flowState) &&
+                !flowState.GetAutoplayToggleEnabled())
                 flowState.ToggleAutoPlay();
         }
     }
@@ -140,7 +141,8 @@ namespace ANF.Persistent
 
         public override void OnUp(ANFManager manager)
         {
-            if (manager.GetWorld().GetComponent<FlowStateHandler>(out FlowStateHandler flowState))
+            if (manager.GetWorld().GetComponent<FlowStateHandler>(out FlowStateHandler flowState) &&
+                !flowState.GetSkipModeToggleEnabled())
                 flowState.ToggleSkipMode();
         }
     }

@@ -56,6 +56,7 @@ Profile_C1_Juno_Desc = I think witness see things and they are payed to say stuf
 # ------------------- Prototype ---------------------------
 # ---------------------------------------------------------
 
+Prototype_A_0 = (While you play as a turtle, it is merely a placeholder. Please consider them as a normal human being.)
 Prototype_A_1 = I love boats.
 Prototype_A_2 = Me too.
 Prototype_A_3 = Hi captain.
@@ -76,7 +77,7 @@ Prototype_A_17 = Are you ready to explore the unknown and find treasures or some
 Prototype_A_18 = Ready and waiting.
 Prototype_A_19 = (One Very Nice Boat Trip Later)
 Prototype_A_20 = Oh no. We crashed :'(
-Prototype_A_21 = What's more. My coat is torn, wet, and my leg is injured.
+Prototype_A_21 = What's more. My coat is torn and my leg is injured.
 Prototype_A_22 = I even got thrown overboard...
 Prototype_A_23 = I should find my way back to the ship...
 Prototype_A_24 = <color=green>Added Injury to inventory.</color>
@@ -85,7 +86,7 @@ Prototype_A_26 = <color=green>Move by using the mouse or the keyboard (Point & C
 
 Prototype_A_27 = I AM DEAD. NOT A BIG SURPRISE.
 Prototype_A_28 = NOOOOOOOOOOOOOOOO ! The captain is dead ! 
-Prototype_A_29 = There's is a knife on his back. Was it murder ?!
+Prototype_A_29 = There's is a knife. Was it murder ?!
 Prototype_A_30 = I need to find help, fast !
 
 Prototype_A_31 = Sir ! This is terrible, someone died.
@@ -140,21 +141,21 @@ Prototype_C_9 = Witness, tell us more about the figure.
 Prototype_C_10 = Okay.
 
 
-Prototype_E1_1 = I couldn't see much.
-Prototype_E1_1_Press_1 = How much could you see then ?
-Prototype_E1_1_Press_2 = I was going to say that.
+Prototype_E2_1 = I couldn't see much.
+Prototype_E2_1_Press_1 = How much could you see then ?
+Prototype_E2_1_Press_2 = I was going to say that.
 
-Prototype_E1_2 = But they had a coat ! A fancy sailor one at that.
-Prototype_E1_2_Press_1 = Was there anything special about that coat ?
-Prototype_E1_2_Press_2 = It was bloody I think.
-Prototype_E1_2_Press_3 = Good, good.
+Prototype_E2_2 = But they had a coat ! A fancy sailor one at that.
+Prototype_E2_2_Press_1 = Was there anything special about that coat ?
+Prototype_E2_2_Press_2 = It was bloody I think.
+Prototype_E2_2_Press_3 = Good, good.
 
-Prototype_E1_3 = The coat was bloody.
-Prototype_E1_3_Press_1 = Are you sure about it ?
-Prototype_E1_3_Press_2 = Yes, I'm sure it was.
+Prototype_E2_3 = The coat was bloody.
+Prototype_E2_3_Press_1 = Are you sure about it ?
+Prototype_E2_3_Press_2 = Yes, I'm sure it was.
 
-Prototype_E1_Loop_1 = That coat seems interesting.
-Prototype_E1_Loop_2 = I should press on it more.
+Prototype_E2_Loop_1 = That coat seems interesting.
+Prototype_E2_Loop_2 = I should press on it more.
 
 Prototype_D_1 = Once again, look at my coat.
 Prototype_D_2 = There isn't even a speck of blood.
@@ -207,7 +208,7 @@ Prototype_E_25 = He tells me he has things to say.
 Prototype_E_26 = Yeah, I'm Dude.
 Prototype_E_27 = Let me tell you, I'm not happy about all this.
 Prototype_E_28 = The badger didn't tell me the details, but the captain was a cool and nice guy.
-Prototype_E_28 = Okay, let's hear you then.
+Prototype_E_29 = Okay, let's hear you then.
 
 
 
@@ -248,7 +249,7 @@ Prototype_E4_Loop_1 = I should press some more.
 Prototype_E4_Loop_2 = Maybe something will come up...
 
 Prototype_G_1 = Okay, sounds right.
-Prototype_G_2 = In virtue of my powerful hammer, I declare the defendant.
+Prototype_G_2 = In virtue of my powerful hammer, I declare the defendant...
 Prototype_G_3 = Hold on ! Something is wrong here !
 Prototype_G_4 = What is ?
 
@@ -279,16 +280,16 @@ Prototype_E5_1 = Look at this knife
 Prototype_E5_1_Press_1 = I'm looking at it.
 Prototype_E5_1_Press_2 = Cool.
 
-Prototype_E5_2 = As you can see, the turtle's print are on it !
+Prototype_E5_2 = As you can see, the turtle's print are on it ! It proves they killed the captain !
 Prototype_E5_2_Press_1 = But...
 Prototype_E5_2_Press_2 = No but ! You did it !
 
-Prototype_E5_3 = The dying message of the captain, "Patotaa" proves they did it !
+Prototype_E5_3 = The dying message of the captain, "Patotaa" also proves they did it !
 Prototype_E5_3_Press_1 = But it's misspelt !
 Prototype_E5_3_Press_2 = Not but !
 
-Prototype_E5_Loop_1 = I should press some more.
-Prototype_E5_Loop_2 = Maybe something will come up..
+Prototype_E5_Loop_1 = What is going on ?
+Prototype_E5_Loop_2 = Maybe I can present something.
 
 Prototype_E5_Present1_1 = Look at where the prints are. It doesn't make sense.
 Prototype_E5_Present1_2 = Nobody can kill someone while holding a knife's blade. They would cut themself.
@@ -305,7 +306,7 @@ Prototype_I_7 = Fine.
 
 Prototype_E6_1 = I was a simple farmer back then
 Prototype_E6_1_Press_1 = What did you farm ?
-Prototype_E6_1_Press_2 = Lettuce. Not the average ones at that.
+Prototype_E6_1_Press_2 = Lettuce. Not your average ones at that.
 Prototype_E6_1_Press_3 = I farmed... Cool Lettuce.
 
 Prototype_E6_2 = Then he came and told me to join his crew
