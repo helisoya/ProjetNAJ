@@ -70,7 +70,7 @@ namespace NAJ.ANSL
                 PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
 
 
-                if (parameters.GetTemplateId() == 1 &&
+                if (parameters.GetTemplateId() == 0 ||
                     !parameters.GetParameter(7, out evidenceToShow))
                     evidenceToShow = null;
 
@@ -249,7 +249,6 @@ namespace NAJ.ANSL
                         }
                     }
                 }
-
                 uint correctLine = good ? endLine : failLine;
 
                 ResetUIToDefault();
@@ -297,6 +296,8 @@ namespace NAJ.ANSL
             detectedChangePart = false;
             inProgress = false;
             rebindEvents = false;
+
+            evidenceToShow = null;
         }
 
         protected override void OnSave(JSON json)
