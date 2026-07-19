@@ -59,8 +59,6 @@ namespace NAJ.GUI
         {
             if (data.isValid)
             {
-                if (audioManager != null)
-                    audioManager.PlayUICursorConfirmSFX();
                 menu.ShowDetails(data);
             }
         }
