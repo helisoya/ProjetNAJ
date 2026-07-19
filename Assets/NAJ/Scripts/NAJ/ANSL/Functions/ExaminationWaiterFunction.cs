@@ -38,6 +38,7 @@ namespace NAJ.ANSL
 
         private ExaminationUI examinationUI;
         private InventoryUI inventoryUI;
+        private AudioManager audioManager;
 
         public override FunctionParameterType[][] GetParametersTemplates()
         {
@@ -66,6 +67,9 @@ namespace NAJ.ANSL
                 manager.GetGUIManager().GetComponent(out examinationUI) &&
                 manager.GetGUIManager().GetComponent(out inventoryUI))
             {
+                PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
+
                 if (parameters.GetTemplateId() == 1 &&
                     !parameters.GetParameter(7, out evidenceToShow))
                     evidenceToShow = null;
@@ -98,17 +102,32 @@ namespace NAJ.ANSL
         private void OnGoLeft()
         {
             if (!detectedGoingRight)
+            {
+                if (audioManager != null)
+                    audioManager.PlayUICursorConfirmSFX();
+
                 detectedGoingLeft = true;
+            }
+
         }
 
         private void OnGoRight()
         {
             if (!detectedGoingLeft)
+            {
+                if (audioManager != null)
+                    audioManager.PlayUICursorConfirmSFX();
+
                 detectedGoingRight = true;
+            }
+
         }
 
         private void OnChangePart(uint targetLine)
         {
+            if (audioManager != null)
+                audioManager.PlayUICursorConfirmSFX();
+
             detectedChangePart = true;
             detectedChangePartValue = targetLine;
         }
@@ -147,6 +166,9 @@ namespace NAJ.ANSL
 
         protected override void OnUpdate()
         {
+            if (audioManager == null)
+                PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
             if (!examinationUI && !manager.GetGUIManager().GetComponent(out examinationUI))
             {
                 EndProcess();

@@ -11,7 +11,7 @@ namespace ANF.ANSL
     /// The Dialog function can be used to show a dialog
     /// </summary>
     [ANSLFunctionAttribute(
-        
+
         functionBody: "dialog",
         functionAutoComplete: new string[] {
             "dialog(SpeakerId;CharacterId;DialogId)",
@@ -168,16 +168,19 @@ namespace ANF.ANSL
         private void OnDialogSkip()
         {
             if (!context.isPaused && !skipModeEnabled && !autoPlayEnabled)
+            {
+                if (audioManager != null)
+                    audioManager.PlayUICursorConfirmSFX();
+
                 inputDetected = true;
+            }
+
         }
 
         private void OnDialogSkip(InputAction.CallbackContext callbackContext)
         {
             if (!context.isPaused && callbackContext.ReadValueAsButton())
             {
-                if (audioManager != null)
-                    audioManager.PlayUICursorConfirmSFX();
-
                 OnDialogSkip();
             }
         }

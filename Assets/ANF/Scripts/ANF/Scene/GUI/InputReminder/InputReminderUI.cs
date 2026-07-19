@@ -83,11 +83,13 @@ namespace ANF.GUI
 
         public override void OnPaused()
         {
+            canvasGroup.blocksRaycasts = false;
             canvasGroup.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
+            canvasGroup.blocksRaycasts = true;
             canvasGroup.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
         }
 

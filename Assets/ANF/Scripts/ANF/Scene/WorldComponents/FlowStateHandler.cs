@@ -17,6 +17,8 @@ namespace ANF.Scene
         private bool autoplayToggle;
         private bool skipModeToggle;
 
+        private AudioManager audioManager;
+
         /// <summary>
         /// True if auto play is enabled
         /// </summary>
@@ -63,7 +65,7 @@ namespace ANF.Scene
         {
             return skipModeToggle;
         }
-            
+
         /// <summary>
         /// Gets if the autoplay is in toggle mode or not
         /// </summary>
@@ -75,14 +77,24 @@ namespace ANF.Scene
 
         private void OnAutoPlayInput(InputAction.CallbackContext context)
         {
-            if(!autoplayToggle || context.ReadValueAsButton())
+            if (!autoplayToggle || context.ReadValueAsButton())
+            {
+                if (audioManager != null)
+                    audioManager.PlayUICursorConfirmSFX();
+
                 ToggleAutoPlay();
+            }
         }
 
         private void OnSkipModeInput(InputAction.CallbackContext context)
         {
             if (!skipModeToggle || context.ReadValueAsButton())
+            {
+                if (audioManager != null)
+                    audioManager.PlayUICursorConfirmSFX();
+
                 ToggleSkipMode();
+            }
         }
 
         private void OnAutoPlayToggleChange(object value)
@@ -95,8 +107,8 @@ namespace ANF.Scene
         private void OnSkipModeToggleChange(object value)
         {
             skipModeToggle = (bool)value;
-            if (autoplayToggle)
-                ToggleAutoPlay();
+            if (skipModeToggle)
+                ToggleSkipMode();
         }
 
         public override WorldComponent CloneComponent()
@@ -109,7 +121,7 @@ namespace ANF.Scene
             autoPlay = false;
             skipMode = false;
 
-            if(PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))
             {
                 autoplayToggle = (bool)settings.Register("FlowStateHandler_ToggleAutoplay", SettingsContainer.SettingsDataType.Bool, OnAutoPlayToggleChange);
                 skipModeToggle = (bool)settings.Register("FlowStateHandler_ToggleSkipMode", SettingsContainer.SettingsDataType.Bool, OnSkipModeToggleChange);
@@ -118,6 +130,8 @@ namespace ANF.Scene
 
         public override void OnStart()
         {
+            PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
             OnRegisterInputs();
         }
 

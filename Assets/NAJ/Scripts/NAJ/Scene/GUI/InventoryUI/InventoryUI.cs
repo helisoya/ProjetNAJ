@@ -111,6 +111,7 @@ namespace NAJ.GUI
         private int currentButtonInputSide;
         private float cooldownToNextButtonIncrement = 0;
         private AudioManager audioManager;
+        private bool skipFirstSelectSFX = false;
 
         public override void OnInitialize()
         {
@@ -218,6 +219,8 @@ namespace NAJ.GUI
         {
             if (PersistentDataManager.instance.GetPlayerData().GetComponent(out NAJCaseInventoryContainer container))
             {
+                skipFirstSelectSFX = true;
+
                 manager.GetWorld().SetPausedAll(true);
                 gui.SetComponentsPaused(guiToPauseOnEnable, true);
 
@@ -353,6 +356,10 @@ namespace NAJ.GUI
 
             if (!inCheckMode)
             {
+                if (audioManager != null)
+                    audioManager.PlayUICursorCancelSFX();
+
+
                 checkGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad);
                 if (gui.GetComponent(out InputReminderUI inputReminder))
                 {
@@ -372,6 +379,9 @@ namespace NAJ.GUI
             }
             else
             {
+                if (audioManager != null)
+                    audioManager.PlayUICursorConfirmSFX();
+
                 uint imageCount = allEvidence[currentID].checkImagesCount;
 
                 currentCheckId = 0;
@@ -399,7 +409,7 @@ namespace NAJ.GUI
                     inputReminder.SetReminderEnabled("inventoryPresent", false);
                 }
 
-                SetCheckImage(0, true);
+                SetCheckImage(0, true, false);
 
                 checkGroup.DOFade(1.0f, 0.5f).SetEase(Ease.OutQuad);
             }
@@ -410,10 +420,14 @@ namespace NAJ.GUI
 		/// </summary>
 		/// <param name="id">The new image's id</param>
 		/// <param name="force">True if the change must be forced</param>
-        public void SetCheckImage(uint id, bool force = false)
+        /// <param name="playSFXSound">Should selection SFX be played ?</param>
+        public void SetCheckImage(uint id, bool force = false, bool playSFXSound = true)
         {
             if (inCheckMode && (force || id != currentCheckId))
             {
+                if (audioManager != null && playSFXSound)
+                    audioManager.PlayUICursorMoveSFX();
+
                 currentCheckId = id;
                 NAJCaseEvidence evidence = allEvidence[currentID];
                 if (evidence.canCheck && id < evidence.checkImagesCount)
@@ -459,7 +473,9 @@ namespace NAJ.GUI
                     pauseMenu.isEnabled)
                     return;
 
-                if (audioManager != null)
+                if (audioManager != null && isEnabled)
+                    audioManager.PlayUICursorCancelSFX();
+                if (audioManager != null && !isEnabled)
                     audioManager.PlayUICursorConfirmSFX();
 
                 TrySetEnabled(!isEnabled);
@@ -548,9 +564,6 @@ namespace NAJ.GUI
 
             if (force || currentIdx != id)
             {
-                if (audioManager != null)
-                    audioManager.PlayUICursorMoveSFX();
-
                 if (inEvidenceMode)
                 {
                     buttonsEvidence[currentEvidenceButtonIdx].OnExit();
@@ -716,6 +729,11 @@ namespace NAJ.GUI
                 return;
 
             currentID = data.id;
+
+            if (audioManager != null && !skipFirstSelectSFX)
+                audioManager.PlayUICursorMoveSFX();
+            else if (skipFirstSelectSFX)
+                skipFirstSelectSFX = false;
 
             if (data.isEvidence)
             {

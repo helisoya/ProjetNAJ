@@ -62,7 +62,7 @@ namespace NAJ.GUI
                 {
                     if (inPopup && currentButtonInputSide != 0)
                         ChangePopupButton(!onConfirmButton);
-                    else if(!inPopup && currentButtonInputSide != 0)
+                    else if (!inPopup && currentButtonInputSide != 0)
                         IncrementCaseWithButton(currentButtonInputSide < 0 ? true : false);
                     cooldownToNextButtonIncrement = 0.5f;
                 }
@@ -77,7 +77,7 @@ namespace NAJ.GUI
             foreach (Transform child in caseImagesRoot)
                 Destroy(child.gameObject);
 
-            for(int i = 0; i <= maxCaseIdx && i < casesInfo.Length;i++)
+            for (int i = 0; i <= maxCaseIdx && i < casesInfo.Length; i++)
             {
                 Instantiate(caseImagePrefab, caseImagesRoot).sprite = casesInfo[i].image;
             }
@@ -111,7 +111,7 @@ namespace NAJ.GUI
         {
 
         }
-        
+
         /// <summary>
         /// Sets the current case
         /// </summary>
@@ -127,7 +127,7 @@ namespace NAJ.GUI
             rightArrow.gameObject.SetActive(currentCaseIdx < maxCaseIdx && currentCaseIdx < casesInfo.Length - 1);
 
             caseNameText.SetNewKey(casesInfo[index].nameKey);
-            caseImagesRoot.DOAnchorPosX(-index * caseImagePrefab.GetComponent<RectTransform>().sizeDelta.x,0.5f).SetEase(Ease.OutQuad);
+            caseImagesRoot.DOAnchorPosX(-index * caseImagePrefab.GetComponent<RectTransform>().sizeDelta.x, 0.5f).SetEase(Ease.OutQuad);
 
             if (inPopup)
                 CloseConfirmPopup();
@@ -178,7 +178,7 @@ namespace NAJ.GUI
 
                         if (inPopup)
                             ChangePopupButton(!onConfirmButton);
-                        else if(currentButtonInputSide != 0)
+                        else if (currentButtonInputSide != 0)
                             IncrementCaseWithButton(currentButtonInputSide < 0 ? true : false);
                     }
                 }
@@ -198,7 +198,7 @@ namespace NAJ.GUI
         {
             if (!isLeft && currentCaseIdx > 0)
                 SetCurrentCase(currentCaseIdx - 1);
-            else if(isLeft && currentCaseIdx < maxCaseIdx && currentCaseIdx < casesInfo.Length-1)
+            else if (isLeft && currentCaseIdx < maxCaseIdx && currentCaseIdx < casesInfo.Length - 1)
                 SetCurrentCase(currentCaseIdx + 1);
         }
 

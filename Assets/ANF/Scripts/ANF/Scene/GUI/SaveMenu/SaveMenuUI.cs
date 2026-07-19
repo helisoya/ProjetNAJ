@@ -188,15 +188,13 @@ namespace ANF.GUI
         {
             if (isEnabled && !isPaused && context.ReadValueAsButton())
             {
+                if (audioManager != null)
+                    audioManager.PlayUICursorCancelSFX();
+
                 if (inPopup)
                     CloseConfirmPopup();
                 else
-                {
-                    if (audioManager != null)
-                        audioManager.PlayUICursorCancelSFX();
-
                     SetEnabled(false);
-                }
             }
         }
 

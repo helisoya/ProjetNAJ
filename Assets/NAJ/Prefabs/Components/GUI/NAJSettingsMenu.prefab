@@ -2171,34 +2171,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2560127080843047367, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4525891823242006591}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
---- !u!1 &2805435423071058308 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2560127080843047367, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
-  m_PrefabInstance: {fileID: 389999674984187971}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4525891823242006591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2805435423071058308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568be79125aac945a44531c1515eed0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ANF.GUI.SettingsEntryUIInputs
 --- !u!114 &3065769074484107688 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3450392942646366699, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
   m_PrefabInstance: {fileID: 389999674984187971}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2805435423071058308}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
@@ -2412,34 +2392,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2560127080843047367, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8618554406639458805}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
---- !u!1 &2728672651763140426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2560127080843047367, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
-  m_PrefabInstance: {fileID: 457492863046629005}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8618554406639458805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728672651763140426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568be79125aac945a44531c1515eed0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ANF.GUI.SettingsEntryUIInputs
 --- !u!114 &3007020594321958758 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3450392942646366699, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
   m_PrefabInstance: {fileID: 457492863046629005}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728672651763140426}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
@@ -2645,34 +2605,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2560127080843047367, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1163351988109721361}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
---- !u!1 &3552667550062814534 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2560127080843047367, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
-  m_PrefabInstance: {fileID: 1354169877988693121}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1163351988109721361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552667550062814534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568be79125aac945a44531c1515eed0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ANF.GUI.SettingsEntryUIInputs
 --- !u!114 &4406974880512165226 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3450392942646366699, guid: b635ceb6f8f368d4aba728f75409e5e7, type: 3}
   m_PrefabInstance: {fileID: 1354169877988693121}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552667550062814534}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
