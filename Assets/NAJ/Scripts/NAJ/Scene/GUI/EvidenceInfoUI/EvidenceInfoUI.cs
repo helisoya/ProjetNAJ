@@ -15,10 +15,6 @@ namespace NAJ.GUI
     /// </summary>
     public class EvidenceInfoUI : GUIComponent
     {
-        [Header("All")]
-        [SerializeField] private CanvasGroup canvasGroup;
-
-
         [Header("Left")]
         [SerializeField] private RectTransform leftRoot;
         [SerializeField] private Image leftImage;
@@ -47,8 +43,6 @@ namespace NAJ.GUI
 
         public override void OnInitialize()
         {
-            canvasGroup.blocksRaycasts = false;
-            canvasGroup.alpha = 1.0f;
             leftRoot.anchoredPosition = new Vector2(-100, leftRoot.anchoredPosition.y);
             rightRoot.anchoredPosition = new Vector2(100, rightRoot.anchoredPosition.y);
             fullRoot.localScale = new Vector2(0, 0);
@@ -66,22 +60,18 @@ namespace NAJ.GUI
 
         public override void OnEnabled()
         {
-            OnUnPaused();
         }
 
         public override void OnDisabled()
         {
-            OnPaused();
         }
 
         public override void OnPaused()
         {
-            canvasGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
-            canvasGroup.DOFade(1.0f, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnRegisterInputs()

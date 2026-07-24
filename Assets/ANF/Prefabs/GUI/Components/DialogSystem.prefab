@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: 19.970001}
-  m_SizeDelta: {x: 250, y: 50}
+  m_AnchoredPosition: {x: 125, y: 15}
+  m_SizeDelta: {x: 250, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6022400377692590653
 CanvasRenderer:
@@ -251,6 +251,10 @@ MonoBehaviour:
   root: {fileID: 5010621968908180720}
   hideRootWhenClosed: 1
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980198
+  pausedTransition:
+    rid: 5904634178622980199
   canvasGroup: {fileID: 4755947927630345497}
   speakerRoot: {fileID: 724436330951842106}
   dialogBackgrounds:
@@ -259,11 +263,26 @@ MonoBehaviour:
   speakerText: {fileID: 7864567423224832971}
   dialogText: {fileID: 2344990285739357128}
   continueButton: {fileID: 2268815960365812632}
-  autoPlayButton: {fileID: 0}
-  skipModeButton: {fileID: 0}
-  buttonDisabledSprite: {fileID: 21300000, guid: 67e82c3031f92714f9cacb7ccf4d0fda, type: 3}
-  buttonEnabledSprite: {fileID: 21300000, guid: 7b1fd3fc6627ea541b17c558b713b2fd, type: 3}
   punctuationSpeedFactor: 3
+  references:
+    version: 2
+    RefIds:
+    - rid: 5904634178622980198
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 4755947927630345497}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
+    - rid: 5904634178622980199
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 4755947927630345497}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
 --- !u!225 &4755947927630345497
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -629,8 +648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 90}
-  m_SizeDelta: {x: 570, y: 100}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: 570, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &75556091075119921
 CanvasRenderer:

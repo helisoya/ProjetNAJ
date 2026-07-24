@@ -828,6 +828,10 @@ MonoBehaviour:
   root: {fileID: 6742950944155935923}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980235
+  pausedTransition:
+    rid: 5904634178622980234
   canvasGroup: {fileID: 7164552812805553542}
   leftRoot: {fileID: 4160499344197282400}
   leftImage: {fileID: 5757825583708090771}
@@ -837,6 +841,25 @@ MonoBehaviour:
   fullImage: {fileID: 7164183182254130497}
   fullName: {fileID: 7899538801085720806}
   fullDesc: {fileID: 2259691710219673858}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5904634178622980234
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 7164552812805553542}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
+    - rid: 5904634178622980235
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 7164552812805553542}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
 --- !u!225 &7164552812805553542
 CanvasGroup:
   m_ObjectHideFlags: 0

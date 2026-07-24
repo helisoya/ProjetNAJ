@@ -500,12 +500,29 @@ MonoBehaviour:
   root: {fileID: 6065555402559344109}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980225
+  pausedTransition:
+    rid: -2
   bgTransform: {fileID: 3291636940593617320}
   transitionDuration: 0.5
   historyRoot: {fileID: 3609702722246325934}
   prefabText: {fileID: 6411368262167158716, guid: 1433d4134c07df44389329b66a04859b, type: 3}
   scrollbar: {fileID: 3269031797522442309}
   noSpeakerSize: 33
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5904634178622980225
+      type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 3291636940593617320}
+        slideFrom: 1
+        inEase: 6
+        outEase: 6
 --- !u!1 &6140120310733797235
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,8 +668,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: History
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -54,7 +54,10 @@ MonoBehaviour:
   root: {fileID: 7052705504116219717}
   hideRootWhenClosed: 0
   lockComponents: []
-  canvasGroup: {fileID: 4330805141171388405}
+  enabledTransition:
+    rid: 5904634178622980245
+  pausedTransition:
+    rid: 5904634178622980246
   reminderRoot: {fileID: 2189292944381061338}
   reminderPrefab: {fileID: 4055862266548479230, guid: b385dc962ef56954692ed56a5b03ed58, type: 3}
   registeredReminders:
@@ -199,6 +202,22 @@ MonoBehaviour:
     - rid: 5696404040455028859
       type: {class: NAJExaminationPressAction, ns: NAJ.GUI, asm: Assembly-CSharp}
       data: 
+    - rid: 5904634178622980245
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 4330805141171388405}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
+    - rid: 5904634178622980246
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 4330805141171388405}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
 --- !u!1 &7862363623091927808
 GameObject:
   m_ObjectHideFlags: 0

@@ -143,8 +143,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Log
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -545,8 +545,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Log Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1053,6 +1053,10 @@ MonoBehaviour:
   root: {fileID: 4435302961679701033}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980219
+  pausedTransition:
+    rid: -2
   bgTransform: {fileID: 2417738894377385364}
   transitionDuration: 0.5
   buttonsRoot: {fileID: 4562602923932314695}
@@ -1063,6 +1067,19 @@ MonoBehaviour:
   logSpriteImage: {fileID: 8631529419087433708}
   defaultLogSprite: {fileID: 21300000, guid: 88f37d18b26136e48b3c87a2582e5b91, type: 3}
   popupTransform: {fileID: 1373078679187839767}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5904634178622980219
+      type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 2417738894377385364}
+        slideFrom: 1
+        inEase: 6
+        outEase: 6
 --- !u!1 &4483458272676142111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,8 +1301,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Logs
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1442,8 +1459,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The knights are very dangerous and scary...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -20,10 +20,6 @@ namespace ANF.GUI
     /// </summary>
     public class SettingsMenuUI : GUIComponent
     {
-        [Header("Background")]
-        [SerializeField] private RectTransform bgTransform;
-        [SerializeField] private float transitionDuration = 0.5f;
-
         [Header("Tabs")]
         [SerializeField] private Transform tabsRoot;
         [SerializeField] private Scrollbar scrollbar;
@@ -56,7 +52,6 @@ namespace ANF.GUI
         {
             objects = new List<Selectable>();
             tabs = new Dictionary<string, SettingsTabUI>();
-            bgTransform.anchoredPosition = new Vector2(bgTransform.sizeDelta.x / 2f, 0);
             movingWithInput = false;
         }
 
@@ -124,9 +119,6 @@ namespace ANF.GUI
             RegenerateObjectsNavigation();
 
             scrollbar.value = 1;
-
-            float halfSizeRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(-halfSizeRoot, transitionDuration).SetEase(Ease.OutQuad);
         }
 
 
@@ -136,8 +128,6 @@ namespace ANF.GUI
                 colorPicker.Close();
 
             EventSystem.current.SetSelectedGameObject(null);
-            float halfSizeRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(halfSizeRoot, transitionDuration).SetEase(Ease.OutQuad);
 
             string globalDataSaveFile = FileManager.savPath + PersistentDataManager.instance.GetANFSettings().saveFolder + "global.json";
             SaveUtils.SaveGlobalData(PersistentDataManager.instance.GetGlobalData(),

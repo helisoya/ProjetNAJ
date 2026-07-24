@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Locals.LocalizedText
   localKey: 
   channel: 0
+  type: 0
   text: {fileID: 796053690011466730}
   canResize: 1
   canRecolor: 1
@@ -275,11 +276,27 @@ MonoBehaviour:
   root: {fileID: 5008901504485921086}
   hideRootWhenClosed: 0
   lockComponents: []
-  canvasGroup: {fileID: 1583797137673693727}
+  enabledTransition:
+    rid: -2
+  pausedTransition:
+    rid: 5904634178622980228
   titleText: {fileID: 177850424319839004}
   titleTransform: {fileID: 1341285483188659146}
   buttonsRoot: {fileID: 4090759887301235742}
   buttonPrefab: {fileID: 6390827533792533767, guid: bddbce20b6459d04ba92daee8bdb1571, type: 3}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5904634178622980228
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 1583797137673693727}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
 --- !u!225 &1583797137673693727
 CanvasGroup:
   m_ObjectHideFlags: 0

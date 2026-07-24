@@ -17,10 +17,6 @@ namespace NAJ.GUI
     /// </summary>
     public class CaseSelectionMenu : GUIComponent
     {
-        [Header("Background")]
-        [SerializeField] private RectTransform bgTransform;
-        [SerializeField] private float transitionDuration = 0.5f;
-
         [Header("Case Selection")]
         [SerializeField] private LocalizedText caseNameText;
         [SerializeField] private CaseSelectionArrow leftArrow;
@@ -45,7 +41,6 @@ namespace NAJ.GUI
 
         public override void OnInitialize()
         {
-            bgTransform.anchoredPosition = new Vector2(bgTransform.sizeDelta.x / 2f, 0);
         }
 
         public override void OnStart()
@@ -84,9 +79,6 @@ namespace NAJ.GUI
 
             caseImagesRoot.anchoredPosition = new Vector2(0, caseImagesRoot.anchoredPosition.y);
 
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(-halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
-
             currentButtonInputSide = 0;
             cooldownToNextButtonIncrement = 0;
 
@@ -97,9 +89,6 @@ namespace NAJ.GUI
         {
             if (inPopup)
                 CloseConfirmPopup();
-
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
         }
 
         public override void OnPaused()

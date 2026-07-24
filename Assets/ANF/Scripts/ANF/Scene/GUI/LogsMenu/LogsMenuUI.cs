@@ -15,10 +15,6 @@ namespace ANF.GUI
     /// </summary>
     public class LogsMenuUI : GUIComponent
     {
-        [Header("Background")]
-        [SerializeField] private RectTransform bgTransform;
-        [SerializeField] private float transitionDuration = 0.5f;
-
         [Header("Log Buttons")]
         [SerializeField] private Transform buttonsRoot;
         [SerializeField] private LogsMenuUIButton buttonPrefab;
@@ -43,7 +39,6 @@ namespace ANF.GUI
 
         public override void OnInitialize()
         {
-            bgTransform.anchoredPosition = new Vector2(bgTransform.sizeDelta.x / 2f, 0);
             popupTransform.anchoredPosition = new Vector2(popupTransform.sizeDelta.x / 2f, -popupTransform.sizeDelta.y / 2.0f);
         }
 
@@ -90,9 +85,6 @@ namespace ANF.GUI
                 buttons.Add(button);
             }
 
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(-halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
-
             currentButtonInputSide.x = 0;
             currentButtonInputSide.y = 0;
             cooldownToNextButtonIncrement = 0;
@@ -113,8 +105,6 @@ namespace ANF.GUI
         public override void OnDisabled()
         {
             EventSystem.current.SetSelectedGameObject(null);
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
         }
 
         public override void OnPaused()

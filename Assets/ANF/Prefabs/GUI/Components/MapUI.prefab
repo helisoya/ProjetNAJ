@@ -139,10 +139,26 @@ MonoBehaviour:
   root: {fileID: 5039476859572271431}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980216
+  pausedTransition:
+    rid: -2
   mapRoot: {fileID: 6452069723421223990}
   backgroundImg: {fileID: 971308761287149622}
   prefabButton: {fileID: 7999730661450670340, guid: e286cb7350c99dd4486a80c3a3c52bb9, type: 3}
   thresholdInputDistance: 20
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5904634178622980216
+      type: {class: GUIScaleInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 6452069723421223990}
+        inEase: 6
+        outEase: 6
 --- !u!1 &7166128929257139309
 GameObject:
   m_ObjectHideFlags: 0

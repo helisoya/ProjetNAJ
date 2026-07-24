@@ -15,16 +15,11 @@ namespace NAJ.GUI
     /// </summary>
     public class AnimationUI : GUIComponent
     {
-        [Header("All")]
-        [SerializeField] private CanvasGroup canvasGroup;
-
         private Dictionary<string, Animator> animations;
 
         public override void OnInitialize()
         {
             animations = new Dictionary<string, Animator>();
-            canvasGroup.blocksRaycasts = false;
-            canvasGroup.alpha = 1.0f;
         }
         
         /// <summary>
@@ -82,26 +77,22 @@ namespace NAJ.GUI
 
         public override void OnEnabled()
         {
-            OnUnPaused();
         }
 
         public override void OnDisabled()
         {
-            OnPaused();
         }
 
         public override void OnPaused()
         {
             foreach (Animator animation in animations.Values)
                 animation.speed = 0.0f;
-            canvasGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
             foreach (Animator animation in animations.Values)
                 animation.speed = 1.0f;
-            canvasGroup.DOFade(1.0f, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnRegisterInputs()

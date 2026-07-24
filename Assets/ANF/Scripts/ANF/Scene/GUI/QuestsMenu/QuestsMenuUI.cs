@@ -15,9 +15,6 @@ namespace ANF.GUI
     /// </summary>
     public class QuestsMenuUI : GUIComponent
     {
-        [Header("Background")]
-        [SerializeField] private RectTransform bgTransform;
-        [SerializeField] private float transitionDuration = 0.5f;
 
         [Header("Quest Buttons")]
         [SerializeField] private Transform buttonsRoot;
@@ -44,7 +41,6 @@ namespace ANF.GUI
 
         public override void OnInitialize()
         {
-            bgTransform.anchoredPosition = new Vector2(bgTransform.sizeDelta.x / 2f, 0);
         }
 
         public override void OnStart()
@@ -127,9 +123,6 @@ namespace ANF.GUI
                 }
             }
 
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(-halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
-
             currentButtonInputSide.x = 0;
             currentButtonInputSide.y = 0;
             cooldownToNextButtonIncrement = 0;
@@ -156,8 +149,6 @@ namespace ANF.GUI
         public override void OnDisabled()
         {
             EventSystem.current.SetSelectedGameObject(null);
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
             visibleQuests = null;
         }
 

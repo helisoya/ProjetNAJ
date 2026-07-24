@@ -97,8 +97,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 313.75, y: 90}
-  m_SizeDelta: {x: 37.5, y: 75}
+  m_AnchoredPosition: {x: 302, y: 80}
+  m_SizeDelta: {x: 25, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6175111787273979752
 CanvasRenderer:
@@ -200,7 +200,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7410221658803160573}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -221,12 +221,14 @@ MonoBehaviour:
   root: {fileID: 7410221658803160573}
   hideRootWhenClosed: 0
   lockComponents: []
-  canvasGroup: {fileID: 7212553144297091597}
+  enabledTransition:
+    rid: 5904634178622980238
+  pausedTransition:
+    rid: 5904634178622980239
   leftArrow: {fileID: 2464544902750487833}
   rightArrow: {fileID: 4154708017642790135}
   iconsRoot: {fileID: 1245802086304525528}
   prefabIcon: {fileID: 832634123774320076, guid: 9982a3619a103fa49ade37cc7d8dd826, type: 3}
-  transitionDuration: 0.5
   onPressPart:
     m_PersistentCalls:
       m_Calls: []
@@ -239,6 +241,25 @@ MonoBehaviour:
   onChangePart:
     m_PersistentCalls:
       m_Calls: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5904634178622980238
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 7212553144297091597}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
+    - rid: 5904634178622980239
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 7212553144297091597}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
 --- !u!1 &7842603789220228237
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,8 +295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -313.75, y: 90}
-  m_SizeDelta: {x: 37.5, y: 75}
+  m_AnchoredPosition: {x: -302, y: 80}
+  m_SizeDelta: {x: 25, y: 75}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!222 &9193478078789385761
 CanvasRenderer:

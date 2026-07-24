@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cancel
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Locals.LocalizedText
   localKey: SaveMenu_Popup_Cancel
   channel: 0
+  type: 0
   text: {fileID: 2847472016113826560}
   canResize: 1
   canRecolor: 1
@@ -407,8 +408,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Use this slot ?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -491,6 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Locals.LocalizedText
   localKey: SaveMenu_Popup_Title
   channel: 0
+  type: 0
   text: {fileID: 7786243110946407238}
   canResize: 1
   canRecolor: 1
@@ -638,6 +640,10 @@ MonoBehaviour:
   root: {fileID: 3469216011183769263}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980206
+  pausedTransition:
+    rid: -2
   bgTransform: {fileID: 4114956463710642354}
   transitionDuration: 0.5
   titleText: {fileID: 2269394107686771599}
@@ -653,11 +659,21 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 1438066191746990158
       type: {class: SaveMenuSlotDefaultInfo, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
         bgSavefileExists: {fileID: 76504064, guid: a1b6fab1533b50a43aa60e764df062a1, type: 3}
         bgSavefileDontExist: {fileID: 1924764891, guid: a1b6fab1533b50a43aa60e764df062a1, type: 3}
+    - rid: 5904634178622980206
+      type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 4114956463710642354}
+        slideFrom: 1
+        inEase: 6
+        outEase: 6
 --- !u!1 &5950405889042382750
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,8 +742,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Confirm
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -810,6 +826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Locals.LocalizedText
   localKey: SaveMenu_Popup_Confirm
   channel: 0
+  type: 0
   text: {fileID: 8027053621330395578}
   canResize: 1
   canRecolor: 1
@@ -1083,8 +1100,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Select a slot to save to
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
-  m_sharedMaterial: {fileID: -3481345414680880985, guid: 20d0c435cdcccb449b85124b701f19ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+  m_sharedMaterial: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1167,6 +1184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Locals.LocalizedText
   localKey: SaveMenu_Title
   channel: 0
+  type: 0
   text: {fileID: 4527215955806237116}
   canResize: 1
   canRecolor: 1
@@ -1268,6 +1286,22 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 6561573683671898042, guid: f5431055d342b374e98657c9c73f096d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+    - target: {fileID: 6561573683671898042, guid: f5431055d342b374e98657c9c73f096d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+    - target: {fileID: 9184762217392116874, guid: f5431055d342b374e98657c9c73f096d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+    - target: {fileID: 9184762217392116874, guid: f5431055d342b374e98657c9c73f096d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7415795266122915290, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

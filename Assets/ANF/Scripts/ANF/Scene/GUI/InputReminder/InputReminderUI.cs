@@ -17,15 +17,12 @@ namespace ANF.GUI
     public class InputReminderUI : GUIComponent
     {
         [Header("Components")]
-        [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private RectTransform reminderRoot;
         [SerializeField] private InputReminderUIButton reminderPrefab;
         [SerializeField] private SerializedDictionary<string, InputReminderData> registeredReminders;
 
         public override void OnInitialize()
         {
-            canvasGroup.alpha = 0;
-
             foreach (InputReminderData reminder in registeredReminders.Values)
             {
                 reminder.instanceButton = Instantiate(reminderPrefab, reminderRoot);
@@ -73,24 +70,18 @@ namespace ANF.GUI
 
         public override void OnEnabled()
         {
-            OnUnPaused();
         }
 
         public override void OnDisabled()
         {
-            OnPaused();
         }
 
         public override void OnPaused()
         {
-            canvasGroup.blocksRaycasts = false;
-            canvasGroup.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
-            canvasGroup.blocksRaycasts = true;
-            canvasGroup.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnSave(JSON json)

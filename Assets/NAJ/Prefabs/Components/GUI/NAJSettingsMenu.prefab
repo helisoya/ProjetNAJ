@@ -994,8 +994,10 @@ MonoBehaviour:
   root: {fileID: 2457853883499296667}
   hideRootWhenClosed: 0
   lockComponents: []
-  bgTransform: {fileID: 7017756470742556747}
-  transitionDuration: 0.5
+  enabledTransition:
+    rid: 5904634178622980249
+  pausedTransition:
+    rid: -2
   tabsRoot: {fileID: 61886245017418505}
   scrollbar: {fileID: 5579723004105552287}
   tabPrefab: {fileID: 2234017033866888896, guid: 597a0963a05464e45bf6b3f7f8a39689, type: 3}
@@ -1018,6 +1020,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 4686672861036544092
       type: {class: SettingsHandlerUIInputs, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
@@ -1062,6 +1066,14 @@ MonoBehaviour:
           - inputAction: {fileID: 3883995784832279789, guid: 052faaac586de48259a63d0c4782560b, type: 3}
             labelKey: SettingsMenu_Inputs_InventoryPresent
             bindingIndex: 1
+    - rid: 5904634178622980249
+      type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 7017756470742556747}
+        slideFrom: 1
+        inEase: 6
+        outEase: 6
     - rid: 6627816543662899282
       type: {class: SettingsHandlerUIGame, ns: ANF.GUI, asm: Assembly-CSharp}
       data: 

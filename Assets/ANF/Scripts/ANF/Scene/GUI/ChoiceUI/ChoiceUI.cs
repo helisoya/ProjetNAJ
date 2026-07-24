@@ -12,9 +12,6 @@ namespace ANF.GUI
     /// </summary>
     public class ChoiceUI : GUIComponent
     {
-        [Header("General")]
-        [SerializeField] private CanvasGroup canvasGroup;
-
         [Header("Title")]
         [SerializeField] private Locals.LocalizedText titleText;
         [SerializeField] private RectTransform titleTransform;
@@ -127,12 +124,10 @@ namespace ANF.GUI
         {
             cooldownToNextButtonIncrement = 0.0f;
             currentButtonInputSide = 0;
-            canvasGroup.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
-            canvasGroup.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnRegisterInputs()

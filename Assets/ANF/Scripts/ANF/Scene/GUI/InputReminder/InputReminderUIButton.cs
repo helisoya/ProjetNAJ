@@ -50,6 +50,9 @@ namespace ANF.Persistent
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            if (eventData.button != PointerEventData.InputButton.Left)
+                return;
+
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out AudioManager audioManager))
                 audioManager.PlayUICursorConfirmSFX();
 
@@ -58,6 +61,9 @@ namespace ANF.Persistent
 
         public void OnPointerUp(PointerEventData eventData)
         {
+            if (eventData.button != PointerEventData.InputButton.Left)
+                return;
+
             action.OnUp(manager);
         }
     }

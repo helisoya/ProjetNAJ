@@ -66,4 +66,26 @@ MonoBehaviour:
   root: {fileID: 3749304277175818485}
   hideRootWhenClosed: 0
   lockComponents: []
-  canvasGroup: {fileID: 4364919653600007515}
+  enabledTransition:
+    rid: 5904634178622980231
+  pausedTransition:
+    rid: 5904634178622980230
+  references:
+    version: 2
+    RefIds:
+    - rid: 5904634178622980230
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 4364919653600007515}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6
+    - rid: 5904634178622980231
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 4364919653600007515}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6

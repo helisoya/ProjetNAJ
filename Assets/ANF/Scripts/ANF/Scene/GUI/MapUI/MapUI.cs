@@ -15,7 +15,6 @@ namespace ANF.GUI
     public class MapUI : GUIComponent
     {
         [Header("Map")]
-        [SerializeField] private RectTransform mapRoot;
         [SerializeField] private Image backgroundImg;
         [SerializeField] private MapUIButton prefabButton;
         [SerializeField] private float thresholdInputDistance = 10f;
@@ -55,7 +54,6 @@ namespace ANF.GUI
 
         public override void OnInitialize()
         {
-            mapRoot.localScale = new Vector3(0, 1, 1);
         }
 
         public override void OnStart()
@@ -164,13 +162,11 @@ namespace ANF.GUI
 
             if (currentButtonIndex >= 0 && currentButtonIndex < buttons.Count)
                 buttons[currentButtonIndex].OnEnter();
-            mapRoot.DOScaleX(1, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnDisabled()
         {
             showingMap = false;
-            mapRoot.DOScaleX(0, 0.5f).SetEase(Ease.OutQuad);
         }
 
         /// <summary>

@@ -20,6 +20,8 @@ namespace ANF.GUI
         [SerializeField] protected bool hideRootWhenClosed = true;
         [Tooltip("A component may be opened only if all its lock components are closed. For instance, the load menu cannot be opened if the map menu is open")]
         [SerializeField] protected string[] lockComponents;
+        [SerializeReference, SubclassSelector] protected GUIInOutTransition enabledTransition;
+        [SerializeReference, SubclassSelector] protected GUIInOutTransition pausedTransition;
 
         public bool isEnabled { get; protected set; } = true;
         public bool isPaused { get; protected set; } = false;
@@ -38,6 +40,15 @@ namespace ANF.GUI
             isEnabled = false;
             isPaused = false;
             OnInitialize();
+
+            if (enabledTransition != null)
+            {
+                enabledTransition.OnStart();
+                enabledTransition.TransitionOut(true);
+            }
+
+            if (pausedTransition != null)
+                pausedTransition.OnStart();
 
             root.SetActive(!hideRootWhenClosed);
 
@@ -60,11 +71,17 @@ namespace ANF.GUI
                 {
                     OnRegisterInputs();
                     OnEnabled();
+
+                    if (enabledTransition != null)
+                        enabledTransition.TransitionIn();
                 }
                 else
                 {
                     OnUnRegisterInputs();
                     OnDisabled();
+
+                    if (enabledTransition != null)
+                        enabledTransition.TransitionOut();
                 }
             }
         }
@@ -77,9 +94,17 @@ namespace ANF.GUI
             {
                 isPaused = newValue;
                 if (newValue)
+                {                    
                     OnPaused();
+                    if (pausedTransition != null)
+                        pausedTransition.TransitionOut();
+                }
                 else
+                {
                     OnUnPaused();
+                    if (pausedTransition != null)
+                        pausedTransition.TransitionIn();
+                }
             }
         }
 

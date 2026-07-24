@@ -221,6 +221,10 @@ MonoBehaviour:
   root: {fileID: 607082755896786010}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980232
+  pausedTransition:
+    rid: -2
   bgTransform: {fileID: 3498788850663526314}
   transitionDuration: 0.5
   caseNameText: {fileID: 30274935472439102}
@@ -241,6 +245,19 @@ MonoBehaviour:
   confirmPopupRoot: {fileID: 1230360173157886325}
   confirmPopupCancelButton: {fileID: 5944569058834187232}
   confirmPopupAcceptButton: {fileID: 6879082734942243600}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5904634178622980232
+      type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 3498788850663526314}
+        slideFrom: 1
+        inEase: 6
+        outEase: 6
 --- !u!1 &655116110453792940
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,9 +54,7 @@ namespace NAJ.GUI
 
         [Header("Background")]
         [SerializeField] private string[] guiToPauseOnEnable;
-        [SerializeField] private RectTransform bgTransform;
         [SerializeField] private CanvasGroup canvasGroup;
-        [SerializeField] private float transitionDuration = 0.5f;
         private bool repauseNextFrame = false;
 
         [Header("Item Details")]
@@ -118,7 +116,6 @@ namespace NAJ.GUI
             currentMode = InventoryMode.ViewOnly;
             canvasGroup.alpha = 0.0f;
             canvasGroup.blocksRaycasts = false;
-            bgTransform.localScale = Vector2.zero;
         }
 
         public override void OnStart()
@@ -310,8 +307,7 @@ namespace NAJ.GUI
                     cachedPreviousReminders = null;
                 }
 
-                canvasGroup.DOFade(1.0f, transitionDuration).SetEase(Ease.OutQuad);
-                bgTransform.DOScale(Vector3.one, transitionDuration).SetEase(Ease.OutElastic);
+                canvasGroup.DOFade(1.0f, 0.5f).SetEase(Ease.OutQuad);
                 canvasGroup.blocksRaycasts = true;
             }
             else
@@ -329,21 +325,17 @@ namespace NAJ.GUI
             {
                 inputReminder.SetRemindersState(cachedPreviousReminders);
             }
-
+            canvasGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad);
             canvasGroup.blocksRaycasts = false;
-            canvasGroup.DOFade(0.0f, transitionDuration).SetEase(Ease.OutQuad);
-            bgTransform.DOScale(Vector3.zero, transitionDuration).SetEase(Ease.InElastic);
         }
 
         public override void OnPaused()
         {
-            canvasGroup.DOFade(0.0f, transitionDuration).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
             repauseNextFrame = true;
-            canvasGroup.DOFade(1.0f, transitionDuration).SetEase(Ease.OutQuad);
         }
 
         /// <summary>

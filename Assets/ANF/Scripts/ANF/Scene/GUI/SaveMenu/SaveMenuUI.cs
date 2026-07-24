@@ -16,10 +16,6 @@ namespace ANF.GUI
     /// </summary>
     public class SaveMenuUI : GUIComponent
     {
-        [Header("Background")]
-        [SerializeField] private RectTransform bgTransform;
-        [SerializeField] private float transitionDuration = 0.5f;
-
         [Header("Save Menu")]
         [SerializeField] private Locals.LocalizedText titleText;
         [SerializeField] private Transform buttonsRoot;
@@ -48,7 +44,6 @@ namespace ANF.GUI
         public override void OnInitialize()
         {
             inSaveMode = false;
-            bgTransform.anchoredPosition = new Vector2(bgTransform.sizeDelta.x / 2f, 0);
         }
 
         public override void OnStart()
@@ -144,9 +139,6 @@ namespace ANF.GUI
                 buttons[i + 1] = GenerateSaveButton(settings, i.ToString(), i.ToString(), i + 1, true);
             }
 
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(-halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
-
             currentButtonInputSide.x = 0;
             currentButtonInputSide.y = 0;
             cooldownToNextButtonIncrement = 0;
@@ -158,9 +150,6 @@ namespace ANF.GUI
         {
             if (inPopup)
                 CloseConfirmPopup();
-
-            float halfSizeButtonsRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(halfSizeButtonsRoot, transitionDuration).SetEase(Ease.OutQuad);
         }
 
         public override void OnPaused()

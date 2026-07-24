@@ -1755,15 +1755,17 @@ MonoBehaviour:
   root: {fileID: 8789518158234457186}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980240
+  pausedTransition:
+    rid: 5904634178622980242
   guiToPauseOnEnable:
   - fadeBg
   - fadeFg
   - ANF.GUI.ChoiceUI
   - ANF.GUI.MapUI
   - NAJ.GUI.AnimationUI
-  bgTransform: {fileID: 7774984039670982492}
   canvasGroup: {fileID: 5952862131520930980}
-  transitionDuration: 0.5
   itemTitle: {fileID: 3232292871596456972}
   itemDesc: {fileID: 4352569268787894927}
   itemIcon: {fileID: 6125089118627979613}
@@ -1787,3 +1789,21 @@ MonoBehaviour:
   checkLeft: {fileID: 337295671106804882}
   checkRight: {fileID: 7659723872603174716}
   checkTabsRoot: {fileID: 2768315855843022322}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5904634178622980240
+      type: {class: GUIScaleInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 7774984039670982492}
+        inEase: 12
+        outEase: 11
+    - rid: 5904634178622980242
+      type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        canvasGroup: {fileID: 5952862131520930980}
+        blockRaycastsIfInactive: 0
+        inEase: 6
+        outEase: 6

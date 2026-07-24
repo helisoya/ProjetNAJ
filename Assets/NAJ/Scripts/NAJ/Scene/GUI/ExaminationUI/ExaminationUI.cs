@@ -24,12 +24,10 @@ namespace NAJ.GUI
     public class ExaminationUI : GUIComponent
     {
         [Header("Items")]
-        [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private ExaminationUIArrow leftArrow;
         [SerializeField] private ExaminationUIArrow rightArrow;
         [SerializeField] private RectTransform iconsRoot;
         [SerializeField] private ExaminationUIPartIcon prefabIcon;
-        [SerializeField] private float transitionDuration = 0.5f;
         private List<string> pressedIds = new List<string>();
         private string[] currentIds;
         private uint[] currentIdsLines;
@@ -51,8 +49,6 @@ namespace NAJ.GUI
             onChangePart = new UnityEvent<uint>();
 
             canBeInteractedWith = false;
-            canvasGroup.alpha = 0.0f;
-            canvasGroup.blocksRaycasts = false;
             pressedIds = new List<string>();
 
             ClearData();
@@ -246,24 +242,18 @@ namespace NAJ.GUI
 
         public override void OnEnabled()
         {
-            OnUnPaused();
         }
 
         public override void OnDisabled()
         {
-            OnPaused();
         }
 
         public override void OnPaused()
         {
-            canvasGroup.blocksRaycasts = false;
-            canvasGroup.DOFade(0.0f, transitionDuration).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
-            canvasGroup.DOFade(1.0f, transitionDuration).SetEase(Ease.OutQuad);
-            canvasGroup.blocksRaycasts = true;
         }
 
         public override void OnRegisterInputs()

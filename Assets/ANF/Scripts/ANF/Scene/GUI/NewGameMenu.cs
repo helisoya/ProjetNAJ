@@ -15,10 +15,6 @@ namespace ANF.GUI
     /// </summary>
     public class NewGameMenu : GUIComponent
     {
-        [Header("Background")]
-        [SerializeField] private RectTransform bgTransform;
-        [SerializeField] private float transitionDuration = 0.5f;
-
         [Header("Components")]
         [SerializeField] private TMP_InputField nameField;
         [SerializeField] private Button confirmButton;
@@ -29,7 +25,6 @@ namespace ANF.GUI
 
         public override void OnInitialize()
         {
-            bgTransform.anchoredPosition = new Vector2(bgTransform.sizeDelta.x / 2f, 0);
         }
 
         public override void OnStart()
@@ -53,9 +48,6 @@ namespace ANF.GUI
 
             selectFirstObject = true;
 
-            float halfSizeRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(-halfSizeRoot, transitionDuration).SetEase(Ease.OutQuad);
-
             confirmButton.onClick.RemoveAllListeners();
             confirmButton.onClick.AddListener(OnConfirmName);
         }
@@ -64,8 +56,6 @@ namespace ANF.GUI
         public override void OnDisabled()
         {
             EventSystem.current.SetSelectedGameObject(null);
-            float halfSizeRoot = bgTransform.sizeDelta.x / 2f;
-            bgTransform.DOAnchorPosX(halfSizeRoot, transitionDuration).SetEase(Ease.OutQuad);
         }
 
         public override void OnPaused()

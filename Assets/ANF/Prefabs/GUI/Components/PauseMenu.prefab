@@ -201,6 +201,10 @@ MonoBehaviour:
   root: {fileID: 7804507056784517331}
   hideRootWhenClosed: 0
   lockComponents: []
+  enabledTransition:
+    rid: 5904634178622980210
+  pausedTransition:
+    rid: -2
   guiComponentsToPause:
   - fadeBg
   - fadeFg
@@ -225,6 +229,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 1438066124900532297
       type: {class: PauseMenuButtonDataMainMenu, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
@@ -260,6 +266,14 @@ MonoBehaviour:
       data:
         iconSprite: {fileID: -857843388, guid: 454ac537d39c71c42819f7faf396c469, type: 3}
         labelKey: PauseMenu_History
+    - rid: 5904634178622980210
+      type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        transitionDuration: 0.5
+        panel: {fileID: 5197445996823678283}
+        slideFrom: 0
+        inEase: 6
+        outEase: 6
     - rid: 6964546897533993293
       type: {class: PauseMenuButtonDataResume, ns: ANF.GUI, asm: Assembly-CSharp}
       data:

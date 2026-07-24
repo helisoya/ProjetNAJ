@@ -19,7 +19,6 @@ namespace ANF.GUI
     public class DialogUI : GUIComponent
     {
         [Header("Components")]
-        [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private GameObject speakerRoot;
         [SerializeField] private Image[] dialogBackgrounds;
         [SerializeField] private Locals.LocalizedText speakerText;
@@ -54,8 +53,6 @@ namespace ANF.GUI
             speakerText.SetCanReload(true, false);
             dialogText.SetLocalizationEnabled(false, false);
             dialogText.SetCanReload(false, false);
-
-            canvasGroup.alpha = 0;
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
                 OnBackgroundOpacityChange(settings.Register("DialogUI_BackgroundOpacity", SettingsContainer.SettingsDataType.Float, OnBackgroundOpacityChange));
@@ -253,22 +250,18 @@ namespace ANF.GUI
 
         public override void OnEnabled()
         {
-            OnUnPaused();
         }
 
         public override void OnDisabled()
         {
-            OnPaused();
         }
 
         public override void OnPaused()
         {
-            canvasGroup.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnUnPaused()
         {
-            canvasGroup.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
         }
 
         public override void OnSave(JSON json)
