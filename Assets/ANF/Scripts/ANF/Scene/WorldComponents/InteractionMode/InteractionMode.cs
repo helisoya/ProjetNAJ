@@ -54,6 +54,7 @@ namespace ANF.Scene
 
         private Vector2 mousePosition;
         private bool canTryMouseClick;
+        private bool keyboardMode = true;
 
         private JSON loadedDataCache = null;
 
@@ -193,6 +194,8 @@ namespace ANF.Scene
             canTryMouseClick = false;
             mousePosition = new Vector2(-1, -1);
 
+            keyboardMode = true;
+
             GenerateInteractionList();
 
             if (currentInteractionObjects.Count > 0)
@@ -237,6 +240,9 @@ namespace ANF.Scene
 		/// <param name="index">The object's index</param>
         public void ConfirmObject(int index)
         {
+            if (index == -1)
+                return;
+
             OnUnRegisterInputs();
 
             if (audioManager != null)
@@ -268,24 +274,30 @@ namespace ANF.Scene
         {
             if (force || index != currentIndex)
             {
-                if (audioManager != null)
+                if (index != -1 && audioManager != null)
                     audioManager.PlayUICursorMoveSFX();
 
-                if (highlightType == HighlightType.OnlySelected)
-                    currentInteractionObjects[currentIndex].SetHighlightAlpha(0);
+                if (currentIndex != -1)
+                {
+                    if (highlightType == HighlightType.OnlySelected)
+                        currentInteractionObjects[currentIndex].SetHighlightAlpha(0);
 
-                if (highlightType != HighlightType.None)
-                    currentInteractionObjects[currentIndex].SetHighlightColor(baseColor);
+                    if (highlightType != HighlightType.None)
+                        currentInteractionObjects[currentIndex].SetHighlightColor(baseColor);
+                }
 
                 currentIndex = index;
 
-                if (highlightType == HighlightType.OnlySelected)
-                    currentInteractionObjects[currentIndex].SetHighlightAlpha(1);
+                if (index != -1)
+                {
+                    if (highlightType == HighlightType.OnlySelected)
+                        currentInteractionObjects[currentIndex].SetHighlightAlpha(1);
 
-                if (highlightType != HighlightType.None)
-                    currentInteractionObjects[currentIndex].SetHighlightColor(selectedColor);
+                    if (highlightType != HighlightType.None)
+                        currentInteractionObjects[currentIndex].SetHighlightColor(selectedColor);
 
-                UpdateIconFor(currentInteractionObjects[currentIndex]);
+                    UpdateIconFor(currentInteractionObjects[currentIndex]);
+                }
             }
         }
 
@@ -382,48 +394,51 @@ namespace ANF.Scene
                     cooldownToNextButtonIncrement -= Time.deltaTime;
                     if (cooldownToNextButtonIncrement <= 0)
                     {
-                        IncrementObjectWithInput();
+                        if (keyboardMode)
+                            IncrementObjectWithInput();
+
                         cooldownToNextButtonIncrement = 0.5f;
                     }
                 }
 
 
-                RaycastHit hit;
-                InteractableObject current = null;
-
-                if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(Camera.main.ScreenPointToRay(mousePosition), out hit, 500, interactablesMask))
-                {
-                    current = hit.transform.GetComponent<InteractableObject>();
-                    if (!currentInteractionObjects.Contains(current))
-                        current = null;
-                }
-
-
-                Cursor.SetCursor(current == null ? null : current.GetIcon(), Vector2.zero, CursorMode.Auto);
-
-                if (current != null)
+                if (!keyboardMode)
                 {
                     if (currentIcon)
                         currentIcon.gameObject.SetActive(false);
 
-                    for (int i = 0; i < currentInteractionObjects.Count; i++)
-                    {
-                        if (currentInteractionObjects[i] == current)
-                        {
-                            SelectObject(i);
+                    RaycastHit hit;
+                    InteractableObject current = null;
 
-                            if (canTryMouseClick)
-                                ConfirmObject(i);
-                            break;
+                    if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(Camera.main.ScreenPointToRay(mousePosition), out hit, 500, interactablesMask))
+                    {
+                        current = hit.transform.GetComponent<InteractableObject>();
+                        if (!currentInteractionObjects.Contains(current))
+                            current = null;
+                    }
+
+
+                    Cursor.SetCursor(current == null ? null : current.GetIcon(), Vector2.zero, CursorMode.Auto);
+
+                    if (current != null)
+                    {
+                        for (int i = 0; i < currentInteractionObjects.Count; i++)
+                        {
+                            if (currentInteractionObjects[i] == current)
+                            {
+                                SelectObject(i);
+
+                                if (canTryMouseClick)
+                                    ConfirmObject(i);
+                                break;
+                            }
                         }
                     }
+                    else
+                    {
+                        SelectObject(-1);
+                    }
                 }
-                else
-                {
-                    if (currentIcon)
-                        currentIcon.gameObject.SetActive(true);
-                }
-
                 canTryMouseClick = false;
             }
         }
@@ -450,7 +465,7 @@ namespace ANF.Scene
 
         private void OnNext(InputAction.CallbackContext context)
         {
-            if (isEnabled && !isPaused && inInteractionMode && context.ReadValueAsButton())
+            if (isEnabled && !isPaused && inInteractionMode && keyboardMode && context.ReadValueAsButton())
             {
                 ConfirmObject(currentIndex);
             }
@@ -459,13 +474,21 @@ namespace ANF.Scene
         private void OnMousePosition(InputAction.CallbackContext context)
         {
             if (isEnabled && !isPaused && inInteractionMode)
+            {
+                keyboardMode = false;
                 mousePosition = context.ReadValue<Vector2>();
+
+                if (currentIcon)
+                    currentIcon.gameObject.SetActive(false);
+            }
         }
 
         private void OnMouseClick(InputAction.CallbackContext context)
         {
             if (isEnabled && !isPaused && inInteractionMode && context.ReadValueAsButton())
+            {
                 canTryMouseClick = true;
+            }
         }
 
         private void OnMove(InputAction.CallbackContext context)
@@ -478,6 +501,11 @@ namespace ANF.Scene
 
                 if (Mathf.Abs(value.x) >= 0.9f)
                 {
+                    keyboardMode = true;
+                    if (currentIcon)
+                        currentIcon.gameObject.SetActive(true);
+                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+
                     noMovement = false;
                     if (currentButtonInputSide == 0)
                     {
