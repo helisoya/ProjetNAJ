@@ -1,0 +1,13 @@
+newmtl Wood1
+map_Pm Wood1_Mask.jpg
+bump Wood1_Normal.jpg
+map_Kd Wood1_Albedo.jpg
+Kd 1 1 1
+d 1
+
+newmtl Tree1
+bump Tree1_Normal.jpg
+map_Kd Tree1_Albedo.jpg
+Kd 1 1 1
+d 1
+
