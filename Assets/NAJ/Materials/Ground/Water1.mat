@@ -12,9 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _ENABLECAUSTICS
   - _ENABLENORMAL
-  - _ENABLE_UNDERWATERLAYER
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -95,7 +93,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SurfFoam_Map:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5bc401fceedaea747a98548f8e58bc3c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SurfaceDistortion_Map:
@@ -149,13 +147,13 @@ Material:
     - _DistanceMask_Start: 5
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _ENABLECAUSTICS: 1
+    - _ENABLECAUSTICS: 0
     - _ENABLENORMAL: 1
     - _ENABLEPLANERREFLECTION: 0
     - _ENABLEREFRACTION: 0
     - _ENABLESHORELINE: 0
     - _ENABLEWAVE: 0
-    - _ENABLE_UNDERWATERLAYER: 1
+    - _ENABLE_UNDERWATERLAYER: 0
     - _Enable_Intersection: 0
     - _Enable_SurfaceFoam: 0
     - _EnvironmentReflections: 1
@@ -174,7 +172,7 @@ Material:
     - _Metallic: 0
     - _Normal_DistanceStrength: 0.1
     - _Normal_Pan: 1.5
-    - _Normal_Scale: 5
+    - _Normal_Scale: 1
     - _Normal_Strength: 0.39
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -229,7 +227,7 @@ Material:
     - _2nd_Wave_Direction: {r: -1, g: 0, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color_Deep: {r: 0, g: 0.2541522, b: 0.4507858, a: 0.9098039}
+    - _Color_Deep: {r: 0, g: 0.2541522, b: 0.4507858, a: 0.89411765}
     - _Color_Shallow: {r: 0.22745097, g: 0.7952153, b: 0.8235294, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _InterSec_Color: {r: 1, g: 1, b: 1, a: 1}
