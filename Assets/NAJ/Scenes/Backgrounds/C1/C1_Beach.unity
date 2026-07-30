@@ -19384,7 +19384,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080718912}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6af2d410bf489d842a543a60d605af5f, type: 3}
   m_Name: 
@@ -19404,7 +19404,7 @@ MonoBehaviour:
     modifierStack:
     - {fileID: 445672330}
   - enabled: 1
-    layer: {fileID: 8574412962073106934, guid: bdff64eb4d232ec4180088bd80f3c49c, type: 2}
+    layer: {fileID: 8574412962073106934, guid: 418aba49cd6a2044e882ca872b3ac7ee, type: 2}
     modifierStack: []
   autoRepaint: 0
   terrainListeners: []
