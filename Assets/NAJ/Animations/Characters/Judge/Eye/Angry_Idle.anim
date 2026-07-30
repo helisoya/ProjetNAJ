@@ -37,6 +37,15 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
     flags: 2
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 1822217074, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
+    attribute: m_Sprite
+    path: Model/Armature/Root/Spine1/Spine2/Spin3/Spine4/Neck/Head/Head_end/Eyebrows
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -53,6 +62,15 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 3415739937
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: -2076875732, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
     - {fileID: 1551475680, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
@@ -60,6 +78,7 @@ AnimationClip:
     - {fileID: 1551475680, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
     - {fileID: -2076875732, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
     - {fileID: -2076875732, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
+    - {fileID: 1822217074, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

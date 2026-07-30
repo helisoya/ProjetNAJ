@@ -113,7 +113,7 @@ TextureImporter:
       name: Judge_Nose
       rect:
         serializedVersion: 2
-        x: 0
+        x: 225
         y: 239
         width: 8
         height: 17
@@ -461,6 +461,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Judge_Eyebrows_Normal
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 75
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af997c79d5e447f4580f1296f5c54ec8
+      internalID: 1606710961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Judge_Eyebrows_Angry
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 239
+        width: 75
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c51fa3e57fee5a459a393e0ec79d4fb
+      internalID: 1822217074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -484,6 +528,8 @@ TextureImporter:
       Judge_Eye_Surprise_0: -545347582
       Judge_Eye_Surprise_1: 2122869906
       Judge_Eye_Surprise_2: 238704563
+      Judge_Eyebrows_Angry: 1822217074
+      Judge_Eyebrows_Normal: 1606710961
       Judge_Mouth_Angry_0: 367211264
       Judge_Mouth_Angry_1: 1013834317
       Judge_Mouth_Angry_2: 54820510
