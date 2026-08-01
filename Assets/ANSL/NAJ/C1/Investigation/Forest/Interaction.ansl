@@ -1,0 +1,6 @@
+setInteractionScript(Exit;ToForestStart)
+setInteractionScript(Flag;Flag)
+setInteractionScript(Left;ToDeadEnd)
+setInteractionScript(Right;ToRiverPath)
+
+interaction()

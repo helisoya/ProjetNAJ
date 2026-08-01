@@ -31,13 +31,19 @@ namespace ANF.Scene
             objectRenderers = renderers;
         }
 
+        void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(GetApproximateVisualPosition(), 0.2f);
+        }
+
         /// <summary>
 		/// Gets the object's appromixate visual position
 		/// </summary>
 		/// <returns>Its approximate visual position</returns>
         public Vector3 GetApproximateVisualPosition()
         {
-            return interactionCollider.transform.position + interactionCollider.transform.rotation * interactionCollider.bounds.center;
+            return interactionCollider.bounds.center;
         }
 
         /// <summary>

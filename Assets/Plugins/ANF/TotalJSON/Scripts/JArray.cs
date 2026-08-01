@@ -825,6 +825,39 @@ namespace Leguar.TotalJSON
         }
 
         /// <summary>
+        /// Get this array as a quaternion
+        /// </summary>
+        /// <returns>
+        /// A quaternion
+        /// </returns>
+        /// <exception cref="JValueTypeException">
+        /// If any value in array is other than JSON object or null.
+        /// </exception>
+        public Quaternion AsQuaternion()
+        {
+            Quaternion result = new Quaternion();
+
+            int count = values.Count;
+            if (count != 4)
+                return result;
+
+            for (int n = 0; n < 4; n++)
+            {
+                if (values[n] is not JNumber)
+                {
+                    throw (new JValueTypeException(n, values[n], "JNumber"));
+                }
+            }
+
+            result.x = ((JNumber)values[0]).AsFloat();
+            result.y = ((JNumber)values[1]).AsFloat();
+            result.z = ((JNumber)values[2]).AsFloat();
+            result.w = ((JNumber)values[3]).AsFloat();
+
+            return result;
+        }
+
+        /// <summary>
         /// Get this array as a Vector2
         /// </summary>
         /// <returns>

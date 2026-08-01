@@ -17,6 +17,7 @@ namespace ANF.Scene
         private LerpInstanceVector3 lerpRotation;
         private LerpInstanceVector3 lerpPosition;
         private bool skipModeEnabled;
+        private Vector3 currentRotation;
 
         public bool Rotating
         {
@@ -71,7 +72,8 @@ namespace ANF.Scene
 
             if (lerpRotation != null && lerpRotation.lerping)
             {
-                cameraTransform.eulerAngles = lerpRotation.Update();
+                currentRotation = lerpRotation.Update();
+                cameraTransform.eulerAngles = currentRotation;
             }
         }
 
@@ -124,6 +126,7 @@ namespace ANF.Scene
         {
             if (immediate)
             {
+                currentRotation = eulerAngles;
                 cameraTransform.eulerAngles = eulerAngles;
             }
             else
@@ -131,7 +134,7 @@ namespace ANF.Scene
                 if (lerpRotation == null)
                     lerpRotation = new LerpInstanceVector3();
 
-                lerpRotation.StartLerp(cameraTransform.eulerAngles, eulerAngles, skipModeEnabled ? 0.1f : duration);
+                lerpRotation.StartLerp(currentRotation, eulerAngles, skipModeEnabled ? 0.1f : duration);
             }
         }
 
@@ -149,8 +152,12 @@ namespace ANF.Scene
         {
             if (json.ContainsKey("currentPosition"))
                 cameraTransform.position = json.GetJArray("currentPosition").AsVector3();
+
             if (json.ContainsKey("currentRotation"))
-                cameraTransform.eulerAngles = json.GetJArray("currentRotation").AsVector3();
+            {
+                currentRotation = json.GetJArray("currentRotation").AsVector3();
+                cameraTransform.eulerAngles = currentRotation;
+            }
 
             if (json.ContainsKey("lerpPosition"))
             {
@@ -172,7 +179,7 @@ namespace ANF.Scene
         public override void OnSave(JSON json)
         {
             json.Add("currentPosition", cameraTransform.position);
-            json.Add("currentRotation", cameraTransform.eulerAngles);
+            json.Add("currentRotation", currentRotation);
 
             if (lerpPosition != null)
             {

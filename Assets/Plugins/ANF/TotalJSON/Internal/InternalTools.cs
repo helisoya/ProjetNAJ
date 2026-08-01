@@ -66,6 +66,12 @@ namespace Leguar.TotalJSON.Internal
                 return vector4ToJArray((Vector4)(value), new JArray(), stack);
             }
 
+            // List/array
+            if (value is Quaternion)
+            {
+                return quaternionToJArray((Quaternion)(value), new JArray(), stack);
+            }
+
             // Unknown, handled by caller
             return null;
 
@@ -131,6 +137,15 @@ namespace Leguar.TotalJSON.Internal
             targetJArray.Add(sourceVector.y);
             targetJArray.Add(sourceVector.z);
             targetJArray.Add(sourceVector.w);
+            return targetJArray;
+        }
+
+        internal static JArray quaternionToJArray(Quaternion sourceQuaternion, JArray targetJArray, List<object> stack)
+        {
+            targetJArray.Add(sourceQuaternion.x);
+            targetJArray.Add(sourceQuaternion.y);
+            targetJArray.Add(sourceQuaternion.z);
+            targetJArray.Add(sourceQuaternion.w);
             return targetJArray;
         }
 

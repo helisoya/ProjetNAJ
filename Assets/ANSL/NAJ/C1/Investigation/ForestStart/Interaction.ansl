@@ -1,0 +1,4 @@
+setInteractionScript(Exit;ToBeach)
+setInteractionScript(Forward;ToForest)
+
+interaction()

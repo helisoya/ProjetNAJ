@@ -246,6 +246,7 @@ Terrain:
   m_AllowAutoConnect: 1
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
+  m_EnableHeightmapLODFrustumCulling: 1
   m_TreeMotionVectorModeOverride: 3
 --- !u!1001 &25458463
 PrefabInstance:
@@ -4899,8 +4900,8 @@ Transform:
   m_GameObject: {fileID: 580137101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8305, y: 42.8615, z: 42.21}
-  m_LocalScale: {x: 56.93168, y: 85.66355, z: 1}
+  m_LocalPosition: {x: -4.8305, y: 22.4, z: 42.21}
+  m_LocalScale: {x: 56.93168, y: 49, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -11760,6 +11761,10 @@ MonoBehaviour:
   interactableObjects:
   - {fileID: 1515668597}
   - {fileID: 580137102}
+  backgroundCharacters:
+    _serializedList: []
+  backgroundStaticObjects:
+    _serializedList: []
 --- !u!4 &8429653501667101996
 Transform:
   m_ObjectHideFlags: 0

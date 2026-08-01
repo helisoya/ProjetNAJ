@@ -231,5 +231,45 @@ namespace ANF.Utils
             return result;
         }
     }
+
+    /// <summary>
+    /// Represents a lerp instance for a quaternion
+    /// </summary>
+    public class LerpInstanceQuaternion : LerpInstance<Quaternion>
+    {
+        public override void Load(JSON json)
+        {
+            if (json.ContainsKey("lerping"))
+                lerping = json.GetBool("lerping");
+            if (json.ContainsKey("target"))
+                target = json.GetJArray("target").AsQuaternion();
+            if (json.ContainsKey("start"))
+                start = json.GetJArray("start").AsQuaternion();
+            if (json.ContainsKey("t"))
+                t = json.GetFloat("t");
+            if (json.ContainsKey("transitionDuration"))
+                transitionDuration = json.GetFloat("transitionDuration");
+        }
+
+        public override Quaternion Get()
+        {
+            return Quaternion.Lerp(start, target, t);
+        }
+
+        public override Quaternion Update()
+        {
+            Quaternion result = Quaternion.identity;
+            if (lerping)
+            {
+                t += Time.deltaTime / transitionDuration;
+                result = Get();
+
+                if (t >= 1.0f)
+                    lerping = false;
+            }
+
+            return result;
+        }
+    }
 }
 

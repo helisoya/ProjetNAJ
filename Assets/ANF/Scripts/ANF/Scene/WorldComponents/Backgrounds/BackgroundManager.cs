@@ -205,7 +205,7 @@ namespace ANF.Scene
 
             if (!string.IsNullOrEmpty(cachedNextBackgroundID))
             {
-                currentOperation = LoadBackground(cachedNextBackgroundID);
+                currentOperation = LoadBackground(cachedNextBackgroundID, forceSync);
 
                 loadingBackground = backgroundType == BackgroundType.Scene || (asyncLoading && !forceSync);
                 asyncWaitForNextFrames = loadingBackground ? 2 : 0;

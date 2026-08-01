@@ -10,7 +10,8 @@ namespace ANF.ANSL
 
         functionBody: "removeAllCharacters",
         functionAutoComplete: new string[] {
-            "removeAllCharacters()"
+            "removeAllCharacters()",
+            "removeAllCharacters(RemoveEverything)"
         },
         functionDesc: "Removes all characters")]
     public class RemoveAllCharacterFunction : ANSLFunction
@@ -18,7 +19,8 @@ namespace ANF.ANSL
         public override FunctionParameterType[][] GetParametersTemplates()
         {
             return new FunctionParameterType[][] {
-                new FunctionParameterType[]{}
+                new FunctionParameterType[]{},
+                new FunctionParameterType[]{FunctionParameterType.BOOL},
             };
         }
 
@@ -27,7 +29,11 @@ namespace ANF.ANSL
 
             if (manager.GetWorld().GetComponent<ANF.Scene.CharacterManager>(out ANF.Scene.CharacterManager characterManager))
             {
-                characterManager.RemoveAllSceneObjects();
+                if (parameters.GetTemplateId() == 1 &&
+                    parameters.GetParameter(0, out bool deleteEverything))
+                    characterManager.RemoveAllSceneObjects(!deleteEverything);
+                else
+                    characterManager.RemoveAllSceneObjects();
             }
 
             EndProcess();

@@ -19,6 +19,8 @@ namespace ANF.Scene
         [SerializeField] private SerializedDictionary<string, Transform> markers;
         [Tooltip("This list should contain all interactable objects relating to the background. (Doors, ...)")]
         [SerializeField] private InteractableObject[] interactableObjects;
+        [SerializeField] private SerializedDictionary<string, Character> backgroundCharacters;
+        [SerializeField] private SerializedDictionary<string, StaticObject> backgroundStaticObjects;
 
 #if UNITY_EDITOR
         void OnDrawGizmos()
@@ -132,6 +134,22 @@ namespace ANF.Scene
                 }
             }
 
+            if (manager.GetWorld().GetComponent<StaticObjectManager>(out StaticObjectManager staticObjectManager))
+            {
+                foreach (string name in backgroundStaticObjects.Keys)
+                {
+                    staticObjectManager.AddSceneObject(name, backgroundStaticObjects[name]);
+                }
+            }
+
+            if (manager.GetWorld().GetComponent<CharacterManager>(out CharacterManager characterManager))
+            {
+                foreach (string name in backgroundCharacters.Keys)
+                {
+                    characterManager.AddSceneObject(name, backgroundCharacters[name]);
+                }
+            }
+
             Camera[] cameras = transform.GetComponentsInChildren<Camera>();
             foreach (Camera cam in cameras)
                 cam.gameObject.SetActive(false);
@@ -146,6 +164,22 @@ namespace ANF.Scene
                 interactableObject.StopAllTween();
                 if (interactionMode != null)
                     interactionMode.UnRegister(interactableObject);
+            }
+
+            if (manager.GetWorld().GetComponent<StaticObjectManager>(out StaticObjectManager staticObjectManager))
+            {
+                foreach (string name in backgroundStaticObjects.Keys)
+                {
+                    staticObjectManager.RemoveSceneObject(name, false);
+                }
+            }
+
+            if (manager.GetWorld().GetComponent<CharacterManager>(out CharacterManager characterManager))
+            {
+                foreach (string name in backgroundCharacters.Keys)
+                {
+                    characterManager.RemoveSceneObject(name, false);
+                }
             }
         }
     }

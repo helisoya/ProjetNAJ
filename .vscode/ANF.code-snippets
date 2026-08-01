@@ -31,8 +31,8 @@
 	},
 	"7_0": {
 		"scope": "ansl",
-		"prefix": "HideEvidenceInfo",
-		"body": ["HideEvidenceInfo()"],
+		"prefix": "hideEvidenceInfo",
+		"body": ["hideEvidenceInfo()"],
 		"description": "Hides the currently visible evidence infos"
 	},
 	"8_0": {
@@ -338,10 +338,22 @@ endchoice"],
 		"body": ["removeAllCharacters()"],
 		"description": "Removes all characters"
 	},
+	"40_1": {
+		"scope": "ansl",
+		"prefix": "removeAllCharacters",
+		"body": ["removeAllCharacters(RemoveEverything)"],
+		"description": "Removes all characters"
+	},
 	"41_0": {
 		"scope": "ansl",
 		"prefix": "removeAllStatics",
 		"body": ["removeAllStatics()"],
+		"description": "Removes all statics object"
+	},
+	"41_1": {
+		"scope": "ansl",
+		"prefix": "removeAllStatics",
+		"body": ["removeAllStatics(RemoveEverything)"],
 		"description": "Removes all statics object"
 	},
 	"42_0": {

@@ -1,0 +1,4 @@
+setInteractionScript(Exit;ToForest)
+setInteractionScript(Owl;Owl)
+
+interaction()

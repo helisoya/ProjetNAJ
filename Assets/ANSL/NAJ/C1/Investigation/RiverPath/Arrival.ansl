@@ -1,0 +1,8 @@
+clearStack()
+setFg(1)
+
+setBackground(C1_RiverPath)
+
+fadeFg(0;false)
+
+load(Interaction)

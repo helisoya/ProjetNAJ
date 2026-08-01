@@ -1,0 +1,65 @@
+# Case 1
+
+# Sartt
+
+Define setSarttNormal()
+setCharacterBody(Sartt;Normal;0.1)
+setCharacterEye(Sartt;Normal)
+EndDefine
+
+Define setSarttInquisitive()
+setCharacterBody(Sartt;Normal;0.1)
+setCharacterEye(Sartt;Normal)
+EndDefine
+
+Define setSarttHandRaised()
+setCharacterBody(Sartt;HandRaised;0.1)
+setCharacterEye(Sartt;Normal)
+EndDefine
+
+Define setSarttDead()
+setCharacterBody(Sartt;Dead;0.1)
+setCharacterEye(Sartt;Dead)
+EndDefine
+
+# Robert
+
+Define setRobertNormal()
+setCharacterBody(Robert;Normal;0.1)
+EndDefine
+
+Define setRobertOnPouch()
+setCharacterBody(Robert;OnPouch;0.1)
+EndDefine
+
+Define setRobertNormalGun()
+setCharacterBody(Robert;NormalGun;0.1)
+EndDefine
+
+Define setRobertAimingGun()
+setCharacterBody(Robert;AimingGun;0.1)
+EndDefine
+
+Define setRobertAimingGun()
+setCharacterBody(Robert;AimingGun;0.1)
+EndDefine
+
+Define setRobertEyeThinking()
+setCharacterEye(Robert;Thinking)
+setCharacterMouth(Robert;Normal)
+EndDefine
+
+Define setRobertEyeNormal()
+setCharacterEye(Robert;Normal)
+setCharacterMouth(Robert;Normal)
+EndDefine
+
+Define setRobertEyeSuspicious()
+setCharacterEye(Robert;Suspicious)
+setCharacterMouth(Robert;Normal)
+EndDefine
+
+Define setRobertEyeAngry()
+setCharacterEye(Robert;Angry)
+setCharacterMouth(Robert;Angry)
+EndDefine

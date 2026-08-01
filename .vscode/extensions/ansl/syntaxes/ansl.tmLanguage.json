@@ -8,7 +8,8 @@
 		{ "include": "#commands" },
 		{ "include": "#choice" },
 		{ "include": "#examination" },
-		{ "include": "#choice-entry" },
+		{ "include": "#examination2" },
+		{ "include": "#switch" },
 		{ "include": "#trad-entry" }
 	],
 	"repository": {
@@ -16,7 +17,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.ansl",
-					"match": "\\b(interact)\\b"
+					"match": "\\b(examination|wrong|endask|fail|loop|endexamination|Define|EndDefine|endchoice|endswitch|endif|else|block|endblock)\\b"
 				}
 			]
 		},
@@ -119,39 +120,57 @@
 				{
 					"match": "choice",
 					"name": "keyword.control.ansl"
+				},
+				{
+					"begin": " ",
+					"end": "$",
+					"name": "choice.id.ansl"
+				},
+				{
+					"begin": " ",
+					"end": "$",
+					"name": "choice.id.ansl"
 				}
 			]
 		},
 		"examination": {
-			"begin": "^examination",
+			"begin": "^part",
 			"end": "$",
 			"name": "keyword.control.ansl",
 			"patterns": [
 				{
-					"match": "examination",
+					"match": "part",
 					"name": "keyword.control.ansl"
 				},
 				{
-					"begin": " ",
+					"begin": "(present|press)",
 					"end": "$",
 					"name": "choice.id.ansl"
 				}
 			]
 		},
-		"choice-entry": {
-			"begin": "^\t",
+		"examination2": {
+			"begin": "^press",
 			"end": "$",
-			"name": "choice.id.ansl",
+			"name": "keyword.control.ansl"
+		},
+		"switch": {
+			"begin": "^case",
+			"end": "$",
+			"name": "keyword.control.ansl",
 			"patterns": [
 				{
-					"begin": "\t",
-					"end": " ",
-					"name": "choice.id.ansl"
+					"match": "case",
+					"name": "keyword.control.ansl"
+				},
+				{
+					"name": "command.separator.ansl",
+					"match": ":"
 				},
 				{
 					"begin": " ",
 					"end": "$",
-					"name": "choice.chapter.ansl"
+					"name": "choice.id.ansl"
 				}
 			]
 		},

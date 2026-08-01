@@ -1,0 +1,8 @@
+clearStack()
+setFg(1)
+
+setBackground(C1_Beach)
+
+fadeFg(0;false)
+
+load(Interaction)

@@ -320,7 +320,11 @@ namespace ANF.Locals
         /// <param name="fileName">The filename</param>
         void LoadContent(string fileName)
         {
-            List<string> fileContent = FileManager.ReadTextAsset(Resources.Load<TextAsset>("Locals/" + fileName));
+            TextAsset textAsset = Resources.Load<TextAsset>("Locals/" + fileName);
+            if (!textAsset)
+                return;
+
+            List<string> fileContent = FileManager.ReadTextAsset(textAsset);
             string line;
             string[] split;
 

@@ -4837,8 +4837,8 @@ Transform:
   m_GameObject: {fileID: 580137101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.9925, y: 42.8615, z: 42.21}
-  m_LocalScale: {x: 38.442, y: 85.66355, z: 1}
+  m_LocalPosition: {x: -16.9925, y: 22.5, z: 42.21}
+  m_LocalScale: {x: 38.442, y: 45.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -6828,6 +6828,7 @@ Terrain:
   m_AllowAutoConnect: 1
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
+  m_EnableHeightmapLODFrustumCulling: 1
   m_TreeMotionVectorModeOverride: 3
 --- !u!1 &1003926471
 GameObject:
@@ -18065,6 +18066,10 @@ MonoBehaviour:
   interactableObjects:
   - {fileID: 1515668597}
   - {fileID: 580137102}
+  backgroundCharacters:
+    _serializedList: []
+  backgroundStaticObjects:
+    _serializedList: []
 --- !u!4 &8429653501667101996
 Transform:
   m_ObjectHideFlags: 0

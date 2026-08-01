@@ -44,7 +44,8 @@ namespace ANF.Scene
         [SerializeField] private RawImage prefabIcon;
         private RawImage currentIcon;
 
-        private Persistent.AudioManager audioManager;
+        private AudioManager audioManager;
+        private BackgroundManager backgroundManager;
         private Dictionary<string, InteractableObject> registeredObjects = new Dictionary<string, InteractableObject>();
         private List<InteractableObject> currentInteractionObjects = new List<InteractableObject>();
         private int currentIndex;
@@ -375,6 +376,7 @@ namespace ANF.Scene
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+            manager.GetWorld().GetComponent(out backgroundManager);
         }
 
         public override void OnUpdate()
@@ -383,6 +385,10 @@ namespace ANF.Scene
             {
                 if (reloadInteractionMode)
                 {
+                    if (backgroundManager != null &&
+                        (backgroundManager.unloadingBackground || backgroundManager.loadingBackground))
+                        return;
+
                     reloadInteractionMode = false;
                     StartInteractionMode();
                     return;
@@ -455,6 +461,8 @@ namespace ANF.Scene
         {
             if (currentIcon && inInteractionMode)
                 currentIcon.gameObject.SetActive(false);
+            if (inInteractionMode)
+                Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         }
 
         public override void OnUnPaused()

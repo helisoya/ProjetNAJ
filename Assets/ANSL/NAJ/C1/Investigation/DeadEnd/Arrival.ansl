@@ -1,0 +1,8 @@
+clearStack()
+setFg(1)
+
+setBackground(C1_DeadEnd)
+
+fadeFg(0;false)
+
+load(Interaction)

@@ -11,7 +11,8 @@ namespace ANF.ANSL
 
         functionBody: "removeAllStatics",
         functionAutoComplete: new string[] {
-            "removeAllStatics()"
+            "removeAllStatics()",
+            "removeAllStatics(RemoveEverything)",
         },
         functionDesc: "Removes all statics object")]
     public class RemoveAllStaticFunction : ANSLFunction
@@ -19,7 +20,8 @@ namespace ANF.ANSL
         public override FunctionParameterType[][] GetParametersTemplates()
         {
             return new FunctionParameterType[][] {
-                new FunctionParameterType[]{}
+                new FunctionParameterType[]{},
+                new FunctionParameterType[]{FunctionParameterType.BOOL}
             };
         }
 
@@ -28,7 +30,11 @@ namespace ANF.ANSL
 
             if (manager.GetWorld().GetComponent<StaticObjectManager>(out StaticObjectManager staticObjectManager))
             {
-                staticObjectManager.RemoveAllSceneObjects();
+                if (parameters.GetTemplateId() == 1 &&
+                    parameters.GetParameter(0, out bool deleteEverything))
+                    staticObjectManager.RemoveAllSceneObjects(!deleteEverything);
+                else
+                    staticObjectManager.RemoveAllSceneObjects();
             }
 
             EndProcess();

@@ -1475,6 +1475,7 @@ Terrain:
   m_AllowAutoConnect: 1
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
+  m_EnableHeightmapLODFrustumCulling: 1
   m_TreeMotionVectorModeOverride: 3
 --- !u!1001 &433455966
 PrefabInstance:
@@ -3760,7 +3761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Left
-  icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  icon: {fileID: 2800000, guid: 10356f4a70ade654fa2fa445de167e7a, type: 3}
   objectRenderers: []
   interactionCollider: {fileID: 1209789091}
 --- !u!65 &1209789091
@@ -3850,8 +3851,8 @@ Transform:
   m_GameObject: {fileID: 1209789089}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.3362, y: 33.5462, z: 55.6}
-  m_LocalScale: {x: 32.980457, y: 64.693535, z: 1}
+  m_LocalPosition: {x: -52.3362, y: 26.6, z: 55.6}
+  m_LocalScale: {x: 32.980457, y: 54.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -9893,8 +9894,8 @@ Transform:
   m_GameObject: {fileID: 1544220863}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.5268, y: 33.5462, z: 55.6}
-  m_LocalScale: {x: 30.646408, y: 64.693535, z: 1}
+  m_LocalPosition: {x: 35.5268, y: 26.6, z: 55.6}
+  m_LocalScale: {x: 30.646408, y: 54.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -9990,7 +9991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Right
-  icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  icon: {fileID: 2800000, guid: 9d294c3fe7cc01f4fba33ddb8a34bc95, type: 3}
   objectRenderers: []
   interactionCollider: {fileID: 1544220865}
 --- !u!1001 &1582099469
@@ -14072,6 +14073,10 @@ MonoBehaviour:
   - {fileID: 580137102}
   - {fileID: 1544220868}
   - {fileID: 1209789090}
+  backgroundCharacters:
+    _serializedList: []
+  backgroundStaticObjects:
+    _serializedList: []
 --- !u!4 &8429653501667101996
 Transform:
   m_ObjectHideFlags: 0
