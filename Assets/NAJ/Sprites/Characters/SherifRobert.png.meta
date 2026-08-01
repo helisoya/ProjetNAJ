@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -93,6 +93,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -105,7 +118,7 @@ TextureImporter:
         width: 77
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -122,12 +135,12 @@ TextureImporter:
       name: SherifRobert_Eyebrows_Suspicious
       rect:
         serializedVersion: 2
-        x: 77
+        x: 78
         y: 246
         width: 77
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,12 +157,12 @@ TextureImporter:
       name: SherifRobert_Eyebrows_Normal
       rect:
         serializedVersion: 2
-        x: 154
+        x: 156
         y: 246
         width: 77
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,12 +179,12 @@ TextureImporter:
       name: SherifRobert_Nose
       rect:
         serializedVersion: 2
-        x: 231
+        x: 234
         y: 246
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,11 +202,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 218
+        y: 217
         width: 62
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,11 +224,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 203
+        y: 201
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,12 +245,12 @@ TextureImporter:
       name: SherifRobert_Eyes_Normal_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 203
+        x: 77
+        y: 201
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,12 +267,12 @@ TextureImporter:
       name: SherifRobert_Eyes_Normal_2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 203
+        x: 154
+        y: 201
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,11 +290,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 188
+        y: 185
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,12 +311,12 @@ TextureImporter:
       name: SherifRobert_Eyes_Suspicious_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 188
+        x: 77
+        y: 185
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,12 +333,12 @@ TextureImporter:
       name: SherifRobert_Eyes_Suspicious_2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 188
+        x: 154
+        y: 185
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,11 +356,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 173
+        y: 169
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,12 +377,12 @@ TextureImporter:
       name: SherifRobert_Eyes_Angry_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 173
+        x: 77
+        y: 169
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,12 +399,12 @@ TextureImporter:
       name: SherifRobert_Eyes_Angry_2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 173
+        x: 154
+        y: 169
         width: 76
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,11 +422,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 164
+        y: 159
         width: 36
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,12 +443,12 @@ TextureImporter:
       name: SherifRobert_Mouth_Normal_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 164
+        x: 37
+        y: 159
         width: 36
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -452,12 +465,12 @@ TextureImporter:
       name: SherifRobert_Mouth_Normal_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 164
+        x: 74
+        y: 159
         width: 36
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,11 +488,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 155
+        y: 149
         width: 36
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -496,12 +509,12 @@ TextureImporter:
       name: SherifRobert_Mouth_Angry_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 155
+        x: 37
+        y: 149
         width: 36
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -518,12 +531,12 @@ TextureImporter:
       name: SherifRobert_Mouth_Angry_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 155
+        x: 74
+        y: 149
         width: 36
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

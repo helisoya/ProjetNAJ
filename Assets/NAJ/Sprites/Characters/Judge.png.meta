@@ -113,7 +113,7 @@ TextureImporter:
       name: Judge_Nose
       rect:
         serializedVersion: 2
-        x: 225
+        x: 226
         y: 239
         width: 8
         height: 17
@@ -136,7 +136,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 225
+        y: 224
         width: 75
         height: 14
       alignment: 0
@@ -157,8 +157,8 @@ TextureImporter:
       name: Judge_Eye_Normal_1
       rect:
         serializedVersion: 2
-        x: 75
-        y: 225
+        x: 76
+        y: 224
         width: 75
         height: 14
       alignment: 0
@@ -179,8 +179,8 @@ TextureImporter:
       name: Judge_Eye_Normal_2
       rect:
         serializedVersion: 2
-        x: 150
-        y: 225
+        x: 152
+        y: 224
         width: 75
         height: 14
       alignment: 0
@@ -202,7 +202,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 206
+        y: 204
         width: 74
         height: 19
       alignment: 0
@@ -223,8 +223,8 @@ TextureImporter:
       name: Judge_Eye_Surprise_1
       rect:
         serializedVersion: 2
-        x: 74
-        y: 206
+        x: 75
+        y: 204
         width: 74
         height: 19
       alignment: 0
@@ -245,8 +245,8 @@ TextureImporter:
       name: Judge_Eye_Surprise_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 206
+        x: 150
+        y: 204
         width: 74
         height: 19
       alignment: 0
@@ -268,7 +268,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 189
         width: 75
         height: 14
       alignment: 0
@@ -289,8 +289,8 @@ TextureImporter:
       name: Judge_Eye_Angry_1
       rect:
         serializedVersion: 2
-        x: 75
-        y: 192
+        x: 76
+        y: 189
         width: 75
         height: 14
       alignment: 0
@@ -311,8 +311,8 @@ TextureImporter:
       name: Judge_Eye_Angry_2
       rect:
         serializedVersion: 2
-        x: 150
-        y: 192
+        x: 152
+        y: 189
         width: 75
         height: 14
       alignment: 0
@@ -334,7 +334,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 178
+        y: 174
         width: 59
         height: 14
       alignment: 0
@@ -355,8 +355,8 @@ TextureImporter:
       name: Judge_Mouth_Normal_1
       rect:
         serializedVersion: 2
-        x: 59
-        y: 178
+        x: 60
+        y: 174
         width: 59
         height: 14
       alignment: 0
@@ -377,8 +377,8 @@ TextureImporter:
       name: Judge_Mouth_Normal_2
       rect:
         serializedVersion: 2
-        x: 118
-        y: 178
+        x: 120
+        y: 174
         width: 59
         height: 14
       alignment: 0
@@ -400,7 +400,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 164
+        y: 159
         width: 59
         height: 14
       alignment: 0
@@ -421,8 +421,8 @@ TextureImporter:
       name: Judge_Mouth_Angry_1
       rect:
         serializedVersion: 2
-        x: 59
-        y: 164
+        x: 60
+        y: 159
         width: 59
         height: 14
       alignment: 0
@@ -443,8 +443,8 @@ TextureImporter:
       name: Judge_Mouth_Angry_2
       rect:
         serializedVersion: 2
-        x: 118
-        y: 164
+        x: 120
+        y: 159
         width: 59
         height: 14
       alignment: 0
@@ -470,7 +470,7 @@ TextureImporter:
         width: 75
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -487,12 +487,12 @@ TextureImporter:
       name: Judge_Eyebrows_Angry
       rect:
         serializedVersion: 2
-        x: 75
+        x: 76
         y: 239
         width: 75
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
