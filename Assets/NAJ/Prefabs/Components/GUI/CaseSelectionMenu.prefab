@@ -225,17 +225,15 @@ MonoBehaviour:
     rid: 5904634178622980232
   pausedTransition:
     rid: -2
-  bgTransform: {fileID: 3498788850663526314}
-  transitionDuration: 0.5
   caseNameText: {fileID: 30274935472439102}
   leftArrow: {fileID: 529059279618973880}
   rightArrow: {fileID: 5148727326073463552}
   caseImagesRoot: {fileID: 533364403270346658}
   caseImagePrefab: {fileID: 5007510295590990696, guid: c611f3a52f935c34db33ebb618a3c116, type: 3}
   casesInfo:
-  - nameKey: Ace JMIN ????
+  - nameKey: Case 1
     image: {fileID: 21300000, guid: cc4de9da3ac6de649a558576e2a60af4, type: 3}
-    entrypoint: /NAJ/Prototype/C1/EntryPoint
+    entrypoint: /NAJ/C1/EntryPoints/Investigation
   - nameKey: Ace JMIN ????
     image: {fileID: 21300000, guid: cc4de9da3ac6de649a558576e2a60af4, type: 3}
     entrypoint: /NAJ/Prototype/C1/EntryPoint
