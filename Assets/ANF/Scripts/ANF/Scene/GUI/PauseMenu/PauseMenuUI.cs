@@ -25,6 +25,7 @@ namespace ANF.GUI
         private int currentButtonIdx;
         private int currentButtonInputSide;
         private float cooldownToNextButtonIncrement;
+        private float cursorMoveCooldown;
         private PauseMenuButton[] buttons;
         private Persistent.AudioManager audioManager;
 
@@ -52,6 +53,14 @@ namespace ANF.GUI
             {
                 SetEnabled(true);
             }
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+        }
+
+        private void OnCursorCooldownChange(object value)
+        {
+            cursorMoveCooldown = (float)value;
         }
 
         public override void OnUpdate()
@@ -65,7 +74,7 @@ namespace ANF.GUI
                 if (cooldownToNextButtonIncrement <= 0)
                 {
                     IncrementButtonWithInput();
-                    cooldownToNextButtonIncrement = 0.5f;
+                    cooldownToNextButtonIncrement = cursorMoveCooldown;
                 }
             }
         }
@@ -173,7 +182,7 @@ namespace ANF.GUI
                 {
                     if (currentButtonInputSide == 0)
                     {
-                        cooldownToNextButtonIncrement = 0.5f;
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
                         currentButtonInputSide = value < 0 ? 1 : -1;
                         IncrementButtonWithInput();
                     }

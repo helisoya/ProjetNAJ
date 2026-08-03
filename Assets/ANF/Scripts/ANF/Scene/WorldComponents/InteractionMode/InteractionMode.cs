@@ -52,6 +52,7 @@ namespace ANF.Scene
         private bool reloadInteractionMode = false;
         private int currentButtonInputSide = 0;
         private float cooldownToNextButtonIncrement = 0;
+        private float cursorMoveCooldown = 0.25f;
 
         private Vector2 mousePosition;
         private bool canTryMouseClick;
@@ -377,6 +378,14 @@ namespace ANF.Scene
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
             manager.GetWorld().GetComponent(out backgroundManager);
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+        }
+
+        private void OnCursorCooldownChange(object value)
+        {
+            cursorMoveCooldown = (float)value;
         }
 
         public override void OnUpdate()
@@ -403,7 +412,7 @@ namespace ANF.Scene
                         if (keyboardMode)
                             IncrementObjectWithInput();
 
-                        cooldownToNextButtonIncrement = 0.5f;
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
                     }
                 }
 
@@ -517,7 +526,7 @@ namespace ANF.Scene
                     noMovement = false;
                     if (currentButtonInputSide == 0)
                     {
-                        cooldownToNextButtonIncrement = 0.5f;
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
                         currentButtonInputSide = value.x < 0 ? 1 : -1;
 
                         IncrementObjectWithInput();

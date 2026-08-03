@@ -208,7 +208,7 @@ namespace ANF.Scene
                 JSON allObjects = json.GetJSON("objects");
                 foreach (string key in allObjects.Keys)
                 {
-                    JSON objJSON = json.GetJSON(key);
+                    JSON objJSON = allObjects.GetJSON(key);
 
                     if (objJSON.GetBool("loadedFromResources"))
                     {

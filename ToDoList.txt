@@ -1,22 +1,25 @@
-Résultats Playtests Prototype :
-
 Dialogues
 - "Somethign is missing" porte à confusion, vaut mieux un "C'est contradictoire"      V
 - (Manteau de marin oublié pour la Q1, mais c'est normal vu les cuts)                 V
 
 Menus
-- Menu Historique à l'envers
-- Titres menus pas assez différents du texte normal / éléments intéractibles
-- Boutons / Textes pas assez d'espace
-- Revoir taille textes titre / normal (Highlight titres, ...)
- 
+- Menu Historique à l'envers                                                          V
+- Titres menus pas assez différents du texte normal / éléments intéractibles          V
+- Boutons / Textes pas assez d'espace dans les options                                V
+- Revoir taille textes titre / normal (Highlight titres, ...)                         V
+- Logs -> Pouvoir scroll / mettre en plein ecran 
+- Revoir Menu Choice
+
 Inputs
-- Scroll/input trop lent dans les menus
+- Scroll/input trop lent dans les menus                                               V
 - Toujours les inputs Inventaire / Options (Clic Droit/i)
 - Click DANS la boite de dialogue et pas autour
 - Mode Point & Click icones par clair                                                 V
 - Retour pas clair dans les menus
+- Input Reminders avec le mode interaction
 
+ANSL
+- Pouvoir déclarer des variables depuis ANSL (pour éviter de poluer celles globales)
 
 Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V

@@ -99,6 +99,8 @@ SettingsMenu_Game_ANSLManager_AutoplayTimer = Pause (mode automatique)
 SettingsMenu_Game_FlowStateHandler_ToggleAutoplay = Toggle (Mode automatique)
 SettingsMenu_Game_FlowStateHandler_ToggleSkipMode = Toggle (Avance Rapide)
 
+SettingsMenu_Game_GeneralMenu_CursorCooldown = Vitesse Curseur
+
 SettingsMenu_ColorPicker_H = H
 SettingsMenu_ColorPicker_S = S
 SettingsMenu_ColorPicker_V = V

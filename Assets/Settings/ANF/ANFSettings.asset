@@ -82,42 +82,40 @@ MonoBehaviour:
           fonts:
           - {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
           sizes:
-          - sizes: 0a0000000800000006000000
-          - sizes: 0e0000000c0000000a000000
-          - sizes: 140000001200000010000000
-          - sizes: 160000001400000012000000
-          - sizes: 1a0000001800000016000000
-          - sizes: 1c0000001a00000018000000
+          - sizes: 0e0000000a00000006000000
+          - sizes: 14000000100000000c000000
+          - sizes: 16000000120000000e000000
+          - sizes: 180000001400000010000000
           defaultLanguage: eng
           defaultData:
-          - sizeIndex: 3
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 1, g: 1, b: 1, a: 1}
-          - sizeIndex: 3
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 1, g: 1, b: 1, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
-          - sizeIndex: 0
+          - sizeIndex: 2
             fontIndex: 0
             color: {r: 0, g: 0, b: 0, a: 1}
     - rid: 3436799647305696213

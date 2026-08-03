@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Content: {fileID: 3609702722246325934}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -504,8 +504,6 @@ MonoBehaviour:
     rid: 5904634178622980225
   pausedTransition:
     rid: -2
-  bgTransform: {fileID: 3291636940593617320}
-  transitionDuration: 0.5
   historyRoot: {fileID: 3609702722246325934}
   prefabText: {fileID: 6411368262167158716, guid: 1433d4134c07df44389329b66a04859b, type: 3}
   scrollbar: {fileID: 3269031797522442309}
@@ -699,7 +697,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 8
   m_fontSizeMax: 24
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

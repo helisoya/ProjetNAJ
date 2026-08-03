@@ -34,6 +34,7 @@ namespace ANF.GUI
         private Vector2Int currentButtonInputSide = new Vector2Int();
         private float cooldownToNextButtonIncrement = 0;
         private Persistent.AudioManager audioManager;
+        private float cursorMoveCooldown = 0.25f;
 
         private bool onConfirmButton;
         private SaveMenuButtonData currentPopupData;
@@ -49,6 +50,14 @@ namespace ANF.GUI
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+        }
+
+        private void OnCursorCooldownChange(object value)
+        {
+            cursorMoveCooldown = (float)value;
         }
 
         public override void OnUpdate()
@@ -62,7 +71,7 @@ namespace ANF.GUI
                         ChangePopupButton(!onConfirmButton);
                     else
                         IncrementButtonWithInput();
-                    cooldownToNextButtonIncrement = 0.5f;
+                    cooldownToNextButtonIncrement = cursorMoveCooldown;
                 }
             }
         }
@@ -200,7 +209,7 @@ namespace ANF.GUI
                     noMovement = false;
                     if (currentButtonInputSide.x == 0)
                     {
-                        cooldownToNextButtonIncrement = 0.5f;
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
                         currentButtonInputSide.x = value.x < 0 ? 1 : -1;
 
                         if (inPopup)
@@ -215,7 +224,7 @@ namespace ANF.GUI
                     noMovement = false;
                     if (currentButtonInputSide.y == 0)
                     {
-                        cooldownToNextButtonIncrement = 0.5f;
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
                         currentButtonInputSide.y = value.y < 0 ? 1 : -1;
                         IncrementButtonWithInput();
                     }

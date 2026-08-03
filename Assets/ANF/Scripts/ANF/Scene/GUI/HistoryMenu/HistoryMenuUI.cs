@@ -16,7 +16,7 @@ namespace ANF.GUI
     public class HistoryMenuUI : GUIComponent
     {
         [Header("History")]
-        [SerializeField] private Transform historyRoot;
+        [SerializeField] private RectTransform historyRoot;
         [SerializeField] private Locals.LocalizedText prefabText;
         [SerializeField] private Scrollbar scrollbar;
         [SerializeField] private float noSpeakerSize;
@@ -49,8 +49,9 @@ namespace ANF.GUI
             if (data != null)
             {
                 string currentSpeaker = null;
-                foreach (HistoryData entry in data)
+                for(int i = data.Count-1; i >=0; i--)
                 {
+                    HistoryData entry = data[i];
                     Locals.LocalizedText text;
                     if (entry.speakerKey != currentSpeaker)
                     {
@@ -64,11 +65,15 @@ namespace ANF.GUI
                         text.GetText().verticalAlignment = TMPro.VerticalAlignmentOptions.Middle;
                         text.GetText().fontStyle = TMPro.FontStyles.Bold;
 
+                        text.GetText().margin = new Vector4(0, 20.0f, 0, 0);
+
                         if (currentSpeaker == null)
                         {
                             text.GetComponent<ContentSizeFitter>().verticalFit = ContentSizeFitter.FitMode.Unconstrained;
-                            text.GetComponent<RectTransform>().sizeDelta = new Vector2(text.GetComponent<RectTransform>().sizeDelta.x, noSpeakerSize);
+                            text.GetComponent<RectTransform>().sizeDelta = new Vector2(text.GetComponent<RectTransform>().sizeDelta.x, noSpeakerSize + 20);
                         }
+
+                        LayoutRebuilder.ForceRebuildLayoutImmediate(text.GetComponent<RectTransform>());
                     }
 
                     PersistentDataManager.instance.GetGlobalData().GetComponent<Locals.Locals>(out Locals.Locals locals);
@@ -88,9 +93,14 @@ namespace ANF.GUI
                     text.GetText().text = result;
                     text.GetText().horizontalAlignment = TMPro.HorizontalAlignmentOptions.Left;
                     text.GetText().verticalAlignment = TMPro.VerticalAlignmentOptions.Top;
+
+                    LayoutRebuilder.ForceRebuildLayoutImmediate(text.GetComponent<RectTransform>());
+                    LayoutRebuilder.ForceRebuildLayoutImmediate(historyRoot);
                 }
             }
-            scrollbar.value = 1;
+
+            historyRoot.anchoredPosition = new Vector2(historyRoot.anchoredPosition.x, historyRoot.sizeDelta.y);
+            scrollbar.value = 0;
             EventSystem.current.SetSelectedGameObject(scrollbar.gameObject);
         }
 

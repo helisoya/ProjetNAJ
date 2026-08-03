@@ -35,6 +35,7 @@ namespace NAJ.GUI
         private float currentButtonInputSide = 0;
         private float cooldownToNextButtonIncrement = 0;
         private AudioManager audioManager;
+        private float cursorMoveCooldown = 0.25f;
 
         private bool onConfirmButton;
         private bool inPopup;
@@ -46,6 +47,14 @@ namespace NAJ.GUI
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+        }
+
+        private void OnCursorCooldownChange(object value)
+        {
+            cursorMoveCooldown = (float)value;
         }
 
         public override void OnUpdate()
@@ -59,7 +68,7 @@ namespace NAJ.GUI
                         ChangePopupButton(!onConfirmButton);
                     else if (!inPopup && currentButtonInputSide != 0)
                         IncrementCaseWithButton(currentButtonInputSide < 0 ? true : false);
-                    cooldownToNextButtonIncrement = 0.5f;
+                    cooldownToNextButtonIncrement = cursorMoveCooldown;
                 }
             }
         }
@@ -162,7 +171,7 @@ namespace NAJ.GUI
                     noMovement = false;
                     if (currentButtonInputSide == 0)
                     {
-                        cooldownToNextButtonIncrement = 0.5f;
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
                         currentButtonInputSide = value.x < 0 ? 1 : -1;
 
                         if (inPopup)

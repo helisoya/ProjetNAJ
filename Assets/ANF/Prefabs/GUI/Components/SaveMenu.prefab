@@ -644,8 +644,6 @@ MonoBehaviour:
     rid: 5904634178622980206
   pausedTransition:
     rid: -2
-  bgTransform: {fileID: 4114956463710642354}
-  transitionDuration: 0.5
   titleText: {fileID: 2269394107686771599}
   buttonsRoot: {fileID: 6390159873749332529}
   buttonPrefab: {fileID: 1238873286846129547, guid: f5431055d342b374e98657c9c73f096d, type: 3}
@@ -1067,8 +1065,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -2.5, y: -27.809631}
-  m_SizeDelta: {x: 320.798, y: 35.619293}
+  m_AnchoredPosition: {x: -0.000015259, y: -26.9}
+  m_SizeDelta: {x: 381.7774, y: 35.6193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4472478377773915757
 CanvasRenderer:
@@ -1131,7 +1129,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 8
   m_fontSizeMax: 24
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

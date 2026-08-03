@@ -559,7 +559,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 8
   m_fontSizeMax: 24
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -998,8 +998,6 @@ MonoBehaviour:
     rid: 5904634178622980204
   pausedTransition:
     rid: -2
-  bgTransform: {fileID: 7017756470742556747}
-  transitionDuration: 0.5
   tabsRoot: {fileID: 61886245017418505}
   scrollbar: {fileID: 5579723004105552287}
   tabPrefab: {fileID: 2234017033866888896, guid: 597a0963a05464e45bf6b3f7f8a39689, type: 3}

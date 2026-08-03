@@ -110,6 +110,7 @@ namespace NAJ.GUI
         private float cooldownToNextButtonIncrement = 0;
         private AudioManager audioManager;
         private bool skipFirstSelectSFX = false;
+        private float cursorMoveCooldown = 0.25f;
 
         public override void OnInitialize()
         {
@@ -122,6 +123,14 @@ namespace NAJ.GUI
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Inventory").performed += OnInventoryInput;
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+        }
+
+        private void OnCursorCooldownChange(object value)
+        {
+            cursorMoveCooldown = (float)value;
         }
 
         public override void OnUpdate()
@@ -139,7 +148,7 @@ namespace NAJ.GUI
                 if (cooldownToNextButtonIncrement <= 0)
                 {
                     IncrementButtonWithInput();
-                    cooldownToNextButtonIncrement = 0.5f;
+                    cooldownToNextButtonIncrement = cursorMoveCooldown;
                 }
             }
         }
@@ -527,7 +536,7 @@ namespace NAJ.GUI
                     noMovement = false;
                     if (currentButtonInputSide == 0)
                     {
-                        cooldownToNextButtonIncrement = 0.5f;
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
                         currentButtonInputSide = value.x > 0 ? 1 : -1;
 
                         IncrementButtonWithInput();
