@@ -1,8 +1,10 @@
 using ANF.Persistent;
+using ANF.Utils;
 using DG.Tweening;
 using Leguar.TotalJSON;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace ANF.GUI
 {
@@ -12,12 +14,21 @@ namespace ANF.GUI
     /// </summary>
     public class ChoiceUI : GUIComponent
     {
-        [Header("Buttons")]
-        [SerializeField] private Transform buttonsRoot;
-        [SerializeField] private ChoiceUIButton buttonPrefab;
-        private ChoiceUIButton[] buttons;
+        [Header("List")]
+        [SerializeField] private Transform listButtonsRoot;
+        [SerializeField] private ChoiceUIButton listButtonPrefab;
 
-        private Persistent.AudioManager audioManager;
+        [Header("Circle Around Image")]
+        [SerializeField] private Transform circleAroundImageButtonsRoot;
+        [SerializeField] private Image circleAroundImage;
+        [SerializeField] private Transform circleAroundImageRoot;
+        [SerializeField] private ChoiceUIButton circleAroundImageButtonPrefab;
+        [SerializeField] private float circleSize = 75.0f;
+
+        private ChoiceUIButton[] buttons;
+        private Sprite[] circleAroundImageCache;
+
+        private AudioManager audioManager;
         private ChoiceData currentData;
         private int currentButtonIndex;
         private int currentButtonInputSide;
@@ -81,7 +92,13 @@ namespace ANF.GUI
             currentButtonInputSide = 0;
             cooldownToNextButtonIncrement = 0;
 
-            foreach (Transform child in buttonsRoot)
+            foreach (Transform child in listButtonsRoot)
+            {
+                child.DOKill(false);
+                Destroy(child.gameObject);
+            }
+
+            foreach (Transform child in circleAroundImageButtonsRoot)
             {
                 child.DOKill(false);
                 Destroy(child.gameObject);
@@ -89,27 +106,75 @@ namespace ANF.GUI
 
             buttons = new ChoiceUIButton[currentData.entries.Length];
 
+            if (currentData.type == ChoiceData.ChoiceType.AroundImage)
+                circleAroundImageCache = new Sprite[currentData.entries.Length];
+            else
+                circleAroundImageCache = null;
+
+            ChoiceUIButton prefab = currentData.type == ChoiceData.ChoiceType.List ? listButtonPrefab : circleAroundImageButtonPrefab;
+            Transform prefabRoot = currentData.type == ChoiceData.ChoiceType.List ? listButtonsRoot : circleAroundImageButtonsRoot;
+            float circleStep = Mathf.PI * 2.0f / buttons.Length;
+
             for (int i = 0; i < buttons.Length; i++)
             {
-                ChoiceUIButton button = Instantiate(buttonPrefab, buttonsRoot);
+                ChoiceUIButton button = Instantiate(prefab, prefabRoot);
                 button.Initialize(i, currentData.entries[i].textKey, this);
                 buttons[i] = button;
 
-                if (i == 0)
-                    button.OnEnter();
+                if (currentData.type == ChoiceData.ChoiceType.AroundImage)
+                {
+                    button.RebuildMesh();
+                    float sizeX = button.GetSize().x;
+                    circleAroundImageCache[i] = ANFUtils.LoadSprite("Choices/", currentData.entries[i].linkedSprite, currentData.entries[i].linkedSpritesheet);
+                    Vector2 position = new Vector2(
+                        Mathf.Cos(i * circleStep) * circleSize,
+                        Mathf.Sin(i * circleStep) * circleSize
+                        );
+
+                    if (position.x >= circleSize * 0.5f)
+                        position.x += sizeX / 2.0f;
+                    else if (position.x <= -circleSize * 0.5f)
+                        position.x -= sizeX / 2.0f;
+
+                    button.GetComponent<RectTransform>().anchoredPosition = position;
+                }
+            }
+
+            if (buttons.Length != 0)
+            {
+                buttons[0].OnEnter();
+                if (currentData.type == ChoiceData.ChoiceType.AroundImage)
+                {
+                    circleAroundImage.sprite = circleAroundImageCache[0];
+                    circleAroundImageRoot.gameObject.SetActive(true);
+                    circleAroundImageRoot.transform.localScale = Vector3.zero;
+                    circleAroundImageRoot.transform.DOScale(1.0f, 0.5f).SetEase(Ease.OutQuad);
+                }
+                else
+                {
+                    circleAroundImageRoot.gameObject.SetActive(false);
+                }
             }
         }
 
         public override void OnDisabled()
         {
+            if (currentData.type == ChoiceData.ChoiceType.AroundImage)
+                circleAroundImageRoot.transform.DOScale(0.0f, 0.5f).SetEase(Ease.OutQuad);
 
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (i == currentButtonIndex)
                     buttons[i].Fade(0.5f, () =>
                     {
+                        circleAroundImageRoot.gameObject.SetActive(false);
                         showingChoice = false;
-                        foreach (Transform child in buttonsRoot)
+                        foreach (Transform child in listButtonsRoot)
+                        {
+                            child.DOKill(false);
+                            Destroy(child.gameObject);
+                        }
+                        foreach (Transform child in circleAroundImageButtonsRoot)
                         {
                             child.DOKill(false);
                             Destroy(child.gameObject);
@@ -170,7 +235,8 @@ namespace ANF.GUI
         {
             if (isEnabled && !isPaused && showingChoice)
             {
-                float value = context.ReadValue<Vector2>().y;
+                Vector2 input = context.ReadValue<Vector2>();
+                float value = input.x == 0 ? input.y : input.x;
 
                 if (Mathf.Abs(value) >= 0.9f)
                 {
@@ -207,6 +273,13 @@ namespace ANF.GUI
                 buttons[currentButtonIndex].OnExit();
                 currentButtonIndex = id;
                 buttons[currentButtonIndex].OnEnter();
+
+                if (currentData.type == ChoiceData.ChoiceType.AroundImage && circleAroundImageCache != null)
+                {
+                    circleAroundImage.sprite = circleAroundImageCache[currentButtonIndex];
+                    if (circleAroundImageRoot.localScale.x >= 0.999f)
+                        circleAroundImageRoot.DOPunchScale(new Vector3(-0.1f, -0.1f, -0.1f), 0.2f);
+                }
             }
         }
 
@@ -246,7 +319,7 @@ namespace ANF.GUI
                     entryJson.Add("textKey", entry.textKey);
                     entryJson.Add("linkedScript", entry.linkedLine);
 
-                    if(!string.IsNullOrEmpty(entry.linkedSprite))
+                    if (!string.IsNullOrEmpty(entry.linkedSprite))
                         entryJson.Add("linkedSprite", entry.linkedSprite);
 
                     if (!string.IsNullOrEmpty(entry.linkedSpritesheet))

@@ -62,11 +62,11 @@ namespace ANF.ANSL
             string type = split[1].ToLower();
             int choiceType = 0;
 
-            if(type.ToLower().Equals("list"))
+            if (type.ToLower().Equals("list"))
             {
                 choiceType = (int)ChoiceData.ChoiceType.List;
             }
-            else if (type.ToLower().Equals("aroundimage"))
+            else if (type.ToLower().Equals("circlearoundimage"))
             {
                 choiceType = (int)ChoiceData.ChoiceType.AroundImage;
             }
@@ -127,7 +127,7 @@ namespace ANF.ANSL
                         // 1 = Sprite
                         // 2 = Sprite Sheet
 
-                        if(splitedChoiceData.Length == 0 || splitedChoiceData.Length > 2)
+                        if (splitedChoiceData.Length == 0 || splitedChoiceData.Length > 3)
                         {
                             errors.Add(new ANSLUtils.ANSLError()
                             {
@@ -236,7 +236,7 @@ namespace ANF.ANSL
                 starts.Add(startIdx);
                 startIdx += compiledParts[i].Count + 1;
             }
-            
+
             // Choice
             // ID TYPE [CHOICE_ID NEXT_LINE SPRITE_NAME, SPRITE_SHEET]
 
@@ -268,9 +268,9 @@ namespace ANF.ANSL
 
                 for (int i = 0; i < choices.Length; i += 4)
                 {
-                    data.entries[i / 4] = new ChoiceData.ChoiceDataEntry() 
-                    { 
-                        textKey = choices[i], 
+                    data.entries[i / 4] = new ChoiceData.ChoiceDataEntry()
+                    {
+                        textKey = choices[i],
                         linkedLine = uint.Parse(choices[i + 1]),
                         linkedSprite = choices[i + 2] == "null" ? null : choices[i + 2],
                         linkedSpritesheet = choices[i + 3] == "null" ? null : choices[i + 3]
@@ -313,7 +313,7 @@ namespace ANF.ANSL
 
         protected override void OnCleanup()
         {
-            
+
         }
 
         protected override void OnSave(JSON json)

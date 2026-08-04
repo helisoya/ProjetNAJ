@@ -4,9 +4,24 @@ dialog(Test_Character;null;Test_Choice_1)
 
 choice(List)
 choice Choice_Yes:
-	load(Choice_Yes)
+dialog(Test_Character;null;Test_Choice_No_1)
 choice Choice_No:
-	load(Choice_No)
+dialog(Test_Character;null;Test_Choice_Yes_1)
 endchoice
 
 dialog(Test_Character;null;Test_Choice_2)
+
+choice(CircleAroundImage)
+choice Choice_Yes Test_Yes Test_Choice:
+dialog(Test_Character;null;Test_Choice_Yes_2)
+choice Choice_No Test_No Test_Choice:
+dialog(Test_Character;null;Test_Choice_No_2)
+choice Choice_DoNotWant Test_DoNotWant Test_Choice:
+dialog(Test_Character;null;Test_Choice_DoNotWant_1)
+choice Choice_Caribou Test_Caribou Test_Choice:
+dialog(Test_Character;null;Test_Choice_Caribou_1)
+choice Choice_Drama Test_Drama Test_Choice:
+dialog(Test_Character;null;Test_Choice_Drama_1)
+endchoice
+
+dialog(Test_Character;null;Test_Choice_3)

@@ -14,6 +14,7 @@ namespace ANF.GUI
         [SerializeField] private RectTransform buttonRoot;
         [SerializeField] private Image buttonImg;
         [SerializeField] private Locals.LocalizedText label;
+        [SerializeField] private bool isLabel = false;
 
         private ChoiceUI choiceUI;
         private int id;
@@ -36,6 +37,24 @@ namespace ANF.GUI
         }
 
         /// <summary>
+        /// Rebuilds the mesh
+        /// </summary>
+        public void RebuildMesh()
+        {
+            label.GetText().ForceMeshUpdate(true, true);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(buttonRoot);
+        }
+
+        /// <summary>
+		/// Get the button's size
+		/// </summary>
+		/// <returns>The button's size</returns>
+        public Vector2 GetSize()
+        {
+            return buttonRoot.sizeDelta;
+        }
+
+        /// <summary>
         /// Fades and destroy the button
         /// </summary>
         /// <param name="delay">The delay</param>
@@ -51,16 +70,26 @@ namespace ANF.GUI
 
         public void OnEnter()
         {
-            buttonImg.DOColor(Color.lightGray, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
+            if (buttonImg && !isLabel)
+                buttonImg.DOColor(Color.lightGray, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
+
             buttonRoot.DOScale(Vector3.one * 1.05f, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
             buttonRoot.DORotate(new Vector3(0, 0, -2.5f), 0.5f).SetEase(Ease.OutBounce).SetId(transform);
+
+            if (isLabel)
+                label.GetText().fontStyle = TMPro.FontStyles.Underline;
         }
 
         public void OnExit()
         {
-            buttonImg.DOColor(Color.white, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
+            if (buttonImg && !isLabel)
+                buttonImg.DOColor(Color.white, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
+
             buttonRoot.DOScale(Vector3.one * 0.8f, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
             buttonRoot.DORotate(Vector3.zero, 0.5f).SetEase(Ease.OutBounce).SetId(transform);
+
+            if (isLabel)
+                label.GetText().fontStyle = TMPro.FontStyles.Normal;
         }
 
         public void OnPointerDown(PointerEventData eventData)
