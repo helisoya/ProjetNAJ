@@ -1,7 +1,7 @@
 67|TestChoice
 66|test
 22|Test_Character|null|Test_Choice_1
-20|Choice_Generic|Choice_Yes|4|Choice_No|6
+20|0|Choice_Yes|4|null|null|Choice_No|6|null|null
 30|Choice_Yes
 29|8
 30|Choice_No

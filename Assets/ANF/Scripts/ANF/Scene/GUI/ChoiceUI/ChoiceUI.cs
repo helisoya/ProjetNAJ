@@ -12,10 +12,6 @@ namespace ANF.GUI
     /// </summary>
     public class ChoiceUI : GUIComponent
     {
-        [Header("Title")]
-        [SerializeField] private Locals.LocalizedText titleText;
-        [SerializeField] private RectTransform titleTransform;
-
         [Header("Buttons")]
         [SerializeField] private Transform buttonsRoot;
         [SerializeField] private ChoiceUIButton buttonPrefab;
@@ -33,7 +29,6 @@ namespace ANF.GUI
 
         public override void OnInitialize()
         {
-            titleTransform.anchoredPosition = new Vector2(0, titleTransform.sizeDelta.y / 2.0f);
         }
 
         public override void OnStart()
@@ -86,9 +81,6 @@ namespace ANF.GUI
             currentButtonInputSide = 0;
             cooldownToNextButtonIncrement = 0;
 
-            titleText.SetNewKey(currentData.title);
-            titleTransform.DOAnchorPosY(-titleTransform.sizeDelta.y / 2.0f - 30f, 0.5f).SetEase(Ease.OutQuad);
-
             foreach (Transform child in buttonsRoot)
             {
                 child.DOKill(false);
@@ -110,7 +102,6 @@ namespace ANF.GUI
 
         public override void OnDisabled()
         {
-            titleTransform.DOAnchorPosY(titleTransform.sizeDelta.y / 2.0f, 0.5f).SetEase(Ease.OutQuad);
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -247,13 +238,19 @@ namespace ANF.GUI
             {
                 JSON choiceDataJson = new JSON();
                 JArray choiceEntriesJson = new JArray();
-                choiceDataJson.Add("title", currentData.title);
+                choiceDataJson.Add("type", (int)currentData.type);
 
                 foreach (ChoiceData.ChoiceDataEntry entry in currentData.entries)
                 {
                     JSON entryJson = new JSON();
                     entryJson.Add("textKey", entry.textKey);
                     entryJson.Add("linkedScript", entry.linkedLine);
+
+                    if(!string.IsNullOrEmpty(entry.linkedSprite))
+                        entryJson.Add("linkedSprite", entry.linkedSprite);
+
+                    if (!string.IsNullOrEmpty(entry.linkedSpritesheet))
+                        entryJson.Add("linkedSpritesheet", entry.linkedSpritesheet);
 
                     choiceEntriesJson.Add(entryJson);
                 }
@@ -276,8 +273,8 @@ namespace ANF.GUI
             {
                 JSON choiceData = json.GetJSON("choiceData");
 
-                if (choiceData.ContainsKey("title"))
-                    currentData.title = choiceData.GetString("title");
+                if (choiceData.ContainsKey("type"))
+                    currentData.type = (ChoiceData.ChoiceType)choiceData.GetInt("type");
 
                 if (choiceData.ContainsKey("entries"))
                 {
@@ -291,6 +288,12 @@ namespace ANF.GUI
 
                         if (arrayData[i].ContainsKey("linkedLine"))
                             currentData.entries[i].linkedLine = arrayData[i].GetJNumber("linkedLine").AsUInt();
+
+                        if (arrayData[i].ContainsKey("linkedSprite"))
+                            currentData.entries[i].linkedSprite = arrayData[i].GetString("linkedSprite");
+
+                        if (arrayData[i].ContainsKey("linkedSpritesheet"))
+                            currentData.entries[i].linkedSpritesheet = arrayData[i].GetString("linkedSpritesheet");
                     }
                 }
 
@@ -308,8 +311,19 @@ namespace ANF.GUI
     /// </summary>
     public struct ChoiceData
     {
-        public string title;
+        public ChoiceType type;
         public ChoiceDataEntry[] entries;
+
+        /// <summary>
+        /// Represents 
+        /// </summary>
+        public enum ChoiceType
+        {
+            // Choices are displayed in a list
+            List,
+            // Choices are display around an image
+            AroundImage
+        }
 
         /// <summary>
         /// Represents an entry (button) in the choice
@@ -318,6 +332,8 @@ namespace ANF.GUI
         {
             public string textKey;
             public uint linkedLine;
+            public string linkedSprite;
+            public string linkedSpritesheet;
         }
     }
 }

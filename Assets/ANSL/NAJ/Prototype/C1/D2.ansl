@@ -1,4 +1,4 @@
-choice(Prototype_Q1_Title)
+choice(List)
 choice Prototype_Q1_Me:
 	setCameraPosition(JudgeCam)
 	setCameraRotation(JudgeCam)

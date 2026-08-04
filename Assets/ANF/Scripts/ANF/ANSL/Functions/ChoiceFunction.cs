@@ -12,9 +12,9 @@ namespace ANF.ANSL
     [ANSLFunctionAttribute(
         functionBody: "choice",
         functionAutoComplete: new string[] {
-            "choice(Title)\n\t choice Key:\n\nendchoice"
+            "choice(List)\n\t choice Key:\n\nendchoice"
         },
-        functionDesc: "Starts a choice")]
+        functionDesc: "Starts a choice (List/AroundImage)")]
     public class ChoiceFunction : ANSLFunction
     {
         private bool waitingForChoice = false;
@@ -23,7 +23,7 @@ namespace ANF.ANSL
         public override FunctionParameterType[][] GetParametersTemplates()
         {
             return new FunctionParameterType[][] {
-                new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.LISTSTRING}
+                new FunctionParameterType[]{FunctionParameterType.INT, FunctionParameterType.LISTSTRING}
             };
         }
 
@@ -59,11 +59,35 @@ namespace ANF.ANSL
                 return false;
             }
 
-            string titleKey = split[1];
+            string type = split[1].ToLower();
+            int choiceType = 0;
+
+            if(type.ToLower().Equals("list"))
+            {
+                choiceType = (int)ChoiceData.ChoiceType.List;
+            }
+            else if (type.ToLower().Equals("aroundimage"))
+            {
+                choiceType = (int)ChoiceData.ChoiceType.AroundImage;
+            }
+            else
+            {
+                // Unknown type
+                errors.Add(new ANSLUtils.ANSLError()
+                {
+                    type = ANSLUtils.ANSLErrorType.ERROR,
+                    filePath = compiler.GetSourceFilepath(),
+                    line = compiler.GetCurrentLineCounter(),
+                    errorMessage = $"Unknown choice type : {cleanedLine}."
+                });
+                return false;
+            }
 
             List<string> currentCompiledPart = null;
             bool foundEnd = false;
             List<string> buttonKey = new List<string>();
+            List<string> buttonSprite = new List<string>();
+            List<string> buttonSpriteSheet = new List<string>();
             List<List<string>> compiledParts = new List<List<string>>();
 
             bool canContinue = true;
@@ -96,8 +120,26 @@ namespace ANF.ANSL
                 {
                     if (currentNextLine.StartsWith("choice ") && currentNextLine.EndsWith(":"))
                     {
-                        string token = currentNextLine.Substring(7, currentNextLine.Length - 8);
-                        if (token.Contains(' ') || token.Contains('\t') || string.IsNullOrEmpty(token))
+                        string choiceData = currentNextLine.Substring(7, currentNextLine.Length - 8);
+
+                        string[] splitedChoiceData = choiceData.Split(' ');
+                        // 0 = Choice token
+                        // 1 = Sprite
+                        // 2 = Sprite Sheet
+
+                        if(splitedChoiceData.Length == 0 || splitedChoiceData.Length > 2)
+                        {
+                            errors.Add(new ANSLUtils.ANSLError()
+                            {
+                                type = ANSLUtils.ANSLErrorType.ERROR,
+                                filePath = compiler.GetSourceFilepath(),
+                                line = compiler.GetCurrentLineCounter(),
+                                errorMessage = $"Invalid arguments : {currentNextLine}."
+                            });
+                            return false;
+                        }
+
+                        if (splitedChoiceData[0].Contains('\t') || string.IsNullOrEmpty(splitedChoiceData[0]))
                         {
                             errors.Add(new ANSLUtils.ANSLError()
                             {
@@ -116,7 +158,17 @@ namespace ANF.ANSL
                         }
 
                         currentCompiledPart = new List<string>();
-                        buttonKey.Add(token);
+                        buttonKey.Add(splitedChoiceData[0]);
+
+                        if (splitedChoiceData.Length >= 2 && !string.IsNullOrEmpty(splitedChoiceData[1]))
+                            buttonSprite.Add(splitedChoiceData[1]);
+                        else
+                            buttonSprite.Add("null");
+
+                        if (splitedChoiceData.Length == 3 && !string.IsNullOrEmpty(splitedChoiceData[2]))
+                            buttonSpriteSheet.Add(splitedChoiceData[2]);
+                        else
+                            buttonSpriteSheet.Add("null");
                     }
                     else
                     {
@@ -184,11 +236,14 @@ namespace ANF.ANSL
                 starts.Add(startIdx);
                 startIdx += compiledParts[i].Count + 1;
             }
+            
+            // Choice
+            // ID TYPE [CHOICE_ID NEXT_LINE SPRITE_NAME, SPRITE_SHEET]
 
-            string compiledSwitchLine = $"{id}|{titleKey}";
+            string compiledChoiceLine = $"{id}|{choiceType.ToString()}";
             for (int i = 0; i < compiledParts.Count; i++)
             {
-                compiledSwitchLine += $"|{buttonKey[i]}|{starts[i]}";
+                compiledChoiceLine += $"|{buttonKey[i]}|{starts[i]}|{buttonSprite[i]}|{buttonSpriteSheet[i]}";
 
                 compiledLines.AddRange(compiledParts[i]);
 
@@ -196,23 +251,30 @@ namespace ANF.ANSL
                 compiledLines.Add($"{jumpToFunctionId}|{startIdx}");
             }
 
-            compiledLines.Insert(0, compiledSwitchLine);
+            compiledLines.Insert(0, compiledChoiceLine);
 
             return true;
         }
 
         protected override void OnStartProcess()
         {
-            if (parameters.GetParameter(0, out string titleKey) &&
+            if (parameters.GetParameter(0, out int type) &&
                 parameters.GetParameter(1, out string[] choices) &&
                 manager.GetGUIManager().GetComponent<ChoiceUI>(out choiceUI))
             {
                 ChoiceData data = new ChoiceData();
-                data.title = titleKey;
-                data.entries = new ChoiceData.ChoiceDataEntry[choices.Length / 2];
-                for (int i = 0; i < choices.Length; i += 2)
+                data.type = (ChoiceData.ChoiceType)type;
+                data.entries = new ChoiceData.ChoiceDataEntry[choices.Length / 4];
+
+                for (int i = 0; i < choices.Length; i += 4)
                 {
-                    data.entries[i / 2] = new ChoiceData.ChoiceDataEntry() { textKey = choices[i], linkedLine = uint.Parse(choices[i + 1]) };
+                    data.entries[i / 4] = new ChoiceData.ChoiceDataEntry() 
+                    { 
+                        textKey = choices[i], 
+                        linkedLine = uint.Parse(choices[i + 1]),
+                        linkedSprite = choices[i + 2] == "null" ? null : choices[i + 2],
+                        linkedSpritesheet = choices[i + 3] == "null" ? null : choices[i + 3]
+                    };
                 }
 
                 choiceUI.SetEnabled(true, data);

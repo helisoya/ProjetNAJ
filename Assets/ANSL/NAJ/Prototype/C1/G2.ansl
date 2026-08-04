@@ -1,4 +1,4 @@
-choice(Prototype_Q2_Title)
+choice(List)
 choice Prototype_Q2_ThingsMissing:
 	load(H)
 	return()
