@@ -14,19 +14,25 @@ namespace ANF.GUI
     /// </summary>
     public class ChoiceUI : GUIComponent
     {
-        [Header("List")]
-        [SerializeField] private Transform listButtonsRoot;
-        [SerializeField] private ChoiceUIButton listButtonPrefab;
+        [Header("Icon")]
+        [SerializeField] private Image iconImage;
+        [SerializeField] private RectTransform iconRoot;
+        private bool iconVisible = false;
 
-        [Header("Circle Around Image")]
-        [SerializeField] private Transform circleAroundImageButtonsRoot;
-        [SerializeField] private Image circleAroundImage;
-        [SerializeField] private Transform circleAroundImageRoot;
-        [SerializeField] private ChoiceUIButton circleAroundImageButtonPrefab;
-        [SerializeField] private float circleSize = 75.0f;
+        [Header("List")]
+        [SerializeField] private RectTransform listButtonsRoot;
+        [SerializeField] private ChoiceUIButton listButtonPrefab;
+        [SerializeField] private float listIconSize = 75.0f;
+        [SerializeField] private float listIconSpacing = 200.0f;
+
+        [Header("Label")]
+        [SerializeField] private RectTransform labelButtonsRoot;
+        [SerializeField] private ChoiceUIButton labelButtonPrefab;
+        [SerializeField] private float circleIconSize = 75.0f;
+        [SerializeField] private float arcIconSize = 75.0f;
 
         private ChoiceUIButton[] buttons;
-        private Sprite[] circleAroundImageCache;
+        private Sprite[] iconsCache;
 
         private AudioManager audioManager;
         private ChoiceData currentData;
@@ -38,8 +44,66 @@ namespace ANF.GUI
         public bool showingChoice { get; private set; } = false;
         public uint selectedLine { get; private set; } = 0;
 
+        /// <summary>
+        /// Shows the icon
+        /// </summary>
+        public void ShowIcon()
+        {
+            if(!iconVisible)
+            {
+                iconRoot.DOScale(1.0f, 0.5f).SetEase(Ease.OutQuad);
+                iconVisible = true;
+            }
+        }
+
+        /// <summary>
+        /// Hides the icon
+        /// </summary>
+        public void HideIcon()
+        {
+            if(iconVisible)
+            {
+                iconRoot.DOScale(0.0f, 0.5f).SetEase(Ease.OutQuad);
+                iconVisible = false;
+            }
+        }
+
+        /// <summary>
+        /// Sets the icon's sprite. Hides/Shows the icon if needed
+        /// </summary>
+        /// <param name="sprite">The new icon's sprite</param>
+        public void SetIconSprite(Sprite sprite)
+        {
+            if(sprite == null)
+            {
+                if (iconVisible)
+                    HideIcon();
+                return;
+            }
+
+            iconImage.sprite = sprite;
+            if (!iconVisible)
+                ShowIcon();
+            else if (iconRoot.localScale.x >= 0.999f)
+                iconRoot.DOPunchScale(new Vector3(-0.1f, -0.1f, -0.1f), 0.2f);
+        }
+
+        /// <summary>
+        /// Changes the icon's position
+        /// </summary>
+        /// <param name="position">The new position</param>
+        /// <param name="immediate">True if the change should be immediate</param>
+        public void SetIconPosition(Vector3 position, bool immediate)
+        {
+            if (immediate)
+                iconRoot.position = position;
+            else
+                iconRoot.DOMove(position, 0.5f).SetEase(Ease.OutQuad);
+        }
+
         public override void OnInitialize()
         {
+            iconRoot.localScale = Vector3.zero;
         }
 
         public override void OnStart()
@@ -98,42 +162,56 @@ namespace ANF.GUI
                 Destroy(child.gameObject);
             }
 
-            foreach (Transform child in circleAroundImageButtonsRoot)
+            foreach (Transform child in labelButtonsRoot)
             {
                 child.DOKill(false);
                 Destroy(child.gameObject);
             }
 
             buttons = new ChoiceUIButton[currentData.entries.Length];
+            iconsCache = new Sprite[currentData.entries.Length];
 
-            if (currentData.type == ChoiceData.ChoiceType.AroundImage)
-                circleAroundImageCache = new Sprite[currentData.entries.Length];
-            else
-                circleAroundImageCache = null;
-
-            ChoiceUIButton prefab = currentData.type == ChoiceData.ChoiceType.List ? listButtonPrefab : circleAroundImageButtonPrefab;
-            Transform prefabRoot = currentData.type == ChoiceData.ChoiceType.List ? listButtonsRoot : circleAroundImageButtonsRoot;
+            ChoiceUIButton prefab = currentData.type == ChoiceData.ChoiceType.List ? listButtonPrefab : labelButtonPrefab;
+            Transform prefabRoot = currentData.type == ChoiceData.ChoiceType.List ? listButtonsRoot : labelButtonsRoot;
             float circleStep = Mathf.PI * 2.0f / buttons.Length;
+            float arcStep = Mathf.PI / Mathf.Max(1,buttons.Length - 1);
 
             for (int i = 0; i < buttons.Length; i++)
             {
+                iconsCache[i] = ANFUtils.LoadSprite("Choices/", currentData.entries[i].linkedSprite, currentData.entries[i].linkedSpritesheet);
+
                 ChoiceUIButton button = Instantiate(prefab, prefabRoot);
                 button.Initialize(i, currentData.entries[i].textKey, this);
                 buttons[i] = button;
 
-                if (currentData.type == ChoiceData.ChoiceType.AroundImage)
+                if (currentData.type == ChoiceData.ChoiceType.Circle)
                 {
                     button.RebuildMesh();
                     float sizeX = button.GetSize().x;
-                    circleAroundImageCache[i] = ANFUtils.LoadSprite("Choices/", currentData.entries[i].linkedSprite, currentData.entries[i].linkedSpritesheet);
                     Vector2 position = new Vector2(
-                        Mathf.Cos(i * circleStep) * circleSize,
-                        Mathf.Sin(i * circleStep) * circleSize
+                        Mathf.Cos(i * circleStep) * circleIconSize,
+                        Mathf.Sin(i * circleStep) * circleIconSize
                         );
 
-                    if (position.x >= circleSize * 0.5f)
+                    if (position.x >= circleIconSize * 0.5f)
                         position.x += sizeX / 2.0f;
-                    else if (position.x <= -circleSize * 0.5f)
+                    else if (position.x <= -circleIconSize * 0.5f)
+                        position.x -= sizeX / 2.0f;
+
+                    button.GetComponent<RectTransform>().anchoredPosition = position;
+                }
+                else if(currentData.type == ChoiceData.ChoiceType.Arc)
+                {
+                    button.RebuildMesh();
+                    float sizeX = button.GetSize().x;
+                    Vector2 position = new Vector2(
+                        Mathf.Cos(i * arcStep) * arcIconSize,
+                        Mathf.Sin(i * arcStep) * arcIconSize
+                        );
+
+                    if (position.x >= arcIconSize * 0.5f)
+                        position.x += sizeX / 2.0f;
+                    else if (position.x <= -arcIconSize * 0.5f)
                         position.x -= sizeX / 2.0f;
 
                     button.GetComponent<RectTransform>().anchoredPosition = position;
@@ -143,38 +221,42 @@ namespace ANF.GUI
             if (buttons.Length != 0)
             {
                 buttons[0].OnEnter();
-                if (currentData.type == ChoiceData.ChoiceType.AroundImage)
+                if (currentData.type == ChoiceData.ChoiceType.Circle)
                 {
-                    circleAroundImage.sprite = circleAroundImageCache[0];
-                    circleAroundImageRoot.gameObject.SetActive(true);
-                    circleAroundImageRoot.transform.localScale = Vector3.zero;
-                    circleAroundImageRoot.transform.DOScale(1.0f, 0.5f).SetEase(Ease.OutQuad);
+                    iconRoot.sizeDelta = new Vector2(circleIconSize, circleIconSize);
+                    SetIconPosition(labelButtonsRoot.position, true);
                 }
-                else
+                else if (currentData.type == ChoiceData.ChoiceType.Arc)
                 {
-                    circleAroundImageRoot.gameObject.SetActive(false);
+                    iconRoot.sizeDelta = new Vector2(arcIconSize, arcIconSize);
+                    SetIconPosition(labelButtonsRoot.position, true);
                 }
+                else if(currentData.type == ChoiceData.ChoiceType.List)
+                {
+                    LayoutRebuilder.ForceRebuildLayoutImmediate(listButtonsRoot);
+                    iconRoot.sizeDelta = new Vector2(listIconSize, listIconSize);
+                    iconRoot.position = buttons[0].transform.position + new Vector3(listIconSpacing * (Screen.width / 800.0f), 0, 0);
+                }
+
+                SetIconSprite(iconsCache[0]);
             }
         }
 
         public override void OnDisabled()
         {
-            if (currentData.type == ChoiceData.ChoiceType.AroundImage)
-                circleAroundImageRoot.transform.DOScale(0.0f, 0.5f).SetEase(Ease.OutQuad);
-
+            HideIcon();
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (i == currentButtonIndex)
                     buttons[i].Fade(0.5f, () =>
                     {
-                        circleAroundImageRoot.gameObject.SetActive(false);
                         showingChoice = false;
                         foreach (Transform child in listButtonsRoot)
                         {
                             child.DOKill(false);
                             Destroy(child.gameObject);
                         }
-                        foreach (Transform child in circleAroundImageButtonsRoot)
+                        foreach (Transform child in labelButtonsRoot)
                         {
                             child.DOKill(false);
                             Destroy(child.gameObject);
@@ -270,15 +352,20 @@ namespace ANF.GUI
                 if (audioManager != null)
                     audioManager.PlayUICursorMoveSFX();
 
+                bool lastHasIcon = iconsCache[currentButtonIndex] != null;
+
                 buttons[currentButtonIndex].OnExit();
                 currentButtonIndex = id;
                 buttons[currentButtonIndex].OnEnter();
 
-                if (currentData.type == ChoiceData.ChoiceType.AroundImage && circleAroundImageCache != null)
+                if (iconsCache != null)
                 {
-                    circleAroundImage.sprite = circleAroundImageCache[currentButtonIndex];
-                    if (circleAroundImageRoot.localScale.x >= 0.999f)
-                        circleAroundImageRoot.DOPunchScale(new Vector3(-0.1f, -0.1f, -0.1f), 0.2f);
+                    SetIconSprite(iconsCache[currentButtonIndex]);
+                }
+
+                if(currentData.type == ChoiceData.ChoiceType.List && iconsCache[currentButtonIndex] != null)
+                {
+                    SetIconPosition(buttons[currentButtonIndex].transform.position + new Vector3(listIconSpacing * (Screen.width / 800.0f),0,0), !lastHasIcon);
                 }
             }
         }
@@ -394,8 +481,10 @@ namespace ANF.GUI
         {
             // Choices are displayed in a list
             List,
-            // Choices are display around an image
-            AroundImage
+            // Choices are displayed in a circle
+            Circle,
+            // Choices are displayed in a demi-circle
+            Arc
         }
 
         /// <summary>

@@ -18,6 +18,9 @@ namespace ANF.Utils
 		/// <returns>The sprite</returns>
 		public static Sprite LoadSprite(string resourcePath, string spriteName, string spritesheet)
 		{
+			if (spriteName == null)
+				return null;
+
 			if (string.IsNullOrEmpty(spritesheet))
 				return Resources.Load<Sprite>(resourcePath + spriteName);
 

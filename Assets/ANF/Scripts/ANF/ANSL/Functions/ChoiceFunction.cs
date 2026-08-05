@@ -66,9 +66,13 @@ namespace ANF.ANSL
             {
                 choiceType = (int)ChoiceData.ChoiceType.List;
             }
-            else if (type.ToLower().Equals("circlearoundimage"))
+            else if (type.ToLower().Equals("circle"))
             {
-                choiceType = (int)ChoiceData.ChoiceType.AroundImage;
+                choiceType = (int)ChoiceData.ChoiceType.Circle;
+            }
+            else if (type.ToLower().Equals("arc"))
+            {
+                choiceType = (int)ChoiceData.ChoiceType.Arc;
             }
             else
             {
