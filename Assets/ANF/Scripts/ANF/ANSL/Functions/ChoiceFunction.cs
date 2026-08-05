@@ -14,7 +14,7 @@ namespace ANF.ANSL
         functionAutoComplete: new string[] {
             "choice(List)\n\t choice Key:\n\nendchoice"
         },
-        functionDesc: "Starts a choice (List/AroundImage)")]
+        functionDesc: "Starts a choice (List/Circle/Arc)")]
     public class ChoiceFunction : ANSLFunction
     {
         private bool waitingForChoice = false;

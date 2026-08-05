@@ -34,8 +34,43 @@ namespace ANF.Persistent
             Reset();
         }
 
+        /// <summary>
+        /// Removes a variable from the container (script specified only)
+        /// </summary>
+        /// <param name="variableName">The variable's name</param>
+        /// <returns>True if the operation was a success</returns>
+        public bool RemoveVariable(string variableName)
+        {
+            if(variables.TryGetValue(variableName, out Variable variable) && !variable.isGlobal)
+            {
+                variables.Remove(variableName);
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Adds an additional variable to the container (Deleted after a reset / load)
+        /// </summary>
+        /// <param name="variableName">The variable's name</param>
+        /// <param name="defaultValue">The variable's default value</param>
+        /// <returns>True if the operation was a success</returns>
+        public bool AddVariable(string variableName, int defaultValue)
+        {
+            if(!variables.ContainsKey(variableName))
+            {
+                variables.Add(variableName, new Variable(variableName, defaultValue, false));
+                return true;
+            }
+
+            return false;
+        }
+
         public void Load(JSON json)
         {
+            Reset();
+
             if (json.ContainsKey("playerName"))
                 playerName = json.GetString("playerName");
 
@@ -51,7 +86,19 @@ namespace ANF.Persistent
                     if (variable is JSON)
                     {
                         tmpVar = variable as JSON;
-                        SetVariable(tmpVar.GetString("name"), tmpVar.GetInt("value"));
+
+                        bool isGlobal = tmpVar.GetBool("isGlobal");
+                        string varName = tmpVar.GetString("name");
+                        int varValue = tmpVar.GetInt("value");
+
+                        if (isGlobal)
+                            SetVariable(varName, varValue);
+                        else
+                            variables.Add(varName, new Variable() { 
+                                defaultValue = tmpVar.GetInt("defaultValue"), 
+                                value = varValue, 
+                                isGlobal = false, 
+                                name = varName });
                     }
                 }
             }
@@ -60,10 +107,16 @@ namespace ANF.Persistent
         public void Reset()
         {
             playerName = "Player";
+            List<string> toRemove = new List<string>();
             foreach (Variable variable in variables.Values)
             {
                 variable.value = variable.defaultValue;
+                if (variable.isGlobal)
+                    toRemove.Add(variable.name);
             }
+
+            foreach (string variable in toRemove)
+                variables.Remove(variable);
         }
 
         public void Save(JSON json)
@@ -79,6 +132,9 @@ namespace ANF.Persistent
                 variableNode = new JSON();
                 variableNode.Add("name", variable.name);
                 variableNode.Add("value", variable.value);
+                variableNode.Add("isGlobal", variable.isGlobal);
+                if (!variable.isGlobal)
+                    variableNode.Add("defaultValue", variable.defaultValue);
                 variableArray.Add(variableNode);
             }
             json.Add("variables", variableArray);
@@ -225,12 +281,12 @@ namespace ANF.Persistent
                 {
                     string[] split = line.Split(' ');
                     if (split.Length == 2 && int.TryParse(split[1], out int value))
-                        variables.Add(split[0], new Variable(split[0], value));
+                        variables.Add(split[0], new Variable(split[0], value, true));
                 }
             }
 
             if (!VariableExists(randomVariableName))
-                variables.Add(randomVariableName, new Variable(randomVariableName, 0));
+                variables.Add(randomVariableName, new Variable(randomVariableName, 0, true));
         }
     }
 
@@ -242,12 +298,19 @@ namespace ANF.Persistent
         public string name;
         public int value;
         public int defaultValue;
+        public bool isGlobal;
 
-        public Variable(string key, int defaultValue)
+        public Variable()
+        {
+
+        }
+
+        public Variable(string key, int defaultValue, bool isGlobal)
         {
             this.name = key;
             this.value = defaultValue;
             this.defaultValue = defaultValue;
+            this.isGlobal = isGlobal;
         }
     }
 }

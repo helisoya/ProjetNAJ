@@ -8,7 +8,7 @@ Menus
 - Boutons / Textes pas assez d'espace dans les options                                V
 - Revoir taille textes titre / normal (Highlight titres, ...)                         V
 - Logs -> Pouvoir scroll / mettre en plein ecran 
-- Revoir Menu Choice
+- Revoir Menu Choice                                                                  V
 
 Inputs
 - Scroll/input trop lent dans les menus                                               V
@@ -19,7 +19,7 @@ Inputs
 - Input Reminders avec le mode interaction
 
 ANSL
-- Pouvoir déclarer des variables depuis ANSL (pour éviter de poluer celles globales)
+- Pouvoir déclarer des variables depuis ANSL (pour éviter de poluer celles globales)  V
 
 Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V

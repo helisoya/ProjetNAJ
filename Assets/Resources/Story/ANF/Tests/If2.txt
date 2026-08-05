@@ -1,18 +1,18 @@
-67|TestIf Alt
-27|2|5|random == 0 & random < 1
-31|Log|Setting to 5
-78|random|=|5
-29|6
-29|6
-27|7|9|random != 5
-31|Error|Should be at 5
-29|12
-31|Log|Is at 5, removing 1
-78|random|-|1
-29|12
-27|13|15|random == 4
-31|Log|Is at 4
-29|17
-31|Error|Should be at 4
-29|17
-31|Log|End
+69|TestIf Alt
+28|2|5|random == 0 & random < 1
+32|Log|Setting to 5
+80|random|=|5
+30|6
+30|6
+28|7|9|random != 5
+32|Error|Should be at 5
+30|12
+32|Log|Is at 5, removing 1
+80|random|-|1
+30|12
+28|13|15|random == 4
+32|Log|Is at 4
+30|17
+32|Error|Should be at 4
+30|17
+32|Log|End
