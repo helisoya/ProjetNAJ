@@ -77,7 +77,7 @@ namespace ANF.GUI
             buttonRoot.DORotate(new Vector3(0, 0, -2.5f), 0.5f).SetEase(Ease.OutBounce).SetId(transform);
 
             if (isLabel)
-                label.GetText().fontStyle = TMPro.FontStyles.Underline;
+                label.GetText().DOColor(Color.lightGreen, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
         }
 
         public void OnExit()
@@ -89,7 +89,7 @@ namespace ANF.GUI
             buttonRoot.DORotate(Vector3.zero, 0.5f).SetEase(Ease.OutBounce).SetId(transform);
 
             if (isLabel)
-                label.GetText().fontStyle = TMPro.FontStyles.Normal;
+                label.GetText().DOColor(Color.white, 0.5f).SetEase(Ease.OutQuad).SetId(transform);
         }
 
         public void OnPointerDown(PointerEventData eventData)
