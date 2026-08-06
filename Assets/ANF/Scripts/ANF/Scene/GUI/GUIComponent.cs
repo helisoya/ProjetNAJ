@@ -22,6 +22,7 @@ namespace ANF.GUI
         [SerializeField] protected string[] lockComponents;
         [SerializeReference, SubclassSelector] protected GUIInOutTransition enabledTransition;
         [SerializeReference, SubclassSelector] protected GUIInOutTransition pausedTransition;
+        protected bool delayedClosing = false;
 
         public bool isEnabled { get; protected set; } = true;
         public bool isPaused { get; protected set; } = false;
@@ -58,6 +59,8 @@ namespace ANF.GUI
 
         public void SetEnabled(bool enabled)
         {
+            delayedClosing = false;
+
             if (enabled && gui.AnyComponentsActive(lockComponents))
                 return;
 
@@ -130,6 +133,24 @@ namespace ANF.GUI
                 enabled = !open;
                 SetEnabled(open);
             }
+        }
+
+        public void UpdateComponent()
+        {
+            if(delayedClosing)
+            {
+                SetEnabled(false);
+            }
+
+            OnUpdate();
+        }
+
+        /// <summary>
+        /// Triggers the component's closing next frame
+        /// </summary>
+        public void TriggerDelayedClosing()
+        {
+            delayedClosing = true;
         }
 
         public abstract void OnInitialize();

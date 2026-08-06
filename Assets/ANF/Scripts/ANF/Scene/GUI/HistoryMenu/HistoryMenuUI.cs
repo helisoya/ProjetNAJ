@@ -126,7 +126,7 @@ namespace ANF.GUI
                 if (audioManager != null)
                     audioManager.PlayUICursorCancelSFX();
 
-                SetEnabled(false);
+                TriggerDelayedClosing();
             }
         }
 

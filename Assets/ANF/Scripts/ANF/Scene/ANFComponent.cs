@@ -15,6 +15,12 @@ namespace ANF.Scene
         public abstract void OnInitialize();
 
         /// <summary>
+        /// Updates the component
+        /// Called once per frame
+        /// </summary>
+        public abstract void UpdateComponent();
+
+        /// <summary>
         /// On Update callback.
         /// Called once per frame
         /// </summary>

@@ -31,7 +31,7 @@ namespace ANF.Scene
         {
             foreach (WorldComponent component in components.Values)
                 if (component.isEnabled && !component.isPaused)
-                    component.OnUpdate();
+                    component.UpdateComponent();
         }
     }
 

@@ -156,7 +156,7 @@ namespace ANF.GUI
                 if (colorPicker.IsOpen)
                     colorPicker.Close();
                 else
-                    SetEnabled(false);
+                    TriggerDelayedClosing();
             }
         }
 

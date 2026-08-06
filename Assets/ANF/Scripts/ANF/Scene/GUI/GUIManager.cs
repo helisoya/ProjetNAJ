@@ -77,7 +77,7 @@ namespace ANF.GUI
         {
             foreach (GUIComponent component in components.Values)
                 if (component.isEnabled && !component.isPaused)
-                    component.OnUpdate();
+                    component.UpdateComponent();
         }
 
         /// <summary>

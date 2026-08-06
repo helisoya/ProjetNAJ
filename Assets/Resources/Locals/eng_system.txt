@@ -114,6 +114,7 @@ NewGameMenu_Desc = Enter your name
 NewGameMenu_Confirm = Confirm
 
 GeneralMenu_Unknown = ???
+GeneralMenu_Back = Back
 
 # ------------------------------------------------------------------------
 # -------------------------- NAJ Menus -----------------------------------

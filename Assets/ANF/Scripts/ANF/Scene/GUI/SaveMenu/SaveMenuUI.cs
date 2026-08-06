@@ -192,7 +192,7 @@ namespace ANF.GUI
                 if (inPopup)
                     CloseConfirmPopup();
                 else
-                    SetEnabled(false);
+                    TriggerDelayedClosing();
             }
         }
 

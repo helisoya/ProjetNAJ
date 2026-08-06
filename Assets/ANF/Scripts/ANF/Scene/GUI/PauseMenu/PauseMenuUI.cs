@@ -140,6 +140,7 @@ namespace ANF.GUI
         public override void OnRegisterInputs()
         {
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed += OnPauseInput;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled += OnMove;
         }
@@ -147,6 +148,7 @@ namespace ANF.GUI
         public override void OnUnRegisterInputs()
         {
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnNext;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed -= OnPauseInput;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
         }

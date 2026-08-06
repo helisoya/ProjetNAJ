@@ -16,7 +16,7 @@ namespace ANF.Scene
         public virtual void OnUpdate()
         {
             foreach (T component in components.Values)
-                component.OnUpdate();
+                component.UpdateComponent();
         }
 
         public void OnStart()

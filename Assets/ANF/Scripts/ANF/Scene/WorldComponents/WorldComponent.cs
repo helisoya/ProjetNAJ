@@ -97,5 +97,10 @@ namespace ANF.Scene
         public abstract void OnUnRegisterInputs();
         public abstract bool OnChangeScene();
         public abstract bool IsCleaningUpForSceneChange();
+
+        public void UpdateComponent()
+        {
+            OnUpdate();
+        }
     }
 }
