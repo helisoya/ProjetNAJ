@@ -7,23 +7,26 @@ Menus
 - Titres menus pas assez différents du texte normal / éléments intéractibles          V
 - Boutons / Textes pas assez d'espace dans les options                                V
 - Revoir taille textes titre / normal (Highlight titres, ...)                         V
-- Logs -> Pouvoir scroll / mettre en plein ecran 
+- Logs -> Pouvoir scroll / mettre en plein ecran                                      V
 - Revoir Menu Choice                                                                  V
-- Exposer les différents paramètres Dotween (Transitions, couleurs, ...)
+- Exposer les différents paramètres Dotween (Transitions, couleurs, ...)              ?
 - Regrouper les inputs clavier pour le UI
 - Revoir Inventaire
-- Input pour signaler qu'on peut passer un dialogue ?
+- Input pour signaler qu'on peut passer un dialogue ?                                 V
 
 Inputs
 - Scroll/input trop lent dans les menus                                               V
 - Toujours les inputs Inventaire / Options (Clic Droit/i)
-- Click DANS la boite de dialogue et pas autour                                       -
+- Click DANS la boite de dialogue et pas autour                                       ?
 - Mode Point & Click icones par clair                                                 V
 - Retour pas clair dans les menus                                                     V
-- Input Reminders avec le mode interaction
+- Input Reminders avec le mode interaction                                            -
 
 ANSL
 - Pouvoir déclarer des variables depuis ANSL (pour éviter de poluer celles globales)  V
+- Pouvoir déclarer des quêtes depuis ANSL
+- Pouvoir déclarer des preuves depuis ANSL
+- Pouvoir déclarer des logs depuis ANSL
 
 Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V
@@ -39,6 +42,7 @@ Musiques :
 - Intro - Tension (Quand crash et tempete)
 - Gerald ?
 - Sherif
+- Juno ?
 - Tribunal - Intermission
 - Tribunal - Intro
 - Examination - Lent

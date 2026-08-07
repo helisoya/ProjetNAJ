@@ -1,5 +1,6 @@
 using ANF.GUI;
 using ANF.Persistent;
+using DG.Tweening;
 using Leguar.TotalJSON;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -142,6 +143,7 @@ namespace ANF.ANSL
                 if (!waitingForEndInput)
                 {
                     dialogUI.GetSkipButton().onClick.RemoveListener(OnDialogSkip);
+                    dialogUI.HideContinueIcon();
 
                     if (closeAfterwards)
                         dialogUI.SetEnabled(false);

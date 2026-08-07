@@ -24,6 +24,7 @@ namespace ANF.GUI
         [SerializeField] private Locals.LocalizedText speakerText;
         [SerializeField] private Locals.LocalizedText dialogText;
         [SerializeField] private Button continueButton;
+        [SerializeField] private CanvasGroup continueIcon;
 
         [Header("Infos")]
         [SerializeField] private float punctuationSpeedFactor = 3;
@@ -47,6 +48,8 @@ namespace ANF.GUI
         public override void OnInitialize()
         {
             skipModeEnabled = false;
+            continueIcon.alpha = 0;
+            continueIcon.GetComponent<RectTransform>().DOPunchAnchorPos(Vector2.up, 1.0f,0).SetLoops(-1).SetEase(Ease.Linear);
 
             textIds = new List<string>();
 
@@ -91,6 +94,7 @@ namespace ANF.GUI
         /// <param name="secondsBetweenCharacters">The number of seconds between characters</param>
         public void StartDialog(string speakerID, string dialogID, bool additive = false, float secondsBetweenCharacters = 0.05f)
         {
+            continueIcon.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
             canSkip = false;
             showingDialog = true;
             currentWaitTime = 0;
@@ -121,6 +125,14 @@ namespace ANF.GUI
         public void RefreshDialogLocals()
         {
             RegenerateDialogFromStack(true);
+        }
+
+        /// <summary>
+        /// Hides the continue icon
+        /// </summary>
+        public void HideContinueIcon()
+        {
+            continueIcon.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
         }
 
         /// <summary>
@@ -217,6 +229,7 @@ namespace ANF.GUI
                     currentSegmentIdx = textSegments.Count;
                     showingDialog = false;
                     canSkip = false;
+                    continueIcon.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
                 }
                 else if (stillCharactersToReveal)
                 {
@@ -305,6 +318,9 @@ namespace ANF.GUI
             secondsBetweenCharacters = defaultSecondsBetweenCharacters;
 
             RegenerateDialogFromStack(!showingDialog);
+
+            if(!showingDialog)
+                continueIcon.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
         }
 
         /// <summary>

@@ -53,24 +53,24 @@ Map_ANFDemo_DesertedIsland = Deserted Island
 
 QuestCategory_testQuest = Test Quests
 
-Quest_anfTestQuest_1_name = Saving Harold
-Quest_anfTestQuest_1_desc = Harold needs my help. He has been attacked by a roaming rabbit.
+Quest_anfTestQuest_1_Name = Saving Harold
+Quest_anfTestQuest_1_Desc = Harold needs my help. He has been attacked by a roaming rabbit.
 Quest_anfTestQuest_1_0 = Find Harold.
 Quest_anfTestQuest_1_1 = Kill the rabbit.
-Quest_anfTestQuest_1_done = I saved Harold from the rabbit.
-Quest_anfTestQuest_1_canceled = Harold died.
+Quest_anfTestQuest_1_Done = I saved Harold from the rabbit.
+Quest_anfTestQuest_1_Canceled = Harold died.
 
-Quest_anfTestQuest_2_name = A long journey
-Quest_anfTestQuest_2_desc = I need to get to the promised land of Caribou.
+Quest_anfTestQuest_2_Name = A long journey
+Quest_anfTestQuest_2_Desc = I need to get to the promised land of Caribou.
 Quest_anfTestQuest_2_0 = Take your car.
 Quest_anfTestQuest_2_1 = Go to the A36 highway.
 Quest_anfTestQuest_2_2 = Drive a lot.
 Quest_anfTestQuest_2_3 = Find a ferry to Canada.
-Quest_anfTestQuest_2_done = I managed to find the promised land.
-Quest_anfTestQuest_2_canceled = I got lost.
+Quest_anfTestQuest_2_Done = I managed to find the promised land.
+Quest_anfTestQuest_2_Canceled = I got lost.
 
-Log_TestLog1_name = Pirates
-Log_TestLog1_desc = You are a pirate.
+Log_TestLog1_Name = Pirates
+Log_TestLog1_Desc = You are a pirate.
 
-Log_TestLog2_name = ANF
-Log_TestLog2_desc = ANF is a framework.
+Log_TestLog2_Name = ANF
+Log_TestLog2_Desc = ANF is a framework.

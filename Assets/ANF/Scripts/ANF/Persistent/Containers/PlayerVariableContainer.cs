@@ -111,7 +111,7 @@ namespace ANF.Persistent
             foreach (Variable variable in variables.Values)
             {
                 variable.value = variable.defaultValue;
-                if (variable.isGlobal)
+                if (!variable.isGlobal)
                     toRemove.Add(variable.name);
             }
 

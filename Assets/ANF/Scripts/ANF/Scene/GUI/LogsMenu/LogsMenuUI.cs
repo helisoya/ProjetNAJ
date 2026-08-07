@@ -16,13 +16,14 @@ namespace ANF.GUI
     public class LogsMenuUI : GUIComponent
     {
         [Header("Log Buttons")]
-        [SerializeField] private Transform buttonsRoot;
+        [SerializeField] private RectTransform buttonsRoot;
         [SerializeField] private LogsMenuUIButton buttonPrefab;
         [SerializeField] private Scrollbar buttonsScrollbar;
 
         [Header("Log Info")]
         [SerializeField] private Locals.LocalizedText logNameText;
         [SerializeField] private Locals.LocalizedText logDescText;
+        [SerializeField] private Scrollbar logScrollbar;
         [SerializeField] private Image logSpriteImage;
         [SerializeField] private Sprite defaultLogSprite;
 
@@ -37,6 +38,7 @@ namespace ANF.GUI
         private Vector2Int currentButtonInputSide = Vector2Int.zero;
         private float cooldownToNextButtonIncrement = 0;
         private float cursorMoveCooldown = 0.25f;
+        private bool onScrollbar = false;
 
         public override void OnInitialize()
         {
@@ -76,6 +78,7 @@ namespace ANF.GUI
                 Destroy(child.gameObject);
 
             buttons = new();
+            onScrollbar = false;
 
             List<string> allLogs = new List<string>(logsContainer.GetAllLogs());
             PersistentDataManager.instance.GetGlobalData().GetComponent<Locals.Locals>(out Locals.Locals locals);
@@ -108,7 +111,8 @@ namespace ANF.GUI
             logDescText.SetNewKey("GeneralMenu_Unknown");
             logSpriteImage.sprite = defaultLogSprite;
 
-            buttonsScrollbar.value = 1.0f;
+            buttonsRoot.anchoredPosition = Vector2.zero;
+            logDescText.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
         }
 
         public override void OnDisabled()
@@ -215,7 +219,15 @@ namespace ANF.GUI
 		/// </summary>
         private void IncrementButtonWithInput()
         {
-            SetCurrentButton((currentButtonIdx + currentButtonInputSide.y + buttons.Count) % buttons.Count);
+            if(currentButtonInputSide.x != 0)
+            {
+                onScrollbar = !onScrollbar && logScrollbar.gameObject.activeInHierarchy;
+                EventSystem.current.SetSelectedGameObject(onScrollbar ? logScrollbar.gameObject : null);
+            }
+            else if(!onScrollbar)
+            {
+                SetCurrentButton((currentButtonIdx + currentButtonInputSide.y + buttons.Count) % buttons.Count);
+            }
         }
 
         /// <summary>
@@ -236,6 +248,8 @@ namespace ANF.GUI
                 sprite = defaultLogSprite;
 
             logSpriteImage.sprite = sprite;
+
+            logDescText.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
         }
 
         public void ShowNewLogPopup()

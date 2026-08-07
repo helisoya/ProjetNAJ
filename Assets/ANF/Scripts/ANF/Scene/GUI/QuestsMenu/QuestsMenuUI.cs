@@ -17,7 +17,7 @@ namespace ANF.GUI
     {
 
         [Header("Quest Buttons")]
-        [SerializeField] private Transform buttonsRoot;
+        [SerializeField] private RectTransform buttonsRoot;
         [SerializeField] private QuestsMenuUIButton buttonPrefab;
         [SerializeField] private QuestsMenuUICategory categoryPrefab;
         [SerializeField] private Scrollbar questsScrollbar;
@@ -25,7 +25,7 @@ namespace ANF.GUI
         [Header("Quest Info")]
         [SerializeField] private Locals.LocalizedText infoNameText;
         [SerializeField] private Locals.LocalizedText infoDescText;
-        [SerializeField] private Transform infoObjectivesRoot;
+        [SerializeField] private RectTransform infoObjectivesRoot;
         [SerializeField] private Locals.LocalizedText infoObjectivePrefab;
         [SerializeField] private Scrollbar objectivesScrollbar;
 
@@ -152,7 +152,7 @@ namespace ANF.GUI
                 foreach (Transform child in infoObjectivesRoot)
                     Destroy(child.gameObject);
             }
-            questsScrollbar.value = 1.0f;
+            buttonsRoot.anchoredPosition = Vector2.zero;
         }
 
         public override void OnDisabled()
@@ -264,7 +264,7 @@ namespace ANF.GUI
 
             if (currentButtonInputSide.x != 0 && infoObjectivesRoot.childCount > 0)
             {
-                onObjectiveScrollbar = !onObjectiveScrollbar;
+                onObjectiveScrollbar = !onObjectiveScrollbar && objectivesScrollbar.gameObject.activeInHierarchy;
                 EventSystem.current.SetSelectedGameObject(onObjectiveScrollbar ? objectivesScrollbar.gameObject : null);
             }
         }
@@ -302,7 +302,7 @@ namespace ANF.GUI
 
             LayoutRebuilder.ForceRebuildLayoutImmediate(infoObjectivesRoot.GetComponent<RectTransform>());
 
-            objectivesScrollbar.value = 1.0f;
+            infoObjectivesRoot.anchoredPosition = Vector2.zero;
         }
 
         public override void OnRegisterInputs()

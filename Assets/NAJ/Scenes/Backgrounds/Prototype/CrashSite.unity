@@ -1163,6 +1163,10 @@ MonoBehaviour:
       Value: {fileID: 2105630875}
   interactableObjects:
   - {fileID: 1515668597}
+  backgroundCharacters:
+    _serializedList: []
+  backgroundStaticObjects:
+    _serializedList: []
 --- !u!4 &8429653501667101996
 Transform:
   m_ObjectHideFlags: 0

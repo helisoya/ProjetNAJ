@@ -64,6 +64,12 @@ namespace ANF.Scene
         public string selectedScript { get; private set; } = null;
 
 
+#if UNITY_EDITOR
+        private bool debugShowInteractableCollisions = false;
+
+#endif
+
+
         public override WorldComponent CloneComponent()
         {
             return new InteractionMode()
@@ -194,9 +200,6 @@ namespace ANF.Scene
             loadedDataCache = null;
 
             canTryMouseClick = false;
-            mousePosition = new Vector2(-1, -1);
-
-            keyboardMode = true;
 
             GenerateInteractionList();
 
@@ -219,15 +222,16 @@ namespace ANF.Scene
                     }
                 }
 
-
-
-                if (highlightType != HighlightType.None)
+                if (highlightType != HighlightType.None && keyboardMode)
                 {
                     currentInteractionObjects[currentIndex].SetHighlightAlpha(1);
                     currentInteractionObjects[currentIndex].SetHighlightColor(selectedColor);
                 }
 
+                Physics.SyncTransforms(); // To force colliders to world (could be temp set to local instead)
                 UpdateIconFor(currentInteractionObjects[currentIndex]);
+                if (currentIcon != null)
+                    currentIcon.gameObject.SetActive(keyboardMode);
                 OnRegisterInputs();
             }
             else
@@ -381,6 +385,10 @@ namespace ANF.Scene
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
                 cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MousePosition").performed += OnMousePosition;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled += OnMove;
         }
 
         private void OnCursorCooldownChange(object value)
@@ -390,6 +398,21 @@ namespace ANF.Scene
 
         public override void OnUpdate()
         {
+#if UNITY_EDITOR
+            // Debug show interaction renderers
+            if (Keyboard.current != null && Keyboard.current.f1Key.wasPressedThisFrame)
+            {
+                debugShowInteractableCollisions = !debugShowInteractableCollisions;
+
+                foreach (InteractableObject interactable in registeredObjects.Values)
+                {
+                    MeshRenderer mr = interactable.GetComponent<MeshRenderer>();
+                    if (mr)
+                        mr.enabled = debugShowInteractableCollisions;
+                }
+            }
+#endif
+
             if (inInteractionMode)
             {
                 if (reloadInteractionMode)
@@ -431,7 +454,6 @@ namespace ANF.Scene
                         if (!currentInteractionObjects.Contains(current))
                             current = null;
                     }
-
 
                     Cursor.SetCursor(current == null ? null : current.GetIcon(), Vector2.zero, CursorMode.Auto);
 
@@ -490,13 +512,12 @@ namespace ANF.Scene
 
         private void OnMousePosition(InputAction.CallbackContext context)
         {
-            if (isEnabled && !isPaused && inInteractionMode)
-            {
-                keyboardMode = false;
-                mousePosition = context.ReadValue<Vector2>();
+            keyboardMode = false;
+            mousePosition = context.ReadValue<Vector2>();
 
-                if (currentIcon)
-                    currentIcon.gameObject.SetActive(false);
+            if (isEnabled && !isPaused && inInteractionMode && currentIcon)
+            {
+                currentIcon.gameObject.SetActive(false);
             }
         }
 
@@ -510,10 +531,10 @@ namespace ANF.Scene
 
         private void OnMove(InputAction.CallbackContext context)
         {
+            Vector2 value = context.ReadValue<Vector2>();
+
             if (isEnabled && !isPaused && inInteractionMode)
             {
-                Vector2 value = context.ReadValue<Vector2>();
-
                 bool noMovement = true;
 
                 if (Mathf.Abs(value.x) >= 0.9f)
@@ -539,6 +560,10 @@ namespace ANF.Scene
                     currentButtonInputSide = 0;
                 }
             }
+            else
+            {
+                keyboardMode = Mathf.Abs(value.x) >= 0.9f;
+            }
         }
 
         /// <summary>
@@ -552,23 +577,21 @@ namespace ANF.Scene
         public override void OnRegisterInputs()
         {
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled += OnMove;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MousePosition").performed += OnMousePosition;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MouseClick").performed += OnMouseClick;
         }
 
         public override void OnUnRegisterInputs()
         {
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnNext;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MousePosition").performed -= OnMousePosition;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MouseClick").performed -= OnMouseClick;
         }
 
         public override bool OnChangeScene()
         {
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MousePosition").performed -= OnMousePosition;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
+
             if (currentIcon && inInteractionMode)
                 currentIcon.gameObject.SetActive(false);
             OnUnRegisterInputs();

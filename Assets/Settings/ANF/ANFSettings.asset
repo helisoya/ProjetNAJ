@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bfc7de97ad5247b9061be4feb35ce, type: 3}
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
-  startingScript: /ANF/Tests/Choice
+  startingScript: /NAJ/Prototype/C1/EntryPoint
   mainMenuScene: NAJMainMenu
   gameScene: NAJGame
   saveFolder: Saves/
