@@ -14,6 +14,7 @@ namespace NAJ.Persistent
         public uint checkImagesCount;
         public string iconSpriteSheet;
         public string checkImagesSpriteSheet;
+        public bool isGlobal;
 
         /// <summary>
 		/// Gets the key to the evidence's name
@@ -110,6 +111,7 @@ namespace NAJ.Persistent
     {
         public string id;
         public string iconSpriteSheet;
+        public bool isGlobal;
 
         /// <summary>
 		/// Gets the key to the profile's name

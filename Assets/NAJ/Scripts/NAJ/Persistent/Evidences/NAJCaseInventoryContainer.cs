@@ -52,12 +52,13 @@ namespace NAJ.Persistent
                             NAJCaseEvidence evidence = new NAJCaseEvidence();
                             evidence.id = split[1];
                             evidence.canCheck = false;
+                            evidence.isGlobal = true;
 
                             if (split.Length >= 3)
                             {
                                 // Check if n°3 is a number of addional images, or a spritesheet
 
-                                if(!uint.TryParse(split[2], out evidence.checkImagesCount))
+                                if (!uint.TryParse(split[2], out evidence.checkImagesCount))
                                 {
                                     evidence.iconSpriteSheet = split[2];
                                 }
@@ -68,11 +69,11 @@ namespace NAJ.Persistent
                                 }
                             }
 
-                            if(split.Length >= 4)
+                            if (split.Length >= 4)
                             {
-                                if(evidence.canCheck)
+                                if (evidence.canCheck)
                                 {
-                                    if(split.Length == 5)
+                                    if (split.Length == 5)
                                     {
                                         // One too many parameters
                                         continue;
@@ -112,6 +113,7 @@ namespace NAJ.Persistent
 
                             NAJCaseProfile profile = new NAJCaseProfile();
                             profile.id = split[1];
+                            profile.isGlobal = true;
 
                             if (split.Length == 3)
                                 profile.iconSpriteSheet = split[2];
@@ -123,6 +125,65 @@ namespace NAJ.Persistent
                     }
                 }
             }
+        }
+
+        /// <summary>
+		/// Create a user evidence (local to a save file)
+		/// </summary>
+		/// <param name="evidenceId">The evidence's id</param>
+		/// <param name="checkImageCount">The check image count</param>
+		/// <param name="iconSpritesheet">The icon's sprite sheet</param>
+		/// <param name="checkImageSpritesheet">The check image's sprite sheet</param>
+        public void CreateUserEvidence(string evidenceId, uint checkImageCount, string iconSpritesheet, string checkImageSpritesheet)
+        {
+            if (!knownEvidence.ContainsKey(evidenceId))
+            {
+                NAJCaseEvidence evidence = new NAJCaseEvidence();
+                evidence.id = evidenceId;
+                evidence.isGlobal = false;
+                evidence.iconSpriteSheet = iconSpritesheet;
+                evidence.checkImagesSpriteSheet = checkImageSpritesheet;
+                evidence.checkImagesCount = checkImageCount;
+                evidence.canCheck = checkImageCount != 0;
+                knownEvidence.Add(evidenceId, evidence);
+            }
+        }
+
+        /// <summary>
+		/// Deletes a user evidence
+		/// </summary>
+		/// <param name="evidenceId">The evidence's id</param>
+        public void DeleteUserEvidence(string evidenceId)
+        {
+            if (knownEvidence.TryGetValue(evidenceId, out NAJCaseEvidence evidence) && !evidence.isGlobal)
+                knownEvidence.Remove(evidenceId);
+        }
+
+        /// <summary>
+        /// Create a user profile (local to a save file)
+        /// </summary>
+        /// <param name="profileId">The profile's id</param>
+        /// <param name="iconSpritesheet">The icon's sprite sheet</param>
+        public void CreateUserProfile(string profileId, string iconSpritesheet)
+        {
+            if (!knownProfiles.ContainsKey(profileId))
+            {
+                NAJCaseProfile profile = new NAJCaseProfile();
+                profile.id = profileId;
+                profile.isGlobal = false;
+                profile.iconSpriteSheet = iconSpritesheet;
+                knownProfiles.Add(profileId, profile);
+            }
+        }
+
+        /// <summary>
+		/// Deletes a user profile
+		/// </summary>
+		/// <param name="profileId">The profile's id</param>
+        public void DeleteUserProfile(string profileId)
+        {
+            if (knownProfiles.TryGetValue(profileId, out NAJCaseProfile profile) && !profile.isGlobal)
+                knownProfiles.Remove(profileId);
         }
 
         /// <summary>
@@ -223,6 +284,24 @@ namespace NAJ.Persistent
         {
             inventoryProfiles.Clear();
             inventoryEvidence.Clear();
+
+            List<string> toDelete = new List<string>();
+            foreach (string key in knownEvidence.Keys)
+            {
+                if (!knownEvidence[key].isGlobal)
+                    toDelete.Add(key);
+            }
+            foreach (string key in toDelete)
+                knownEvidence.Remove(key);
+
+            toDelete.Clear();
+            foreach (string key in knownProfiles.Keys)
+            {
+                if (!knownProfiles[key].isGlobal)
+                    toDelete.Add(key);
+            }
+            foreach (string key in toDelete)
+                knownProfiles.Remove(key);
         }
 
         public void Save(JSON json)
@@ -248,6 +327,45 @@ namespace NAJ.Persistent
                 }
                 json.Add("inventoryProfiles", array);
             }
+
+            JArray localItems = new JArray();
+            foreach (NAJCaseEvidence evidence in knownEvidence.Values)
+            {
+                if (!evidence.isGlobal)
+                {
+                    JSON itemData = new JSON();
+                    itemData.Add("id", evidence.id);
+                    itemData.Add("canCheck", evidence.canCheck);
+                    itemData.Add("checkImagesCount", evidence.checkImagesCount);
+
+                    if (!string.IsNullOrEmpty(evidence.iconSpriteSheet))
+                        itemData.Add("iconSpriteSheet", evidence.iconSpriteSheet);
+
+                    if (!string.IsNullOrEmpty(evidence.checkImagesSpriteSheet))
+                        itemData.Add("checkImagesSpriteSheet", evidence.checkImagesSpriteSheet);
+
+                    localItems.Add(itemData);
+                }
+            }
+            if (localItems.Length > 0)
+                json.Add("localEvidence", localItems);
+
+            localItems = new JArray();
+            foreach (NAJCaseProfile profile in knownProfiles.Values)
+            {
+                if (!profile.isGlobal)
+                {
+                    JSON itemData = new JSON();
+                    itemData.Add("id", profile.id);
+
+                    if (!string.IsNullOrEmpty(profile.iconSpriteSheet))
+                        itemData.Add("iconSpriteSheet", profile.iconSpriteSheet);
+
+                    localItems.Add(itemData);
+                }
+            }
+            if (localItems.Length > 0)
+                json.Add("localProfile", localItems);
         }
 
         public void Load(JSON json)
@@ -269,6 +387,50 @@ namespace NAJ.Persistent
                 for (int i = 0; i < array.Length; i++)
                 {
                     inventoryProfiles.Add(array.GetString(i));
+                }
+            }
+
+            if (json.ContainsKey("localEvidence"))
+            {
+                JArray array = json.GetJArray("localEvidence");
+                for (int i = 0; i < array.Length; i++)
+                {
+                    JSON itemData = array.GetJSON(i);
+                    NAJCaseEvidence evidence = new NAJCaseEvidence();
+                    evidence.isGlobal = false;
+
+                    if (itemData.ContainsKey("id"))
+                        evidence.id = itemData.GetString("id");
+                    if (itemData.ContainsKey("canCheck"))
+                        evidence.canCheck = itemData.GetBool("canCheck");
+                    if (itemData.ContainsKey("checkImagesCount"))
+                        evidence.checkImagesCount = itemData.GetJNumber("checkImagesCount").AsUInt();
+                    if (itemData.ContainsKey("iconSpriteSheet"))
+                        evidence.iconSpriteSheet = itemData.GetString("iconSpriteSheet");
+                    if (itemData.ContainsKey("checkImagesSpriteSheet"))
+                        evidence.checkImagesSpriteSheet = itemData.GetString("checkImagesSpriteSheet");
+
+                    if (!string.IsNullOrEmpty(evidence.id) && !knownEvidence.ContainsKey(evidence.id))
+                        knownEvidence.Add(evidence.id, evidence);
+                }
+            }
+
+            if (json.ContainsKey("localProfile"))
+            {
+                JArray array = json.GetJArray("localProfile");
+                for (int i = 0; i < array.Length; i++)
+                {
+                    JSON itemData = array.GetJSON(i);
+                    NAJCaseProfile profile = new NAJCaseProfile();
+                    profile.isGlobal = false;
+
+                    if (itemData.ContainsKey("id"))
+                        profile.id = itemData.GetString("id");
+                    if (itemData.ContainsKey("iconSpriteSheet"))
+                        profile.iconSpriteSheet = itemData.GetString("iconSpriteSheet");
+
+                    if (!string.IsNullOrEmpty(profile.id) && !knownProfiles.ContainsKey(profile.id))
+                        knownProfiles.Add(profile.id, profile);
                 }
             }
         }

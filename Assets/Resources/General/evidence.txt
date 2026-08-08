@@ -15,27 +15,6 @@
 # Profile_ID_Name = The profile's name
 # Profile_ID_Desc = The profile's description
 
-# Tests
-Evidence TestEvidence1 PlaceHolders
-Evidence TestEvidence2 PlaceHolders 3 PlaceHolders2
-Evidence TestEvidence3 PlaceHolders 1 PlaceHolders3
-Evidence TestEvidence4 PlaceHolders 5 PlaceHolders4
-Evidence TestEvidence5 PlaceHolders
-Evidence TestEvidence6 PlaceHolders
-Evidence TestEvidence7 PlaceHolders
-Evidence TestEvidence8 PlaceHolders 2 PlaceHolders8
-Evidence TestEvidence9 PlaceHolders
-
-Profile TestProfile1 PlaceHolders2
-Profile TestProfile2 PlaceHolders2
-Profile TestProfile3 PlaceHolders2
-Profile TestProfile4 PlaceHolders2
-Profile TestProfile5 PlaceHolders2
-Profile TestProfile6 PlaceHolders2
-Profile TestProfile7 PlaceHolders2
-Profile TestProfile8 PlaceHolders2
-Profile TestProfile9 PlaceHolders2
-
 # Case 1
 
 Evidence C1_Herbarium C1
