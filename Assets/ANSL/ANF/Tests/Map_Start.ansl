@@ -1,4 +1,7 @@
 setLocation(TestMap)
 setLocals(test)
+
+createUserVariable(anfDemoProgress;0)
+
 dialog(Test_Character;null;Test_Map_Start)
 map(Map_ANFDemo;TestMap;Village)

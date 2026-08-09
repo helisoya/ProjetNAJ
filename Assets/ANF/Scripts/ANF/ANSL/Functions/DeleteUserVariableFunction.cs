@@ -8,13 +8,13 @@ namespace ANF.ANSL
     /// The Remove Variable Function can be used to create a new variable locally
     /// </summary>
     [ANSLFunctionAttribute(
-        functionBody: "removeVariable",
+        functionBody: "deleteUserVariable",
         functionAutoComplete: new string[] {
-            "removeVariable(Name)",
-            "removeVariable(Name)"
+            "deleteUserVariable(Name)",
+            "deleteUserVariable(Name)"
         },
         functionDesc: "Removes a user variable")]
-    public class RemoveVariableFunction : ANSLFunction
+    public class DeleteUserVariableFunction : ANSLFunction
     {
         public override FunctionParameterType[][] GetParametersTemplates()
         {

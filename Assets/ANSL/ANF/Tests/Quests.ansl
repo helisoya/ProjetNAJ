@@ -1,6 +1,12 @@
 setLocation(TestQuests)
 setLocals(test)
 
+
+createUserVariable(anfTestQuest_1;-1)
+createUserVariable(anfTestQuest_2;-1)
+createUserQuest(anfTestQuest_1;testQuest;1)
+createUserQuest(anfTestQuest_2;testQuest;3)
+
 variable(anfTestQuest_1;=;0)
 variable(anfTestQuest_2;=;0)
 

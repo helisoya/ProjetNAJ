@@ -80,20 +80,20 @@ namespace ANF.GUI
             buttons = new();
             onScrollbar = false;
 
-            List<string> allLogs = new List<string>(logsContainer.GetAllLogs());
+            List<KeyValuePair<bool, string>> allLogs = new List<KeyValuePair<bool, string>>(logsContainer.GetAllLogs());
             PersistentDataManager.instance.GetGlobalData().GetComponent<Locals.Locals>(out Locals.Locals locals);
 
-            allLogs.Sort((string o1, string o2) =>
+            allLogs.Sort((KeyValuePair<bool, string> o1, KeyValuePair<bool, string> o2) =>
             {
                 if (locals != null)
-                    return locals.GetLocal($"Log_{o1}_Name").CompareTo(locals.GetLocal($"Log_{o2}_Name"));
-                return o1.CompareTo(o2);
+                    return locals.GetLocal($"Log_{o1.Value}_Name").CompareTo(locals.GetLocal($"Log_{o2.Value}_Name"));
+                return o1.Value.CompareTo(o2.Value);
             });
 
             for (int i = 0; i < allLogs.Count; i++)
             {
                 LogsMenuUIButton button = Instantiate(buttonPrefab, buttonsRoot);
-                button.Initialize(i, this, allLogs[i], logsContainer.IsUnlocked(allLogs[i]));
+                button.Initialize(i, this, allLogs[i].Value, logsContainer.IsUnlocked(allLogs[i].Value));
                 buttons.Add(button);
             }
 
@@ -219,12 +219,12 @@ namespace ANF.GUI
 		/// </summary>
         private void IncrementButtonWithInput()
         {
-            if(currentButtonInputSide.x != 0)
+            if (currentButtonInputSide.x != 0)
             {
                 onScrollbar = !onScrollbar && logScrollbar.gameObject.activeInHierarchy;
                 EventSystem.current.SetSelectedGameObject(onScrollbar ? logScrollbar.gameObject : null);
             }
-            else if(!onScrollbar)
+            else if (!onScrollbar)
             {
                 SetCurrentButton((currentButtonIdx + currentButtonInputSide.y + buttons.Count) % buttons.Count);
             }

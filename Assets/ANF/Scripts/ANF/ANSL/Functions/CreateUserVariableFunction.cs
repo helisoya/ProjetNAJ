@@ -8,13 +8,13 @@ namespace ANF.ANSL
     /// The Add Variable Function can be used to create a new variable locally
     /// </summary>
     [ANSLFunctionAttribute(
-        functionBody: "addVariable",
+        functionBody: "createUserVariable",
         functionAutoComplete: new string[] {
-            "addVariable(Name;Value)",
-            "addVariable(Name;VariableToCopy)"
+            "createUserVariable(Name;Value)",
+            "createUserVariable(Name;VariableToCopy)"
         },
-        functionDesc: "Adds a user variable")]
-    public class AddVariableFunction : ANSLFunction
+        functionDesc: "Creates a user variable")]
+    public class CreateUserVariableFunction : ANSLFunction
     {
         public override FunctionParameterType[][] GetParametersTemplates()
         {

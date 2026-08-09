@@ -5,6 +5,7 @@ namespace ANF.Persistent
         public string variableID;
         public string categoryID;
         public int maxQuestState;
+        public bool isGlobal;
 
         /// <summary>
         /// Gets a quest's name key

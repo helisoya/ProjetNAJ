@@ -1,5 +1,9 @@
 setLocation(TestLogs)
 setLocals(test)
+
+createUserLog(TestLog1)
+createUserLog(TestLog2)
+
 unlockLog(TestLog1;false)
 wait(5)
 unlockLog(TestLog2;true)

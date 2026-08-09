@@ -1,4 +1,8 @@
+
+createUserVariable(var;1)
+createUserVariable(var2;2)
 setLocation(TestIf)
+
 if(var == 1 & (var2 == 2))
 	log(Log;True1)
 endif

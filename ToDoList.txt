@@ -24,9 +24,10 @@ Inputs
 
 ANSL
 - Pouvoir déclarer des variables depuis ANSL (pour éviter de poluer celles globales)  V
-- Pouvoir déclarer des quêtes depuis ANSL
+- Pouvoir déclarer des quêtes depuis ANSL                                             V
 - Pouvoir déclarer des preuves depuis ANSL                                            V
-- Pouvoir déclarer des logs depuis ANSL
+- Pouvoir déclarer des logs depuis ANSL                                               V
+- Code Snippets pour les macros
 
 ANF
 - Système global pour charger/gerer les ressources

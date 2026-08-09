@@ -22,6 +22,3 @@
 # Quest_VARIABLEID_Done = Quest done message
 # Quest_VARIABLEID_Canceled = Quest canceled/failed message
 
-[testQuest]
-anfTestQuest_1 1
-anfTestQuest_2 3

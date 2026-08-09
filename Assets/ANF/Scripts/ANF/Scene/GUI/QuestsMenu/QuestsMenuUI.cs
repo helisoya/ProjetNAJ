@@ -78,8 +78,8 @@ namespace ANF.GUI
         {
             Dictionary<string, List<KeyValuePair<Persistent.QuestInfo, int>>> result = new();
 
-            if (PersistentDataManager.instance.GetGlobalData().GetComponent<QuestInfosContainer>(out QuestInfosContainer questInfos) &&
-                PersistentDataManager.instance.GetPlayerData().GetComponent<PlayerVariableContainer>(out PlayerVariableContainer playerVariables))
+            if (PersistentDataManager.instance.GetPlayerData().GetComponent(out QuestInfosContainer questInfos) &&
+                PersistentDataManager.instance.GetPlayerData().GetComponent(out PlayerVariableContainer playerVariables))
             {
                 Dictionary<string, List<Persistent.QuestInfo>> quests = questInfos.GetQuests();
 

@@ -13,8 +13,8 @@ namespace ANF.Persistent
     {
         [Header("Logs")]
         [SerializeField] private string pathToImagesInResources;
-        private List<string> allLogs;
-        private bool[] knownLogs;
+        private List<KeyValuePair<bool, string>> allLogs;
+        private List<bool> knownLogs;
 
         public DataContainer CloneContainer()
         {
@@ -26,10 +26,41 @@ namespace ANF.Persistent
 
         public void Initialize(ANFSettings settings)
         {
-            allLogs = new List<string>();
+            allLogs = new List<KeyValuePair<bool, string>>();
+            knownLogs = new List<bool>();
             LoadAllLogs(settings);
-            knownLogs = new bool[allLogs.Count];
             Reset();
+        }
+
+        /// <summary>
+		/// Creates a new User Log
+		/// </summary>
+		/// <param name="logId">The new log's Id</param>
+        public void CreateUserLog(string logId)
+        {
+            for (int i = 0; i < allLogs.Count; i++)
+            {
+                if (allLogs[i].Value.Equals(logId))
+                {
+                    return;
+                }
+            }
+
+            allLogs.Add(new KeyValuePair<bool, string>(false, logId));
+            knownLogs.Add(false);
+        }
+
+        public void RemoveUserLog(string logId)
+        {
+            for (int i = 0; i < allLogs.Count; i++)
+            {
+                if (allLogs[i].Value.Equals(logId) && !allLogs[i].Key)
+                {
+                    allLogs.RemoveAt(i);
+                    knownLogs.RemoveAt(i);
+                    return;
+                }
+            }
         }
 
         /// <summary>
@@ -38,9 +69,14 @@ namespace ANF.Persistent
         /// <param name="log">The log to unlock</param>
         public void UnlockLog(string log)
         {
-            int idx = allLogs.IndexOf(log);
-            if (idx != -1)
-                knownLogs[idx] = true;
+            for (int i = 0; i < allLogs.Count; i++)
+            {
+                if (allLogs[i].Value.Equals(log))
+                {
+                    knownLogs[i] = true;
+                    return;
+                }
+            }
         }
 
         /// <summary>
@@ -57,7 +93,7 @@ namespace ANF.Persistent
         /// Gets the list of all logs (known and unknown)
         /// </summary>
         /// <returns>The list of logs</returns>
-        public List<string> GetAllLogs()
+        public List<KeyValuePair<bool, string>> GetAllLogs()
         {
             return allLogs;
         }
@@ -69,9 +105,13 @@ namespace ANF.Persistent
         /// <returns>True if unlocked</returns>
         public bool IsUnlocked(string logID)
         {
-            int idx = allLogs.IndexOf(logID);
-            if (idx != -1)
-                return IsUnlocked(idx);
+            for (int i = 0; i < allLogs.Count; i++)
+            {
+                if (allLogs[i].Value.Equals(logID))
+                {
+                    return IsUnlocked(i);
+                }
+            }
 
             return false;
         }
@@ -83,7 +123,7 @@ namespace ANF.Persistent
         /// <returns>True if unlocked</returns>
         public bool IsUnlocked(int logIndex)
         {
-            if (logIndex >= 0 && logIndex < knownLogs.Length)
+            if (logIndex >= 0 && logIndex < knownLogs.Count)
                 return knownLogs[logIndex];
             return false;
         }
@@ -94,7 +134,8 @@ namespace ANF.Persistent
         /// </summary>
         private void LoadAllLogs(ANFSettings settings)
         {
-            allLogs = new List<string>();
+            allLogs.Clear();
+            knownLogs.Clear();
 
             List<string> lines = FileManager.ReadTextAsset(
                 Resources.Load<TextAsset>(settings.generalDataPath + "logs")
@@ -104,36 +145,66 @@ namespace ANF.Persistent
             {
                 if (!string.IsNullOrEmpty(line) && !line.StartsWith('#'))
                 {
-                    allLogs.Add(line);
+                    allLogs.Add(new KeyValuePair<bool, string>(true, line));
+                    knownLogs.Add(false);
                 }
             }
         }
 
         public void Reset()
         {
-            for (int i = 0; i < knownLogs.Length; i++)
-                knownLogs[i] = false;
+            int i = allLogs.Count - 1;
+            while (i >= 0)
+            {
+                if (!allLogs[i].Key)
+                {
+                    allLogs.RemoveAt(i);
+                    knownLogs.RemoveAt(i);
+                }
+                else
+                {
+                    knownLogs[i] = false;
+                }
+                i--;
+            }
         }
 
         public void Save(JSON json)
         {
             JSON array = new JSON();
+            JArray localLogs = new JArray();
             for (int i = 0; i < allLogs.Count; i++)
-                array.Add(allLogs[i], knownLogs[i]);
+            {
+                array.Add(allLogs[i].Value, knownLogs[i]);
+                if (!allLogs[i].Key)
+                    localLogs.Add(allLogs[i].Value);
+            }
 
             json.Add("knownLogs", array);
+            if (localLogs.Length > 0)
+                json.Add("localLogs", localLogs);
         }
 
         public void Load(JSON json)
         {
+            Reset();
+
+            if (json.ContainsKey("localLogs"))
+            {
+                JArray array = json.GetJArray("localLogs");
+                for (int i = 0; i < array.Length; i++)
+                {
+                    CreateUserLog(array.GetString(i));
+                }
+            }
+
             if (json.ContainsKey("knownLogs"))
             {
                 JSON array = json.GetJSON("knownLogs");
-                Reset();
 
                 for (int i = 0; i < allLogs.Count; i++)
-                    if (json.ContainsKey(allLogs[i]))
-                        knownLogs[i] = json.GetBool(allLogs[i]);
+                    if (array.ContainsKey(allLogs[i].Value))
+                        knownLogs[i] = array.GetBool(allLogs[i].Value);
             }
         }
     }
