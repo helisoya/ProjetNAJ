@@ -1,3 +1,15 @@
+if(C1_AxeProgress == 2)
+
+dialog(null;null;Cutting trees...)
+
 fadeFg(1;true)
+showDialogWindow(false)
 
 load(../CrashSite/Arrival)
+
+else
+
+dialog(null;null;Need an axe.)
+variable(C1_AxeProgress;=;1)
+load(Interaction)
+endif

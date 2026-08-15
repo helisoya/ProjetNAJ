@@ -116,6 +116,7 @@ namespace ANF.Scene
         public void SetHidden(bool value)
         {
             hidden = value;
+            interactionCollider.enabled = !hidden;
         }
 
         /// <summary>

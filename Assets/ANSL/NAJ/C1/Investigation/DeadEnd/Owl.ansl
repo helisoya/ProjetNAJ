@@ -1,3 +1,14 @@
 dialog(Owl;null;I am an owl.)
 
+if(C1_AxeProgress == 1)
+
+dialog(Owl;null;It's dangerous to go alone. Take this axe.)
+setCharacterBody(Owl;FlyOffScreen)
+wait(2)
+setStaticAlpha(Axe;0;1;true)
+setStaticPosition(Axe;0;0;-50)
+
+variable(C1_AxeProgress;=;2)
+endif
+
 load(Interaction)

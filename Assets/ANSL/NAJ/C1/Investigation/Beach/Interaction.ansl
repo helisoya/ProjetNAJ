@@ -1,4 +1,5 @@
 setInteractionScript(Exit;LookWater)
+setInteractionScript(Right;ToCliff)
 setInteractionScript(Forward;ToForestStart)
 
 interaction()

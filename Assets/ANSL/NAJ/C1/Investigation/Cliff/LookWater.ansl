@@ -1,0 +1,9 @@
+setCameraRotation(10;0;0;1;false)
+setCameraPosition(0;1;-4;1;true)
+
+wait(2)
+
+setCameraRotation(0;0;0;1;false)
+setCameraPosition(default;1;true)
+
+load(Interaction)

@@ -1,0 +1,7 @@
+createUserVariable(C1_FirstTimeBeach;0)
+createUserVariable(C1_AxeProgress;0)
+
+# Axe Progress
+# 0 -> Interact with trees
+# 1 -> Get Axe from Mr.Owl
+# 2 -> Cut down the trees

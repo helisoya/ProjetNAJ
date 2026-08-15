@@ -1,0 +1,6 @@
+setInteractionHidden(Exit;true)
+setInteractionScript(Water;LookWater)
+setInteractionScript(Ship;LookShip)
+setInteractionScript(Path;ToBeach)
+
+interaction()

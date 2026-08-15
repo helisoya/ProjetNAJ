@@ -1,0 +1,16 @@
+variable(C1_FirstTimeBeach;=;1)
+
+setCameraPosition(52;1;1)
+setCameraRotation(0;-90;0)
+
+fadeFg(0;false)
+
+setCameraRotation(0;-95;0;4;false)
+setCameraPosition(26;1;2;3;true)
+
+setCameraRotation(0;-110;0;4;false)
+setCameraPosition(default;3;true)
+
+setCameraRotation(0;0;0;2;true)
+
+load(Interaction)

@@ -1,4 +1,11 @@
 setInteractionScript(Exit;ToForest)
+
+if(C1_AxeProgress == 2)
+setInteractionHidden(Owl;true)
+else
+setInteractionHidden(Owl;false)
 setInteractionScript(Owl;Owl)
+endif
+
 
 interaction()

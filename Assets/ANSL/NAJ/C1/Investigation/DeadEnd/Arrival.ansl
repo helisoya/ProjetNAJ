@@ -3,6 +3,11 @@ setFg(1)
 
 setBackground(C1_DeadEnd)
 
+if(C1_AxeProgress == 2)
+setStaticPosition(Axe;0;0;-50)
+setCharacterPosition(Owl;0;0;-50)
+endif
+
 fadeFg(0;false)
 
 load(Interaction)

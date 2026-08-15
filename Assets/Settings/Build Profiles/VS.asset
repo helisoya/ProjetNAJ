@@ -44,6 +44,8 @@ MonoBehaviour:
     m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_ForestStart.unity
   - m_enabled: 1
     m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_RiverPath.unity
+  - m_enabled: 1
+    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_Cliff.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

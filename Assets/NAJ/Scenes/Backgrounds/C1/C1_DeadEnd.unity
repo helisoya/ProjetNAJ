@@ -2251,22 +2251,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 12c46c09a91287b4f940c1fce0941a64, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 12c46c09a91287b4f940c1fce0941a64, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 12c46c09a91287b4f940c1fce0941a64, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1487502022}
   m_SourcePrefab: {fileID: 100100000, guid: 12c46c09a91287b4f940c1fce0941a64, type: 3}
 --- !u!4 &1487502019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 12c46c09a91287b4f940c1fce0941a64, type: 3}
   m_PrefabInstance: {fileID: 1487502018}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1487502020 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7635826562936255635, guid: 12c46c09a91287b4f940c1fce0941a64, type: 3}
+  m_PrefabInstance: {fileID: 1487502018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1487502021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 12c46c09a91287b4f940c1fce0941a64, type: 3}
+  m_PrefabInstance: {fileID: 1487502018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1487502022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487502021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c29f68644af7a4dabbb8e3cd644b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
+  renderers:
+  - {fileID: 1487502020}
+  linkedInteraction: {fileID: 0}
 --- !u!1 &1515668596
 GameObject:
   m_ObjectHideFlags: 0
@@ -7145,7 +7173,9 @@ MonoBehaviour:
     - Key: Owl
       Value: {fileID: 824515120}
   backgroundStaticObjects:
-    _serializedList: []
+    _serializedList:
+    - Key: Axe
+      Value: {fileID: 1487502022}
 --- !u!4 &8429653501667101996
 Transform:
   m_ObjectHideFlags: 0
