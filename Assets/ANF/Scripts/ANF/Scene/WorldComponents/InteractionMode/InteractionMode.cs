@@ -181,7 +181,7 @@ namespace ANF.Scene
 
             currentInteractionObjects.Sort((InteractableObject o1, InteractableObject o2) =>
             {
-                return o1.GetApproximateVisualPosition().x.CompareTo(o2.GetApproximateVisualPosition().x);
+                return Camera.main.WorldToScreenPoint(o1.GetApproximateVisualPosition()).x.CompareTo(Camera.main.WorldToScreenPoint(o2.GetApproximateVisualPosition()).x);
             });
         }
 
@@ -548,7 +548,7 @@ namespace ANF.Scene
                     if (currentButtonInputSide == 0)
                     {
                         cooldownToNextButtonIncrement = cursorMoveCooldown;
-                        currentButtonInputSide = value.x < 0 ? 1 : -1;
+                        currentButtonInputSide = value.x < 0 ? -1 : 1;
 
                         IncrementObjectWithInput();
                     }
