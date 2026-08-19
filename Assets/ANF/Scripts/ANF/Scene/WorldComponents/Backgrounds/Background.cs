@@ -61,7 +61,8 @@ namespace ANF.Scene
         /// <param name="sunColor">The new color</param>
         public void SetSunColor(Color sunColor)
         {
-            sunLight.color = sunColor;
+            if(sunLight)
+                sunLight.color = sunColor;
         }
 
         /// <summary>
@@ -83,7 +84,8 @@ namespace ANF.Scene
 		/// <param name="direction">The new light direction</param>
         public void SetLightDirection(Vector3 direction)
         {
-            sunLight.transform.forward = direction;
+            if(sunLight)
+                sunLight.transform.forward = direction;
         }
 
         /// <summary>
