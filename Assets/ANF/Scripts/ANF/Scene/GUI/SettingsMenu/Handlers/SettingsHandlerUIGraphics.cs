@@ -97,10 +97,10 @@ namespace ANF.GUI
                     List<string> labels = new List<string>(
                         new string[]
                         {
-                            locals != null ? locals.GetLocal("SettingsMenu_Graphics_Shadows_1") : "SettingsMenu_Graphics_Shadows_1",
-                            locals != null ? locals.GetLocal("SettingsMenu_Graphics_Shadows_2") : "SettingsMenu_Graphics_Shadows_2",
-                            locals != null ? locals.GetLocal("SettingsMenu_Graphics_Shadows_3") : "SettingsMenu_Graphics_Shadows_3",
-                            locals != null ? locals.GetLocal("SettingsMenu_Graphics_Shadows_4") : "SettingsMenu_Graphics_Shadows_4"
+                            locals != null ? locals.GetLocal("SettingsMenu_Common_Combo_VeryLow") : "SettingsMenu_Common_Combo_VeryLow",
+                            locals != null ? locals.GetLocal("SettingsMenu_Common_Combo_Low") : "SettingsMenu_Common_Combo_Low",
+                            locals != null ? locals.GetLocal("SettingsMenu_Common_Combo_Medium") : "SettingsMenu_Common_Combo_Medium",
+                            locals != null ? locals.GetLocal("SettingsMenu_Common_Combo_High") : "SettingsMenu_Common_Combo_High"
                         }
                         );
 

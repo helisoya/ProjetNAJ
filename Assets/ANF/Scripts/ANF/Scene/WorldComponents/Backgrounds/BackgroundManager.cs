@@ -17,6 +17,17 @@ namespace ANF.Scene
     }
 
     /// <summary>
+	/// Represents the terrain quality settings for backgrounds (will affect pixel error)
+	/// </summary>
+    public enum TerrainQuality
+    {
+        VeryLow, // 200
+        Low, // 100
+        Medium, // 25
+        High // 1
+    }
+
+    /// <summary>
 	/// Handles the game's backgrounds.
     /// Backgrounds can be 3D scenes, or 3D prefabs
 	/// </summary>
@@ -33,6 +44,8 @@ namespace ANF.Scene
         private string currentBackgroundID;
         private BackgroundData currentCachedData = null;
         private bool enableWeatherEffects = true;
+        private bool enableTerrainFoliage = true;
+        private TerrainQuality terrainQuality = TerrainQuality.Medium;
         private bool skipModeEnabled = false;
 
         private LerpInstanceColor lerpSunColor;
@@ -271,6 +284,9 @@ namespace ANF.Scene
 
                 currentBackground.SetLightDirection(currentCachedData.currentLightDirection);
                 currentBackground.SetWeatherEffect(currentCachedData.currentWeatherEffect);
+                currentBackground.EnableFoliage(enableTerrainFoliage);
+                currentBackground.SetTerrainQuality(terrainQuality);
+
 
                 if (lerpSunColor != null && lerpSunColor.lerping)
                     currentBackground.SetSunColor(lerpSunColor.Get());
@@ -336,7 +352,7 @@ namespace ANF.Scene
         /// <summary>
         /// Callback for changing if the weather effects are enabled in the settings
         /// </summary>
-        /// <param name="value">true</param>
+        /// <param name="value">The new value</param>
         private void OnEnableWeatherEffectsChange(object value)
         {
             enableWeatherEffects = (bool)value;
@@ -347,12 +363,51 @@ namespace ANF.Scene
             }
         }
 
+        /// <summary>
+        /// Callback for changing if the terrain foliage is enabled in the settings
+        /// </summary>
+        /// <param name="value">The new value</param>
+        private void OnEnableFoliageChange(object value)
+        {
+            enableTerrainFoliage = (bool)value;
+
+            if (currentBackground != null)
+            {
+                currentBackground.EnableFoliage(enableTerrainFoliage);
+            }
+        }
+
+        /// <summary>
+        /// Callback for changing the terrain quality in the settings
+        /// </summary>
+        /// <param name="value">The new value</param>
+        private void OnTerrainQualityChange(object value)
+        {
+            terrainQuality = (TerrainQuality)value;
+
+            if (currentBackground != null)
+            {
+                currentBackground.SetTerrainQuality(terrainQuality);
+            }
+        }
+
         public override void OnInitialize()
         {
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))
+            {
                 enableWeatherEffects = (bool)settings.Register("BackgroundManager_EnableWeatherEffects",
                     SettingsContainer.SettingsDataType.Bool,
                     OnEnableWeatherEffectsChange);
+
+                enableTerrainFoliage = (bool)settings.Register("BackgroundManager_EnableFoliage",
+                    SettingsContainer.SettingsDataType.Bool,
+                    OnEnableFoliageChange);
+
+                terrainQuality = (TerrainQuality)settings.Register("BackgroundManager_TerrainQuality",
+                    SettingsContainer.SettingsDataType.Int,
+                    OnTerrainQualityChange);
+            }
+
 
             RenderSettings.skybox = new Material(skyboxMaterial);
             RenderSettings.skybox.SetFloat("_Lerp", 0.0f);

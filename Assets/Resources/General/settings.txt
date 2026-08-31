@@ -19,9 +19,12 @@
 # SLIDER_MIN = You may add this to a Float setting to set a different minimum value for the slider (default is 0)
 # SLIDER_MAX = You may add this to a Float setting to set a different maximum value for the slider (default is 1)
 
+# ANF Base Settings
 GeneralMenu_CursorCooldown Float 0.25 SettingsMenu_Game SettingsMenu_Game_GeneralMenu_CursorCooldown (0.05,1.0)
 
-BackgroundManager_EnableWeatherEffects Bool true SettingsMenu_Graphics SettingsMenu_Game_InteractionMode_Weather
+BackgroundManager_EnableWeatherEffects Bool true SettingsMenu_Graphics SettingsMenu_Game_BackgroundManager_Weather
+BackgroundManager_EnableFoliage Bool true SettingsMenu_Graphics SettingsMenu_Game_BackgroundManager_Foliage
+BackgroundManager_TerrainQuality Int 3 SettingsMenu_Graphics SettingsMenu_Game_BackgroundManager_TerrainQuality (SettingsMenu_Common_Combo_VeryLow, SettingsMenu_Common_Combo_Low, SettingsMenu_Common_Combo_Medium, SettingsMenu_Common_Combo_High)
 
 InteractionMode_HighlightType Int 2 SettingsMenu_Game SettingsMenu_Game_InteractionMode_HighlightType (SettingsMenu_Game_InteractionMode_HighlightType_None,SettingsMenu_Game_InteractionMode_HighlightType_Selected,SettingsMenu_Game_InteractionMode_HighlightType_All)
 InteractionMode_HighlightStrength Float 0.5 SettingsMenu_Game SettingsMenu_Game_InteractionMode_HighlightStrength (0,1)

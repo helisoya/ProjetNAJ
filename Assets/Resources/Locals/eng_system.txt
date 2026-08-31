@@ -34,16 +34,17 @@ InputReminder_PauseMenu = Pause
 
 SettingsMenu_Title = Settings
 
+SettingsMenu_Common_Combo_VeryLow = Very Low
+SettingsMenu_Common_Combo_Low = Low
+SettingsMenu_Common_Combo_Medium = Medium
+SettingsMenu_Common_Combo_High = High
+
 SettingsMenu_Graphics = Graphics
 SettingsMenu_Graphics_Fullscreen = Fullscreen
 SettingsMenu_Graphics_Resolution = Resolution
 SettingsMenu_Graphics_VSync = VSync
 SettingsMenu_Graphics_AntiAliasing = AntiAliasing
-SettingsMenu_Graphics_Shadows = Shadows
-SettingsMenu_Graphics_Shadows_1 = Very Low
-SettingsMenu_Graphics_Shadows_2 = Low
-SettingsMenu_Graphics_Shadows_3 = Medium
-SettingsMenu_Graphics_Shadows_4 = High
+SettingsMenu_Graphics_Shadows = Shadows Quality
 
 SettingsMenu_Sound = Sound
 SettingsMenu_Sound_Music = Music
@@ -90,7 +91,9 @@ SettingsMenu_Game_InteractionMode_HighlightStrength = Interaction highlight stre
 SettingsMenu_Game_InteractionMode_HighlightColor = Interaction highlight color
 SettingsMenu_Game_InteractionMode_SelectionColor = Interaction selection color
 
-SettingsMenu_Game_InteractionMode_Weather = Weather effects
+SettingsMenu_Game_BackgroundManager_Weather = Weather effects
+SettingsMenu_Game_BackgroundManager_Foliage = Foliage
+SettingsMenu_Game_BackgroundManager_TerrainQuality = Terrain Quality
 
 SettingsMenu_Game_DialogUI_BackgroundOpacity = Dialog box opacity
 

@@ -10,6 +10,7 @@ namespace ANF.Scene
     {
         [Header("Infos")]
         [SerializeField] private BackgroundData defaultData;
+        private Terrain[] terrains;
 
         [Header("Components")]
         [SerializeField] private Light sunLight;
@@ -61,7 +62,7 @@ namespace ANF.Scene
         /// <param name="sunColor">The new color</param>
         public void SetSunColor(Color sunColor)
         {
-            if(sunLight)
+            if (sunLight)
                 sunLight.color = sunColor;
         }
 
@@ -79,12 +80,45 @@ namespace ANF.Scene
         }
 
         /// <summary>
+		/// Enables all existing terrain's foliage
+		/// </summary>
+		/// <param name="enabled">True if foliage should be visible</param>
+        public void EnableFoliage(bool enabled)
+        {
+            if (terrains != null)
+            {
+                foreach (Terrain terrain in terrains)
+                {
+                    terrain.detailObjectDensity = enabled ? 1.0f : 0.0f;
+                }
+            }
+        }
+
+        /// <summary>
+		/// Changes all existing terrain's quality
+		/// </summary>
+		/// <param name="terrainQuality">The terrain quality (converted to pixel error)</param>
+        public void SetTerrainQuality(TerrainQuality terrainQuality)
+        {
+            int[] pixelValues = new int[] { 5, 4, 3, 0 };
+            int selectedValue = pixelValues[(int)terrainQuality];
+
+            if (terrains != null)
+            {
+                foreach (Terrain terrain in terrains)
+                {
+                    terrain.heightmapMaximumLOD = selectedValue;
+                }
+            }
+        }
+
+        /// <summary>
 		/// Changes the light's direction (its transform's forward will be changed)
 		/// </summary>
 		/// <param name="direction">The new light direction</param>
         public void SetLightDirection(Vector3 direction)
         {
-            if(sunLight)
+            if (sunLight)
                 sunLight.transform.forward = direction;
         }
 
@@ -152,9 +186,12 @@ namespace ANF.Scene
                 }
             }
 
+            // Disables active cameras (Cameras inside Background scenes are considered debug cams)
             Camera[] cameras = transform.GetComponentsInChildren<Camera>();
             foreach (Camera cam in cameras)
                 cam.gameObject.SetActive(false);
+
+            terrains = transform.GetComponentsInChildren<Terrain>();
         }
 
         public void OnRemove(ANFManager manager)
