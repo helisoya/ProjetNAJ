@@ -553,7 +553,11 @@ namespace ANF.Scene
         public override bool OnChangeScene()
         {
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))
+            {
                 settings.Unregister("BackgroundManager_EnableWeatherEffects", OnEnableWeatherEffectsChange);
+                settings.Unregister("BackgroundManager_EnableFoliage", OnEnableFoliageChange);
+                settings.Unregister("BackgroundManager_TerrainQuality", OnTerrainQualityChange);
+            }
 
             if (currentBackground != null)
             {

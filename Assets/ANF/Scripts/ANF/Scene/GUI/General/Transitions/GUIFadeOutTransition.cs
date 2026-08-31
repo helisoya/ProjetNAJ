@@ -30,7 +30,7 @@ namespace ANF.GUI
 
         public override void TransitionOut(bool immediate = false)
         {
-            canvasGroup.blocksRaycasts = !blockRaycastsIfInactive;
+            canvasGroup.blocksRaycasts = blockRaycastsIfInactive;
 
             if (immediate)
                 canvasGroup.alpha = 0.0f;

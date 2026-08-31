@@ -49,7 +49,7 @@ namespace ANF.GUI
         {
             skipModeEnabled = false;
             continueIcon.alpha = 0;
-            continueIcon.GetComponent<RectTransform>().DOPunchAnchorPos(Vector2.up, 1.0f,0).SetLoops(-1).SetEase(Ease.Linear);
+            continueIcon.GetComponent<RectTransform>().DOPunchAnchorPos(Vector2.up, 1.0f, 0).SetLoops(-1).SetEase(Ease.Linear);
 
             textIds = new List<string>();
 
@@ -319,7 +319,7 @@ namespace ANF.GUI
 
             RegenerateDialogFromStack(!showingDialog);
 
-            if(!showingDialog)
+            if (!showingDialog)
                 continueIcon.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
         }
 
