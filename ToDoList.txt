@@ -27,7 +27,8 @@ ANSL
 - Pouvoir déclarer des quêtes depuis ANSL                                             V
 - Pouvoir déclarer des preuves depuis ANSL                                            V
 - Pouvoir déclarer des logs depuis ANSL                                               V
-- Code Snippets pour les macros
+- Code Snippets pour les macros                                                       V
+- Checksum pour la compilation                                                        V
 
 ANF
 - Système global pour charger/gerer les ressources
@@ -58,3 +59,14 @@ Musiques :
 - Victoire
 
 () = Nice to have
+
+
+
+Credits :
+
+Moi : Dev, Ecriture, Graph
+
+Marvin : Son
+Feliji, Madeleine : Tests et Retours
+
+Les plugins (Eau, Dotween, ...)

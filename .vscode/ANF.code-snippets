@@ -878,3 +878,93 @@ endchoice"],
 		"body": ["wait(Seconds)"],
 		"description": "Waits for a certain number of seconds"
 	},
+	"Macro_0": {
+		"scope": "ansl",
+		"prefix": ":setSarttNormal",
+		"body": [":setSarttNormal()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_1": {
+		"scope": "ansl",
+		"prefix": ":setSarttInquisitive",
+		"body": [":setSarttInquisitive()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_2": {
+		"scope": "ansl",
+		"prefix": ":setSarttHandRaised",
+		"body": [":setSarttHandRaised()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_3": {
+		"scope": "ansl",
+		"prefix": ":setSarttDead",
+		"body": [":setSarttDead()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_4": {
+		"scope": "ansl",
+		"prefix": ":setRobertNormal",
+		"body": [":setRobertNormal()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_5": {
+		"scope": "ansl",
+		"prefix": ":setRobertOnPouch",
+		"body": [":setRobertOnPouch()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_6": {
+		"scope": "ansl",
+		"prefix": ":setRobertNormalGun",
+		"body": [":setRobertNormalGun()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_7": {
+		"scope": "ansl",
+		"prefix": ":setRobertAimingGun",
+		"body": [":setRobertAimingGun()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_8": {
+		"scope": "ansl",
+		"prefix": ":setRobertAimingGun",
+		"body": [":setRobertAimingGun()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_9": {
+		"scope": "ansl",
+		"prefix": ":setRobertEyeThinking",
+		"body": [":setRobertEyeThinking()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_10": {
+		"scope": "ansl",
+		"prefix": ":setRobertEyeNormal",
+		"body": [":setRobertEyeNormal()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_11": {
+		"scope": "ansl",
+		"prefix": ":setRobertEyeSuspicious",
+		"body": [":setRobertEyeSuspicious()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_12": {
+		"scope": "ansl",
+		"prefix": ":setRobertEyeAngry",
+		"body": [":setRobertEyeAngry()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_13": {
+		"scope": "ansl",
+		"prefix": ":DebugMacro",
+		"body": [":DebugMacro(Name)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_14": {
+		"scope": "ansl",
+		"prefix": ":DebugMacro2",
+		"body": [":DebugMacro2()"],
+		"description": "This is a user generated macro"
+	},

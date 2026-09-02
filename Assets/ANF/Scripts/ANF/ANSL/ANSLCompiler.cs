@@ -214,7 +214,10 @@ namespace ANF.ANSL
         /// <param name="destinationFile">The destination file</param>
         /// <param name="functions">The function list</param>
         /// <param name="errors">The global error list</param>
-        public bool Compile(string sourceFile, string destinationFile, List<KeyValuePair<ANSLFunction, uint>> functions, List<ANSLUtils.ANSLError> errors)
+        /// <param name="functionsChecksum">The function list's checksum</param>
+        /// <param name="ignoreChecksum">True if the checksum should be ignored</param>
+        public bool Compile(string sourceFile, string destinationFile, List<KeyValuePair<ANSLFunction, uint>> functions,
+            List<ANSLUtils.ANSLError> errors, string functionsChecksum, bool ignoreChecksum = false)
         {
             sourceFilepath = sourceFile;
             this.errors = errors;
@@ -305,12 +308,34 @@ namespace ANF.ANSL
                 }
             }
 
+            string newChecksum = ANSLUtils.GenerateCheckSum(sourceFile) + functionsChecksum;
+
+            // Check existing checksum for this file
+            // Note that any change in function indexes will bypass the checksum
+            // In that case, checksum should be ignored for at least one compilation
+            if (!ignoreChecksum && File.Exists(destinationFile))
+            {
+                using (StreamReader stream = new StreamReader(destinationFile))
+                {
+                    string firstLine = stream.ReadLine() ?? null;
+
+                    if (firstLine != null && firstLine.StartsWith("#") && firstLine.Length > 0)
+                    {
+                        string checksum = firstLine.Substring(1);
+                        if (checksum.Equals(newChecksum))
+                            return true;
+                    }
+                }
+            }
+
             new FileInfo(destinationFile).Directory.Create();
 
             if (File.Exists(destinationFile))
                 File.Delete(destinationFile);
 
             outStream = new StreamWriter(destinationFile, false);
+
+            outStream.WriteLine($"#{newChecksum}");
 
             CheckNextLine();
 

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Unity.VisualScripting;
+using System.Security.Cryptography;
 
 namespace ANF.Utils
 {
@@ -108,6 +109,50 @@ namespace ANF.Utils
         }
 
         /// <summary>
+        /// Generate a file's checksum
+        /// </summary>
+        /// <param name="filename">The filename</param>
+        /// <returns>The file's checksum</returns>
+        public static string GenerateCheckSum(string filename)
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+                using (FileStream stream = File.OpenRead(filename))
+                {
+                    byte[] hash = md5.ComputeHash(stream);
+                    return BitConverter.ToString(hash).Replace("-", "");
+                }
+            }
+        }
+
+
+        /// <summary>
+		/// Generate a function list's hash
+		/// </summary>
+		/// <param name="functions">The function list</param>
+		/// <returns>The function list's checksum</returns>
+        public static string GenerateFunctionHash(List<KeyValuePair<Type, uint>> functions)
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    using (StreamWriter writer = new StreamWriter(stream))
+                    {
+                        foreach (KeyValuePair<Type, uint> pair in functions)
+                        {
+                            writer.Write($"-{pair.Value}-{pair.Key.FullName}-");
+                        }
+
+                        byte[] hash = md5.ComputeHash(stream);
+                        return BitConverter.ToString(hash).Replace("-", "");
+                    }
+                }
+            }
+        }
+
+        /// <summary>
         /// Resolves the next filepath considering the previous one.
         /// Use / to force an absolute path instead of a relative one.
         /// Ex : Previous(ANF/Test/FileA) & Next(Test2/FileB) -> ANF/Test/Test2/FileB
@@ -178,6 +223,52 @@ namespace ANF.Utils
             if (!settings.FindAdditionalPart(out ANSLSettings anslSettings))
                 return;
 
+            // Find Macros
+            List<KeyValuePair<string, string>> macros = new List<KeyValuePair<string, string>>();
+            Stack<string> directories = new Stack<string>();
+            directories.Push(anslSettings.anslSourceFolder);
+
+            while (directories.Count > 0)
+            {
+                string directory = directories.Pop();
+                foreach (string subDir in Directory.GetDirectories(directory))
+                    directories.Push(subDir);
+
+                foreach (string file in Directory.GetFiles(directory))
+                {
+                    if (file.EndsWith(".defines"))
+                    {
+                        string[] lines = File.ReadAllLines(file);
+                        if (lines != null)
+                        {
+
+                        }
+                        foreach (string line in lines)
+                        {
+                            if (line.StartsWith('#') || string.IsNullOrEmpty(line) || string.IsNullOrWhiteSpace(line))
+                                continue;
+
+                            if (line.StartsWith("Define "))
+                            {
+                                string cleanedLine = line.Substring("Define ".Length).Replace(" ", "").Replace("\t", "");
+                                int idxStart = cleanedLine.IndexOf('(');
+                                int idxEnd = cleanedLine.IndexOf(')');
+
+
+                                if (idxStart != -1 && idxEnd != -1 && idxStart > 0 && idxEnd == cleanedLine.Length - 1)
+                                {
+                                    macros.Add(new KeyValuePair<string, string>(
+                                        $":{cleanedLine.Substring(0, idxStart)}",
+                                        $":{cleanedLine}"
+                                    ));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
             string targetFile = anslSettings.anslVSCodeSnippetsPath + "/ANF.code-snippets";
 
             new FileInfo(targetFile).Directory.Create();
@@ -190,14 +281,14 @@ namespace ANF.Utils
             List<KeyValuePair<Type, uint>> functions = GetValidANSLFunctionsList(settings);
 
             outStream.Write("{");
-
+            int idx;
             foreach (KeyValuePair<Type, uint> type in functions)
             {
                 ANSLFunctionAttribute attribute = type.Key.GetCustomAttribute<ANSLFunctionAttribute>();
 
                 if (attribute != null && !string.IsNullOrEmpty(attribute.functionBody) && attribute.functionAutoComplete != null)
                 {
-                    int idx = 0;
+                    idx = 0;
                     foreach (string autoComplete in attribute.functionAutoComplete)
                     {
                         outStream.Write($"\n\t\"{type.Value}_{idx}\": {{");
@@ -210,6 +301,18 @@ namespace ANF.Utils
                     }
                 }
             }
+
+            idx = 0;
+            foreach (KeyValuePair<string, string> pair in macros)
+            {
+                outStream.Write($"\n\t\"Macro_{idx}\": {{");
+                outStream.Write($"\n\t\t\"scope\": \"ansl\",");
+                outStream.Write($"\n\t\t\"prefix\": \"{pair.Key}\",");
+                outStream.Write($"\n\t\t\"body\": [\"{pair.Value}\"],");
+                outStream.Write($"\n\t\t\"description\": \"This is a user generated macro\"");
+                outStream.Write($"\n\t}},");
+                idx++;
+            }
             outStream.Close();
         }
 
@@ -217,13 +320,15 @@ namespace ANF.Utils
         /// <summary>
         /// Compiles all ANSL Files
         /// </summary>
+        /// <param name="ignoreChecksum">True if the checksum should be ignored</param>
         /// <returns>The error list</returns>
-        public static List<ANSLError> CompileAll(ANFSettings settings)
+        public static List<ANSLError> CompileAll(ANFSettings settings, bool ignoreChecksum = false)
         {
             List<ANSLError> errors = new List<ANSLError>();
 
 #if UNITY_EDITOR
             List<KeyValuePair<Type, uint>> functions = GetValidANSLFunctionsList(settings);
+            string functionsChecksum = GenerateFunctionHash(functions);
             ANSLCompiler compiler = new ANSLCompiler();
 
             if (!settings.FindAdditionalPart(out ANSLSettings anslSettings))
@@ -299,7 +404,7 @@ namespace ANF.Utils
                     currentProgress++;
                     UnityEditor.EditorUtility.DisplayProgressBar("ANSL Compilation", file, (float)currentProgress / totalProgress);
                     string destPath = "Assets/Resources/" + anslSettings.anslDestinationFolder + file.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", ".txt");
-                    compiler.Compile(file, destPath, functionInstances, errors);
+                    compiler.Compile(file, destPath, functionInstances, errors, functionsChecksum, ignoreChecksum);
                 }
             }
 

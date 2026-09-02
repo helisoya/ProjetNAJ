@@ -29,6 +29,7 @@ public class ANSLContext : Jsonable
     private bool waitingForFunction;
     private uint currentFunctionId;
     private uint currentFunctionDepth;
+    private bool currentFileHasChecksum;
 
     private uint ignoreCheckDepthInternalValue;
     private bool ignoreDepthCheck { get { return ignoreCheckDepthInternalValue != 0; } }
@@ -61,7 +62,7 @@ public class ANSLContext : Jsonable
     /// <returns>The current filepath</returns>
     public string GetCurrentFilepath(bool cleaned = true)
     {
-        if(cleaned)
+        if (cleaned)
             return currentFilePath.Substring(settings != null ? settings.anslDestinationFolder.Length : 0);
         else
             return currentFilePath;
@@ -130,6 +131,8 @@ public class ANSLContext : Jsonable
             currentFilePath = fullPath;
             currentScript = FileManager.ReadTextAsset(data).ToArray();
             lastFunctionModifiedLine = true;
+            currentFileHasChecksum = currentScript.Length > 0 && currentScript[0].StartsWith("#");
+
             currentLine = startLine;
 
             isRunning = true;
@@ -159,15 +162,17 @@ public class ANSLContext : Jsonable
 
         lastFunctionModifiedLine = false;
 
-        if (currentLine < currentScript.Length)
+        uint checkSumAdd = currentFileHasChecksum ? 1u : 0u;
+
+        if (currentLine < currentScript.Length - checkSumAdd)
         {
-            string[] split = currentScript[currentLine].Split('|', 2);
+            string[] split = currentScript[currentLine + checkSumAdd].Split('|', 2);
             uint functionId;
 
-            if (split.Length == 0 || string.IsNullOrEmpty(currentScript[currentLine]) ||
+            if (split.Length == 0 || string.IsNullOrEmpty(currentScript[currentLine + checkSumAdd]) ||
                 !uint.TryParse(split[0], out functionId) || !functions.ContainsKey(functionId))
             {
-                Debug.LogError($"Could not parse/find function for : {currentScript[currentLine]}");
+                Debug.LogError($"Could not parse/find function for : {currentScript[currentLine + checkSumAdd]}");
                 // Could not parse/find function
                 NextLine();
                 return;
@@ -178,7 +183,7 @@ public class ANSLContext : Jsonable
 
                 if (parameters == null)
                 {
-                    Debug.LogError($"Could not parse parameters for : {currentScript[currentLine]}");
+                    Debug.LogError($"Could not parse parameters for : {currentScript[currentLine + checkSumAdd]}");
                     // Parameters couldn't be parsed
                     NextLine();
                     return;
@@ -317,6 +322,7 @@ public class ANSLContext : Jsonable
 
         json.Add("currentLine", currentLine);
         json.Add("currentFilePath", currentFilePath);
+        json.Add("currentFileHasChecksum", currentFileHasChecksum);
 
         json.Add("lastFunctionModifiedLine", lastFunctionModifiedLine);
         json.Add("waitingForFunction", waitingForFunction);
@@ -349,6 +355,8 @@ public class ANSLContext : Jsonable
             isRunning = json.GetBool("isRunning");
         if (json.ContainsKey("isPaused"))
             isPaused = json.GetBool("isPaused");
+        if (json.ContainsKey("currentFileHasChecksum"))
+            currentFileHasChecksum = json.GetBool("currentFileHasChecksum");
         if (json.ContainsKey("ignoreCheckDepthInternalValue"))
             ignoreCheckDepthInternalValue = json.GetJNumber("ignoreCheckDepthInternalValue").AsUInt();
         if (json.ContainsKey("lastFunctionModifiedLine"))

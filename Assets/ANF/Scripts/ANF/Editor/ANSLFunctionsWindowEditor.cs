@@ -25,13 +25,13 @@ public class ANSLFunctionsWindowEditor : EditorWindow
     {
         ANFSettings settings = AssetDatabase.LoadAssetAtPath<ANFSettings>("Assets/Settings/ANF/ANFSettings.asset");
 
-        if(!settings.FindAdditionalPart(out ANSLSettings anslSettings))
+        if (!settings.FindAdditionalPart(out ANSLSettings anslSettings))
         {
             GUILayout.Label("No ANSLSettings detected in the ANFSettings. Did you forget to register it ?");
         }
         else
         {
-            if(anslSettings.registeredFunctions == null)
+            if (anslSettings.registeredFunctions == null)
                 anslSettings.registeredFunctions = new List<ANSLSettings.ANSLFunctionSettingsData>();
 
             List<ANSLSettings.ANSLFunctionSettingsData> knownFunctions = anslSettings.registeredFunctions;
@@ -53,19 +53,20 @@ public class ANSLFunctionsWindowEditor : EditorWindow
                 GUILayout.Label("Active", options);
                 GUILayout.EndHorizontal();
 
-                for(int i = 0; i < knownFunctions.Count; i++)
+                for (int i = 0; i < knownFunctions.Count; i++)
                 {
                     GUILayout.BeginHorizontal();
                     GUILayout.Label(knownFunctions[i].typeName, options);
                     GUILayout.Label(knownFunctions[i].id.ToString(), options);
 
                     bool shouldEnable = GUILayout.Toggle(knownFunctions[i].enabled, "", options);
-                    if(shouldEnable != knownFunctions[i].enabled)
+                    if (shouldEnable != knownFunctions[i].enabled)
                     {
-                        knownFunctions[i] = new ANSLSettings.ANSLFunctionSettingsData() { 
-                            enabled = shouldEnable, 
-                            id = knownFunctions[i].id, 
-                            typeName = knownFunctions[i].typeName 
+                        knownFunctions[i] = new ANSLSettings.ANSLFunctionSettingsData()
+                        {
+                            enabled = shouldEnable,
+                            id = knownFunctions[i].id,
+                            typeName = knownFunctions[i].typeName
                         };
                     }
 
@@ -82,7 +83,7 @@ public class ANSLFunctionsWindowEditor : EditorWindow
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("Toggle All"))
             {
-                if(knownFunctions.Count > 0)
+                if (knownFunctions.Count > 0)
                 {
                     bool targetEnabled = !knownFunctions[0].enabled;
 
@@ -118,9 +119,9 @@ public class ANSLFunctionsWindowEditor : EditorWindow
                 knownFunctions.Clear();
 
                 uint id = 0;
-                foreach(Type type in types)
+                foreach (Type type in types)
                 {
-                    if(activeCache.ContainsKey(type.FullName))
+                    if (activeCache.ContainsKey(type.FullName))
                         knownFunctions.Add(new ANSLSettings.ANSLFunctionSettingsData() { enabled = activeCache[type.FullName], id = id, typeName = type.FullName });
                     else
                         knownFunctions.Add(new ANSLSettings.ANSLFunctionSettingsData() { enabled = true, id = id, typeName = type.FullName });

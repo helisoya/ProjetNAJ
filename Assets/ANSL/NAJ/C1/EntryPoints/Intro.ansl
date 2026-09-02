@@ -1,0 +1,10 @@
+setFg(1)
+
+load(GeneralSetup)
+setLocals(c1_intro)
+setLocation(AAAAAAAAAAAAAAA)
+
+addEvidence(C1_Herbarium)
+addProfile(C1_Rann)
+
+load(../Intro/A)

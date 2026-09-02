@@ -73,7 +73,7 @@ namespace ANF.Editor
         private static void RegenerateVSCodeSnippets()
         {
             ANFSettings settings = AssetDatabase.LoadAssetAtPath<ANFSettings>("Assets/Settings/ANF/ANFSettings.asset");
-            if(settings != null)
+            if (settings != null)
                 ANSLUtils.RegenerateVSCodeSnippets(settings);
         }
 
@@ -85,6 +85,19 @@ namespace ANF.Editor
             if (settings != null)
             {
                 List<ANSLUtils.ANSLError> errors = ANSLUtils.CompileAll(settings);
+                ANSLErrorListPopup.Show(errors);
+                AssetDatabase.Refresh();
+            }
+        }
+
+        [MenuItem("ANF/ANSL/Compile ANSL Files (Ignore Checksum)")]
+        private static void CompileANSLFilesIgnoreChecksum()
+        {
+            ANFSettings settings = AssetDatabase.LoadAssetAtPath<ANFSettings>("Assets/Settings/ANF/ANFSettings.asset");
+
+            if (settings != null)
+            {
+                List<ANSLUtils.ANSLError> errors = ANSLUtils.CompileAll(settings, true);
                 ANSLErrorListPopup.Show(errors);
                 AssetDatabase.Refresh();
             }
