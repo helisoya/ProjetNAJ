@@ -28,24 +28,6 @@ namespace NAJ.GUI
     }
 
     /// <summary>
-    /// Input Reminder Action for switching the inventory mode
-    /// </summary>
-    [System.Serializable]
-    public class NAJInputReminderInventorySwitchModeAction : InputReminderAction
-    {
-        public override void OnDown(ANFManager manager)
-        {
-            if (manager.GetGUIManager().GetComponent(out InventoryUI inventory) &&
-                inventory.isEnabled && !inventory.isPaused)
-                inventory.SwitchMode();
-        }
-
-        public override void OnUp(ANFManager manager)
-        {
-        }
-    }
-
-    /// <summary>
     /// Input Reminder Action for toggling the check mode
     /// </summary>
     [System.Serializable]

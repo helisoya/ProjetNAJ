@@ -138,5 +138,6 @@ InputReminder_Present = Present
 InputReminder_Press = Press
 
 SettingsMenu_Inputs_Inventory = Inventory
-SettingsMenu_Inputs_InventorySwitch = Switch (Inventory)
+SettingsMenu_Inputs_SwitchLeft = Switch Left (Menu)
+SettingsMenu_Inputs_SwitchRight = Switch Right (Menu)
 SettingsMenu_Inputs_InventoryPresent = Present Evidence/Press

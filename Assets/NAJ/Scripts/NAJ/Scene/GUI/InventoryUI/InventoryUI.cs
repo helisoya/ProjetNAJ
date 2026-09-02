@@ -51,6 +51,16 @@ namespace NAJ.GUI
             MustPresentProfile
         }
 
+        /// <summary>
+		/// Represents the available tab types in the inventory
+		/// </summary>
+        public enum InventoryTabType
+        {
+            Evidence = 0,
+            Profile = 1,
+            Max = 1
+        }
+
 
         [Header("Background")]
         [SerializeField] private string[] guiToPauseOnEnable;
@@ -58,24 +68,26 @@ namespace NAJ.GUI
         private bool repauseNextFrame = false;
 
         [Header("Item Details")]
+        [SerializeField] private GameObject itemDetailRoot;
         [SerializeField] private LocalizedText itemTitle;
         [SerializeField] private LocalizedText itemDesc;
         [SerializeField] private Image itemIcon;
         [SerializeField] private GameObject checkIcon;
 
+        [Header("Tab Selection")]
+        [SerializeField] private InventoryUITabSelector[] tabSelectors;
+        [SerializeField] private GameObject[] tabSwitchReminders;
+        [SerializeField] private RectTransform tabSelectorViewer;
+
+
         [Header("Item List")]
-        [SerializeField] private RectTransform evidenceRoot;
-        [SerializeField] private RectTransform profilesRoot;
+        [SerializeField] private RectTransform[] tabRoots;
+        [SerializeField] private ScrollRect scrollRect;
         [SerializeField] private InventoryUIButton buttonPrefab;
-        [SerializeField] private InventoryUIArrow leftArrow;
-        [SerializeField] private InventoryUIArrow rightArrow;
-        [SerializeField] private InventoryUITabIcon tabIconPrefab;
-        [SerializeField] private RectTransform tabIconsRoot;
         [SerializeField] private Sprite defaultIcon;
-        [SerializeField] private int slotsPerScreen = 8;
-        private int currentEvidenceButtonIdx;
-        private int currentProfileButtonIdx;
-        private bool inEvidenceMode;
+        [SerializeField] private int slotsPerLine = 5;
+        private int[] currentButtonsIdx;
+        private InventoryTabType currentTabType;
         private string currentID;
         public InventoryMode currentMode { get; private set; }
 
@@ -94,19 +106,16 @@ namespace NAJ.GUI
         [SerializeField] private InventoryUIArrow checkLeft;
         [SerializeField] private InventoryUIArrow checkRight;
         [SerializeField] private RectTransform checkTabsRoot;
+        [SerializeField] private InventoryUITabIcon checkTabIconPrefab;
         private InventoryUITabIcon[] checkTabs;
         private bool inCheckMode;
         private uint currentCheckId;
 
         private Dictionary<string, NAJCaseProfile> allProfiles;
         private Dictionary<string, NAJCaseEvidence> allEvidence;
-        private int maxEvidenceCount;
-        private int maxProfileCount;
 
-        private InventoryUITabIcon[] tabIcons;
-        private InventoryUIButton[] buttonsEvidence;
-        private InventoryUIButton[] buttonsProfiles;
-        private int currentButtonInputSide;
+        private InventoryUIButton[][] buttons;
+        private Vector2Int currentButtonInputSide;
         private float cooldownToNextButtonIncrement = 0;
         private AudioManager audioManager;
         private bool skipFirstSelectSFX = false;
@@ -117,6 +126,10 @@ namespace NAJ.GUI
             currentMode = InventoryMode.ViewOnly;
             canvasGroup.alpha = 0.0f;
             canvasGroup.blocksRaycasts = false;
+
+            int tabAmount = (int)InventoryTabType.Max + 1;
+            currentButtonsIdx = new int[tabAmount];
+            buttons = new InventoryUIButton[tabAmount][];
         }
 
         public override void OnStart()
@@ -142,7 +155,7 @@ namespace NAJ.GUI
                 gui.SetComponentsPaused(guiToPauseOnEnable, true);
             }
 
-            if (currentButtonInputSide != 0)
+            if (currentButtonInputSide.x != 0 || currentButtonInputSide.y != 0)
             {
                 cooldownToNextButtonIncrement -= Time.deltaTime;
                 if (cooldownToNextButtonIncrement <= 0)
@@ -177,7 +190,6 @@ namespace NAJ.GUI
 		/// <param name="enabled">True if the menu should be enabled</param>
         public void TrySetEnabled(bool enabled)
         {
-
             if (inCheckMode && !enabled && isEnabled)
                 ToggleCheckMode();
             else if (currentMode == InventoryMode.ViewOnly || currentMode == InventoryMode.CanPresent)
@@ -188,11 +200,11 @@ namespace NAJ.GUI
         /// Initialize a button array
         /// </summary>
         /// <param name="list">The linked list</param>
-        /// <param name="isEvidence">True if it is an evidence array</param>
+        /// <param name="type">The list's type</param>
         /// <param name="buttons">The button's array</param>
-        public void InitializeButtons(List<string> list, bool isEvidence, ref InventoryUIButton[] buttons)
+        public void InitializeButtons(List<string> list, InventoryTabType type, ref InventoryUIButton[] buttons)
         {
-            int target = slotsPerScreen * (Mathf.FloorToInt(list.Count / (float)slotsPerScreen) + 1);
+            int target = list.Count;
             buttons = new InventoryUIButton[target];
 
             for (int i = 0; i < target; i++)
@@ -206,8 +218,8 @@ namespace NAJ.GUI
                 else
                 {
                     data.id = list[i];
-                    data.isEvidence = isEvidence;
-                    if (isEvidence)
+                    data.type = type;
+                    if (type == InventoryTabType.Evidence)
                         data.icon = allEvidence[data.id].LoadIcon();
                     else
                         data.icon = allProfiles[data.id].LoadIcon();
@@ -216,7 +228,7 @@ namespace NAJ.GUI
                         data.icon = defaultIcon;
                 }
 
-                buttons[i] = Instantiate(buttonPrefab, isEvidence ? evidenceRoot : profilesRoot);
+                buttons[i] = Instantiate(buttonPrefab, tabRoots[(int)type]);
                 buttons[i].Initialize(i, this, data);
             }
         }
@@ -233,65 +245,55 @@ namespace NAJ.GUI
                 allEvidence = container.GetAllEvidence();
                 allProfiles = container.GetAllProfiles();
 
-                inEvidenceMode = currentMode != InventoryMode.MustPresentProfile;
-                currentEvidenceButtonIdx = 0;
-                currentProfileButtonIdx = 0;
+                currentTabType = currentMode == InventoryMode.MustPresentProfile ? InventoryTabType.Profile : InventoryTabType.Evidence;
+
+                int maxTabs = (int)InventoryTabType.Max + 1;
+                for (int i = 0; i < maxTabs; i++)
+                {
+                    currentButtonsIdx[i] = 0;
+                    tabRoots[i].anchoredPosition = new Vector2(tabRoots[i].anchoredPosition.x, 0.0f);
+                    tabRoots[i].gameObject.SetActive(i == (int)currentTabType);
+                    foreach (Transform child in tabRoots[i])
+                        Destroy(child.gameObject);
+                }
+
+                scrollRect.content = tabRoots[(int)currentTabType];
+
+                Vector2 selectorPos = tabSelectorViewer.anchoredPosition;
+                selectorPos.x = tabSelectors[(int)currentTabType].GetComponent<RectTransform>().anchoredPosition.x;
+                tabSelectorViewer.anchoredPosition = selectorPos;
 
                 inCheckMode = false;
                 checkGroup.alpha = 0.0f;
                 checkGroup.blocksRaycasts = false;
                 selectedItem = null;
 
-                evidenceRoot.anchoredPosition = new Vector2(0.0f, inEvidenceMode ? 40.0f : 110.0f);
-                profilesRoot.anchoredPosition = new Vector2(0.0f, inEvidenceMode ? -30.0f : 40.0f);
-
-                foreach (Transform child in evidenceRoot)
-                    Destroy(child.gameObject);
-                foreach (Transform child in profilesRoot)
-                    Destroy(child.gameObject);
-
                 List<string> knownEvidence = container.GetEvidenceInventory();
                 List<string> knownProfiles = container.GetProfilesInventory();
 
-                maxEvidenceCount = knownEvidence.Count;
-                maxProfileCount = knownProfiles.Count;
+                InitializeButtons(knownEvidence, InventoryTabType.Evidence, ref buttons[0]);
+                InitializeButtons(knownProfiles, InventoryTabType.Profile, ref buttons[1]);
 
-                InitializeButtons(knownEvidence, true, ref buttonsEvidence);
-                InitializeButtons(knownProfiles, false, ref buttonsProfiles);
-
-                bool arrowVisible = (inEvidenceMode ? maxEvidenceCount : maxProfileCount) > slotsPerScreen;
-                leftArrow.gameObject.SetActive(arrowVisible);
-                rightArrow.gameObject.SetActive(arrowVisible);
-
-                foreach (Transform child in tabIconsRoot)
-                    Destroy(child.gameObject);
-
-                int tabEvidence = Mathf.FloorToInt(maxEvidenceCount / (float)slotsPerScreen) + 1;
-                int tabProfiles = Mathf.FloorToInt(maxProfileCount / (float)slotsPerScreen) + 1;
-                int maxTab = Mathf.Max(tabEvidence, tabProfiles);
-
-                tabIcons = new InventoryUITabIcon[maxTab];
-                for (int i = 0; i < maxTab; i++)
-                {
-                    tabIcons[i] = Instantiate(tabIconPrefab, tabIconsRoot);
-                    tabIcons[i].Initialize(i, this);
-                    tabIcons[i].gameObject.SetActive(i < (inEvidenceMode ? tabEvidence : tabProfiles));
-                    tabIcons[i].SetIsActiveTab(i == 0);
-                }
-
-                currentButtonInputSide = 0;
+                currentButtonInputSide.x = 0;
+                currentButtonInputSide.y = 0;
                 cooldownToNextButtonIncrement = 0;
 
-                if (inEvidenceMode)
+                bool currentTabHasButtons = buttons[(int)currentTabType].Length > 0;
+
+                if (currentTabHasButtons)
                 {
-                    buttonsEvidence[currentEvidenceButtonIdx].OnEnter();
-                    buttonsEvidence[currentEvidenceButtonIdx].OnSelect();
+                    buttons[(int)currentTabType][currentButtonsIdx[(int)currentTabType]].OnEnter();
+                    buttons[(int)currentTabType][currentButtonsIdx[(int)currentTabType]].OnSelect();
                 }
                 else
                 {
-                    buttonsProfiles[currentProfileButtonIdx].OnEnter();
-                    buttonsProfiles[currentProfileButtonIdx].OnSelect();
+                    // No buttons
+                    itemDetailRoot.SetActive(false);
                 }
+
+                bool canSwitch = currentMode != InventoryMode.MustPresentEvidence && currentMode != InventoryMode.MustPresentProfile;
+                foreach (GameObject obj in tabSwitchReminders)
+                    obj.SetActive(canSwitch);
 
                 if (gui.GetComponent(out InputReminderUI inputReminder))
                 {
@@ -301,15 +303,10 @@ namespace NAJ.GUI
                         inputReminder.SetReminderEnabled(reminder, false);
                     }
 
-                    bool canSwitch = currentMode == InventoryMode.ViewOnly ||
-                    currentMode == InventoryMode.CanPresent ||
-                    currentMode == InventoryMode.MustPresentAny;
-
-                    inputReminder.SetReminderEnabled("inventoryProfiles", inEvidenceMode && canSwitch);
                     inputReminder.SetReminderEnabled("inventoryBack",
                         currentMode == InventoryMode.ViewOnly ||
                         currentMode == InventoryMode.CanPresent);
-                    inputReminder.SetReminderEnabled("inventoryPresent", currentMode != InventoryMode.ViewOnly);
+                    inputReminder.SetReminderEnabled("inventoryPresent", currentMode != InventoryMode.ViewOnly && currentTabHasButtons);
                 }
                 else
                 {
@@ -364,13 +361,7 @@ namespace NAJ.GUI
                 checkGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad);
                 if (gui.GetComponent(out InputReminderUI inputReminder))
                 {
-                    bool canSwitch = currentMode == InventoryMode.ViewOnly ||
-                        currentMode == InventoryMode.CanPresent ||
-                        currentMode == InventoryMode.MustPresentAny;
-
                     inputReminder.SetReminderEnabled("inventoryCheck", true);
-                    inputReminder.SetReminderEnabled("inventoryProfiles", !inEvidenceMode && canSwitch);
-                    inputReminder.SetReminderEnabled("inventoryEvidence", inEvidenceMode && canSwitch);
                     inputReminder.SetReminderEnabled("inventoryBack2", false);
                     inputReminder.SetReminderEnabled("inventoryBack",
                         currentMode == InventoryMode.ViewOnly ||
@@ -395,7 +386,7 @@ namespace NAJ.GUI
                 checkTabs = new InventoryUITabIcon[imageCount];
                 for (int i = 0; i < imageCount; i++)
                 {
-                    checkTabs[i] = Instantiate(tabIconPrefab, checkTabsRoot);
+                    checkTabs[i] = Instantiate(checkTabIconPrefab, checkTabsRoot);
                     checkTabs[i].Initialize(i, this);
                     checkTabs[i].SetIsActiveTab(i == 0);
                 }
@@ -403,8 +394,6 @@ namespace NAJ.GUI
                 if (gui.GetComponent(out InputReminderUI inputReminder))
                 {
                     inputReminder.SetReminderEnabled("inventoryCheck", false);
-                    inputReminder.SetReminderEnabled("inventoryProfiles", false);
-                    inputReminder.SetReminderEnabled("inventoryEvidence", false);
                     inputReminder.SetReminderEnabled("inventoryBack2", true);
                     inputReminder.SetReminderEnabled("inventoryBack", false);
                     inputReminder.SetReminderEnabled("inventoryPresent", false);
@@ -448,7 +437,7 @@ namespace NAJ.GUI
         {
             if (currentMode != InventoryMode.ViewOnly)
             {
-                if (inEvidenceMode)
+                if (currentTabType == InventoryTabType.Evidence)
                     selectedItem = $"Evidence/{currentID}";
                 else
                     selectedItem = $"Profile/{currentID}";
@@ -460,7 +449,7 @@ namespace NAJ.GUI
         private void OnNext(InputAction.CallbackContext context)
         {
             if (isEnabled && !isPaused && context.ReadValueAsButton() &&
-            !inCheckMode && inEvidenceMode && allEvidence[currentID].canCheck)
+            !inCheckMode && currentTabType == InventoryTabType.Evidence && allEvidence[currentID].canCheck)
             {
                 ToggleCheckMode();
             }
@@ -487,18 +476,26 @@ namespace NAJ.GUI
         {
             if (isEnabled && !isPaused && context.ReadValueAsButton())
             {
-                if (audioManager != null)
+                if (audioManager != null && !inCheckMode)
                     audioManager.PlayUICursorCancelSFX();
 
                 TrySetEnabled(false);
             }
         }
 
-        private void OnInventorySwitch(InputAction.CallbackContext context)
+        private void OnSwitchLeft(InputAction.CallbackContext context)
         {
             if (isEnabled && !isPaused && context.ReadValueAsButton() && !inCheckMode)
             {
-                SwitchMode();
+                IncrementTab(true);
+            }
+        }
+
+        private void OnSwitchRight(InputAction.CallbackContext context)
+        {
+            if (isEnabled && !isPaused && context.ReadValueAsButton() && !inCheckMode)
+            {
+                IncrementTab(false);
             }
         }
 
@@ -509,19 +506,6 @@ namespace NAJ.GUI
                 TryPresentCurrentEvidence();
             }
         }
-
-        private void OnMouseScroll(InputAction.CallbackContext context)
-        {
-            if (isEnabled && !isPaused)
-            {
-                Vector2 value = context.ReadValue<Vector2>();
-
-                if ((value.y < 0 && inEvidenceMode) ||
-                    (value.y > 0 && !inEvidenceMode))
-                    SwitchMode();
-            }
-        }
-
 
         private void OnMove(InputAction.CallbackContext context)
         {
@@ -534,19 +518,33 @@ namespace NAJ.GUI
                 if (Mathf.Abs(value.x) >= 0.9f)
                 {
                     noMovement = false;
-                    if (currentButtonInputSide == 0)
+                    if (currentButtonInputSide.x == 0)
                     {
                         cooldownToNextButtonIncrement = cursorMoveCooldown;
-                        currentButtonInputSide = value.x > 0 ? 1 : -1;
+                        currentButtonInputSide.x = value.x > 0 ? 1 : -1;
 
                         IncrementButtonWithInput();
                     }
                 }
 
+                if (Mathf.Abs(value.y) >= 0.9f)
+                {
+                    noMovement = false;
+                    if (currentButtonInputSide.y == 0)
+                    {
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
+                        currentButtonInputSide.y = value.y > 0 ? 1 : -1;
+
+                        IncrementButtonWithInput();
+                    }
+                }
+
+
                 if (noMovement)
                 {
                     cooldownToNextButtonIncrement = 0.0f;
-                    currentButtonInputSide = 0;
+                    currentButtonInputSide.x = 0;
+                    currentButtonInputSide.y = 0;
                 }
             }
         }
@@ -561,38 +559,15 @@ namespace NAJ.GUI
             if (id < 0)
                 return;
 
-            int currentIdx = inEvidenceMode ? currentEvidenceButtonIdx : currentProfileButtonIdx;
+            int tabType = (int)currentTabType;
+            int currentIdx = currentButtonsIdx[tabType];
 
             if (force || currentIdx != id)
             {
-                if (inEvidenceMode)
-                {
-                    buttonsEvidence[currentEvidenceButtonIdx].OnExit();
-                    currentEvidenceButtonIdx = id;
-                    buttonsEvidence[currentEvidenceButtonIdx].OnEnter();
-                    buttonsEvidence[currentEvidenceButtonIdx].OnSelect();
-                }
-                else
-                {
-                    buttonsProfiles[currentProfileButtonIdx].OnExit();
-                    currentProfileButtonIdx = id;
-                    buttonsProfiles[currentProfileButtonIdx].OnEnter();
-                    buttonsProfiles[currentProfileButtonIdx].OnSelect();
-                }
-
-                int tabOld = Mathf.FloorToInt(currentIdx / (float)slotsPerScreen);
-                int tabNew = Mathf.FloorToInt(id / (float)slotsPerScreen);
-
-                if (tabNew != tabOld)
-                {
-                    tabIcons[tabOld].SetIsActiveTab(false);
-                    tabIcons[tabNew].SetIsActiveTab(true);
-
-                    if (inEvidenceMode)
-                        evidenceRoot.DOAnchorPosX(-520 * tabNew, 0.5f).SetEase(Ease.OutQuad);
-                    else
-                        profilesRoot.DOAnchorPosX(-520 * tabNew, 0.5f).SetEase(Ease.OutQuad);
-                }
+                buttons[tabType][currentIdx].OnExit();
+                currentButtonsIdx[tabType] = id;
+                buttons[tabType][id].OnEnter();
+                buttons[tabType][id].OnSelect();
             }
         }
 
@@ -600,108 +575,70 @@ namespace NAJ.GUI
 		/// Sets the tab number
 		/// </summary>
 		/// <param name="goLeft">The tabId</param>
-        public void SetTab(int tabId)
+        public void SetCheckModeTab(int tabId)
         {
             if (inCheckMode)
                 SetCheckImage((uint)tabId);
-            else
-                SetCurrentButton(tabId * slotsPerScreen);
         }
 
         /// <summary>
-		/// Increments the tab number
+		/// Increments the check mode tab
 		/// </summary>
 		/// <param name="goLeft">True if going left</param>
+        public void IncrementCheckMode(bool goLeft)
+        {
+            if (inCheckMode)
+            {
+                int side = goLeft ? -1 : 1;
+                SetCheckImage((uint)(((int)currentCheckId + side + checkTabs.Length) % checkTabs.Length));
+            }
+        }
+
+        /// <summary>
+        /// Increments the tab
+        /// </summary>
+        /// <param name="goLeft">True if going left</param>
         public void IncrementTab(bool goLeft)
         {
             int side = goLeft ? -1 : 1;
-
-            if (inCheckMode)
-            {
-                SetCheckImage((uint)(((int)currentCheckId + side + checkTabs.Length) % checkTabs.Length));
-                return;
-            }
-
-            if (inEvidenceMode && maxEvidenceCount != 0)
-            {
-                SetCurrentButton(Mathf.Min(
-                    (currentEvidenceButtonIdx + side * slotsPerScreen + buttonsEvidence.Length) % buttonsEvidence.Length,
-                    maxEvidenceCount - 1));
-            }
-
-            else if (!inEvidenceMode && maxProfileCount != 0)
-            {
-                SetCurrentButton(Mathf.Min(
-                    (currentProfileButtonIdx + side * slotsPerScreen + buttonsProfiles.Length) % buttonsProfiles.Length,
-                    maxProfileCount - 1));
-            }
+            int max = (int)InventoryTabType.Max + 1;
+            SwitchTab((InventoryTabType)(((int)currentTabType + side + max) % max));
         }
 
         /// <summary>
-        /// Switches between evidence and profile mode
+        /// Changes the current tab
         /// </summary>
-        public void SwitchMode()
+        /// <param name="tab">The new tab</param>
+        public void SwitchTab(InventoryTabType tab)
         {
             if (currentMode == InventoryMode.MustPresentEvidence ||
-                currentMode == InventoryMode.MustPresentProfile)
+                currentMode == InventoryMode.MustPresentProfile ||
+                inCheckMode)
                 return;
 
-            inEvidenceMode = !inEvidenceMode;
+            if (buttons[(int)currentTabType].Length > 0)
+                buttons[(int)currentTabType][currentButtonsIdx[(int)currentTabType]].OnExit();
+            tabRoots[(int)currentTabType].gameObject.SetActive(false);
 
-            if (inEvidenceMode)
+            currentTabType = tab;
+
+            tabRoots[(int)currentTabType].gameObject.SetActive(true);
+            scrollRect.content = tabRoots[(int)currentTabType];
+
+            bool tabHasButtons = buttons[(int)currentTabType].Length > 0;
+            itemDetailRoot.SetActive(tabHasButtons);
+
+            if (tabHasButtons)
             {
-                buttonsEvidence[currentEvidenceButtonIdx].OnEnter();
-                buttonsProfiles[currentProfileButtonIdx].OnExit();
-                buttonsEvidence[currentEvidenceButtonIdx].OnSelect();
-                evidenceRoot.DOAnchorPosY(40.0f, 0.5f).SetEase(Ease.OutQuad);
-                profilesRoot.DOAnchorPosY(-30.0f, 0.5f).SetEase(Ease.OutQuad);
-
-                bool arrowVisible = maxEvidenceCount > slotsPerScreen;
-                leftArrow.gameObject.SetActive(arrowVisible);
-                rightArrow.gameObject.SetActive(arrowVisible);
-
-                int currentTab = Mathf.FloorToInt(currentEvidenceButtonIdx / (float)slotsPerScreen);
-                int tabs = Mathf.FloorToInt(maxEvidenceCount / (float)slotsPerScreen) + 1;
-                for (int i = 0; i < tabIcons.Length; i++)
-                {
-                    tabIcons[i].gameObject.SetActive(i < tabs);
-                    tabIcons[i].SetIsActiveTab(i == currentTab);
-                }
-
-                if (gui.GetComponent(out InputReminderUI inputReminder))
-                {
-                    inputReminder.SetReminderEnabled("inventoryProfiles", true);
-                    inputReminder.SetReminderEnabled("inventoryEvidence", false);
-                }
-            }
-            else
-            {
-                buttonsEvidence[currentEvidenceButtonIdx].OnExit();
-                buttonsProfiles[currentProfileButtonIdx].OnEnter();
-                buttonsProfiles[currentProfileButtonIdx].OnSelect();
-                evidenceRoot.DOAnchorPosY(110.0f, 0.5f).SetEase(Ease.OutQuad);
-                profilesRoot.DOAnchorPosY(40.0f, 0.5f).SetEase(Ease.OutQuad);
-
-                bool arrowVisible = maxProfileCount > slotsPerScreen;
-                leftArrow.gameObject.SetActive(arrowVisible);
-                rightArrow.gameObject.SetActive(arrowVisible);
-
-                int currentTab = Mathf.FloorToInt(currentProfileButtonIdx / (float)slotsPerScreen);
-                int tabs = Mathf.FloorToInt(maxProfileCount / (float)slotsPerScreen) + 1;
-                for (int i = 0; i < tabIcons.Length; i++)
-                {
-                    tabIcons[i].gameObject.SetActive(i < tabs);
-                    tabIcons[i].SetIsActiveTab(i == currentTab);
-                }
-
-                if (gui.GetComponent(out InputReminderUI inputReminder))
-                {
-                    inputReminder.SetReminderEnabled("inventoryProfiles", false);
-                    inputReminder.SetReminderEnabled("inventoryEvidence", true);
-                }
+                buttons[(int)currentTabType][currentButtonsIdx[(int)currentTabType]].OnEnter();
+                buttons[(int)currentTabType][currentButtonsIdx[(int)currentTabType]].OnSelect();
             }
 
+            float newX = tabSelectors[(int)currentTabType].GetComponent<RectTransform>().anchoredPosition.x;
+            tabSelectorViewer.DOAnchorPosX(newX, 0.5f).SetEase(Ease.OutQuad);
 
+            if (gui.GetComponent(out InputReminderUI inputReminder))
+                inputReminder.SetReminderEnabled("inventoryPresent", currentMode != InventoryMode.ViewOnly && tabHasButtons);
         }
 
         /// <summary>
@@ -711,13 +648,32 @@ namespace NAJ.GUI
         {
             if (inCheckMode)
             {
-                SetCheckImage((uint)(((int)currentCheckId + currentButtonInputSide + checkTabs.Length) % checkTabs.Length));
+                SetCheckImage((uint)(((int)currentCheckId + currentButtonInputSide.x + checkTabs.Length) % checkTabs.Length));
             }
+            else if (buttons[(int)currentTabType].Length > 0)
+            {
+                int yMult = 1;
+                int currentValue = currentButtonsIdx[(int)currentTabType];
+                int max = buttons[(int)currentTabType].Length;
+                int lastTab = Mathf.FloorToInt(currentValue / slotsPerLine);
 
-            else if (inEvidenceMode && maxEvidenceCount != 0)
-                SetCurrentButton((currentEvidenceButtonIdx + currentButtonInputSide + maxEvidenceCount) % maxEvidenceCount);
-            else if (!inEvidenceMode && maxProfileCount != 0)
-                SetCurrentButton((currentProfileButtonIdx + currentButtonInputSide + maxProfileCount) % maxProfileCount);
+                if ((currentButtonInputSide.y == 1 && currentValue < slotsPerLine) ||
+                    (currentButtonInputSide.y == -1 && lastTab == Mathf.CeilToInt(max / slotsPerLine)))
+                    yMult = 0;
+
+                SetCurrentButton((currentValue + currentButtonInputSide.x - yMult * slotsPerLine * currentButtonInputSide.y + max) % max);
+
+                int currentTab = Mathf.FloorToInt(currentValue / slotsPerLine);
+                if (currentTab != lastTab)
+                {
+                    GridLayout gridLayout = tabRoots[(int)currentTabType].GetComponent<GridLayout>();
+                    float yPos = (gridLayout.cellSize.y + gridLayout.cellGap.y) * currentTab;
+                    tabRoots[(int)currentTabType].anchoredPosition = new Vector2(
+                        tabRoots[(int)currentTabType].anchoredPosition.x,
+                        yPos
+                    );
+                }
+            }
         }
 
         /// <summary>
@@ -736,7 +692,7 @@ namespace NAJ.GUI
             else if (skipFirstSelectSFX)
                 skipFirstSelectSFX = false;
 
-            if (data.isEvidence)
+            if (data.type == InventoryTabType.Evidence)
             {
                 NAJCaseEvidence evidence = allEvidence[data.id];
                 itemDesc.SetNewKey(evidence.GetDescKey());
@@ -763,8 +719,8 @@ namespace NAJ.GUI
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled += OnMove;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("InventorySwitch").performed += OnInventorySwitch;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MouseScroll").performed += OnMouseScroll;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchLeft").performed += OnSwitchLeft;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchRight").performed += OnSwitchRight;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPresent;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed += OnPauseInput;
         }
@@ -774,8 +730,8 @@ namespace NAJ.GUI
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnNext;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("InventorySwitch").performed -= OnInventorySwitch;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MouseScroll").performed -= OnMouseScroll;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchLeft").performed -= OnSwitchLeft;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchRight").performed -= OnSwitchRight;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPresent;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed -= OnPauseInput;
         }

@@ -847,8 +847,8 @@ Shader "UberStylizedWater"
         
         // Graph Includes
         #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/ParallaxMapping.hlsl"
-        #include_with_pragmas "Assets/Plugins/NAJ/Uber Stylized Water/SubGraphs/CubeMap.hlsl"
-        #include_with_pragmas "Assets/Plugins/NAJ/Uber Stylized Water/Third Party/URP_ShaderGraphCustomLighting-main/CustomLighting.hlsl"
+        #include_with_pragmas "Assets/NAJ/Plugins/Uber Stylized Water/SubGraphs/CubeMap.hlsl"
+        #include_with_pragmas "Assets/NAJ/Plugins/Uber Stylized Water/Third Party/URP_ShaderGraphCustomLighting-main/CustomLighting.hlsl"
         
         // -- Property used by ScenePickingPass
         #ifdef SCENEPICKINGPASS

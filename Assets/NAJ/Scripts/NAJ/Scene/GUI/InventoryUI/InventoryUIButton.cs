@@ -90,7 +90,7 @@ namespace NAJ.GUI
     {
         public Sprite icon;
         public string id;
-        public bool isEvidence;
+        public InventoryUI.InventoryTabType type;
         public bool isValid;
     }
 }

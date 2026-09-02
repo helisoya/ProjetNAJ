@@ -18,9 +18,8 @@
 6|TestProfile7|PlaceHolders2
 6|TestProfile8|PlaceHolders2
 6|TestProfile9|PlaceHolders2
-0|TestEvidence1
-1|TestProfile1
 32|null|null|Test_Inventory_1
+0|TestEvidence1
 0|TestEvidence2
 0|TestEvidence3
 0|TestEvidence4
@@ -30,6 +29,7 @@
 0|TestEvidence8
 0|TestEvidence9
 32|null|null|Test_Inventory_2
+1|TestProfile1
 1|TestProfile2
 1|TestProfile3
 1|TestProfile4
@@ -64,8 +64,6 @@
 32|null|null|BAD
 39|65
 13
-0|TestEvidence1
 32|null|null|Test_Inventory_8
 14
-1|TestProfile1
 32|null|null|Test_Inventory_9

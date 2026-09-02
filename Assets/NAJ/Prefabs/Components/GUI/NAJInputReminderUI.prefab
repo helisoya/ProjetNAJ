@@ -122,26 +122,6 @@ MonoBehaviour:
         clickAction:
           rid: 5696404000621199435
         instanceButton: {fileID: 0}
-    - Key: inventoryEvidence
-      Value:
-        enabled: 0
-        labelKey: InputReminder_Evidence
-        inputAction: {fileID: 3804720066873863857, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        keyboardBindingIndex: 0
-        gamepadBindingIndex: 1
-        clickAction:
-          rid: 5696403994774339666
-        instanceButton: {fileID: 0}
-    - Key: inventoryProfiles
-      Value:
-        enabled: 0
-        labelKey: InputReminder_Profiles
-        inputAction: {fileID: 3804720066873863857, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-        keyboardBindingIndex: 0
-        gamepadBindingIndex: 1
-        clickAction:
-          rid: 5696403994774339666
-        instanceButton: {fileID: 0}
     - Key: inventoryBack
       Value:
         enabled: 0
@@ -189,9 +169,6 @@ MonoBehaviour:
       data: 
     - rid: 5696403994774339665
       type: {class: NAJInputReminderInventoryToggleAction, ns: NAJ.GUI, asm: Assembly-CSharp}
-      data: 
-    - rid: 5696403994774339666
-      type: {class: NAJInputReminderInventorySwitchModeAction, ns: NAJ.GUI, asm: Assembly-CSharp}
       data: 
     - rid: 5696403994774339672
       type: {class: NAJInputReminderInventoryCheckAction, ns: NAJ.GUI, asm: Assembly-CSharp}

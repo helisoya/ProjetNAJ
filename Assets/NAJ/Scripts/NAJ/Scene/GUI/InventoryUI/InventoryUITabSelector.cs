@@ -5,16 +5,16 @@ using UnityEngine.EventSystems;
 namespace NAJ.GUI
 {
     /// <summary>
-	/// Represents a movement arrow in the Inventory UI
+	/// Represents a Tab Selection Icon in the Inventory UI
 	/// </summary>
-    public class InventoryUIArrow : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
+    public class InventoryUITabSelector : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler
     {
-        [SerializeField] private bool isLeftButton;
+        [SerializeField] private InventoryUI.InventoryTabType linkedTab;
         [SerializeField] private InventoryUI menu;
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            menu.IncrementCheckMode(isLeftButton);
+            menu.SwitchTab(linkedTab);
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -28,3 +28,4 @@ namespace NAJ.GUI
         }
     }
 }
+

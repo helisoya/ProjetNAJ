@@ -138,5 +138,6 @@ InputReminder_Present = Présenter
 InputReminder_Press = Presser
 
 SettingsMenu_Inputs_Inventory = Inventaire
-SettingsMenu_Inputs_InventorySwitch = Basculer (Inventaire)
+SettingsMenu_Inputs_SwitchLeft = Basculer Gauche(Menu)
+SettingsMenu_Inputs_SwitchRight = Basculer Droite(Menu)
 SettingsMenu_Inputs_InventoryPresent = Présenter Preuve/Presser

@@ -21,10 +21,10 @@ createUserProfile(TestProfile7;PlaceHolders2)
 createUserProfile(TestProfile8;PlaceHolders2)
 createUserProfile(TestProfile9;PlaceHolders2)
 
-addEvidence(TestEvidence1)
-addProfile(TestProfile1)
+
 dialog(null;null;Test_Inventory_1)
 
+addEvidence(TestEvidence1)
 addEvidence(TestEvidence2)
 addEvidence(TestEvidence3)
 addEvidence(TestEvidence4)
@@ -35,6 +35,7 @@ addEvidence(TestEvidence8)
 addEvidence(TestEvidence9)
 dialog(null;null;Test_Inventory_2)
 
+addProfile(TestProfile1)
 addProfile(TestProfile2)
 addProfile(TestProfile3)
 addProfile(TestProfile4)
@@ -74,9 +75,7 @@ dialog(null;null;BAD)
 endask
 
 removeAllEvidence()
-addEvidence(TestEvidence1)
 dialog(null;null;Test_Inventory_8)
 
 removeAllProfiles()
-addProfile(TestProfile1)
 dialog(null;null;Test_Inventory_9)

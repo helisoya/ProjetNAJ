@@ -38,7 +38,7 @@ namespace NAJ.GUI
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            menu.SetTab(tabId);
+            menu.SetCheckModeTab(tabId);
         }
 
         public void OnPointerEnter(PointerEventData eventData)

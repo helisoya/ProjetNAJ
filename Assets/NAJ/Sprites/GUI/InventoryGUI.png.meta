@@ -250,7 +250,7 @@ TextureImporter:
         width: 53
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,6 +259,72 @@ TextureImporter:
       bones: []
       spriteID: 92a1ea472104c0143b319ecf7ce39178
       internalID: -1570898417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryGUI_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 476
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e46ba20b98e03a48bb52d90035f860d
+      internalID: 1667629537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryGUI_8
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 476
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e191a54e4abdfc84fa7c157ea4df0b3e
+      internalID: -2104646949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryGUI_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 476
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d74b5a45d35ecc42882721be7edb215
+      internalID: 1894923946
       vertices: []
       indices: 
       edges: []
@@ -284,6 +350,9 @@ TextureImporter:
       InventoryGUI_4: 705420484
       InventoryGUI_5: 1229690256
       InventoryGUI_6: -1570898417
+      InventoryGUI_7: 1667629537
+      InventoryGUI_8: -2104646949
+      InventoryGUI_9: 1894923946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

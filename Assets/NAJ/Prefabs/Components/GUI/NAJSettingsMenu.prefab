@@ -1041,8 +1041,11 @@ MonoBehaviour:
           - inputAction: {fileID: 3926002190625160356, guid: 052faaac586de48259a63d0c4782560b, type: 3}
             labelKey: SettingsMenu_Inputs_Inventory
             bindingIndex: 0
-          - inputAction: {fileID: 3804720066873863857, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-            labelKey: SettingsMenu_Inputs_InventorySwitch
+          - inputAction: {fileID: -8490511566173797348, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+            labelKey: SettingsMenu_Inputs_SwitchLeft
+            bindingIndex: 0
+          - inputAction: {fileID: -6221189700544263862, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+            labelKey: SettingsMenu_Inputs_SwitchRight
             bindingIndex: 0
           - inputAction: {fileID: 3883995784832279789, guid: 052faaac586de48259a63d0c4782560b, type: 3}
             labelKey: SettingsMenu_Inputs_InventoryPresent
@@ -1061,8 +1064,11 @@ MonoBehaviour:
           - inputAction: {fileID: 3926002190625160356, guid: 052faaac586de48259a63d0c4782560b, type: 3}
             labelKey: SettingsMenu_Inputs_Inventory
             bindingIndex: 1
-          - inputAction: {fileID: 3804720066873863857, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-            labelKey: SettingsMenu_Inputs_InventorySwitch
+          - inputAction: {fileID: -8490511566173797348, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+            labelKey: SettingsMenu_Inputs_SwitchLeft
+            bindingIndex: 1
+          - inputAction: {fileID: -6221189700544263862, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+            labelKey: SettingsMenu_Inputs_SwitchRight
             bindingIndex: 1
           - inputAction: {fileID: 3883995784832279789, guid: 052faaac586de48259a63d0c4782560b, type: 3}
             labelKey: SettingsMenu_Inputs_InventoryPresent
