@@ -36,8 +36,8 @@ Define setRobertNormalGun()
 setCharacterBody(Robert;NormalGun;0.1)
 EndDefine
 
-Define setRobertAimingGun()
-setCharacterBody(Robert;AimingGun;0.1)
+Define setRobertOnPouchToAimingGun()
+setCharacterBody(Robert;OnPouchToAimingGun)
 EndDefine
 
 Define setRobertAimingGun()
@@ -62,4 +62,55 @@ EndDefine
 Define setRobertEyeAngry()
 setCharacterEye(Robert;Angry)
 setCharacterMouth(Robert;Angry)
+EndDefine
+
+# Gerald
+
+Define setGeraldNormal(Type)
+setCharacterBody(Gerald{Type};Normal;0.1)
+EndDefine
+
+Define setGeraldBrushHair(Type)
+setCharacterBody(Gerald{Type};BrushHair)
+EndDefine
+
+Define setGeraldTapHead(Type)
+setCharacterBody(Gerald{Type};TapHead)
+EndDefine
+
+Define setGeraldThinking(Type)
+setCharacterBody(Gerald{Type};Thinking;0.1)
+EndDefine
+
+Define setGeraldOnBar(Type)
+setCharacterBody(Gerald{Type};OnBar;0.1)
+EndDefine
+
+Define setGeraldUseKnife(Type)
+setCharacterBody(Gerald{Type};UseKnife)
+EndDefine
+
+Define setGeraldEyeNormal(Type)
+setCharacterEye(Gerald{Type};Normal)
+setCharacterMouth(Gerald{Type};Normal)
+EndDefine
+
+Define setGeraldEyeSerious(Type)
+setCharacterEye(Gerald{Type};Normal)
+setCharacterMouth(Gerald{Type};Serious)
+EndDefine
+
+Define setGeraldEyeMad(Type)
+setCharacterEye(Gerald{Type};Mad)
+setCharacterMouth(Gerald{Type};Normal)
+EndDefine
+
+Define setGeraldEyeWink(Type)
+setCharacterEye(Gerald{Type};Wink)
+setCharacterMouth(Gerald{Type};Normal)
+EndDefine
+
+Define setGeraldEyeSurprise(Type)
+setCharacterEye(Gerald{Type};Surprise)
+setCharacterMouth(Gerald{Type};Serious)
 EndDefine

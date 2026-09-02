@@ -1,4 +1,4 @@
-setBackground(C1_Cliff)
+setBackground(C1_Cliff;true)
 
 # On Ground
 setCameraPosition(0;-2;-3)

@@ -9,7 +9,7 @@ namespace ANF.ANSL
     /// The Set Character rotation Function can be used to rotate a character
     /// </summary>
     [ANSLFunctionAttribute(
-        
+
         functionBody: "setCharacterRotation",
         functionAutoComplete: new string[] {
             "setCharacterRotation(Name;X;Y;Z)",
@@ -80,7 +80,7 @@ namespace ANF.ANSL
 
                             if (currentBackground != null && marker != null)
                             {
-                                position = currentBackground.GetMarkerPosition(marker);
+                                position = currentBackground.GetMarkerRotation(marker);
                             }
 
                             if (parameters.GetTemplateId() == 3)

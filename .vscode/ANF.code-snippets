@@ -922,8 +922,8 @@ endchoice"],
 	},
 	"Macro_7": {
 		"scope": "ansl",
-		"prefix": ":setRobertAimingGun",
-		"body": [":setRobertAimingGun()"],
+		"prefix": ":setRobertOnPouchToAimingGun",
+		"body": [":setRobertOnPouchToAimingGun()"],
 		"description": "This is a user generated macro"
 	},
 	"Macro_8": {
@@ -958,11 +958,77 @@ endchoice"],
 	},
 	"Macro_13": {
 		"scope": "ansl",
+		"prefix": ":setGeraldNormal",
+		"body": [":setGeraldNormal(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_14": {
+		"scope": "ansl",
+		"prefix": ":setGeraldBrushHair",
+		"body": [":setGeraldBrushHair(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_15": {
+		"scope": "ansl",
+		"prefix": ":setGeraldTapHead",
+		"body": [":setGeraldTapHead(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_16": {
+		"scope": "ansl",
+		"prefix": ":setGeraldThinking",
+		"body": [":setGeraldThinking(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_17": {
+		"scope": "ansl",
+		"prefix": ":setGeraldOnBar",
+		"body": [":setGeraldOnBar(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_18": {
+		"scope": "ansl",
+		"prefix": ":setGeraldUseKnife",
+		"body": [":setGeraldUseKnife(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_19": {
+		"scope": "ansl",
+		"prefix": ":setGeraldEyeNormal",
+		"body": [":setGeraldEyeNormal(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_20": {
+		"scope": "ansl",
+		"prefix": ":setGeraldEyeSerious",
+		"body": [":setGeraldEyeSerious(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_21": {
+		"scope": "ansl",
+		"prefix": ":setGeraldEyeMad",
+		"body": [":setGeraldEyeMad(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_22": {
+		"scope": "ansl",
+		"prefix": ":setGeraldEyeWink",
+		"body": [":setGeraldEyeWink(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_23": {
+		"scope": "ansl",
+		"prefix": ":setGeraldEyeSurprise",
+		"body": [":setGeraldEyeSurprise(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_24": {
+		"scope": "ansl",
 		"prefix": ":DebugMacro",
 		"body": [":DebugMacro(Name)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_14": {
+	"Macro_25": {
 		"scope": "ansl",
 		"prefix": ":DebugMacro2",
 		"body": [":DebugMacro2()"],

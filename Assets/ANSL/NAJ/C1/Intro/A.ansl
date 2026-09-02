@@ -1,0 +1,124 @@
+setBackground(C1_Boat)
+setSkybox(Day)
+
+setBg(1)
+fadeFg(0;false)
+
+# Cell Dialog
+wait(2)
+
+fadeBg(0;false)
+
+# Dialog before Captain
+wait(2)
+
+addProfile(C1_Sartt)
+addCharacter(Sartt;true;Front)
+setCharacterAlpha(Sartt;1;1;false)
+
+# Rann-Captain Dialog
+wait(2)
+
+fadeBg(1;true)
+
+setCameraPosition(-39.4;1;-20.6)
+setCameraRotation(0;-108.3;0)
+
+fadeBg(0;false)
+
+# Captain Speech
+wait(2)
+
+fadeBg(1;true)
+
+removeStatic(Sailors)
+removeStatic(Kalia)
+removeCharacter(Sartt)
+
+# Dialog "We be going"
+wait(2)
+
+setCameraPosition(-80.2;1;-37.6)
+setCameraRotation(0;-133;0)
+
+addCharacter(GeraldCoat;false;PensiveSpot)
+
+fadeBg(0;false)
+
+# Starteled by Gerald
+wait(2)
+addProfile(C1_Gerald)
+setCameraRotation(0;-222.8;0;1.0;true)
+
+# Talk with Gerald
+wait(2)
+
+fadeBg(1;true)
+
+setCameraPosition(49.26189;-9.196307;-46.78981)
+setCameraRotation(2.958;-182.578;0.0)
+
+setCharacterPosition(GeraldCoat;HideoutSpot)
+setCharacterRotation(GeraldCoat;HideoutSpot)
+:setGeraldUseKnife(Coat)
+:setGeraldEyeSerious(Type)
+
+fadeBg(0;false)
+
+# Hideout Talk
+wait(2)
+
+fadeBg(1;true)
+
+removeCharacter(GeraldCoat)
+
+setCameraPosition(0;1;-5)
+setCameraRotation(0;0;0)
+setStaticPosition(Seagull;-20;6;5)
+
+fadeBg(0;false)
+
+# Talk before seagull
+wait(2)
+
+# See seagull
+setCameraRotation(-30;0;0;1;true)
+setStaticPosition(Seagull;20;6;5;1;false)
+
+wait(2)
+removeStatic(Seagull)
+
+# Look Forward
+setCameraRotation(-15;70;0;1;true)
+wait(2)
+
+# Rain
+setSkybox(Cloud;2;false)
+setWeatherEffect(Rain)
+wait(2)
+
+# Fall
+setCameraPosition(0;-5;-7;1;false)
+setCameraRotation(-80;70;0;1;true)
+
+wait(2)
+
+# Get up
+
+setCameraPosition(0;1;-7;3;false)
+setCameraRotation(0;30;0;3;true)
+
+wait(2)
+
+
+# Rocks
+
+setStaticPosition(Rocks;200;-5;20)
+
+setStaticPosition(Rocks;-100;-5;20;3;true)
+
+wait(2)
+
+# Transition to Investigation
+setFg(1)
+load(../Investigation/Cliff/Start)

@@ -9,7 +9,7 @@ namespace ANF.ANSL
     /// The Set Static rotation Function can be used to rotate a static object
     /// </summary>
     [ANSLFunctionAttribute(
-        
+
         functionBody: "setStaticRotation",
         functionAutoComplete: new string[] {
             "setStaticRotation(Name;X;Y;Z)",
@@ -80,7 +80,7 @@ namespace ANF.ANSL
 
                             if (currentBackground != null && marker != null)
                             {
-                                position = currentBackground.GetMarkerPosition(marker);
+                                position = currentBackground.GetMarkerRotation(marker);
                             }
 
                             if (parameters.GetTemplateId() == 3)
