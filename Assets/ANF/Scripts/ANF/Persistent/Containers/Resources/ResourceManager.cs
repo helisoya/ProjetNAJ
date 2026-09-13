@@ -57,6 +57,35 @@ namespace ANF.Persistent
         }
 
         /// <summary>
+        /// Loads a resource in memory
+        /// </summary>
+        /// <typeparam name="T">The resource's type</typeparam>
+        /// <param name="path">The resource's path</param>
+        /// <param name="resultCallback">The action to call on end</param>
+        public T GetResourceAsync<T>(string path, System.Action<object> resultCallback)
+        {
+            if (loadedResources.ContainsKey(path))
+            {
+                // Has already loaded a resource with that name
+                loadedResources[path].refCount++;
+                if (loadedResources[path].isLoading)
+                {
+                    loadedResources[path].actions.Add(resultCallback);
+                }
+                else
+                {
+                    T value = TryConvertResource<T>(path);
+                    if (value != null) // Could parse the value
+                        return value;
+                }
+            }
+
+            // Has not loaded / found the resource yet
+            TryLoadResourceAsync<T>(path, resultCallback);
+            return default;
+        }
+
+        /// <summary>
         /// Unloads a resource from memory
         /// </summary>
         /// <typeparam name="T">The resource's type</typeparam>
@@ -66,6 +95,25 @@ namespace ANF.Persistent
             if (loadedResources.ContainsKey(path))
             {
                 loadedResources[path].refCount--;
+                if (loadedResources[path].refCount <= 0)
+                {
+                    TryReleaseResource<T>(path);
+                    loadedResources.Remove(path);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Unloads a resource from memory (Async)
+        /// </summary>
+        /// <typeparam name="T">The resource's type</typeparam>
+        /// <param name="path">The resource's path</param>
+        public void ReleaseResourceAsync<T>(string path, System.Action<object> resultCallback)
+        {
+            if (loadedResources.ContainsKey(path))
+            {
+                loadedResources[path].refCount--;
+                loadedResources[path].actions.Remove(resultCallback);
                 if (loadedResources[path].refCount <= 0)
                 {
                     TryReleaseResource<T>(path);
@@ -110,6 +158,14 @@ namespace ANF.Persistent
         protected abstract T TryLoadResource<T>(string path);
 
         /// <summary>
+        /// Tries to load a new resources to memory (async)
+        /// </summary>
+        /// <typeparam name="T">The resource's type</typeparam>
+        /// <param name="path">The resource's path</param>
+        /// <returns>The resource if found</returns>
+        protected abstract void TryLoadResourceAsync<T>(string path, System.Action<object> resultCallback);
+
+        /// <summary>
         /// Tries to release a resource from memory
         /// </summary>
         /// <typeparam name="T">The resource's type</typeparam>
@@ -124,14 +180,16 @@ namespace ANF.Persistent
         {
             public int refCount;
             public object resource;
+            public bool isLoading;
+            public List<System.Action<object>> actions;
 
-            public ResourceData(object resource, int refCount)
+            public ResourceData(object resource, int refCount, bool isLoading)
             {
                 this.refCount = refCount;
                 this.resource = resource;
+                this.isLoading = isLoading;
+                this.actions = new List<System.Action<object>>();
             }
         }
-
     }
-
 }

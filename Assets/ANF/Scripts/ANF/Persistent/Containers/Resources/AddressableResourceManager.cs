@@ -54,13 +54,39 @@ namespace ANF.Persistent
 #if UNITY_EDITOR
                 Debug.Log($"Loaded Resource : {path}");
 #endif
-                loadedResources.Add(path, new ResourceData(op, 1));
+                loadedResources.Add(path, new ResourceData(op, 1, false));
 
                 return obj;
             }
             catch
             {
                 return default;
+            }
+        }
+
+        protected override void TryLoadResourceAsync<T>(string path, System.Action<object> resultCallback)
+        {
+            try
+            {
+                AsyncOperationHandle<T> op = Addressables.LoadAssetAsync<T>(path);
+                op.Completed += (resOp) =>
+                {
+                    loadedResources[path].isLoading = false;
+
+                    foreach (System.Action<object> action in loadedResources[path].actions)
+                    {
+                        action.Invoke(resOp.Result);
+                    }
+                };
+
+#if UNITY_EDITOR
+                Debug.Log($"Loading Resource Async : {path}");
+#endif
+                loadedResources.Add(path, new ResourceData(op, 1, true));
+                loadedResources[path].actions.Add(resultCallback);
+            }
+            catch
+            {
             }
         }
 
@@ -93,7 +119,7 @@ namespace ANF.Persistent
                 AsyncOperationHandle<IList<IResourceLocation>> locations = Addressables.LoadResourceLocationsAsync(bundleName);
                 IList<IResourceLocation> bundle = locations.WaitForCompletion();
 
-                loadedBundles.Add(bundleName, new ResourceData(locations, 1));
+                loadedBundles.Add(bundleName, new ResourceData(locations, 1, false));
 
                 foreach (IResourceLocation location in bundle)
                 {
