@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bfc7de97ad5247b9061be4feb35ce, type: 3}
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
-  startingScript: /NAJ/C1/EntryPoints/Intro
+  startingScript: /NAJ/Tests/EvidenceInfo
   mainMenuScene: NAJMainMenu
   gameScene: NAJGame
   saveFolder: Saves/
@@ -37,6 +37,9 @@ MonoBehaviour:
   - id: 
     data:
       rid: 9131134223052177487
+  - id: 
+    data:
+      rid: 8808018580948385883
   registeredGlobalDataContainers:
   - id: 
     data:
@@ -158,9 +161,12 @@ MonoBehaviour:
     - rid: 5904633703666286681
       type: {class: ANSLSettings, ns: ANF.Persistent, asm: Assembly-CSharp}
       data:
-        anslSourceFolder: Assets/ANSL/
-        anslDestinationFolder: Story/
+        anslSourceFolder: Assets/ANSL/Source
+        anslDestinationFolder: Assets/ANSL/Compiled
+        anslResourcePath: ANSL/
         anslVSCodeSnippetsPath: .vscode/
+        linkScriptsToAddressables: 1
+        addressablesLabel: Scripts
         registeredFunctions:
         - typeName: NAJ.ANSL.AddEvidenceFunction
           id: 0
@@ -440,6 +446,9 @@ MonoBehaviour:
       data: 
     - rid: 6964546988055199858
       type: {class: PlayerLocals, ns: ANF.Locals, asm: Assembly-CSharp}
+      data: 
+    - rid: 8808018580948385883
+      type: {class: AddressableResourceManager, ns: ANF.Persistent, asm: Assembly-CSharp}
       data: 
     - rid: 9131134223052177487
       type: {class: QuestInfosContainer, ns: ANF.Persistent, asm: Assembly-CSharp}

@@ -12,7 +12,6 @@ namespace ANF.Persistent
     public class LogsContainer : DataContainer
     {
         [Header("Logs")]
-        [SerializeField] private string pathToImagesInResources;
         private List<KeyValuePair<bool, string>> allLogs;
         private List<bool> knownLogs;
 
@@ -20,7 +19,6 @@ namespace ANF.Persistent
         {
             return new LogsContainer()
             {
-                pathToImagesInResources = pathToImagesInResources
             };
         }
 
@@ -80,16 +78,6 @@ namespace ANF.Persistent
         }
 
         /// <summary>
-        /// Gets a log's sprite
-        /// </summary>
-        /// <param name="logID">The log's ID</param>
-        /// <returns>The log's sprite if found</returns>
-        public Sprite GetLogSprite(string logID)
-        {
-            return Resources.Load<Sprite>(pathToImagesInResources + logID);
-        }
-
-        /// <summary>
         /// Gets the list of all logs (known and unknown)
         /// </summary>
         /// <returns>The list of logs</returns>
@@ -137,9 +125,17 @@ namespace ANF.Persistent
             allLogs.Clear();
             knownLogs.Clear();
 
-            List<string> lines = FileManager.ReadTextAsset(
-                Resources.Load<TextAsset>(settings.generalDataPath + "logs")
-            );
+            if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                return;
+
+            string fileName = settings.generalDataPath + "logs";
+
+            TextAsset asset = resourceManager.GetResource<TextAsset>(fileName);
+
+            if (!asset)
+                return;
+
+            List<string> lines = FileManager.ReadTextAsset(asset);
 
             foreach (string line in lines)
             {
@@ -149,6 +145,9 @@ namespace ANF.Persistent
                     knownLogs.Add(false);
                 }
             }
+
+            asset = null;
+            resourceManager.ReleaseResource<TextAsset>(fileName);
         }
 
         public void Reset()

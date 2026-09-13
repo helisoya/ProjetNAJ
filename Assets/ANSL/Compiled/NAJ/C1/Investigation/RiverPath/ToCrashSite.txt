@@ -1,0 +1,11 @@
+#BC4D332C8D30FF7096E93F2811152605D41D8CD98F00B204E9800998ECF8427E
+37|1|6|C1_AxeProgress == 2
+32|null|null|Cutting trees...
+36|1|true
+84|false
+41|../CrashSite/Arrival
+39|10
+32|null|null|Need an axe.
+90|C1_AxeProgress|=|1
+41|Interaction
+39|10

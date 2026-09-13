@@ -33,8 +33,11 @@ namespace NAJ.Persistent
             knownProfiles = new Dictionary<string, NAJCaseProfile>();
             knownEvidence = new Dictionary<string, NAJCaseEvidence>();
 
+            if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                return;
+
             List<string> lines = FileManager.ReadTextAsset(
-                Resources.Load<TextAsset>(settings.generalDataPath + "evidence")
+                resourceManager.GetResource<TextAsset>(settings.generalDataPath + "evidence")
             );
 
             foreach (string line in lines)
@@ -125,6 +128,8 @@ namespace NAJ.Persistent
                     }
                 }
             }
+
+            resourceManager.ReleaseResource<TextAsset>(settings.generalDataPath + "evidence");
         }
 
         /// <summary>

@@ -233,7 +233,7 @@ MonoBehaviour:
   casesInfo:
   - nameKey: Case 1
     image: {fileID: 21300000, guid: cc4de9da3ac6de649a558576e2a60af4, type: 3}
-    entrypoint: /NAJ/C1/EntryPoints/Investigation
+    entrypoint: /NAJ/C1/EntryPoints/Intro
   - nameKey: Ace JMIN ????
     image: {fileID: 21300000, guid: cc4de9da3ac6de649a558576e2a60af4, type: 3}
     entrypoint: /NAJ/Prototype/C1/EntryPoint

@@ -320,7 +320,10 @@ namespace ANF.Locals
         /// <param name="fileName">The filename</param>
         void LoadContent(string fileName)
         {
-            TextAsset textAsset = Resources.Load<TextAsset>("Locals/" + fileName);
+            if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                return;
+
+            TextAsset textAsset = resourceManager.GetResource<TextAsset>("Locals/" + fileName);
             if (!textAsset)
                 return;
 
@@ -349,6 +352,9 @@ namespace ANF.Locals
 
                 locals.TryAdd(split[0], split[1]);
             }
+
+            textAsset = null;
+            resourceManager.ReleaseResource<TextAsset>("Locals/" + fileName);
         }
 
         public void Initialize(ANFSettings settings)

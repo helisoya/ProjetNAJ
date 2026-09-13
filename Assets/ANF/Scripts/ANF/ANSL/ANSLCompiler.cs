@@ -13,6 +13,14 @@ namespace ANF.ANSL
     /// </summary>
     public class ANSLCompiler
     {
+        public enum ResultType
+        {
+            Success,
+            SameFile,
+            Failure
+        }
+
+
         private string sourceFilepath;
         private bool isfirstLine;
 
@@ -216,7 +224,7 @@ namespace ANF.ANSL
         /// <param name="errors">The global error list</param>
         /// <param name="functionsChecksum">The function list's checksum</param>
         /// <param name="ignoreChecksum">True if the checksum should be ignored</param>
-        public bool Compile(string sourceFile, string destinationFile, List<KeyValuePair<ANSLFunction, uint>> functions,
+        public ResultType Compile(string sourceFile, string destinationFile, List<KeyValuePair<ANSLFunction, uint>> functions,
             List<ANSLUtils.ANSLError> errors, string functionsChecksum, bool ignoreChecksum = false)
         {
             sourceFilepath = sourceFile;
@@ -237,7 +245,7 @@ namespace ANF.ANSL
                     line = 0,
                     errorMessage = $"Could not open file."
                 });
-                return false;
+                return ResultType.Failure;
             }
 
             for (int i = 0; i < inLines.Count; i++)
@@ -259,7 +267,7 @@ namespace ANF.ANSL
                             line = i,
                             errorMessage = $"Bad macro usage : {line}."
                         });
-                        return false;
+                        return ResultType.Failure;
                     }
 
                     string name = line.Substring(0, startIdx);
@@ -282,7 +290,7 @@ namespace ANF.ANSL
                                     line = i,
                                     errorMessage = $"Unknown parameters count : {line}."
                                 });
-                                return false;
+                                return ResultType.Failure;
                             }
                             int newLineIndex = i;
                             foreach (string macroLine in macroData.content)
@@ -323,7 +331,7 @@ namespace ANF.ANSL
                     {
                         string checksum = firstLine.Substring(1);
                         if (checksum.Equals(newChecksum))
-                            return true;
+                            return ResultType.SameFile;
                     }
                 }
             }
@@ -339,7 +347,12 @@ namespace ANF.ANSL
 
             CheckNextLine();
 
-            return ContinueCompiling();
+            bool result = ContinueCompiling();
+
+            if (result)
+                return ResultType.Success;
+
+            return ResultType.Failure;
         }
 
         /// <summary>

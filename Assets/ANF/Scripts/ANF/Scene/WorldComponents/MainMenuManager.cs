@@ -25,6 +25,11 @@ namespace ANF.Scene
         [SerializeField] private string defaultSkybox = "";
         [SerializeField] private MainMenuBackgroundType backgroundType = MainMenuBackgroundType.UseAutosave;
 
+        private bool waitingForBackgroundLoad = false;
+        private BackgroundManager backgroundManager;
+
+        string selectedSkybox;
+        string selectedWeather;
 
         public override WorldComponent CloneComponent()
         {
@@ -45,11 +50,17 @@ namespace ANF.Scene
 
         public override void OnStart()
         {
-            if (manager.GetWorld().GetComponent(out BackgroundManager backgroundManager))
+            if (manager.GetGUIManager().GetComponent(out GUI.Fade fade))
             {
+                fade.FadeAlphaTo(1, true);
+            }
+
+            if (manager.GetWorld().GetComponent(out backgroundManager))
+            {
+                waitingForBackgroundLoad = false;
                 string selectedBackground = defaultBackground;
-                string selectedSkybox = defaultSkybox;
-                string selectedWeather = defaultWeather;
+                selectedSkybox = defaultSkybox;
+                selectedWeather = defaultWeather;
 
                 if (backgroundType == MainMenuBackgroundType.UseAutosave)
                 {
@@ -77,18 +88,38 @@ namespace ANF.Scene
                 if (!string.IsNullOrEmpty(selectedBackground))
                 {
                     backgroundManager.SetBackground(selectedBackground, true);
-                    backgroundManager.SetSkybox(selectedSkybox);
-                    backgroundManager.SetWeatherEffect(selectedWeather);
+                    waitingForBackgroundLoad = true;
                 }
             }
         }
 
         public override void OnUpdate()
         {
+            if (waitingForBackgroundLoad && backgroundManager != null)
+            {
+                if (!backgroundManager.loadingBackground)
+                {
+                    waitingForBackgroundLoad = false;
+                    backgroundManager.SetWeatherEffect(selectedWeather);
+                    backgroundManager.SetSkybox(selectedSkybox);
+
+                    if (manager.GetGUIManager().GetComponent(out GUI.Fade fade))
+                    {
+                        fade.FadeAlphaTo(0);
+                    }
+
+                }
+                else if (backgroundManager.isPaused)
+                {
+                    backgroundManager.SetPaused(false);
+                }
+
+            }
         }
 
         public override void OnPaused()
         {
+            SetPaused(false);
         }
 
         public override void OnUnPaused()
@@ -121,6 +152,7 @@ namespace ANF.Scene
 
         public override bool OnChangeScene()
         {
+            backgroundManager = null;
             return true;
         }
 

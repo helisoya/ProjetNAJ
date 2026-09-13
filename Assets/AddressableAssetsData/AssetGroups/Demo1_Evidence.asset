@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Demo1_Evidence
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Demo1_Evidence
+  m_GUID: ca4a6ed6a33c4cb438b095b7a29788cd
+  m_SerializeEntries:
+  - m_GUID: 2b1ce9cadfda7e3429baccdf838002ca
+    m_Address: Evidence/Check/PlaceHolders3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Evidence
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 452c05df78d055e47923b25f98ec634c
+    m_Address: Evidence/Icons/PlaceHolders
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Evidence
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 772cba3bf8d377a409ba1bb4df8dd04f
+    m_Address: Evidence/Check/PlaceHolders2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Evidence
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 969837e50b594af4f9e7772dba5c2bd6
+    m_Address: Evidence/Check/PlaceHolders4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Evidence
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae9520b17f4cb574e8ad3b0c36834927
+    m_Address: Evidence/Check/PlaceHolders8
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Evidence
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b2e6cac1624233147b8d67a77df30905
+    m_Address: Evidence/Icons/PlaceHolders2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Evidence
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f50a08db25fe3a24f8e8a8e51491343d, type: 2}
+    - {fileID: 11400000, guid: 55ade61d77b68934aa6c0ea88760e9af, type: 2}

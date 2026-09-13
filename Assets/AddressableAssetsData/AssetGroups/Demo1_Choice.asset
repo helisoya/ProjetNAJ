@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Demo1_Choice
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Demo1_Choice
+  m_GUID: 3566e7f90fab98f42bcbb5c8f8870462
+  m_SerializeEntries:
+  - m_GUID: c0d84e1c5e378ee4ab93012f5a6561d5
+    m_Address: Choices/Test_Choice
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Choice
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9300797ba6ad88b4993c372abb70f4ca, type: 2}
+    - {fileID: 11400000, guid: d5822b787a21a7f4caa662df3d9f4ba2, type: 2}

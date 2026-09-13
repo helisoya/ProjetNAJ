@@ -94,8 +94,11 @@ namespace ANF.Persistent
             string currentCategory = null;
             List<QuestInfo> currentList = null;
 
+            if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                return;
+
             List<string> lines = FileManager.ReadTextAsset(
-                Resources.Load<TextAsset>(settings.generalDataPath + "quests")
+                resourceManager.GetResource<TextAsset>(settings.generalDataPath + "quests")
             );
 
             foreach (string line in lines)
@@ -132,6 +135,8 @@ namespace ANF.Persistent
                     }
                 }
             }
+
+            resourceManager.ReleaseResource<TextAsset>(settings.generalDataPath + "quests");
         }
 
         public void Save(JSON json)

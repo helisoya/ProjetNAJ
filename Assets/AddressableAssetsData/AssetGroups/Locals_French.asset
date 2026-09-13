@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Locals_French
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Locals_French
+  m_GUID: 7e5699e9c61e95349915ece32e605c0b
+  m_SerializeEntries:
+  - m_GUID: 0d97c85d3ae150f438a4a9a0740c6ca4
+    m_Address: Locals/fra_system
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locals
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7da13133aeec9924587be5bd34c77a63
+    m_Address: Locals/fra_test
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locals
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe7395949e754ba43901145ca0d1991b
+    m_Address: Locals/fra_common
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locals
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c9f979736e540d34989111fd67e930ab, type: 2}
+    - {fileID: 11400000, guid: 59727a0b1efbde444975f0de7451f1d6, type: 2}

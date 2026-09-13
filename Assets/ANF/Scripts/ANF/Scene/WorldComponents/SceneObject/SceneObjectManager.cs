@@ -1,3 +1,4 @@
+using ANF.Persistent;
 using Leguar.TotalJSON;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,7 @@ namespace ANF.Scene
         private Dictionary<string, ObjectInstance<Type>> objects;
         private bool skipModeEnabled;
         private Dictionary<string, JSON> loadDataCache;
+        private ResourceManager resourceManager;
 
         public override void OnInitialize()
         {
@@ -38,7 +40,7 @@ namespace ANF.Scene
 
         public override void OnStart()
         {
-
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
         }
 
         public override void OnUpdate()
@@ -85,22 +87,28 @@ namespace ANF.Scene
         /// <returns>True if the operation was a success</returns>
         public bool AddSceneObject(string name, out Type obj)
         {
-            if (objects.ContainsKey(name))
+            if (resourceManager == null || objects.ContainsKey(name))
             {
                 obj = null;
                 return false;
             }
             else
             {
-                Type resource = Resources.Load<Type>(prefabsPath + name);
+                GameObject resource = resourceManager.GetResource<GameObject>(prefabsPath + name);
 
-                if (resource == null)
+                if (resource == null || !resource.TryGetComponent<Type>(out Type castedResource))
                 {
                     obj = null;
                     return false;
                 }
 
-                obj = Object.Instantiate(resource, manager.transform);
+                if (castedResource == null)
+                {
+                    obj = null;
+                    return false;
+                }
+
+                obj = Object.Instantiate(castedResource, manager.transform);
                 obj.Create(manager);
                 obj.OnSkipModeToggle(skipModeEnabled);
                 objects.Add(name, new ObjectInstance<Type>() { obj = obj, loadedFromResources = true });
@@ -120,7 +128,13 @@ namespace ANF.Scene
             {
                 objects[name].obj.Remove(manager);
                 if (destroyGameObject)
+                {
                     Object.Destroy(objects[name].obj.gameObject);
+                    if (resourceManager != null)
+                    {
+                        resourceManager.ReleaseResource<GameObject>(prefabsPath + name);
+                    }
+                }
                 objects.Remove(name);
                 return true;
             }
@@ -238,10 +252,19 @@ namespace ANF.Scene
 
         public override bool OnChangeScene()
         {
-            foreach (ObjectInstance<Type> obj in objects.Values)
+            foreach (string key in objects.Keys)
             {
-                obj.obj.Remove(manager);
+                objects[key].obj.Remove(manager);
+                if (objects[key].loadedFromResources)
+                {
+                    Object.Destroy(objects[key].obj.gameObject);
+                    if (resourceManager != null)
+                    {
+                        resourceManager.ReleaseResource<GameObject>(prefabsPath + key);
+                    }
+                }
             }
+            resourceManager = null;
             return true;
         }
 

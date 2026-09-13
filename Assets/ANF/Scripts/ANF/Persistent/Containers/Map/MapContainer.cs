@@ -23,8 +23,11 @@ namespace ANF.Persistent
 
         public void Initialize(ANFSettings settings)
         {
-            maps = Resources.Load<MapsData>(settings.generalDataPath + "MapsData");
-            LoadMapDefs(settings);
+            if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                return;
+
+            maps = resourceManager.GetResource<MapsData>(settings.generalDataPath + "MapsData");
+            LoadMapDefs(settings, resourceManager);
         }
 
         /// <summary>
@@ -61,14 +64,18 @@ namespace ANF.Persistent
         /// <summary>
 		/// Loads the known map defs
         /// <paramref name="settings"/>The ANF Settings</param>
+        /// <param name="resourceManager">The Resource Manager</param>
 		/// </summary>
-        private void LoadMapDefs(ANFSettings settings)
+        private void LoadMapDefs(ANFSettings settings, ResourceManager resourceManager)
         {
             mapDefs = new List<MapDefs>();
 
+            if (resourceManager == null)
+                return;
+
             MapDefs currentDef = null;
             List<string> lines = FileManager.ReadTextAsset(
-                Resources.Load<TextAsset>(settings.generalDataPath + "mapDefs")
+                resourceManager.GetResource<TextAsset>(settings.generalDataPath + "mapDefs")
             );
 
             foreach (string line in lines)
@@ -161,6 +168,8 @@ namespace ANF.Persistent
             {
                 mapDefs.Add(currentDef);
             }
+
+            resourceManager.ReleaseResource<TextAsset>(settings.generalDataPath + "mapDefs");
 
         }
 

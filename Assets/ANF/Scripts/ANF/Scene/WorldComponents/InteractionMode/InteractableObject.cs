@@ -13,12 +13,22 @@ namespace ANF.Scene
         [Tooltip("The icon display when interacting with the mouse")]
         [SerializeField] private Texture2D icon;
         private string nextScript;
+        private float currentAlpha = 0.0f;
+        private Color currentColor = Color.blue;
+        private Tweener alphaTweener;
+        private Tweener colorTweener;
+        private MaterialPropertyBlock propertyBlock;
 
         [Header("Renderers")]
         [Tooltip("Represents the renderers that will be highlighted when in interaction mode")]
         [SerializeField] private Renderer[] objectRenderers;
         [SerializeField] private Collider interactionCollider;
         private bool hidden;
+
+        void Awake()
+        {
+            propertyBlock = new MaterialPropertyBlock();
+        }
 
         /// <summary>
         /// Initialize the component (Editor Script)
@@ -54,17 +64,17 @@ namespace ANF.Scene
         {
             if (hidden) return;
 
-            foreach (Renderer renderer in objectRenderers)
+            if (alphaTweener != null)
+                alphaTweener.Kill();
+
+            alphaTweener = DOVirtual.Float(currentAlpha, alpha, 0.5f, (float value) =>
             {
-                foreach (Material material in renderer.materials)
-                {
-                    if (material.HasFloat("_HighlightAlpha"))
-                    {
-                        DOTween.Kill(material, 0);
-                        material.DOFloat(alpha, "_HighlightAlpha", 0.5f).SetEase(Ease.OutQuad).SetId(0);
-                    }
-                }
-            }
+                currentAlpha = value;
+                propertyBlock.SetFloat("_HighlightAlpha", value);
+                foreach (Renderer renderer in objectRenderers)
+                    if (renderer)
+                        renderer.SetPropertyBlock(propertyBlock);
+            }).SetEase(Ease.OutQuad).OnComplete(() => { alphaTweener = null; }).OnKill(() => { alphaTweener = null; });
         }
 
         /// <summary>
@@ -75,16 +85,11 @@ namespace ANF.Scene
         {
             if (hidden) return;
 
+            MaterialPropertyBlock newBlock = new MaterialPropertyBlock();
+            newBlock.SetFloat("_HighlightStrength", strength);
+
             foreach (Renderer renderer in objectRenderers)
-            {
-                foreach (Material material in renderer.materials)
-                {
-                    if (material.HasFloat("_HighlightStrength"))
-                    {
-                        material.SetFloat("_HighlightStrength", strength);
-                    }
-                }
-            }
+                renderer.SetPropertyBlock(newBlock);
         }
 
         /// <summary>
@@ -95,18 +100,17 @@ namespace ANF.Scene
         {
             if (hidden) return;
 
-            foreach (Renderer renderer in objectRenderers)
-            {
-                foreach (Material material in renderer.materials)
-                {
-                    if (material.HasColor("_HighlightColor"))
-                    {
-                        DOTween.Kill(material, 1);
-                        material.DOColor(color, "_HighlightColor", 0.5f).SetEase(Ease.OutQuad).SetId(1);
-                    }
+            if (colorTweener != null)
+                colorTweener.Kill();
 
-                }
-            }
+            alphaTweener = DOVirtual.Color(currentColor, color, 0.5f, (Color value) =>
+            {
+                currentColor = value;
+                propertyBlock.SetColor("_HighlightColor", value);
+                foreach (Renderer renderer in objectRenderers)
+                    if (renderer)
+                        renderer.SetPropertyBlock(propertyBlock);
+            }).SetEase(Ease.OutQuad).OnComplete(() => { alphaTweener = null; }).OnKill(() => { alphaTweener = null; }); ;
         }
 
         /// <summary>
@@ -169,15 +173,11 @@ namespace ANF.Scene
         /// </summary>
         public void StopAllTween()
         {
-            foreach (Renderer renderer in objectRenderers)
-            {
-                foreach (Material material in renderer.materials)
-                {
-                    DOTween.Kill(material, 0);
-                    DOTween.Kill(material, 1);
-                }
-            }
+            if (alphaTweener != null && !alphaTweener.IsComplete())
+                alphaTweener.Kill();
+
+            if (colorTweener != null && !colorTweener.IsComplete())
+                colorTweener.Kill();
         }
     }
-
 }

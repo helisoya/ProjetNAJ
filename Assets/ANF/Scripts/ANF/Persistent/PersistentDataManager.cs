@@ -10,6 +10,7 @@ namespace ANF.Persistent
     public class PersistentDataManager : MonoBehaviour
     {
         public static PersistentDataManager instance { get; private set; }
+        public bool hasLoaded { get; private set; }
 
         [Header("Data")]
         [SerializeField] private ANFSettings anfSettings;
@@ -22,24 +23,42 @@ namespace ANF.Persistent
             if (!instance)
             {
                 instance = this;
-
-                anfInput.Initialize();
-
-                playerData = new ContainerManager(anfSettings.registeredPlayerDataContainers, anfSettings);
-                globalData = new ContainerManager(anfSettings.registeredGlobalDataContainers, anfSettings);
-
-                string globalDataSaveFile = FileManager.savPath + anfSettings.saveFolder + "global.json";
-                if (SaveUtils.FileExists(globalDataSaveFile))
-                    SaveUtils.LoadGlobalData(globalData, anfInput, globalDataSaveFile);
-                else
-                    SaveUtils.SaveGlobalData(globalData, anfInput, globalDataSaveFile);
-
+                hasLoaded = false;
                 DontDestroyOnLoad(gameObject);
             }
             else
             {
                 Destroy(gameObject);
             }
+        }
+
+        void Start()
+        {
+            if (instance == this && !hasLoaded)
+            {
+                Load();
+            }
+        }
+
+        /// <summary>
+		/// Loads the data manager
+		/// </summary>
+        public void Load()
+        {
+            anfInput.Initialize();
+
+            playerData = new ContainerManager(anfSettings.registeredPlayerDataContainers);
+            globalData = new ContainerManager(anfSettings.registeredGlobalDataContainers);
+            playerData.Initialize(anfSettings);
+            globalData.Initialize(anfSettings);
+
+            string globalDataSaveFile = FileManager.savPath + anfSettings.saveFolder + "global.json";
+            if (SaveUtils.FileExists(globalDataSaveFile))
+                SaveUtils.LoadGlobalData(globalData, anfInput, globalDataSaveFile);
+            else
+                SaveUtils.SaveGlobalData(globalData, anfInput, globalDataSaveFile);
+
+            hasLoaded = true;
         }
 
         /// <summary>

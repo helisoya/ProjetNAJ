@@ -21,6 +21,19 @@ namespace NAJ.GUI
         private AudioManager audioManager;
 
         /// <summary>
+        /// Destroys the button
+        /// </summary>
+        public void Destroy()
+        {
+            audioManager = null;
+            icon.sprite = null;
+            selectionOutline.sprite = null;
+            menu = null;
+            data = null;
+            Destroy(gameObject);
+        }
+
+        /// <summary>
         /// Initialize the button
         /// </summary>
         /// <param name="id">The button's id</param>
@@ -43,6 +56,15 @@ namespace NAJ.GUI
                 selectionOutline.gameObject.SetActive(false);
 
             selectionOutline.pixelsPerUnitMultiplier = 2.0f;
+        }
+
+        /// <summary>
+		/// Gets the linked data
+		/// </summary>
+		/// <returns>The linked data</returns>
+        public InventoryUIButtonData GetData()
+        {
+            return data;
         }
 
         public void OnEnter()

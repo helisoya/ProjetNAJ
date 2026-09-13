@@ -19,8 +19,7 @@ namespace ANF.Persistent
 
 
         [Header("Infos")]
-        [Tooltip("True if all audio clips should be cached for any further use")]
-        [SerializeField] private bool cacheAudioClips = true;
+        [SerializeField] private string[] bundlesToPreload = { "Common_SFX" };
         [SerializeField] private string pathToAudioResources;
         [SerializeField] private AudioMixer mixer;
         private Dictionary<string, AudioClip>[] cache; // SFX, Voice, Ambient, Music
@@ -29,22 +28,20 @@ namespace ANF.Persistent
 
         private AudioSource sfxSource;
         private AudioSource voiceSource;
-        private string currentAmbient;
-        private float currentAmbientVolume;
-        private string currentMusic;
-        private float currentMusicVolume;
 
         private float defaultMusicVolume;
         private float defaultSFXVolume;
         private float defaultAmbientVolume;
         private float defaultVoiceVolume;
 
+        private PlayerAudioData playerAudioData;
+        private ResourceManager resourceManager;
+
         public override DataContainer CloneContainer()
         {
             return new DefaultAudioManager()
             {
                 pathToAudioResources = pathToAudioResources,
-                cacheAudioClips = cacheAudioClips,
                 mixer = mixer,
                 sfxVolume = sfxVolume,
                 musicVolume = musicVolume,
@@ -55,24 +52,28 @@ namespace ANF.Persistent
 
         public override void Initialize(ANFSettings settings)
         {
-            if (cacheAudioClips)
+            playerAudioData = new PlayerAudioData();
+            playerAudioData.SetAudioManager(this);
+            PersistentDataManager.instance.GetPlayerData().AddComponent(playerAudioData, null, settings);
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
+
+            foreach (string bundles in bundlesToPreload)
             {
-                cache = new Dictionary<string, AudioClip>[4]
-                {
-                    new(),
-                    new(),
-                    new(),
-                    new()
-                };
+                resourceManager.LoadBundle<AudioClip>(bundles);
             }
+
+            cache = new Dictionary<string, AudioClip>[4]
+            {
+                new(),
+                new(),
+                new(),
+                new()
+            };
 
             defaultMusicVolume = musicVolume;
             defaultSFXVolume = sfxVolume;
             defaultAmbientVolume = ambientVolume;
             defaultVoiceVolume = voiceVolume;
-
-            currentAmbient = null;
-            currentMusic = null;
 
             musics = new List<DefaultAudioSong>();
             ambients = new List<DefaultAudioSong>();
@@ -102,19 +103,6 @@ namespace ANF.Persistent
             json.Add("voiceVolume", voiceVolume);
             json.Add("musicVolume", musicVolume);
             json.Add("ambientVolume", ambientVolume);
-
-            if (currentAmbient != null)
-            {
-                json.Add("currentAmbient", currentAmbient);
-                json.Add("currentAmbientVolume", currentAmbientVolume);
-            }
-
-            if (currentMusic != null)
-            {
-                json.Add("currentMusic", currentMusic);
-                json.Add("currentMusicVolume", currentMusicVolume);
-            }
-
         }
 
         public override void Load(JSON json)
@@ -127,23 +115,6 @@ namespace ANF.Persistent
                 musicVolume = json.GetFloat("musicVolume");
             if (json.ContainsKey("ambientVolume"))
                 ambientVolume = json.GetFloat("ambientVolume");
-
-            if (json.ContainsKey("currentAmbient"))
-            {
-                float volume = 1.0f;
-                if (json.ContainsKey("currentAmbientVolume"))
-                    volume = json.GetFloat("currentAmbientVolume");
-                PlayAmbient(json.GetString("currentAmbient"), volume);
-            }
-
-
-            if (json.ContainsKey("currentMusic"))
-            {
-                float volume = 1.0f;
-                if (json.ContainsKey("currentMusicVolume"))
-                    volume = json.GetFloat("currentMusicVolume");
-                PlayMusic(json.GetString("currentMusic"), volume);
-            }
         }
 
         public override void Reset()
@@ -156,8 +127,8 @@ namespace ANF.Persistent
 
         public override void PlayAmbient(string ambientName, float baseVolume)
         {
-            currentAmbient = ambientName;
-            currentAmbientVolume = baseVolume;
+            playerAudioData.SetCurrentAmbient(ambientName);
+            playerAudioData.SetCurrentAmbientVolume(baseVolume);
 
             if (ambientName == null)
                 return;
@@ -180,8 +151,8 @@ namespace ANF.Persistent
 
         public override void PlayMusic(string musicName, float baseVolume)
         {
-            currentMusic = musicName;
-            currentMusicVolume = baseVolume;
+            playerAudioData.SetCurrentMusic(musicName);
+            playerAudioData.SetCurrentMusicVolume(baseVolume);
 
             if (musicName == null)
                 return;
@@ -248,6 +219,8 @@ namespace ANF.Persistent
 		/// </summary>
         public void UpdateManager()
         {
+            string currentMusic = playerAudioData.GetCurrentMusic();
+            string currentAmbient = playerAudioData.GetCurrentAmbient();
             int i = musics.Count - 1;
             while (i >= 0 && musics.Count != 0)
             {
@@ -284,11 +257,11 @@ namespace ANF.Persistent
         {
             AudioClip clip;
 
-            if (!cacheAudioClips || !cache[cacheIndex].TryGetValue(clipName, out clip))
+            if (!cache[cacheIndex].TryGetValue(clipName, out clip) && resourceManager != null)
             {
-                clip = Resources.Load<AudioClip>($"{pathToAudioResources}{subFolderName}{clipName}");
+                clip = resourceManager.GetResource<AudioClip>($"{pathToAudioResources}{subFolderName}{clipName}");
 
-                if (clip && cacheAudioClips)
+                if (clip)
                     cache[cacheIndex].Add(clipName, clip);
             }
 
@@ -364,8 +337,8 @@ namespace ANF.Persistent
     }
 
     /// <summary>
-	/// Represents a default audio "song" (ambient/music)
-	/// </summary>
+    /// Represents a default audio "song" (ambient/music)
+    /// </summary>
     public class DefaultAudioSong
     {
         private AudioSource source;

@@ -105,4 +105,147 @@ namespace ANF.Persistent
 		/// </summary>
         public abstract void PlayUICursorCancelSFX();
     }
+
+    /// <summary>
+    /// Represents the part of the audio manager that needs to be saved in the player data
+    /// </summary>
+    public class PlayerAudioData : DataContainer
+    {
+        private AudioManager audioManager;
+        private string currentAmbient;
+        private float currentAmbientVolume;
+        private string currentMusic;
+        private float currentMusicVolume;
+
+        /// <summary>
+		/// Sets the current ambient
+		/// </summary>
+		/// <param name="ambient">The new ambient</param>
+        public void SetCurrentAmbient(string ambient)
+        {
+            currentAmbient = ambient;
+        }
+
+        /// <summary>
+		/// Gets the current ambient
+		/// </summary>
+		/// <returns>The current ambient</returns>
+        public string GetCurrentAmbient()
+        {
+            return currentAmbient;
+        }
+
+        /// <summary>
+		/// Sets the current music
+		/// </summary>
+		/// <param name="music">The new music</param>
+        public void SetCurrentMusic(string music)
+        {
+            currentMusic = music;
+        }
+
+        /// <summary>
+		/// Gets the current music
+		/// </summary>
+		/// <returns>The current music</returns>
+        public string GetCurrentMusic()
+        {
+            return currentMusic;
+        }
+
+        /// <summary>
+        /// Sets the current ambient volume
+        /// </summary>
+        /// <param name="ambient">The new ambient volume</param>
+        public void SetCurrentAmbientVolume(float ambientVolume)
+        {
+            currentAmbientVolume = ambientVolume;
+        }
+
+        /// <summary>
+		/// Gets the current ambient volume
+		/// </summary>
+		/// <returns>The current ambient volume</returns>
+        public float GetCurrentAmbientVolume()
+        {
+            return currentAmbientVolume;
+        }
+
+        /// <summary>
+        /// Sets the current music volume
+        /// </summary>
+        /// <param name="music">The new music volume</param>
+        public void SetCurrentMusicVolume(float musicVolume)
+        {
+            currentMusicVolume = musicVolume;
+        }
+
+        /// <summary>
+		/// Gets the current music
+		/// </summary>
+		/// <returns>The current music volume</returns>
+        public float GetCurrentMusicVolume()
+        {
+            return currentMusicVolume;
+        }
+
+        /// <summary>
+		/// Sets the linked audio manager
+		/// </summary>
+		/// <param name="audioManager">The audio manager</param>
+        public void SetAudioManager(AudioManager audioManager)
+        {
+            this.audioManager = audioManager;
+        }
+
+        public DataContainer CloneContainer()
+        {
+            return new PlayerAudioData() { currentAmbient = null, currentMusic = null };
+        }
+
+        public void Initialize(ANFSettings settings)
+        {
+
+        }
+
+        public void Load(JSON json)
+        {
+            if (json.ContainsKey("currentAmbient") && audioManager != null)
+            {
+                float volume = 1.0f;
+                if (json.ContainsKey("currentAmbientVolume"))
+                    volume = json.GetFloat("currentAmbientVolume");
+                audioManager.PlayAmbient(json.GetString("currentAmbient"), volume);
+            }
+
+
+            if (json.ContainsKey("currentMusic") && audioManager != null)
+            {
+                float volume = 1.0f;
+                if (json.ContainsKey("currentMusicVolume"))
+                    volume = json.GetFloat("currentMusicVolume");
+                audioManager.PlayMusic(json.GetString("currentMusic"), volume);
+            }
+        }
+
+        public void Save(JSON json)
+        {
+            if (currentAmbient != null)
+            {
+                json.Add("currentAmbient", currentAmbient);
+                json.Add("currentAmbientVolume", currentAmbientVolume);
+            }
+
+            if (currentMusic != null)
+            {
+                json.Add("currentMusic", currentMusic);
+                json.Add("currentMusicVolume", currentMusicVolume);
+            }
+        }
+
+        public void Reset()
+        {
+
+        }
+    }
 }

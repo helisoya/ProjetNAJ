@@ -1,7 +1,9 @@
+using System.Collections.Generic;
 using ANF.Persistent;
 using ANF.Utils;
 using DG.Tweening;
 using Leguar.TotalJSON;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -33,8 +35,10 @@ namespace ANF.GUI
 
         private ChoiceUIButton[] buttons;
         private Sprite[] iconsCache;
+        private KeyValuePair<string, string>[] iconsCacheNames;
 
         private AudioManager audioManager;
+        private ResourceManager resourceManager;
         private ChoiceData currentData;
         private int currentButtonIndex;
         private int currentButtonInputSide;
@@ -49,7 +53,7 @@ namespace ANF.GUI
         /// </summary>
         public void ShowIcon()
         {
-            if(!iconVisible)
+            if (!iconVisible)
             {
                 iconRoot.DOScale(1.0f, 0.5f).SetEase(Ease.OutQuad);
                 iconVisible = true;
@@ -61,7 +65,7 @@ namespace ANF.GUI
         /// </summary>
         public void HideIcon()
         {
-            if(iconVisible)
+            if (iconVisible)
             {
                 iconRoot.DOScale(0.0f, 0.5f).SetEase(Ease.OutQuad);
                 iconVisible = false;
@@ -74,7 +78,7 @@ namespace ANF.GUI
         /// <param name="sprite">The new icon's sprite</param>
         public void SetIconSprite(Sprite sprite)
         {
-            if(sprite == null)
+            if (sprite == null)
             {
                 if (iconVisible)
                     HideIcon();
@@ -108,7 +112,8 @@ namespace ANF.GUI
 
         public override void OnStart()
         {
-            PersistentDataManager.instance.GetGlobalData().GetComponent<Persistent.AudioManager>(out audioManager);
+            PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
                 cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
@@ -170,15 +175,24 @@ namespace ANF.GUI
 
             buttons = new ChoiceUIButton[currentData.entries.Length];
             iconsCache = new Sprite[currentData.entries.Length];
+            iconsCacheNames = new KeyValuePair<string, string>[currentData.entries.Length];
 
             ChoiceUIButton prefab = currentData.type == ChoiceData.ChoiceType.List ? listButtonPrefab : labelButtonPrefab;
             Transform prefabRoot = currentData.type == ChoiceData.ChoiceType.List ? listButtonsRoot : labelButtonsRoot;
             float circleStep = Mathf.PI * 2.0f / buttons.Length;
-            float arcStep = Mathf.PI / Mathf.Max(1,buttons.Length - 1);
+            float arcStep = Mathf.PI / Mathf.Max(1, buttons.Length - 1);
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                iconsCache[i] = ANFUtils.LoadSprite("Choices/", currentData.entries[i].linkedSprite, currentData.entries[i].linkedSpritesheet);
+                if (resourceManager != null && !string.IsNullOrEmpty(currentData.entries[i].linkedSprite))
+                {
+                    iconsCacheNames[i] = new KeyValuePair<string, string>(currentData.entries[i].linkedSprite, currentData.entries[i].linkedSpritesheet);
+
+                    if (string.IsNullOrEmpty(iconsCacheNames[i].Value))
+                        iconsCache[i] = resourceManager.GetResource<Sprite>($"Choices/{iconsCacheNames[i].Key}");
+                    else
+                        iconsCache[i] = resourceManager.GetSpritesheetResource<Sprite>($"Choices/{iconsCacheNames[i].Value}", iconsCacheNames[i].Key);
+                }
 
                 ChoiceUIButton button = Instantiate(prefab, prefabRoot);
                 button.Initialize(i, currentData.entries[i].textKey, this);
@@ -200,7 +214,7 @@ namespace ANF.GUI
 
                     button.GetComponent<RectTransform>().anchoredPosition = position;
                 }
-                else if(currentData.type == ChoiceData.ChoiceType.Arc)
+                else if (currentData.type == ChoiceData.ChoiceType.Arc)
                 {
                     button.RebuildMesh();
                     float sizeX = button.GetSize().x;
@@ -231,7 +245,7 @@ namespace ANF.GUI
                     iconRoot.sizeDelta = new Vector2(arcIconSize, arcIconSize);
                     SetIconPosition(labelButtonsRoot.position, true);
                 }
-                else if(currentData.type == ChoiceData.ChoiceType.List)
+                else if (currentData.type == ChoiceData.ChoiceType.List)
                 {
                     LayoutRebuilder.ForceRebuildLayoutImmediate(listButtonsRoot);
                     iconRoot.sizeDelta = new Vector2(listIconSize, listIconSize);
@@ -250,6 +264,19 @@ namespace ANF.GUI
                 if (i == currentButtonIndex)
                     buttons[i].Fade(0.5f, () =>
                     {
+                        iconImage.sprite = null;
+                        for (int i = 0; i < iconsCache.Length; i++)
+                        {
+                            if (!string.IsNullOrEmpty(iconsCacheNames[i].Key))
+                            {
+                                iconsCache[i] = null;
+                                if (string.IsNullOrEmpty(iconsCacheNames[i].Value))
+                                    resourceManager.ReleaseResource<Sprite>($"Choices/{iconsCacheNames[i].Key}");
+                                else
+                                    resourceManager.ReleaseSpritesheetResource<Sprite>($"Choices/{iconsCacheNames[i].Value}", iconsCacheNames[i].Key);
+                            }
+                        }
+
                         showingChoice = false;
                         foreach (Transform child in listButtonsRoot)
                         {
@@ -363,9 +390,9 @@ namespace ANF.GUI
                     SetIconSprite(iconsCache[currentButtonIndex]);
                 }
 
-                if(currentData.type == ChoiceData.ChoiceType.List && iconsCache[currentButtonIndex] != null)
+                if (currentData.type == ChoiceData.ChoiceType.List && iconsCache[currentButtonIndex] != null)
                 {
-                    SetIconPosition(buttons[currentButtonIndex].transform.position + new Vector3(listIconSpacing * (Screen.width / 800.0f),0,0), !lastHasIcon);
+                    SetIconPosition(buttons[currentButtonIndex].transform.position + new Vector3(listIconSpacing * (Screen.width / 800.0f), 0, 0), !lastHasIcon);
                 }
             }
         }
@@ -380,6 +407,8 @@ namespace ANF.GUI
 
         public override bool OnChangeScene()
         {
+            audioManager = null;
+            resourceManager = null;
             OnUnRegisterInputs();
             return true;
         }

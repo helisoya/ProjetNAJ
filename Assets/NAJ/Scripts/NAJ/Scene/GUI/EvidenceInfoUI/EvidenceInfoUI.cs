@@ -1,3 +1,4 @@
+using System;
 using ANF.GUI;
 using ANF.Locals;
 using ANF.Persistent;
@@ -28,6 +29,7 @@ namespace NAJ.GUI
         [SerializeField] private Image fullImage;
         [SerializeField] private LocalizedText fullName;
         [SerializeField] private LocalizedText fullDesc;
+        private ResourceManager resourceManager;
 
         public enum Status
         {
@@ -43,6 +45,8 @@ namespace NAJ.GUI
 
         public override void OnInitialize()
         {
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
+
             leftRoot.anchoredPosition = new Vector2(-100, leftRoot.anchoredPosition.y);
             rightRoot.anchoredPosition = new Vector2(100, rightRoot.anchoredPosition.y);
             fullRoot.localScale = new Vector2(0, 0);
@@ -84,12 +88,53 @@ namespace NAJ.GUI
 
         public override bool OnChangeScene()
         {
+            leftRoot.DOComplete(true);
+            rightRoot.DOComplete(true);
+            fullRoot.DOComplete(true);
+
+            if ((currentStatus == Status.ShowLeft && leftImage.sprite != null) ||
+                (currentStatus == Status.ShowRight && rightImage.sprite != null) ||
+                (currentStatus == Status.ShowFull && fullImage.sprite != null))
+                ReleaseIcon(currentStatus, currentItem, isEvidence);
+
             return true;
         }
 
         public override bool IsCleaningUpForSceneChange()
         {
             return false;
+        }
+
+        /// <summary>
+		/// Releases an icon
+		/// </summary>
+		/// <param name="status">The linked root</param>
+		/// <param name="itemName">The item's name</param>
+		/// <param name="isEvidence">True if the item is evidence. False if it is a profile</param>
+        private void ReleaseIcon(Status status, string itemName, bool isEvidence)
+        {
+            if (status == Status.ShowLeft)
+                leftImage.sprite = null;
+            else if (status == Status.ShowRight)
+                rightImage.sprite = null;
+            else if (status == Status.ShowFull)
+                fullImage.sprite = null;
+
+            if (itemName != null && resourceManager != null &&
+                PersistentDataManager.instance.GetPlayerData().GetComponent(out NAJCaseInventoryContainer inventoryContainer))
+            {
+                if (isEvidence && inventoryContainer.GetAllEvidence().TryGetValue(itemName, out NAJCaseEvidence evidence))
+                {
+                    evidence.UnloadIcon(resourceManager);
+                }
+                else if (!isEvidence && inventoryContainer.GetAllProfiles().TryGetValue(itemName, out NAJCaseProfile profile))
+                {
+                    profile.UnloadIcon(resourceManager);
+                }
+
+            }
+
+
         }
 
         /// <summary>
@@ -100,17 +145,32 @@ namespace NAJ.GUI
 		/// <param name="isEvidence">True if the item is evidence. False if it is a profile</param>
         public void SetInfos(Status status, string itemName, bool isEvidence)
         {
+            string oldItem = this.currentItem;
+            bool oldIsEvidence = this.isEvidence;
+
             currentItem = itemName;
             this.isEvidence = isEvidence;
 
             if (currentStatus != status)
             {
                 if (currentStatus == Status.ShowLeft)
-                    leftRoot.DOAnchorPosX(-100, 0.5f).SetEase(Ease.OutQuad);
+                {
+                    leftRoot.DOComplete(true);
+                    leftRoot.DOAnchorPosX(-100, 0.5f).SetEase(Ease.OutQuad)
+                        .OnComplete(() => { ReleaseIcon(Status.ShowLeft, oldItem, oldIsEvidence); });
+                }
                 else if (currentStatus == Status.ShowRight)
-                    rightRoot.DOAnchorPosX(100, 0.5f).SetEase(Ease.OutQuad);
+                {
+                    rightRoot.DOComplete(true);
+                    rightRoot.DOAnchorPosX(100, 0.5f).SetEase(Ease.OutQuad)
+                        .OnComplete(() => { ReleaseIcon(Status.ShowRight, oldItem, oldIsEvidence); });
+                }
                 else if (currentStatus == Status.ShowFull)
-                    fullRoot.DOScale(0.0f, 0.5f).SetEase(Ease.OutQuad);
+                {
+                    fullRoot.DOComplete(true);
+                    fullRoot.DOScale(0.0f, 0.5f).SetEase(Ease.OutQuad)
+                        .OnComplete(() => { ReleaseIcon(Status.ShowFull, oldItem, oldIsEvidence); });
+                }
 
                 currentStatus = status;
 
@@ -122,6 +182,8 @@ namespace NAJ.GUI
                     fullRoot.DOScale(1.0f, 0.5f).SetEase(Ease.OutQuad);
             }
 
+
+
             if (currentItem != null &&
             PersistentDataManager.instance.GetPlayerData().GetComponent(out NAJCaseInventoryContainer inventoryContainer))
             {
@@ -132,13 +194,15 @@ namespace NAJ.GUI
                 {
                     nameKey = evidence.GetNameKey();
                     descKey = evidence.GetDescKey();
-                    sprite = evidence.LoadIcon();
+                    if (resourceManager != null)
+                        sprite = evidence.LoadIcon(resourceManager);
                 }
                 else if (!isEvidence && inventoryContainer.GetAllProfiles().TryGetValue(currentItem, out NAJCaseProfile profile))
                 {
                     nameKey = profile.GetNameKey();
                     descKey = profile.GetDescKey();
-                    sprite = profile.LoadIcon();
+                    if (resourceManager != null)
+                        sprite = profile.LoadIcon(resourceManager);
                 }
 
                 if (currentStatus == Status.ShowLeft)

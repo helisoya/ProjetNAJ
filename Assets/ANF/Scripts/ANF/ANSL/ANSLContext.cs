@@ -38,10 +38,12 @@ public class ANSLContext : Jsonable
     private bool autoplayEnabled;
     private ANFManager manager;
     private ANSLSettings settings;
+    private ResourceManager resourceManager;
 
     public ANSLContext(Dictionary<uint, ANSLFunction> functions, uint contextStackLength, uint maxFunctionsPerFrame, ANFManager manager)
     {
         PersistentDataManager.instance.GetANFSettings().FindAdditionalPart(out settings);
+        PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
 
         this.contextStackLength = contextStackLength;
         this.maxFunctionsPerFrame = maxFunctionsPerFrame;
@@ -63,7 +65,7 @@ public class ANSLContext : Jsonable
     public string GetCurrentFilepath(bool cleaned = true)
     {
         if (cleaned)
-            return currentFilePath.Substring(settings != null ? settings.anslDestinationFolder.Length : 0);
+            return currentFilePath.Substring(settings != null ? settings.anslResourcePath.Length : 0);
         else
             return currentFilePath;
     }
@@ -112,10 +114,16 @@ public class ANSLContext : Jsonable
     /// <param name="isFullPath">True if the path is already the full path to the script<param>
     public void LoadScript(string scriptFilePath, uint startLine = 0, bool canAddPreviousToStack = true, bool isFullPath = false)
     {
-        string fullPath = (isFullPath || settings == null ? "" : settings.anslDestinationFolder) +
+        string fullPath = (isFullPath || settings == null ? "" : settings.anslResourcePath) +
             scriptFilePath;
 
-        TextAsset data = Resources.Load<TextAsset>(fullPath);
+        if (resourceManager == null)
+            return;
+
+        if (!string.IsNullOrEmpty(currentFilePath))
+            resourceManager.ReleaseResource<TextAsset>(currentFilePath);
+
+        TextAsset data = resourceManager.GetResource<TextAsset>(fullPath);
         if (data)
         {
             // Add current script to stack if it isn't finished
@@ -211,6 +219,9 @@ public class ANSLContext : Jsonable
         else
         {
             // No more lines in script
+
+            if (resourceManager != null)
+                resourceManager.ReleaseResource<TextAsset>(currentFilePath);
 
             if (scriptStack.Count == 0)
                 StopContext();
@@ -308,6 +319,10 @@ public class ANSLContext : Jsonable
         {
             functions[currentFunctionId].Cleanup();
         }
+
+        settings = null;
+        manager = null;
+        resourceManager = null;
     }
 
 
@@ -392,7 +407,7 @@ public class ANSLContext : Jsonable
 
         if (isRunning)
         {
-            currentScript = FileManager.ReadTextAsset(Resources.Load<TextAsset>(currentFilePath)).ToArray();
+            currentScript = FileManager.ReadTextAsset(resourceManager.GetResource<TextAsset>(currentFilePath)).ToArray();
 
             if (waitingForFunction && json.ContainsKey("currentFunctionParameters"))
             {

@@ -41,7 +41,7 @@ namespace ANF.Persistent
         /// <returns>True if the operation was a success</returns>
         public bool RemoveVariable(string variableName)
         {
-            if(variables.TryGetValue(variableName, out Variable variable) && !variable.isGlobal)
+            if (variables.TryGetValue(variableName, out Variable variable) && !variable.isGlobal)
             {
                 variables.Remove(variableName);
                 return true;
@@ -58,7 +58,7 @@ namespace ANF.Persistent
         /// <returns>True if the operation was a success</returns>
         public bool AddVariable(string variableName, int defaultValue)
         {
-            if(!variables.ContainsKey(variableName))
+            if (!variables.ContainsKey(variableName))
             {
                 variables.Add(variableName, new Variable(variableName, defaultValue, false));
                 return true;
@@ -94,11 +94,13 @@ namespace ANF.Persistent
                         if (isGlobal)
                             SetVariable(varName, varValue);
                         else
-                            variables.Add(varName, new Variable() { 
-                                defaultValue = tmpVar.GetInt("defaultValue"), 
-                                value = varValue, 
-                                isGlobal = false, 
-                                name = varName });
+                            variables.Add(varName, new Variable()
+                            {
+                                defaultValue = tmpVar.GetInt("defaultValue"),
+                                value = varValue,
+                                isGlobal = false,
+                                name = varName
+                            });
                     }
                 }
             }
@@ -274,7 +276,11 @@ namespace ANF.Persistent
         private void GenerateVariablesList(string filePath)
         {
             variables = new Dictionary<string, Variable>();
-            List<string> lines = FileManager.ReadTextAsset(Resources.Load<TextAsset>(filePath));
+
+            if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                return;
+
+            List<string> lines = FileManager.ReadTextAsset(resourceManager.GetResource<TextAsset>(filePath));
             foreach (string line in lines)
             {
                 if (!string.IsNullOrEmpty(line) && !line.StartsWith('#'))
@@ -287,6 +293,8 @@ namespace ANF.Persistent
 
             if (!VariableExists(randomVariableName))
                 variables.Add(randomVariableName, new Variable(randomVariableName, 0, true));
+
+            resourceManager.ReleaseResource<TextAsset>(filePath);
         }
     }
 

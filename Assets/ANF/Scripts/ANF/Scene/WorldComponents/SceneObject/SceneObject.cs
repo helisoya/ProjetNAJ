@@ -141,9 +141,11 @@ namespace ANF.Scene
         /// <param name="alpha">The new alpha</param>
         protected void InternalSetAlpha(float alpha)
         {
+            MaterialPropertyBlock newBlock = new MaterialPropertyBlock();
+            newBlock.SetFloat("_Alpha", alpha);
+
             foreach (Renderer renderer in renderers)
-                foreach (Material material in renderer.materials)
-                    material.SetFloat("_Alpha", alpha);
+                renderer.SetPropertyBlock(newBlock);
         }
 
         /// <summary>
@@ -152,8 +154,14 @@ namespace ANF.Scene
 		/// <returns>The internal alpha value</returns>
         protected float InternalFindAlpha()
         {
-            if (renderers.Length > 0 && renderers[0].material && renderers[0].material.HasFloat("_Alpha"))
-                return renderers[0].material.GetFloat("_Alpha");
+            if (renderers.Length > 0)
+            {
+                MaterialPropertyBlock newBlock = new MaterialPropertyBlock();
+                renderers[0].GetPropertyBlock(newBlock);
+                if (newBlock.HasFloat("_Alpha"))
+                    return newBlock.GetFloat("_Alpha");
+            }
+
             return 1.0f;
         }
 

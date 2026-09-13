@@ -16,12 +16,13 @@ namespace NAJ.GUI
     public class AnimationUI : GUIComponent
     {
         private Dictionary<string, Animator> animations;
+        private ResourceManager resourceManager;
 
         public override void OnInitialize()
         {
             animations = new Dictionary<string, Animator>();
         }
-        
+
         /// <summary>
         /// Checks if an animation is playing
         /// </summary>
@@ -31,7 +32,7 @@ namespace NAJ.GUI
         {
             return animations.ContainsKey(animationId);
         }
-        
+
         /// <summary>
         /// Starts playing a new animation (Only one instance of the same animation at any given point)
         /// </summary>
@@ -39,12 +40,11 @@ namespace NAJ.GUI
         /// <returns>True if the animation was started, false if not found or already existing</returns>
         public bool PlayAnimation(string animationId)
         {
-            if (animations.ContainsKey(animationId))
+            if (resourceManager == null || animations.ContainsKey(animationId))
                 return false;
 
-
-            Animator animator = Resources.Load<Animator>("UIAnimations/" + animationId);
-            if (animator == null)
+            GameObject resource = resourceManager.GetResource<GameObject>("UIAnimations/" + animationId);
+            if (!resource || !resource.TryGetComponent(out Animator animator))
                 return false;
 
             animations.Add(animationId, Instantiate(animator, root.transform));
@@ -54,14 +54,14 @@ namespace NAJ.GUI
 
         public override void OnStart()
         {
-
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
         }
 
         public override void OnUpdate()
         {
             List<string> toRemove = new List<string>();
 
-            foreach(string key in animations.Keys)
+            foreach (string key in animations.Keys)
             {
                 if (animations[key].GetCurrentAnimatorStateInfo(0).normalizedTime > 1 &&
                     !animations[key].IsInTransition(0))
@@ -72,6 +72,9 @@ namespace NAJ.GUI
             {
                 Destroy(animations[key].gameObject);
                 animations.Remove(key);
+
+                if (resourceManager != null)
+                    resourceManager.ReleaseResource<GameObject>("UIAnimations/" + key);
             }
         }
 
@@ -105,6 +108,16 @@ namespace NAJ.GUI
 
         public override bool OnChangeScene()
         {
+            if (resourceManager != null)
+            {
+                foreach (string key in animations.Keys)
+                {
+                    Destroy(animations[key].gameObject);
+                    resourceManager.ReleaseResource<GameObject>("UIAnimations/" + key);
+                }
+            }
+
+            resourceManager = null;
             return true;
         }
 
@@ -120,7 +133,7 @@ namespace NAJ.GUI
 
         public override void OnLoad(JSON json)
         {
-            if(json.ContainsKey("animations"))
+            if (json.ContainsKey("animations"))
             {
                 string[] animations = json.GetJArray("animations").AsStringArray();
                 foreach (string animation in animations)

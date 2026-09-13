@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Demo1_Statics
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Demo1_Statics
+  m_GUID: f311b5868f0b3a94f807e9dbf286a3c2
+  m_SerializeEntries:
+  - m_GUID: 759415538c620ce44a9bb8ca0fc6fbcf
+    m_Address: Statics/TestStatic2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - StaticObjects
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acc3746e97691fd4ab431c2c196a95b3
+    m_Address: Statics/TestStatic
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - StaticObjects
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 87f5fe9ec8695914dac75981145c660c, type: 2}
+    - {fileID: 11400000, guid: 0c3029df756835142a4cc18660aaf870, type: 2}

@@ -1,4 +1,5 @@
 using System;
+using ANF.Persistent;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
@@ -54,53 +55,64 @@ namespace NAJ.Persistent
         }
 
         /// <summary>
-        /// Loads the Icon from the resources folder
+        /// Loads the Icon from the resources
         /// </summary>
+        /// <param name="resourceManager">The resource Manager</param>
         /// <returns>The icon if found</returns>
-        public Sprite LoadIcon()
+        public Sprite LoadIcon(ResourceManager resourceManager)
         {
             string iconKey = GetIconKey();
 
             if (string.IsNullOrEmpty(iconSpriteSheet))
-                return Resources.Load<Sprite>("Evidence/Icons/" + iconKey);
+                return resourceManager.GetResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}");
 
-            Sprite[] sprites = Resources.LoadAll<Sprite>("Evidence/Icons/" + iconSpriteSheet);
-
-            if (sprites == null || sprites.Length == 0)
-                return null;
-
-            foreach (Sprite sprite in sprites)
-            {
-                if (sprite.name.Equals(iconKey))
-                    return sprite;
-            }
-
-            return null;
+            return resourceManager.GetSpritesheetResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}", iconKey);
         }
 
         /// <summary>
-        /// Loads the Check Image from the resources folder
+        /// Unloads the icon from memory
         /// </summary>
+        /// <param name="resourceManager">The resource manager</param>
+        public void UnloadIcon(ResourceManager resourceManager)
+        {
+            string iconKey = GetIconKey();
+
+            if (string.IsNullOrEmpty(iconSpriteSheet))
+                resourceManager.ReleaseResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}");
+            else
+                resourceManager.ReleaseSpritesheetResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}", iconKey);
+        }
+
+        /// <summary>
+        /// Loads the Check Image from the resources
+        /// </summary>
+        /// <param name="imageIndex"></param>
+        /// <param name="resourceManager">The resource manager</param>
         /// <returns>The image if found</returns>
-        public Sprite LoadCheckImage(uint imageIndex)
+        public Sprite LoadCheckImage(uint imageIndex, ResourceManager resourceManager)
         {
             string imageKey = GetImageKey(imageIndex);
 
-            if (string.IsNullOrEmpty(checkImagesSpriteSheet))
-                return Resources.Load<Sprite>("Evidence/Check/" + imageKey);
+            if (string.IsNullOrEmpty(iconSpriteSheet))
+                return resourceManager.GetResource<Sprite>($"Evidence/Check/{imageKey}");
 
-            Sprite[] sprites = Resources.LoadAll<Sprite>("Evidence/Check/" + checkImagesSpriteSheet);
+            return resourceManager.GetSpritesheetResource<Sprite>($"Evidence/Check/{checkImagesSpriteSheet}", imageKey);
+        }
 
-            if (sprites == null || sprites.Length == 0)
-                return null;
+        /// <summary>
+        /// Unloads the Check Image from memory
+        /// </summary>
+        /// <param name="imageIndex"></param>
+        /// <param name="resourceManager">The resource manager</param>
+        /// <returns>The image if found</returns>
+        public void UnloadCheckImage(uint imageIndex, ResourceManager resourceManager)
+        {
+            string imageKey = GetImageKey(imageIndex);
 
-            foreach (Sprite sprite in sprites)
-            {
-                if (sprite.name.Equals(imageKey))
-                    return sprite;
-            }
-
-            return null;
+            if (string.IsNullOrEmpty(iconSpriteSheet))
+                resourceManager.ReleaseResource<Sprite>($"Evidence/Check/{imageKey}");
+            else
+                resourceManager.ReleaseSpritesheetResource<Sprite>($"Evidence/Check/{checkImagesSpriteSheet}", imageKey);
         }
     }
 
@@ -141,28 +153,32 @@ namespace NAJ.Persistent
         }
 
         /// <summary>
-        /// Loads the Icon from the resources folder
+        /// Loads the Icon from the resources
         /// </summary>
+        /// <param name="resourceManager">The resource manager</param>
         /// <returns>The icon if found</returns>
-        public Sprite LoadIcon()
+        public Sprite LoadIcon(ResourceManager resourceManager)
         {
             string iconKey = GetIconKey();
 
             if (string.IsNullOrEmpty(iconSpriteSheet))
-                return Resources.Load<Sprite>("Evidence/Icons/" + iconKey);
+                return resourceManager.GetResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}");
 
-            Sprite[] sprites = Resources.LoadAll<Sprite>("Evidence/Icons/" + iconSpriteSheet);
+            return resourceManager.GetSpritesheetResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}", iconKey);
+        }
 
-            if (sprites == null || sprites.Length == 0)
-                return null;
+        /// <summary>
+		/// Unloads the icon from memory
+		/// </summary>
+		/// <param name="resourceManager">The resource manager</param>
+        public void UnloadIcon(ResourceManager resourceManager)
+        {
+            string iconKey = GetIconKey();
 
-            foreach (Sprite sprite in sprites)
-            {
-                if (sprite.name.Equals(iconKey))
-                    return sprite;
-            }
-
-            return null;
+            if (string.IsNullOrEmpty(iconSpriteSheet))
+                resourceManager.ReleaseResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}");
+            else
+                resourceManager.ReleaseSpritesheetResource<Sprite>($"Evidence/Icons/{iconSpriteSheet}", iconKey);
         }
     }
 }

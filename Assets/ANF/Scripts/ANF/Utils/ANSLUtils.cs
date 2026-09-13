@@ -7,6 +7,13 @@ using System.Reflection;
 using Unity.VisualScripting;
 using System.Security.Cryptography;
 
+#if UNITY_EDITOR
+using UnityEditor.AddressableAssets;
+using UnityEditor.AddressableAssets.Settings;
+using UnityEditor.AddressableAssets.Settings.GroupSchemas;
+using UnityEditor;
+#endif
+
 namespace ANF.Utils
 {
     /// <summary>
@@ -159,7 +166,7 @@ namespace ANF.Utils
         /// </summary>
         /// <param name="currentFilepath">The previous filepath</param>
         /// <param name="nextFilePath">The next filepath</param>
-        /// <returns></returns>
+        /// <returns>The correct filepath</returns>
         public static string ResolveFilePath(string currentFilepath, string nextFilePath)
         {
             if (string.IsNullOrEmpty(nextFilePath))
@@ -344,15 +351,20 @@ namespace ANF.Utils
 
             int totalProgress = 1;
             int currentProgress = 0;
-            List<string> anslFiles = new List<string>();
+            List<KeyValuePair<string, string>> anslFiles = new List<KeyValuePair<string, string>>();
             List<string> definesFiles = new List<string>();
 
             Stack<string> directories = new Stack<string>();
             directories.Push(anslSettings.anslSourceFolder);
 
+            int directoryID = 0;
+            bool hasANSLFiles;
+
             while (directories.Count > 0)
             {
+                hasANSLFiles = false;
                 string directory = directories.Pop();
+                string directoryName = new DirectoryInfo(directory).Name;
 
                 foreach (string subDir in Directory.GetDirectories(directory))
                     directories.Push(subDir);
@@ -362,14 +374,20 @@ namespace ANF.Utils
                     if (file.EndsWith(".defines"))
                         definesFiles.Add(file);
                     else if (file.EndsWith(".ansl"))
-                        anslFiles.Add(file);
+                    {
+                        hasANSLFiles = true;
+                        anslFiles.Add(new KeyValuePair<string, string>(file, $"{directoryID}_{directoryName}"));
+                    }
                 }
+
+                if (hasANSLFiles)
+                    directoryID++;
             }
 
             totalProgress += anslFiles.Count + definesFiles.Count;
 
 
-            UnityEditor.EditorUtility.DisplayProgressBar("ANSL Compilation", "Checking Functions", 0.0f);
+            EditorUtility.DisplayProgressBar("ANSL Compilation", "Checking Functions", 0.0f);
 
             if (CheckANSLFunctions(functions, errors))
             {
@@ -388,27 +406,47 @@ namespace ANF.Utils
                 foreach (string file in definesFiles)
                 {
                     currentProgress++;
-                    UnityEditor.EditorUtility.DisplayProgressBar("ANSL Compilation", file, (float)currentProgress / totalProgress);
+                    EditorUtility.DisplayProgressBar("ANSL Compilation", file, (float)currentProgress / totalProgress);
                     compiler.CompileANSLMacros(file, errors);
                 }
 
                 if (errors.Count > 0)
                 {
-                    UnityEditor.EditorUtility.ClearProgressBar();
+                    EditorUtility.ClearProgressBar();
                     return errors;
                 }
 
+                AddressableAssetSettings addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
+
                 // Compile regular files
-                foreach (string file in anslFiles)
+                foreach (var file in anslFiles)
                 {
                     currentProgress++;
-                    UnityEditor.EditorUtility.DisplayProgressBar("ANSL Compilation", file, (float)currentProgress / totalProgress);
-                    string destPath = "Assets/Resources/" + anslSettings.anslDestinationFolder + file.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", ".txt");
-                    compiler.Compile(file, destPath, functionInstances, errors, functionsChecksum, ignoreChecksum);
-                }
-            }
+                    EditorUtility.DisplayProgressBar("ANSL Compilation", file.Key, (float)currentProgress / totalProgress);
+                    string destPath = anslSettings.anslDestinationFolder + file.Key.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", ".txt");
+                    string resourcePath = (anslSettings.anslResourcePath + file.Key.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", "")).Replace('\\', '/').Replace("//", "/");
+                    ANSLCompiler.ResultType result = compiler.Compile(file.Key, destPath, functionInstances, errors, functionsChecksum, ignoreChecksum);
 
-            UnityEditor.EditorUtility.ClearProgressBar();
+                    if (result == ANSLCompiler.ResultType.Success && anslSettings.linkScriptsToAddressables)
+                    {
+                        AssetDatabase.ImportAsset(destPath, ImportAssetOptions.ForceSynchronousImport);
+                        AddressableAssetGroup group = addressableSettings.FindGroup($"AUTO_ANSL_SCRIPT_{file.Value}");
+
+                        if (!group)
+                        {
+                            group = addressableSettings.CreateGroup($"AUTO_ANSL_SCRIPT_{file.Value}", false, false, false,
+                            null, typeof(BundledAssetGroupSchema), typeof(ContentUpdateGroupSchema));
+                        }
+
+                        AddressableAssetEntry entry = addressableSettings.CreateOrMoveEntry(AssetDatabase.AssetPathToGUID(destPath), group);
+                        entry.SetAddress(resourcePath);
+                        entry.SetLabel(anslSettings.addressablesLabel, true);
+                    }
+                }
+
+                EditorUtility.SetDirty(addressableSettings);
+            }
+            EditorUtility.ClearProgressBar();
 #endif
 
             return errors;

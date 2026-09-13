@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: C1_Characters
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: C1_Characters
+  m_GUID: 485c9b8f7d047b94ea9bc62af3e445ce
+  m_SerializeEntries:
+  - m_GUID: 0218087b5272b394e8428946f6051b62
+    m_Address: Characters/Robert
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4441c3f40e6e3d74f9e9b6f123fa4f55
+    m_Address: Characters/GeraldCoat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b3de6e1f1e6097489fae8e3c9bd0f7a
+    m_Address: Characters/Juno
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fe5ad1570d9ac742b92e2f744ebc373
+    m_Address: Characters/TestCharacter
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 586e137571d5f594c9a513d3957598df
+    m_Address: Characters/GeraldNoCoat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 602b4bc69f4603645a5f024c3509cdcf
+    m_Address: Characters/RannCoat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60c2f9851a1f3c344a5d531548a7f968
+    m_Address: Characters/Sartt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e007092ca6c68349b33df467731f974
+    m_Address: Characters/JudgeTurtle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8238e44c13cce7b4dabdd64d99d4f9b0
+    m_Address: Characters/NovaKaliaSoldiier
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e1f8cc76f59eac4688663038bf3bde8
+    m_Address: Characters/Judge
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa6ef84bab2cc9b4593fb18f08459eae
+    m_Address: Characters/Owl
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9e995bdfeababf5458cfbb1f752c8bdd, type: 2}
+    - {fileID: 11400000, guid: b83e4a848ce8eef49806aa4a5f2544f2, type: 2}

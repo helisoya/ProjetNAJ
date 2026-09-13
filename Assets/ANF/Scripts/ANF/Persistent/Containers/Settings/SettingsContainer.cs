@@ -198,7 +198,11 @@ namespace ANF.Persistent
             savedObjects = new Dictionary<string, SettingsObjectData>();
             SettingsObjectData obj;
             string key;
-            List<string> lines = FileManager.ReadTextAsset(Resources.Load<TextAsset>(filePath));
+
+            if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                return;
+
+            List<string> lines = FileManager.ReadTextAsset(resourceManager.GetResource<TextAsset>(filePath));
             foreach (string line in lines)
             {
                 if (!string.IsNullOrEmpty(line) && !line.StartsWith('#'))
@@ -223,7 +227,7 @@ namespace ANF.Persistent
                     if (obj.type == SettingsDataType.Vector2 || obj.type == SettingsDataType.Vector3 ||
                         obj.type == SettingsDataType.Vector4 || (obj.type == SettingsDataType.Color && !split[correctIdx].StartsWith('#')))
                     {
-                        while(!fullStr.EndsWith(')') && correctIdx < split.Length)
+                        while (!fullStr.EndsWith(')') && correctIdx < split.Length)
                         {
                             fullStr += split[correctIdx];
                             correctIdx++;
@@ -265,7 +269,7 @@ namespace ANF.Persistent
                         if (!fullStr.EndsWith(')') || correctIdx != split.Length)
                             continue;
 
-                        if(obj.type == SettingsDataType.Float)
+                        if (obj.type == SettingsDataType.Float)
                         {
                             // Slider
                             string[] splitSlider = fullStr.Replace("(", "").Replace(")", "").Split(',');
@@ -283,7 +287,7 @@ namespace ANF.Persistent
                             {
                                 drawParameters.dropdownLabels = null;
                             }
-                            else if(drawParameters.dropdownLabels != null)
+                            else if (drawParameters.dropdownLabels != null)
                             {
                                 for (int i = 0; i < drawParameters.dropdownLabels.Length; i++)
                                     drawParameters.dropdownLabels[i] = drawParameters.dropdownLabels[i].Replace(" ", "").Replace("\t", "");
@@ -296,6 +300,8 @@ namespace ANF.Persistent
                     savedObjects.Add(key, obj);
                 }
             }
+
+            resourceManager.ReleaseResource<TextAsset>(filePath);
         }
 
         /// <summary>
@@ -306,7 +312,7 @@ namespace ANF.Persistent
         private SettingsDataType ParseType(string str)
         {
             str = str.ToLower();
-            switch(str)
+            switch (str)
             {
                 case "string":
                     return SettingsDataType.String;
@@ -341,7 +347,7 @@ namespace ANF.Persistent
         {
             float x = 0, y = 0, z = 0, w = 0;
             string[] vectorSplit = str.Replace("(", "").Replace(")", "").Split(',');
-            switch(type)
+            switch (type)
             {
                 case SettingsDataType.String:
                     return str;
@@ -369,7 +375,7 @@ namespace ANF.Persistent
                             color.a = 1;
                             return color;
                         }
-                            
+
                         break;
                     }
                     else
@@ -384,7 +390,7 @@ namespace ANF.Persistent
                     goto case SettingsDataType.Vector2;
                 case SettingsDataType.Vector2:
 
-                    if (vectorSplit.Length < 2 || 
+                    if (vectorSplit.Length < 2 ||
                         !float.TryParse(vectorSplit[1], NumberStyles.Float, CultureInfo.InvariantCulture, out y) ||
                         !float.TryParse(vectorSplit[0], NumberStyles.Float, CultureInfo.InvariantCulture, out x))
                         break;

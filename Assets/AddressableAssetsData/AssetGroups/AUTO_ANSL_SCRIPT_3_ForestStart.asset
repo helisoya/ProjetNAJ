@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AUTO_ANSL_SCRIPT_3_ForestStart
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AUTO_ANSL_SCRIPT_3_ForestStart
+  m_GUID: 4126a95b0b67a9047a8d8f5d457c54e3
+  m_SerializeEntries:
+  - m_GUID: 304e40231292f4643a2d732121ea427d
+    m_Address: ANSL/NAJ/C1/Investigation/ForestStart/Arrival
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c6f023f78e7a1b449c8a04ba3c9b088
+    m_Address: ANSL/NAJ/C1/Investigation/ForestStart/ToForest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6d4442389052fa40b9953dad7d2088e
+    m_Address: ANSL/NAJ/C1/Investigation/ForestStart/Interaction
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9b3fa9168923a5478679fb78afb4457
+    m_Address: ANSL/NAJ/C1/Investigation/ForestStart/ToBeach
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0b5b0d202e900b54cb77545ed0f6a3b1, type: 2}
+    - {fileID: 11400000, guid: a0edfa1fdac792242824ccc08157b97e, type: 2}

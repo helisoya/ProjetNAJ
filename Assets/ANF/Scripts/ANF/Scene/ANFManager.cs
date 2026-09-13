@@ -1,4 +1,5 @@
 using ANF.GUI;
+using ANF.Persistent;
 using ANF.Utils;
 using DG.Tweening;
 using Leguar.TotalJSON;
@@ -58,18 +59,19 @@ namespace ANF.Scene
 
         void Update()
         {
-            if(currentLoadState == LoadState.WaitingForCleanUp)
+            if (currentLoadState == LoadState.WaitingForCleanUp)
             {
                 if (!cleanupOperation.isDone)
                     return;
 
                 currentLoadState = LoadState.Loaded;
-                OnStartComponents();
 
                 if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
                 {
                     fade.FadeAlphaTo(0);
                 }
+
+                OnStartComponents();
             }
 
             if (isChangingScene)
@@ -82,7 +84,7 @@ namespace ANF.Scene
                         return;
                 }
 
-                if(!initializedCleanup)
+                if (!initializedCleanup)
                 {
                     initializedCleanup = true;
 
@@ -94,7 +96,7 @@ namespace ANF.Scene
                     if (waitingForCleanup)
                         return;
                 }
-                else if(waitingForCleanup)
+                else if (waitingForCleanup)
                 {
                     if (world.IsCleaningUpForSceneChange() ||
                        guiManager.IsCleaningUpForSceneChange())
@@ -104,7 +106,7 @@ namespace ANF.Scene
                 }
 
 
-                
+
                 SceneManager.LoadScene(nextSceneToLoad);
             }
             else
@@ -116,6 +118,9 @@ namespace ANF.Scene
 
         void Start()
         {
+            if (!PersistentDataManager.instance.hasLoaded)
+                PersistentDataManager.instance.Load();
+
             InitializeComponents();
 
             if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))

@@ -7,6 +7,7 @@ using ANF.Utils;
 using DG.Tweening;
 using Leguar.TotalJSON;
 using NAJ.Persistent;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -118,6 +119,7 @@ namespace NAJ.GUI
         private Vector2Int currentButtonInputSide;
         private float cooldownToNextButtonIncrement = 0;
         private AudioManager audioManager;
+        private ResourceManager resourceManager;
         private bool skipFirstSelectSFX = false;
         private float cursorMoveCooldown = 0.25f;
 
@@ -135,6 +137,7 @@ namespace NAJ.GUI
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Inventory").performed += OnInventoryInput;
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
@@ -219,10 +222,14 @@ namespace NAJ.GUI
                 {
                     data.id = list[i];
                     data.type = type;
-                    if (type == InventoryTabType.Evidence)
-                        data.icon = allEvidence[data.id].LoadIcon();
-                    else
-                        data.icon = allProfiles[data.id].LoadIcon();
+
+                    if (resourceManager != null)
+                    {
+                        if (type == InventoryTabType.Evidence)
+                            data.icon = allEvidence[data.id].LoadIcon(resourceManager);
+                        else
+                            data.icon = allProfiles[data.id].LoadIcon(resourceManager);
+                    }
 
                     if (data.icon == null)
                         data.icon = defaultIcon;
@@ -331,7 +338,27 @@ namespace NAJ.GUI
             {
                 inputReminder.SetRemindersState(cachedPreviousReminders);
             }
-            canvasGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad);
+            canvasGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad).OnComplete(() =>
+            {
+                itemIcon.sprite = null;
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    for (int j = 0; j < buttons[i].Length; j++)
+                    {
+                        InventoryUIButtonData data = buttons[i][j].GetData();
+                        data.icon = null;
+                        buttons[i][j].Destroy();
+                        if (resourceManager != null)
+                        {
+                            if (data.type == InventoryTabType.Evidence)
+                                allEvidence[data.id].UnloadIcon(resourceManager);
+                            else if (data.type == InventoryTabType.Profile)
+                                allProfiles[data.id].UnloadIcon(resourceManager);
+                        }
+
+                    }
+                }
+            });
             canvasGroup.blocksRaycasts = false;
         }
 
@@ -357,8 +384,16 @@ namespace NAJ.GUI
                 if (audioManager != null)
                     audioManager.PlayUICursorCancelSFX();
 
+                string tmpName = currentID;
+                uint tmpId = currentCheckId;
 
-                checkGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad);
+                checkGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad).OnComplete(() =>
+                {
+                    checkImage.sprite = null;
+
+                    if (resourceManager != null)
+                        allEvidence[tmpName].UnloadCheckImage(tmpId, resourceManager);
+                });
                 if (gui.GetComponent(out InputReminderUI inputReminder))
                 {
                     inputReminder.SetReminderEnabled("inventoryCheck", true);
@@ -399,6 +434,7 @@ namespace NAJ.GUI
                     inputReminder.SetReminderEnabled("inventoryPresent", false);
                 }
 
+                checkGroup.DOComplete(true);
                 SetCheckImage(0, true, false);
 
                 checkGroup.DOFade(1.0f, 0.5f).SetEase(Ease.OutQuad);
@@ -418,11 +454,17 @@ namespace NAJ.GUI
                 if (audioManager != null && playSFXSound)
                     audioManager.PlayUICursorMoveSFX();
 
+                uint oldId = currentCheckId;
                 currentCheckId = id;
                 NAJCaseEvidence evidence = allEvidence[currentID];
                 if (evidence.canCheck && id < evidence.checkImagesCount)
                 {
-                    checkImage.sprite = evidence.LoadCheckImage(id);
+                    if (resourceManager != null)
+                    {
+                        checkImage.sprite = null;
+                        evidence.UnloadCheckImage(oldId, resourceManager);
+                        checkImage.sprite = evidence.LoadCheckImage(id, resourceManager);
+                    }
 
                     for (uint i = 0; i < evidence.checkImagesCount; i++)
                         checkTabs[i].SetIsActiveTab(i == id);
@@ -741,6 +783,10 @@ namespace NAJ.GUI
             if (isEnabled)
                 OnUnRegisterInputs();
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Inventory").performed -= OnInventoryInput;
+            canvasGroup.DOComplete(true);
+
+            resourceManager = null;
+            audioManager = null;
             return true;
         }
 

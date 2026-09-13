@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Demo1_UIAnimations
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Demo1_UIAnimations
+  m_GUID: bf622946b63f5324fb08aa848f34d2e5
+  m_SerializeEntries:
+  - m_GUID: 6d674be4fda0bcc45b741aaa2e64d184
+    m_Address: UIAnimations/TestAnimation
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bb310f14df645074194a339488e29970, type: 2}
+    - {fileID: 11400000, guid: 5049a088696c73744aa7e0e8c5d85158, type: 2}

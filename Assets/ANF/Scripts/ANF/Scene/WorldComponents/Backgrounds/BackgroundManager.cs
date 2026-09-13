@@ -8,15 +8,6 @@ using UnityEngine.SceneManagement;
 namespace ANF.Scene
 {
     /// <summary>
-	/// Represents how a background is handled
-	/// </summary>
-    public enum BackgroundType
-    {
-        Prefab,
-        Scene
-    }
-
-    /// <summary>
 	/// Represents the terrain quality settings for backgrounds (will affect pixel error)
 	/// </summary>
     public enum TerrainQuality
@@ -34,9 +25,7 @@ namespace ANF.Scene
     [System.Serializable]
     public class BackgroundManager : WorldComponent
     {
-        [SerializeField] private BackgroundType backgroundType = BackgroundType.Prefab;
         [SerializeField] private bool asyncLoading = false;
-        [SerializeField] private string prefabPath = "Backgrounds/";
         [SerializeField] private string skyboxDataPath = "Skyboxes/";
         [SerializeField] private SkyboxData defaultSkybox;
         [SerializeField] private Material skyboxMaterial;
@@ -71,8 +60,6 @@ namespace ANF.Scene
                 canBeSaved = canBeSaved,
                 enabledByDefault = enabledByDefault,
                 asyncLoading = asyncLoading,
-                backgroundType = backgroundType,
-                prefabPath = prefabPath,
                 skyboxDataPath = skyboxDataPath,
                 defaultSkybox = defaultSkybox,
                 skyboxMaterial = skyboxMaterial,
@@ -220,7 +207,7 @@ namespace ANF.Scene
             {
                 currentOperation = LoadBackground(cachedNextBackgroundID, forceSync);
 
-                loadingBackground = backgroundType == BackgroundType.Scene || (asyncLoading && !forceSync);
+                loadingBackground = true;
                 asyncWaitForNextFrames = loadingBackground ? 2 : 0;
 
                 if (!loadingBackground)
@@ -238,60 +225,47 @@ namespace ANF.Scene
             cachedNextBackgroundID = null;
             currentBackground = null;
 
-            // Scene is already loaded
-            // Prefab needs to be instanced
-            if (backgroundType == BackgroundType.Prefab)
-            {
-                Background background = null;
-                if (currentOperation is DummyResourceRequest)
-                    background = ((DummyResourceRequest)currentOperation).GetObject() as Background;
-                else if (currentOperation is ResourceRequest)
-                    background = ((ResourceRequest)currentOperation).asset as Background;
 
-                if (background != null)
-                {
-                    currentBackground = Object.Instantiate(background, manager.transform);
-                }
-            }
-            else
+            UnityEngine.SceneManagement.Scene scene = SceneManager.GetSceneByName(currentBackgroundID);
+            if (scene != null)
             {
-                UnityEngine.SceneManagement.Scene scene = SceneManager.GetSceneByName(currentBackgroundID);
-                if (scene != null && scene.GetRootGameObjects().Length == 1)
+                GameObject[] rootObjs = scene.GetRootGameObjects();
+                foreach (GameObject rootObj in rootObjs)
                 {
-                    currentBackground = scene.GetRootGameObjects()[0].GetComponent<Background>();
-                }
-            }
-
-            if (currentBackground)
-            {
-                currentBackground.OnCreate(manager);
-
-                if (currentCachedData == null)
-                {
-                    currentCachedData = currentBackground.GetDefaultData();
-                    if (currentCachedData.skyboxData != null)
+                    currentBackground = rootObj.GetComponent<Background>();
+                    if (currentBackground)
                     {
-                        SetSkybox(currentCachedData.skyboxData);
+                        currentBackground.OnCreate(manager);
+
+                        if (currentCachedData == null)
+                        {
+                            currentCachedData = currentBackground.GetDefaultData();
+                            if (currentCachedData.skyboxData != null)
+                            {
+                                SetSkybox(currentCachedData.skyboxData);
+                            }
+                        }
+
+
+                        if (currentCachedData.skyboxData == null)
+                        {
+                            currentCachedData.skyboxData = defaultSkybox;
+                            SetSkybox(currentCachedData.skyboxData);
+                        }
+
+                        currentBackground.SetLightDirection(currentCachedData.currentLightDirection);
+                        currentBackground.SetWeatherEffect(currentCachedData.currentWeatherEffect);
+                        currentBackground.EnableFoliage(enableTerrainFoliage);
+                        currentBackground.SetTerrainQuality(terrainQuality);
+
+
+                        if (lerpSunColor != null && lerpSunColor.lerping)
+                            currentBackground.SetSunColor(lerpSunColor.Get());
+                        else
+                            currentBackground.SetSunColor(currentCachedData.skyboxData.sunColor);
+                        break;
                     }
                 }
-
-
-                if (currentCachedData.skyboxData == null)
-                {
-                    currentCachedData.skyboxData = defaultSkybox;
-                    SetSkybox(currentCachedData.skyboxData);
-                }
-
-                currentBackground.SetLightDirection(currentCachedData.currentLightDirection);
-                currentBackground.SetWeatherEffect(currentCachedData.currentWeatherEffect);
-                currentBackground.EnableFoliage(enableTerrainFoliage);
-                currentBackground.SetTerrainQuality(terrainQuality);
-
-
-                if (lerpSunColor != null && lerpSunColor.lerping)
-                    currentBackground.SetSunColor(lerpSunColor.Get());
-                else
-                    currentBackground.SetSunColor(currentCachedData.skyboxData.sunColor);
             }
 
             currentOperation = null;
@@ -307,20 +281,10 @@ namespace ANF.Scene
         {
             AsyncOperation operation = null;
 
-            if (backgroundType == BackgroundType.Scene)
-            {
-                if (!forceSync && asyncLoading)
-                    SceneManager.LoadScene(ID, LoadSceneMode.Additive);
-                else
-                    operation = SceneManager.LoadSceneAsync(ID, LoadSceneMode.Additive);
-            }
-            else if (backgroundType == BackgroundType.Prefab)
-            {
-                if (!forceSync && asyncLoading)
-                    operation = Resources.LoadAsync<Background>(prefabPath + ID);
-                else
-                    operation = new DummyResourceRequest(Resources.Load<Background>(prefabPath + ID));
-            }
+            if (!forceSync && asyncLoading)
+                SceneManager.LoadScene(ID, LoadSceneMode.Additive);
+            else
+                operation = SceneManager.LoadSceneAsync(ID, LoadSceneMode.Additive);
 
             return operation;
         }
@@ -337,14 +301,7 @@ namespace ANF.Scene
 
             currentBackground.OnRemove(manager);
 
-            if (backgroundType == BackgroundType.Scene)
-            {
-                operation = SceneManager.UnloadSceneAsync(currentBackgroundID, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
-            }
-            else if (backgroundType == BackgroundType.Prefab)
-            {
-                Object.Destroy(currentBackground.gameObject);
-            }
+            operation = SceneManager.UnloadSceneAsync(currentBackgroundID, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
 
             return operation;
         }
@@ -563,10 +520,9 @@ namespace ANF.Scene
             {
                 currentBackground.OnRemove(manager);
                 // Not optimal
-                if (backgroundType == BackgroundType.Scene)
-                    currentOperation = SceneManager.UnloadSceneAsync(currentBackgroundID);
+                currentOperation = SceneManager.UnloadSceneAsync(currentBackgroundID);
 
-                unloadingBackground = currentOperation != null;
+                unloadingBackground = currentOperation != null && !currentOperation.isDone;
             }
 
             return !unloadingBackground;

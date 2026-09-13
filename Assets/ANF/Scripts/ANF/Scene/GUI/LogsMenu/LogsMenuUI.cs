@@ -32,6 +32,7 @@ namespace ANF.GUI
 
         private Persistent.AudioManager audioManager;
         private LogsContainer logsContainer;
+        private ResourceManager resourceManager;
 
         private int currentButtonIdx;
         private List<LogsMenuUIButton> buttons;
@@ -39,6 +40,7 @@ namespace ANF.GUI
         private float cooldownToNextButtonIncrement = 0;
         private float cursorMoveCooldown = 0.25f;
         private bool onScrollbar = false;
+        private string lastLogId = null;
 
         public override void OnInitialize()
         {
@@ -48,7 +50,8 @@ namespace ANF.GUI
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
-            PersistentDataManager.instance.GetPlayerData().GetComponent<LogsContainer>(out logsContainer);
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out logsContainer);
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
                 cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
@@ -76,6 +79,11 @@ namespace ANF.GUI
         {
             foreach (Transform child in buttonsRoot)
                 Destroy(child.gameObject);
+
+            logSpriteImage.sprite = null;
+            if (!string.IsNullOrEmpty(lastLogId) && resourceManager != null)
+                resourceManager.ReleaseResource<Sprite>($"Logs/{lastLogId}");
+            lastLogId = null;
 
             buttons = new();
             onScrollbar = false;
@@ -242,8 +250,15 @@ namespace ANF.GUI
             logNameText.SetNewKey($"Log_{logId}_Name");
             logDescText.SetNewKey($"Log_{logId}_Desc");
 
-            Sprite sprite = logsContainer.GetLogSprite(logId);
+            logSpriteImage.sprite = null;
+            Sprite sprite = null;
 
+            if (resourceManager != null)
+            {
+                if (!string.IsNullOrEmpty(lastLogId))
+                    resourceManager.ReleaseResource<Sprite>($"Logs/{lastLogId}");
+                sprite = resourceManager.GetResource<Sprite>($"Logs/{logId}");
+            }
             if (sprite == null)
                 sprite = defaultLogSprite;
 
@@ -283,6 +298,9 @@ namespace ANF.GUI
 
         public override bool OnChangeScene()
         {
+            resourceManager = null;
+            logsContainer = null;
+            audioManager = null;
             OnUnRegisterInputs();
             return true;
         }
