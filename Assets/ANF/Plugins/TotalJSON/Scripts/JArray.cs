@@ -1254,6 +1254,25 @@ namespace Leguar.TotalJSON
         }
 
         /// <summary>
+        /// Gets the whole JArray object as system list. This is recursive, so if this list contains other lists or JSON objects,
+        /// those will be also changed to system objects.
+        /// </summary>
+        /// <returns>
+        /// List that doesn't contain any TotalJSON objects on any level.
+        /// </returns>
+        public List<T> AsList<T>()
+        {
+            List<T> targetValues = new List<T>();
+            foreach (JValue jValue in values)
+            {
+                T oValue = (T)InternalTools.jValueAsSystemObject(jValue);
+                if (oValue != null)
+                    targetValues.Add(oValue);
+            }
+            return targetValues;
+        }
+
+        /// <summary>
         /// Turns this JSON array to single JSON formatted string.
         /// String always starts with character '[' and ends to character ']'
         ///

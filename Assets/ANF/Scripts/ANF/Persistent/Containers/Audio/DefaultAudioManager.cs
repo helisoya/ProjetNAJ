@@ -59,7 +59,7 @@ namespace ANF.Persistent
 
             foreach (string bundles in bundlesToPreload)
             {
-                resourceManager.LoadBundle<AudioClip>(bundles);
+                resourceManager.LoadBundle(bundles, ResourceManager.BundleType.AudioClip);
             }
 
             cache = new Dictionary<string, AudioClip>[4]

@@ -106,34 +106,56 @@ namespace ANF.Persistent
         }
 
 
-        public override void LoadBundle<T>(string bundleName)
+        public override void LoadBundle(string bundleName, BundleType bundleType)
         {
             // Load TAG
 
             if (loadedBundles.TryGetValue(bundleName, out ResourceData data))
             {
-                data.refCount++;
+                if (data.bundleType == bundleType)
+                    data.refCount++;
             }
             else
             {
                 AsyncOperationHandle<IList<IResourceLocation>> locations = Addressables.LoadResourceLocationsAsync(bundleName);
                 IList<IResourceLocation> bundle = locations.WaitForCompletion();
 
-                loadedBundles.Add(bundleName, new ResourceData(locations, 1, false));
+                ResourceData newData = new ResourceData(locations, 1, false);
+                newData.bundleType = bundleType;
+
+                loadedBundles.Add(bundleName, newData);
 
                 foreach (IResourceLocation location in bundle)
                 {
                     Debug.Log($"Loading bundle item : {location.PrimaryKey}");
-                    GetResource<T>(location.PrimaryKey);
+
+                    switch (bundleType)
+                    {
+                        case BundleType.AudioClip:
+                            GetResource<AudioClip>(location.PrimaryKey);
+                            break;
+                        case BundleType.TextAsset:
+                            GetResource<TextAsset>(location.PrimaryKey);
+                            break;
+                        case BundleType.GameObject:
+                            GetResource<GameObject>(location.PrimaryKey);
+                            break;
+                        case BundleType.Sprite:
+                            GetResource<Sprite>(location.PrimaryKey);
+                            break;
+                        case BundleType.Texture2D:
+                            GetResource<Texture2D>(location.PrimaryKey);
+                            break;
+                    }
                 }
             }
         }
 
-        public override void UnloadBundle<T>(string bundleName)
+        public override void UnloadBundle(string bundleName, BundleType bundleType)
         {
             // Unload TAG
 
-            if (loadedBundles.TryGetValue(bundleName, out ResourceData data))
+            if (loadedBundles.TryGetValue(bundleName, out ResourceData data) && data.bundleType == bundleType)
             {
                 data.refCount--;
 
@@ -143,7 +165,24 @@ namespace ANF.Persistent
                 foreach (IResourceLocation location in bundle)
                 {
                     Debug.Log($"Unloading bundle item : {location.PrimaryKey}");
-                    ReleaseResource<T>(location.PrimaryKey);
+                    switch (bundleType)
+                    {
+                        case BundleType.AudioClip:
+                            ReleaseResource<AudioClip>(location.PrimaryKey);
+                            break;
+                        case BundleType.TextAsset:
+                            ReleaseResource<TextAsset>(location.PrimaryKey);
+                            break;
+                        case BundleType.GameObject:
+                            ReleaseResource<GameObject>(location.PrimaryKey);
+                            break;
+                        case BundleType.Sprite:
+                            ReleaseResource<Sprite>(location.PrimaryKey);
+                            break;
+                        case BundleType.Texture2D:
+                            ReleaseResource<Texture2D>(location.PrimaryKey);
+                            break;
+                    }
                 }
 
                 bundle = null;
@@ -159,14 +198,6 @@ namespace ANF.Persistent
         public override void Reset()
         {
             // ???
-        }
-
-        public override void Save(JSON json)
-        {
-        }
-
-        public override void Load(JSON json)
-        {
         }
 
         public override T GetSpritesheetResource<T>(string spritesheetPath, string resourceName)

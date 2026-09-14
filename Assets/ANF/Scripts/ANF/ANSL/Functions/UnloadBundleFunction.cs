@@ -33,19 +33,19 @@ namespace ANF.ANSL
                 switch (type)
                 {
                     case "audioclip":
-                        resourceManager.UnloadBundle<AudioClip>(bundle);
+                        resourceManager.UnloadBundle(bundle, ResourceManager.BundleType.AudioClip);
                         break;
                     case "textasset":
-                        resourceManager.UnloadBundle<TextAsset>(bundle);
+                        resourceManager.UnloadBundle(bundle, ResourceManager.BundleType.TextAsset);
                         break;
                     case "sprite":
-                        resourceManager.UnloadBundle<Sprite>(bundle);
+                        resourceManager.UnloadBundle(bundle, ResourceManager.BundleType.Sprite);
                         break;
                     case "texture2d":
-                        resourceManager.UnloadBundle<Texture2D>(bundle);
+                        resourceManager.UnloadBundle(bundle, ResourceManager.BundleType.Texture2D);
                         break;
                     case "gameobject":
-                        resourceManager.UnloadBundle<GameObject>(bundle);
+                        resourceManager.UnloadBundle(bundle, ResourceManager.BundleType.GameObject);
                         break;
                 }
 

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using ANF.Scene;
 using Leguar.TotalJSON;
 using UnityEngine;
 
@@ -10,8 +11,6 @@ namespace ANF.Persistent
         protected Dictionary<string, ResourceData> loadedBundles = new Dictionary<string, ResourceData>();
 
         public abstract DataContainer CloneContainer();
-        public abstract void Load(JSON json);
-        public abstract void Save(JSON json);
         public abstract void Reset();
 
         public void Initialize(ANFSettings settings)
@@ -126,13 +125,15 @@ namespace ANF.Persistent
 		/// Loads a new bundle in memory
 		/// </summary>
 		/// <param name="bundleName">The bundle's name</param>
-        public abstract void LoadBundle<T>(string bundleName);
+        /// <param name="bundleType">The bundle type</param>
+        public abstract void LoadBundle(string bundleName, BundleType bundleType);
 
         /// <summary>
 		/// Releases a bundle from memory
 		/// </summary>
 		/// <param name="bundleName">The bundle's name</param>
-        public abstract void UnloadBundle<T>(string bundleName);
+        /// <param name="bundleType">The bundle type</param>
+        public abstract void UnloadBundle(string bundleName, BundleType bundleType);
 
 
         /// <summary>
@@ -172,6 +173,72 @@ namespace ANF.Persistent
         /// <param name="path">The resource's path</param>
         protected abstract void TryReleaseResource<T>(string path);
 
+        public void Load(JSON json)
+        {
+            if (json.ContainsKey("bundles"))
+            {
+                JArray array = json.GetJArray("bundles");
+
+                List<string> existingBundles = new List<string>(loadedBundles.Keys);
+
+                int i = 0;
+
+                // Unload unneeded bundles
+                while (i < existingBundles.Count)
+                {
+                    bool found = false;
+                    for (int j = 0; j < array.Length; j++)
+                    {
+                        JSON item = array.GetJSON(j);
+                        if (item.ContainsKey("name") && item.GetString("name").Equals(existingBundles[i]))
+                        {
+                            array.RemoveAt(j);
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (!found)
+                        UnloadBundle(existingBundles[i], loadedBundles[existingBundles[i]].bundleType);
+                    i++;
+                }
+
+                // Load needed bundles
+                for (i = 0; i < array.Length; i++)
+                {
+                    JSON item = array.GetJSON(i);
+                    if (item.ContainsKey("name") && item.ContainsKey("type"))
+                        LoadBundle(item.GetString("name"), (BundleType)item.GetInt("type"));
+                }
+            }
+        }
+
+        public void Save(JSON json)
+        {
+            JArray bundleArray = new JArray();
+            JSON bundleData;
+
+            foreach (string bundleKey in loadedBundles.Keys)
+            {
+                bundleData = new JSON();
+                bundleData.Add("name", bundleKey);
+                bundleData.Add("type", (int)loadedBundles[bundleKey].bundleType);
+                bundleArray.Add(bundleData);
+            }
+
+            if (bundleArray.Length > 0)
+                json.Add("bundles", bundleArray);
+        }
+
+        public enum BundleType
+        {
+            AudioClip,
+            Sprite,
+            Texture2D,
+            TextAsset,
+            GameObject
+        }
+
 
         /// <summary>
         /// Represents a loaded resource. Depending on the manager type, the object may not be the actual resource
@@ -182,6 +249,7 @@ namespace ANF.Persistent
             public object resource;
             public bool isLoading;
             public List<System.Action<object>> actions;
+            public BundleType bundleType;
 
             public ResourceData(object resource, int refCount, bool isLoading)
             {
