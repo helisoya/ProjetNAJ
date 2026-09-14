@@ -1,0 +1,18 @@
+#D37CD58CE8459D6050E7EF2FCF7DDF82D41D8CD98F00B204E9800998ECF8427E
+37|1|13|LookCounter > 0
+90|LookCounter|-|1
+37|3|5|DrinkQuest == 0
+32|null|null|Drink_0_1
+39|11
+32|null|null|Drink_1_1
+32|null|null|Drink_1_2
+90|DrinkQuest|=|1
+80|Drink|0|0.5|true
+54|Drink
+39|11
+41|/VMP/Common/PrintLookCounter
+39|15
+32|null|null|Counter_Look_0
+39|15
+41|/VMP/Common/CycleCheck
+41|Interaction

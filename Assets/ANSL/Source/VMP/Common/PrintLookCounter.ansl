@@ -1,0 +1,22 @@
+switch(LookCounter)
+case 0:
+dialog(null;null;Counter_Look_0)
+case 1:
+dialog(null;null;Counter_Look_1)
+case 2:
+dialog(null;null;Counter_Look_2)
+case 3:
+dialog(null;null;Counter_Look_3)
+case 4:
+dialog(null;null;Counter_Look_4)
+case 5:
+dialog(null;null;Counter_Look_5)
+case 6:
+dialog(null;null;Counter_Look_6)
+case 7:
+dialog(null;null;Counter_Look_7)
+case 8:
+dialog(null;null;Counter_Look_8)
+case 9:
+dialog(null;null;Counter_Look_9)
+endswitch

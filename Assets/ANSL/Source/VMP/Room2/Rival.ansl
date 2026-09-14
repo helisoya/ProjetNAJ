@@ -1,0 +1,30 @@
+if(TalkedRival == 1)
+dialog(null;null;Talk_Character_Done_1)
+else
+
+setCharacterAlpha(Rival;0;0.5;true)
+setCharacterPosition(Rival;Front)
+setCharacterRotation(Rival;Front)
+setCharacterAlpha(Rival;1;0.5;false)
+
+switch(CycleCount)
+case default:
+
+case 0:
+
+dialog(Char_Rival;null;Rival_Intro_1)
+
+endswitch
+
+variable(TalkedRival;=;1)
+
+setCharacterAlpha(Rival;0;0.5;true)
+setCharacterPosition(Rival;RivalSpot)
+setCharacterRotation(Rival;RivalSpot)
+setCharacterAlpha(Rival;1;0.5;false)
+
+endif
+
+load(/VMP/Common/CycleCheck)
+
+load(Interaction)

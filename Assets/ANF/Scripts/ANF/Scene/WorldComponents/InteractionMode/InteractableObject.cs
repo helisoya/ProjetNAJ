@@ -43,8 +43,11 @@ namespace ANF.Scene
 
         void OnDrawGizmosSelected()
         {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(GetApproximateVisualPosition(), 0.2f);
+            if (interactionCollider)
+            {
+                Gizmos.color = Color.yellow;
+                Gizmos.DrawWireSphere(GetApproximateVisualPosition(), 0.2f);
+            }
         }
 
         /// <summary>

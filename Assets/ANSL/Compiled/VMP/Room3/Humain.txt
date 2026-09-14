@@ -1,0 +1,20 @@
+#FABAB48480B53CF8EF0A1BD8D2AE8E21D41D8CD98F00B204E9800998ECF8427E
+37|1|3|TalkedHumain == 1
+32|null|null|Talk_Character_Done_1
+39|17
+61|Humain|0|0.5|true
+68|Humain|Front
+69|Humain|Front
+61|Humain|1|0.5|false
+87|CycleCount|8|0|9
+39|11
+32|Char_Humain|null|Humain_Intro_1
+39|11
+90|TalkedHumain|=|1
+61|Humain|0|0.5|true
+68|Humain|HumainSpot
+69|Humain|HumainSpot
+61|Humain|1|0.5|false
+39|17
+41|/VMP/Common/CycleCheck
+41|Interaction

@@ -1,0 +1,9 @@
+Define ResetCycleVariables(LookCount;SearchCount)
+variable(LookCounter;=;{LookCount})
+variable(SearchCounter;=;{SearchCount})
+variable(TalkedBaron;=;0)
+variable(TalkedChasseur;=;0)
+variable(TalkedFils;=;0)
+variable(TalkedHumain;=;0)
+variable(TalkedRival;=;0)
+EndDefine

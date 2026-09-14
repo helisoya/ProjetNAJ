@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AUTO_ANSL_SCRIPT_11_Cliff
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AUTO_ANSL_SCRIPT_11_Cliff
+  m_GUID: 7235cf079c8740043a56c276170309c8
+  m_SerializeEntries:
+  - m_GUID: 3111500fc735c86469def98a51eaae21
+    m_Address: ANSL/NAJ/C1/Investigation/Cliff/LookShip
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 488e480520e986748832ca2aad679bf1
+    m_Address: ANSL/NAJ/C1/Investigation/Cliff/LookWater
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6fcc1576bf3b69947ba6bc19ebe25e77
+    m_Address: ANSL/NAJ/C1/Investigation/Cliff/Start
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7755d07a5dd8a53479e78244de498604
+    m_Address: ANSL/NAJ/C1/Investigation/Cliff/Arrival
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 995b82804faa8e84696d0fa479647b69
+    m_Address: ANSL/NAJ/C1/Investigation/Cliff/Interaction
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c01eeed1561875a4c9494ad779c15b3f
+    m_Address: ANSL/NAJ/C1/Investigation/Cliff/ToBeach
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7fd3fb85a16a7aa4a99571cad4a72d1f, type: 2}
+    - {fileID: 11400000, guid: 290e73226aba5dc46a6537484bb8bf80, type: 2}

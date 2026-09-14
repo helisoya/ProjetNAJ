@@ -1,0 +1,30 @@
+# Cycles : 
+# 0 - Intro
+# 1 - Part 1 - 1
+# 2 - Part 1 - 2
+# 3 - Part 2 - 1
+# 4 - Part 2 - 2
+
+createUserVariable(CycleCount;0)
+
+createUserVariable(BorisCounter;0)
+createUserVariable(DrinkQuest;0)
+# 0 : Not Started
+# 1 : Get Drink
+# 2 : Bring it back
+# 3 : Done
+
+createUserVariable(SearchCounter;0)
+createUserVariable(LookCounter;0)
+
+createUserVariable(TalkedBaron;0)
+createUserVariable(TalkedRival;0)
+createUserVariable(TalkedFils;0)
+createUserVariable(TalkedHumain;0)
+createUserVariable(TalkedChasseur;0)
+
+createUserVariable(ValueBaron;0)
+createUserVariable(ValueRival;0)
+createUserVariable(ValueFils;0)
+createUserVariable(ValueHumain;0)
+createUserVariable(ValueChasseur;0)

@@ -45,6 +45,11 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locals
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d5a8881f607ba6489a415af8d86aa1a
+    m_Address: Locals/eng_vmp_test
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

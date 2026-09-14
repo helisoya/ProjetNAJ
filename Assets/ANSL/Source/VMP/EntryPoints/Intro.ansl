@@ -1,0 +1,6 @@
+setFg(1)
+
+load(GeneralSetup)
+setLocation(ManCastle)
+
+load(../Events/Start)

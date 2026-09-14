@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: VMP_Characters
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: VMP_Characters
+  m_GUID: d9529aa8994d76a4baa13ce80796da02
+  m_SerializeEntries:
+  - m_GUID: 05c634f74f6469143801a8a05af6ea84
+    m_Address: Characters/Humain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35c671ddb2d73b449b0ffc7656716922
+    m_Address: Characters/Boris
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c627429028124e49bdeb98d883813c3
+    m_Address: Characters/Rival
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9948b86865b4ae4488b3f9ef706a34e5
+    m_Address: Characters/OulOul
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a503fd8da4c2118439ef0c50fce6d5cc
+    m_Address: Characters/Chasseur
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae53d1fd3ea2abf408f4e311eebee95f
+    m_Address: Characters/Baron
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eef1141b26c3ad84da3b9c8879a50315
+    m_Address: Characters/Fils
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f8c79b9170a004b46ba3046547790488, type: 2}
+    - {fileID: 11400000, guid: 4bae0165ff2054a48904e334d34c3372, type: 2}

@@ -1,0 +1,29 @@
+if(LookCounter > 0)
+variable(LookCounter;-;1)
+
+switch(BorisCounter)
+case 0:
+dialog(null;null;Boris_Part1_1)
+variable(BorisCounter;+;1)
+case 1:
+dialog(null;null;Boris_Part2_1)
+variable(BorisCounter;+;1)
+case 2:
+dialog(null;null;Boris_Part3_1)
+variable(BorisCounter;+;1)
+case 3:
+dialog(null;null;Boris_Part4_1)
+variable(BorisCounter;+;1)
+case 4:
+dialog(Char_Boris;null;Boris_Part5_1)
+
+endswitch
+
+load(/VMP/Common/PrintLookCounter)
+else
+dialog(null;null;Counter_Look_0)
+endif
+
+load(/VMP/Common/CycleCheck)
+
+load(Interaction)

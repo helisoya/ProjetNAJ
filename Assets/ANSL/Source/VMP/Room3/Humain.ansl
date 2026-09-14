@@ -1,0 +1,31 @@
+if(TalkedHumain == 1)
+dialog(null;null;Talk_Character_Done_1)
+else
+
+setCharacterAlpha(Humain;0;0.5;true)
+setCharacterPosition(Humain;Front)
+setCharacterRotation(Humain;Front)
+setCharacterAlpha(Humain;1;0.5;false)
+
+switch(CycleCount)
+case default:
+
+case 0:
+
+dialog(Char_Humain;null;Humain_Intro_1)
+
+
+endswitch
+
+variable(TalkedHumain;=;1)
+
+setCharacterAlpha(Humain;0;0.5;true)
+setCharacterPosition(Humain;HumainSpot)
+setCharacterRotation(Humain;HumainSpot)
+setCharacterAlpha(Humain;1;0.5;false)
+
+endif
+
+load(/VMP/Common/CycleCheck)
+
+load(Interaction)

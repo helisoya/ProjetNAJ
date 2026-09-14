@@ -1,0 +1,24 @@
+#BC684667521A77E9104289FF3D45375FD41D8CD98F00B204E9800998ECF8427E
+37|1|19|LookCounter > 0
+90|LookCounter|-|1
+87|BorisCounter|17|0|3|1|6|2|9|3|12|4|15
+32|null|null|Boris_Part1_1
+90|BorisCounter|+|1
+39|17
+32|null|null|Boris_Part2_1
+90|BorisCounter|+|1
+39|17
+32|null|null|Boris_Part3_1
+90|BorisCounter|+|1
+39|17
+32|null|null|Boris_Part4_1
+90|BorisCounter|+|1
+39|17
+32|Char_Boris|null|Boris_Part5_1
+39|17
+41|/VMP/Common/PrintLookCounter
+39|21
+32|null|null|Counter_Look_0
+39|21
+41|/VMP/Common/CycleCheck
+41|Interaction

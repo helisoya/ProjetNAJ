@@ -1,0 +1,24 @@
+if(LookCounter > 0)
+variable(LookCounter;-;1)
+
+if(DrinkQuest == 0)
+dialog(null;null;Drink_0_1)
+else
+dialog(null;null;Drink_1_1)
+dialog(null;null;Drink_1_2)
+
+variable(DrinkQuest;=;1)
+
+setStaticAlpha(Drink;0;0.5;true)
+removeStatic(Drink)
+
+endif
+
+load(/VMP/Common/PrintLookCounter)
+else
+dialog(null;null;Counter_Look_0)
+endif
+
+load(/VMP/Common/CycleCheck)
+
+load(Interaction)

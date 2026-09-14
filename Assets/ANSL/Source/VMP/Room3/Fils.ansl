@@ -1,0 +1,31 @@
+if(TalkedFils == 1)
+dialog(null;null;Talk_Character_Done_1)
+else
+
+setCharacterAlpha(Fils;0;0.5;true)
+setCharacterPosition(Fils;Front)
+setCharacterRotation(Fils;Front)
+setCharacterAlpha(Fils;1;0.5;false)
+
+switch(CycleCount)
+case default:
+
+case 0:
+
+dialog(Char_Fils;null;Fils_Intro_1)
+
+
+endswitch
+
+variable(TalkedFils;=;1)
+
+setCharacterAlpha(Fils;0;0.5;true)
+setCharacterPosition(Fils;FilsSpot)
+setCharacterRotation(Fils;FilsSpot)
+setCharacterAlpha(Fils;1;0.5;false)
+
+endif
+
+load(/VMP/Common/CycleCheck)
+
+load(Interaction)

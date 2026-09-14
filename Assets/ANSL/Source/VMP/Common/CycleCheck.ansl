@@ -1,0 +1,9 @@
+if(TalkedBaron == 1 && TalkedChasseur == 1 && TalkedFils == 1 && TalkedHumain == 1 && TalkedRival == 1 && SearchCounter == 0 && LookCounter == 0)
+
+switch(CycleCount)
+case 0:
+load(/VMP/Events/KeySteal)
+
+endswitch
+
+endif

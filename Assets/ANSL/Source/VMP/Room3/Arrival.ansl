@@ -1,0 +1,16 @@
+fadeFg(1;true)
+
+removeAllCharacters()
+
+setBackground(Room3)
+
+if(DrinkQuest > 1)
+removeStatic(Drink)
+endif
+
+addCharacter(Humain;false;HumainSpot)
+addCharacter(Fils;false;FilsSpot)
+
+fadeFg(0;false)
+
+load(Interaction)

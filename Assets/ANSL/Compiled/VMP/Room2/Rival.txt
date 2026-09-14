@@ -1,0 +1,20 @@
+#BC5A4F7512B69FA35F4FDB32C7495FBCD41D8CD98F00B204E9800998ECF8427E
+37|1|3|TalkedRival == 1
+32|null|null|Talk_Character_Done_1
+39|17
+61|Rival|0|0.5|true
+68|Rival|Front
+69|Rival|Front
+61|Rival|1|0.5|false
+87|CycleCount|8|0|9
+39|11
+32|Char_Rival|null|Rival_Intro_1
+39|11
+90|TalkedRival|=|1
+61|Rival|0|0.5|true
+68|Rival|RivalSpot
+69|Rival|RivalSpot
+61|Rival|1|0.5|false
+39|17
+41|/VMP/Common/CycleCheck
+41|Interaction

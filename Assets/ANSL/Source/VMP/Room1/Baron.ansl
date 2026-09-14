@@ -1,0 +1,36 @@
+if(TalkedBaron == 1)
+dialog(null;null;Talk_Character_Done_1)
+else
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterPosition(Baron;Front)
+setCharacterRotation(Baron;Front)
+setCharacterAlpha(Baron;1;0.5;false)
+
+switch(CycleCount)
+case default:
+
+case 0:
+
+dialog(Char_Baron;null;Baron_Intro_1)
+dialog(null;null;Baron_Intro_2)
+dialog(Char_Baron;null;Baron_Intro_3)
+dialog(Char_Baron;null;Baron_Intro_4)
+dialog(null;null;Baron_Intro_5)
+
+variable(DrinkQuest;=;1)
+
+endswitch
+
+variable(TalkedBaron;=;1)
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterPosition(Baron;BaronSpot)
+setCharacterRotation(Baron;BaronSpot)
+setCharacterAlpha(Baron;1;0.5;false)
+
+endif
+
+load(/VMP/Common/CycleCheck)
+
+load(Interaction)

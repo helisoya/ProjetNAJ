@@ -1,0 +1,22 @@
+switch(SearchCounter)
+case 0:
+dialog(null;null;Counter_Search_0)
+case 1:
+dialog(null;null;Counter_Search_1)
+case 2:
+dialog(null;null;Counter_Search_2)
+case 3:
+dialog(null;null;Counter_Search_3)
+case 4:
+dialog(null;null;Counter_Search_4)
+case 5:
+dialog(null;null;Counter_Search_5)
+case 6:
+dialog(null;null;Counter_Search_6)
+case 7:
+dialog(null;null;Counter_Search_7)
+case 8:
+dialog(null;null;Counter_Search_8)
+case 9:
+dialog(null;null;Counter_Search_9)
+endswitch

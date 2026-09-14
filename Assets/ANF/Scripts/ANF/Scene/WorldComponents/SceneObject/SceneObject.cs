@@ -17,6 +17,7 @@ namespace ANF.Scene
         protected LerpInstanceVector3 lerpRotation;
         protected LerpInstanceFloat lerpAlpha;
         protected bool skipModeEnabled;
+        private float currentAlpha;
 
         public bool Moving
         {
@@ -50,6 +51,7 @@ namespace ANF.Scene
 		/// <param name="manager">The ANFManager</param>
         public void Create(ANFManager manager)
         {
+            currentAlpha = 1.0f;
             if (linkedInteraction != null && manager.GetWorld().GetComponent<InteractionMode>(out InteractionMode interactionMode))
             {
                 interactionMode.Register(linkedInteraction);
@@ -89,7 +91,7 @@ namespace ANF.Scene
                 if (lerpAlpha == null)
                     lerpAlpha = new LerpInstanceFloat();
 
-                lerpAlpha.StartLerp(InternalFindAlpha(), alpha, skipModeEnabled ? 0.1f : duration);
+                lerpAlpha.StartLerp(currentAlpha, alpha, skipModeEnabled ? 0.1f : duration);
             }
         }
 
@@ -141,28 +143,12 @@ namespace ANF.Scene
         /// <param name="alpha">The new alpha</param>
         protected void InternalSetAlpha(float alpha)
         {
+            currentAlpha = alpha;
             MaterialPropertyBlock newBlock = new MaterialPropertyBlock();
             newBlock.SetFloat("_Alpha", alpha);
 
             foreach (Renderer renderer in renderers)
                 renderer.SetPropertyBlock(newBlock);
-        }
-
-        /// <summary>
-		/// Returns the internal Alpha value
-		/// </summary>
-		/// <returns>The internal alpha value</returns>
-        protected float InternalFindAlpha()
-        {
-            if (renderers.Length > 0)
-            {
-                MaterialPropertyBlock newBlock = new MaterialPropertyBlock();
-                renderers[0].GetPropertyBlock(newBlock);
-                if (newBlock.HasFloat("_Alpha"))
-                    return newBlock.GetFloat("_Alpha");
-            }
-
-            return 1.0f;
         }
 
         /// <summary>
@@ -231,7 +217,7 @@ namespace ANF.Scene
         {
             json.Add("currentPosition", transform.position);
             json.Add("currentRotation", transform.eulerAngles);
-            json.Add("currentAlpha", InternalFindAlpha());
+            json.Add("currentAlpha", currentAlpha);
 
             if (lerpPosition != null)
             {

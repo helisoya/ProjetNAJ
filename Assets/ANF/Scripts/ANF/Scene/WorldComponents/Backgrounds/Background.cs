@@ -12,7 +12,7 @@ namespace ANF.Scene
     public class Background : MonoBehaviour
     {
         [Header("Infos")]
-        [SerializeField] private BackgroundData defaultData;
+        [SerializeField] private BackgroundDefaultData defaultData;
         private Terrain[] terrains;
 
         [Header("Components")]
@@ -54,7 +54,7 @@ namespace ANF.Scene
 		/// Gets the background's default data
 		/// </summary>
 		/// <returns>The default data</returns>
-        public BackgroundData GetDefaultData()
+        public BackgroundDefaultData GetDefaultData()
         {
             return defaultData;
         }

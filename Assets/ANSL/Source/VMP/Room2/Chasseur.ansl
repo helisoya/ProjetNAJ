@@ -1,0 +1,31 @@
+if(TalkedChasseur == 1)
+dialog(null;null;Talk_Character_Done_1)
+else
+
+setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterPosition(Chasseur;Front)
+setCharacterRotation(Chasseur;Front)
+setCharacterAlpha(Chasseur;1;0.5;false)
+
+switch(CycleCount)
+case default:
+
+case 0:
+
+dialog(Char_Chasseur;null;Chasseur_Intro_1)
+
+
+endswitch
+
+variable(TalkedChasseur;=;1)
+
+setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterPosition(Chasseur;ChasseurSpot)
+setCharacterRotation(Chasseur;ChasseurSpot)
+setCharacterAlpha(Chasseur;1;0.5;false)
+
+endif
+
+load(/VMP/Common/CycleCheck)
+
+load(Interaction)

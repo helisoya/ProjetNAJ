@@ -1,0 +1,7 @@
+setInteractionScript(Baron;Baron)
+setInteractionScript(Boris;Boris)
+setInteractionScript(OulOul;OulOul)
+setInteractionScript(DoorToRoom2;../Room2/Arrival)
+setInteractionScript(DoorToRoom3;../Room3/Arrival)
+
+interaction()

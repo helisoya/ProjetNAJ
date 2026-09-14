@@ -1,0 +1,12 @@
+fadeFg(1;true)
+
+removeAllCharacters()
+
+setBackground(Room2)
+
+addCharacter(Rival;false;RivalSpot)
+addCharacter(Chasseur;false;ChasseurSpot)
+
+fadeFg(0;false)
+
+load(Interaction)

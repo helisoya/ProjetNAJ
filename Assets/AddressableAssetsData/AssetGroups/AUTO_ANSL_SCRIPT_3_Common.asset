@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AUTO_ANSL_SCRIPT_3_Common
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AUTO_ANSL_SCRIPT_3_Common
+  m_GUID: 3d5418c5d93d5e2449654c5be42b045c
+  m_SerializeEntries:
+  - m_GUID: 3885d01abe876874096c6a8200bcbe4b
+    m_Address: ANSL/VMP/Common/PrintLookCounter
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9c3a472af852c449a5c6c35c41cd088
+    m_Address: ANSL/VMP/Common/PrintSearchCounter
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fe9782f2224ea034595424c452a1ae8c, type: 2}
+    - {fileID: 11400000, guid: bbdb935606c40ae4694bae20d2a65332, type: 2}

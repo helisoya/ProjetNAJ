@@ -82,7 +82,6 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        fadeAllName: fadeAll
         startInDebugMode: 1
         debugModeScript: /ANF/Tests/Background
         autoLoadSaveFile: 0
@@ -92,11 +91,9 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        backgroundType: 1
         asyncLoading: 1
-        prefabPath: Backgrounds/
         skyboxDataPath: Skyboxes/
-        defaultSkybox: {fileID: 11400000, guid: 3c393467ae28b4f4f89d8d01c5af0816, type: 2}
+        defaultSkybox: Day
         skyboxMaterial: {fileID: 2100000, guid: 79f3e4c0b85311347b7292b2aa8d2833, type: 2}
     - rid: 3436799734139322441
       type: {class: InteractionMode, ns: ANF.Scene, asm: Assembly-CSharp}
