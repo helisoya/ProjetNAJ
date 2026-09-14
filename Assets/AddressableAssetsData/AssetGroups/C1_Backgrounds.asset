@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: C1_Backgrounds
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: C1_Backgrounds
+  m_GUID: 5d6c84e3303f4e94992e7ff2629cf84c
+  m_SerializeEntries:
+  - m_GUID: 50ec3a3d40b34c54f977550a8d8cfb01
+    m_Address: Backgrounds/C1/Forest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 830facb433c676849979a89be3815635
+    m_Address: Backgrounds/C1/Boat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97913bd433d99c945983ad0fe8744379
+    m_Address: Backgrounds/C1/ForestStart
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd06c3b00bbb1e243a638bd38f600eb0
+    m_Address: Backgrounds/C1/Cliff
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c12ed79dae77a914cb6d10cd11c5e98f
+    m_Address: Backgrounds/C1/CrashSite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd5c4631d723b294084b719411d17b48
+    m_Address: Backgrounds/C1/RiverPath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de8334ff6d39e5b4fa42f421ab5f5d3e
+    m_Address: Backgrounds/C1/Beach
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e983d35689773dc49b5fe4a2db3c5f12
+    m_Address: Backgrounds/C1/DeadEnd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 35ad74c18eb19f94fa078b705d8e3ccb, type: 2}
+    - {fileID: 11400000, guid: 975b6a782b7c4ea4cbf7fafd12dd7c7e, type: 2}

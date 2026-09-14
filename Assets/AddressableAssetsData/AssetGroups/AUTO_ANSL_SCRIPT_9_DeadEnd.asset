@@ -33,12 +33,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bbc5873c9552baf4c90ff0159b0a8056
-    m_Address: ANSL/NAJ/C1/Investigation/DeadEnd/Arrival
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

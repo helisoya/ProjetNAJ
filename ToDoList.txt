@@ -33,7 +33,7 @@ ANSL
 ANF
 - Système global pour charger/gerer les ressources                                    V
 - Backgrounds -> Ressources
-- Bundles                                                                             V
+- Bundles                                                                             
 - Ressources Async                                                                    V
 - Autres Modules de ResourceManager ?
 - Vérifier fuites de mémoires

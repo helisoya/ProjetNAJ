@@ -24,30 +24,6 @@ MonoBehaviour:
     m_path: Assets/NAJ/Scenes/NAJMainMenu.unity
   - m_enabled: 1
     m_path: Assets/NAJ/Scenes/NAJGame.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/Prototype/Boat.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/Prototype/Beach.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/Prototype/CrashSite.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/Prototype/Courtroom.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_Beach.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_CrashSite.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_DeadEnd.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_Forest.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_ForestStart.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_RiverPath.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_Cliff.unity
-  - m_enabled: 1
-    m_path: Assets/NAJ/Scenes/Backgrounds/C1/C1_Boat.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

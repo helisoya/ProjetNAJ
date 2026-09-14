@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1_Cliff)
+setBackground(C1/Cliff)
 
 fadeFg(0;false)
 

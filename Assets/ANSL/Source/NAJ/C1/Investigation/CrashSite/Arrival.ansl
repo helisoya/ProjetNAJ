@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1_CrashSite)
+setBackground(C1/CrashSite)
 
 addCharacter(Sartt;false;Captain)
 :setSarttDead()

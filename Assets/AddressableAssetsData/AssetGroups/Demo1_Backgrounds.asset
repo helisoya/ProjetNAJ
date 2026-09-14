@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Demo1_Backgrounds
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Demo1_Backgrounds
+  m_GUID: bbc5c4b3a89f9734a85f58239045bf04
+  m_SerializeEntries:
+  - m_GUID: 6eda7c23923102d4d934fc39ee6a9f86
+    m_Address: Backgrounds/Prototype/Courtroom
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c562e4f1182f4f649bfcc9e5bde3f977
+    m_Address: Backgrounds/Prototype/Beach
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9a1203efb2794042ac5214a7b1524bc
+    m_Address: Backgrounds/Prototype/Boat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec211629f7afc024286cf5c738a94390
+    m_Address: Backgrounds/Prototype/CrashSite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 045f979b097f2be4abc8dbbd1b0487d5, type: 2}
+    - {fileID: 11400000, guid: aa646cec8153e68429c23c8a5d43af95, type: 2}

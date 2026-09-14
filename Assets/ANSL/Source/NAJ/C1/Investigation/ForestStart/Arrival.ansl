@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1_ForestStart)
+setBackground(C1/ForestStart)
 
 fadeFg(0;false)
 

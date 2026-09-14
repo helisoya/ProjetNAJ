@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1_Beach)
+setBackground(C1/Beach)
 
 if(C1_FirstTimeBeach == 0)
 load(FirstTime)

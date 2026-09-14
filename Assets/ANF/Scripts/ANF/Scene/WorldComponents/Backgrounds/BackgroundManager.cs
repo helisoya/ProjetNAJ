@@ -3,6 +3,9 @@ using ANF.Utils;
 using Leguar.TotalJSON;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 
 namespace ANF.Scene
@@ -25,7 +28,18 @@ namespace ANF.Scene
     [System.Serializable]
     public class BackgroundManager : WorldComponent
     {
+
+        /// <summary>
+		/// The type of the background resource
+		/// </summary>
+        public enum ResourceType
+        {
+            SceneManagerScene,
+            AddressableScene
+        }
+
         [SerializeField] private bool asyncLoading = false;
+        [SerializeField] private ResourceType resourceType = ResourceType.AddressableScene;
         [SerializeField] private string skyboxDataPath = "Skyboxes/";
         [SerializeField] private string defaultSkybox = "Day";
         [SerializeField] private Material skyboxMaterial;
@@ -40,7 +54,20 @@ namespace ANF.Scene
         private LerpInstanceColor lerpSunColor;
         private LerpInstanceFloat lerpSkybox;
 
-        private AsyncOperation currentOperation;
+        private AsyncOperation currentSceneManagerOperation;
+        private AsyncOperationHandle<SceneInstance> currentSceneAddressableHandle;
+
+        private bool waitingForAsyncOperation
+        {
+            get
+            {
+                return (resourceType == ResourceType.SceneManagerScene
+                        && currentSceneManagerOperation != null && !currentSceneManagerOperation.isDone) ||
+                    (resourceType == ResourceType.AddressableScene
+                        && currentSceneAddressableHandle.IsValid() && !currentSceneAddressableHandle.IsDone);
+            }
+        }
+
         private int asyncWaitForNextFrames = 0;
         private string cachedNextBackgroundID;
         public bool loadingBackground { get; private set; }
@@ -224,6 +251,9 @@ namespace ANF.Scene
 		/// <param name="force">True if the change should be forced even if </param>
         public void SetBackground(string ID, bool useDefaultData, bool force = false)
         {
+            if (resourceType == ResourceType.AddressableScene)
+                ID = "Backgrounds/" + ID;
+
             if (force || ID != currentBackgroundID)
             {
                 cachedNextBackgroundID = ID;
@@ -231,9 +261,9 @@ namespace ANF.Scene
                 if (useDefaultData || ID == null)
                     currentCachedData = null;
 
-                currentOperation = RemoveCurrentBackground();
+                RemoveCurrentBackground();
 
-                unloadingBackground = currentOperation != null;
+                unloadingBackground = waitingForAsyncOperation;
 
                 if (!unloadingBackground)
                 {
@@ -250,11 +280,11 @@ namespace ANF.Scene
         {
             unloadingBackground = false;
             currentBackground = null;
-            currentOperation = null;
+            currentSceneManagerOperation = null;
 
             if (!string.IsNullOrEmpty(cachedNextBackgroundID))
             {
-                currentOperation = LoadBackground(cachedNextBackgroundID, forceSync);
+                LoadBackground(cachedNextBackgroundID, forceSync);
 
                 loadingBackground = true;
                 asyncWaitForNextFrames = loadingBackground ? 2 : 0;
@@ -274,8 +304,13 @@ namespace ANF.Scene
             cachedNextBackgroundID = null;
             currentBackground = null;
 
+            UnityEngine.SceneManagement.Scene scene;
 
-            UnityEngine.SceneManagement.Scene scene = SceneManager.GetSceneByName(currentBackgroundID);
+            if (resourceType == ResourceType.AddressableScene)
+                scene = currentSceneAddressableHandle.Result.Scene;
+            else
+                scene = SceneManager.GetSceneByName(currentBackgroundID);
+
             if (scene != null)
             {
                 GameObject[] rootObjs = scene.GetRootGameObjects();
@@ -323,7 +358,7 @@ namespace ANF.Scene
                 }
             }
 
-            currentOperation = null;
+            currentSceneManagerOperation = null;
         }
 
         /// <summary>
@@ -331,34 +366,43 @@ namespace ANF.Scene
         /// </summary>
         /// <param name="ID">The background's ID</param>
         /// <param name="forceSync">True if async operations should be forbiden</param>
-        /// <returns>An operation </returns>
-        private AsyncOperation LoadBackground(string ID, bool forceSync = false)
+        private void LoadBackground(string ID, bool forceSync = false)
         {
-            AsyncOperation operation = null;
-
-            if (!forceSync && asyncLoading)
-                SceneManager.LoadScene(ID, LoadSceneMode.Additive);
+            if (resourceType == ResourceType.SceneManagerScene)
+            {
+                if (!forceSync && asyncLoading)
+                    SceneManager.LoadScene(ID, LoadSceneMode.Additive);
+                else
+                    currentSceneManagerOperation = SceneManager.LoadSceneAsync(ID, LoadSceneMode.Additive);
+            }
             else
-                operation = SceneManager.LoadSceneAsync(ID, LoadSceneMode.Additive);
+            {
+                currentSceneAddressableHandle = Addressables.LoadSceneAsync(ID, LoadSceneMode.Additive);
 
-            return operation;
+                if (forceSync || !asyncLoading)
+                    currentSceneAddressableHandle.WaitForCompletion();
+
+            }
         }
 
         /// <summary>
         /// Removes the current Background
         /// </summary>
-        private AsyncOperation RemoveCurrentBackground()
+        private void RemoveCurrentBackground()
         {
             if (currentBackgroundID == null)
-                return null;
-
-            AsyncOperation operation = null;
+                return;
 
             currentBackground.OnRemove(manager);
 
-            operation = SceneManager.UnloadSceneAsync(currentBackgroundID, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
-
-            return operation;
+            if (resourceType == ResourceType.SceneManagerScene)
+            {
+                currentSceneManagerOperation = SceneManager.UnloadSceneAsync(currentBackgroundID, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            }
+            else
+            {
+                currentSceneAddressableHandle = Addressables.UnloadSceneAsync(currentSceneAddressableHandle, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects, true);
+            }
         }
 
         /// <summary>
@@ -440,7 +484,7 @@ namespace ANF.Scene
         {
             if (unloadingBackground)
             {
-                if (currentOperation != null && !currentOperation.isDone)
+                if (waitingForAsyncOperation)
                     return;
 
                 EndBackgroundUnloading();
@@ -448,7 +492,7 @@ namespace ANF.Scene
 
             if (loadingBackground)
             {
-                if (currentOperation != null && !currentOperation.isDone)
+                if (waitingForAsyncOperation)
                     return;
 
                 if (asyncWaitForNextFrames > 0)
@@ -580,11 +624,8 @@ namespace ANF.Scene
 
             if (currentBackground != null)
             {
-                currentBackground.OnRemove(manager);
-                // Not optimal
-                currentOperation = SceneManager.UnloadSceneAsync(currentBackgroundID);
-
-                unloadingBackground = currentOperation != null && !currentOperation.isDone;
+                RemoveCurrentBackground();
+                unloadingBackground = waitingForAsyncOperation;
             }
 
             return !unloadingBackground;
@@ -592,7 +633,7 @@ namespace ANF.Scene
 
         public override bool IsCleaningUpForSceneChange()
         {
-            return currentOperation != null && !currentOperation.isDone;
+            return waitingForAsyncOperation;
         }
     }
 

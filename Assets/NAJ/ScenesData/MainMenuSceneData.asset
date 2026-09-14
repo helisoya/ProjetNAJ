@@ -41,6 +41,7 @@ MonoBehaviour:
         canBeSaved: 1
         enabledByDefault: 1
         asyncLoading: 0
+        resourceType: 1
         skyboxDataPath: Skyboxes/
         defaultSkybox: Day
         skyboxMaterial: {fileID: 2100000, guid: 79f3e4c0b85311347b7292b2aa8d2833, type: 2}
@@ -49,7 +50,7 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        defaultBackground: C1_Beach
+        defaultBackground: C1/Beach
         defaultWeather: 
         defaultSkybox: Day
         backgroundType: 1

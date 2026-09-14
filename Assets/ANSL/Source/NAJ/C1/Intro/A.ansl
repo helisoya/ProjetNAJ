@@ -1,4 +1,4 @@
-setBackground(C1_Boat)
+setBackground(C1/Boat)
 setSkybox(Day)
 
 setBg(1)

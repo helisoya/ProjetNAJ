@@ -15,12 +15,6 @@ MonoBehaviour:
   m_GroupName: AUTO_ANSL_SCRIPT_7_ForestStart
   m_GUID: 2e2833ec59ca4764da5a768a0f4c2f54
   m_SerializeEntries:
-  - m_GUID: 304e40231292f4643a2d732121ea427d
-    m_Address: ANSL/NAJ/C1/Investigation/ForestStart/Arrival
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6c6f023f78e7a1b449c8a04ba3c9b088
     m_Address: ANSL/NAJ/C1/Investigation/ForestStart/ToForest
     m_ReadOnly: 0
