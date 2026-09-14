@@ -18,6 +18,16 @@ namespace ANF.Scene
         protected LerpInstanceFloat lerpAlpha;
         protected bool skipModeEnabled;
         private float currentAlpha;
+        private bool hidden = false;
+
+        public bool Hidden
+        {
+            get
+            {
+                return hidden;
+            }
+
+        }
 
         public bool Moving
         {
@@ -72,6 +82,20 @@ namespace ANF.Scene
             }
 
             OnRemove(manager);
+        }
+
+        /// <summary>
+		/// Sets if the object is hidden or not (Renderer Off)
+		/// </summary>
+		/// <param name="hidden">True if hidden</param>
+        public void SetHidden(bool hidden)
+        {
+            this.hidden = hidden;
+
+            foreach (Renderer renderer in renderers)
+            {
+                renderer.enabled = !hidden;
+            }
         }
 
         /// <summary>
@@ -180,6 +204,9 @@ namespace ANF.Scene
             if (json.ContainsKey("currentPosition"))
                 transform.position = json.GetJArray("currentPosition").AsVector3();
 
+            if (json.ContainsKey("hidden"))
+                SetHidden(hidden);
+
             if (json.ContainsKey("currentRotation"))
                 transform.eulerAngles = json.GetJArray("currentRotation").AsVector3();
 
@@ -218,6 +245,7 @@ namespace ANF.Scene
             json.Add("currentPosition", transform.position);
             json.Add("currentRotation", transform.eulerAngles);
             json.Add("currentAlpha", currentAlpha);
+            json.Add("hidden", hidden);
 
             if (lerpPosition != null)
             {

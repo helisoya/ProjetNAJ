@@ -34092,7 +34092,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d817c93dac90f14b8e7a6989d150e56, type: 2}
+  - {fileID: 2100000, guid: 34dc8b11fcd9d734e93412893e570468, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34460,7 +34460,7 @@ MonoBehaviour:
   defaultData:
     currentWeatherEffect: 
     currentLightDirection: {x: 50, y: -30, z: 0}
-    skyboxData: {fileID: 11400000, guid: 3c393467ae28b4f4f89d8d01c5af0816, type: 2}
+    skyboxData: 
   sunLight: {fileID: 8577627912959372659}
   weatherEffects:
     _serializedList:

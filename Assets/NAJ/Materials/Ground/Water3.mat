@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water1
+  m_Name: Water3
   m_Shader: {fileID: 4800000, guid: 8097978abb0800149a7a110f04640a53, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -115,7 +115,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _1st_Wave_Height: 0.001
+    - _1st_Wave_Height: 0.01
     - _1st_Wave_Length: 3
     - _1st_Wave_Sharpness: 0.3
     - _1st_Wave_Speed: 0.5
@@ -218,7 +218,7 @@ Material:
     - _UnderWater_ScaleModifier: 0
     - _UnderWater_Start: 0.1
     - _Underwater_Fade: 1
-    - _Water_Depth: 0.8
+    - _Water_Depth: 2
     - _WorkflowMode: 1
     - _WorldSpaceDepth: 1
     - _XRMotionVectorsPass: 1
@@ -228,8 +228,8 @@ Material:
     - _2nd_Wave_Direction: {r: -1, g: 0, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color_Deep: {r: 0, g: 0.2541522, b: 0.4507858, a: 0.81960785}
-    - _Color_Shallow: {r: 0.22745097, g: 0.7952153, b: 0.8235294, a: 0}
+    - _Color_Deep: {r: 0, g: 0.1546101, b: 0.32156864, a: 1}
+    - _Color_Shallow: {r: 0.15667489, g: 0.520056, b: 0.6150943, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _InterSec_Color: {r: 1, g: 1, b: 1, a: 1}
     - _InterSec_Foam_Pan: {r: 0, g: 0, b: 0, a: 0}
@@ -242,10 +242,10 @@ Material:
     - _Specular_Color: {r: 1, g: 1, b: 1, a: 1}
     - _SurfFoam_Color: {r: 1, g: 1, b: 1, a: 1}
     - _SurfFoam_Pan: {r: 0.1, g: 0.1, b: 0, a: 0}
-    - _SurfFoam_Tile: {r: 1, g: 1, b: 0, a: 0}
+    - _SurfFoam_Tile: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _SurfaceDistortion_Pan: {r: 1, g: 1, b: 0, a: 0}
     - _Underwater_Color: {r: 0, g: 0, b: 0, a: 0.49019608}
-    - _Wave_Top_Color: {r: 0.29803926, g: 0.8736917, b: 0.9254902, a: 1}
+    - _Wave_Top_Color: {r: 0.3265147, g: 0.4455961, b: 0.45660365, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3201050695099372468
