@@ -1,20 +1,52 @@
-#FABAB48480B53CF8EF0A1BD8D2AE8E21D41D8CD98F00B204E9800998ECF8427E
-37|1|3|TalkedHumain == 1
+#A9C47E248027E9257571F6C8D3728FFCD41D8CD98F00B204E9800998ECF8427E
+37|1|3|TalkedHumain == 1 && CycleCount == 0
 32|null|null|Talk_Character_Done_1
-39|17
+39|49
 61|Humain|0|0.5|true
 69|Humain|Front
 70|Humain|Front
 61|Humain|1|0.5|false
-89|CycleCount|8|0|9
-39|11
-32|Char_Humain|null|Humain_Intro_1
-39|11
+89|CycleCount|8|0|41
+32|null|null|Choice_InteractCharacter
+24|0|Choice_Talk|10|null|null|Choice_Search|29|null|null|Choice_Nothing|39|null|null
+37|11|13|TalkedHumain == 1
+32|null|null|Talk_Character_Done_1
+39|28
+37|14|25|CycleCount == 1
+37|15|22|SecretHumain == 1 && ConfrontedHumainSecret == 0
+32|null|null|Humain_Secret_0
+24|0|Choice_Yes|17|null|null|Choice_No|19|null|null
+41|HumainSecret
+39|21
+41|HumainC1Default
+39|21
+39|24
+41|HumainC1Default
+39|24
+39|26
+39|26
 92|TalkedHumain|=|1
+39|28
+39|40
+37|30|36|SearchCounter > 0
+92|SearchCounter|-|1
+92|SecretHumain|=|1
+32|null|null|Humain_SearchBelongings_1
+32|null|null|Humain_SearchBelongings_2
+41|/VMP/Common/PrintSearchCounter
+39|38
+32|null|null|Counter_Search_0
+39|38
+39|40
+39|40
+39|44
+32|Char_Humain|null|Humain_Intro_1
+92|TalkedHumain|=|1
+39|44
 61|Humain|0|0.5|true
 69|Humain|HumainSpot
 70|Humain|HumainSpot
 61|Humain|1|0.5|false
-39|17
+39|49
 41|/VMP/Common/CycleCheck
 41|Interaction

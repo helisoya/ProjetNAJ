@@ -8,11 +8,6 @@
 createUserVariable(CycleCount;0)
 
 createUserVariable(BorisCounter;0)
-createUserVariable(DrinkQuest;0)
-# 0 : Not Started
-# 1 : Get Drink
-# 2 : Bring it back
-# 3 : Done
 
 createUserVariable(SearchCounter;0)
 createUserVariable(LookCounter;0)
@@ -28,3 +23,37 @@ createUserVariable(ValueRival;0)
 createUserVariable(ValueFils;0)
 createUserVariable(ValueHumain;0)
 createUserVariable(ValueChasseur;0)
+
+createUserVariable(SecretBaron;0)
+createUserVariable(SecretRival;0)
+createUserVariable(SecretFils;0)
+createUserVariable(SecretHumain;0)
+createUserVariable(SecretChasseur;0)
+
+
+
+createUserVariable(DrinkQuest;0)
+# 0 : Not Started
+# 1 : Get Drink
+# 2 : Bring it back
+# 3 : Done
+
+createUserVariable(FilsWeirdQuest;0)
+# 0 : Not Started
+# 1 : Talk to Fils
+# 2 : Learned Nothing
+# 3 : Bad to Fils
+# 4 : Nice to Fils
+
+createUserVariable(LieToChasseurQuest;0)
+# 0 : Not Started
+# 1 : Lie to Chasseur
+# 2 : Lied to Chasseur
+# 3 : Revealed Fils secret
+
+createUserVariable(ConfrontedHumainSecret;0)
+
+createUserVariable(RivalReactionToDrinkQuest;0)
+# 0 : No reaction
+# 1 : We are not friends anymore >:(
+# 2 : Mueh eh eh

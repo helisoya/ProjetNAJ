@@ -352,6 +352,9 @@ namespace ANF.ANSL
             if (result)
                 return ResultType.Success;
 
+            if (File.Exists(destinationFile))
+                File.Delete(destinationFile);
+
             return ResultType.Failure;
         }
 
@@ -456,8 +459,8 @@ namespace ANF.ANSL
             if (currentLine >= inLines.Count)
             {
                 // End of file
-                cachedCurrentLine = null;
-                cachedCurrentLineClean = null;
+                cachedCurrentLine = "EOF";
+                cachedCurrentLineClean = "EOF";
             }
             else
             {

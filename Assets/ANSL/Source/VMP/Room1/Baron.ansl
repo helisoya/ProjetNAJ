@@ -1,33 +1,76 @@
-if(TalkedBaron == 1)
-dialog(null;null;Talk_Character_Done_1)
+if(TalkedBaron == 1 && CycleCount == 0)
+	dialog(null;null;Talk_Character_Done_1)
 else
 
-setCharacterAlpha(Baron;0;0.5;true)
-setCharacterPosition(Baron;Front)
-setCharacterRotation(Baron;Front)
-setCharacterAlpha(Baron;1;0.5;false)
+	setCharacterAlpha(Baron;0;0.5;true)
+	setCharacterPosition(Baron;Front)
+	setCharacterRotation(Baron;Front)
+	setCharacterAlpha(Baron;1;0.5;false)
 
-switch(CycleCount)
-case default:
+	switch(CycleCount)
+		case default:
 
-case 0:
+		dialog(null;null;Choice_InteractCharacter)
+		choice(List)
+			choice Choice_Talk:
+				if(TalkedBaron == 1)
+					dialog(null;null;Talk_Character_Done_1)
+				else
 
-dialog(Char_Baron;null;Baron_Intro_1)
-dialog(null;null;Baron_Intro_2)
-dialog(Char_Baron;null;Baron_Intro_3)
-dialog(Char_Baron;null;Baron_Intro_4)
-dialog(null;null;Baron_Intro_5)
+					if(DrinkQuest == 2 && CycleCount == 1)
+						# Drink Quest done in time
+						load(BaronDrinkQuestOnTime)
+					endif
 
-variable(DrinkQuest;=;1)
+					if(DrinkQuest == 2 && CycleCount > 1)
+						# Drink Quest done late
+						load(BaronDrinkQuestLate)
+					endif
 
-endswitch
+					if(DrinkQuest < 2)
+						# Drink Quest not started
+						load(BaronDrinkQuestC1No)
+					endif
 
-variable(TalkedBaron;=;1)
+					variable(TalkedBaron;=;1)
+				endif
 
-setCharacterAlpha(Baron;0;0.5;true)
-setCharacterPosition(Baron;BaronSpot)
-setCharacterRotation(Baron;BaronSpot)
-setCharacterAlpha(Baron;1;0.5;false)
+			choice Choice_Search:
+				if(SearchCounter > 0)
+					# Search his belongings
+					variable(SearchCounter;-;1)
+					variable(SecretBaron;=;1)
+					dialog(null;null;Baron_SearchBelongings_1)
+					dialog(null;null;Baron_SearchBelongings_2)
+					load(/VMP/Common/PrintSearchCounter)
+				else
+					# Cannot search
+					dialog(null;null;Counter_Search_0)
+				endif
+
+			choice Choice_Nothing:
+			# Do Nothing
+
+		endchoice
+
+
+		case 0:
+			# Cycle 0 : Intro
+			dialog(Char_Baron;null;Baron_Intro_1)
+			dialog(null;null;Baron_Intro_2)
+			dialog(Char_Baron;null;Baron_Intro_3)
+			dialog(Char_Baron;null;Baron_Intro_4)
+			dialog(null;null;Baron_Intro_5)
+
+			variable(DrinkQuest;=;1)
+			variable(TalkedBaron;=;1)
+
+	endswitch
+
+	setCharacterAlpha(Baron;0;0.5;true)
+	setCharacterPosition(Baron;BaronSpot)
+	setCharacterRotation(Baron;BaronSpot)
+	setCharacterAlpha(Baron;1;0.5;false)
 
 endif
 

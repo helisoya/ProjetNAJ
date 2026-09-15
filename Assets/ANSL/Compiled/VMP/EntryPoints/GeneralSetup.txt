@@ -1,7 +1,6 @@
-#B638E835E4120856E2930E001713A145D41D8CD98F00B204E9800998ECF8427E
+#55F5B3F9C0AAE10C78ED0BD81BCD41FFD41D8CD98F00B204E9800998ECF8427E
 28|CycleCount|0
 28|BorisCounter|0
-28|DrinkQuest|0
 28|SearchCounter|0
 28|LookCounter|0
 28|TalkedBaron|0
@@ -14,3 +13,13 @@
 28|ValueFils|0
 28|ValueHumain|0
 28|ValueChasseur|0
+28|SecretBaron|0
+28|SecretRival|0
+28|SecretFils|0
+28|SecretHumain|0
+28|SecretChasseur|0
+28|DrinkQuest|0
+28|FilsWeirdQuest|0
+28|LieToChasseurQuest|0
+28|ConfrontedHumainSecret|0
+28|RivalReactionToDrinkQuest|0

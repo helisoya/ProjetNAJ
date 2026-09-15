@@ -1,0 +1,20 @@
+dialog(null;null;Chasseur_LieToHimQuest_1)
+
+choice(List)
+	choice Choice_Yes:
+		dialog(null;null;Chasseur_LieToHimQuest_Lie_1)
+		dialog(null;null;Chasseur_LieToHimQuest_Lie_2)
+		dialog(Char_Chasseur;null;Chasseur_LieToHimQuest_Lie_3)
+		dialog(Char_Chasseur;null;Chasseur_LieToHimQuest_Lie_4)
+		variable(LieToChasseurQuest;=;2)
+		variable(ValueFils;+;3)
+	choice Choice_RevealSecret:
+		dialog(null;null;Chasseur_LieToHimQuest_Reveal_1)
+		dialog(Char_Chasseur;null;Chasseur_LieToHimQuest_Reveal_2)
+		dialog(Char_Chasseur;null;Chasseur_LieToHimQuest_Reveal_3)
+		variable(LieToChasseurQuest;=;3)
+		variable(ValueFils;-;3)
+		variable(ValueChasseur;+;2)
+	choice Choice_NotNow:
+		load(ChasseurC1Default)
+endchoice

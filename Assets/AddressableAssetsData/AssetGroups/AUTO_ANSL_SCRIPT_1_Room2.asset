@@ -15,6 +15,30 @@ MonoBehaviour:
   m_GroupName: AUTO_ANSL_SCRIPT_1_Room2
   m_GUID: da2a1a5c1971e13488d764548769748e
   m_SerializeEntries:
+  - m_GUID: 0cc13bcf246c705498acdf122c28f367
+    m_Address: ANSL/VMP/Room2/RivalReactionDrinkQuest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a5c986ae6e981f4a807ecd6976e8674
+    m_Address: ANSL/VMP/Room2/ChasseurLieQuest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28ada1bfe4b6b15448de01c4e03daaf0
+    m_Address: ANSL/VMP/Room2/RivalC1Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ed2530d1902dcc46868dd0046acf80c
+    m_Address: ANSL/VMP/Room2/ChasseurC1Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 773d8d9719654bd449b950dd0d6db679
     m_Address: ANSL/VMP/Room2/Interaction
     m_ReadOnly: 0

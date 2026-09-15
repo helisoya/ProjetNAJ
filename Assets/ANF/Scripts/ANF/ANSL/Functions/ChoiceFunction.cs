@@ -12,7 +12,7 @@ namespace ANF.ANSL
     [ANSLFunctionAttribute(
         functionBody: "choice",
         functionAutoComplete: new string[] {
-            "choice(List)\n\t choice Key:\n\nendchoice"
+            "choice(List)\\n\\tchoice Key:\\n\\nendchoice"
         },
         functionDesc: "Starts a choice (List/Circle/Arc)")]
     public class ChoiceFunction : ANSLFunction
@@ -99,7 +99,7 @@ namespace ANF.ANSL
             compiler.CheckNextLine();
             string currentNextLine = compiler.GetCurrentLineClean();
 
-            while (canContinue && currentNextLine != null)
+            while (canContinue && currentNextLine != "EOF")
             {
                 if (string.IsNullOrEmpty(currentNextLine) || string.IsNullOrWhiteSpace(currentNextLine))
                 {

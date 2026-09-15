@@ -1,12 +1,30 @@
 # Characters 
 
 Char_Baron = Lord Vampire Cool
+Char_LoupGaroun = Corentin
 Char_Rival = Yesferatu
-Char_Fils = Minecraft Lover
-Char_Humain = Darth Vader ?
+Char_Fils = Minecraft Lover (Son of Lord Vampire Cool)
+Char_Humain = Vampire Vader
 Char_OulOul = ???
 Char_Chasseur = Great Cool
 Char_Boris = HIM
+
+# Choice
+
+Choice_InteractCharacter = What should I do ?
+
+Choice_Talk = Talk with the guest
+Choice_Search = Search their belongings
+Choice_Nothing = Go Back
+
+Choice_Yes = Yes
+Choice_No = No
+
+Choice_NotNow = Not now
+Choice_RevealSecret = Reveal the secret
+
+Choice_IAmLoyalToYou = I am loyal to you
+Choice_IAmLoyalToHim = I am loyal to him
 
 # Common
 
@@ -36,10 +54,13 @@ Talk_Character_Done_1 = I have already talked to this guest.
 
 # Dialogs
 
+
+# Introduction
+
 Intro_1 = -And that's how I EXPOSED Yesferatu.
 Intro_2 = I see. Cool, boss.
 Intro_3 = Yeah. Now go talk to the guests, my laquey.
-Intro_4 = I can't believe I pay you to do nothing.
+Intro_4 = This vampire only festival is going to be the best one ever.
 
 Boris_Part1_1 = Nothing to see.
 Boris_Part2_1 = Nothing to see... ?
@@ -81,3 +102,106 @@ Steal_12 = So go and figure out who stole it !
 Steal_13 = ... Come, let's go back and preorder that GameClam Slim I told you about.
 Steal_14 = Yeah...
 Steal_15 = This is a waste of time.
+
+
+# Cycle 1
+
+Baron_SearchBelongings_1 = ... Dietary supplements.
+Baron_SearchBelongings_2 = Not that I didn't know about it anyway...
+
+Rival_SearchBelongings_1 = ... Makeup.
+Rival_SearchBelongings_2 = I didn't know Yesferatu used that.
+
+Chasseur_SearchBelongings_1 = ... Garlic.
+Chasseur_SearchBelongings_2 = Why would he have that on him ? Does he have a death wish ?
+
+Fils_SearchBelongings_1 = ... A cap and a pair of sneakers.
+Fils_SearchBelongings_2 = Our lord would certainly be displeased if he saw that. 
+
+Humain_SearchBelongings_1 = ... Glue and fake teeth.
+Humain_SearchBelongings_2 = ... What ? Why would vampire vader need that ?
+
+Baron_DrinkQuestGood_1 = Here is your drink, sir.
+Baron_DrinkQuestGood_2 = Ah, good.
+Baron_DrinkQuestGood_3 = While you're at it. Go talk to my minecraft lover of a son.
+Baron_DrinkQuestGood_4 = I fear he is... weird.
+Baron_DrinkQuestGood_5 = As you wish.
+
+Baron_DrinkQuestLate_1 = Your drink, sir.
+Baron_DrinkQuestLate_2 = About time !
+Baron_DrinkQuestLate_3 = I was starving. You should be ashamed.
+Baron_DrinkQuestLate_4 = Yes, milord.
+
+Baron_DrinkQuestNo_1 = Where is my drink ?
+Baron_DrinkQuestNo_2 = I have yet to find it.
+Baron_DrinkQuestNo_3 = What are you talking about ?!
+Baron_DrinkQuestNo_4 = The bottle is about as tall as me !
+Baron_DrinkQuestNo_5 = Don't fail me, werewolf.
+
+Fils_LieToChasseur_1 = Hey. Do me a favor, please ?
+Fils_LieToChasseur_2 = This creepy hunter next door is onto me.
+Fils_LieToChasseur_3 = Go tell him I actually play Terraria.
+
+Fils_Confront_0 = Do I want to confront him on being weird ?
+
+Fils_Confront_1 = Your father asks if you are weird.
+Fils_Confront_2 = No, duh !
+
+Fils_Confront_3 = I found these amongst your tho- belongings.
+Fils_Confront_4 = My pair of super rare sneakers !
+Fils_Confront_5 = How dare you !
+Fils_Confront_6 = Are you going to tell my dad ?
+
+Fils_Confront_Bad_1 = Yeah. I hate sneakers.
+Fils_Confront_Bad_2 = I HATE YOU.
+
+Fils_Confront_Nice_1 = No it's cool.
+Fils_Confront_Nice_2 = Yeee.
+Fils_Confront_Nice_3 = Please go tell that weird hunter I actually play Terraria.
+Fils_Confront_Nice_4 = I think he knows my secret, so that'll throw me off.
+
+Humain_C1Default_1 = I love this party !
+Humain_C1Default_2 = Nice werewolf disguise :)
+
+Humain_Secret_0 = Should I press him about that glue ?
+
+Humain_Secret_1 = Sir, why do you have fake teeths in your bag ?
+Humain_Secret_2 = Well, to glue them to my face, duh.
+Humain_Secret_3 = You can't be vampire vader with vampire teeths, man.
+Humain_Secret_4 = Don't you have vampire teeths already ?
+Humain_Secret_5 = Well, no. I'm a-
+
+Humain_Secret_Ennemy_1 = You have a problem with him ?
+Humain_Secret_Ennemy_2 = Go lick my dad's boot instead, laquey >:(
+
+Humain_Secret_Neutral_1 = Ha ha. Nothing to worry about, sir cook.
+Humain_Secret_Neutral_2 = Don't mind him.
+
+Humain_Secret_Ally_1 = Hey, hey. Keep it down.
+Humain_Secret_Ally_2 = He's human, right. But don't tell anyone.
+Humain_Secret_Ally_3 = Okay. If you say so.
+
+Rival_C1Default_1 = ... Yes.
+
+Rival_ReactionToDrinkQuest_1 = I saw you give the baron his drink.
+Rival_ReactionToDrinkQuest_2 = I thought you only served me, idiot !
+
+Rival_ReactionToDrinkQuest_Loyal_1 = Good, good !
+Rival_ReactionToDrinkQuest_Loyal_2 = I'll have more instructions on cheat codes next time.
+
+Rival_ReactionToDrinkQuest_NotLoyal_1 = I- What ?!
+Rival_ReactionToDrinkQuest_NotLoyal_2 = How dare you ! I gave you everything !
+Rival_ReactionToDrinkQuest_NotLoyal_3 = ... Especially that toy car.
+
+Chasseur_C1Default_1 = I wonder who stole the evidence...
+
+Chasseur_LieToHimQuest_1 = Should I lie to him as instructed ?
+
+Chasseur_LieToHimQuest_Reveal_1 = Hey, did you know the baron's son dresses like a human.
+Chasseur_LieToHimQuest_Reveal_2 = LOL, as a matter of fact, yes.
+Chasseur_LieToHimQuest_Reveal_3 = Thanks, buddy.
+
+Chasseur_LieToHimQuest_Lie_1 = Hey, did you know that the baron's son hates minecraft ?
+Chasseur_LieToHimQuest_Lie_2 = He loves Terraria though.
+Chasseur_LieToHimQuest_Lie_3 = What ?!
+Chasseur_LieToHimQuest_Lie_4 = Then I got everything wrong !

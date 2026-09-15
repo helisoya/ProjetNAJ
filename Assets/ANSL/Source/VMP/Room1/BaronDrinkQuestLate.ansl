@@ -1,0 +1,5 @@
+dialog(null;null;Baron_DrinkQuestLate_1)
+dialog(Char_Baron;null;Baron_DrinkQuestLate_2)
+dialog(Char_Baron;null;Baron_DrinkQuestLate_3)
+dialog(null;null;Baron_DrinkQuestLate_4)
+variable(DrinkQuest;=;3)

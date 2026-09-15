@@ -1,0 +1,31 @@
+dialog(null;null;Fils_Confront_1)
+dialog(Char_Fils;null;Fils_Confront_2)
+
+variable(ValueFils;-;1)
+
+if(SecretFils == 1)
+	dialog(null;null;Fils_Confront_3)
+	dialog(Char_Fils;null;Fils_Confront_4)
+	dialog(Char_Fils;null;Fils_Confront_5)
+	dialog(Char_Fils;null;Fils_Confront_6)
+
+	choice(List)
+		choice Choice_Yes:
+			dialog(Char_Fils;null;Fils_Confront_Bad_1)
+			dialog(Char_Fils;null;Fils_Confront_Bad_2)
+			variable(FilsWeirdQuest;=;3)
+			variable(ValueFils;-;3)
+			variable(ValueBaron;+;2)
+		choice Choice_No:
+			dialog(Char_Fils;null;Fils_Confront_Nice_1)
+			dialog(Char_Fils;null;Fils_Confront_Nice_2)
+			dialog(Char_Fils;null;Fils_Confront_Nice_3)
+			dialog(Char_Fils;null;Fils_Confront_Nice_4)
+			variable(FilsWeirdQuest;=;4)
+			variable(ValueFils;+;3)
+			variable(LieToChasseurQuest;=;1)
+	endchoice
+
+else
+	variable(FilsWeirdQuest;=;2)
+endif

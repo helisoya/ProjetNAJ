@@ -113,7 +113,7 @@
 			]
 		},
 		"choice": {
-			"begin": "^choice",
+			"begin": "^[\t ]*choice",
 			"end": "$",
 			"name": "keyword.control.ansl",
 			"patterns": [
@@ -134,7 +134,7 @@
 			]
 		},
 		"examination": {
-			"begin": "^part",
+			"begin": "^[\t ]*part",
 			"end": "$",
 			"name": "keyword.control.ansl",
 			"patterns": [
@@ -150,12 +150,12 @@
 			]
 		},
 		"examination2": {
-			"begin": "^press",
+			"begin": "^[\t ]*press",
 			"end": "$",
 			"name": "keyword.control.ansl"
 		},
 		"switch": {
-			"begin": "^case",
+			"begin": "^[\t ]*case",
 			"end": "$",
 			"name": "keyword.control.ansl",
 			"patterns": [

@@ -1,6 +1,7 @@
 using ANF.Persistent;
 using ANF.Utils;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ANF.ANSL
 {
@@ -74,7 +75,7 @@ namespace ANF.ANSL
             compiler.CheckNextLine();
             string currentNextLine = compiler.GetCurrentLineClean();
 
-            while (canContinue && currentNextLine != null)
+            while (canContinue && currentNextLine != "EOF")
             {
                 if (string.IsNullOrEmpty(currentNextLine) || string.IsNullOrWhiteSpace(currentNextLine))
                 {

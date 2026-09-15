@@ -1,20 +1,47 @@
-#BC5A4F7512B69FA35F4FDB32C7495FBCD41D8CD98F00B204E9800998ECF8427E
-37|1|3|TalkedRival == 1
+#79EB658BC5B7D62B113A7FBAD1A23077D41D8CD98F00B204E9800998ECF8427E
+37|1|3|TalkedRival == 1 && CycleCount == 0
 32|null|null|Talk_Character_Done_1
-39|17
+39|44
 61|Rival|0|0.5|true
 69|Rival|Front
 70|Rival|Front
 61|Rival|1|0.5|false
-89|CycleCount|8|0|9
-39|11
-32|Char_Rival|null|Rival_Intro_1
-39|11
+89|CycleCount|8|0|36
+32|null|null|Choice_InteractCharacter
+24|0|Choice_Talk|10|null|null|Choice_Search|24|null|null|Choice_Nothing|34|null|null
+37|11|13|TalkedRival == 1
+32|null|null|Talk_Character_Done_1
+39|23
+37|14|20|CycleCount == 1
+37|15|17|DrinkQuest == 3 && RivalReactionToDrinkQuest == 0
+41|RivalReactionDrinkQuest
+39|19
+41|RivalC1Default
+39|19
+39|21
+39|21
 92|TalkedRival|=|1
+39|23
+39|35
+37|25|31|SearchCounter > 0
+92|SearchCounter|-|1
+92|SecretRival|=|1
+32|null|null|Rival_SearchBelongings_1
+32|null|null|Rival_SearchBelongings_2
+41|/VMP/Common/PrintSearchCounter
+39|33
+32|null|null|Counter_Search_0
+39|33
+39|35
+39|35
+39|39
+32|Char_Rival|null|Rival_Intro_1
+92|TalkedRival|=|1
+39|39
 61|Rival|0|0.5|true
 69|Rival|RivalSpot
 70|Rival|RivalSpot
 61|Rival|1|0.5|false
-39|17
+39|44
 41|/VMP/Common/CycleCheck
 41|Interaction

@@ -182,10 +182,7 @@
 	"24_0": {
 		"scope": "ansl",
 		"prefix": "choice",
-		"body": ["choice(List)
-	 choice Key:
-
-endchoice"],
+		"body": ["choice(List)\n\t choice Key:\n\nendchoice"],
 		"description": "Starts a choice (List/Circle/Arc)"
 	},
 	"25_0": {

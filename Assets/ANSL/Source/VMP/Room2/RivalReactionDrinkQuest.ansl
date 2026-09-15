@@ -1,0 +1,16 @@
+dialog(Char_Rival;null;Rival_ReactionToDrinkQuest_1)
+dialog(Char_Rival;null;Rival_ReactionToDrinkQuest_2)
+
+choice(List)
+	choice Choice_IAmLoyalToYou:
+		dialog(Char_Rival;null;Rival_ReactionToDrinkQuest_Loyal_1)
+		dialog(Char_Rival;null;Rival_ReactionToDrinkQuest_Loyal_2)
+		variable(RivalReactionToDrinkQuest;=;2)
+		variable(ValueRival;+;3)
+	choice Choice_IAmLoyalToHim:
+		dialog(Char_Rival;null;Rival_ReactionToDrinkQuest_NotLoyal_1)
+		dialog(Char_Rival;null;Rival_ReactionToDrinkQuest_NotLoyal_2)
+		dialog(Char_Rival;null;Rival_ReactionToDrinkQuest_NotLoyal_3)
+		variable(RivalReactionToDrinkQuest;=;1)
+		variable(ValueRival;-;2)
+endchoice

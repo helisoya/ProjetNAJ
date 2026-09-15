@@ -1,28 +1,72 @@
-if(TalkedFils == 1)
-dialog(null;null;Talk_Character_Done_1)
+if(TalkedFils == 1 && CycleCount == 0)
+	dialog(null;null;Talk_Character_Done_1)
 else
 
-setCharacterAlpha(Fils;0;0.5;true)
-setCharacterPosition(Fils;Front)
-setCharacterRotation(Fils;Front)
-setCharacterAlpha(Fils;1;0.5;false)
+	setCharacterAlpha(Fils;0;0.5;true)
+	setCharacterPosition(Fils;Front)
+	setCharacterRotation(Fils;Front)
+	setCharacterAlpha(Fils;1;0.5;false)
 
-switch(CycleCount)
-case default:
+	switch(CycleCount)
+		case default:
 
-case 0:
+		dialog(null;null;Choice_InteractCharacter)
+		choice(List)
+			choice Choice_Talk:
+				if(TalkedFils == 1)
+					dialog(null;null;Talk_Character_Done_1)
+				else
 
-dialog(Char_Fils;null;Fils_Intro_1)
+					if(CycleCount == 1)
+						if(FilsWeirdQuest == 1)
+							# Fils is weird quest
+							dialog(null;null;Fils_Confront_0)
+							choice(List)
+								choice Choice_Yes:
+									load(FilsC1Confront)
+								choice Choice_No:
+									load(FilsC1DefaultDialog)
+							endchoice
+
+						else
+							# Has not started the Fils Weird Quest
+							load(FilsC1DefaultDialog)
+						endif
+					endif
+
+					variable(TalkedFils;=;1)
+				endif
+
+			choice Choice_Search:
+				if(SearchCounter > 0)
+					# Search his belongings
+					variable(SearchCounter;-;1)
+					variable(SecretFils;=;1)
+					dialog(null;null;Fils_SearchBelongings_1)
+					dialog(null;null;Fils_SearchBelongings_2)
+					load(/VMP/Common/PrintSearchCounter)
+				else
+					# Cannot search
+					dialog(null;null;Counter_Search_0)
+				endif
+
+			choice Choice_Nothing:
+			# Do Nothing
+
+		endchoice
 
 
-endswitch
+		case 0:
+			# Cycle 0 : Intro
+			dialog(Char_Fils;null;Fils_Intro_1)
+			variable(TalkedFils;=;1)
 
-variable(TalkedFils;=;1)
+	endswitch
 
-setCharacterAlpha(Fils;0;0.5;true)
-setCharacterPosition(Fils;FilsSpot)
-setCharacterRotation(Fils;FilsSpot)
-setCharacterAlpha(Fils;1;0.5;false)
+	setCharacterAlpha(Fils;0;0.5;true)
+	setCharacterPosition(Fils;FilsSpot)
+	setCharacterRotation(Fils;FilsSpot)
+	setCharacterAlpha(Fils;1;0.5;false)
 
 endif
 

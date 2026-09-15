@@ -27,8 +27,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71e4886fac00d2a42a5fd9475478509c
+    m_Address: ANSL/VMP/Room3/FilsC1DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81b35a3f54bf4f0409c19c6dd26f3f3b
+    m_Address: ANSL/VMP/Room3/FilsC1Confront
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 87ac4b813b76a124d96124bf6483ffe0
     m_Address: ANSL/VMP/Room3/Fils
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b75195dd00d17f4498a431f17dd7704
+    m_Address: ANSL/VMP/Room3/HumainSecret
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac62734b730a5204e829fefcff9df349
+    m_Address: ANSL/VMP/Room3/HumainC1Default
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts

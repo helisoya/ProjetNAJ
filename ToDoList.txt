@@ -29,6 +29,7 @@ ANSL
 - Pouvoir déclarer des logs depuis ANSL                                               V
 - Code Snippets pour les macros                                                       V
 - Checksum pour la compilation                                                        V
+- Erreur de compil -> Checksum Ok la fois d'après (Supprimer le fichier)
 
 ANF
 - Système global pour charger/gerer les ressources                                    V

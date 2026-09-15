@@ -65,7 +65,7 @@ namespace ANF.ANSL
             compiler.CheckNextLine();
             string currentNextLine = compiler.GetCurrentLineClean();
 
-            while (canContinue && currentNextLine != null)
+            while (canContinue && currentNextLine != "EOF")
             {
                 if (string.IsNullOrEmpty(currentNextLine) || string.IsNullOrWhiteSpace(currentNextLine))
                 {

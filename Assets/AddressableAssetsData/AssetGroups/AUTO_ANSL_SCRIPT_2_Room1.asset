@@ -33,6 +33,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57216b75d0980b84a957a1b20f2cf2ea
+    m_Address: ANSL/VMP/Room1/BaronDrinkQuestOnTime
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5836da0d35b05d4493e2eb95a6b0052
+    m_Address: ANSL/VMP/Room1/BaronDrinkQuestLate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9f2bbb7983141d4eb5c28415280f442
+    m_Address: ANSL/VMP/Room1/BaronDrinkQuestC1No
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eeb6e99cadf86e149b6fdc65fc0c097d
     m_Address: ANSL/VMP/Room1/OulOul
     m_ReadOnly: 0
