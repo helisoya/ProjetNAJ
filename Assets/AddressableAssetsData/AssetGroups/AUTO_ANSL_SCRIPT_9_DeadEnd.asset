@@ -14,25 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_9_DeadEnd
   m_GUID: 462dca2b21186cc4ba6b4b4f6bae5f9d
-  m_SerializeEntries:
-  - m_GUID: 2966968a2b4b5e342ba355af5f13b999
-    m_Address: ANSL/NAJ/C1/Investigation/DeadEnd/Owl
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6da134bd9cb6cae47a19fa8ea38eef35
-    m_Address: ANSL/NAJ/C1/Investigation/DeadEnd/Interaction
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9339fc59fdf1b0446bbca9c2f638b0ca
-    m_Address: ANSL/NAJ/C1/Investigation/DeadEnd/ToForest
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

@@ -106,6 +106,9 @@ namespace ANF.Scene
             if (immediate)
             {
                 cameraTransform.position = position;
+
+                if (lerpPosition != null)
+                    lerpPosition.StopLerp();
             }
             else
             {
@@ -128,6 +131,9 @@ namespace ANF.Scene
             {
                 currentRotation = eulerAngles;
                 cameraTransform.eulerAngles = eulerAngles;
+
+                if (lerpRotation != null)
+                    lerpRotation.StopLerp();
             }
             else
             {

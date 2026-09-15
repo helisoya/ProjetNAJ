@@ -109,6 +109,9 @@ namespace ANF.Scene
             if (immediate)
             {
                 InternalSetAlpha(alpha);
+
+                if (lerpAlpha != null)
+                    lerpAlpha.StopLerp();
             }
             else
             {
@@ -130,6 +133,9 @@ namespace ANF.Scene
             if (immediate)
             {
                 transform.position = position;
+
+                if (lerpPosition != null)
+                    lerpPosition.StopLerp();
             }
             else
             {
@@ -151,6 +157,9 @@ namespace ANF.Scene
             if (immediate)
             {
                 transform.eulerAngles = eulerAngles;
+
+                if (lerpRotation != null)
+                    lerpRotation.StopLerp();
             }
             else
             {

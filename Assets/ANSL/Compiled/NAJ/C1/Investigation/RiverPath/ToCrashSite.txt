@@ -2,10 +2,10 @@
 37|1|6|C1_AxeProgress == 2
 32|null|null|Cutting trees...
 36|1|true
-84|false
+86|false
 41|../CrashSite/Arrival
 39|10
 32|null|null|Need an axe.
-90|C1_AxeProgress|=|1
+92|C1_AxeProgress|=|1
 41|Interaction
 39|10

@@ -2,7 +2,7 @@ using ANF.Persistent;
 using ANF.Utils;
 using Leguar.TotalJSON;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
+using ANF.GUI;
 
 namespace ANF.Scene
 {
@@ -27,6 +27,7 @@ namespace ANF.Scene
 
         private bool waitingForBackgroundLoad = false;
         private BackgroundManager backgroundManager;
+        private Fade fade;
 
         string selectedSkybox;
         string selectedWeather;
@@ -50,7 +51,7 @@ namespace ANF.Scene
 
         public override void OnStart()
         {
-            if (manager.GetGUIManager().GetComponent(out GUI.Fade fade))
+            if (manager.GetGUIManager().GetComponent(out fade))
             {
                 fade.FadeAlphaTo(1, true);
             }
@@ -102,16 +103,18 @@ namespace ANF.Scene
                     waitingForBackgroundLoad = false;
                     backgroundManager.SetWeatherEffect(selectedWeather);
                     backgroundManager.SetSkybox(selectedSkybox);
-
-                    if (manager.GetGUIManager().GetComponent(out GUI.Fade fade))
-                    {
-                        fade.FadeAlphaTo(0);
-                    }
-
+                    fade.FadeAlphaTo(0);
                 }
-                else if (backgroundManager.isPaused)
+                else
                 {
-                    backgroundManager.SetPaused(false);
+                    if (fade.fadingAlpha)
+                    {
+                        fade.FadeAlphaTo(1, true);
+                    }
+                    if (backgroundManager.isPaused)
+                    {
+                        backgroundManager.SetPaused(false);
+                    }
                 }
 
             }

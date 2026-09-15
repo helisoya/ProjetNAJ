@@ -3,10 +3,10 @@
 37|2|9|C1_AxeProgress == 1
 32|Owl|null|It's dangerous to go alone. Take this axe.
 62|Owl|FlyOffScreen
-92|2
-80|Axe|0|1|true
-81|Axe|0|0|-50
-90|C1_AxeProgress|=|2
+94|2
+81|Axe|0|1|true
+83|Axe|0|0|-50
+92|C1_AxeProgress|=|2
 39|10
 39|10
 41|Interaction

@@ -61,6 +61,8 @@ namespace ANF.GUI
             if (immediate)
             {
                 canvasGroup.alpha = target;
+                if (lerpAlpha != null)
+                    lerpAlpha.StopLerp();
             }
             else
             {
@@ -82,6 +84,8 @@ namespace ANF.GUI
             if (immediate)
             {
                 fadeImg.color = target;
+                if (lerpColor != null)
+                    lerpColor.StopLerp();
             }
             else
             {

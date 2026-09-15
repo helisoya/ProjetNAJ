@@ -21,6 +21,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c6f8077af2c86843a4f7654555495e8
+    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/ToCrashSite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b4e0dcb4673fd445850bbb9362fd838
+    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/ToForest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c326abc00c62937449a32291788c78db
+    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/Interaction
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

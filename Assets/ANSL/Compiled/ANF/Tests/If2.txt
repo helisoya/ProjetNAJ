@@ -1,15 +1,15 @@
 #FC64B3F4E340BFE58D76FE969A1EA545D41D8CD98F00B204E9800998ECF8427E
-78|TestIf Alt
+79|TestIf Alt
 37|2|5|random == 0 & random < 1
 42|Log|Setting to 5
-90|random|=|5
+92|random|=|5
 39|6
 39|6
 37|7|9|random != 5
 42|Error|Should be at 5
 39|12
 42|Log|Is at 5, removing 1
-90|random|-|1
+92|random|-|1
 39|12
 37|13|15|random == 4
 42|Log|Is at 4

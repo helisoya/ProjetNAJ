@@ -14,31 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_11_Cliff
   m_GUID: 7235cf079c8740043a56c276170309c8
-  m_SerializeEntries:
-  - m_GUID: 3111500fc735c86469def98a51eaae21
-    m_Address: ANSL/NAJ/C1/Investigation/Cliff/LookShip
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 488e480520e986748832ca2aad679bf1
-    m_Address: ANSL/NAJ/C1/Investigation/Cliff/LookWater
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 995b82804faa8e84696d0fa479647b69
-    m_Address: ANSL/NAJ/C1/Investigation/Cliff/Interaction
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c01eeed1561875a4c9494ad779c15b3f
-    m_Address: ANSL/NAJ/C1/Investigation/Cliff/ToBeach
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

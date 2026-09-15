@@ -179,6 +179,11 @@ namespace ANF.Scene
 
             if (immediate || currentCachedData.currentSkyboxData == null)
             {
+                if (lerpSkybox != null)
+                    lerpSkybox.StopLerp();
+                if (lerpSunColor != null)
+                    lerpSunColor.StopLerp();
+
                 // Immediate OR No current skybox
                 RenderSettings.skybox.SetFloat("_Lerp", 0.0f);
                 RenderSettings.skybox.SetTexture("_Current", skyboxData.skybox);
