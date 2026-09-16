@@ -116,14 +116,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _1st_Wave_Height: 0.01
+    - _1st_Wave_Height: 0.1
     - _1st_Wave_Length: 3
     - _1st_Wave_Sharpness: 0.3
-    - _1st_Wave_Speed: 0.5
-    - _2nd_Wave_Height: 0.0015
+    - _1st_Wave_Speed: 1
+    - _2nd_Wave_Height: 0.015
     - _2nd_Wave_Length: 5
     - _2nd_Wave_Sharpness: 0.3
-    - _2nd_Wave_Speed: 0.5
+    - _2nd_Wave_Speed: 1
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0

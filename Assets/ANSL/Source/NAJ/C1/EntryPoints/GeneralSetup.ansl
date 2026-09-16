@@ -1,3 +1,18 @@
+createUserEvidence(C1_Herbarium;0;C1)
+createUserEvidence(C1_Injury;0;C1)
+createUserEvidence(C1_Coat;0;C1)
+createUserEvidence(C1_Knife;0;C1)
+createUserEvidence(C1_AutopsyReport;0;C1)
+createUserEvidence(C1_DebtReport;0;C1)
+createUserEvidence(C1_DeathMessage;0;C1)
+
+createUserProfile(C1_Rann;C1)
+createUserProfile(C1_Sartt;C1)
+createUserProfile(C1_Gerald;C1)
+createUserProfile(C1_Judge;C1)
+createUserProfile(C1_Sherif;C1)
+createUserProfile(C1_Juno;C1)
+
 createUserVariable(C1_FirstTimeBeach;0)
 createUserVariable(C1_AxeProgress;0)
 
@@ -5,3 +20,4 @@ createUserVariable(C1_AxeProgress;0)
 # 0 -> Interact with trees
 # 1 -> Get Axe from Mr.Owl
 # 2 -> Cut down the trees
+

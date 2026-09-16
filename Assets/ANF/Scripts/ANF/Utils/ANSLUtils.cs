@@ -6,6 +6,8 @@ using System.IO;
 using System.Reflection;
 using Unity.VisualScripting;
 using System.Security.Cryptography;
+using System.Text;
+
 
 #if UNITY_EDITOR
 using UnityEditor.AddressableAssets;
@@ -106,6 +108,17 @@ namespace ANF.Utils
         }
 
         /// <summary>
+		/// Represents base stats for ANSL Compiling
+		/// </summary>
+        public struct ANSLCompileStats
+        {
+            public int compilationGood;
+            public int compilationFailed;
+            public int compilationSkipped;
+            public List<ANSLError> errors;
+        }
+
+        /// <summary>
         /// Error types for ANSL
         /// </summary>
         public enum ANSLErrorType
@@ -132,6 +145,31 @@ namespace ANF.Utils
             }
         }
 
+        /// <summary>
+        /// Generate a list of string's checksum
+        /// </summary>
+        /// <param name="list">The list</param>
+        /// <returns>The file's checksum</returns>
+        public static string GenerateCheckSum(List<string> list)
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    using (BinaryWriter writer = new BinaryWriter(stream, Encoding.UTF8, true))
+                    {
+                        foreach (string line in list)
+                            writer.Write(line);
+                    }
+
+                    stream.Position = 0;
+
+                    byte[] hash = md5.ComputeHash(stream);
+                    return BitConverter.ToString(hash).Replace("-", "");
+                }
+            }
+        }
+
 
         /// <summary>
 		/// Generate a function list's hash
@@ -142,19 +180,20 @@ namespace ANF.Utils
         {
             using (MD5 md5 = MD5.Create())
             {
-
                 using (MemoryStream stream = new MemoryStream())
                 {
-                    using (StreamWriter writer = new StreamWriter(stream))
+                    using (BinaryWriter writer = new BinaryWriter(stream, Encoding.UTF8, true))
                     {
                         foreach (KeyValuePair<Type, uint> pair in functions)
                         {
                             writer.Write($"-{pair.Value}-{pair.Key.FullName}-");
                         }
-
-                        byte[] hash = md5.ComputeHash(stream);
-                        return BitConverter.ToString(hash).Replace("-", "");
                     }
+
+                    stream.Position = 0;
+
+                    byte[] hash = md5.ComputeHash(stream);
+                    return BitConverter.ToString(hash).Replace("-", "");
                 }
             }
         }
@@ -328,10 +367,16 @@ namespace ANF.Utils
         /// Compiles all ANSL Files
         /// </summary>
         /// <param name="ignoreChecksum">True if the checksum should be ignored</param>
-        /// <returns>The error list</returns>
-        public static List<ANSLError> CompileAll(ANFSettings settings, bool ignoreChecksum = false)
+        /// <returns>The result</returns>
+        public static ANSLCompileStats CompileAll(ANFSettings settings, bool ignoreChecksum = false)
         {
-            List<ANSLError> errors = new List<ANSLError>();
+            ANSLCompileStats stats = new ANSLCompileStats()
+            {
+                compilationFailed = 0,
+                compilationGood = 0,
+                compilationSkipped = 0,
+                errors = new List<ANSLError>()
+            };
 
 #if UNITY_EDITOR
             List<KeyValuePair<Type, uint>> functions = GetValidANSLFunctionsList(settings);
@@ -340,13 +385,13 @@ namespace ANF.Utils
 
             if (!settings.FindAdditionalPart(out ANSLSettings anslSettings))
             {
-                errors.Add(new ANSLError()
+                stats.errors.Add(new ANSLError()
                 {
                     type = ANSLErrorType.FUNCTION,
                     filePath = "Settings",
                     errorMessage = $"ANSLSetings were not found. Did you forget to register it to the ANFSettings ?"
                 });
-                return errors;
+                return stats;
             }
 
             int totalProgress = 1;
@@ -389,7 +434,7 @@ namespace ANF.Utils
 
             EditorUtility.DisplayProgressBar("ANSL Compilation", "Checking Functions", 0.0f);
 
-            if (CheckANSLFunctions(functions, errors))
+            if (CheckANSLFunctions(functions, stats.errors))
             {
                 List<KeyValuePair<ANSLFunction, uint>> functionInstances = new List<KeyValuePair<ANSLFunction, uint>>();
                 foreach (KeyValuePair<Type, uint> type in functions)
@@ -407,13 +452,13 @@ namespace ANF.Utils
                 {
                     currentProgress++;
                     EditorUtility.DisplayProgressBar("ANSL Compilation", file, (float)currentProgress / totalProgress);
-                    compiler.CompileANSLMacros(file, errors);
+                    compiler.CompileANSLMacros(file, stats.errors);
                 }
 
-                if (errors.Count > 0)
+                if (stats.errors.Count > 0)
                 {
                     EditorUtility.ClearProgressBar();
-                    return errors;
+                    return stats;
                 }
 
                 AddressableAssetSettings addressableSettings = AddressableAssetSettingsDefaultObject.Settings;
@@ -425,7 +470,14 @@ namespace ANF.Utils
                     EditorUtility.DisplayProgressBar("ANSL Compilation", file.Key, (float)currentProgress / totalProgress);
                     string destPath = anslSettings.anslDestinationFolder + file.Key.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", ".txt");
                     string resourcePath = (anslSettings.anslResourcePath + file.Key.Substring(anslSettings.anslSourceFolder.Length).Replace(".ansl", "")).Replace('\\', '/').Replace("//", "/");
-                    ANSLCompiler.ResultType result = compiler.Compile(file.Key, destPath, functionInstances, errors, functionsChecksum, ignoreChecksum);
+                    ANSLCompiler.ResultType result = compiler.Compile(file.Key, destPath, functionInstances, stats.errors, functionsChecksum, ignoreChecksum);
+
+                    if (result == ANSLCompiler.ResultType.Success)
+                        stats.compilationGood++;
+                    else if (result == ANSLCompiler.ResultType.Failure)
+                        stats.compilationFailed++;
+                    else if (result == ANSLCompiler.ResultType.SameFile)
+                        stats.compilationSkipped++;
 
                     if (result == ANSLCompiler.ResultType.Success && anslSettings.linkScriptsToAddressables)
                     {
@@ -449,7 +501,7 @@ namespace ANF.Utils
             EditorUtility.ClearProgressBar();
 #endif
 
-            return errors;
+            return stats;
         }
 
         /// <summary>

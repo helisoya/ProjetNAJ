@@ -84,8 +84,8 @@ namespace ANF.Editor
 
             if (settings != null)
             {
-                List<ANSLUtils.ANSLError> errors = ANSLUtils.CompileAll(settings);
-                ANSLErrorListPopup.Show(errors);
+                ANSLUtils.ANSLCompileStats stats = ANSLUtils.CompileAll(settings);
+                ANSLErrorListPopup.Show(stats);
                 AssetDatabase.Refresh();
             }
         }
@@ -97,8 +97,8 @@ namespace ANF.Editor
 
             if (settings != null)
             {
-                List<ANSLUtils.ANSLError> errors = ANSLUtils.CompileAll(settings, true);
-                ANSLErrorListPopup.Show(errors);
+                ANSLUtils.ANSLCompileStats stats = ANSLUtils.CompileAll(settings, true);
+                ANSLErrorListPopup.Show(stats);
                 AssetDatabase.Refresh();
             }
         }

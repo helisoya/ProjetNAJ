@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using static ANF.Utils.ANSLUtils;
 
 namespace ANF.ANSL
@@ -316,7 +317,7 @@ namespace ANF.ANSL
                 }
             }
 
-            string newChecksum = ANSLUtils.GenerateCheckSum(sourceFile) + functionsChecksum;
+            string newChecksum = ANSLUtils.GenerateCheckSum(inLines) + "-" + functionsChecksum;
 
             // Check existing checksum for this file
             // Note that any change in function indexes will bypass the checksum
@@ -445,6 +446,7 @@ namespace ANF.ANSL
                         line = currentLine,
                         errorMessage = $"Unknown function : {cachedCurrentLineClean}."
                     });
+                    return false;
                 }
             }
             return true;

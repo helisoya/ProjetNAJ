@@ -14,20 +14,3 @@
 # Evidence_ID_Desc = The evidence's description
 # Profile_ID_Name = The profile's name
 # Profile_ID_Desc = The profile's description
-
-# Case 1
-
-Evidence C1_Herbarium C1
-Evidence C1_Injury C1
-Evidence C1_Coat C1
-Evidence C1_Knife C1
-Evidence C1_AutopsyReport C1
-Evidence C1_DebtReport C1
-Evidence C1_DeathMessage C1
-
-Profile C1_Rann C1
-Profile C1_Sartt C1
-Profile C1_Gerald C1
-Profile C1_Judge C1
-Profile C1_Sherif C1
-Profile C1_Juno C1

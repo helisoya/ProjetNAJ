@@ -1,0 +1,55 @@
+# ---------------------------------------------------------
+# -------------------- Names ------------------------------
+# ---------------------------------------------------------
+
+Char_Rann = Rann
+Char_Juno = Dr'hma
+Char_Sherif = Sheriff
+Char_Judge = Judge
+Char_Gerald = Marin
+Char_Sartt = Sartt
+Char_Sailor = Sailor
+Char_Unknown = ???
+
+# ---------------------------------------------------------
+# -------------------- Evidence ---------------------------
+# ---------------------------------------------------------
+
+Evidence_C1_Herbarium_Name = Herbarium
+Evidence_C1_Herbarium_Desc = The result of my hobby. I miswrote my name as "Ronne" on the cover.
+
+Evidence_C1_Coat_Name = Coat
+Evidence_C1_Coat_Desc = My coat. It is torn and wet from the crash.
+
+Evidence_C1_Injury_Name = Leg Injury
+Evidence_C1_Injury_Desc = I am injured and cannot run.
+
+Evidence_C1_Knife_Name = Knife
+Evidence_C1_Knife_Desc = Murder Weapon. Bears my prints on the blade, and unknown ones on the handle.
+
+Evidence_C1_AutopsyReport_Name = Autopsy Report
+Evidence_C1_AutopsyReport_Desc = Cause of death : Direct hit to the heart.
+
+Evidence_C1_DebtReport_Name = Debt Report
+Evidence_C1_DebtReport_Desc = Says that someone named "G.M." in heavily indebted to the captain.
+
+Evidence_C1_DeathMessage_Name = Death Message
+Evidence_C1_DeathMessage_Desc = "Ronne" written in the captain's blood.
+
+Profile_C1_Rann_Name = Rann Retyr
+Profile_C1_Rann_Desc = Me. I was hired as a plant specialist by Captain Sartt.
+
+Profile_C1_Sartt_Name = Captain Sartt
+Profile_C1_Sartt_Desc = The Captain of the "Magnificent". He's despised by most of his crew.
+
+Profile_C1_Gerald_Name = Gerald Marin
+Profile_C1_Gerald_Desc = A sailor of the "Magnificent" and my friend. He knows about my herbarium.
+
+Profile_C1_Judge_Name = Judge
+Profile_C1_Judge_Desc = The judge assigned to this case. I don't know his name.
+
+Profile_C1_Sherif_Name = Sheriff Robert
+Profile_C1_Sherif_Desc = Apparently, he's the top police officer around here. He was the one who arrested me.
+
+Profile_C1_Juno_Name = Juno Dr'hma
+Profile_C1_Juno_Desc = The witness of this case. She saw Captain Sartt die.

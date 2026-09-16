@@ -8,7 +8,7 @@ setCharacterEye(Sartt;Normal)
 EndDefine
 
 Define setSarttInquisitive()
-setCharacterBody(Sartt;Normal;0.1)
+setCharacterBody(Sartt;Forward;0.1)
 setCharacterEye(Sartt;Normal)
 EndDefine
 
@@ -68,6 +68,18 @@ EndDefine
 
 Define setGeraldNormal(Type)
 setCharacterBody(Gerald{Type};Normal;0.1)
+EndDefine
+
+Define setGeraldSad(Type)
+setCharacterBody(Gerald{Type};Sad;0.1)
+EndDefine
+
+Define setGeraldDropKnife(Type)
+setCharacterBody(Gerald{Type};DropKnife)
+EndDefine
+
+Define setGeraldSurprise(Type)
+setCharacterBody(Gerald{Type};Surprise)
 EndDefine
 
 Define setGeraldBrushHair(Type)

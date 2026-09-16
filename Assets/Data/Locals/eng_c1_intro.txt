@@ -1,0 +1,275 @@
+# ---------------------------------------------------------
+# -------------------- Intro ------------------------------
+# ---------------------------------------------------------
+
+C1_Intro_A_1 = <color=blue>You know…</color>
+C1_Intro_A_2 = <color=blue>Who could have predicted this misfortune ?</color>
+C1_Intro_A_3 = <color=blue>… Not me, at least.</color>
+C1_Intro_A_4 = <color=blue>I let myself fall onto the cell’s makeshift bed. The hay is uncomfortable.</color>
+C1_Intro_A_5 = <color=blue>Closing my eyes, I futilely hope to forget about all this.</color>
+C1_Intro_A_6 = <color=blue>But… I can’t seem to get my mind off today’s events.</color>
+C1_Intro_A_7 = <color=blue>When did it all go so wrong ?</color>
+
+C1_Intro_A_8 = <color=blue>Phew ! That’s dealt with…</color>
+C1_Intro_A_9 = <color=blue>Guh… And here I was, thinking I wouldn’t have to do manual work…</color>
+C1_Intro_A_10 = <color=blue>I look around. The sailors are finishing loading our supplies for the journey.</color>
+C1_Intro_A_11 = <color=blue>It seems a little excessive to me, but hey.</color>
+C1_Intro_A_12 = <color=blue>I’m no sailor. I have no idea how much we actually need.</color>
+C1_Intro_A_13 = <color=blue>…Still, I wonder how long we are planning to travel.</color>
+
+C1_Intro_A_14 = Retyr. Slacking off already ?
+C1_Intro_A_15 = <color=blue>I turn around. I’d recognize that voice anywhere.</color>
+C1_Intro_A_16 = I’d rather go by Rann, sir. Using my surname feels a bit weird.
+C1_Intro_A_17 = Well, get used to it. This is how we sailors work.
+C1_Intro_A_18 = And while we’re on this topic. It’s <b>Captain</b> Sartt to you.
+C1_Intro_A_19 = Y- Yes, Captain !
+C1_Intro_A_20 = I’ll keep that in mind.
+C1_Intro_A_21 = <color=blue>I still prefer Rann… ‘Guess that was to be expected…</color>
+C1_Intro_A_22 = <color=blue>It’s a good thing Sis didn’t come to see me off. She would have ripped his arms off.</color>
+C1_Intro_A_23 = <color=blue>… Or at least tried to. I don’t think she has the strength to take on this old wolf.</color>
+C1_Intro_A_24 = What are you looking at ?
+C1_Intro_A_25 = Oh, erm ! Nothing, really…
+C1_Intro_A_26 = I was just… erm… pondering what to do…
+C1_Intro_A_27 = I’m not exactly used to this kind of environment.
+C1_Intro_A_28 = Grr… Why did I even bother to hire you ?
+C1_Intro_A_29 = Oh, well… You said you needed a scholar that could identify plants.
+C1_Intro_A_30 = And I happen to know a lot about them.
+C1_Intro_A_31 = Watch your mouth, girl. Don’t forget it was I who took you from your miserable flower shop.
+C1_Intro_A_32 = The only reason I chose you was because the Academy of Science closed down due to the protests.
+C1_Intro_A_33 = Damn Merchant… Why did he have to enter politics now, of all times ?
+C1_Intro_A_34 = I could have gotten one of the brightest minds of the Eastern coast, and what did I get instead ?
+C1_Intro_A_35 = …
+C1_Intro_A_36 = I sure hope you at least know how to find Long Legs. Or else, we are done for.
+C1_Intro_A_37 = …I understand. I’ll make sure not to disappoint you, Captain.
+C1_Intro_A_38 = We have finished loading, Captain !
+C1_Intro_A_39 = Good ! Then it is time.
+C1_Intro_A_40 = Assemble the men on the deck !
+
+C1_Intro_A_41 = Men ! It is time for us to begin our journey.
+C1_Intro_A_42 = I pray to Kalibu that you said goodbye to your families. We are going to be away for a long time.
+C1_Intro_A_43 = But fear not, for our goal is most pure : The Legendary Refuge of the Conclave.
+C1_Intro_A_44 = We’ll locate this most holy land, and take it as our own. Our new Kalia outside of Kalia.
+C1_Intro_A_45 = <color=blue>The sailors cheered. We left the port of Kalia soon after.</color>
+C1_Intro_A_46 = <color=blue>I looked at the city in the distance, as it became smaller and smaller.</color>
+C1_Intro_A_47 = <color=blue>At some point, it disappeared into the horizon.</color>
+C1_Intro_A_48 = <color=blue>I guess I’m really doing this, huh ?</color>
+
+C1_Intro_A_49 = Feeling remorse ? It’s a bit late for that, I’m afraid.
+C1_Intro_A_50 = Huh ?
+C1_Intro_A_51 = <color=blue>I turn around to find one of the sailors beside me.</color>
+C1_Intro_A_52 = Oh. Erm… No. I’m just not used to being at sea and all.
+C1_Intro_A_53 = This all feels so foreign to me.
+C1_Intro_A_54 = Ah, this is your first time ?
+C1_Intro_A_55 = Don’t worry. I was like that the first time too. 
+C1_Intro_A_56 = Give it a few months. 
+C1_Intro_A_57 = Soon, you’ll call the “Magnificent” your new home.
+C1_Intro_A_58 = Oh. Where are my manners ? 
+C1_Intro_A_59 = I’m Gerald Marin. I carry crates for a living.
+C1_Intro_A_60 = And you are… ?
+C1_Intro_A_61 = Ah. I’m Rann.
+C1_Intro_A_62 = I was hired as a plant specialist.
+C1_Intro_A_63 = Ah, it was you then…
+C1_Intro_A_64 = I stumbled upon your herbarium while loading our stuff.
+C1_Intro_A_65 = Your name, <color=red>“Ronne”</color>, was on it. I wondered who was the unlucky one.
+C1_Intro_A_66 = <color=blue>It’s <color=red>Rann</color>, not Ronne…</color>
+C1_Intro_A_67 = <color=blue>I started it when I was six and couldn’t even write my own name.</color>
+C1_Intro_A_68 = <color=blue>I’m embarrassed about this, but sadly I can’t fix it without making a new one…</color>
+C1_Intro_A_69 = <color=blue>Wait… Hold on… He saw my book ?!</color>
+C1_Intro_A_70 = H-Huh ?!
+C1_Intro_A_71 = Ah, erm… No offense, of course.
+C1_Intro_A_72 = It’s just that your role here will be quite limited.
+C1_Intro_A_73 = I heard you’ll only be of use if we ever find land.
+C1_Intro_A_74 = The Captain said something about finding a reliable source of food or whatnot.
+C1_Intro_A_75 = …I see…
+C1_Intro_A_76 = <color=blue>He… didn’t notice ?</color>
+C1_Intro_A_77 = <color=blue>I should play dumb for now…</color>
+C1_Intro_A_78 = Ha ha… I’m okay with that kind of arrangement. 
+C1_Intro_A_79 = The pay is more than worth it anyway.
+C1_Intro_A_80 = You got p- … That’s nice…
+C1_Intro_A_81 = But still, it’ll be a long time before you’ll ever get to use that money.
+C1_Intro_A_82 = It doesn’t matter. It isn’t intended for me.
+C1_Intro_A_83 = A pay like that can help feed my sisters for about a few months.
+C1_Intro_A_84 = Hell, maybe a full year if they are careful with spending.
+C1_Intro_A_85 = That’s way, way more than what I could earn from the flower shop.
+C1_Intro_A_86 = A most selfless act.
+C1_Intro_A_87 = But, aren’t you afraid that we might never come back ?
+C1_Intro_A_88 = At any time… a sea serpent might come and kill us.
+C1_Intro_A_89 = I, erm…
+C1_Intro_A_90 = Hey, sea serpents don’t live here, right ?
+C1_Intro_A_91 = Now that I think about it, grandma told me stories about fishermen being eaten…
+C1_Intro_A_92 = Heh heh. Just kidding. They live way down south.
+C1_Intro_A_93 = Besides, with our ship ? I doubt they’ll even want to stay in the vicinity.
+C1_Intro_A_94 = Metal isn’t very tasty, and propellants scare them.
+C1_Intro_A_95 = Phew…
+C1_Intro_A_96 = But more seriously, I meant more about the previous expeditions.
+C1_Intro_A_97 = Did anyone tell you about them ?
+C1_Intro_A_98 = … No.
+C1_Intro_A_99 = Oh well. I can’t blame you. It was never well-documented anyway.
+C1_Intro_A_100 = Back what ? 50 years ago or so ? Another expedition like this one departed from Kalia.
+C1_Intro_A_101 = They had the same goal in mind : The Legendary Refuge of the Conclave.
+C1_Intro_A_102 = Of course, we never heard back.
+C1_Intro_A_103 = Every decade or so, another expedition is mounted and departs.
+C1_Intro_A_104 = Ours is the what, fourth one or something ?
+C1_Intro_A_105 = I get the idea. We might end up dead on a rock somewhere.
+C1_Intro_A_106 = Well, maybe.
+C1_Intro_A_107 = Or maybe they all landed somewhere and never came back, you know ?
+C1_Intro_A_108 = Maybe they actually found their “holy” land.
+C1_Intro_A_109 = Yeah. I guess that’s a possibility.
+C1_Intro_A_110 = But still, you’d think they would have contacted us if they did.
+C1_Intro_A_111 = …  True.
+C1_Intro_A_112 = Well. I guess only time will tell.
+C1_Intro_A_113 = At the very least, the Captain is a real pro. He knows the sea like the back of his hand.
+C1_Intro_A_114 = I’ve heard that he traveled the seas his whole life. ‘Even fought in wars, apparently.
+C1_Intro_A_115 = Sounds like a rough life.
+C1_Intro_A_116 = Heh. A rough life for a rough man.
+C1_Intro_A_117 = Don’t take it personally if he yells at you. He’s like that with everyone.
+C1_Intro_A_118 = I figured that much…
+C1_Intro_A_119 = Well. Thanks for talking with me, Gerald. It did reassure me a little.
+C1_Intro_A_120 = Although… please… keep my herbarium a secret.
+C1_Intro_A_121 = Huh ? Oh, sure.
+C1_Intro_A_122 = I’m sorry for looking through your things. 
+C1_Intro_A_123 = I fell while carrying your stuff and got curious. 
+C1_Intro_A_124 = I had never seen a book like that before. It’s really pretty.
+C1_Intro_A_125 = It’s fine.
+C1_Intro_A_126 = It’s just that some people are really conservative when it comes to those.
+C1_Intro_A_127 = What, herbariums ?
+C1_Intro_A_128 = Come on, that’s ridiculous.
+C1_Intro_A_129 = …
+C1_Intro_A_130 = … Okay, okay. I get it. I won’t talk.
+C1_Intro_A_131 = … By the way…
+C1_Intro_A_132 = Do you perhaps know if I could get a room to set up my plants ?
+C1_Intro_A_133 = I really want to try to grow some while we travel.
+C1_Intro_A_134 = Hmm… The Captain will surely object to this.
+C1_Intro_A_135 = Although… I know of one place you could use. One that even he doesn’t know about.
+C1_Intro_A_136 = It’ll take time to clean the place, but you can set up shop there.
+C1_Intro_A_137 = Thanks, that would be great.
+C1_Intro_A_138 = <color=green>Two months later.</color>
+
+C1_Intro_B_1 = Watch out. You are damaging it.
+C1_Intro_B_2 = Oh, sorry.
+C1_Intro_B_3 = <color=blue>I grab his knife’s blade with my hand.</color>
+C1_Intro_B_4 = Hey, be careful. You’ll get cut.
+C1_Intro_B_5 = It’s fine, don’t worry.
+C1_Intro_B_6 = Look, you need to cut here, not here.
+C1_Intro_B_7 = Herbariums are about showing the diversity of plants, not how you massacred them.
+C1_Intro_B_8 = Right, sorry.
+C1_Intro_B_9 = <color=blue>Gerald starts working on the plant again. This time, he doesn’t make mistakes.</color>
+C1_Intro_B_10 = Thanks for lending me this knife, by the way.
+C1_Intro_B_11 = Don’t worry. And you can keep it. Think of it as a gift.
+C1_Intro_B_12 = Thanks.
+C1_Intro_B_13 = So… Where do you come from ?
+C1_Intro_B_14 = I’m pretty sure you aren’t a Suori.
+C1_Intro_B_15 = H- How did you know ?
+C1_Intro_B_16 = … And here I was, thinking I was blending in nicely.
+C1_Intro_B_17 = Heh heh. That’s a secret.
+C1_Intro_B_18 = So… tell me.
+C1_Intro_B_19 = Alright. I’m from Voitin.
+C1_Intro_B_20 = Voitin ? That’s pretty far away.
+C1_Intro_B_21 = How did you end up in Kalia ?
+C1_Intro_B_22 = I worked for a trading company in Voitin for a long time. 
+C1_Intro_B_23 = ‘Hard tasks and next to no pay.
+C1_Intro_B_24 = At some point, I got in trouble because I stole from work to help feed my siblings. 
+C1_Intro_B_25 = It was just a crate of apples, but the company cracked down hard on me.
+C1_Intro_B_26 = They threatened to send me to prison if I didn’t pay up.
+C1_Intro_B_27 = One day, Captain Sartt came and told me that he would shield me and my family from them.
+C1_Intro_B_28 = All I had to do was join his crew and sail the Eastern sea.
+C1_Intro_B_29 = So I did, and well… That’s pretty much it.
+C1_Intro_B_30 = I can relate. 
+C1_Intro_B_31 = Was it hard to integrate ?
+C1_Intro_B_32 = Folks like me aren’t common in the Northern regions of Vasia.
+C1_Intro_B_33 = Most people in Kalia don’t even know Voitin exists.
+C1_Intro_B_34 = So yeah. It was pretty hard at first to integrate with the others.
+C1_Intro_B_35 = If you take the ship’s crew, for instance, they pretty much expect me to be a good Suori like all the others.
+C1_Intro_B_36 = …I must say, you have weird customs. Especially that whole Kalibu business.
+C1_Intro_B_37 = Ah, yes.
+C1_Intro_B_38 = Suori culture is… weirdly intertwined with its religion. People get confused all the time.
+C1_Intro_B_39 = Depending on where you are, people can get very zealous. It can be weird sometimes.
+C1_Intro_B_40 = … So how did you know I wasn’t a Suori ?
+C1_Intro_B_41 = Was it because I fell asleep during the Captain’s sermons ?
+C1_Intro_B_42 = Or… Maybe I’m not wearing that weird cloak some of you have…
+C1_Intro_B_43 = Ah, no. Nothing like that.
+C1_Intro_B_44 = <color=blue>Do people still wear those anyway ?</color>
+C1_Intro_B_45 = Actually, it was the herbarium that tipped me off.
+C1_Intro_B_46 = Your secret little book ?
+C1_Intro_B_47 = Yes. Most Suoris consider it black magic.
+C1_Intro_B_48 = Huh ?
+C1_Intro_B_49 = I don’t know the details. It has something to do with one of our evil gods or something.
+C1_Intro_B_50 = … So are you, what, a witch ?
+C1_Intro_B_51 = Please. Of course not.
+C1_Intro_B_52 = But yeah, most people look at me wrong when they realize I have one.
+C1_Intro_B_53 = And I didn’t know about that. That’s how you knew.
+C1_Intro_B_54 = … Your lot is pretty weird.
+C1_Intro_B_55 = …I just hope this religious frenzy won’t bring us trouble.
+C1_Intro_B_56 = People get all high and mighty about the conclave, but what about it ?
+C1_Intro_B_57 = They’ve been gone for centuries. Who cares about them…
+C1_Intro_B_58 = I get you. This whole “conclave” business is a bit sketchy to me.
+C1_Intro_B_59 = Although, it’s easier for me to say.
+C1_Intro_B_60 = Which reminds me, why did this ship specifically go on the expedition ?
+C1_Intro_B_61 = Hmm ?
+C1_Intro_B_62 = I mean, all of you are part of the same shipping company, right ?
+C1_Intro_B_63 = Why did the Captain bring his only ship and his entire crew with him on this expedition?
+C1_Intro_B_64 = Doesn’t this mean this is the end of the company ?
+C1_Intro_B_65 = …
+C1_Intro_B_66 = Actually, I have no clue.
+C1_Intro_B_67 = I wasn’t there when he announced the news.
+C1_Intro_B_68 = Maybe the old wolf knows his time is up and wants to die finding heaven or something.
+C1_Intro_B_69 = As for the company : The Captain IS the company. It will die when he does.
+C1_Intro_B_70 = He didn’t nominate a successor. ‘Said he didn’t trust any of us.
+C1_Intro_B_71 = But… Couldn’t you just stay in Kalia and find a new job ?
+C1_Intro_B_72 = … No.
+C1_Intro_B_73 = None of us can.
+C1_Intro_B_74 = Huh ?
+C1_Intro_B_75 = …
+C1_Intro_B_76 = Sorry for asking.
+C1_Intro_B_77 = It’s fine. 
+C1_Intro_B_78 = It’s just… having him as your boss can be hard sometimes.
+C1_Intro_B_79 = Do you regret leaving Voitin ?
+C1_Intro_B_80 = …
+C1_Intro_B_81 = A little.
+C1_Intro_B_82 = I had no choice but to leave my family behind.
+C1_Intro_B_83 = But… I can’t come back anymore.
+C1_Intro_B_84 = If I did, I would get in trouble with the company again.
+C1_Intro_B_85 = Or worse, my siblings might get caught in the crossfire.
+C1_Intro_B_86 = … I see.
+C1_Intro_B_87 = Sorry for bringing that up.
+C1_Intro_B_88 = Don’t worry about it.
+C1_Intro_B_89 = That’s all in the past now.
+C1_Intro_B_90 = … Let’s continue tending to these plants, alright ?
+C1_Intro_B_91 = R-Right !
+
+C1_Intro_B_92 = <color=green>One month later.</color>
+C1_Intro_B_93 = <color=blue>Still no land…</color>
+C1_Intro_B_94 = <color=blue>I wonder how my sisters are doing.</color>
+C1_Intro_B_95 = A seagull ?
+C1_Intro_B_96 = <color=blue>I can’t see land anywhere. But… Are we close ?</color>
+C1_Intro_B_97 = <color=blue>Maybe the fabled land actually exists.</color>
+C1_Intro_B_98 = <color=blue>…Not that it really interests me or anything.</color>
+C1_Intro_B_99 = <color=blue>Religion was never my thing anyway.</color>
+C1_Intro_B_100 = <color=blue>But… If it makes them happy and I get money, whatever.</color>
+C1_Intro_B_101 = Captain ! Seagulls !
+C1_Intro_B_102 = I see them ! Don’t press me.
+C1_Intro_B_103 = But where are they coming from ? I can’t see anything in this mist.
+C1_Intro_B_104 = <color=blue>You know… I’m happy we are going to land soon.</color>
+C1_Intro_B_105 = <color=blue>I’m not really taking the sea very well.</color>
+C1_Intro_B_106 = <color=blue>Gerald was a huge help, but I decided I’ll never go near a boat ever again after this.</color>
+C1_Intro_B_107 = Huh ? It’s raining ?
+C1_Intro_B_108 = <color=blue>I watch as the sky turns darker and darker.</color>
+C1_Intro_B_109 = <color=blue>Rain starts pouring down from the sky.</color>
+C1_Intro_B_110 = <color=blue>A storm is coming.</color>
+C1_Intro_B_111 = Now of all times ?
+C1_Intro_B_112 = Good thing I put on my coat.
+C1_Intro_B_113 = But it’s not safe to stay outside. I should head back to-
+C1_Intro_B_114 = <color=blue>A massive wave hits the side of the ship and I fall on the ground.</color>
+C1_Intro_B_115 = <color=blue>I hit my head rather hard. It’s hard to get back up.</color>
+C1_Intro_B_116 = Ugh…
+C1_Intro_B_117 = What is going on ? Who’s manning this ship ?
+C1_Intro_B_118 = Sam was thrown overboard, Captain !
+C1_Intro_B_119 = ‘Nobody’s manning the vessel !
+C1_Intro_B_120 = Idiots ! Why did I let him take the helm ?
+C1_Intro_B_121 = I’ll get us out of here.
+C1_Intro_B_122 = <color=blue>I start walking towards the deck’s entrance.</color>
+C1_Intro_B_123 = <color=blue>It’s dangerous to stay here during the storm.</color>
+C1_Intro_B_124 = <color=blue>The captain will handle things from here… I hope so.</color>
+C1_Intro_B_125 = <color=blue>Wa- Wait, what ?</color>
+C1_Intro_B_126 = Damn it ! Brace for impact !
+C1_Intro_B_127 = <color=blue>Wait, wait ! I’m not-</color>

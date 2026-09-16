@@ -12,7 +12,7 @@ namespace ANF.Editor
     public class ANSLErrorListPopup : EditorWindow
     {
 
-        private List<ANSLUtils.ANSLError> data;
+        private ANSLUtils.ANSLCompileStats data;
 
         private Vector2 scrollPosition;
 
@@ -20,7 +20,7 @@ namespace ANF.Editor
         /// Initialize the popup
         /// </summary>
         /// <param name="data">The ANSL error's data</param>
-        public void Init(List<ANSLUtils.ANSLError> data)
+        public void Init(ANSLUtils.ANSLCompileStats data)
         {
             this.data = data;
             this.scrollPosition = Vector2.zero;
@@ -30,7 +30,7 @@ namespace ANF.Editor
         /// Shows the popup
         /// </summary>
         /// <param name="data">The error's data</param>
-        public static void Show(List<ANSLUtils.ANSLError> data)
+        public static void Show(ANSLUtils.ANSLCompileStats data)
         {
             ANSLErrorListPopup wnd = GetWindow<ANSLErrorListPopup>();
             wnd.titleContent = new GUIContent("Errors");
@@ -41,9 +41,13 @@ namespace ANF.Editor
 
         public void OnGUI()
         {
-            if (data == null) return;
+            GUILayout.BeginHorizontal();
 
-            if (data.Count == 0)
+            GUILayout.Label($"Compiled : {data.compilationGood}, Failed : {data.compilationFailed}, Skipped : {data.compilationSkipped}");
+
+            GUILayout.EndHorizontal();
+
+            if (data.errors == null || data.errors.Count == 0)
             {
                 GUILayout.Label("No errors detected");
             }
@@ -52,20 +56,20 @@ namespace ANF.Editor
                 GUILayoutOption[] options2 = { GUILayout.Width(50) };
                 GUILayoutOption[] options = { GUILayout.Width(250) };
                 scrollPosition = GUILayout.BeginScrollView(scrollPosition);
-                for (int i = 0; i < data.Count; i++)
+                for (int i = 0; i < data.errors.Count; i++)
                 {
                     GUILayout.BeginHorizontal();
-                    GUILayout.Label(data[i].type.ToString(), options);
-                    if (data[i].type == ANSLUtils.ANSLErrorType.FUNCTION)
+                    GUILayout.Label(data.errors[i].type.ToString(), options);
+                    if (data.errors[i].type == ANSLUtils.ANSLErrorType.FUNCTION)
                     {
-                        GUILayout.Label(data[i].filePath, EditorStyles.wordWrappedLabel, options);
+                        GUILayout.Label(data.errors[i].filePath, EditorStyles.wordWrappedLabel, options);
                     }
                     else
                     {
-                        GUILayout.Label($"{data[i].filePath}, {data[i].line}", EditorStyles.wordWrappedLabel, options);
+                        GUILayout.Label($"{data.errors[i].filePath}, {data.errors[i].line}", EditorStyles.wordWrappedLabel, options);
                     }
 
-                    GUILayout.Label(data[i].errorMessage, EditorStyles.wordWrappedLabel, options);
+                    GUILayout.Label(data.errors[i].errorMessage, EditorStyles.wordWrappedLabel, options);
                     GUILayout.EndHorizontal();
                 }
                 GUILayout.EndScrollView();
