@@ -1,6 +1,8 @@
 setCameraRotation(0;-60;0;1;true)
 
-wait(2)
+dialog(Char_Rann;null;C1_Cliff_Boat_1)
+dialog(Char_Rann;null;C1_Cliff_Boat_2)
+showDialogWindow(false)
 
 setCameraRotation(0;0;0;1;true)
 

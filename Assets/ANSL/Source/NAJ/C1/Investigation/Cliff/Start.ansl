@@ -8,33 +8,60 @@ fadeFg(0;false)
 
 wait(2)
 
+dialog(Char_Rann;null;C1_Investigation_Start_1)
+dialog(Char_Rann;null;C1_Investigation_Start_2)
+showDialogWindow(false)
+
 # Get up
 setCameraRotation(15;28;0;2;true)
 
-wait(2)
+dialog(Char_Rann;null;C1_Investigation_Start_3)
+showDialogWindow(false)
 
 # Get full up
 setCameraRotation(15;21;0;2;false)
 setCameraPosition(0;1;-4;2;true)
 
-wait(2)
+dialog(null;null;C1_Investigation_Start_4)
+dialog(null;null;C1_Investigation_Start_5)
+dialog(null;null;C1_Investigation_Start_6)
+dialog(null;null;C1_Investigation_Start_7)
+
+dialog(Char_Rann;null;C1_Investigation_Start_8)
+dialog(null;null;C1_Investigation_Start_9)
+dialog(null;null;C1_Investigation_Start_10)
+dialog(null;null;C1_Investigation_Start_11)
+dialog(Char_Rann;null;C1_Investigation_Start_12)
+dialog(Char_Rann;null;C1_Investigation_Start_13)
+dialog(Char_Rann;null;C1_Investigation_Start_14)
+showDialogWindow(false)
 
 # Look Around
 setCameraRotation(10;-5;0;2;true)
 
-wait(2)
+dialog(null;null;C1_Investigation_Start_15)
+showDialogWindow(false)
 
 # Look at ship
 setCameraRotation(0;-70;0;2;false)
 setCameraPosition(default;2;true)
 
-wait(2)
+dialog(Char_Rann;null;C1_Investigation_Start_16)
+dialog(Char_Rann;null;C1_Investigation_Start_17)
+dialog(Char_Rann;null;C1_Investigation_Start_18)
+dialog(Char_Rann;null;C1_Investigation_Start_19)
+dialog(Char_Rann;null;C1_Investigation_Start_20)
+showDialogWindow(false)
 
 # Look at trail
 
 setCameraRotation(0;30;0;2;true)
 
-wait(2)
+dialog(null;null;C1_Investigation_Start_21)
+dialog(null;null;C1_Investigation_Start_22)
+dialog(null;null;C1_Investigation_Start_23)
+dialog(null;null;C1_Investigation_Start_24)
+showDialogWindow(false)
 
 setCameraRotation(0;0;0;2;true)
 

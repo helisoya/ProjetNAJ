@@ -1,4 +1,4 @@
-setInteractionScript(Exit;LookWater)
+setInteractionHidden(Exit;true)
 setInteractionScript(Right;ToCliff)
 setInteractionScript(Forward;ToForestStart)
 

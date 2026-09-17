@@ -1,4 +1,4 @@
-variable(C1_FirstTimeBeach;=;1)
+variable(C1_FirstTimeCount;=;1)
 
 setCameraPosition(52;1;1)
 setCameraRotation(0;-90;0)
@@ -12,5 +12,8 @@ setCameraRotation(0;-110;0;4;false)
 setCameraPosition(default;3;true)
 
 setCameraRotation(0;0;0;2;true)
+
+dialog(Char_Rann;null;C1_Beach_Arrival_1)
+dialog(Char_Rann;null;C1_Beach_Arrival_2)
 
 load(Interaction)

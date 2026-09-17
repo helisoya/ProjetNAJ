@@ -1,14 +1,33 @@
-dialog(Owl;null;I am an owl.)
+switch(C1_AxeProgress)
+case 0:
+	# Before being able to retreive it
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_1)
+	dialog(null;null;C1_DeadEnd_Owl_Before_2)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_3)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_4)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_5)
+	dialog(null;null;C1_DeadEnd_Owl_Before_6)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_7)
+case 1:
+	# After being able to retreive it
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_1)
+	dialog(null;null;C1_DeadEnd_Owl_After_2)
+	dialog(null;null;C1_DeadEnd_Owl_After_3)
+	setCharacterBody(Owl;FlyOffScreen)
+	wait(2)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_4)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_5)
 
-if(C1_AxeProgress == 1)
+	setStaticAlpha(Axe;0;1;true)
+	setStaticPosition(Axe;0;0;-50)
 
-dialog(Owl;null;It's dangerous to go alone. Take this axe.)
-setCharacterBody(Owl;FlyOffScreen)
-wait(2)
-setStaticAlpha(Axe;0;1;true)
-setStaticPosition(Axe;0;0;-50)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_6)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_7)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_8)
+	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_9)
 
-variable(C1_AxeProgress;=;2)
-endif
+	variable(C1_AxeProgress;=;2)
+endswitch
+
 
 load(Interaction)

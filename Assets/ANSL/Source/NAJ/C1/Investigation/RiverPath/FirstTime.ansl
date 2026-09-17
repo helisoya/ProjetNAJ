@@ -1,0 +1,8 @@
+variable(C1_FirstTimeCount;=;3)
+
+dialog(Char_Rann;null;C1_River_Arrival_1)
+dialog(Char_Rann;null;C1_River_Arrival_2)
+dialog(Char_Rann;null;C1_River_Arrival_3)
+dialog(Char_Rann;null;C1_River_Arrival_4)
+
+load(Interaction)

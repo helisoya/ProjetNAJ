@@ -3,9 +3,9 @@ setFg(1)
 
 setBackground(C1/Beach)
 
-if(C1_FirstTimeBeach == 0)
-load(FirstTime)
+if(C1_FirstTimeCount == 0)
+	load(FirstTime)
 else
-fadeFg(0;false)
-load(Interaction)
+	fadeFg(0;false)
+	load(Interaction)
 endif

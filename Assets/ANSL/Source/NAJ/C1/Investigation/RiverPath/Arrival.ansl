@@ -5,4 +5,9 @@ setBackground(C1/RiverPath)
 
 fadeFg(0;false)
 
-load(Interaction)
+if(C1_FirstTimeCount == 2)
+	load(FirstTime)
+else
+	fadeFg(0;false)
+	load(Interaction)
+endif

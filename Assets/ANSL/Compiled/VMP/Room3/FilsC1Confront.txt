@@ -1,7 +1,7 @@
-#1E9A8BB8AF58D95B00B3D2AEE2047A98-EDCB39F54644EC589DD0653E1167EE2B
+#1E9A8BB8AF58D95B00B3D2AEE2047A98-7B87EB7B1BC439B840A43BBC1A9EB87B
 32|null|null|Fils_Confront_1
 32|Char_Fils|null|Fils_Confront_2
-92|ValueFils|-|1
+96|ValueFils|-|1
 37|4|24|SecretFils == 1
 32|null|null|Fils_Confront_3
 32|Char_Fils|null|Fils_Confront_4
@@ -10,18 +10,18 @@
 24|0|Choice_Yes|9|null|null|Choice_No|15|null|null
 32|Char_Fils|null|Fils_Confront_Bad_1
 32|Char_Fils|null|Fils_Confront_Bad_2
-92|FilsWeirdQuest|=|3
-92|ValueFils|-|3
-92|ValueBaron|+|2
+96|FilsWeirdQuest|=|3
+96|ValueFils|-|3
+96|ValueBaron|+|2
 39|23
 32|Char_Fils|null|Fils_Confront_Nice_1
 32|Char_Fils|null|Fils_Confront_Nice_2
 32|Char_Fils|null|Fils_Confront_Nice_3
 32|Char_Fils|null|Fils_Confront_Nice_4
-92|FilsWeirdQuest|=|4
-92|ValueFils|+|3
-92|LieToChasseurQuest|=|1
+96|FilsWeirdQuest|=|4
+96|ValueFils|+|3
+96|LieToChasseurQuest|=|1
 39|23
 39|26
-92|FilsWeirdQuest|=|2
+96|FilsWeirdQuest|=|2
 39|26

@@ -1,13 +1,13 @@
-#25091F695CECB3963371DA9187032763-EDCB39F54644EC589DD0653E1167EE2B
+#25091F695CECB3963371DA9187032763-7B87EB7B1BC439B840A43BBC1A9EB87B
 37|1|13|LookCounter > 0
-92|LookCounter|-|1
+96|LookCounter|-|1
 37|3|5|DrinkQuest == 0
 32|null|null|Drink_0_1
 39|11
 32|null|null|Drink_1_1
 32|null|null|Drink_1_2
-92|DrinkQuest|=|2
-81|Drink|0|0.5|true
+96|DrinkQuest|=|2
+85|Drink|0|0.5|true
 54|Drink
 39|11
 41|/VMP/Common/PrintLookCounter

@@ -1,10 +1,12 @@
 setFg(1)
 
 load(GeneralSetup)
-setLocals(c1_intro)
-setLocation(AAAAAAAAAAAAAAA)
+setLocals(c1_common;c1_intro)
+setLocation(Location_C1)
 
 addEvidence(C1_Herbarium)
 addProfile(C1_Rann)
+addProfile(C1_Sartt)
+addProfile(C1_Gerald)
 
 load(../Investigation/Cliff/Start)

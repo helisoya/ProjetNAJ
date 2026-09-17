@@ -1,3 +1,7 @@
-dialog(null;null;Go right idiot)
+dialog(Char_Rann;null;C1_Forest_Flag_1)
+dialog(Char_Rann;null;C1_Forest_Flag_2)
+dialog(Char_Rann;null;C1_Forest_Flag_3)
+dialog(Char_Rann;null;C1_Forest_Flag_4)
+dialog(Char_Rann;null;C1_Forest_Flag_5)
 
 load(Interaction)

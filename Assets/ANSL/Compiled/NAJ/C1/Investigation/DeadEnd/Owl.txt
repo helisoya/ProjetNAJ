@@ -1,12 +1,26 @@
-#D9500D4726F84711D1A293BA6F224965-EDCB39F54644EC589DD0653E1167EE2B
-32|Owl|null|I am an owl.
-37|2|9|C1_AxeProgress == 1
-32|Owl|null|It's dangerous to go alone. Take this axe.
-62|Owl|FlyOffScreen
-94|2
-81|Axe|0|1|true
-83|Axe|0|0|-50
-92|C1_AxeProgress|=|2
-39|10
-39|10
+#26224BB0FA1440CC61E14E5DCF5F8D1E-7B87EB7B1BC439B840A43BBC1A9EB87B
+93|C1_AxeProgress|24|0|1|1|9
+32|Char_Rann|null|C1_DeadEnd_Owl_Before_1
+32|null|null|C1_DeadEnd_Owl_Before_2
+32|Char_Rann|null|C1_DeadEnd_Owl_Before_3
+32|Char_Rann|null|C1_DeadEnd_Owl_Before_4
+32|Char_Rann|null|C1_DeadEnd_Owl_Before_5
+32|null|null|C1_DeadEnd_Owl_Before_6
+32|Char_Rann|null|C1_DeadEnd_Owl_Before_7
+39|24
+32|Char_Rann|null|C1_DeadEnd_Owl_After_1
+32|null|null|C1_DeadEnd_Owl_After_2
+32|null|null|C1_DeadEnd_Owl_After_3
+63|Owl|FlyOffScreen
+98|2
+32|Char_Rann|null|C1_DeadEnd_Owl_After_4
+32|Char_Rann|null|C1_DeadEnd_Owl_After_5
+85|Axe|0|1|true
+87|Axe|0|0|-50
+32|Char_Rann|null|C1_DeadEnd_Owl_After_6
+32|Char_Rann|null|C1_DeadEnd_Owl_After_7
+32|Char_Rann|null|C1_DeadEnd_Owl_After_8
+32|Char_Rann|null|C1_DeadEnd_Owl_After_9
+96|C1_AxeProgress|=|2
+39|24
 41|Interaction

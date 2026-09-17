@@ -1,4 +1,6 @@
+using ANF.GUI;
 using ANF.Utils;
+using DG.Tweening;
 using Leguar.TotalJSON;
 using UnityEngine;
 
@@ -13,11 +15,20 @@ namespace ANF.Scene
         [Header("Infos")]
         [SerializeField] private Vector3 startPosition = new Vector3(0, 0, -10);
         [SerializeField] private Vector3 startRotation = new Vector3(0, 0, 0);
+
+        [Header("Screenshake")]
+        [SerializeField] private string[] uiToShake;
+        [SerializeField] private float shakeWorldToUIRation = 100.0f;
+        private float shakeStrength;
+        private float shakeTime;
+        public bool Shaking { get; private set; }
+
         private Transform cameraTransform;
         private LerpInstanceVector3 lerpRotation;
         private LerpInstanceVector3 lerpPosition;
         private bool skipModeEnabled;
         private Vector3 currentRotation;
+        private Vector3 currentPosition;
 
         public bool Rotating
         {
@@ -35,6 +46,36 @@ namespace ANF.Scene
             }
         }
 
+        /// <summary>
+		/// Shakes the screen
+		/// </summary>
+		/// <param name="strength">The screenshake's strength</param>
+		/// <param name="duration">The screenshake's duration</param>
+		/// <param name="shakeCamera">True if the camera should be shaken</param>
+		/// <param name="shakeUI">True if the UI should be shaken</param>
+        public void ShakeScreen(float strength, float duration, bool shakeCamera = true, bool shakeUI = true)
+        {
+            if (shakeCamera)
+            {
+                Shaking = true;
+                shakeStrength = strength;
+                shakeTime = duration;
+            }
+
+            if (shakeUI)
+            {
+                foreach (string component in uiToShake)
+                {
+                    if (manager.GetGUIManager().GetComponent(component, out GUIComponent guiComponent))
+                    {
+                        RectTransform rectTransform = guiComponent.GetComponent<RectTransform>();
+                        Vector2 lastAnchoredPosition = rectTransform.anchoredPosition;
+                        rectTransform.DOShakeAnchorPos(duration, strength * shakeWorldToUIRation).OnComplete(() => { rectTransform.anchoredPosition = lastAnchoredPosition; });
+                    }
+                }
+            }
+        }
+
         public void OnSkipModeToggle(bool enabled)
         {
             skipModeEnabled = enabled;
@@ -42,6 +83,8 @@ namespace ANF.Scene
                 lerpPosition.ChangeDuration(0.1f);
             if (lerpRotation != null && lerpRotation.lerping)
                 lerpRotation.ChangeDuration(0.1f);
+            if (Shaking && shakeTime > 0.1f)
+                shakeTime = 0.1f;
         }
 
         public override WorldComponent CloneComponent()
@@ -49,7 +92,8 @@ namespace ANF.Scene
             return new MainCameraController()
             {
                 startPosition = startPosition,
-                startRotation = startRotation
+                startRotation = startRotation,
+                uiToShake = uiToShake
             };
         }
 
@@ -60,20 +104,40 @@ namespace ANF.Scene
 
         public override void OnStart()
         {
-
         }
 
         public override void OnUpdate()
         {
             if (lerpPosition != null && lerpPosition.lerping)
             {
-                cameraTransform.position = lerpPosition.Update();
+                currentPosition = lerpPosition.Update();
+                cameraTransform.position = currentPosition;
             }
 
             if (lerpRotation != null && lerpRotation.lerping)
             {
                 currentRotation = lerpRotation.Update();
                 cameraTransform.eulerAngles = currentRotation;
+            }
+
+            if (Shaking)
+            {
+                shakeTime -= Time.deltaTime;
+                if (shakeTime <= 0)
+                {
+                    Shaking = false;
+                    cameraTransform.position = currentPosition;
+                }
+                else
+                {
+                    Vector2 randCircle = Random.insideUnitCircle * shakeStrength;
+
+                    cameraTransform.position = new Vector3(
+                        currentPosition.x + randCircle.x,
+                        currentPosition.y + randCircle.y,
+                        currentPosition.z);
+                }
+
             }
         }
 
@@ -105,6 +169,7 @@ namespace ANF.Scene
         {
             if (immediate)
             {
+                currentPosition = position;
                 cameraTransform.position = position;
 
                 if (lerpPosition != null)
@@ -158,6 +223,7 @@ namespace ANF.Scene
         {
             if (json.ContainsKey("currentPosition"))
                 cameraTransform.position = json.GetJArray("currentPosition").AsVector3();
+            currentPosition = cameraTransform.position;
 
             if (json.ContainsKey("currentRotation"))
             {
@@ -184,7 +250,7 @@ namespace ANF.Scene
 
         public override void OnSave(JSON json)
         {
-            json.Add("currentPosition", cameraTransform.position);
+            json.Add("currentPosition", currentPosition);
             json.Add("currentRotation", currentRotation);
 
             if (lerpPosition != null)

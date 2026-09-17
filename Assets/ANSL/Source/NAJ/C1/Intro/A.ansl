@@ -3,6 +3,11 @@ setSkybox(Day)
 
 setStaticHidden(WaterStorm;true)
 
+setStaticAlpha(Fog;0.25)
+setFogEnabled(true)
+setFogDensity(0.004)
+setFogColor(#B1D7FB)
+
 setBg(1)
 fadeFg(0;false)
 

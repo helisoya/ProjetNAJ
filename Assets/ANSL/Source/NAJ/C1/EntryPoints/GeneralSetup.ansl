@@ -13,9 +13,13 @@ createUserProfile(C1_Judge;C1)
 createUserProfile(C1_Sherif;C1)
 createUserProfile(C1_Juno;C1)
 
-createUserVariable(C1_FirstTimeBeach;0)
-createUserVariable(C1_AxeProgress;0)
+createUserVariable(C1_FirstTimeCount;0)
+# 0 : None
+# 1 : Went to beach
+# 2 : Went to forest
+# 3 : Went to river path
 
+createUserVariable(C1_AxeProgress;0)
 # Axe Progress
 # 0 -> Interact with trees
 # 1 -> Get Axe from Mr.Owl

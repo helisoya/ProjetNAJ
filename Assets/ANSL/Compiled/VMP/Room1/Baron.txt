@@ -1,12 +1,12 @@
-#01C7C24D7B54E5BA5443C9E8E168B3FA-EDCB39F54644EC589DD0653E1167EE2B
+#01C7C24D7B54E5BA5443C9E8E168B3FA-7B87EB7B1BC439B840A43BBC1A9EB87B
 37|1|3|TalkedBaron == 1 && CycleCount == 0
 32|null|null|Talk_Character_Done_1
 39|53
-61|Baron|0|0.5|true
-69|Baron|Front
+62|Baron|0|0.5|true
 70|Baron|Front
-61|Baron|1|0.5|false
-89|CycleCount|8|0|40
+71|Baron|Front
+62|Baron|1|0.5|false
+93|CycleCount|8|0|40
 32|null|null|Choice_InteractCharacter
 24|0|Choice_Talk|10|null|null|Choice_Search|28|null|null|Choice_Nothing|38|null|null
 37|11|13|TalkedBaron == 1
@@ -24,12 +24,12 @@
 41|BaronDrinkQuestC1No
 39|25
 39|25
-92|TalkedBaron|=|1
+96|TalkedBaron|=|1
 39|27
 39|39
 37|29|35|SearchCounter > 0
-92|SearchCounter|-|1
-92|SecretBaron|=|1
+96|SearchCounter|-|1
+96|SecretBaron|=|1
 32|null|null|Baron_SearchBelongings_1
 32|null|null|Baron_SearchBelongings_2
 41|/VMP/Common/PrintSearchCounter
@@ -44,13 +44,13 @@
 32|Char_Baron|null|Baron_Intro_3
 32|Char_Baron|null|Baron_Intro_4
 32|null|null|Baron_Intro_5
-92|DrinkQuest|=|1
-92|TalkedBaron|=|1
+96|DrinkQuest|=|1
+96|TalkedBaron|=|1
 39|48
-61|Baron|0|0.5|true
-69|Baron|BaronSpot
+62|Baron|0|0.5|true
 70|Baron|BaronSpot
-61|Baron|1|0.5|false
+71|Baron|BaronSpot
+62|Baron|1|0.5|false
 39|53
 41|/VMP/Common/CycleCheck
 41|Interaction

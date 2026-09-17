@@ -1,11 +1,11 @@
-#FDED58EFF397E51762B3D6D453441512-EDCB39F54644EC589DD0653E1167EE2B
-79|TestDialog
-78|test
+#FDED58EFF397E51762B3D6D453441512-7B87EB7B1BC439B840A43BBC1A9EB87B
+83|TestDialog
+82|test
 32|Test_Character|null|Test_Dialog_1
 32|Test_Character|null|Test_Dialog_2|true
 32|{MC}|null|Test_Dialog_3
 32|{MC}|null|Test_Dialog_4|true
-94|0.1
+98|0.1
 32|null|null|Test_Dialog_5|false|true
-94|0.5
+98|0.5
 32|null|null|Test_Dialog_6|true|false|true

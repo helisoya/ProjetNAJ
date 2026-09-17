@@ -1,12 +1,12 @@
-#33DEC155C424DF871BAE25C8B608843B-EDCB39F54644EC589DD0653E1167EE2B
+#33DEC155C424DF871BAE25C8B608843B-7B87EB7B1BC439B840A43BBC1A9EB87B
 37|1|3|TalkedFils == 1 && CycleCount == 0
 32|null|null|Talk_Character_Done_1
 39|49
-61|Fils|0|0.5|true
-69|Fils|Front
+62|Fils|0|0.5|true
 70|Fils|Front
-61|Fils|1|0.5|false
-89|CycleCount|8|0|41
+71|Fils|Front
+62|Fils|1|0.5|false
+93|CycleCount|8|0|41
 32|null|null|Choice_InteractCharacter
 24|0|Choice_Talk|10|null|null|Choice_Search|29|null|null|Choice_Nothing|39|null|null
 37|11|13|TalkedFils == 1
@@ -25,12 +25,12 @@
 39|24
 39|26
 39|26
-92|TalkedFils|=|1
+96|TalkedFils|=|1
 39|28
 39|40
 37|30|36|SearchCounter > 0
-92|SearchCounter|-|1
-92|SecretFils|=|1
+96|SearchCounter|-|1
+96|SecretFils|=|1
 32|null|null|Fils_SearchBelongings_1
 32|null|null|Fils_SearchBelongings_2
 41|/VMP/Common/PrintSearchCounter
@@ -41,12 +41,12 @@
 39|40
 39|44
 32|Char_Fils|null|Fils_Intro_1
-92|TalkedFils|=|1
+96|TalkedFils|=|1
 39|44
-61|Fils|0|0.5|true
-69|Fils|FilsSpot
+62|Fils|0|0.5|true
 70|Fils|FilsSpot
-61|Fils|1|0.5|false
+71|Fils|FilsSpot
+62|Fils|1|0.5|false
 39|49
 41|/VMP/Common/CycleCheck
 41|Interaction

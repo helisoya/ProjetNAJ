@@ -23,6 +23,8 @@ namespace ANF.Scene
         private Dictionary<string, JSON> loadDataCache;
         private ResourceManager resourceManager;
 
+        private float loadDataCacheFrameSurvival;
+
         public override void OnInitialize()
         {
             objects = new Dictionary<string, ObjectInstance<Type>>();
@@ -45,6 +47,15 @@ namespace ANF.Scene
 
         public override void OnUpdate()
         {
+            // Keeping the load cache intact will prevent manual scene objects from being created
+            // It is destroyed after X frames (1 by default)
+            if (loadDataCache != null)
+            {
+                loadDataCacheFrameSurvival--;
+                if (loadDataCacheFrameSurvival <= 0)
+                    loadDataCache = null;
+            }
+
             foreach (ObjectInstance<Type> obj in objects.Values)
             {
                 obj.obj.UpdateObject(manager);
@@ -59,8 +70,11 @@ namespace ANF.Scene
         /// <returns>True if the operation was a success</returns>
         public bool AddSceneObject(string name, Type obj)
         {
-            if (objects.ContainsKey(name) || obj == null)
+            if (objects.ContainsKey(name) || obj == null ||
+                (loadDataCache != null && !loadDataCache.ContainsKey(name)))
             {
+                // Don't add if key exists, object is null
+                // OR if a load chache exists and 
                 return false;
             }
             else
@@ -217,6 +231,8 @@ namespace ANF.Scene
         public override void OnLoad(JSON json)
         {
             loadDataCache = new Dictionary<string, JSON>();
+            loadDataCacheFrameSurvival = 5;
+            List<string> existingNonResources = new List<string>();
             if (json.ContainsKey("objects"))
             {
                 JSON allObjects = json.GetJSON("objects");
@@ -235,11 +251,15 @@ namespace ANF.Scene
                         // User generated object
                         // Ex : Background object
                         // The object may already exists, or may be created later
+                        // Destroy objects that exists in memory but not in the save file
 
                         if (objects.TryGetValue(key, out ObjectInstance<Type> obj))
                         {
                             if (obj.loadedFromResources)
+                            {
                                 obj.obj.Load(objJSON);
+                                existingNonResources.Add(key);
+                            }
                         }
                         else
                         {
@@ -247,6 +267,14 @@ namespace ANF.Scene
                         }
                     }
                 }
+            }
+
+            List<string> allKeys = new List<string>(objects.Keys);
+            foreach (string objectId in allKeys)
+            {
+                if (!objects[objectId].loadedFromResources &&
+                    !existingNonResources.Contains(objectId))
+                    RemoveSceneObject(objectId);
             }
         }
 

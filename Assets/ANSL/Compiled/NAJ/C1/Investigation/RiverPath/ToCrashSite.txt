@@ -1,11 +1,18 @@
-#90FA6BDD6361F970C7F6636F5F8C0AD6-EDCB39F54644EC589DD0653E1167EE2B
-37|1|6|C1_AxeProgress == 2
-32|null|null|Cutting trees...
+#83D9F12EFC45F8733513458DE6188D62-7B87EB7B1BC439B840A43BBC1A9EB87B
+37|1|11|C1_AxeProgress == 2
+32|Char_Rann|null|C1_River_Tree_After_1
+32|Char_Rann|null|C1_River_Tree_After_2
+34|1|true
+32|null|null|C1_River_Tree_After_3
+32|null|null|C1_River_Tree_After_4
 36|1|true
-86|false
+59|0
+90|false
 41|../CrashSite/Arrival
-39|10
-32|null|null|Need an axe.
-92|C1_AxeProgress|=|1
+39|17
+32|Char_Rann|null|C1_River_Tree_Before_1
+32|Char_Rann|null|C1_River_Tree_Before_2
+32|Char_Rann|null|C1_River_Tree_Before_3
+96|C1_AxeProgress|=|1
 41|Interaction
-39|10
+39|17

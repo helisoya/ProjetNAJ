@@ -8,13 +8,24 @@ addCharacter(Sartt;false;Captain)
 
 fadeFg(0;false)
 
-wait(2)
+dialog(Char_Rann;null;C1_Investigation_End_1)
+dialog(null;null;C1_Investigation_End_2)
+dialog(null;null;C1_Investigation_End_3)
+dialog(Char_Rann;null;C1_Investigation_End_4)
+
 
 # Walk to side of ship, looking at it
-setCameraPosition(-30;1.5;29;4;false)
-setCameraRotation(-20;40;0;4;true)
+setCameraPosition(-30;1.5;29;5;false)
+setCameraRotation(-20;40;0;5;false)
 
-wait(2)
+dialog(null;null;C1_Investigation_End_5)
+dialog(null;null;C1_Investigation_End_6)
+dialog(null;null;C1_Investigation_End_7)
+
+dialog(Char_Rann;null;C1_Investigation_End_8)
+dialog(Char_Rann;null;C1_Investigation_End_9)
+dialog(Char_Rann;null;C1_Investigation_End_10)
+showDialogWindow(false)
 
 # Looks around
 
@@ -22,32 +33,84 @@ setCameraRotation(0;60;0;2;true)
 wait(1)
 setCameraRotation(0;-15;0;3;true)
 
-wait(2)
+dialog(null;null;C1_Investigation_End_11)
+showDialogWindow(false)
 
 # Spot the captain
 
 setCameraPosition(-30;1.5;30;0.5;false)
 setCameraRotation(0;5;0;0.5;true)
 
+dialog(null;null;C1_Investigation_End_12)
+dialog(null;null;C1_Investigation_End_13)
+dialog(Char_Rann;null;C1_Investigation_End_14)
+dialog(null;null;C1_Investigation_End_15)
+showDialogWindow(false)
+
 # Walk to him
 
 setCameraRotation(0;-6;0;3;false)
 setCameraPosition(-27;1;50;3;true)
 
-# Spots the knife
+dialog(Char_Rann;null;C1_Investigation_End_16)
+showDialogWindow(false)
 
-wait(1)
+# Spots the knife
 
 setCameraRotation(28;-20;0;1;false)
 setCameraPosition(-26;1;57.5;1;true)
 
+dialog(null;null;C1_Investigation_End_17)
+dialog(null;null;C1_Investigation_End_18)
+dialog(null;null;C1_Investigation_End_19)
+
+dialog(Char_Rann;null;C1_Investigation_End_20)
+dialog(Char_Rann;null;C1_Investigation_End_21)
+dialog(Char_Rann;null;C1_Investigation_End_22)
+
+dialog(null;null;C1_Investigation_End_23)
+showDialogWindow(false)
 
 # White Man Screamer
 
-wait(2)
 
 addCharacter(Robert;false;Sherif)
 :setRobertAimingGun()
 
 setCameraRotation(-5;128;0;1;true)
 
+dialog(Char_Unknown;Robert;C1_Investigation_End_24)
+
+dialog(Char_Rann;null;C1_Investigation_End_25)
+dialog(null;null;C1_Investigation_End_26)
+dialog(Char_Rann;null;C1_Investigation_End_27)
+
+dialog(Char_Unknown;Robert;C1_Investigation_End_28)
+
+dialog(Char_Rann;null;C1_Investigation_End_29)
+dialog(Char_Rann;null;C1_Investigation_End_30)
+
+dialog(Char_Unknown;Robert;C1_Investigation_End_31)
+dialog(Char_Unknown;Robert;C1_Investigation_End_32)
+dialog(Char_Unknown;Robert;C1_Investigation_End_33)
+
+dialog(Char_Rann;null;C1_Investigation_End_34)
+dialog(null;null;C1_Investigation_End_35)
+
+dialog(Char_Unknown;Robert;C1_Investigation_End_36)
+dialog(Char_Unknown;Robert;C1_Investigation_End_37)
+
+showDialogWindow(false)
+fadeBg(1;true)
+
+dialog(null;null;C1_Investigation_End_38)
+dialog(null;null;C1_Investigation_End_39)
+dialog(null;null;C1_Investigation_End_40)
+dialog(null;null;C1_Investigation_End_41)
+dialog(null;null;C1_Investigation_End_42)
+dialog(null;null;C1_Investigation_End_43)
+dialog(null;null;C1_Investigation_End_44)
+dialog(null;null;C1_Investigation_End_45)
+dialog(null;null;C1_Investigation_End_46)
+dialog(null;null;C1_Investigation_End_47)
+dialog(null;null;C1_Investigation_End_48)

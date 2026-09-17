@@ -13,6 +13,7 @@ Menus
 - Regrouper les inputs clavier pour le UI
 - Revoir Inventaire                                                                   V
 - Input pour signaler qu'on peut passer un dialogue ?                                 V
+- Trouver un moyen de masquer l'UI quand il est hors champ
 
 Inputs
 - Scroll/input trop lent dans les menus                                               V
@@ -40,9 +41,9 @@ ANF
 - Vérifier fuites de mémoires
 - Mettre à jour le Character Generator
 - Audio sauvegarde les musiques / ambiance en globale plutôt qu'en player             V
-- Revoir Start / ChangeScene au niveau des attentes inter composants
-- Screenshake
-- Brouillard
+- Revoir Start / ChangeScene / Load au niveau des attentes inter composants
+- Screenshake                                                                         V
+- Brouillard                                                                          V
 
 Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V

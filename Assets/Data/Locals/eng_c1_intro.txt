@@ -2,31 +2,31 @@
 # -------------------- Intro ------------------------------
 # ---------------------------------------------------------
 
-C1_Intro_A_1 = <color=blue>You know…</color>
-C1_Intro_A_2 = <color=blue>Who could have predicted this misfortune ?</color>
-C1_Intro_A_3 = <color=blue>… Not me, at least.</color>
-C1_Intro_A_4 = <color=blue>I let myself fall onto the cell’s makeshift bed. The hay is uncomfortable.</color>
-C1_Intro_A_5 = <color=blue>Closing my eyes, I futilely hope to forget about all this.</color>
-C1_Intro_A_6 = <color=blue>But… I can’t seem to get my mind off today’s events.</color>
-C1_Intro_A_7 = <color=blue>When did it all go so wrong ?</color>
+C1_Intro_A_1 = <color=#72B6E8>You know…</color>
+C1_Intro_A_2 = <color=#72B6E8>Who could have predicted this misfortune ?</color>
+C1_Intro_A_3 = <color=#72B6E8>… Not me, at least.</color>
+C1_Intro_A_4 = <color=#72B6E8>I let myself fall onto the cell’s makeshift bed. The hay is uncomfortable.</color>
+C1_Intro_A_5 = <color=#72B6E8>Closing my eyes, I futilely hope to forget about all this.</color>
+C1_Intro_A_6 = <color=#72B6E8>But… I can’t seem to get my mind off today’s events.</color>
+C1_Intro_A_7 = <color=#72B6E8>When did it all go so wrong ?</color>
 
-C1_Intro_A_8 = <color=blue>Phew ! That’s dealt with…</color>
-C1_Intro_A_9 = <color=blue>Guh… And here I was, thinking I wouldn’t have to do manual work…</color>
-C1_Intro_A_10 = <color=blue>I look around. The sailors are finishing loading our supplies for the journey.</color>
-C1_Intro_A_11 = <color=blue>It seems a little excessive to me, but hey.</color>
-C1_Intro_A_12 = <color=blue>I’m no sailor. I have no idea how much we actually need.</color>
-C1_Intro_A_13 = <color=blue>…Still, I wonder how long we are planning to travel.</color>
+C1_Intro_A_8 = <color=#72B6E8>Phew ! That’s dealt with…</color>
+C1_Intro_A_9 = <color=#72B6E8>Guh… And here I was, thinking I wouldn’t have to do manual work…</color>
+C1_Intro_A_10 = <color=#72B6E8>I look around. The sailors are finishing loading our supplies for the journey.</color>
+C1_Intro_A_11 = <color=#72B6E8>It seems a little excessive to me, but hey.</color>
+C1_Intro_A_12 = <color=#72B6E8>I’m no sailor. I have no idea how much we actually need.</color>
+C1_Intro_A_13 = <color=#72B6E8>…Still, I wonder how long we are planning to travel.</color>
 
 C1_Intro_A_14 = Retyr. Slacking off already ?
-C1_Intro_A_15 = <color=blue>I turn around. I’d recognize that voice anywhere.</color>
+C1_Intro_A_15 = <color=#72B6E8>I turn around. I’d recognize that voice anywhere.</color>
 C1_Intro_A_16 = I’d rather go by Rann, sir. Using my surname feels a bit weird.
 C1_Intro_A_17 = Well, get used to it. This is how we sailors work.
 C1_Intro_A_18 = And while we’re on this topic. It’s <b>Captain</b> Sartt to you.
 C1_Intro_A_19 = Y- Yes, Captain !
 C1_Intro_A_20 = I’ll keep that in mind.
-C1_Intro_A_21 = <color=blue>I still prefer Rann… ‘Guess that was to be expected…</color>
-C1_Intro_A_22 = <color=blue>It’s a good thing Sis didn’t come to see me off. She would have ripped his arms off.</color>
-C1_Intro_A_23 = <color=blue>… Or at least tried to. I don’t think she has the strength to take on this old wolf.</color>
+C1_Intro_A_21 = <color=#72B6E8>I still prefer Rann… ‘Guess that was to be expected…</color>
+C1_Intro_A_22 = <color=#72B6E8>It’s a good thing Sis didn’t come to see me off. She would have ripped his arms off.</color>
+C1_Intro_A_23 = <color=#72B6E8>… Or at least tried to. I don’t think she has the strength to take on this old wolf.</color>
 C1_Intro_A_24 = What are you looking at ?
 C1_Intro_A_25 = Oh, erm ! Nothing, really…
 C1_Intro_A_26 = I was just… erm… pondering what to do…
@@ -49,14 +49,14 @@ C1_Intro_A_41 = Men ! It is time for us to begin our journey.
 C1_Intro_A_42 = I pray to Kalibu that you said goodbye to your families. We are going to be away for a long time.
 C1_Intro_A_43 = But fear not, for our goal is most pure : The Legendary Refuge of the Conclave.
 C1_Intro_A_44 = We’ll locate this most holy land, and take it as our own. Our new Kalia outside of Kalia.
-C1_Intro_A_45 = <color=blue>The sailors cheered. We left the port of Kalia soon after.</color>
-C1_Intro_A_46 = <color=blue>I looked at the city in the distance, as it became smaller and smaller.</color>
-C1_Intro_A_47 = <color=blue>At some point, it disappeared into the horizon.</color>
-C1_Intro_A_48 = <color=blue>I guess I’m really doing this, huh ?</color>
+C1_Intro_A_45 = <color=#72B6E8>The sailors cheered. We left the port of Kalia soon after.</color>
+C1_Intro_A_46 = <color=#72B6E8>I looked at the city in the distance, as it became smaller and smaller.</color>
+C1_Intro_A_47 = <color=#72B6E8>At some point, it disappeared into the horizon.</color>
+C1_Intro_A_48 = <color=#72B6E8>I guess I’m really doing this, huh ?</color>
 
 C1_Intro_A_49 = Feeling remorse ? It’s a bit late for that, I’m afraid.
 C1_Intro_A_50 = Huh ?
-C1_Intro_A_51 = <color=blue>I turn around to find one of the sailors beside me.</color>
+C1_Intro_A_51 = <color=#72B6E8>I turn around to find one of the sailors beside me.</color>
 C1_Intro_A_52 = Oh. Erm… No. I’m just not used to being at sea and all.
 C1_Intro_A_53 = This all feels so foreign to me.
 C1_Intro_A_54 = Ah, this is your first time ?
@@ -71,18 +71,18 @@ C1_Intro_A_62 = I was hired as a plant specialist.
 C1_Intro_A_63 = Ah, it was you then…
 C1_Intro_A_64 = I stumbled upon your herbarium while loading our stuff.
 C1_Intro_A_65 = Your name, <color=red>“Ronne”</color>, was on it. I wondered who was the unlucky one.
-C1_Intro_A_66 = <color=blue>It’s <color=red>Rann</color>, not Ronne…</color>
-C1_Intro_A_67 = <color=blue>I started it when I was six and couldn’t even write my own name.</color>
-C1_Intro_A_68 = <color=blue>I’m embarrassed about this, but sadly I can’t fix it without making a new one…</color>
-C1_Intro_A_69 = <color=blue>Wait… Hold on… He saw my book ?!</color>
+C1_Intro_A_66 = <color=#72B6E8>It’s <color=red>Rann</color>, not Ronne…</color>
+C1_Intro_A_67 = <color=#72B6E8>I started it when I was six and couldn’t even write my own name.</color>
+C1_Intro_A_68 = <color=#72B6E8>I’m embarrassed about this, but sadly I can’t fix it without making a new one…</color>
+C1_Intro_A_69 = <color=#72B6E8>Wait… Hold on… He saw my book ?!</color>
 C1_Intro_A_70 = H-Huh ?!
 C1_Intro_A_71 = Ah, erm… No offense, of course.
 C1_Intro_A_72 = It’s just that your role here will be quite limited.
 C1_Intro_A_73 = I heard you’ll only be of use if we ever find land.
 C1_Intro_A_74 = The Captain said something about finding a reliable source of food or whatnot.
 C1_Intro_A_75 = …I see…
-C1_Intro_A_76 = <color=blue>He… didn’t notice ?</color>
-C1_Intro_A_77 = <color=blue>I should play dumb for now…</color>
+C1_Intro_A_76 = <color=#72B6E8>He… didn’t notice ?</color>
+C1_Intro_A_77 = <color=#72B6E8>I should play dumb for now…</color>
 C1_Intro_A_78 = Ha ha… I’m okay with that kind of arrangement. 
 C1_Intro_A_79 = The pay is more than worth it anyway.
 C1_Intro_A_80 = You got p- … That’s nice…
@@ -147,13 +147,13 @@ C1_Intro_A_138 = <color=green>Two months later.</color>
 
 C1_Intro_B_1 = Watch out. You are damaging it.
 C1_Intro_B_2 = Oh, sorry.
-C1_Intro_B_3 = <color=blue>I grab his knife’s blade with my hand.</color>
+C1_Intro_B_3 = <color=#72B6E8>I grab his knife’s blade with my hand.</color>
 C1_Intro_B_4 = Hey, be careful. You’ll get cut.
 C1_Intro_B_5 = It’s fine, don’t worry.
 C1_Intro_B_6 = Look, you need to cut here, not here.
 C1_Intro_B_7 = Herbariums are about showing the diversity of plants, not how you massacred them.
 C1_Intro_B_8 = Right, sorry.
-C1_Intro_B_9 = <color=blue>Gerald starts working on the plant again. This time, he doesn’t make mistakes.</color>
+C1_Intro_B_9 = <color=#72B6E8>Gerald starts working on the plant again. This time, he doesn’t make mistakes.</color>
 C1_Intro_B_10 = Thanks for lending me this knife, by the way.
 C1_Intro_B_11 = Don’t worry. And you can keep it. Think of it as a gift.
 C1_Intro_B_12 = Thanks.
@@ -188,7 +188,7 @@ C1_Intro_B_40 = … So how did you know I wasn’t a Suori ?
 C1_Intro_B_41 = Was it because I fell asleep during the Captain’s sermons ?
 C1_Intro_B_42 = Or… Maybe I’m not wearing that weird cloak some of you have…
 C1_Intro_B_43 = Ah, no. Nothing like that.
-C1_Intro_B_44 = <color=blue>Do people still wear those anyway ?</color>
+C1_Intro_B_44 = <color=#72B6E8>Do people still wear those anyway ?</color>
 C1_Intro_B_45 = Actually, it was the herbarium that tipped me off.
 C1_Intro_B_46 = Your secret little book ?
 C1_Intro_B_47 = Yes. Most Suoris consider it black magic.
@@ -238,38 +238,165 @@ C1_Intro_B_90 = … Let’s continue tending to these plants, alright ?
 C1_Intro_B_91 = R-Right !
 
 C1_Intro_B_92 = <color=green>One month later.</color>
-C1_Intro_B_93 = <color=blue>Still no land…</color>
-C1_Intro_B_94 = <color=blue>I wonder how my sisters are doing.</color>
+C1_Intro_B_93 = <color=#72B6E8>Still no land…</color>
+C1_Intro_B_94 = <color=#72B6E8>I wonder how my sisters are doing.</color>
 C1_Intro_B_95 = A seagull ?
-C1_Intro_B_96 = <color=blue>I can’t see land anywhere. But… Are we close ?</color>
-C1_Intro_B_97 = <color=blue>Maybe the fabled land actually exists.</color>
-C1_Intro_B_98 = <color=blue>…Not that it really interests me or anything.</color>
-C1_Intro_B_99 = <color=blue>Religion was never my thing anyway.</color>
-C1_Intro_B_100 = <color=blue>But… If it makes them happy and I get money, whatever.</color>
+C1_Intro_B_96 = <color=#72B6E8>I can’t see land anywhere. But… Are we close ?</color>
+C1_Intro_B_97 = <color=#72B6E8>Maybe the fabled land actually exists.</color>
+C1_Intro_B_98 = <color=#72B6E8>…Not that it really interests me or anything.</color>
+C1_Intro_B_99 = <color=#72B6E8>Religion was never my thing anyway.</color>
+C1_Intro_B_100 = <color=#72B6E8>But… If it makes them happy and I get money, whatever.</color>
 C1_Intro_B_101 = Captain ! Seagulls !
 C1_Intro_B_102 = I see them ! Don’t press me.
 C1_Intro_B_103 = But where are they coming from ? I can’t see anything in this mist.
-C1_Intro_B_104 = <color=blue>You know… I’m happy we are going to land soon.</color>
-C1_Intro_B_105 = <color=blue>I’m not really taking the sea very well.</color>
-C1_Intro_B_106 = <color=blue>Gerald was a huge help, but I decided I’ll never go near a boat ever again after this.</color>
+C1_Intro_B_104 = <color=#72B6E8>You know… I’m happy we are going to land soon.</color>
+C1_Intro_B_105 = <color=#72B6E8>I’m not really taking the sea very well.</color>
+C1_Intro_B_106 = <color=#72B6E8>Gerald was a huge help, but I decided I’ll never go near a boat ever again after this.</color>
 C1_Intro_B_107 = Huh ? It’s raining ?
-C1_Intro_B_108 = <color=blue>I watch as the sky turns darker and darker.</color>
-C1_Intro_B_109 = <color=blue>Rain starts pouring down from the sky.</color>
-C1_Intro_B_110 = <color=blue>A storm is coming.</color>
+C1_Intro_B_108 = <color=#72B6E8>I watch as the sky turns darker and darker.</color>
+C1_Intro_B_109 = <color=#72B6E8>Rain starts pouring down from the sky.</color>
+C1_Intro_B_110 = <color=#72B6E8>A storm is coming.</color>
 C1_Intro_B_111 = Now of all times ?
 C1_Intro_B_112 = Good thing I put on my coat.
 C1_Intro_B_113 = But it’s not safe to stay outside. I should head back to-
-C1_Intro_B_114 = <color=blue>A massive wave hits the side of the ship and I fall on the ground.</color>
-C1_Intro_B_115 = <color=blue>I hit my head rather hard. It’s hard to get back up.</color>
+C1_Intro_B_114 = <color=#72B6E8>A massive wave hits the side of the ship and I fall on the ground.</color>
+C1_Intro_B_115 = <color=#72B6E8>I hit my head rather hard. It’s hard to get back up.</color>
 C1_Intro_B_116 = Ugh…
 C1_Intro_B_117 = What is going on ? Who’s manning this ship ?
 C1_Intro_B_118 = Sam was thrown overboard, Captain !
 C1_Intro_B_119 = ‘Nobody’s manning the vessel !
 C1_Intro_B_120 = Idiots ! Why did I let him take the helm ?
 C1_Intro_B_121 = I’ll get us out of here.
-C1_Intro_B_122 = <color=blue>I start walking towards the deck’s entrance.</color>
-C1_Intro_B_123 = <color=blue>It’s dangerous to stay here during the storm.</color>
-C1_Intro_B_124 = <color=blue>The captain will handle things from here… I hope so.</color>
-C1_Intro_B_125 = <color=blue>Wa- Wait, what ?</color>
+C1_Intro_B_122 = <color=#72B6E8>I start walking towards the deck’s entrance.</color>
+C1_Intro_B_123 = <color=#72B6E8>It’s dangerous to stay here during the storm.</color>
+C1_Intro_B_124 = <color=#72B6E8>The captain will handle things from here… I hope so.</color>
+C1_Intro_B_125 = <color=#72B6E8>Wa- Wait, what ?</color>
 C1_Intro_B_126 = Damn it ! Brace for impact !
-C1_Intro_B_127 = <color=blue>Wait, wait ! I’m not-</color>
+C1_Intro_B_127 = <color=#72B6E8>Wait, wait ! I’m not-</color>
+
+# ---------------------------------------------------------
+# -------------------- Investigation ----------------------
+# ---------------------------------------------------------
+
+C1_Investigation_Start_1 = …
+C1_Investigation_Start_2 = …
+C1_Investigation_Start_3 = Ow, ow, ow…
+C1_Investigation_Start_4 = <color=#72B6E8>I get up painfully. I must have broken something.</color>
+C1_Investigation_Start_5 = <color=#72B6E8>… Where… Where am I ?</color>
+C1_Investigation_Start_6 = <color=#72B6E8>I remember that the ship hit land, but that’s about it.</color>
+C1_Investigation_Start_7 = <color=#72B6E8>I guess I must have been ejected from the ship during the crash.</color>
+C1_Investigation_Start_8 = Ow…
+C1_Investigation_Start_9 = <color=#72B6E8>I look at my left leg. It is badly injured.</color>
+C1_Investigation_Start_10 = <color=#72B6E8>It’s not bleeding, thankfully. But I’m not in shape for a jog.</color>
+C1_Investigation_Start_11 = <color=#72B6E8>My coat is also drenched and torn apart. It won’t protect me from anything.</color>
+C1_Investigation_Start_12 = I should find help. Actually…
+C1_Investigation_Start_13 = Where is the ship ? I couldn’t have been ejected that far, right ?
+C1_Investigation_Start_14 = I’m sure someone there will be able to help me.
+C1_Investigation_Start_15 = <color=#72B6E8>I look around.</color>
+C1_Investigation_Start_16 = Wha-
+C1_Investigation_Start_17 = How did the ship get stuck here ?
+C1_Investigation_Start_18 = We must have hit the ground rather hard.
+C1_Investigation_Start_19 = … No matter. I should find my way there.
+C1_Investigation_Start_20 = I won’t be able to climb with my injury. It’s way too risky.
+C1_Investigation_Start_21 = <color=#72B6E8>Hmm… Maybe I can follow this trail. It may loop back around.</color>
+C1_Investigation_Start_22 = <color=#72B6E8>It seems man-made. I wonder who made it.</color>
+C1_Investigation_Start_23 = <color=#72B6E8>I can interact with the scenery using the mouse or the keyboard. Any <color=red>icon</color> will indicate a point of interest.</color>
+C1_Investigation_Start_24 = <color=#72B6E8>Usually, I can also move backwards by interacting with the <color=red>bottom</color> of the screen.</color>
+
+C1_Cliff_Water_1 = Where in Vasia have we landed ?
+
+C1_Cliff_Boat_1 = To think we would end up wrecking our ship on an island…
+C1_Cliff_Boat_2 = I sure hope there are survivors.
+
+C1_Beach_Arrival_1 = I wandered pretty far from the ship.
+C1_Beach_Arrival_2 = I hope this isn’t a long loop.
+
+C1_Forest_Arrival_1 = The path splits here…
+C1_Forest_Arrival_2 = Maybe there is something that can help me find my way ?
+
+C1_Forest_Flag_1 = This… This is a part of the ship.
+C1_Forest_Flag_2 = I remember us having a flag like that. I heard it was to let people know who we are.
+C1_Forest_Flag_3 = So… I should go right, then.
+C1_Forest_Flag_4 = Makes sense. At least I think so. I get disoriented pretty fast.
+C1_Forest_Flag_5 = … This doesn’t bode well though, if this managed to land this far from the ship.
+
+C1_DeadEnd_Owl_Before_1 = … Do you own this axe ?
+C1_DeadEnd_Owl_Before_2 = Hooo ! Hooo !
+C1_DeadEnd_Owl_Before_3 = Okay, okay. Whatever you say, Mister Lumberjack.
+C1_DeadEnd_Owl_Before_4 = … People probably live on this island.
+C1_DeadEnd_Owl_Before_5 = The trail, the axe… The sailors couldn’t have made all this in such a short period of time.
+C1_DeadEnd_Owl_Before_6 = Hooo ! Hooo !
+C1_DeadEnd_Owl_Before_7 = S-Sorry ! The axe is definitely yours.
+
+C1_DeadEnd_Owl_After_1 = I’m sorry, little owl, I need that axe.
+C1_DeadEnd_Owl_After_2 = Hoo ?
+C1_DeadEnd_Owl_After_3 = Hooo !
+C1_DeadEnd_Owl_After_4 = … They fled.
+C1_DeadEnd_Owl_After_5 = I guess the axe is mine now. Although, I don’t know who owns it.
+C1_DeadEnd_Owl_After_6 = … Holding a weapon feels weird.
+C1_DeadEnd_Owl_After_7 = It reminds me of those self-defence classes we had at school.
+C1_DeadEnd_Owl_After_8 = I managed to be defeated by the training mannequin…
+C1_DeadEnd_Owl_After_9 = Oh well. I might be able to carve a path through those trees now.
+
+C1_River_Arrival_1 = There is more and more debris here.
+C1_River_Arrival_2 = I must be getting close.
+C1_River_Arrival_3 = Although… I’m not that reassured to see this much wreckage.
+C1_River_Arrival_4 = We must have hit land rather hard.
+
+C1_River_Tree_Before_1 = … I can’t move past these trees. 
+C1_River_Tree_Before_2 = Plus, I can’t climb over them because of my injury.
+C1_River_Tree_Before_3 = Maybe I can find something to cut them down a little bit.
+
+C1_River_Tree_After_1 = Alright, let’s try to cut these trees.
+C1_River_Tree_After_2 = … How do I do it, actually ?
+C1_River_Tree_After_3 = <color=#72B6E8>After a few minutes, I manage to cut enough of the trees to create a safe path forward.</color>
+C1_River_Tree_After_4 = <color=#72B6E8>It’s about time too; I feel light-headed…</color>
+
+C1_Investigation_End_1 = Oh ? There it is !
+C1_Investigation_End_2 = <color=#72B6E8>The once mighty vessel I travelled on for three months…</color>
+C1_Investigation_End_3 = <color=#72B6E8>We won’t be setting sail again anytime soon, I’m afraid.</color>
+C1_Investigation_End_4 = Um… Hello ? Anyone ?
+C1_Investigation_End_5 = <color=#72B6E8>I look around. It seems the place is deserted.</color>
+C1_Investigation_End_6 = <color=#72B6E8>How could it be ? Surely the sailors didn’t get thrown overboard, too.</color>
+C1_Investigation_End_7 = <color=#72B6E8>I look at the ship…</color>
+C1_Investigation_End_8 = Wait…
+C1_Investigation_End_9 = That’s… a pretty big hole, no ?
+C1_Investigation_End_10 = Did the crash do that ? I’m not sure it could have produced such precise damage.
+C1_Investigation_End_11 = <color=#72B6E8>I look around some more. I wonder if there are any survivors.</color>
+C1_Investigation_End_12 = <color=#72B6E8>Suddenly, I notice the Captain.</color>
+C1_Investigation_End_13 = <color=#72B6E8>He’s on the ground, possibly unconscious.</color>
+C1_Investigation_End_14 = Sir ? Captain ?
+C1_Investigation_End_15 = <color=#72B6E8>I make my way to him. I hope he’s alright.</color>
+C1_Investigation_End_16 = Huh ?!
+C1_Investigation_End_17 = <color=#72B6E8>What is going on ?! Did he- Did he get killed ?</color>
+C1_Investigation_End_18 = <color=#72B6E8>I check for a pulse. Please be alive…</color>
+C1_Investigation_End_19 = <color=#72B6E8>… No… Dead.</color>
+C1_Investigation_End_20 = But… how ? Why ?
+C1_Investigation_End_21 = Did someone kill him ?
+C1_Investigation_End_22 = Or did he get impaled during the crash ?
+C1_Investigation_End_23 = <color=#72B6E8>Calm down, Rann. There must be a perfectly logical explanation for this.</color>
+C1_Investigation_End_24 = Don’t move ! Hands in the air, criminal.
+C1_Investigation_End_25 = Huh ?
+C1_Investigation_End_26 = <color=#72B6E8>I do as asked.</color>
+C1_Investigation_End_27 = S- Sir ! This is terrible, the captain…
+C1_Investigation_End_28 = Dead. By your hands.
+C1_Investigation_End_29 = W- What ?!
+C1_Investigation_End_30 = No ! I swear ! He was already like that when I arrived.
+C1_Investigation_End_31 = Don’t give me that. I heard what happened from that girl.
+C1_Investigation_End_32 = Besides, you still have the murder weapon in your hands.
+C1_Investigation_End_33 = Put that axe on the ground. Slowly.
+C1_Investigation_End_34 = Y-Yes !
+C1_Investigation_End_35 = <color=#72B6E8>I do as asked. Who is this man ?!</color>
+C1_Investigation_End_36 = Now start walking. You’re in a lot of trouble, Miss.
+C1_Investigation_End_37 = Criminals like you should perish in jail.
+C1_Investigation_End_38 = <color=#72B6E8>And that’s how I got arrested for murder.</color>
+C1_Investigation_End_39 = <color=#72B6E8>As I suspected, the island we crashed into was settled.</color>
+C1_Investigation_End_40 = <color=#72B6E8>People took notice when our monstrosity of a boat made its entrance.</color>
+C1_Investigation_End_41 = <color=#72B6E8>I fainted shortly after being arrested. The pain in my leg combined with all the stress was too much for me to handle.</color>
+C1_Investigation_End_42 = <color=#72B6E8>I heard my trial is set for tomorrow. I don’t think I’ll even get to see a lawyer.</color>
+C1_Investigation_End_43 = <color=#72B6E8>What is this place anyway ? It feels… weirdly familiar.</color>
+C1_Investigation_End_44 = <color=#72B6E8>Not that I ever came here before, no. But, I don’t know…</color>
+C1_Investigation_End_45 = <color=#72B6E8>The policeman who arrested me spoke my language, as does everyone here apparently.</color>
+C1_Investigation_End_46 = <color=#72B6E8>Maybe… maybe they really did find their land…</color>
+C1_Investigation_End_47 = <color=#72B6E8>Well… it doesn’t matter right now.</color>
+C1_Investigation_End_48 = <color=#72B6E8>I should deal with that whole murder thing first. Then I’ll have all the time in the world to figure out where exactly I am.</color>

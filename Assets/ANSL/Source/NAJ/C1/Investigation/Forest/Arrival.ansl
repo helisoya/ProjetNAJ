@@ -5,4 +5,9 @@ setBackground(C1/Forest)
 
 fadeFg(0;false)
 
-load(Interaction)
+if(C1_FirstTimeCount == 1)
+	load(FirstTime)
+else
+	fadeFg(0;false)
+	load(Interaction)
+endif

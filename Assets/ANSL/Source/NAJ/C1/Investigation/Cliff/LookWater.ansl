@@ -1,7 +1,8 @@
 setCameraRotation(10;0;0;1;false)
 setCameraPosition(0;1;-4;1;true)
 
-wait(2)
+dialog(Char_Rann;null;C1_Cliff_Water_1)
+showDialogWindow(false)
 
 setCameraRotation(0;0;0;1;false)
 setCameraPosition(default;1;true)

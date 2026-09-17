@@ -79,7 +79,7 @@ setCharacterBody(Gerald{Type};DropKnife)
 EndDefine
 
 Define setGeraldSurprise(Type)
-setCharacterBody(Gerald{Type};Surprise)
+setCharacterBody(Gerald{Type};Surprise;0.1)
 EndDefine
 
 Define setGeraldBrushHair(Type)

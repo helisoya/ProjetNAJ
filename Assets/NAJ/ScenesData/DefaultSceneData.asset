@@ -33,6 +33,9 @@ MonoBehaviour:
       rid: 3436799734139322441
   - id: 
     data:
+      rid: 8808018719549423719
+  - id: 
+    data:
       rid: 6627816634044907602
   - id: 
     data:
@@ -100,6 +103,7 @@ MonoBehaviour:
         canBeSaved: 1
         enabledByDefault: 1
         asyncLoading: 1
+        resourceType: 1
         skyboxDataPath: Skyboxes/
         defaultSkybox: Day
         skyboxMaterial: {fileID: 2100000, guid: 79f3e4c0b85311347b7292b2aa8d2833, type: 2}
@@ -131,6 +135,10 @@ MonoBehaviour:
         enabledByDefault: 1
         startPosition: {x: 0, y: 0, z: -10}
         startRotation: {x: 0, y: 0, z: 0}
+        uiToShake:
+        - ANF.GUI.DialogUI
+        - NAJ.GUI.ExaminationUI
+        shakeWorldToUIRation: 100
     - rid: 3493723745760837703
       type: {class: CharacterManager, ns: ANF.Scene, asm: Assembly-CSharp}
       data:
@@ -142,3 +150,11 @@ MonoBehaviour:
       data:
         canBeSaved: 0
         enabledByDefault: 1
+    - rid: 8808018719549423719
+      type: {class: FogController, ns: ANF.Scene, asm: Assembly-CSharp}
+      data:
+        canBeSaved: 1
+        enabledByDefault: 1
+        defaultFogEnabled: 0
+        defaultFogColor: {r: 1, g: 1, b: 1, a: 1}
+        defaultFogDensity: 0.05

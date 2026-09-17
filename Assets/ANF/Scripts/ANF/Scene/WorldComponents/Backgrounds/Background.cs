@@ -177,7 +177,8 @@ namespace ANF.Scene
             {
                 foreach (string name in backgroundStaticObjects.Keys)
                 {
-                    staticObjectManager.AddSceneObject(name, backgroundStaticObjects[name]);
+                    if (!staticObjectManager.AddSceneObject(name, backgroundStaticObjects[name]))
+                        GameObject.Destroy(backgroundStaticObjects[name].gameObject);
                 }
             }
 
@@ -185,7 +186,8 @@ namespace ANF.Scene
             {
                 foreach (string name in backgroundCharacters.Keys)
                 {
-                    characterManager.AddSceneObject(name, backgroundCharacters[name]);
+                    if (!characterManager.AddSceneObject(name, backgroundCharacters[name]))
+                        GameObject.Destroy(backgroundCharacters[name].gameObject);
                 }
             }
 

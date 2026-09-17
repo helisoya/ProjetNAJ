@@ -1,15 +1,25 @@
 if(C1_AxeProgress == 2)
 
-dialog(null;null;Cutting trees...)
+	dialog(Char_Rann;null;C1_River_Tree_After_1)
+	dialog(Char_Rann;null;C1_River_Tree_After_2)
 
-fadeFg(1;true)
-showDialogWindow(false)
+	fadeBg(1;true)
 
-load(../CrashSite/Arrival)
+	dialog(null;null;C1_River_Tree_After_3)
+	dialog(null;null;C1_River_Tree_After_4)
+
+	fadeFg(1;true)
+	setBg(0)
+	showDialogWindow(false)
+
+	load(../CrashSite/Arrival)
 
 else
 
-dialog(null;null;Need an axe.)
-variable(C1_AxeProgress;=;1)
-load(Interaction)
+	dialog(Char_Rann;null;C1_River_Tree_Before_1)
+	dialog(Char_Rann;null;C1_River_Tree_Before_2)
+	dialog(Char_Rann;null;C1_River_Tree_Before_3)
+
+	variable(C1_AxeProgress;=;1)
+	load(Interaction)
 endif
