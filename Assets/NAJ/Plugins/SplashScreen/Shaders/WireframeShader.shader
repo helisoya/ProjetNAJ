@@ -3,6 +3,7 @@ Shader "Unlit/WireframeShader" {
     _MainTex ("Texture", 2D) = "white" {}
     _WireframeColour ("Wireframe colour", color) = (1.0, 1.0, 1.0, 1.0)
     _WireframeScale ("Wireframe scale", float) = 1.5
+    _MaxHeight ("Max Height", float) = 3
     
     // Toggles for our wireframe variants
     [KeywordEnum(BASIC, FIXEDWIDTH, ANTIALIASING)] _WIREFRAME ("Wireframe rendering type", Integer) = 0
@@ -102,6 +103,7 @@ Shader "Unlit/WireframeShader" {
 
       fixed4 _WireframeColour;
       float _WireframeScale;
+      float _MaxHeight;
 
       // frag now takes g2f rather than v2f
       fixed4 frag (g2f i) : SV_Target {
@@ -128,7 +130,7 @@ Shader "Unlit/WireframeShader" {
           float alpha = 1 - min(aliased.x, min(aliased.y, aliased.z));
         #endif
 
-        if(_WireframeScale == 0)
+        if(_WireframeScale == 0 || i.barycentric.x >= _MaxHeight)
           alpha = 0;
 
         // Set our wireframe colour.

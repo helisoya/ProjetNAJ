@@ -43,15 +43,20 @@ namespace CaribouProd.General
         {
             MaterialPropertyBlock wireFrameBlock = new MaterialPropertyBlock();
             MaterialPropertyBlock baseBlock = new MaterialPropertyBlock();
+            MaterialPropertyBlock skyboxBlock = new MaterialPropertyBlock();
 
             wireFrameBlock.SetFloat("_WireframeScale", 0.5f);
+            wireFrameBlock.SetFloat("_MaxHeight", 1.0f);
             wireframeCaribouRenderer.SetPropertyBlock(wireFrameBlock);
 
             baseBlock.SetFloat("_MaxHeight", 5.0f);
             baseCaribouRenderer.SetPropertyBlock(baseBlock);
 
+            RenderSettings.skybox.SetFloat("_MaxHeight", -1.0f);
+
             caribouRoot.position = new Vector3(0.6f, 9.0f, -0.3f);
             caribouRoot.eulerAngles = new Vector3(0, -140, 0);
+            caribouRoot.localScale = new Vector3(0.9f, 0.9f, 0.9f);
 
 
             logoRoot.position = new Vector3(-3.99f, -12f, 4.7f);
@@ -60,7 +65,7 @@ namespace CaribouProd.General
 
             sequence = DOTween.Sequence();
             sequence.Insert(0.0f, canvasGroup.DOFade(0, 0.5f).SetEase(Ease.OutQuad))
-            .Insert(1.0f, caribouRoot.DOMove(new Vector3(0.6f, -2.8f, -0.3f), 1.5f).SetEase(Ease.OutBounce))
+            .Insert(1.0f, caribouRoot.DOMove(new Vector3(0.6f, -2.5f, -0.3f), 1.5f).SetEase(Ease.OutBounce))
             .InsertCallback(1.5f, () => { Play2DSound(fallSound); })
             .InsertCallback(2.5f, () => { Play2DSound(printerSound); })
             .Insert(2.5f, DOVirtual.Float(5.0f, -3.0f, 3.0f, (float value) =>
@@ -68,10 +73,11 @@ namespace CaribouProd.General
                 baseBlock.SetFloat("_MaxHeight", value);
                 baseCaribouRenderer.SetPropertyBlock(baseBlock);
             }).SetEase(Ease.OutQuad))
+            .Insert(2.5f, RenderSettings.skybox.DOFloat(1.0f, "_MaxHeight", 6.0f).SetEase(Ease.OutQuad))
             .Insert(2.5f, caribouRoot.DORotate(new Vector3(0, 360.0f, 0), 3, RotateMode.FastBeyond360).SetRelative(true).SetEase(Ease.OutQuad))
-            .Insert(5.5f, DOVirtual.Float(0.5f, -0f, 1.0f, (float value) =>
+            .Insert(2.5f, DOVirtual.Float(1.0f, -1.0f, 3.0f, (float value) =>
             {
-                wireFrameBlock.SetFloat("_WireframeScale", value);
+                wireFrameBlock.SetFloat("_MaxHeight", value);
                 wireframeCaribouRenderer.SetPropertyBlock(wireFrameBlock);
             }).SetEase(Ease.OutQuad))
             .Insert(5.5f, caribouRoot.DOMove(new Vector3(0.6f, -0.55f, 3.0f), 2.0f).SetEase(Ease.OutQuad))
