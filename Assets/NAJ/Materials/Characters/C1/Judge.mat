@@ -117,7 +117,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DirtScale: 0.05
+    - _DirtScale: 0.02
     - _DirtTextureScale: 500
     - _DstBlend: 10
     - _EnvironmentReflections: 1

@@ -1,0 +1,69 @@
+# Common Courtroom defines
+
+# Animations
+
+Define playJudgeHammerAnimationOnly()
+showDialogWindow(false)
+setCameraPosition(HammerCam)
+setCameraRotation(HammerCam)
+setCharacterBody(Judge;Strike)
+wait(1)
+EndDefine
+
+Define playJudgeHammerAnimation(NextJudgeBody;NextCam)
+showDialogWindow(false)
+setCameraPosition(HammerCam)
+setCameraRotation(HammerCam)
+setCharacterBody(Judge;Strike)
+wait(1)
+setCharacterBody(Judge;{NextJudgeBody})
+setCameraRotation({NextCam})
+setCameraPosition({NextCam})
+EndDefine
+
+# Camera
+
+Define setCourtroomCamToAll()
+setCameraPosition(AllCam)
+setCameraRotation(AllCam)
+EndDefine
+
+Define setCourtroomCamToHammer()
+setCameraPosition(HammerCam)
+setCameraRotation(HammerCam)
+EndDefine
+
+Define setCourtroomCamToJudge()
+setCameraPosition(JudgeCam)
+setCameraRotation(JudgeCam)
+EndDefine
+
+Define setCourtroomCamToDefenseImmediate()
+setCameraPosition(DefenseCam)
+setCameraRotation(DefenseCam)
+EndDefine
+
+Define setCourtroomCamToDefense(WaitForEnd)
+setCameraRotation(DefenseCam;1;false)
+setCameraPosition(DefenseCam;1;{WaitForEnd})
+EndDefine
+
+Define setCourtroomCamToProsecutorImmediate()
+setCameraRotation(ProsecutionCam)
+setCameraPosition(ProsecutionCam)
+EndDefine
+
+Define setCourtroomCamToProsecutor(WaitForEnd)
+setCameraRotation(ProsecutionCam;1;false)
+setCameraPosition(ProsecutionCam;1;{WaitForEnd})
+EndDefine
+
+Define setCourtroomCamToWitnessImmediate()
+setCameraRotation(WitnessCam)
+setCameraPosition(WitnessCam)
+EndDefine
+
+Define setCourtroomCamToWitness(WaitForEnd)
+setCameraRotation(WitnessCam;1;false)
+setCameraPosition(WitnessCam;1;{WaitForEnd})
+EndDefine

@@ -1,0 +1,87 @@
+# ---------------------------------------------------------
+# -------------------- Trial Intro ------------------------
+# ---------------------------------------------------------
+
+# <color=#72B6E8>
+
+C1_Trial_Evidence_AutopsyReport_1 = <color=#72B6E8>Autopsy report added to the inventory.</color>
+
+C1_Trial_A_1 = <color=#72B6E8>The next day, I was moved to the local courthouse.</color>
+C1_Trial_A_2 = <color=#72B6E8> When I asked if I could see a lawyer, they laughed.</color>
+C1_Trial_A_3 = <color=#72B6E8>Apparently, everything points to me being the murderer, so a lawyer is useless in this case.</color>
+C1_Trial_A_4 = <color=#72B6E8>What a joyful way to start your day…</color>
+C1_Trial_A_5 = <color=#72B6E8>I hope I won’t get into more trouble.</color>
+C1_Trial_A_6 = Alright. Let us begin this session.
+C1_Trial_A_7 = Sheriff Robert, please explain yourself. This is a rather odd case.
+C1_Trial_A_8 = You insisted on having a closed hearing, while pushing for a one-day trial.
+C1_Trial_A_9 = I’m afraid I had too little time to prepare for anything.
+C1_Trial_A_10 = In fact, I don’t even know who died.
+C1_Trial_A_11 = I apologise for the momentum of this case, Your Honour.
+C1_Trial_A_12 = There were… political… considerations to take, and we felt that a speedy resolution would be for the best.
+C1_Trial_A_13 = <color=#72B6E8>He… He’s the one who arrested me !</color>
+C1_Trial_A_14 = <color=#72B6E8>A sheriff, huh ?</color>
+C1_Trial_A_15 = <color=#72B6E8>I guess it makes sense, considering he arrested me and all.</color>
+C1_Trial_A_16 = I should remind you that judgements should not be rushed. This isn’t how things work.
+C1_Trial_A_17 = … I will, however, make an exception in this case. 
+C1_Trial_A_18 = Let us begin, then. 
+C1_Trial_A_19 = Please explain what happened, Sheriff.
+C1_Trial_A_20 = With pleasure.
+C1_Trial_A_21 = As you probably know, a ship crashed in Western Taliak two days ago.
+C1_Trial_A_22 = Ah, yes. The explosion woke me up. I was lucky that my lodge didn’t get hit.
+C1_Trial_A_23 = Truly. However, we didn’t get notified until the following morning.
+C1_Trial_A_24 = When we did, we immediately rushed to the scene.
+C1_Trial_A_25 = Were there any other survivors ?
+C1_Trial_A_26 = No. It seems the ship was carrying explosives on board.
+C1_Trial_A_27 = The detonation destroyed parts of the ship’s hull; nobody survived except for the defendant.
+C1_Trial_A_28 = <color=#72B6E8>No…</color>
+C1_Trial_A_29 = Just to be safe, we decided to retreat for now and set up a blockade in the nearby forest.
+C1_Trial_A_30 = We don’t know if there are any more explosives ready to go off.
+C1_Trial_A_31 = An ironic tragedy…
+C1_Trial_A_32 = But what about the victim ? Who were they ?
+C1_Trial_A_33 = The victim is one Captain Sartt. He was the owner of the now shipwreck, the “Magnificent”.
+C1_Trial_A_34 = The report says he was a known Kalian captain, moving goods along the Eastern Sea.
+C1_Trial_A_35 = It also states that he knew Mister Landry personally.
+C1_Trial_A_36 = Landry ? Oh, now I get why you wanted to expedite this matter.
+C1_Trial_A_37 = Yes. Well…
+C1_Trial_A_38 = The victim was stabbed to death. A single blow to the heart.
+C1_Trial_A_39 = It seems that the captain survived the crash but was killed afterwards.
+C1_Trial_A_40 = Here is the autopsy report we made just before retreating.
+C1_Trial_A_41 = I see.
+C1_Trial_A_42 = By the way, who is our defendant ? I believe you failed to introduce her.
+C1_Trial_A_43 = … Go ahead, Miss.
+C1_Trial_A_44 = Oh, erm…
+C1_Trial_A_45 = I’m Rann. Rann Retyr.
+C1_Trial_A_46 = I’m from Kalia and I was hired as a plant specialist.
+C1_Trial_A_47 = You’ve got to believe me, I didn’t do it !
+C1_Trial_A_48 = Hmm… That’s up to me to decide.
+C1_Trial_A_49 = Although, I do sympathise a little bit.
+C1_Trial_A_50 = It’s not easy finding yourself stranded on an unknown island, especially when you are the only survivor.
+C1_Trial_A_51 = However, I cannot stress enough that murder is not a viable way to relieve oneself of any form of trauma.
+C1_Trial_A_52 = I didn’t…
+C1_Trial_A_53 = … This can’t be…
+C1_Trial_A_54 = Er… We found her at the crime scene with an axe in her possession.
+C1_Trial_A_55 = She murdered him with an axe ?! How barbaric !
+C1_Trial_A_56 = Well, no. The captain was killed using a knife.
+C1_Trial_A_57 = We don’t know why she had an axe on her.
+C1_Trial_A_58 = Oh.
+C1_Trial_A_59 = Then, how did you know she killed him if the axe was unrelated ?
+C1_Trial_A_60 = Actually, we already knew the captain had died well before we arrived at the crime scene. 
+C1_Trial_A_61 = But how ?
+C1_Trial_A_62 = I was coming to that.
+C1_Trial_A_63 = As we approached the shipwreck, a native Taliak came running.
+C1_Trial_A_64 = She was the one who told us the captain had died. She even saw the murderer in action.
+C1_Trial_A_65 = There is an eyewitness ?!
+C1_Trial_A_66 = Alright, sheriff. Let’s hear what she has to say.
+C1_Trial_A_67 = As you wish.
+C1_Trial_A_68 = <color=#72B6E8>Someone saw “me” commit the murder ?</color>
+C1_Trial_A_69 = <color=#72B6E8>This is going well…</color>
+C1_Trial_A_70 = So… You are the one who saw the murder happen ?
+C1_Trial_A_71 = Y-Yes !
+C1_Trial_A_72 = I saw someone kill that man, and then I ran to get help.
+C1_Trial_A_73 = I see.
+C1_Trial_A_74 = A most noble deed.
+C1_Trial_A_75 = Tell me, what is your name ?
+C1_Trial_A_76 = I’ll make sure your Taliak family is rewarded for the help you provided to Nova Kalia.
+C1_Trial_A_77 = The reward will depend on the ministry’s resources, but I think we can spare a few coins.
+C1_Trial_A_78 = Ah, erm, thank you ! My name is Juno Dr’hma.
+C1_Trial_A_79 = … Alright. Now tell us about what you saw yesterday.

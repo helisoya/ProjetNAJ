@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_12_CrashSite
   m_GUID: a6ab4e1c6e1c96b4cb65ba091394f37c
-  m_SerializeEntries:
-  - m_GUID: 147e81836170e734db1c9b10faeb3220
-    m_Address: ANSL/NAJ/C1/Investigation/CrashSite/Arrival
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

@@ -6,6 +6,8 @@ setCameraRotation(-70;28;0)
 
 fadeFg(0;false)
 
+autosave()
+
 wait(2)
 
 dialog(Char_Rann;null;C1_Investigation_Start_1)

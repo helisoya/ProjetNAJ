@@ -15,6 +15,7 @@ namespace CaribouProd.General
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private Transform logoRoot;
         [SerializeField] private Transform caribouRoot;
+        [SerializeField] private Renderer skyboxRenderer;
         [SerializeField] private Renderer baseCaribouRenderer;
         [SerializeField] private Renderer wireframeCaribouRenderer;
         [SerializeField] private string nextScene;
@@ -52,7 +53,8 @@ namespace CaribouProd.General
             baseBlock.SetFloat("_MaxHeight", 5.0f);
             baseCaribouRenderer.SetPropertyBlock(baseBlock);
 
-            RenderSettings.skybox.SetFloat("_MaxHeight", -1.0f);
+            skyboxBlock.SetFloat("_MaxHeight", -15.0f);
+            skyboxRenderer.SetPropertyBlock(skyboxBlock);
 
             caribouRoot.position = new Vector3(0.6f, 9.0f, -0.3f);
             caribouRoot.eulerAngles = new Vector3(0, -140, 0);
@@ -73,7 +75,11 @@ namespace CaribouProd.General
                 baseBlock.SetFloat("_MaxHeight", value);
                 baseCaribouRenderer.SetPropertyBlock(baseBlock);
             }).SetEase(Ease.OutQuad))
-            .Insert(2.5f, RenderSettings.skybox.DOFloat(1.0f, "_MaxHeight", 6.0f).SetEase(Ease.OutQuad))
+            .Insert(2.5f, DOVirtual.Float(-15.0f, 15.0f, 3.0f, (float value) =>
+            {
+                skyboxBlock.SetFloat("_MaxHeight", value);
+                skyboxRenderer.SetPropertyBlock(skyboxBlock);
+            }).SetEase(Ease.OutQuad))
             .Insert(2.5f, caribouRoot.DORotate(new Vector3(0, 360.0f, 0), 3, RotateMode.FastBeyond360).SetRelative(true).SetEase(Ease.OutQuad))
             .Insert(2.5f, DOVirtual.Float(1.0f, -1.0f, 3.0f, (float value) =>
             {

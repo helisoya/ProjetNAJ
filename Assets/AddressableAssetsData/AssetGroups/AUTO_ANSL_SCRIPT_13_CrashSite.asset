@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AUTO_ANSL_SCRIPT_13_CrashSite
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AUTO_ANSL_SCRIPT_13_CrashSite
+  m_GUID: a83653afa03f69644943aa40bd0d562b
+  m_SerializeEntries:
+  - m_GUID: 147e81836170e734db1c9b10faeb3220
+    m_Address: ANSL/NAJ/C1/Investigation/CrashSite/Arrival
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6c3bdbb69b68dff4eaf4d2313b015496, type: 2}
+    - {fileID: 11400000, guid: 0ad41f13f220f464eb0ac0581c99feac, type: 2}

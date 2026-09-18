@@ -114,3 +114,8 @@ dialog(null;null;C1_Investigation_End_45)
 dialog(null;null;C1_Investigation_End_46)
 dialog(null;null;C1_Investigation_End_47)
 dialog(null;null;C1_Investigation_End_48)
+showDialogWindow(false)
+
+wait(2)
+
+load(../../Trial/A/A)

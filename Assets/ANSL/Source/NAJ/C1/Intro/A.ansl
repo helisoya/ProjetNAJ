@@ -11,6 +11,8 @@ setFogColor(#B1D7FB)
 setBg(1)
 fadeFg(0;false)
 
+autosave()
+
 # Cell Dialog
 dialog(null;null;C1_Intro_A_1)
 dialog(null;null;C1_Intro_A_2)

@@ -28,6 +28,10 @@ Define setRobertNormal()
 setCharacterBody(Robert;Normal;0.1)
 EndDefine
 
+Define setRobertRelaxed()
+setCharacterBody(Robert;Relaxed;0.1)
+EndDefine
+
 Define setRobertOnPouch()
 setCharacterBody(Robert;OnPouch;0.1)
 EndDefine
@@ -125,4 +129,143 @@ EndDefine
 Define setGeraldEyeSurprise(Type)
 setCharacterEye(Gerald{Type};Surprise)
 setCharacterMouth(Gerald{Type};Serious)
+EndDefine
+
+# Rann
+
+Define setRannNormal(Type)
+setCharacterBody(Rann{Type};Normal;0.1)
+EndDefine
+
+Define setRannStress(Type)
+setCharacterBody(Rann{Type};Stress;0.1)
+EndDefine
+
+Define setRannHandsOnDesk(Type)
+setCharacterBody(Rann{Type};HandsOnDesk;0.1)
+EndDefine
+
+Define setRannAngry(Type)
+setCharacterBody(Rann{Type};Angry;0.1)
+EndDefine
+
+Define setRannThinking(Type)
+setCharacterBody(Rann{Type};Thinking;0.1)
+EndDefine
+
+Define setRannDamageToAngry(Type)
+setCharacterBody(Rann{Type};DamageToAngry)
+EndDefine
+
+Define setRannEyeNormal(Type)
+setCharacterEye(Rann{Type};Normal)
+setCharacterMouth(Rann{Type};Normal)
+EndDefine
+
+Define setRannEyeSurprise(Type)
+setCharacterEye(Rann{Type};Surprise)
+setCharacterMouth(Rann{Type};Surprise)
+EndDefine
+
+Define setRannEyeLockIn(Type)
+setCharacterEye(Rann{Type};LockIn)
+setCharacterMouth(Rann{Type};Neutral)
+EndDefine
+
+Define setRannEyeNeutral(Type)
+setCharacterEye(Rann{Type};Normal)
+setCharacterMouth(Rann{Type};Neutral)
+EndDefine
+
+Define setRannEyeSad(Type)
+setCharacterEye(Rann{Type};Normal)
+setCharacterMouth(Rann{Type};Sad)
+EndDefine
+
+Define setRannEyeOops(Type)
+setCharacterEye(Rann{Type};Normal)
+setCharacterMouth(Rann{Type};Oops)
+EndDefine
+
+# Judge
+
+Define setJudgeNormal()
+setCharacterBody(Judge;Normal;0.1)
+EndDefine
+
+Define setJudgeReadyStrike()
+setCharacterBody(Judge;ReadyStrike;0.1)
+EndDefine
+
+Define setJudgeHoldingHammer()
+setCharacterBody(Judge;HoldingHammer;0.1)
+EndDefine
+
+Define setJudgeOnShell()
+setCharacterBody(Judge;OnShell;0.1)
+EndDefine
+
+Define setJudgeTurningHammer()
+setCharacterBody(Judge;TurningHammer)
+EndDefine
+
+Define setJudgeRestingHammer()
+setCharacterBody(Judge;RestingHammer)
+EndDefine
+
+Define setJudgeStrike()
+setCharacterBody(Judge;Strike)
+EndDefine
+
+Define setJudgeDamageToNormal()
+setCharacterBody(Judge;DamageToNormal)
+EndDefine
+
+Define setJudgeDamageToHoldingHammer()
+setCharacterBody(Judge;DamageToHoldingHammer)
+EndDefine
+
+Define setJudgeEyeNormal()
+setCharacterEye(Judge;Normal)
+setCharacterMouth(Judge;Normal)
+EndDefine
+
+Define setJudgeEyeThinking()
+setCharacterEye(Judge;Thinking)
+setCharacterMouth(Judge;Normal)
+EndDefine
+
+Define setJudgeEyeSurprise()
+setCharacterEye(Judge;Surprise)
+setCharacterMouth(Judge;Normal)
+EndDefine
+
+Define setJudgeEyeAngry()
+setCharacterEye(Judge;Angry)
+setCharacterMouth(Judge;Angry)
+EndDefine
+
+# Juno
+
+Define setJunoNormal()
+setCharacterBody(Juno;Normal;0.1)
+EndDefine
+
+Define setJunoBow()
+setCharacterBody(Juno;Bow)
+EndDefine
+
+Define setJunoEyeNormal()
+setCharacterEye(Juno;Normal)
+setCharacterMouth(Juno;Normal)
+EndDefine
+
+Define setJunoEyeSerious()
+setCharacterEye(Juno;Serious)
+setCharacterMouth(Juno;Serious)
+EndDefine
+
+Define setJunoEyeSurprise()
+setCharacterEye(Juno;Surprise)
+setCharacterMouth(Juno;Surprise)
 EndDefine
