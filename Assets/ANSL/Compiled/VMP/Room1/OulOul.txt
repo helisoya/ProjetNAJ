@@ -1,14 +1,14 @@
-#1B01738D4009C9B9EB380D3641463F2F-7B87EB7B1BC439B840A43BBC1A9EB87B
-37|1|9|LookCounter > 0
-96|LookCounter|-|1
-70|OulOul|Front
-71|OulOul|Front
-98|2
-70|OulOul|OulOulSpot
-71|OulOul|OulOulSpot
-41|/VMP/Common/PrintLookCounter
-39|11
-32|null|null|Counter_Look_0
-39|11
-41|/VMP/Common/CycleCheck
-41|Interaction
+#1B01738D4009C9B9EB380D3641463F2F-10E726449382E722A35AAB2128C1BDFD
+41|1|9|LookCounter > 0
+100|LookCounter|-|1
+74|OulOul|Front
+75|OulOul|Front
+102|2
+74|OulOul|OulOulSpot
+75|OulOul|OulOulSpot
+45|/VMP/Common/PrintLookCounter
+43|11
+36|null|null|Counter_Look_0
+43|11
+45|/VMP/Common/CycleCheck
+45|Interaction

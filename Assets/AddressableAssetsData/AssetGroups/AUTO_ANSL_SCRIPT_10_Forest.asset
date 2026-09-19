@@ -14,49 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_10_Forest
   m_GUID: f504935cacb5a7d43b9bb5be251f5b57
-  m_SerializeEntries:
-  - m_GUID: 04f252e22977e9d48a76864ceeba2e4c
-    m_Address: ANSL/NAJ/C1/Investigation/Forest/ToRiverPath
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3468081750af931449e937222ccbf5f4
-    m_Address: ANSL/NAJ/C1/Investigation/Forest/Arrival
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7f41028f2cba3e44d81b61317ea02e9a
-    m_Address: ANSL/NAJ/C1/Investigation/Forest/ToDeadEnd
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 94ec72afa6b5efc45879379a64ac2980
-    m_Address: ANSL/NAJ/C1/Investigation/Forest/ToForestStart
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bf4cd315708809d4bb55c3e2afade872
-    m_Address: ANSL/NAJ/C1/Investigation/Forest/Interaction
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dd96dc9a3ab7e69459dc4b567a9e2131
-    m_Address: ANSL/NAJ/C1/Investigation/Forest/Flag
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fb775f0e5b27be941b06d7f4259234fe
-    m_Address: ANSL/NAJ/C1/Investigation/Forest/FirstTime
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

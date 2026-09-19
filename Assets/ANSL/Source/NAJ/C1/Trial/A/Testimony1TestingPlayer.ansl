@@ -1,0 +1,23 @@
+# Testimony 1 - Juno (What I Saw) 
+# Testing the player (tutorial)
+
+clearStack()
+
+:setJudgeEyeNormal()
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_Testimony1_TestingPlayer_2)
+
+ask(Any;Profile/C1_Judge)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony1_TestingPlayer_3)
+	load(Testimony1)
+wrong
+	:setRannEyeOops(Coat)
+	:setRannStress(Coat)
+	:setJudgeEyeThinking()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony1_TestingPlayer_Fail_1)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony1_TestingPlayer_Fail_2)
+
+	load(Testimony1TestingPlayer)
+endask

@@ -153,6 +153,10 @@ Define setRannThinking(Type)
 setCharacterBody(Rann{Type};Thinking;0.1)
 EndDefine
 
+Define setRannReadingBook(Type)
+setCharacterBody(Rann{Type};ReadingBook)
+EndDefine
+
 Define setRannDamageToAngry(Type)
 setCharacterBody(Rann{Type};DamageToAngry)
 EndDefine

@@ -85,3 +85,144 @@ C1_Trial_A_76 = I’ll make sure your Taliak family is rewarded for the help you
 C1_Trial_A_77 = The reward will depend on the ministry’s resources, but I think we can spare a few coins.
 C1_Trial_A_78 = Ah, erm, thank you ! My name is Juno Dr’hma.
 C1_Trial_A_79 = … Alright. Now tell us about what you saw yesterday.
+
+# ---------------------------------------------------------
+# -------------------- Trial Intro ------------------------
+# ---------------------------------------------------------
+
+C1_Trial_Testimony1_Start_1 = <color=green>What I saw</color>
+C1_Trial_Testimony1_Start_2 = I was out foraging for mushrooms in the forest that day.
+C1_Trial_Testimony1_Start_3 = Well, not quite. I heard an explosion the night before, and wanted to investigate.
+C1_Trial_Testimony1_Start_4 = I stumbled upon the shipwreck. That’s when I saw it !
+C1_Trial_Testimony1_Start_5 = A person stabbed the old captain to death !
+C1_Trial_Testimony1_Start_6 = I screamed and the killer ran away.
+C1_Trial_Testimony1_Start_7 = Witnessing a murder. It must have been hard.
+C1_Trial_Testimony1_Start_8 = Are you sure that the killer was the defendant ?
+C1_Trial_Testimony1_Start_9 = Erm… well… I think so.
+C1_Trial_Testimony1_Start_10 = I was a little far away. But in hindsight, yes.
+C1_Trial_Testimony1_Start_11 = The sheriff told me she was the only one I could have seen at that time.
+C1_Trial_Testimony1_Start_12 = As you can see, this testimony is quite decisive.
+C1_Trial_Testimony1_Start_13 = That, it is.
+C1_Trial_Testimony1_Start_14 = Still, the defence, and in this case the defendant, may interrogate the witness.
+C1_Trial_Testimony1_Start_15 = Huh… What ?
+C1_Trial_Testimony1_Start_16 = Oh, are you not familiar with the proceedings ?
+C1_Trial_Testimony1_Start_17 = I sell flowers for a living…
+C1_Trial_Testimony1_Start_18 = Ah, perhaps I could help you a bit, then.
+
+C1_Trial_Testimony1_NoTutorial_1 = It will be alright, don’t worry. 
+
+C1_Trial_Testimony1_Tutorial_1 = Heh heh… 
+C1_Trial_Testimony1_Tutorial_2 = Alright, this is quite simple.
+C1_Trial_Testimony1_Tutorial_3 = The witness will repeat herself.
+C1_Trial_Testimony1_Tutorial_4 = You can go <color=red>left</color> and <color=red>right</color> to cycle through her testimony.
+C1_Trial_Testimony1_Tutorial_5 = If you need additional information on something, you may <color=red>press</color> her.
+C1_Trial_Testimony1_Tutorial_6 = Moreover, you may <color=red>present</color> evidence if you believe you have found a problem in the testimony.
+C1_Trial_Testimony1_Tutorial_7 = You can access the case’s evidence using the <color=red>menu</color> or the <color=red>hotkey</color>.
+C1_Trial_Testimony1_Tutorial_8 = I… I think I get the idea.
+C1_Trial_Testimony1_Tutorial_9 = <color=#72B6E8>So I just need to present a piece of evidence ?</color>
+C1_Trial_Testimony1_Tutorial_10 = <color=#72B6E8>Alright, this doesn’t sound so bad.</color>
+
+C1_Trial_Testimony1_TestingPlayer_1 = Just to make sure you understand what you have to do, I’ll test your skills.
+C1_Trial_Testimony1_TestingPlayer_2 = Please show me my profile entry in the case record.
+C1_Trial_Testimony1_TestingPlayer_Fail_1 = … I’m not sure this is me, Miss Retyr.
+C1_Trial_Testimony1_TestingPlayer_Fail_2 = I’ll… check again…
+C1_Trial_Testimony1_TestingPlayer_3 = Alright, let’s get started then.
+
+C1_Trial_Testimony1_Testimony_0 = <color=red>What I saw</color>
+C1_Trial_Testimony1_Testimony_1 = <color=green>I was out foraging for mushrooms in the forest that day.</color>
+C1_Trial_Testimony1_Testimony_2 = <color=green>Well, not quite. I heard an explosion the night before, and wanted to investigate.</color>
+C1_Trial_Testimony1_Testimony_3 = <color=green>I stumbled upon the shipwreck. That’s when I saw it !</color>
+C1_Trial_Testimony1_Testimony_4 = <color=green>A person stabbed the old captain to death !</color>
+C1_Trial_Testimony1_Testimony_5 = <color=green>I screamed and the killer ran away.</color>
+
+C1_Trial_Testimony1_Press1_1 = What kind of mushrooms ?
+C1_Trial_Testimony1_Press1_2 = Erm ? Oh, erm… Mostly morels.
+C1_Trial_Testimony1_Press1_3 = I see… I see…
+C1_Trial_Testimony1_Press1_4 = <color=#72B6E8>I must note this down for later. I need to try those…</color>
+C1_Trial_Testimony1_Press1_5 = And how do you prefer them ? Cooked ? With rice ?
+C1_Trial_Testimony1_Press1_6 = Erm…
+C1_Trial_Testimony1_Press1_7 = Err… I’m sorry Miss Retyr, but this is a courthouse, not some cooking club.
+C1_Trial_Testimony1_Press1_8 = You’ll have all the time you want to try our delicacies after the trial.
+C1_Trial_Testimony1_Press1_9 = Oh, right. Sorry…
+C1_Trial_Testimony1_Press1_10 = Was it all you went out to do ?
+
+C1_Trial_Testimony1_Press2_1 = How far do you live from the shipwreck ?
+C1_Trial_Testimony1_Press2_2 = Oh, about a few kilometres away.
+C1_Trial_Testimony1_Press2_3 = The shipwreck was on the western side of the island and I live on the eastern side.
+C1_Trial_Testimony1_Press2_4 = The explosion must have been quite loud.
+C1_Trial_Testimony1_Press2_5 = Judging from the reports we got, it seems people as far as the outskirts of Suorius heard it.
+C1_Trial_Testimony1_Press2_6 = Yes. It was a big explosion.
+C1_Trial_Testimony1_Press2_7 = So then…
+
+C1_Trial_Testimony1_Press3_1 = Was the shipwreck any different from the state it is currently in ?
+C1_Trial_Testimony1_Press3_2 = If there weren’t any changes since yesterday morning, I think so.
+C1_Trial_Testimony1_Press3_3 = There was a big hole on the side of the ship, and it reeked of a foul odour.
+C1_Trial_Testimony1_Press3_4 = It must have been coming from the explosion and the corpses.
+C1_Trial_Testimony1_Press3_5 = Ugh… Thinking about it reminds me of the Shipyard Cemetery case.
+C1_Trial_Testimony1_Press3_6 = I still can’t wrap my head around it. How could one boat split in five ?
+C1_Trial_Testimony1_Press3_7 = It’s not relevant to this case, Your Honour.
+C1_Trial_Testimony1_Press3_8 = Moving on…
+
+C1_Trial_Testimony1_Press4_1 = A-Are you sure it was really me ?
+C1_Trial_Testimony1_Press4_2 = The sheriff told me it could only have been you.
+C1_Trial_Testimony1_Press4_3 = …But… I was far away, so I may have seen someone else.
+C1_Trial_Testimony1_Press4_4 = Unlikely. She’s the only survivor of the ship.
+C1_Trial_Testimony1_Press4_5 = Please continue.
+C1_Trial_Testimony1_Press4_6 = <color=#72B6E8>You little…</color>
+C1_Trial_Testimony1_Press4_7 = <color=#72B6E8>Did she really see me ?</color>
+C1_Trial_Testimony1_Press4_8 = <color=#72B6E8>It seems that she only thinks it was me because the sheriff told her so.</color>
+
+C1_Trial_Testimony1_Press5_1 = Did you see where they went ?
+C1_Trial_Testimony1_Press5_2 = Or perhaps, did you think about following them ?
+C1_Trial_Testimony1_Press5_3 = No… They ran out of view, and I decided to run away.
+C1_Trial_Testimony1_Press5_4 = I cannot blame you. Witnessing a crime is… not a pleasant thing.
+C1_Trial_Testimony1_Press5_5 = I too have seen my fair share of horrible sights…
+C1_Trial_Testimony1_Press5_6 = <color=#72B6E8>That’s interesting…</color>
+C1_Trial_Testimony1_Press5_7 = <color=#72B6E8>It’s not possible for the killer to be me.</color>
+C1_Trial_Testimony1_Press5_8 = <color=#72B6E8>Because of… this.</color>
+C1_Trial_Testimony1_Press5_9 = <color=#72B6E8>I should <color=red>present</color> it when I get the opportunity.</color>
+
+C1_Trial_Testimony1_Loop_1 = <color=#72B6E8>This is bad.</color>
+C1_Trial_Testimony1_Loop_2 = <color=#72B6E8>She claims she saw me commit the murder.</color>
+C1_Trial_Testimony1_Loop_3 = <color=#72B6E8>But whoever she saw, they weren’t me.</color>
+C1_Trial_Testimony1_Loop_4 = <color=#72B6E8>There must be a way to convince them of that.</color>
+
+C1_Trial_B_1 = H-Hold on !
+C1_Trial_B_2 = Is there something wrong with the testimony ?
+C1_Trial_B_3 = Yes !
+C1_Trial_B_4 = I couldn’t have run away like she described.
+C1_Trial_B_5 = Huh ? But I’m pretty sure that the killer ran away when I screamed.
+C1_Trial_B_6 = That’s because that person isn’t me.
+C1_Trial_B_7 = As you can see, my leg is injured.
+C1_Trial_B_8 = I wouldn’t have been able to run away, let alone kill someone.
+C1_Trial_B_9 = Ah !
+C1_Trial_B_10 = Oh ! That’s true !
+C1_Trial_B_11 = Then… who did she really see ?
+C1_Trial_B_12 = Heh. Nice try, girl.
+C1_Trial_B_13 = But it won’t be enough to fool me.
+C1_Trial_B_14 = Sheriff ? But surely you can’t deny that she is injured.
+C1_Trial_B_15 = I won’t deny that she is injured… right now.
+C1_Trial_B_16 = But let me ask you something. When did she get hurt ?
+C1_Trial_B_17 = Oh, er…
+C1_Trial_B_18 = I got hurt during the crash. I was thrown overboard when it happened.
+C1_Trial_B_19 = So no one can verify that you got hurt before the murder.
+C1_Trial_B_20 = For all we know, you hurt yourself on purpose after killing the captain.
+C1_Trial_B_21 = I’m sure you did it to throw us off.
+C1_Trial_B_22 = Don’t forget. You are the only survivor of that damaged shipwreck.
+C1_Trial_B_23 = Unless some mysterious third party came and killed the captain, I’m afraid you are our only suspect.
+C1_Trial_B_24 = Well, maybe someone from the island killed the captain and ran back home ?
+C1_Trial_B_25 = And why would they ? Captain Sartt may have been well known in the Old World, but he wasn’t in Nova Kalia.
+C1_Trial_B_26 = No one here has any reason to kill him at all.
+C1_Trial_B_27 = Besides, you had an axe on you when I arrested you.
+C1_Trial_B_28 = What kind of “victim” carries an axe around ?
+C1_Trial_B_29 = I’m sure you wanted to use it to dispose of the body.
+C1_Trial_B_30 = I…
+C1_Trial_B_31 = Perplexing indeed.
+C1_Trial_B_32 = It is possible that you are lying about your injury.
+C1_Trial_B_33 = However, I’ll give you the benefit of the doubt for now.
+C1_Trial_B_34 = Witness.
+C1_Trial_B_35 = Yes ?
+C1_Trial_B_36 = I’m sorry to ask this of you, but could you testify again ?
+C1_Trial_B_37 = I would like to know more about the person you saw.
+C1_Trial_B_38 = Was there anything special about them ?
+C1_Trial_B_39 = I… I can try.

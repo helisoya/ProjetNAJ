@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Common_UIAnimations
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Common_UIAnimations
+  m_GUID: dab68ea65ea922c4391e000edc9ff9d0
+  m_SerializeEntries:
+  - m_GUID: 0057116a846cd0b4daca979e6e1e81d2
+    m_Address: UIAnimations/Testimony
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4358887538038db4bb0838c97c3c21b2
+    m_Address: UIAnimations/Objection
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8dfea69f0d4c96046b36b39cdf483cbc
+    m_Address: UIAnimations/Rebuttal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9812ea9e579c7964a9caffa22d5b459b
+    m_Address: UIAnimations/Guilty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed2820425fbb4594d9706b3ce5609202
+    m_Address: UIAnimations/Press
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6906ce74346eb54e93663af52f4e4b3
+    m_Address: UIAnimations/NotGuilty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2a2ca44fa1ae93a46baeb5cec96e2685, type: 2}
+    - {fileID: 11400000, guid: 390839303daee3c4e87f128f58260bc7, type: 2}

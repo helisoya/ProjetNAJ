@@ -1,0 +1,70 @@
+showDialogWindow(false)
+:setRannHandsOnDesk(Coat)
+:setRannEyeNeutral(Coat)
+playUIAnimation(Objection;true)
+
+showLifeBarUI(true)
+setLifeBarUIPreviewRange(1;true;true)
+
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial_Fail_1)
+
+:setJudgeEyeNormal()
+:setCourtroomCamToJudge()
+:setRannEyeOops(Coat)
+:setRannStress(Coat)
+dialog(Char_Judge;Judge;C1_Trial_Fail_2)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(Char_Rann;RannCoat;C1_Trial_Fail_3)
+dialog(Char_Rann;RannCoat;C1_Trial_Fail_4)
+
+:setJudgeEyeAngry()
+:setCourtroomCamToJudge()
+:setRannAngry(Coat)
+:setRannEyeNeutral(Coat)
+dialog(Char_Judge;Judge;C1_Trial_Fail_5)
+
+:setJudgeReadyStrike()
+dialog(Char_Judge;Judge;C1_Trial_Fail_6)
+
+screenshake(0.1;0.25;true;true)
+:removeHealth(1)
+setLifeBarUIPreviewRange(0;false;false)
+refreshLifeBarUI(false;true)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(null;null;C1_Trial_Fail_7)
+dialog(null;null;C1_Trial_Fail_8)
+showDialogWindow(false)
+showLifeBarUI(false)
+
+if(LifePoints <= 0)
+	# Dead, clear stack and back to main menu
+	clearStack()
+
+	:playJudgeHammerAnimation(OnShell;JudgeCam)
+	dialog(Char_Judge;Judge;C1_Trial_Death_1)
+	dialog(Char_Judge;Judge;C1_Trial_Death_2)
+	dialog(Char_Judge;Judge;C1_Trial_Death_3)
+	showDialogWindow(false)
+
+	:setRannEyeSad(Coat)
+	:setRannAngry(Coat)
+	playUIAnimation(Guilty;true)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial_Death_4)
+
+	changeScene(NAJMainMenu)
+
+else
+	# Back to where it was before (using the stack)
+	fadeBg(1;true)
+	:setCourtroomCamToWitnessImmediate()
+	:setJudgeEyeNormal()
+	:setJudgeNormal()
+	:setRannNormal(Coat)
+	wait(1)
+	fadeBg(0;false)
+endif

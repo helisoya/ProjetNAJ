@@ -1,0 +1,21 @@
+# Common defines
+
+# Life Bar
+
+Define removeHealth(Amount)
+variable(LifePoints;-;{Amount})
+if(LifePoints < 0)
+	variable(LifePoints;=;0)
+endif
+EndDefine
+
+Define regenHealth(Amount)
+variable(LifePoints;+;{Amount})
+if(LifePoints > MaxLifePoints)
+	variable(LifePoints;=;MaxLifePoints)
+endif
+EndDefine
+
+Define regenHealthToMax()
+variable(LifePoints;=;MaxLifePoints)
+EndDefine

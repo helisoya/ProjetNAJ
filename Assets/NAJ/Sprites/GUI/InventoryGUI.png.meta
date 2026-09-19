@@ -272,7 +272,7 @@ TextureImporter:
         width: 16
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,7 +294,7 @@ TextureImporter:
         width: 16
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,7 +316,7 @@ TextureImporter:
         width: 16
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,6 +325,28 @@ TextureImporter:
       bones: []
       spriteID: 7d74b5a45d35ecc42882721be7edb215
       internalID: 1894923946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryGUI_WhiteSquare
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 502
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685aea5776f862545a140c47b66b22ce
+      internalID: -2037834085
       vertices: []
       indices: 
       edges: []
@@ -353,6 +375,7 @@ TextureImporter:
       InventoryGUI_7: 1667629537
       InventoryGUI_8: -2104646949
       InventoryGUI_9: 1894923946
+      InventoryGUI_WhiteSquare: -2037834085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

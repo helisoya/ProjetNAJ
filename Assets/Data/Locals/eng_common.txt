@@ -15,3 +15,8 @@ Choice_No = No
 # ------------------------------------------------------------------------
 
 Location_C1 = Case I
+
+UIAnimation_Testimony = Testimony
+UIAnimation_Rebuttal = Rebuttal
+UIAnimation_Guilty = Guilty
+UIAnimation_NotGuilty = Not Guilty

@@ -1,19 +1,19 @@
-#9B88F184DBFF35B937A140B1B9C56628-7B87EB7B1BC439B840A43BBC1A9EB87B
-83|TestIf Alt
-37|2|5|random == 0 & random < 1
-42|Log|Setting to 5
-96|random|=|5
-39|6
-39|6
-37|7|9|random != 5
-42|Error|Should be at 5
-39|12
-42|Log|Is at 5, removing 1
-96|random|-|1
-39|12
-37|13|15|random == 4
-42|Log|Is at 4
-39|17
-42|Error|Should be at 4
-39|17
-42|Log|End
+#9B88F184DBFF35B937A140B1B9C56628-10E726449382E722A35AAB2128C1BDFD
+87|TestIf Alt
+41|2|5|random == 0 & random < 1
+46|Log|Setting to 5
+100|random|=|5
+43|6
+43|6
+41|7|9|random != 5
+46|Error|Should be at 5
+43|12
+46|Log|Is at 5, removing 1
+100|random|-|1
+43|12
+41|13|15|random == 4
+46|Log|Is at 4
+43|17
+46|Error|Should be at 4
+43|17
+46|Log|End

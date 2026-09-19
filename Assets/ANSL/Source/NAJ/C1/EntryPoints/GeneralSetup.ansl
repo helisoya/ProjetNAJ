@@ -25,3 +25,6 @@ createUserVariable(C1_AxeProgress;0)
 # 1 -> Get Axe from Mr.Owl
 # 2 -> Cut down the trees
 
+
+createUserVariable(LifePoints;3)
+createUserVariable(MaxLifePoints;3)

@@ -53,3 +53,22 @@ Profile_C1_Sherif_Desc = Apparently, he's the top police officer around here. He
 
 Profile_C1_Juno_Name = Juno Dr'hma
 Profile_C1_Juno_Desc = The witness of this case. She saw Captain Sartt die.
+
+
+# ---------------------------------------------------------
+# -------------------- Fail - Death -----------------------
+# ---------------------------------------------------------
+
+C1_Trial_Fail_1 = This definitely proves this witness wrong !
+C1_Trial_Fail_2 = How so ?
+C1_Trial_Fail_3 = Oh, erm…
+C1_Trial_Fail_4 = … Well… Why don’t we find out… together ?
+C1_Trial_Fail_5 = Miss Retyr, this isn’t how it works.
+C1_Trial_Fail_6 = I’ll have to penalise you for this.
+C1_Trial_Fail_7 = <color=#72B6E8>Oh… I have to be careful.</color>
+C1_Trial_Fail_8 = <color=#72B6E8>It seems throwing evidence around is not going to help.</color>
+
+C1_Trial_Death_1 = Alright, this is enough.
+C1_Trial_Death_2 = Miss Retyr, I gave you a chance. But it seems you decided to waste it.
+C1_Trial_Death_3 = I will now give my verdict without delay.
+C1_Trial_Death_4 = Nooooooo !

@@ -1,52 +1,52 @@
-#33DEC155C424DF871BAE25C8B608843B-7B87EB7B1BC439B840A43BBC1A9EB87B
-37|1|3|TalkedFils == 1 && CycleCount == 0
-32|null|null|Talk_Character_Done_1
-39|49
-62|Fils|0|0.5|true
-70|Fils|Front
-71|Fils|Front
-62|Fils|1|0.5|false
-93|CycleCount|8|0|41
-32|null|null|Choice_InteractCharacter
-24|0|Choice_Talk|10|null|null|Choice_Search|29|null|null|Choice_Nothing|39|null|null
-37|11|13|TalkedFils == 1
-32|null|null|Talk_Character_Done_1
-39|28
-37|14|25|CycleCount == 1
-37|15|22|FilsWeirdQuest == 1
-32|null|null|Fils_Confront_0
-24|0|Choice_Yes|17|null|null|Choice_No|19|null|null
-41|FilsC1Confront
-39|21
-41|FilsC1DefaultDialog
-39|21
-39|24
-41|FilsC1DefaultDialog
-39|24
-39|26
-39|26
-96|TalkedFils|=|1
-39|28
-39|40
-37|30|36|SearchCounter > 0
-96|SearchCounter|-|1
-96|SecretFils|=|1
-32|null|null|Fils_SearchBelongings_1
-32|null|null|Fils_SearchBelongings_2
-41|/VMP/Common/PrintSearchCounter
-39|38
-32|null|null|Counter_Search_0
-39|38
-39|40
-39|40
-39|44
-32|Char_Fils|null|Fils_Intro_1
-96|TalkedFils|=|1
-39|44
-62|Fils|0|0.5|true
-70|Fils|FilsSpot
-71|Fils|FilsSpot
-62|Fils|1|0.5|false
-39|49
-41|/VMP/Common/CycleCheck
-41|Interaction
+#33DEC155C424DF871BAE25C8B608843B-10E726449382E722A35AAB2128C1BDFD
+41|1|3|TalkedFils == 1 && CycleCount == 0
+36|null|null|Talk_Character_Done_1
+43|49
+66|Fils|0|0.5|true
+74|Fils|Front
+75|Fils|Front
+66|Fils|1|0.5|false
+97|CycleCount|8|0|41
+36|null|null|Choice_InteractCharacter
+28|0|Choice_Talk|10|null|null|Choice_Search|29|null|null|Choice_Nothing|39|null|null
+41|11|13|TalkedFils == 1
+36|null|null|Talk_Character_Done_1
+43|28
+41|14|25|CycleCount == 1
+41|15|22|FilsWeirdQuest == 1
+36|null|null|Fils_Confront_0
+28|0|Choice_Yes|17|null|null|Choice_No|19|null|null
+45|FilsC1Confront
+43|21
+45|FilsC1DefaultDialog
+43|21
+43|24
+45|FilsC1DefaultDialog
+43|24
+43|26
+43|26
+100|TalkedFils|=|1
+43|28
+43|40
+41|30|36|SearchCounter > 0
+100|SearchCounter|-|1
+100|SecretFils|=|1
+36|null|null|Fils_SearchBelongings_1
+36|null|null|Fils_SearchBelongings_2
+45|/VMP/Common/PrintSearchCounter
+43|38
+36|null|null|Counter_Search_0
+43|38
+43|40
+43|40
+43|44
+36|Char_Fils|null|Fils_Intro_1
+100|TalkedFils|=|1
+43|44
+66|Fils|0|0.5|true
+74|Fils|FilsSpot
+75|Fils|FilsSpot
+66|Fils|1|0.5|false
+43|49
+45|/VMP/Common/CycleCheck
+45|Interaction

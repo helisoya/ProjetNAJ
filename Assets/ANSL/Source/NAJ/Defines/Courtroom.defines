@@ -44,8 +44,8 @@ setCameraRotation(DefenseCam)
 EndDefine
 
 Define setCourtroomCamToDefense(WaitForEnd)
-setCameraRotation(DefenseCam;1;false)
-setCameraPosition(DefenseCam;1;{WaitForEnd})
+setCameraRotation(DefenseCam;0.25;false)
+setCameraPosition(DefenseCam;0.25;{WaitForEnd})
 EndDefine
 
 Define setCourtroomCamToProsecutorImmediate()
@@ -54,8 +54,8 @@ setCameraPosition(ProsecutionCam)
 EndDefine
 
 Define setCourtroomCamToProsecutor(WaitForEnd)
-setCameraRotation(ProsecutionCam;1;false)
-setCameraPosition(ProsecutionCam;1;{WaitForEnd})
+setCameraRotation(ProsecutionCam;0.25;false)
+setCameraPosition(ProsecutionCam;0.25;{WaitForEnd})
 EndDefine
 
 Define setCourtroomCamToWitnessImmediate()
@@ -64,6 +64,6 @@ setCameraPosition(WitnessCam)
 EndDefine
 
 Define setCourtroomCamToWitness(WaitForEnd)
-setCameraRotation(WitnessCam;1;false)
-setCameraPosition(WitnessCam;1;{WaitForEnd})
+setCameraRotation(WitnessCam;0.25;false)
+setCameraPosition(WitnessCam;0.25;{WaitForEnd})
 EndDefine

@@ -1,46 +1,46 @@
-#392B9208B538E5F33801C44531B82B39-7B87EB7B1BC439B840A43BBC1A9EB87B
-28|var|1
-28|var2|2
-83|TestIf
-37|4|6|var == 1 & (var2 == 2)
-42|Log|True1
-39|7
-39|7
-98|0.1
-37|9|11|var == 1 & var2 == 2
-42|Log|True2
-39|13
-42|Log|False2
-39|13
-98|0.1
-37|15|18|var == 1 & var2 == 2
-42|Log|True3
-42|Warning|True3
-39|20
-42|Log|False3
-39|20
-98|0.1
-37|22|23|var == 1 & var2 == 2
-39|25
-42|Log|False4
-39|25
-98|0.1
-37|27|28|var == 1 & var2 == 2
-39|29
-39|29
-98|0.1
-37|31|37|var == 1 & var2 == 2
-37|32|34|var4 = 2
-42|Log|True5
-39|36
-42|Warning|True5
-39|36
-39|45
-42|Error|False5
-37|39|41|var4 = 5
-42|Log|False5
-39|43
-42|Warning|False5
-39|43
-42|Log|False5
-39|45
+#392B9208B538E5F33801C44531B82B39-10E726449382E722A35AAB2128C1BDFD
+32|var|1
+32|var2|2
+87|TestIf
+41|4|6|var == 1 & (var2 == 2)
+46|Log|True1
+43|7
+43|7
+102|0.1
+41|9|11|var == 1 & var2 == 2
+46|Log|True2
+43|13
+46|Log|False2
+43|13
+102|0.1
+41|15|18|var == 1 & var2 == 2
+46|Log|True3
+46|Warning|True3
+43|20
+46|Log|False3
+43|20
+102|0.1
+41|22|23|var == 1 & var2 == 2
+43|25
+46|Log|False4
+43|25
+102|0.1
+41|27|28|var == 1 & var2 == 2
+43|29
+43|29
+102|0.1
+41|31|37|var == 1 & var2 == 2
+41|32|34|var4 = 2
+46|Log|True5
+43|36
+46|Warning|True5
+43|36
+43|45
+46|Error|False5
+41|39|41|var4 = 5
+46|Log|False5
+43|43
+46|Warning|False5
+43|43
+46|Log|False5
+43|45

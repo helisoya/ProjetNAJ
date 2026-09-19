@@ -1,52 +1,52 @@
-#D23FC2EF5556FDEB1218B993D35F8972-7B87EB7B1BC439B840A43BBC1A9EB87B
-37|1|3|TalkedHumain == 1 && CycleCount == 0
-32|null|null|Talk_Character_Done_1
-39|49
-62|Humain|0|0.5|true
-70|Humain|Front
-71|Humain|Front
-62|Humain|1|0.5|false
-93|CycleCount|8|0|41
-32|null|null|Choice_InteractCharacter
-24|0|Choice_Talk|10|null|null|Choice_Search|29|null|null|Choice_Nothing|39|null|null
-37|11|13|TalkedHumain == 1
-32|null|null|Talk_Character_Done_1
-39|28
-37|14|25|CycleCount == 1
-37|15|22|SecretHumain == 1 && ConfrontedHumainSecret == 0
-32|null|null|Humain_Secret_0
-24|0|Choice_Yes|17|null|null|Choice_No|19|null|null
-41|HumainSecret
-39|21
-41|HumainC1Default
-39|21
-39|24
-41|HumainC1Default
-39|24
-39|26
-39|26
-96|TalkedHumain|=|1
-39|28
-39|40
-37|30|36|SearchCounter > 0
-96|SearchCounter|-|1
-96|SecretHumain|=|1
-32|null|null|Humain_SearchBelongings_1
-32|null|null|Humain_SearchBelongings_2
-41|/VMP/Common/PrintSearchCounter
-39|38
-32|null|null|Counter_Search_0
-39|38
-39|40
-39|40
-39|44
-32|Char_Humain|null|Humain_Intro_1
-96|TalkedHumain|=|1
-39|44
-62|Humain|0|0.5|true
-70|Humain|HumainSpot
-71|Humain|HumainSpot
-62|Humain|1|0.5|false
-39|49
-41|/VMP/Common/CycleCheck
-41|Interaction
+#D23FC2EF5556FDEB1218B993D35F8972-10E726449382E722A35AAB2128C1BDFD
+41|1|3|TalkedHumain == 1 && CycleCount == 0
+36|null|null|Talk_Character_Done_1
+43|49
+66|Humain|0|0.5|true
+74|Humain|Front
+75|Humain|Front
+66|Humain|1|0.5|false
+97|CycleCount|8|0|41
+36|null|null|Choice_InteractCharacter
+28|0|Choice_Talk|10|null|null|Choice_Search|29|null|null|Choice_Nothing|39|null|null
+41|11|13|TalkedHumain == 1
+36|null|null|Talk_Character_Done_1
+43|28
+41|14|25|CycleCount == 1
+41|15|22|SecretHumain == 1 && ConfrontedHumainSecret == 0
+36|null|null|Humain_Secret_0
+28|0|Choice_Yes|17|null|null|Choice_No|19|null|null
+45|HumainSecret
+43|21
+45|HumainC1Default
+43|21
+43|24
+45|HumainC1Default
+43|24
+43|26
+43|26
+100|TalkedHumain|=|1
+43|28
+43|40
+41|30|36|SearchCounter > 0
+100|SearchCounter|-|1
+100|SecretHumain|=|1
+36|null|null|Humain_SearchBelongings_1
+36|null|null|Humain_SearchBelongings_2
+45|/VMP/Common/PrintSearchCounter
+43|38
+36|null|null|Counter_Search_0
+43|38
+43|40
+43|40
+43|44
+36|Char_Humain|null|Humain_Intro_1
+100|TalkedHumain|=|1
+43|44
+66|Humain|0|0.5|true
+74|Humain|HumainSpot
+75|Humain|HumainSpot
+66|Humain|1|0.5|false
+43|49
+45|/VMP/Common/CycleCheck
+45|Interaction

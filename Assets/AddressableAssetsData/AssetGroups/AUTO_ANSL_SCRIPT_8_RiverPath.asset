@@ -14,37 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_8_RiverPath
   m_GUID: 3e01b092cd9fa8842a813c4132f735c5
-  m_SerializeEntries:
-  - m_GUID: 37670c458f227094ba80dd54a2096820
-    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/Arrival
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3c6f8077af2c86843a4f7654555495e8
-    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/ToCrashSite
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5b4e0dcb4673fd445850bbb9362fd838
-    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/ToForest
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7cb737dc55e74434db1d92ce2d0d8654
-    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/FirstTime
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c326abc00c62937449a32291788c78db
-    m_Address: ANSL/NAJ/C1/Investigation/RiverPath/Interaction
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

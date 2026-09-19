@@ -1,47 +1,47 @@
-#A001F234C38E319714329E5A3CC1078D-7B87EB7B1BC439B840A43BBC1A9EB87B
-37|1|3|TalkedChasseur == 1 && CycleCount == 0
-32|null|null|Talk_Character_Done_1
-39|44
-62|Chasseur|0|0.5|true
-70|Chasseur|Front
-71|Chasseur|Front
-62|Chasseur|1|0.5|false
-93|CycleCount|8|0|36
-32|null|null|Choice_InteractCharacter
-24|0|Choice_Talk|10|null|null|Choice_Search|24|null|null|Choice_Nothing|34|null|null
-37|11|13|TalkedChasseur == 1
-32|null|null|Talk_Character_Done_1
-39|23
-37|14|20|CycleCount == 1
-37|15|17|LieToChasseurQuest == 1
-41|ChasseurLieQuest
-39|19
-41|ChasseurC1Default
-39|19
-39|21
-39|21
-96|TalkedChasseur|=|1
-39|23
-39|35
-37|25|31|SearchCounter > 0
-96|SearchCounter|-|1
-96|SecretChasseur|=|1
-32|null|null|Chasseur_SearchBelongings_1
-32|null|null|Chasseur_SearchBelongings_2
-41|/VMP/Common/PrintSearchCounter
-39|33
-32|null|null|Counter_Search_0
-39|33
-39|35
-39|35
-39|39
-32|Char_Chasseur|null|Chasseur_Intro_1
-96|TalkedChasseur|=|1
-39|39
-62|Chasseur|0|0.5|true
-70|Chasseur|ChasseurSpot
-71|Chasseur|ChasseurSpot
-62|Chasseur|1|0.5|false
-39|44
-41|/VMP/Common/CycleCheck
-41|Interaction
+#A001F234C38E319714329E5A3CC1078D-10E726449382E722A35AAB2128C1BDFD
+41|1|3|TalkedChasseur == 1 && CycleCount == 0
+36|null|null|Talk_Character_Done_1
+43|44
+66|Chasseur|0|0.5|true
+74|Chasseur|Front
+75|Chasseur|Front
+66|Chasseur|1|0.5|false
+97|CycleCount|8|0|36
+36|null|null|Choice_InteractCharacter
+28|0|Choice_Talk|10|null|null|Choice_Search|24|null|null|Choice_Nothing|34|null|null
+41|11|13|TalkedChasseur == 1
+36|null|null|Talk_Character_Done_1
+43|23
+41|14|20|CycleCount == 1
+41|15|17|LieToChasseurQuest == 1
+45|ChasseurLieQuest
+43|19
+45|ChasseurC1Default
+43|19
+43|21
+43|21
+100|TalkedChasseur|=|1
+43|23
+43|35
+41|25|31|SearchCounter > 0
+100|SearchCounter|-|1
+100|SecretChasseur|=|1
+36|null|null|Chasseur_SearchBelongings_1
+36|null|null|Chasseur_SearchBelongings_2
+45|/VMP/Common/PrintSearchCounter
+43|33
+36|null|null|Counter_Search_0
+43|33
+43|35
+43|35
+43|39
+36|Char_Chasseur|null|Chasseur_Intro_1
+100|TalkedChasseur|=|1
+43|39
+66|Chasseur|0|0.5|true
+74|Chasseur|ChasseurSpot
+75|Chasseur|ChasseurSpot
+66|Chasseur|1|0.5|false
+43|44
+45|/VMP/Common/CycleCheck
+45|Interaction
