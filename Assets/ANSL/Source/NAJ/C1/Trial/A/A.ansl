@@ -2,6 +2,8 @@
 
 setLocals(c1_common;c1_trial_A)
 
+setLocation(Location_C1_TrialPart1)
+
 setBg(1)
 fadeFg(0;false)
 

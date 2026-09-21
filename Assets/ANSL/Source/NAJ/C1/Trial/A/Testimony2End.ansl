@@ -1,0 +1,337 @@
+# Testimony 2 - Juno (The killer) 
+# End
+
+setExaminationPart(4)
+clearStack()
+
+examination
+
+part 1
+	# I was quite far away, so I couldn’t see much.
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_1;false;true)
+press 1
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press1_1)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press1_2)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press1_3)
+		showDialogWindow(false)
+
+	:setRannThinking(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(null;null;C1_Trial_Testimony2_Press1_4)
+
+	:setRannNormal(Coat)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press1_5)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+
+part 2
+	# They had their back turned, and I couldn’t see their face.
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_2;false;true)
+press 2
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setRannHandsOnDesk(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press2_1)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press2_2)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press2_3)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press2_4)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press2_5)
+	showDialogWindow(false)
+
+	:setRannThinking(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(null;null;C1_Trial_Testimony2_Press2_6)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	:setRannNormal(Coat)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+
+part 3
+	# But I know for a fact they were wearing a coat.
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_3;false;true)
+press 3
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press3_1)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press3_2)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press3_3)
+	showDialogWindow(false)
+
+	:setRannThinking(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(null;null;C1_Trial_Testimony2_Press3_4)
+	dialog(null;null;C1_Trial_Testimony2_Press3_5)
+
+	:setRannNormal(Coat)
+	dialog(null;null;C1_Trial_Testimony2_Press3_6)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press3_7)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press3_8)
+	showDialogWindow(false)
+
+	:setCourtroomCamToDefense(true)
+	dialog(null;null;C1_Trial_Testimony2_Press3_9)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press3_10)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press3_11)
+
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony2_Press3_12)
+
+	fadeBg(1;true)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+
+part 4 present Evidence/C1_Coat
+	# The coat was bloody and looked like it was burnt in some places.
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_4;false;true)
+press 4
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press4_1)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press4_2)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press4_3)
+	showDialogWindow(false)
+
+	:setCourtroomCamToProsecutor(true)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony2_Press4_4)
+	showDialogWindow(false)
+
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press4_5)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press4_6)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+
+part 5
+	# I learned after the events that it was the crew’s uniform.
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_5;false;true)
+press 5
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press5_1)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press5_2)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Press5_3)
+	showDialogWindow(false)
+
+	:setRannThinking(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(null;null;C1_Trial_Testimony2_Press5_4)
+	dialog(null;null;C1_Trial_Testimony2_Press5_5)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	:setRannNormal(Coat)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+
+loop
+	:setRannThinking(Coat)
+	fadeBg(1;true)
+	:setCourtroomCamToDefenseImmediate()
+	fadeBg(0;false)
+
+	dialog(null;null;C1_Trial_Testimony2_Loop_1)
+	dialog(null;null;C1_Trial_Testimony2_Loop_2)
+
+	fadeBg(1;true)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+fail
+	load(../Common/ExaminationFail)
+endexamination
+
+
+showDialogWindow(false)
+playUIAnimation(Objection;true)
+
+# C - After Testimony 2
+
+autosave()
+
+:setRannHandsOnDesk(Coat)
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial_C_1)
+showDialogWindow(false)
+
+:setCourtroomCamToProsecutor(true)
+dialog(Char_Robert;Robert;C1_Trial_C_2)
+showDialogWindow(false)
+
+:setRannNormal(Coat)
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial_C_3)
+
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_C_4)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(Char_Rann;RannCoat;C1_Trial_C_5)
+
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_C_6)
+dialog(Char_Judge;Judge;C1_Trial_C_7)
+dialog(Char_Judge;Judge;C1_Trial_C_8)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(Char_Rann;RannCoat;C1_Trial_C_9)
+
+:setJudgeEyeThinking()
+:setCourtroomCamToJudge()
+dialog(null;null;C1_Trial_C_10)
+dialog(null;null;C1_Trial_C_11)
+
+:setRannHandsOnDesk(Coat)
+:setJudgeEyeSurprise()
+dialog(Char_Judge;Judge;C1_Trial_C_12)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(Char_Rann;RannCoat;C1_Trial_C_13)
+dialog(Char_Rann;RannCoat;C1_Trial_C_14)
+dialog(Char_Rann;RannCoat;C1_Trial_C_15)
+dialog(Char_Rann;RannCoat;C1_Trial_C_16)
+
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_C_17)
+
+# HOLD IT
+
+:setRannAngry(Coat)
+:setCourtroomCamToProsecutorImmediate()
+dialog(Char_Robert;Robert;C1_Trial_C_18)
+dialog(Char_Robert;Robert;C1_Trial_C_19)
+dialog(Char_Robert;Robert;C1_Trial_C_20)
+dialog(Char_Robert;Robert;C1_Trial_C_21)
+dialog(Char_Robert;Robert;C1_Trial_C_22)
+dialog(Char_Robert;Robert;C1_Trial_C_23)
+dialog(Char_Robert;Robert;C1_Trial_C_24)
+dialog(Char_Robert;Robert;C1_Trial_C_25)
+dialog(Char_Robert;Robert;C1_Trial_C_26)
+showDialogWindow(false)
+
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial_C_27)
+showDialogWindow(false)
+
+:setCourtroomCamToProsecutor(true)
+dialog(Char_Robert;Robert;C1_Trial_C_28)
+showDialogWindow(false)
+
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial_C_29)
+showDialogWindow(false)
+
+:setCourtroomCamToProsecutor(true)
+dialog(Char_Robert;Robert;C1_Trial_C_30)
+dialog(Char_Robert;Robert;C1_Trial_C_31)
+
+:setRobertEyeThinking()
+dialog(Char_Robert;Robert;C1_Trial_C_32)
+showDialogWindow(false)
+
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial_C_33)
+showDialogWindow(false)
+
+:setRobertEyeNormal()
+:setCourtroomCamToProsecutor(true)
+dialog(Char_Robert;Robert;C1_Trial_C_34)
+showDialogWindow(false)
+
+:setCourtroomCamToDefense(true)
+dialog(null;null;C1_Trial_C_35)
+
+:setJudgeEyeNormal()
+:playJudgeHammerAnimation(Normal;JudgeCam)
+
+dialog(Char_Judge;Judge;C1_Trial_C_36)
+dialog(Char_Judge;Judge;C1_Trial_C_37)
+
+:setCourtroomCamToProsecutorImmediate()
+dialog(Char_Robert;Robert;C1_Trial_C_38)
+
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_C_39)
+dialog(Char_Judge;Judge;C1_Trial_C_40)
+dialog(Char_Judge;Judge;C1_Trial_C_41)
+dialog(Char_Judge;Judge;C1_Trial_C_42)
+
+:setCourtroomCamToProsecutorImmediate()
+dialog(Char_Robert;Robert;C1_Trial_C_43)
+
+:setJudgeEyeAngry()
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_C_44)
+dialog(Char_Judge;Judge;C1_Trial_C_45)
+dialog(Char_Judge;Judge;C1_Trial_C_46)
+dialog(Char_Judge;Judge;C1_Trial_C_47)
+
+:setJudgeEyeNormal()
+:setRobertEyeThinking()
+:setCourtroomCamToProsecutorImmediate()
+dialog(null;null;C1_Trial_C_48)
+
+:setRannNormal(Coat)
+:setRobertEyeNormal()
+dialog(Char_Robert;Robert;C1_Trial_C_49)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(null;null;C1_Trial_C_50)
+
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_C_51)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(Char_Rann;RannCoat;C1_Trial_C_52)
+
+:setCourtroomCamToJudge()
+:setRannThinking(Coat)
+dialog(Char_Judge;Judge;C1_Trial_C_53)
+dialog(Char_Judge;Judge;C1_Trial_C_54)
+dialog(Char_Judge;Judge;C1_Trial_C_55)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(null;null;C1_Trial_C_56)
+dialog(null;null;C1_Trial_C_57)
+dialog(null;null;C1_Trial_C_58)
+
+load(Question1)

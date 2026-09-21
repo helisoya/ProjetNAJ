@@ -343,5 +343,6 @@ dialog(Char_Judge;Judge;C1_Trial_B_38)
 
 :setCourtroomCamToWitnessImmediate()
 dialog(Char_Juno;Juno;C1_Trial_B_39)
+showDialogWindow(false)
 
 load(Testimony2)

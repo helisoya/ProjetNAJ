@@ -1,0 +1,137 @@
+# Question 1 : Who did it ?
+
+:setCourtroomCamToJudge()
+:setRannNormal(Coat)
+:setRannEyeNeutral(Coat)
+:setJunoEyeNormal()
+:setJudgeEyeNormal()
+dialog(Char_Judge;Judge;C1_Trial_C_59)
+dialog(Char_Judge;Judge;C1_Trial_C_60)
+
+fadeBg(0.75;false)
+
+choice(Arc)
+	choice Choice_Question1_Juno C1_Choice_Juno C1_Choice:
+		fadeBg(0;false)
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Juno_1)
+		showDialogWindow(true)
+
+		:setJunoEyeSurprise()
+		:setCourtroomCamToWitness(true)
+		dialog(Char_Juno;Juno;C1_Trial_Question1_Juno_2)
+		showDialogWindow(true)
+
+		:setCourtroomCamToProsecutor(true)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Juno_3)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Juno_4)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Juno_5)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Juno_6)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Juno_7)
+		showDialogWindow(true)
+
+		:setRannStress(Coat)
+		:setRannEyeOops(Coat)
+
+		:setCourtroomCamToDefense(true)
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Juno_8)
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Juno_9)
+		showDialogWindow(true)
+
+		showLifeBarUI(true)
+		setLifeBarUIPreviewRange(1;true;true)
+
+		:setJudgeEyeAngry()
+		:setCourtroomCamToJudge()
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Juno_10)
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Juno_11)
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Juno_12)
+
+		screenshake(0.1;0.25;true;true)
+		:removeHealth(1)
+		setLifeBarUIPreviewRange(0;false;false)
+		refreshLifeBarUI(false;true)
+
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Juno_13)
+		showLifeBarUI(false)
+
+		if(LifePoints == 0)
+			load(../Common/Death)
+		else
+			load(Question1)
+		endif
+
+
+	choice Choice_Question1_Sheriff C1_Choice_Robert C1_Choice:
+		fadeBg(0;false)
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Sheriff_1)
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Sheriff_2)
+		
+		:setCourtroomCamToJudge()
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_3)
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_4)
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_5)
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_6)
+
+		:setRannStress(Coat)
+		:setRannEyeOops(Coat)
+		:setCourtroomCamToProsecutorImmediate()
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Sheriff_7)
+
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Sheriff_8)
+		load(Question1)
+
+	choice Choice_Question1_Suicide C1_Choice_Suicide C1_Choice:
+		fadeBg(0;false)
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Suicide_1)
+		showDialogWindow(false)
+
+		:setCourtroomCamToProsecutor(true)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Suicide_2)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Suicide_3)
+		showDialogWindow(false)
+
+		:setRannStress(Coat)
+		:setRannEyeOops(Coat)
+		:setCourtroomCamToDefense(true)
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Suicide_4)
+
+		:setCourtroomCamToJudge()
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Suicide_5)
+		load(Question1)
+
+	choice Choice_Question1_Sailor C1_Choice_Sailor C1_Choice:
+		fadeBg(0;false)
+		load(Intermission)
+
+	choice Choice_Question1_Animal C1_Choice_Animal C1_Choice:
+		fadeBg(0;false)
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Animal_1)
+		showDialogWindow(false)
+
+		:setCourtroomCamToProsecutor(true)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Animal_2)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Animal_3)
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Animal_4)
+		showDialogWindow(false)
+
+		:setRannStress(Coat)
+		:setRannEyeOops(Coat)
+		:setCourtroomCamToDefense(true)
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Animal_5)
+
+		:setCourtroomCamToJudge()
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Animal_6)
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Animal_7)
+		dialog(Char_Judge;Judge;C1_Trial_Question1_Animal_8)
+
+		:setCourtroomCamToProsecutorImmediate()
+		dialog(Char_Robert;Robert;C1_Trial_Question1_Animal_9)
+
+		load(Question1)
+endchoice

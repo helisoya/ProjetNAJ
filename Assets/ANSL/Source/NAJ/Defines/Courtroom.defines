@@ -23,6 +23,11 @@ EndDefine
 
 # Camera
 
+Define setCourtroomCamToLobby()
+setCameraPosition(LobbyCam)
+setCameraRotation(LobbyCam)
+EndDefine
+
 Define setCourtroomCamToAll()
 setCameraPosition(AllCam)
 setCameraRotation(AllCam)

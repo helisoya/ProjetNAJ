@@ -1,4 +1,4 @@
-#6BBC261222010A851A4904FD9B9925FB-10E726449382E722A35AAB2128C1BDFD
+#16EA77FC05CF50066822D877E97E3A7A-10E726449382E722A35AAB2128C1BDFD
 94|false
 67|RannCoat|HandsOnDesk|0.1
 69|RannCoat|Normal
@@ -45,29 +45,9 @@
 36|null|null|C1_Trial_Fail_8
 94|false
 22|false
-41|47|69|LifePoints <= 0
-29
-94|false
-64|HammerCam
-65|HammerCam
-67|Judge|Strike
-102|1
-67|Judge|OnShell
-65|JudgeCam
-64|JudgeCam
-36|Char_Judge|Judge|C1_Trial_Death_1
-36|Char_Judge|Judge|C1_Trial_Death_2
-36|Char_Judge|Judge|C1_Trial_Death_3
-94|false
-69|RannCoat|Normal
-73|RannCoat|Sad
-67|RannCoat|Angry|0.1
-12|Guilty|true
-64|DefenseCam
-65|DefenseCam
-36|Char_Rann|RannCoat|C1_Trial_Death_4
-27|NAJMainMenu
-43|79
+41|47|49|LifePoints <= 0
+45|Death
+43|59
 38|1|true
 65|WitnessCam
 64|WitnessCam
@@ -77,4 +57,4 @@
 67|RannCoat|Normal|0.1
 102|1
 38|0|false
-43|79
+43|59

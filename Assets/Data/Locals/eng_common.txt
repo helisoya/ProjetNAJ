@@ -14,7 +14,10 @@ Choice_No = No
 # ---------------------------- NAJ ---------------------------------------
 # ------------------------------------------------------------------------
 
-Location_C1 = Case I
+Location_C1_Intro = I - Introduction
+Location_C1_Stranded = I - Stranded
+Location_C1_TrialPart1 = I - Trial (1rst)
+Location_C1_TrialPart2 = I - Trial (2nd)
 
 UIAnimation_Testimony = Testimony
 UIAnimation_Rebuttal = Rebuttal

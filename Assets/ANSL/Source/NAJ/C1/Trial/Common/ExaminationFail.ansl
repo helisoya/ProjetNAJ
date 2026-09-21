@@ -40,24 +40,7 @@ showDialogWindow(false)
 showLifeBarUI(false)
 
 if(LifePoints <= 0)
-	# Dead, clear stack and back to main menu
-	clearStack()
-
-	:playJudgeHammerAnimation(OnShell;JudgeCam)
-	dialog(Char_Judge;Judge;C1_Trial_Death_1)
-	dialog(Char_Judge;Judge;C1_Trial_Death_2)
-	dialog(Char_Judge;Judge;C1_Trial_Death_3)
-	showDialogWindow(false)
-
-	:setRannEyeSad(Coat)
-	:setRannAngry(Coat)
-	playUIAnimation(Guilty;true)
-
-	:setCourtroomCamToDefenseImmediate()
-	dialog(Char_Rann;RannCoat;C1_Trial_Death_4)
-
-	changeScene(NAJMainMenu)
-
+	load(Death)
 else
 	# Back to where it was before (using the stack)
 	fadeBg(1;true)

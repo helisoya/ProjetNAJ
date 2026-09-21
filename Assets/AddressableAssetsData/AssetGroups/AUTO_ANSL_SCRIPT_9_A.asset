@@ -27,6 +27,24 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a9209c6e1048c84da5373463d841c57
+    m_Address: ANSL/NAJ/C1/Trial/A/Testimony2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f556c450c554884f947fc5f87bdef2f
+    m_Address: ANSL/NAJ/C1/Trial/A/Testimony2End
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5be316042882d0044b98e1c1a2389b8f
+    m_Address: ANSL/NAJ/C1/Trial/A/Intermission
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7bd46a6936ea6b643bf7ca885423881e
     m_Address: ANSL/NAJ/C1/Trial/A/Testimony1Start
     m_ReadOnly: 0
@@ -35,6 +53,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b40b0916ed57dc34ca91543e3f8b4ea1
     m_Address: ANSL/NAJ/C1/Trial/A/A
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd80cfa61c906ae4c81424628b3f5ba4
+    m_Address: ANSL/NAJ/C1/Trial/A/Question1
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts

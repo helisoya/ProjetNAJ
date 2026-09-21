@@ -255,6 +255,14 @@ Define setJunoNormal()
 setCharacterBody(Juno;Normal;0.1)
 EndDefine
 
+Define setJunoSurprise()
+setCharacterBody(Juno;Surprise;0.1)
+EndDefine
+
+Define setJunoThinking()
+setCharacterBody(Juno;Thinking;0.1)
+EndDefine
+
 Define setJunoBow()
 setCharacterBody(Juno;Bow)
 EndDefine
