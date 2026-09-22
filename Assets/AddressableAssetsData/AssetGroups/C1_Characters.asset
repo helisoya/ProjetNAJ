@@ -64,7 +64,7 @@ MonoBehaviour:
     - Characters
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8238e44c13cce7b4dabdd64d99d4f9b0
-    m_Address: Characters/NovaKaliaSoldiier
+    m_Address: Characters/NovaKaliaSoldier
     m_ReadOnly: 0
     m_SerializedLabels:
     - Characters

@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 7094935172837926981}
   - component: {fileID: 1282376148817300302}
   m_Layer: 0
-  m_Name: NovaKaliaSoldiier
+  m_Name: NovaKaliaSoldier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   - {fileID: 8198997518467103811}
   - {fileID: 204812835168425486}
   linkedInteraction: {fileID: 1598016563803733040}
-  characterName: NovaKaliaSoldiier
+  characterName: NovaKaliaSoldier
   animator: {fileID: 1282376148817300302}
   talkingTransitionDuration: 0.1
 --- !u!95 &1282376148817300302
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f0183aa5d591544a20c6e7db601fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
-  ID: NovaKaliaSoldiier
+  ID: NovaKaliaSoldier
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
   objectRenderers:
   - {fileID: 8553242310241742777}

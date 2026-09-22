@@ -72,3 +72,23 @@ Define setCourtroomCamToWitness(WaitForEnd)
 setCameraRotation(WitnessCam;0.25;false)
 setCameraPosition(WitnessCam;0.25;{WaitForEnd})
 EndDefine
+
+Define setCourtroomCamToWitnessLeftImmediate()
+setCameraRotation(WitnessLeftCam)
+setCameraPosition(WitnessLeftCam)
+EndDefine
+
+Define setCourtroomCamToWitnessLeft(WaitForEnd)
+setCameraRotation(WitnessLeftCam;0.25;false)
+setCameraPosition(WitnessLeftCam;0.25;{WaitForEnd})
+EndDefine
+
+Define setCourtroomCamToWitnessRightImmediate()
+setCameraRotation(WitnessRightCam)
+setCameraPosition(WitnessRightCam)
+EndDefine
+
+Define setCourtroomCamToWitnessRight(WaitForEnd)
+setCameraRotation(WitnessRightCam;0.25;false)
+setCameraPosition(WitnessRightCam;0.25;{WaitForEnd})
+EndDefine

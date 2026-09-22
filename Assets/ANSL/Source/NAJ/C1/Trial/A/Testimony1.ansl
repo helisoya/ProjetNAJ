@@ -100,7 +100,6 @@ press 2
 	showDialogWindow(false)
 
 	fadeBg(1;true)
-	wait(1)
 	fadeBg(0;false)
 
 # I stumbled upon the shipwreck. That’s when I saw it !
@@ -134,7 +133,6 @@ press 3
 
 	fadeBg(1;true)
 	:setCourtroomCamToWitnessImmediate()
-	wait(1)
 	fadeBg(0;false)
 
 # A person stabbed the old captain to death !
@@ -172,7 +170,6 @@ press 4
 	:setRannEyeNeutral(Coat)
 	:setRannNormal(Coat)
 	:setCourtroomCamToWitnessImmediate()
-	wait(1)
 	fadeBg(0;false)
 
 # I screamed and the killer ran away.
@@ -208,7 +205,6 @@ press 5
 	fadeBg(1;true)
 	:setCourtroomCamToWitnessImmediate()
 	:setRannNormal(Coat)
-	wait(1)
 	fadeBg(0;false)
 
 loop

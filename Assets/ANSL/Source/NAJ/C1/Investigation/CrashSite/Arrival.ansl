@@ -118,4 +118,4 @@ showDialogWindow(false)
 
 wait(2)
 
-load(../../Trial/A/A)
+load(../../Trial/A/Start)

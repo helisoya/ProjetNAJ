@@ -27,12 +27,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: da47291f6fa166d408ea3e91a80a91ba
-    m_Address: ANSL/NAJ/C1/EntryPoints/TrialStart
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ef402441805217644b557af8fd233b72
     m_Address: ANSL/NAJ/C1/EntryPoints/GeneralSetup
     m_ReadOnly: 0

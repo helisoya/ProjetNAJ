@@ -243,4 +243,6 @@ wait(1)
 dialog(Char_Rann;null;C1_Trial1_D_100)
 showDialogWindow(false)
 
-fadeBg(1;true)
+fadeFg(1;true)
+
+load(../B/Start)

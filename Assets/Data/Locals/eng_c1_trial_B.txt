@@ -1,0 +1,107 @@
+# ---------------------------------------------------------
+# -------------------- Testimony 3 ------------------------
+# ---------------------------------------------------------
+
+# <color=#72B6E8>
+
+C1_Trial_Evidence_DeathMessage_1 = <color=#72B6E8>Death message added to the inventory.</color>
+C1_Trial_Evidence_DebtPapers_1 = <color=#72B6E8>Debt papers added to the inventory.</color>
+
+
+
+C1_Trial1_E_1 = Alright, let us resume this trial.
+C1_Trial1_E_2 = Sheriff, I trust that you found something ?
+C1_Trial1_E_3 = Yes. My men finished their search.
+C1_Trial1_E_4 = I didn’t have time to review their findings.
+C1_Trial1_E_5 = Instead, my subordinate will elaborate himself.
+C1_Trial1_E_6 = Alright. Let’s hear him.
+C1_Trial1_E_7 = Alright. Please tell us what you found.
+C1_Trial1_E_8 = Yes, sir !
+C1_Trial1_E_9 = We explored the wreck and surveyed almost all of it.
+C1_Trial1_E_10 = Almost ?
+C1_Trial1_E_11 = Sir ! Some rooms were filled with inactive explosives and munitions.
+C1_Trial1_E_12 = We decided to seal them for now.
+C1_Trial1_E_13 = I see. Safety first.
+C1_Trial1_E_14 = What did you end up finding ?
+C1_Trial1_E_15 = First, we made a discovery outside the ship.
+C1_Trial1_E_16 = A message was located next to the captain’s body.
+C1_Trial1_E_17 = What’s more, it was written in the victim’s blood.
+C1_Trial1_E_18 = We made a drawing of it, for simplicity.
+C1_Trial1_E_19 = Weird… I don’t remember seeing it…
+C1_Trial1_E_20 = Let me see…
+C1_Trial1_E_21 = <color=red>Ronne</color>… ?
+C1_Trial1_E_22 = I-Is this the defendant’s name ?!
+C1_Trial1_E_23 = Huh ?!
+C1_Trial1_E_24 = Wait… How did he write my name ?
+C1_Trial1_E_25 = That’s not even a common misspelling. Far from it…
+C1_Trial1_E_26 = Maybe the captain didn’t know how to write it ?
+C1_Trial1_E_27 = <color=#72B6E8>Maybe…</color>
+C1_Trial1_E_28 = <color=#72B6E8>But like the sheriff said, it’s weird.</color>
+C1_Trial1_E_29 = <color=#72B6E8>I don’t remember seeing it at the scene either.</color>
+C1_Trial1_E_30 = <color=#72B6E8>Or maybe it was hidden behind that rock ?</color>
+C1_Trial1_E_31 = <color=#72B6E8>I did get arrested pretty fast. I could have missed it…</color>
+C1_Trial1_E_32 = This is pretty damning evidence, I must say.
+C1_Trial1_E_33 = Did you find anything else ?
+C1_Trial1_E_34 = Sir ! Our first thought was to check out the captain’s cabin.
+C1_Trial1_E_35 = We secured a lot of documents for you to check.
+C1_Trial1_E_36 = Did Ol’ Jimm look through them ?
+C1_Trial1_E_37 = Oh, yes. He separated them into two stacks.
+C1_Trial1_E_38 = The first are what look like financial reports.
+C1_Trial1_E_39 = Sadly, most of them are damaged; this one is the only one that can be read fully.
+C1_Trial1_E_40 = Hmm…
+C1_Trial1_E_41 = Apparently, someone owed a lot of money to him.
+C1_Trial1_E_42 = Let me see… 
+C1_Trial1_E_43 = By Kalibu ! That’s a hefty sum.
+C1_Trial1_E_44 = How can one even owe this much money ? It would take years to pay off such a debt !
+C1_Trial1_E_45 = We could not figure out who was indebted.
+C1_Trial1_E_46 = Jimm tried to find the ship’s log to cross-reference the sailors’ name.
+C1_Trial1_E_47 = He didn’t find it, though. He thinks it was destroyed in the crash.
+C1_Trial1_E_48 = Hmm… A shame.
+C1_Trial1_E_49 = And the second stack ?
+C1_Trial1_E_50 = They appear to be correspondence. I didn’t read them, but I-
+C1_Trial1_E_51 = Give them to me !
+C1_Trial1_E_52 = Huh ? Oh, yes.
+C1_Trial1_E_53 = …
+C1_Trial1_E_54 = …
+C1_Trial1_E_55 = Sheriff ?
+C1_Trial1_E_56 = These have nothing to do with this case.
+C1_Trial1_E_57 = I’ll need to review them at the station.
+C1_Trial1_E_58 = How can you be so sure ? You barely looked at them.
+C1_Trial1_E_59 = … Sheriff intuition.
+C1_Trial1_E_60 = Also, it would take literal days to sort through these.
+C1_Trial1_E_61 = I don’t think we have the time today.
+C1_Trial1_E_62 = Alright, alright.
+C1_Trial1_E_63 = <color=#72B6E8>What’s in those letters ? He seems weirdly interested in them.</color>
+C1_Trial1_E_64 = <color=#72B6E8>Is he secretly a fan of reading people’s correspondence ?</color>
+C1_Trial1_E_65 = Erm… I’ll finish with my report then…
+C1_Trial1_E_66 = We searched the ship for survivors.
+C1_Trial1_E_67 = For the most part, we were unsuccessful.
+C1_Trial1_E_68 = For the most part ?
+C1_Trial1_E_69 = We found a knocked-out sailor on the bridge. He’s still alive.
+C1_Trial1_E_70 = Another survivor ?
+C1_Trial1_E_71 = Did he also see the murder take place ?
+C1_Trial1_E_72 = Or perhaps, is he the killer ?
+C1_Trial1_E_73 = I doubt it.
+C1_Trial1_E_74 = Jimm interrogated him briefly, and he didn’t know anything.
+C1_Trial1_E_75 = Actually, Jimm was the one who told him that the captain had died.
+C1_Trial1_E_76 = Hmm…
+C1_Trial1_E_77 = And where is this fellow ?
+C1_Trial1_E_78 = I’d like to hear him on the subject.
+C1_Trial1_E_79 = We have him waiting in the lounge.
+C1_Trial1_E_80 = I’ll go get him for you.
+C1_Trial1_E_81 = <color=#72B6E8>This is it. Whoever this is, he must be the killer.</color>
+C1_Trial1_E_82 = <color=#72B6E8>Otherwise, I’m done for.</color>
+C1_Trial1_E_83 = So, you are the other survivor of the crash ?
+C1_Trial1_E_84 = Yep. ‘Name’s Gerald Marin.
+C1_Trial1_E_85 = G-Gerald ?!
+C1_Trial1_E_86 = Oh, hi. Fancy seeing you here.
+C1_Trial1_E_87 = <color=#72B6E8>Wait. He’s the killer ?!</color>
+C1_Trial1_E_88 = <color=#72B6E8>This can’t be !</color>
+C1_Trial1_E_89 = <color=#72B6E8>Guh… Did I get something wrong ?</color>
+C1_Trial1_E_90 = We found him unconscious, so his memory may be a little hazy.
+C1_Trial1_E_91 = Still, he’ll be able to testify about the events that transpired that day.
+C1_Trial1_E_92 = I-I see.
+C1_Trial1_E_93 = Mr. Marin, could you tell us what happened the day of the crash ?
+C1_Trial1_E_94 = What were you doing, and how did you end up unconscious ?
+C1_Trial1_E_95 = Sure. I can do that.
+C1_Trial1_E_96 = I don’t have much to say, though. Don’t get excited over nothing.

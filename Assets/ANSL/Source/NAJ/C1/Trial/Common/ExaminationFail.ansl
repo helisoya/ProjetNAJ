@@ -48,6 +48,5 @@ else
 	:setJudgeEyeNormal()
 	:setJudgeNormal()
 	:setRannNormal(Coat)
-	wait(1)
 	fadeBg(0;false)
 endif
