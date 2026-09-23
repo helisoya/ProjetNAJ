@@ -1,0 +1,10 @@
+#EDBBFC755C6904C166C57B17633E1D4D-10E726449382E722A35AAB2128C1BDFD
+100|RivalPressureQuest|=|2
+41|2|5|RivalReactionToDrinkQuest == 1
+36|Char_Rival|null|Rival_Pressure_LoyalBaron_1
+100|ValueRival|-|2
+43|9
+36|Char_Rival|null|Rival_Pressure_LoyalRival_1
+100|ValueRival|+|1
+45|RivalGetInfosFromFils
+43|9

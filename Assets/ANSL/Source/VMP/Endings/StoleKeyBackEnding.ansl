@@ -1,0 +1,7 @@
+fadeBg(1;true)
+
+dialog(null;null;Ending_1)
+dialog(null;null;Ending_2)
+dialog(null;null;Ending_3)
+
+changeScene(VMPMainMenu)

@@ -2,7 +2,9 @@ if(TalkedBaron == 1 && TalkedChasseur == 1 && TalkedFils == 1 && TalkedHumain ==
 
 switch(CycleCount)
 case 0:
-load(/VMP/Events/KeySteal)
+	load(/VMP/Events/KeySteal)
+case 1:
+	load(/VMP/Events/Cycle2Start)
 
 endswitch
 

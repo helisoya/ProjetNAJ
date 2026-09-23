@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 360f3c178ac6f2b43934860febca4e1b
+    m_Address: ANSL/VMP/Room1/BaronDrinkQuestFail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 367dc887031f0ff47bc685ea42f8bc37
     m_Address: ANSL/VMP/Room1/Interaction
     m_ReadOnly: 0
@@ -33,8 +39,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 499eed7fe007f3341a51e2eaa50f2f16
+    m_Address: ANSL/VMP/Room1/BaronFilsQuestWeirdGood
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 57216b75d0980b84a957a1b20f2cf2ea
     m_Address: ANSL/VMP/Room1/BaronDrinkQuestOnTime
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98f372694d6487349a65f26d366b7bdc
+    m_Address: ANSL/VMP/Room1/BaronFilsQuestWeirdNeutral
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts

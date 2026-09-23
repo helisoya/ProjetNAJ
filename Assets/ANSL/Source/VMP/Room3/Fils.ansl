@@ -34,6 +34,23 @@ else
 						endif
 					endif
 
+					if(CycleCount == 2)
+						if(GetInfosFromFilsQuest == 1)
+							# Fils is weird quest
+							dialog(null;null;Fils_ConfrontRivalInfos_0)
+							choice(List)
+								choice Choice_Yes:
+									load(FilsRivalInfosConfront)
+								choice Choice_No:
+									load(FilsC2DefaultDialog)
+							endchoice
+
+						else
+							# Has not started the Fils Weird Quest
+							load(FilsC2DefaultDialog)
+						endif
+					endif		
+
 					variable(TalkedFils;=;1)
 				endif
 

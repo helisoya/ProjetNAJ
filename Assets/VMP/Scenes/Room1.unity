@@ -273,9 +273,9 @@ Transform:
   m_GameObject: {fileID: 1117566507}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.054777913, z: -0, w: 0.99849856}
-  m_LocalPosition: {x: -2.5401843, y: 2.58, z: -9.979664}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -2.5401843, y: 3.8, z: -9.979664}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 125855855177417785}
   m_LocalEulerAnglesHint: {x: 0, y: -6.28, z: 0}
@@ -2027,8 +2027,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.049, y: 5, z: -23.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 125855855177417785}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2198,7 +2198,7 @@ MonoBehaviour:
   defaultData:
     currentWeatherEffect: 
     currentLightDirection: {x: 50, y: -30, z: 0}
-    skyboxData: {fileID: 11400000, guid: 3c393467ae28b4f4f89d8d01c5af0816, type: 2}
+    skyboxData: 
   sunLight: {fileID: 8577627912959372659}
   weatherEffects:
     _serializedList:

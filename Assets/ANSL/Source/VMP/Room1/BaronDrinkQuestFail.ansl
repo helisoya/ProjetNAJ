@@ -1,0 +1,3 @@
+dialog(Char_Baron;null;Baron_DrinkQuestFail_1)
+dialog(Char_Baron;null;Baron_DrinkQuestFail_2)
+variable(ValueBaron;-;1)

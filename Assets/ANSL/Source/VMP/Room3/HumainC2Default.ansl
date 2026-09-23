@@ -1,0 +1,21 @@
+if(ValueHumain >= 1 || ValueFils >= 1)
+	if(ConfrontedHumainSecret == 1)
+		dialog(Char_Humain;null;Humain_AreYouReal_1)
+
+		choice(List)
+			choice Choice_Yes:
+				dialog(Char_Humain;null;Humain_AreYouReal_Yes_1)
+				variable(ValueHumain;+;2)
+			choice Choice_No:
+				dialog(Char_Humain;null;Humain_AreYouReal_No_1)
+				variable(ValueHumain;-;1)
+				variable(ValueFils;-;1)
+		endchoice
+	
+	else
+		load(HumainC2DefaultDialog)
+	endif
+else
+	load(HumainC2DefaultDialog)
+endif
+

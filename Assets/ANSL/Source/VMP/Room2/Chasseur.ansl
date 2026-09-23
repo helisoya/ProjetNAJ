@@ -16,13 +16,16 @@ else
 				if(TalkedChasseur == 1)
 					dialog(null;null;Talk_Character_Done_1)
 				else
-					if(CycleCount == 1)
-						if(LieToChasseurQuest == 1)
-							# Can lie to chasseur
-							load(ChasseurLieQuest)
-						else
-							# Default
+
+					if(LieToChasseurQuest == 1)
+						# Can lie to chasseur
+						load(ChasseurLieQuest)
+					else
+						# Default
+						if(CycleCount == 1)
 							load(ChasseurC1Default)
+						else
+							load(ChasseurC2Default)
 						endif
 					endif
 

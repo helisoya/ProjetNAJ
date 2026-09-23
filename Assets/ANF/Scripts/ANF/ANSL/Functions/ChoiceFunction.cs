@@ -120,7 +120,7 @@ namespace ANF.ANSL
                         currentCompiledPart = null;
                     }
                 }
-                else if (currentNextLine.StartsWith("choice"))
+                else if (currentNextLine.StartsWith("choice") && !currentNextLine.StartsWith("choice("))
                 {
                     if (currentNextLine.StartsWith("choice ") && currentNextLine.EndsWith(":"))
                     {

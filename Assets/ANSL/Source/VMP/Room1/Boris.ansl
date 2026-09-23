@@ -1,21 +1,49 @@
 if(LookCounter > 0)
 variable(LookCounter;-;1)
 
+if(ConfrontedChasseurSecret == 2)
+	dialog(null;null;Boris_Ending_1)
+	dialog(null;null;Boris_Ending_2)
+
+	choice(List)
+		choice Choice_Yes:
+			load(/VMP/Endings/StoleKeyBackEnding)
+		choice Choice_No:
+
+	endchoice
+endif
+
+
+
+
 switch(BorisCounter)
 case 0:
-dialog(null;null;Boris_Part1_1)
-variable(BorisCounter;+;1)
+	dialog(null;null;Boris_Part1_1)
+	variable(BorisCounter;+;1)
 case 1:
-dialog(null;null;Boris_Part2_1)
-variable(BorisCounter;+;1)
+	dialog(null;null;Boris_Part2_1)
+	variable(BorisCounter;+;1)
 case 2:
-dialog(null;null;Boris_Part3_1)
-variable(BorisCounter;+;1)
+	dialog(null;null;Boris_Part3_1)
+	variable(BorisCounter;+;1)
 case 3:
-dialog(null;null;Boris_Part4_1)
-variable(BorisCounter;+;1)
+	dialog(null;null;Boris_Part4_1)
+	variable(BorisCounter;+;1)
 case 4:
-dialog(Char_Boris;null;Boris_Part5_1)
+	dialog(Char_Boris;null;Boris_Part5_1)
+	variable(BorisCounter;+;1)
+
+case 5:
+	# You can legally address the skeleton in the room
+	if(DrinkQuest == 2)
+		# Give drink to boris
+		# Not possible under normal circumstances
+	else
+		# Boris is thirsty
+		dialog(Char_Boris;null;Boris_QuestDrink_1)
+		dialog(Char_Boris;null;Boris_QuestDrink_2)
+	endif
+
 
 endswitch
 

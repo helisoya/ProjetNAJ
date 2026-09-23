@@ -17,18 +17,33 @@ else
 					dialog(null;null;Talk_Character_Done_1)
 				else
 
+					if(DrinkQuest == 3 && CycleCount == 2)
+						# Fils Check Quest Result
+						if(FilsWeirdQuest == 4)
+							load(BaronFilsQuestWeirdGood)
+						else
+							load(BaronFilsQuestWeirdNeutral)
+						endif
+					endif
+
+
 					if(DrinkQuest == 2 && CycleCount == 1)
 						# Drink Quest done in time
 						load(BaronDrinkQuestOnTime)
 					endif
 
-					if(DrinkQuest == 2 && CycleCount > 1)
+					if(DrinkQuest == 2 && CycleCount == 2)
 						# Drink Quest done late
 						load(BaronDrinkQuestLate)
 					endif
 
-					if(DrinkQuest < 2)
-						# Drink Quest not started
+					if(DrinkQuest < 2 && CycleCount == 2)
+						# Drink Quest failed (Nothing at cycle 2)
+						load(BaronDrinkQuestFail)
+					endif
+
+					if(DrinkQuest < 2 && CycleCount == 1)
+						# Drink Quest not started (But still OK)
 						load(BaronDrinkQuestC1No)
 					endif
 

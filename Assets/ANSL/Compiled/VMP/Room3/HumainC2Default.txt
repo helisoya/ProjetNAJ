@@ -1,0 +1,18 @@
+#5B1CE5C63B7CB502C20A24B9E1BED725-10E726449382E722A35AAB2128C1BDFD
+41|1|15|ValueHumain >= 1 || ValueFils >= 1
+41|2|12|ConfrontedHumainSecret == 1
+36|Char_Humain|null|Humain_AreYouReal_1
+28|0|Choice_Yes|4|null|null|Choice_No|7|null|null
+36|Char_Humain|null|Humain_AreYouReal_Yes_1
+100|ValueHumain|+|2
+43|11
+36|Char_Humain|null|Humain_AreYouReal_No_1
+100|ValueHumain|-|1
+100|ValueFils|-|1
+43|11
+43|14
+45|HumainC2DefaultDialog
+43|14
+43|17
+45|HumainC2DefaultDialog
+43|17

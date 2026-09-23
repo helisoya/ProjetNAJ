@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d6ab3fb8b4e2684293f08b397f49a5d
+    m_Address: ANSL/VMP/Events/Cycle2Start
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5d75bac790507ee4fb0efc5dd9a87e57
     m_Address: ANSL/VMP/Events/Start
     m_ReadOnly: 0

@@ -1,0 +1,5 @@
+if(ConfrontedChasseurSecret == 2)
+	dialog(Char_Chasseur;null;Chasseur_C2Friend_1)
+else
+	dialog(Char_Chasseur;null;Chasseur_C2Default_1)
+endif

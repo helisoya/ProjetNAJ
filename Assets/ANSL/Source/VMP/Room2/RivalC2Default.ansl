@@ -1,0 +1,19 @@
+if(RivalReactionToDrinkQuest == 2)
+	load(RivalGetInfosFromFils)
+else
+	if(SecretRival == 1 && ConfrontedRivalSecret == 0)
+		dialog(null;null;Rival_Confront_0)
+		choice(List)
+			choice Choice_Yes:
+				load(RivalConfront)
+			choice Choice_No:
+				load(RivalC2DefaultDialog)
+		endchoice
+	else
+		load(RivalC2DefaultDialog)
+	endif
+endif
+
+
+
+

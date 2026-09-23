@@ -1,1 +1,12 @@
-dialog(Char_Chasseur;null;Chasseur_C1Default_1)
+if(SecretChasseur == 1 && ConfrontedChasseurSecret == 0)
+	dialog(null;null;Chasseur_Confront_0)
+	choice(List)
+		choice Choice_Yes:
+			load(ChasseurConfront)
+
+		choice Choice_No:
+			load(ChasseurC1DefaultDialog)
+	endchoice
+else
+	load(ChasseurC1DefaultDialog)
+endif

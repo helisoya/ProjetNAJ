@@ -17,20 +17,26 @@ else
 					dialog(null;null;Talk_Character_Done_1)
 				else
 
-					if(CycleCount == 1)
-						if(SecretHumain == 1 && ConfrontedHumainSecret == 0)
-							# Know the secret
-							dialog(null;null;Humain_Secret_0)
-							choice(List)
-								choice Choice_Yes:
-									load(HumainSecret)
-								choice Choice_No:
+					if(SecretHumain == 1 && ConfrontedHumainSecret == 0)
+						# Know the secret
+						dialog(null;null;Humain_Secret_0)
+						choice(List)
+							choice Choice_Yes:
+								load(HumainSecret)
+							choice Choice_No:
+								if(CycleCount == 1)
 									load(HumainC1Default)
-							endchoice
+								else
+									load(HumainC2Default)
+								endif
+						endchoice
 
-						else
-							# Has not found his secret
+					else
+						# Has not found his secret
+						if(CycleCount == 1)
 							load(HumainC1Default)
+						else
+							load(HumainC2Default)
 						endif
 					endif
 

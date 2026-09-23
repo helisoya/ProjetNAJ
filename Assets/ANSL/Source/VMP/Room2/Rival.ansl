@@ -27,6 +27,16 @@ else
 						endif
 					endif
 
+					if(CycleCount == 2)
+						if(PutPressureOnRival == 1)
+							# Put pressure on rival quest
+							load(RivalPressureQuest)
+						else
+							# Default
+							load(RivalC2Default)
+						endif
+					endif
+
 					variable(TalkedRival;=;1)
 				endif
 

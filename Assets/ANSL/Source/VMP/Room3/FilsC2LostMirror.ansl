@@ -1,0 +1,7 @@
+dialog(Char_Fils;null;Fils_LostMirror_1)
+
+if(FilsMirrorQuest == 1)
+	dialog(Char_Fils;null;Fils_LostMirror_AlreadyFound_1)
+	variable(ValueFils;+;1)
+	variable(FilsMirrorQuest;=;2)
+endif

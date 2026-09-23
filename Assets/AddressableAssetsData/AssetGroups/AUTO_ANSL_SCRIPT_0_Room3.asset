@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: AUTO_ANSL_SCRIPT_0_Room3
   m_GUID: d30a8239516b06343be932f5dcba4288
   m_SerializeEntries:
+  - m_GUID: 230b18d4adbb8784189293bd85c08427
+    m_Address: ANSL/VMP/Room3/FilsRivalInfosConfront
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3a5f560bede1a8e43b271852b1b34425
     m_Address: ANSL/VMP/Room3/Arrival
     m_ReadOnly: 0
@@ -23,6 +29,18 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 496377ecbe7b65743a614cf16d63c14d
     m_Address: ANSL/VMP/Room3/Drink
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50d18c0f729fa934ba5ee2bb020cc6f2
+    m_Address: ANSL/VMP/Room3/FilsC2LostMirror
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62b8d7aede98ab04aab78d9b12022f75
+    m_Address: ANSL/VMP/Room3/HumainC2Default
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts
@@ -63,8 +81,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd349e4b7ca7632468813e5b0edc133f
+    m_Address: ANSL/VMP/Room3/FilsC2ConfrontSecret
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d6327fc1b81f65441816b11d6ff09721
     m_Address: ANSL/VMP/Room3/Humain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efea59d701d8f354685c0ac36b31ec3c
+    m_Address: ANSL/VMP/Room3/FilsC2DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5bdb60cccdd1184b8b6bf1f0dedbf89
+    m_Address: ANSL/VMP/Room3/HumainC2DefaultDialog
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts

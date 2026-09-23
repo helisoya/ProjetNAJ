@@ -36,7 +36,8 @@ createUserVariable(DrinkQuest;0)
 # 0 : Not Started
 # 1 : Get Drink
 # 2 : Bring it back
-# 3 : Done
+# 3 : Given to Baron
+# 4 : Given to Boris
 
 createUserVariable(FilsWeirdQuest;0)
 # 0 : Not Started
@@ -45,15 +46,43 @@ createUserVariable(FilsWeirdQuest;0)
 # 3 : Bad to Fils
 # 4 : Nice to Fils
 
+createUserVariable(FilsMirrorQuest;0)
+# 0 : Search for it
+# 1 : Has mirror
+# 2 : Mirror given back
+
+createUserVariable(GetInfosFromFilsQuest;0)
+# 0 : Not Started
+# 1 : Talk to Fils
+# 2 : Learned Nothing
+# 3 : Chasseur is sus
+
 createUserVariable(LieToChasseurQuest;0)
 # 0 : Not Started
 # 1 : Lie to Chasseur
 # 2 : Lied to Chasseur
 # 3 : Revealed Fils secret
 
+createUserVariable(PutPressureOnRival;0)
+# 0 : Not Started
+# 1 : Should do
+# 2 : Done / Ignored
+
 createUserVariable(ConfrontedHumainSecret;0)
+# 0 : No
+# 1 : Yes (Result doesn't matter)
 
 createUserVariable(RivalReactionToDrinkQuest;0)
 # 0 : No reaction
 # 1 : We are not friends anymore >:(
 # 2 : Mueh eh eh
+
+createUserVariable(ConfrontedRivalSecret;0)
+# 0 : No
+# 1 : Yes (Result doesn't matter)
+
+
+createUserVariable(ConfrontedChasseurSecret;0)
+# 0 : No
+# 1 : Yes & Nothing happened
+# 2 : Yes & Joined them

@@ -1,0 +1,10 @@
+dialog(null;null;Fils_ConfrontRivalInfos_1)
+
+if(ValueFils >= 3)
+	dialog(Char_Fils;null;Fils_ConfrontRivalInfos_No_1)
+	variable(ValueFils;-;1)
+	load(FilsC2ConfrontSecret)
+else
+	dialog(Char_Fils;null;Fils_ConfrontRivalInfos_Friend_1)
+	load(FilsC2LostMirror)
+endif

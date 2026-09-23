@@ -1,7 +1,9 @@
-#D8A358B7703C31E21BBB5517FED70C2F-10E726449382E722A35AAB2128C1BDFD
-41|1|5|TalkedBaron == 1 && TalkedChasseur == 1 && TalkedFils == 1 && TalkedHumain == 1 && TalkedRival == 1 && SearchCounter == 0 && LookCounter == 0
-97|CycleCount|4|0|2
+#454DE649A1859CD0BE9DA646B52AB109-10E726449382E722A35AAB2128C1BDFD
+41|1|7|TalkedBaron == 1 && TalkedChasseur == 1 && TalkedFils == 1 && TalkedHumain == 1 && TalkedRival == 1 && SearchCounter == 0 && LookCounter == 0
+97|CycleCount|6|0|2|1|4
 45|/VMP/Events/KeySteal
-43|4
 43|6
+45|/VMP/Events/Cycle2Start
 43|6
+43|8
+43|8

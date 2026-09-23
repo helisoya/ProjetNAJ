@@ -1,52 +1,57 @@
-#D23FC2EF5556FDEB1218B993D35F8972-10E726449382E722A35AAB2128C1BDFD
+#85FF7D71D6A277D7445D7E2BCA628A16-10E726449382E722A35AAB2128C1BDFD
 41|1|3|TalkedHumain == 1 && CycleCount == 0
 36|null|null|Talk_Character_Done_1
-43|49
+43|54
 66|Humain|0|0.5|true
 74|Humain|Front
 75|Humain|Front
 66|Humain|1|0.5|false
-97|CycleCount|8|0|41
+97|CycleCount|8|0|46
 36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|Choice_Search|29|null|null|Choice_Nothing|39|null|null
+28|0|Choice_Talk|10|null|null|Choice_Search|34|null|null|Choice_Nothing|44|null|null
 41|11|13|TalkedHumain == 1
 36|null|null|Talk_Character_Done_1
-43|28
-41|14|25|CycleCount == 1
-41|15|22|SecretHumain == 1 && ConfrontedHumainSecret == 0
+43|33
+41|14|25|SecretHumain == 1 && ConfrontedHumainSecret == 0
 36|null|null|Humain_Secret_0
-28|0|Choice_Yes|17|null|null|Choice_No|19|null|null
+28|0|Choice_Yes|16|null|null|Choice_No|18|null|null
 45|HumainSecret
-43|21
-45|HumainC1Default
-43|21
 43|24
+41|19|21|CycleCount == 1
 45|HumainC1Default
+43|23
+45|HumainC2Default
+43|23
 43|24
-43|26
-43|26
+43|31
+41|26|28|CycleCount == 1
+45|HumainC1Default
+43|30
+45|HumainC2Default
+43|30
+43|31
 100|TalkedHumain|=|1
-43|28
-43|40
-41|30|36|SearchCounter > 0
+43|33
+43|45
+41|35|41|SearchCounter > 0
 100|SearchCounter|-|1
 100|SecretHumain|=|1
 36|null|null|Humain_SearchBelongings_1
 36|null|null|Humain_SearchBelongings_2
 45|/VMP/Common/PrintSearchCounter
-43|38
+43|43
 36|null|null|Counter_Search_0
-43|38
-43|40
-43|40
-43|44
+43|43
+43|45
+43|45
+43|49
 36|Char_Humain|null|Humain_Intro_1
 100|TalkedHumain|=|1
-43|44
+43|49
 66|Humain|0|0.5|true
 74|Humain|HumainSpot
 75|Humain|HumainSpot
 66|Humain|1|0.5|false
-43|49
+43|54
 45|/VMP/Common/CycleCheck
 45|Interaction

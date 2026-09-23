@@ -1,0 +1,18 @@
+dialog(null;null;Chasseur_Confront_1)
+dialog(Char_Chasseur;null;Chasseur_Confront_2)
+dialog(null;null;Chasseur_Confront_3)
+dialog(Char_Chasseur;null;Chasseur_Confront_4)
+dialog(Char_Chasseur;null;Chasseur_Confront_5)
+
+choice(List)
+	choice Choice_CanIJoin:
+		variable(ConfrontedChasseurSecret;=;2)
+		dialog(null;null;Chasseur_Confront_Join_1)
+		dialog(Char_Chasseur;null;Chasseur_Confront_Join_2)
+		variable(ValueChasseur;+;3)
+	choice Choice_Horrific:
+		variable(ConfrontedChasseurSecret;=;1)
+		dialog(Char_Chasseur;null;Chasseur_Confront_NoJoin_1)
+		dialog(Char_Chasseur;null;Chasseur_Confront_NoJoin_2)
+		variable(ValueChasseur;-;1)
+endchoice

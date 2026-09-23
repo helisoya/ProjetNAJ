@@ -1,1 +1,11 @@
-dialog(Char_Rival;null;Rival_C1Default_1)
+if(SecretRival == 1 && ConfrontedRivalSecret == 0)
+	dialog(null;null;Rival_Confront_0)
+	choice(List)
+		choice Choice_Yes:
+			load(RivalConfront)
+		choice Choice_No:
+			load(RivalC1DefaultDialog)
+	endchoice
+else
+	load(RivalC1DefaultDialog)
+endif

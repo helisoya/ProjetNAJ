@@ -1,4 +1,4 @@
-#B4A7C463B2CFE058B9E5D55D3040CDAA-10E726449382E722A35AAB2128C1BDFD
+#71731C0596DB3D284BC445A2F6764C22-10E726449382E722A35AAB2128C1BDFD
 32|CycleCount|0
 32|BorisCounter|0
 32|SearchCounter|0
@@ -20,6 +20,11 @@
 32|SecretChasseur|0
 32|DrinkQuest|0
 32|FilsWeirdQuest|0
+32|FilsMirrorQuest|0
+32|GetInfosFromFilsQuest|0
 32|LieToChasseurQuest|0
+32|PutPressureOnRival|0
 32|ConfrontedHumainSecret|0
 32|RivalReactionToDrinkQuest|0
+32|ConfrontedRivalSecret|0
+32|ConfrontedChasseurSecret|0

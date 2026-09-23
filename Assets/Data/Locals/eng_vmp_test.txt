@@ -23,6 +23,12 @@ Choice_No = No
 Choice_NotNow = Not now
 Choice_RevealSecret = Reveal the secret
 
+Choice_Fraud = You are a fraud
+Choice_ItsCool = Its cool
+
+Choice_CanIJoin = Can I join ?
+Choice_Horrific = Horrific !
+
 Choice_IAmLoyalToYou = I am loyal to you
 Choice_IAmLoyalToHim = I am loyal to him
 
@@ -68,11 +74,17 @@ Boris_Part3_1 = Did it wink at me ?
 Boris_Part4_1 = I can swear I saw it move.
 Boris_Part5_1 = You got me. I was the killer.
 
+Boris_Ending_1 = The keys are here.
+Boris_Ending_2 = Do I... pick them up ?
+
+Boris_QuestDrink_1 = Oy mate. Me want some drinking.
+Boris_QuestDrink_2 = Quest reward : Golden Key (HD).
+
 Baron_Intro_1 = My favorite laquey. I require your assistance.
 Baron_Intro_2 = Yes, milord ?
 Baron_Intro_3 = Fetch me my "special" drink.
 Baron_Intro_4 = I forgot to take it with me after I talked to that idiot minecraft lover son of mine.
-Baron_Intro_5 = It shall be done, milord.
+Baron_Intro_5 = Mueh eh eh !
 
 Rival_Intro_1 = It is I. Yesferatu.
 
@@ -183,6 +195,16 @@ Humain_Secret_Ally_3 = Okay. If you say so.
 
 Rival_C1Default_1 = ... Yes.
 
+Rival_Confront_0 = Should I talk about his secret ?
+
+Rival_Confront_1 = You aren't a true vampire.
+Rival_Confront_2 = So what ?!
+Rival_Confront_3 = Are you going to take pity on me ?
+
+Rival_Confront_Bad_1 = Yeah, you are a fraud.
+
+Rival_Confront_Nice_1 = No it's cool.
+
 Rival_ReactionToDrinkQuest_1 = I saw you give the baron his drink.
 Rival_ReactionToDrinkQuest_2 = I thought you only served me, idiot !
 
@@ -205,3 +227,81 @@ Chasseur_LieToHimQuest_Lie_1 = Hey, did you know that the baron's son hates mine
 Chasseur_LieToHimQuest_Lie_2 = He loves Terraria though.
 Chasseur_LieToHimQuest_Lie_3 = What ?!
 Chasseur_LieToHimQuest_Lie_4 = Then I got everything wrong !
+
+Chasseur_Confront_0 = Should I talk about their secret ?
+
+Chasseur_Confront_1 = Are you, in fact human ?
+Chasseur_Confront_2 = No....
+Chasseur_Confront_3 = Do you wish to destroy the vampires ?
+Chasseur_Confront_4 = No.........
+Chasseur_Confront_5 = Okay maybe a little...
+
+Chasseur_Confront_Join_1 = Can I join ?
+Chasseur_Confront_Join_2 = Yeah. The skeleton has the evidence.
+
+Chasseur_Confront_NoJoin_1 = I HATE YOU !
+Chasseur_Confront_NoJoin_2 = Actually, I love everybody super judge racing.
+
+
+# Cycle 2
+
+Cycle2Start_1 = Not much time left...
+
+Baron_FilsQuestEnd_Good_1 = So this idiot was actually a cosplayer all along ?
+Baron_FilsQuestEnd_Good_2 = I'll deal with this.
+Baron_FilsQuestEnd_Good_3 = In the meantime, go put pressure on my rival Yesferatu.
+Baron_FilsQuestEnd_Good_4 = I think he knows about my secret. Make sure to silence him.
+
+Baron_FilsQuestEnd_Neutral_1 = So he's just weird. What a muppet...
+
+Baron_DrinkQuestFail_1 = You... You failed me !
+Baron_DrinkQuestFail_2 = Get out of here !
+
+Chasseur_C2Default_1 = I saw Yesferatu near the tools...
+
+Chasseur_C2Friend_1 = Remember, the evidence is with the skeleton. But keep this for yourself.
+
+Rival_Pressure_LoyalBaron_1 = Grr ! I'll keep quiet for now.
+Rival_Pressure_LoyalRival_1 = Ah ah. The baron thinks I don't know his secret >:)
+
+Rival_GetInfosFromFils_1 = Go get juicy intel from the baron's weird son.
+
+Rival_C2Default_LoyalBaron_1 = Traitor...
+
+Rival_C2Default_Loyalty_1 = Alright, last chance.
+Rival_C2Default_Loyalty_2 = Are you still loyal to me ?
+
+Rival_C2Default_Loyalty_Nice_1 = My friend >:)
+Rival_C2Default_Loyalty_Centrist_1 = You... You centrist !
+
+Humain_C2Default_1 = It was real all along...
+
+Humain_AreYouReal_1 = Are you a real Steven ?
+Humain_AreYouReal_Yes_1 = Yes. AAAAAAOOOOOUUUUUUU
+Humain_AreYouReal_No_1 = No, I am Fabrice from Restou.
+
+Fils_ConfrontRivalInfos_0 = Should I confront him for informations ?
+Fils_ConfrontRivalInfos_1 = Do you have juicy informations ?
+
+Fils_C2Default_1 = The hunter is sus.
+
+Fils_C2ConfrontSecret_1 = Should I confront him on his secret ?
+Fils_C2ConfrontSecret_2 = What can you tell about these.
+Fils_C2ConfrontSecret_3 = So what ? Are you going to blackmail me.
+
+Fils_C2ConfrontSecret_NotNice_1 = Yeah.
+
+Fils_C2ConfrontSecret_Nice_1 = No.
+
+Fils_ConfrontRivalInfos_No_1 = No.
+Fils_ConfrontRivalInfos_Friend_1 = Actually, the hunter is sus.
+
+Fils_LostMirror_1 = I lost my mirror. Please find it back.
+Fils_LostMirror_AlreadyFound_1 = You already have it ?! OMG !
+
+
+# Endings
+
+Ending_1 = I betrayed the nice hunter and got the evidence.
+Ending_2 = Everybody is happy. (Except the hunter)
+Ending_3 = Yay.

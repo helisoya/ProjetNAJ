@@ -1,0 +1,6 @@
+if(ValueFils >= 3)
+	load(FilsC2LostMirror)
+else
+	dialog(Char_Fils;null;Fils_C2Default_1)
+	load(FilsC2ConfrontSecret)
+endif

@@ -1,0 +1,19 @@
+if(RivalReactionToDrinkQuest == 1)
+	dialog(Char_Rival;null;Rival_C2Default_LoyalBaron_1)
+else
+	dialog(Char_Rival;null;Rival_C2Default_Loyalty_1)
+	dialog(Char_Rival;null;Rival_C2Default_Loyalty_2)
+
+	choice(List)
+		choice Choice_Yes:
+			dialog(Char_Rival;null;Rival_C2Default_Loyalty_Nice_1)
+			variable(ValueRival;+;2)
+		choice Choice_No:
+			dialog(Char_Rival;null;Rival_C2Default_Loyalty_Centrist_1)
+			variable(ValueRival;-;1)
+	endchoice
+endif
+
+
+
+

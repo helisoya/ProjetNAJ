@@ -24,12 +24,6 @@ MonoBehaviour:
     m_path: Assets/VMP/Scenes/VMPMainMenu.unity
   - m_enabled: 1
     m_path: Assets/VMP/Scenes/VMPGame.unity
-  - m_enabled: 1
-    m_path: Assets/VMP/Scenes/Room1.unity
-  - m_enabled: 1
-    m_path: Assets/VMP/Scenes/Room2.unity
-  - m_enabled: 1
-    m_path: Assets/VMP/Scenes/Room3.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

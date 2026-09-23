@@ -1,0 +1,12 @@
+variable(RivalPressureQuest;=;2)
+
+if(RivalReactionToDrinkQuest == 1)
+	# Loyal Baron
+	dialog(Char_Rival;null;Rival_Pressure_LoyalBaron_1)
+	variable(ValueRival;-;2)
+else
+	# Loyal Rival
+	dialog(Char_Rival;null;Rival_Pressure_LoyalRival_1)
+	variable(ValueRival;+;1)
+	load(RivalGetInfosFromFils)
+endif

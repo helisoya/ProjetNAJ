@@ -16,5 +16,11 @@ choice(List)
 		variable(ValueFils;-;3)
 		variable(ValueChasseur;+;2)
 	choice Choice_NotNow:
-		load(ChasseurC1Default)
+		switch(CycleCount)
+			case 1:
+				load(ChasseurC1Default)
+			case 2:
+				load(ChasseurC2Default)
+		endswitch
+			
 endchoice

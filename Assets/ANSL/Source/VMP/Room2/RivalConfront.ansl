@@ -1,0 +1,14 @@
+variable(ConfrontedRivalSecret;=;1)
+dialog(null;null;Rival_Confront_1)
+dialog(Char_Rival;null;Rival_Confront_2)
+dialog(Char_Rival;null;Rival_Confront_3)
+
+choice(List)
+	choice Choice_Fraud:
+		dialog(null;null;Rival_Confront_Bad_1)
+		variable(ValueRival;-;2)
+	choice Choice_ItsCool:
+		dialog(null;null;Rival_Confront_Nice_1)
+		variable(ValueRival;+;2)
+endchoice
+

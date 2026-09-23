@@ -1,0 +1,6 @@
+dialog(Char_Baron;null;Baron_FilsQuestEnd_Good_1)
+dialog(Char_Baron;null;Baron_FilsQuestEnd_Good_2)
+dialog(Char_Baron;null;Baron_FilsQuestEnd_Good_3)
+dialog(Char_Baron;null;Baron_FilsQuestEnd_Good_4)
+variable(ValueBaron;+;1)
+variable(PutPressureOnRival;=;1)

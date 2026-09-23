@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,15 +100,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Baron_0
+      name: Baron_Body
       rect:
         serializedVersion: 2
-        x: 0
+        x: 448
         y: 0
-        width: 288
-        height: 313
+        width: 1600
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -117,6 +117,50 @@ TextureImporter:
       bones: []
       spriteID: 7c9e6f7e61b0c33d0800000000000000
       internalID: -3225691040095213113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron_Eye_Normal
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1799
+        width: 261
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b846f642264a29a49a6e33ab9660b38d
+      internalID: 15217609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron_Eye_Angry
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1558
+        width: 261
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaae2c197b4d79848835a98582ff2895
+      internalID: 223868909
       vertices: []
       indices: 
       edges: []
@@ -134,7 +178,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Baron_0: -2006466830
+      Baron_1: 679278575
+      Baron_Body: -3225691040095213113
+      Baron_Eye_Angry: 223868909
+      Baron_Eye_Normal: 15217609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

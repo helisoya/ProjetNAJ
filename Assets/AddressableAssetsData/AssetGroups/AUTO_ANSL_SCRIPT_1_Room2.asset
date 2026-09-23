@@ -27,8 +27,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e64247aa6ee1ce4ba6e31ff6122f247
+    m_Address: ANSL/VMP/Room2/RivalConfront
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 28ada1bfe4b6b15448de01c4e03daaf0
     m_Address: ANSL/VMP/Room2/RivalC1Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c1d9c4c897d1e44ca372bee2e21fda4
+    m_Address: ANSL/VMP/Room2/RivalC2DefaultDialog
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts
@@ -39,8 +51,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62ca6c5bbbc2aad419f29a1c762d2b1f
+    m_Address: ANSL/VMP/Room2/ChasseurConfront
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 773d8d9719654bd449b950dd0d6db679
     m_Address: ANSL/VMP/Room2/Interaction
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e6fb2cf3b9048c40a8713a693b79a9c
+    m_Address: ANSL/VMP/Room2/ChasseurC2Default
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts
@@ -51,8 +75,44 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9db7c3518609b554f9b245c6428fa480
+    m_Address: ANSL/VMP/Room2/RivalC1DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be966da5e2316a74f92caa3b6e88ef84
+    m_Address: ANSL/VMP/Room2/RivalGetInfosFromFils
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4c67c5982fbcf94ea1efc417b525746
+    m_Address: ANSL/VMP/Room2/RivalPressureQuest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4e0da3e74a89c1468370346be8bd6f1
+    m_Address: ANSL/VMP/Room2/ChasseurC1DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cb2a609be6f85f84db25df8c384021f9
     m_Address: ANSL/VMP/Room2/Chasseur
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d23ab630a41cb3b41993b8d8b78f7705
+    m_Address: ANSL/VMP/Room2/ChasseurC2DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e08cef3743c6c9d47a98592de66ddc3b
+    m_Address: ANSL/VMP/Room2/RivalC2Default
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts
