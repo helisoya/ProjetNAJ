@@ -4,7 +4,7 @@
 36|null|null|Chasseur_Confront_3
 36|Char_Chasseur|null|Chasseur_Confront_4
 36|Char_Chasseur|null|Chasseur_Confront_5
-28|0|Choice_CanIJoin|6|null|null|Choice_Horrific|11|null|null
+28|0|Choice_CanIJoin|6|null|null|null|Choice_Horrific|11|null|null|null
 100|ConfrontedChasseurSecret|=|2
 36|null|null|Chasseur_Confront_Join_1
 36|Char_Chasseur|null|Chasseur_Confront_Join_2

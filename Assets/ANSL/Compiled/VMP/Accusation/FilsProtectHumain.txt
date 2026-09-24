@@ -1,0 +1,25 @@
+#AA30388D22897EC244ABACD6C5210252-10E726449382E722A35AAB2128C1BDFD
+66|Chasseur|0|0.5|true
+66|Rival|0|0.5|true
+66|Fils|1|0.5|false
+36|Char_Fils|null|Trial_FilsProtectHumain_1
+36|null|null|Trial_FilsProtectHumain_2
+28|0|Choice_HelpChasseur|6|null|null|null|Choice_HelpFils|9|null|null|null|Choice_StaySilent|18|null|null|null
+36|null|null|Trial_HelpChasseur_1
+100|AttackedSame1|=|2
+43|19
+100|AttackedSame1|=|1
+36|null|null|Trial_HelpFils_1
+41|12|14|AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
+45|/VMP/Endings/Centrist
+43|16
+45|/VMP/Endings/ChasseurDead
+43|16
+59
+43|19
+43|19
+41|20|22|AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
+45|/VMP/Endings/Centrist
+43|24
+45|/VMP/Endings/FilsHumainDead
+43|24

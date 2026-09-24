@@ -1,0 +1,42 @@
+setCharacterAlpha(Rival;0;0.5;true)
+setCharacterAlpha(Baron;1;0.5;false)
+
+dialog(Char_Baron;null;Trial_BaronSavesPlayer_1)
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterAlpha(Chasseur;1;0.5;false)
+
+dialog(Char_Chasseur;null;Trial_BaronSavesPlayer_2)
+
+setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterAlpha(Rival;1;0.5;false)
+
+dialog(Char_Rival;null;Trial_BaronSavesPlayer_3)
+
+if(ConfrontedChasseurSecret == 2)
+
+	choice(List)
+		choice Choice_BetrayHunter:
+			variable(ValueHunter;-;3)
+			dialog(null;null;Trial_PlayerSaveRival_1)
+
+			setCharacterAlpha(Rival;0;0.5;true)
+			setCharacterAlpha(Chasseur;1;0.5;false)
+
+			dialog(Char_Chasseur;null;Trial_PlayerSaveRival_2)
+
+			if(FilsWeirdQuest == 3)
+				load(FilsAttackChasseur)
+			else
+				load(BaronSavesFils)
+			endif
+			return()
+		choice Choice_StaySilent:
+
+	endchoice
+endif
+
+
+# Default : Yesferatu's downfall
+
+load(/VMP/Endings/RivalDead)

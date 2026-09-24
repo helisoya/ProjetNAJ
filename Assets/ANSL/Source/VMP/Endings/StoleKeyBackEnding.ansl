@@ -1,7 +1,7 @@
 fadeBg(1;true)
 
-dialog(null;null;Ending_1)
-dialog(null;null;Ending_2)
-dialog(null;null;Ending_3)
+dialog(null;null;Ending_StoleKeyBack_1)
+dialog(null;null;Ending_StoleKeyBack_2)
+dialog(null;null;Ending_StoleKeyBack_3)
 
 changeScene(VMPMainMenu)

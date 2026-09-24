@@ -8,7 +8,7 @@
 66|Chasseur|1|0.5|false
 97|CycleCount|8|0|37
 36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|Choice_Search|25|null|null|Choice_Nothing|35|null|null
+28|0|Choice_Talk|10|null|null|null|Choice_Search|25|null|null|null|Choice_Nothing|35|null|null|null
 41|11|13|TalkedChasseur == 1
 36|null|null|Talk_Character_Done_1
 43|24

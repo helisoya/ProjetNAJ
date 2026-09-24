@@ -30,6 +30,8 @@ createUserVariable(SecretFils;0)
 createUserVariable(SecretHumain;0)
 createUserVariable(SecretChasseur;0)
 
+createUserVariable(AttackedSame1;0)
+createUserVariable(AttackedSame2;0)
 
 
 createUserVariable(DrinkQuest;0)

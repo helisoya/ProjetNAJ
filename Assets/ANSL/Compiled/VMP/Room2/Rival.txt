@@ -8,7 +8,7 @@
 66|Rival|1|0.5|false
 97|CycleCount|8|0|44
 36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|Choice_Search|32|null|null|Choice_Nothing|42|null|null
+28|0|Choice_Talk|10|null|null|null|Choice_Search|32|null|null|null|Choice_Nothing|42|null|null|null
 41|11|13|TalkedRival == 1
 36|null|null|Talk_Character_Done_1
 43|31

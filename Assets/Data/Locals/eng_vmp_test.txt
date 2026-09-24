@@ -32,6 +32,17 @@ Choice_Horrific = Horrific !
 Choice_IAmLoyalToYou = I am loyal to you
 Choice_IAmLoyalToHim = I am loyal to him
 
+Choice_BetrayHumain = Betray the human
+Choice_BetrayFils = Betray the son
+Choice_BetrayHunter = Betray the hunter
+Choice_StaySilent = Stay silent
+
+Choice_HelpChasseur = Help the hunter
+Choice_HelpBaron = Help the baron
+Choice_HelpRival = Help the son
+Choice_HelpFils = Help the fils
+
+
 # Common
 
 Counter_Look_9 = I have the time to look at 9 more things.
@@ -299,9 +310,77 @@ Fils_ConfrontRivalInfos_Friend_1 = Actually, the hunter is sus.
 Fils_LostMirror_1 = I lost my mirror. Please find it back.
 Fils_LostMirror_AlreadyFound_1 = You already have it ?! OMG !
 
+# Vampire Trial
+
+Trial_Start_1 = Okay, I've had enough !
+Trial_Start_2 = Yesferatu, you stole my evidence !
+
+Trial_Start_Default_1 = Ho no ! It's the hunter !
+Trial_Start_Default_2 = They are actually a former human, and a vampire hunter no less !
+Trial_Start_Default_3 = Ah ! I changed my ways since then.
+Trial_Start_Default_4 = You want a real human ? What about that Death Vampire guy ?
+Trial_Start_Default_5 = He's an actual human !
+
+Trial_Start_FriendRival_1 = Ah ah ! I know you secret, baron !
+Trial_Start_FriendRival_2 = You drink flavored water like an idiot !
+Trial_Start_FriendRival_3 = And you are a fraud :)
+Trial_Start_FriendRival_4 = Guh ! It was the werewolf.
+Trial_Start_FriendRival_5 = Who can trust sbiven, amiright ?
+Trial_Start_FriendRival_6 = Uh...
+
+Trial_BetrayHunter_1 = Well, to be frank, the hunter is a former human and is sus.
+Trial_BetrayHunter_2 = Nope, Death vader is a real human.
+
+Trial_BetrayHumain_1 = Well, we have a red human spy amongst us.
+
+Trial_BetrayFils_1 = The son is an emu and is sus !
+
+Trial_FilsProtectHumain_1 = No ! This is a lie, you garlic loving freak !
+Trial_FilsProtectHumain_2 = Should I back someone up ?
+
+Trial_HelpChasseur_1 = The hunter is innocent.
+
+Trial_HelpFils_1 = The hunter is sus indeed.
+
+Trial_BaronSavesPlayer_1 = He's innocent. Trust me.
+Trial_BaronSavesPlayer_2 = I saw Yesferatu tamper with the tools in the shed !
+Trial_BaronSavesPlayer_3 = What ? No !
+
+Trial_PlayerSaveRival_1 = Don't listen to him ! The hunter is a former vampire hunter !
+Trial_PlayerSaveRival_2 = Ah, but actually, the son is more sus. He is an emu.
+
+Trial_BaronSavesFils_1 = No ! He just loves minecraft.
+Trial_BaronSavesFils_2 = That's very sus to be frank...
+
+Trial_SaveBaron_1 = Yesferatu is more sus.
+
+Trial_KillBaron_1 = Yep.
+
+Trial_FilsDefense_1 = This is all a lie !
+Trial_FilsDefense_2 = Should I help him ?
+
+Trial_FilsDefense_3 = Oh, and what about your human friend ?
+Trial_FilsDefense_4 = Damn it...
+
+Trial_SaveFils_1 = He's right. The hunter is more sus.
 
 # Endings
 
-Ending_1 = I betrayed the nice hunter and got the evidence.
-Ending_2 = Everybody is happy. (Except the hunter)
-Ending_3 = Yay.
+Ending_StoleKeyBack_1 = I betrayed the nice hunter and got the evidence.
+Ending_StoleKeyBack_2 = Everybody is happy. (Except the hunter)
+Ending_StoleKeyBack_3 = Yay.
+
+Ending_NoSecrets_1 = With no secrets and no friends, they killed me.
+Ending_NoSecrets_2 = Actually, it wasn't me...
+
+Ending_Centrist_1 = Since I played on everybody's side, they killed me instead :(
+
+Ending_FilsHumainDead_1 = And thus, the son and his human friend died.
+
+Ending_ChasseurDead_1 = And thus, the hunter died. He was the real perpetrator.
+
+Ending_RivalDead_1 = And thus, Yesferatu died. 
+
+Ending_BaronDead_1 = And thus, the baron died.
+
+Ending_PlayerHatedByFils_1 = Hated by the baron's son. I was killed : (

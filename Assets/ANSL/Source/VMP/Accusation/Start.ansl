@@ -1,0 +1,61 @@
+# Trial Start / Baron accuse Rival
+# Par défaut : Rival accuse Chasseur, Chasseur accuse humain
+# Si rival connais secret baron : Rival accuse baron, baron accuse rival, rival accuse joueur
+
+fadeFg(1;true)
+
+removeAllCharacters()
+
+setBackground(Room1)
+
+addCharacter(Baron;false;Front)
+addCharacter(Chasseur;true;Front)
+addCharacter(Fils;true;Front)
+addCharacter(Rival;true;Front)
+addCharacter(Humain;true;Front)
+
+fadeFg(0;false)
+
+dialog(Char_Baron;null;Trial_Start_1)
+dialog(Char_Baron;null;Trial_Start_2)
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterAlpha(Rival;1;0.5;false)
+
+if(RivalReactionToDrinkQuest == 2)
+	# Rival > Baron > Rival > Joueur
+
+	dialog(Char_Rival;null;Trial_Start_FriendRival_1)
+	dialog(Char_Rival;null;Trial_Start_FriendRival_2)
+
+	setCharacterAlpha(Rival;0;0.5;true)
+	setCharacterAlpha(Baron;1;0.5;false)
+
+	dialog(Char_Baron;null;Trial_Start_FriendRival_3)
+
+	setCharacterAlpha(Baron;0;0.5;true)
+	setCharacterAlpha(Rival;1;0.5;false)
+
+	dialog(Char_Rival;null;Trial_Start_FriendRival_4)
+	dialog(Char_Rival;null;Trial_Start_FriendRival_5)
+
+	dialog(null;null;Trial_Start_FriendRival_6)
+
+	load(PlayerSecretChoice)
+
+else
+	# Default
+	# Rival > Chasseur > Humain
+
+	dialog(Char_Rival;null;Trial_Start_Default_1)
+	dialog(Char_Rival;null;Trial_Start_Default_2)
+
+	setCharacterAlpha(Rival;0;0.5;true)
+	setCharacterAlpha(Chasseur;1;0.5;false)
+
+	dialog(Char_Chasseur;null;Trial_Start_Default_3)
+	dialog(Char_Chasseur;null;Trial_Start_Default_4)
+	dialog(Char_Chasseur;null;Trial_Start_Default_5)
+
+	load(FilsProtectHumain)
+endif

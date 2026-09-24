@@ -1,7 +1,9 @@
 using ANF.GUI;
+using ANF.Persistent;
 using ANF.Utils;
 using Leguar.TotalJSON;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 
 namespace ANF.ANSL
@@ -91,6 +93,7 @@ namespace ANF.ANSL
             bool foundEnd = false;
             List<string> buttonKey = new List<string>();
             List<string> buttonSprite = new List<string>();
+            List<string> buttonIf = new List<string>();
             List<string> buttonSpriteSheet = new List<string>();
             List<List<string>> compiledParts = new List<List<string>>();
 
@@ -128,10 +131,11 @@ namespace ANF.ANSL
 
                         string[] splitedChoiceData = choiceData.Split(' ');
                         // 0 = Choice token
-                        // 1 = Sprite
-                        // 2 = Sprite Sheet
+                        // 1...X = If
+                        // ...X + 1 = Sprite
+                        // ...X + 2 = Sprite Sheet
 
-                        if (splitedChoiceData.Length == 0 || splitedChoiceData.Length > 3)
+                        if (splitedChoiceData.Length == 0)
                         {
                             errors.Add(new ANSLUtils.ANSLError()
                             {
@@ -155,6 +159,36 @@ namespace ANF.ANSL
                             return false;
                         }
 
+                        string choiceIfData = "";
+                        int currentIdx = 0;
+
+                        if (splitedChoiceData.Length >= 2 && splitedChoiceData[1].StartsWith('('))
+                        {
+                            while (currentIdx < splitedChoiceData.Length && !choiceIfData.EndsWith(')'))
+                            {
+                                currentIdx++;
+                                choiceIfData += splitedChoiceData[currentIdx];
+                            }
+
+                            if (!choiceIfData.EndsWith(')'))
+                            {
+                                errors.Add(new ANSLUtils.ANSLError()
+                                {
+                                    type = ANSLUtils.ANSLErrorType.ERROR,
+                                    filePath = compiler.GetSourceFilepath(),
+                                    line = compiler.GetCurrentLineCounter(),
+                                    errorMessage = $"Invalid if content : {currentNextLine}."
+                                });
+                                return false;
+                            }
+                            choiceIfData = choiceIfData.Substring(1, choiceIfData.Length - 2);
+                        }
+                        else
+                        {
+                            choiceIfData = "null";
+                        }
+
+
                         if (currentCompiledPart != null)
                         {
                             compiledParts.Add(currentCompiledPart);
@@ -163,16 +197,29 @@ namespace ANF.ANSL
 
                         currentCompiledPart = new List<string>();
                         buttonKey.Add(splitedChoiceData[0]);
+                        buttonIf.Add(choiceIfData);
 
-                        if (splitedChoiceData.Length >= 2 && !string.IsNullOrEmpty(splitedChoiceData[1]))
-                            buttonSprite.Add(splitedChoiceData[1]);
+                        if (splitedChoiceData.Length > currentIdx + 1 && !string.IsNullOrEmpty(splitedChoiceData[currentIdx + 1]))
+                            buttonSprite.Add(splitedChoiceData[currentIdx + 1]);
                         else
                             buttonSprite.Add("null");
 
-                        if (splitedChoiceData.Length == 3 && !string.IsNullOrEmpty(splitedChoiceData[2]))
-                            buttonSpriteSheet.Add(splitedChoiceData[2]);
+                        if (splitedChoiceData.Length > currentIdx + 2 && !string.IsNullOrEmpty(splitedChoiceData[currentIdx + 2]))
+                            buttonSpriteSheet.Add(splitedChoiceData[currentIdx + 2]);
                         else
                             buttonSpriteSheet.Add("null");
+
+                        if (splitedChoiceData.Length - currentIdx >= 4)
+                        {
+                            errors.Add(new ANSLUtils.ANSLError()
+                            {
+                                type = ANSLUtils.ANSLErrorType.ERROR,
+                                filePath = compiler.GetSourceFilepath(),
+                                line = compiler.GetCurrentLineCounter(),
+                                errorMessage = $"Too many choice parameters : {currentNextLine}."
+                            });
+                            return false;
+                        }
                     }
                     else
                     {
@@ -242,12 +289,12 @@ namespace ANF.ANSL
             }
 
             // Choice
-            // ID TYPE [CHOICE_ID NEXT_LINE SPRITE_NAME, SPRITE_SHEET]
+            // ID TYPE [CHOICE_ID NEXT_LINE IF_CONTENT SPRITE_NAME SPRITE_SHEET]
 
             string compiledChoiceLine = $"{id}|{choiceType.ToString()}";
             for (int i = 0; i < compiledParts.Count; i++)
             {
-                compiledChoiceLine += $"|{buttonKey[i]}|{starts[i]}|{buttonSprite[i]}|{buttonSpriteSheet[i]}";
+                compiledChoiceLine += $"|{buttonKey[i]}|{starts[i]}|{buttonIf[i]}|{buttonSprite[i]}|{buttonSpriteSheet[i]}";
 
                 compiledLines.AddRange(compiledParts[i]);
 
@@ -266,19 +313,47 @@ namespace ANF.ANSL
                 parameters.GetParameter(1, out string[] choices) &&
                 manager.GetGUIManager().GetComponent<ChoiceUI>(out choiceUI))
             {
+
+                PlayerVariableContainer variableContainer = null;
+                PersistentDataManager.instance.GetPlayerData().GetComponent(out variableContainer);
+
+                bool[] valid = new bool[choices.Length / 5];
+
+                int validCount = 0;
+
+                for (int i = 0; i < choices.Length; i += 5)
+                {
+                    string ifContent = choices[i + 2];
+
+                    if (ifContent.Equals("null") || variableContainer == null)
+                        valid[i / 5] = true;
+                    else
+                        ANFUtils.CheckIfContentImpl(ifContent, variableContainer, out valid[i / 5]);
+
+                    if (valid[i / 5])
+                        validCount++;
+                }
+
+
                 ChoiceData data = new ChoiceData();
                 data.type = (ChoiceData.ChoiceType)type;
-                data.entries = new ChoiceData.ChoiceDataEntry[choices.Length / 4];
+                data.entries = new ChoiceData.ChoiceDataEntry[validCount];
+                int buttonIdx = 0;
 
-                for (int i = 0; i < choices.Length; i += 4)
+                for (int i = 0; i < choices.Length; i += 5)
                 {
-                    data.entries[i / 4] = new ChoiceData.ChoiceDataEntry()
+                    if (valid[i / 5])
                     {
-                        textKey = choices[i],
-                        linkedLine = uint.Parse(choices[i + 1]),
-                        linkedSprite = choices[i + 2] == "null" ? null : choices[i + 2],
-                        linkedSpritesheet = choices[i + 3] == "null" ? null : choices[i + 3]
-                    };
+                        data.entries[buttonIdx] = new ChoiceData.ChoiceDataEntry()
+                        {
+                            textKey = choices[i],
+                            linkedLine = uint.Parse(choices[i + 1]),
+                            linkedSprite = choices[i + 3] == "null" ? null : choices[i + 3],
+                            linkedSpritesheet = choices[i + 4] == "null" ? null : choices[i + 4]
+                        };
+                        buttonIdx++;
+                    }
+
                 }
 
                 choiceUI.SetEnabled(true, data);

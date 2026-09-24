@@ -14,37 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_6_Tests
   m_GUID: 180cb66bdec9e13468a3a676c05d7762
-  m_SerializeEntries:
-  - m_GUID: 07e71e557b10fb141847422294d129e3
-    m_Address: ANSL/NAJ/Tests/Inventory
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 69a63778aa615764ebc0103cca84ed32
-    m_Address: ANSL/NAJ/Tests/CrossExamination
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 71575a32bf2939e42be02ddd63c7cd9b
-    m_Address: ANSL/NAJ/Tests/CrossExamination2
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 92559bfb38d8c7e439454b5d8f18eb6a
-    m_Address: ANSL/NAJ/Tests/EvidenceInfo
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a8d8471da8d594a4db451fb27ab2fa59
-    m_Address: ANSL/NAJ/Tests/UIAnimation
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

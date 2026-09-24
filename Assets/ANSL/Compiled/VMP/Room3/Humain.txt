@@ -8,13 +8,13 @@
 66|Humain|1|0.5|false
 97|CycleCount|8|0|46
 36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|Choice_Search|34|null|null|Choice_Nothing|44|null|null
+28|0|Choice_Talk|10|null|null|null|Choice_Search|34|null|null|null|Choice_Nothing|44|null|null|null
 41|11|13|TalkedHumain == 1
 36|null|null|Talk_Character_Done_1
 43|33
 41|14|25|SecretHumain == 1 && ConfrontedHumainSecret == 0
 36|null|null|Humain_Secret_0
-28|0|Choice_Yes|16|null|null|Choice_No|18|null|null
+28|0|Choice_Yes|16|null|null|null|Choice_No|18|null|null|null
 45|HumainSecret
 43|24
 41|19|21|CycleCount == 1

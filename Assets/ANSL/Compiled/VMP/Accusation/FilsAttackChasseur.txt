@@ -1,0 +1,26 @@
+#8FCC36F75A79CA672DA0B97FE64FECD3-10E726449382E722A35AAB2128C1BDFD
+66|Chasseur|0|0.5|true
+66|Rival|0|0.5|true
+66|Fils|1|0.5|false
+36|Char_Fils|null|Trial_FilsDefense_1
+41|5|13|ValueFils >= 3
+36|null|null|Trial_FilsDefense_2
+28|0|Choice_HelpFils|7|null|null|null|Choice_StaySilent|11|null|null|null
+36|null|null|Trial_SaveFils_1
+100|ValueChasseur|-|3
+59
+43|12
+43|12
+43|14
+43|14
+66|Fils|0|0.5|true
+66|Chasseur|1|0.5|false
+36|Char_Chasseur|null|Trial_FilsDefense_3
+66|Chasseur|0|0.5|true
+66|Fils|1|0.5|false
+36|Char_Chasseur|null|Trial_FilsDefense_4
+41|21|23|ValueFils <= 0
+45|/VMP/Endings/PlayerHatedByFils
+43|25
+45|/VMP/Endings/FilsHumainDead
+43|25

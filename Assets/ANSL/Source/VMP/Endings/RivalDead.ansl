@@ -1,0 +1,5 @@
+fadeBg(1;true)
+
+dialog(null;null;Ending_RivalDead_1)
+
+changeScene(VMPMainMenu)

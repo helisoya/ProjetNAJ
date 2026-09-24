@@ -8,14 +8,14 @@
 66|Fils|1|0.5|false
 97|CycleCount|8|0|54
 36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|Choice_Search|42|null|null|Choice_Nothing|52|null|null
+28|0|Choice_Talk|10|null|null|null|Choice_Search|42|null|null|null|Choice_Nothing|52|null|null|null
 41|11|13|TalkedFils == 1
 36|null|null|Talk_Character_Done_1
 43|41
 41|14|25|CycleCount == 1
 41|15|22|FilsWeirdQuest == 1
 36|null|null|Fils_Confront_0
-28|0|Choice_Yes|17|null|null|Choice_No|19|null|null
+28|0|Choice_Yes|17|null|null|null|Choice_No|19|null|null|null
 45|FilsC1Confront
 43|21
 45|FilsC1DefaultDialog
@@ -28,7 +28,7 @@
 41|27|38|CycleCount == 2
 41|28|35|GetInfosFromFilsQuest == 1
 36|null|null|Fils_ConfrontRivalInfos_0
-28|0|Choice_Yes|30|null|null|Choice_No|32|null|null
+28|0|Choice_Yes|30|null|null|null|Choice_No|32|null|null|null
 45|FilsRivalInfosConfront
 43|34
 45|FilsC2DefaultDialog

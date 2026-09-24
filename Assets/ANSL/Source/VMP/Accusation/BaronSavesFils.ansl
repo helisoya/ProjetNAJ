@@ -1,0 +1,20 @@
+setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterAlpha(Baron;1;0.5;false)
+
+dialog(Char_Baron;null;Trial_BaronSavesFils_1)
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterAlpha(Rival;1;0.5;false)
+
+dialog(Char_Rival;null;Trial_BaronSavesFils_2)
+
+choice(List)
+	choice Choice_HelpRival:
+		variable(ValueBaron;-;3)
+		dialog(null;null;Trial_KillBaron_1)
+		load(/VMP/Endings/BaronDead)
+	choice Choice_HelpBaron:
+		variable(ValueRival;-;3)
+		dialog(null;null;Trial_SaveBaron_1)
+		load(/VMP/Endings/RivalDead)
+endchoice

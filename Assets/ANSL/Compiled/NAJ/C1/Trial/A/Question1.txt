@@ -11,7 +11,7 @@
 36|Char_Judge|Judge|C1_Trial_C_59
 36|Char_Judge|Judge|C1_Trial_C_60
 38|0.75|false
-28|2|Choice_Question1_Juno|13|C1_Choice_Juno|C1_Choice|Choice_Question1_Sheriff|67|C1_Choice_Robert|C1_Choice|Choice_Question1_Suicide|89|C1_Choice_Suicide|C1_Choice|Choice_Question1_Sailor|110|C1_Choice_Sailor|C1_Choice|Choice_Question1_Animal|113|C1_Choice_Animal|C1_Choice
+28|2|Choice_Question1_Juno|13|null|C1_Choice_Juno|C1_Choice|Choice_Question1_Sheriff|67|null|C1_Choice_Robert|C1_Choice|Choice_Question1_Suicide|89|null|C1_Choice_Suicide|C1_Choice|Choice_Question1_Sailor|110|null|C1_Choice_Sailor|C1_Choice|Choice_Question1_Animal|113|null|C1_Choice_Animal|C1_Choice
 38|0|false
 64|DefenseCam
 65|DefenseCam

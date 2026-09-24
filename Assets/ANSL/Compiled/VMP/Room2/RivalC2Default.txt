@@ -4,7 +4,7 @@
 43|14
 41|4|11|SecretRival == 1 && ConfrontedRivalSecret == 0
 36|null|null|Rival_Confront_0
-28|0|Choice_Yes|6|null|null|Choice_No|8|null|null
+28|0|Choice_Yes|6|null|null|null|Choice_No|8|null|null|null
 45|RivalConfront
 43|10
 45|RivalC2DefaultDialog

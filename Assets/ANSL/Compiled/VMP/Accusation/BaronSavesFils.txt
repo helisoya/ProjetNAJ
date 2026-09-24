@@ -1,0 +1,16 @@
+#841D596AB0D99D3C7FE2A818C81718D7-10E726449382E722A35AAB2128C1BDFD
+66|Chasseur|0|0.5|true
+66|Baron|1|0.5|false
+36|Char_Baron|null|Trial_BaronSavesFils_1
+66|Baron|0|0.5|true
+66|Rival|1|0.5|false
+36|Char_Rival|null|Trial_BaronSavesFils_2
+28|0|Choice_HelpRival|7|null|null|null|Choice_HelpBaron|11|null|null|null
+100|ValueBaron|-|3
+36|null|null|Trial_KillBaron_1
+45|/VMP/Endings/BaronDead
+43|15
+100|ValueRival|-|3
+36|null|null|Trial_SaveBaron_1
+45|/VMP/Endings/RivalDead
+43|15

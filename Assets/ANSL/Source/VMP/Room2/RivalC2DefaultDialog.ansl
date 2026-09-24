@@ -7,6 +7,7 @@ else
 	choice(List)
 		choice Choice_Yes:
 			dialog(Char_Rival;null;Rival_C2Default_Loyalty_Nice_1)
+			variable(RivalReactionToDrinkQuest;=;2)
 			variable(ValueRival;+;2)
 		choice Choice_No:
 			dialog(Char_Rival;null;Rival_C2Default_Loyalty_Centrist_1)

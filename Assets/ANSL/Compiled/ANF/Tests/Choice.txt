@@ -2,7 +2,7 @@
 87|TestChoice
 86|test
 36|Test_Character|null|Test_Choice_1
-28|0|Choice_Yes|4|Test_Yes|Test_Choice|Choice_No|6|Test_No|Test_Choice|Choice_DoNotWant|8|null|null
+28|0|Choice_Yes|4|null|Test_Yes|Test_Choice|Choice_No|6|null|Test_No|Test_Choice|Choice_DoNotWant|8|null|null|null
 36|Test_Character|null|Test_Choice_Yes_1
 43|10
 36|Test_Character|null|Test_Choice_No_1
@@ -10,7 +10,7 @@
 36|Test_Character|null|Test_Choice_No_1
 43|10
 36|Test_Character|null|Test_Choice_2
-28|1|Choice_Yes|12|Test_Yes|Test_Choice|Choice_No|14|null|null|Choice_DoNotWant|16|Test_DoNotWant|Test_Choice|Choice_Caribou|18|Test_Caribou|Test_Choice|Choice_Drama|20|Test_Drama|Test_Choice
+28|1|Choice_Yes|12|null|Test_Yes|Test_Choice|Choice_No|14|null|null|null|Choice_DoNotWant|16|null|Test_DoNotWant|Test_Choice|Choice_Caribou|18|null|Test_Caribou|Test_Choice|Choice_Drama|20|null|Test_Drama|Test_Choice
 36|Test_Character|null|Test_Choice_Yes_2
 43|22
 36|Test_Character|null|Test_Choice_No_2
@@ -22,7 +22,7 @@
 36|Test_Character|null|Test_Choice_Drama_1
 43|22
 36|Test_Character|null|Test_Choice_3
-28|2|Choice_Yes|24|Test_Yes|Test_Choice|Choice_No|26|null|null|Choice_DoNotWant|28|Test_DoNotWant|Test_Choice|Choice_Caribou|30|Test_Caribou|Test_Choice|Choice_Drama|32|Test_Drama|Test_Choice
+28|2|Choice_Yes|24|null|Test_Yes|Test_Choice|Choice_No|26|null|null|null|Choice_DoNotWant|28|null|Test_DoNotWant|Test_Choice|Choice_Caribou|30|null|Test_Caribou|Test_Choice|Choice_Drama|32|null|Test_Drama|Test_Choice
 36|Test_Character|null|Test_Choice_Yes_2
 43|34
 36|Test_Character|null|Test_Choice_No_2

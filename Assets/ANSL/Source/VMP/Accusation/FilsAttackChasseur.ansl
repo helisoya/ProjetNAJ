@@ -1,0 +1,38 @@
+setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterAlpha(Rival;0;0.5;true)
+setCharacterAlpha(Fils;1;0.5;false)
+
+dialog(Char_Fils;null;Trial_FilsDefense_1)
+
+
+if(ValueFils >= 3)
+	dialog(null;null;Trial_FilsDefense_2)
+	
+	choice(List)
+		choice Choice_HelpFils:
+			dialog(null;null;Trial_SaveFils_1)
+			variable(ValueChasseur;-;3)
+			return()
+		choice Choice_StaySilent:
+	
+	endchoice
+
+endif
+
+# Default : Son will die if not helped
+
+setCharacterAlpha(Fils;0;0.5;true)
+setCharacterAlpha(Chasseur;1;0.5;false)
+
+dialog(Char_Chasseur;null;Trial_FilsDefense_3)
+
+setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterAlpha(Fils;1;0.5;false)
+
+dialog(Char_Chasseur;null;Trial_FilsDefense_4)
+
+if(ValueFils <= 0)
+	load(/VMP/Endings/PlayerHatedByFils)
+else 
+	load(/VMP/Endings/FilsHumainDead)
+endif

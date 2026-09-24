@@ -5,7 +5,8 @@ case 0:
 	load(/VMP/Events/KeySteal)
 case 1:
 	load(/VMP/Events/Cycle2Start)
-
+case 2:
+	load(/VMP/Accusation/Start)
 endswitch
 
 endif
