@@ -105,3 +105,122 @@ C1_Trial1_E_93 = Mr. Marin, could you tell us what happened the day of the crash
 C1_Trial1_E_94 = What were you doing, and how did you end up unconscious ?
 C1_Trial1_E_95 = Sure. I can do that.
 C1_Trial1_E_96 = I don’t have much to say, though. Don’t get excited over nothing.
+
+
+
+C1_Trial_Testimony3_Start_1 = <color=green>The crash</color>
+C1_Trial_Testimony3_Start_2 = That night, I was tending to the ship’s plants.
+C1_Trial_Testimony3_Start_3 = Before I knew it, we crashed.
+C1_Trial_Testimony3_Start_4 = Luckily, I wasn’t hurt. So, I went to the bridge.
+C1_Trial_Testimony3_Start_5 = It was then that the explosives went off and knocked me out.
+C1_Trial_Testimony3_Start_6 = It’s a shame I didn’t see who stabbed the Captain’s lung.
+C1_Trial_Testimony3_Start_7 = So you didn’t see anything in the end ?
+C1_Trial_Testimony3_Start_8 = Yep.
+C1_Trial_Testimony3_Start_9 = I didn’t know the captain had died until the police told me.
+C1_Trial_Testimony3_Start_10 = Yes. Jimm told him about the Captain’s death.
+C1_Trial_Testimony3_Start_11 = Since we were short on time, he didn’t brief him on the details.
+C1_Trial_Testimony3_Start_12 = Understandable.
+C1_Trial_Testimony3_Start_13 = As you can see, our mysterious third party doesn’t exist.
+C1_Trial_Testimony3_Start_14 = The only other person that was alive at the time was unconscious.
+C1_Trial_Testimony3_Start_15 = He couldn’t have killed the captain.
+C1_Trial_Testimony3_Start_16 = Which, of course, leaves Miss Retyr as the sole suspect.
+C1_Trial_Testimony3_Start_17 = And this is without mentioning the message we found, of course.
+C1_Trial_Testimony3_Start_18 = Besides, I wouldn’t have had a reason to kill the old wolf anyway.
+C1_Trial_Testimony3_Start_19 = … To think that you of all people would commit murder…
+C1_Trial_Testimony3_Start_20 = Hmm… I see.
+C1_Trial_Testimony3_Start_21 = Miss Retyr, you may proceed.
+C1_Trial_Testimony3_Start_22 = <color=#72B6E8>What is going on ?</color>
+C1_Trial_Testimony3_Start_23 = <color=#72B6E8>There’s got to be a mistake. Maybe another survivor ?</color>
+C1_Trial_Testimony3_Start_24 = <color=#72B6E8>The true culprit… Who are they ?</color>
+C1_Trial_Testimony3_Start_25 = <color=#72B6E8>Maybe they had time to disappear into the forest.</color>
+C1_Trial_Testimony3_Start_26 = <color=#72B6E8>… I guess there’s only one way to find out.</color>
+
+
+C1_Trial_Testimony3_Testimony_0 = <color=red>The crash</color>
+C1_Trial_Testimony3_Testimony_1 = <color=green>That night, I was tending to the ship’s plants.</color>
+C1_Trial_Testimony3_Testimony_2 = <color=green>Before I knew it, we crashed.</color>
+C1_Trial_Testimony3_Testimony_3 = <color=green>Luckily, I wasn’t hurt. So, I went to the bridge.</color>
+C1_Trial_Testimony3_Testimony_4 = <color=green>It was then that the explosives went off and knocked me out.</color>
+C1_Trial_Testimony3_Testimony_5 = <color=green>It’s a shame I didn’t see who stabbed the Captain’s lung.</color>
+
+C1_Trial_Testimony3_Press1_1 = You mean, the plants we tended to together ?
+C1_Trial_Testimony3_Press1_2 = Yeah, the very same. It was my turn that night.
+C1_Trial_Testimony3_Press1_3 = I’m afraid they died in the crash though.
+C1_Trial_Testimony3_Press1_4 = Ah, that’s… alright.
+C1_Trial_Testimony3_Press1_5 = I’m just glad that you are okay.
+C1_Trial_Testimony3_Press1_6 = Ah, plants…
+C1_Trial_Testimony3_Press1_7 = I love watering my flowers too. It’s so… relaxing.
+C1_Trial_Testimony3_Press1_8 = Yes. Well, anyway…
+
+C1_Trial_Testimony3_Press2_1 = You were still in the room when that happened ?
+C1_Trial_Testimony3_Press2_2 = Yep.
+C1_Trial_Testimony3_Press2_3 = The crash sent me flying and I hit the ceiling.
+C1_Trial_Testimony3_Press2_4 = ‘Must have hurt.
+C1_Trial_Testimony3_Press2_5 = Yeah, I fainted for a little while.
+C1_Trial_Testimony3_Press2_6 = Then…
+
+C1_Trial_Testimony3_Press3_1 = Were there any survivors ?
+C1_Trial_Testimony3_Press3_2 = At this point, yes.
+C1_Trial_Testimony3_Press3_3 = Multiple people were still alive and regrouped in the crew quarters.
+C1_Trial_Testimony3_Press3_4 = I decided to check outside, since… you know… we crashed.
+C1_Trial_Testimony3_Press3_5 = I had to ascertain where we were, and if the captain was alive and well.
+C1_Trial_Testimony3_Press3_6 = It was this decision that allowed me to live.
+
+C1_Trial_Testimony3_Press4_1 = Why did we even have explosives on board ?
+C1_Trial_Testimony3_Press4_2 = From what I understood, to clear potential obstacles.
+C1_Trial_Testimony3_Press4_3 = Still, that’s a <b>lot</b> of explosives. Did the captain think he would end up stuck in frozen water ?
+C1_Trial_Testimony3_Press4_4 = Or did he actually believe in that fairy tale of the giant sea serpent ?
+C1_Trial_Testimony3_Press4_5 = Beats me. I never asked why we had taken so much.
+C1_Trial_Testimony3_Press4_6 = He was always secretive about it too…
+C1_Trial_Testimony3_Press4_7 = And in the end, his secret doomed the entire ship… How ironic.
+C1_Trial_Testimony3_Press4_8 = If there were no explosives, the crew would have survived.
+C1_Trial_Testimony3_Press4_9 = By the Elk, maybe the Captain would have lived too.
+C1_Trial_Testimony3_Press4_10 = True. But that’s just a fantasy now…
+
+C1_Trial_Testimony3_Press5_1 = So you didn’t see the killer at all ?
+C1_Trial_Testimony3_Press5_2 = No. I was out cold at that point.
+C1_Trial_Testimony3_Press5_3 = …To think someone would stab the old wolf…
+C1_Trial_Testimony3_Press5_4 = And if no third party killed the Captain, I’m afraid you are still our prime suspect, Miss Retyr.
+C1_Trial_Testimony3_Press5_5 = I didn’t !
+C1_Trial_Testimony3_Press5_6 = But what choice do we have ?
+C1_Trial_Testimony3_Press5_7 = No one’s alive. It’s just you and me.
+C1_Trial_Testimony3_Press5_8 = … I can’t believe you did this.
+C1_Trial_Testimony3_Press5_9 = I- No…
+C1_Trial_Testimony3_Press5_10 = <color=#72B6E8>I really need to find something, quickly.</color>
+
+C1_Trial_Testimony3_Loop_1 = <color=#72B6E8>I should be happy that Gerald survived, but…</color>
+C1_Trial_Testimony3_Loop_2 = <color=#72B6E8>Either the true killer ran away somewhere we haven’t searched yet…</color>
+C1_Trial_Testimony3_Loop_3 = <color=#72B6E8>… or he is the real killer.</color<
+C1_Trial_Testimony3_Loop_4 = <color=#72B6E8>No. The Gerald I know would never…</color>
+
+C1_Trial1_F_1 = Gerald, this is weird.
+C1_Trial1_F_2 = What is ? I was out cold the whole time. I didn’t see anything.
+C1_Trial1_F_3 = Yet, while you claim this…
+C1_Trial1_F_4 = You still happen to know that the Captain had died from a stab wound.
+C1_Trial1_F_5 = Albeit… You thought his lungs were stabbed instead of his heart.
+C1_Trial1_F_6 = Which I find weird. The police told us that you weren’t told the details.
+C1_Trial1_F_7 = How did you know that he was stabbed ? 
+C1_Trial1_F_8 = And how did you end up thinking his lungs were damaged ?
+C1_Trial1_F_9 = Guh…
+C1_Trial1_F_10 = Well, you know…
+C1_Trial1_F_11 = Maybe Jimm told him that.
+C1_Trial1_F_12 = No, I was with him the whole time.
+C1_Trial1_F_13 = We didn’t even mention the stabbing.
+C1_Trial1_F_14 = Were you really unconscious the whole time ?
+C1_Trial1_F_15 = Ha ha, you see… 
+C1_Trial1_F_16 = It seems that… 
+C1_Trial1_F_17 = Erm…
+C1_Trial1_F_18 = Witness. How did you know that the Captain’s heart was struck ?
+C1_Trial1_F_19 = Erm…
+C1_Trial1_F_20 = Ah ! Yes, of course.
+C1_Trial1_F_21 = You remembered something ?
+C1_Trial1_F_22 = Yep. Actually, I must have been half awake at some point.
+C1_Trial1_F_23 = I remember hearing the last moments of the Captain.
+C1_Trial1_F_24 = My memory is a bit hazy; that’s why I only remembered half the story.
+C1_Trial1_F_25 = You heard what happened ?!
+C1_Trial1_F_26 = Please, tell us without delay.
+C1_Trial1_F_27 = Of course.
+C1_Trial1_F_28 = I’ll try to do my best.
+C1_Trial1_F_29 = …
+C1_Trial1_F_30 = <color=#72B6E8>Maybe there is another survivor after all.</color>
+C1_Trial1_F_31 = <color=#72B6E8>I’m glad. I would have been devastated if he ended up being a killer.</color>

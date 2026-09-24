@@ -240,7 +240,7 @@ setCharacterAlpha(Robert;1)
 
 wait(1)
 
-dialog(Char_Rann;null;C1_Trial1_D_100)
+dialog(null;null;C1_Trial1_D_100)
 showDialogWindow(false)
 
 fadeFg(1;true)

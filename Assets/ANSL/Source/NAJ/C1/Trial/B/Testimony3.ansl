@@ -1,0 +1,382 @@
+# Testimony 3 - Gerald (What I saw) 
+# Start
+
+showDialogWindow(false)
+fadeBg(1;true)
+
+
+:setCourtroomCamToWitnessImmediate()
+:setGeraldEyeSerious(NoCoat)
+:setGeraldThinking(NoCoat)
+
+:setRobertNormal()
+
+fadeBg(0;false)
+
+playUIAnimation(Testimony;true)
+
+dialog(null;null;C1_Trial_Testimony3_Start_1)
+
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_2)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_3)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_4)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_5)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_6)
+showDialogWindow(false)
+
+fadeBg(1;true)
+
+:setJudgeEyeThinking()
+:setCourtroomCamToJudge()
+
+fadeBg(0;false)
+
+dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_7)
+
+:setCourtroomCamToWitnessImmediate()
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_8)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_9)
+
+:setCourtroomCamToWitnessLeft(true)
+dialog(Char_Policeman;NovaKaliaSoldier;C1_Trial_Testimony3_Start_10)
+dialog(Char_Policeman;NovaKaliaSoldier;C1_Trial_Testimony3_Start_11)
+
+:setRobertRelaxed()
+:setJudgeEyeNormal()
+:setCourtroomCamToJudge()
+
+dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_12)
+
+:setCourtroomCamToProsecutorImmediate()
+
+dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_13)
+dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_14)
+dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_15)
+dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_16)
+dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_17)
+showDialogWindow(false)
+
+:setRannAngry(Coat)
+:setRannEyeNeutral(Coat)
+:setGeraldSad(NoCoat)
+:setCourtroomCamToWitness(true)
+
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_18)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_19)
+
+:setCourtroomCamToJudge()
+
+dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_20)
+dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_21)
+
+:setCourtroomCamToDefenseImmediate()
+
+dialog(null;null;C1_Trial_Testimony3_Start_22)
+dialog(null;null;C1_Trial_Testimony3_Start_23)
+dialog(null;null;C1_Trial_Testimony3_Start_24)
+dialog(null;null;C1_Trial_Testimony3_Start_25)
+dialog(null;null;C1_Trial_Testimony3_Start_26)
+
+showDialogWindow(false)
+fadeBg(1;true)
+
+:setCourtroomCamToWitnessImmediate()
+:setGeraldEyeSerious(NoCoat)
+:setGeraldThinking(NoCoat)
+
+:setRobertNormal()
+:setRannNormal(Coat)
+:setRannEyeNeutral(Coat)
+:setRobertNormal()
+
+fadeBg(0;false)
+
+playUIAnimation(Rebuttal;true)
+
+dialog(null;null;C1_Trial_Testimony3_Testimony_0)
+
+clearExaminationData()
+
+examination
+
+part 1
+	# That night, I was tending to the ship’s plants.
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_1;false;true)
+press 1
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press1_1)
+	showDialogWindow(false)
+
+	:setGeraldSad(NoCoat)
+	:setGeraldEyeNormal(NoCoat)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press1_2)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press1_3)
+	showDialogWindow(false)
+
+	:setRannStress(Coat)
+	:setRannEyeOops(Coat)
+	:setCourtroomCamToDefense(true)
+	:setGeraldEyeSerious(NoCoat)
+	:setGeraldThinking(NoCoat)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press1_4)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press1_5)
+
+	:setRannNormal(Coat)
+	:setRannEyeNeutral(Coat)
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony3_Press1_6)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony3_Press1_7)
+
+	:setCourtroomCamToWitnessImmediate()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press1_8)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	fadeBg(0;false)
+
+part 2
+	# Before I knew it, we crashed.
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_2;false;true)
+press 2
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press2_1)
+	showDialogWindow(false)
+
+	:setGeraldNormal(NoCoat)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press2_2)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press2_3)
+	showDialogWindow(false)
+
+	:setCourtroomCamToProsecutor(true)
+	dialog(Char_Robert;Robert;C1_Trial_Testimony3_Press2_4)
+	showDialogWindow(false)
+
+	:setGeraldThinking(NoCoat)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press2_5)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press2_6)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	fadeBg(0;false)
+
+part 3
+	# Luckily, I wasn’t hurt. So, I went to the bridge.
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_3;false;true)
+press 3
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press3_1)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press3_2)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press3_3)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press3_4)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press3_5)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press3_6)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	fadeBg(0;false)
+
+part 4
+	# It was then that the explosives went off and knocked me out.
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_4;false;true)
+press 4
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press4_1)
+	showDialogWindow(false)
+
+	:setGeraldNormal(NoCoat)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press4_2)
+
+	:setCourtroomCamToJudge()
+	:setGeraldThinking(NoCoat)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony3_Press4_3)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony3_Press4_4)
+
+	:setCourtroomCamToWitnessImmediate()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press4_5)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press4_6)
+
+	:setJudgeEyeThinking()
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony3_Press4_7)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony3_Press4_8)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony3_Press4_9)
+
+	:setCourtroomCamToWitnessImmediate()
+	:setJudgeEyeNormal()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press4_10)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	fadeBg(0;false)
+
+part 5 present Evidence/C1_AutopsyReport
+	# It’s a shame I didn’t see who stabbed the Captain’s lung.
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_5;false;true)
+press 5
+	showDialogWindow(false)
+	playUIAnimation(Press;true)
+	
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press5_1)
+	showDialogWindow(false)
+
+	:setGeraldNormal(NoCoat)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press5_2)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press5_3)
+	showDialogWindow(false)
+
+	:setCourtroomCamToProsecutor(true)
+	dialog(Char_Robert;Robert;C1_Trial_Testimony3_Press5_4)
+	showDialogWindow(false)
+
+	:setRannAngry(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press5_5)
+	showDialogWindow(false)
+
+	:setGeraldThinking(NoCoat)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press5_6)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press5_7)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Press5_8)
+	showDialogWindow(false)
+
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Press5_9)
+	dialog(null;null;C1_Trial_Testimony3_Press5_10)
+	showDialogWindow(false)
+
+	fadeBg(1;true)
+	:setRannEyeNeutral(Coat)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+
+loop
+	showDialogWindow(false)
+	:setRannThinking(Coat)
+	fadeBg(1;true)
+	:setCourtroomCamToDefenseImmediate()
+	fadeBg(0;false)
+
+	dialog(null;null;C1_Trial_Testimony3_Loop_1)
+	dialog(null;null;C1_Trial_Testimony3_Loop_2)
+	dialog(null;null;C1_Trial_Testimony3_Loop_3)
+	dialog(null;null;C1_Trial_Testimony3_Loop_4)
+
+	fadeBg(1;true)
+	:setRannNormal(Coat)
+	:setCourtroomCamToWitnessImmediate()
+	fadeBg(0;false)
+fail
+	load(../Common/ExaminationFail)
+endexamination
+
+showDialogWindow(false)
+playUIAnimation(Objection;true)
+
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_1)
+showDialogWindow(false)
+
+:setGeraldNormal(NoCoat)
+:setCourtroomCamToWitness(true)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_2)
+showDialogWindow(false)
+
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_3)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_4)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_5)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_6)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_7)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_8)
+showDialogWindow(false)
+
+screenshake(0.2;0.1;true;true)
+:setGeraldEyeSurprise(NoCoat)
+:setGeraldOnBar(NoCoat)
+:setCourtroomCamToWitness(true)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_9)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_10)
+showDialogWindow(false)
+
+:setCourtroomCamToProsecutor(true)
+dialog(Char_Robert;Robert;C1_Trial1_F_11)
+showDialogWindow(false)
+
+:setCourtroomCamToWitnessLeft(true)
+dialog(Char_Policeman;NovaKaliaSoldier;C1_Trial1_F_12)
+dialog(Char_Policeman;NovaKaliaSoldier;C1_Trial1_F_13)
+showDialogWindow(false)
+
+:setRannHandsOnDesk(Coat)
+:setCourtroomCamToDefense(true)
+dialog(Char_Rann;RannCoat;C1_Trial1_F_14)
+showDialogWindow(false)
+
+:setCourtroomCamToWitness(true)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_15)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_16;true)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_17;true)
+
+:setJudgeEyeAngry()
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial1_F_18)
+
+:setCourtroomCamToWitnessImmediate()
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_19)
+
+:setGeraldEyeSurprise(NoCoat)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_20)
+
+:setJudgeEyeNormal()
+:setCourtroomCamToJudge()
+:setGeraldNormal(NoCoat)
+:setGeraldEyeSerious(NoCoat)
+dialog(Char_Judge;Judge;C1_Trial1_F_21)
+
+:setCourtroomCamToWitnessImmediate()
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_22)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_23)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_24)
+
+:setJudgeEyeSurprise()
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial1_F_25)
+
+:setJudgeEyeNormal()
+dialog(Char_Judge;Judge;C1_Trial1_F_26)
+
+:setRannNormal(Coat)
+:setRannEyeNeutral(Coat)
+:setCourtroomCamToWitnessImmediate()
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_27)
+dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_F_28)
+
+:setRobertEyeThinking()
+:setCourtroomCamToProsecutorImmediate()
+dialog(Char_Robert;Robert;C1_Trial1_F_29)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(null;null;C1_Trial1_F_30)
+dialog(null;null;C1_Trial1_F_31)

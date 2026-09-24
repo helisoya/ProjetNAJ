@@ -208,6 +208,7 @@ press 5
 	fadeBg(0;false)
 
 loop
+	showDialogWindow(false)
 	:setRannThinking(Coat)
 	fadeBg(1;true)
 	:setCourtroomCamToDefenseImmediate()
@@ -219,6 +220,7 @@ loop
 	dialog(null;null;C1_Trial_Testimony1_Loop_4)
 
 	fadeBg(1;true)
+	:setRannNormal(Coat)
 	:setCourtroomCamToWitnessImmediate()
 	fadeBg(0;false)
 

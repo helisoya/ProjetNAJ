@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: AUTO_ANSL_SCRIPT_9_B
+  m_Name: AUTO_ANSL_SCRIPT_11_A
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
-  m_GroupName: AUTO_ANSL_SCRIPT_9_B
-  m_GUID: 6af5307b40838bb4ca8371f99034b68d
+  m_GroupName: AUTO_ANSL_SCRIPT_11_A
+  m_GUID: 51bafdd8ed363b2418147254b0629455
   m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 302d7d464cfb8be489a90b83bd2f1174, type: 2}
-    - {fileID: 11400000, guid: b80adf9541dfcf4478acdb18190ccc63, type: 2}
+    - {fileID: 11400000, guid: 42801723b9434a54493bddba8c0fd65d, type: 2}
+    - {fileID: 11400000, guid: 820482d90a74e3440a5a3a7c741cd926, type: 2}

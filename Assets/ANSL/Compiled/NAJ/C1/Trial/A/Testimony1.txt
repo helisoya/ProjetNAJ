@@ -1,4 +1,4 @@
-#843DA85481D0F61FD55856C7F261965B-10E726449382E722A35AAB2128C1BDFD
+#68652AB05F28FA7EF130D0FFADB29CCA-10E726449382E722A35AAB2128C1BDFD
 94|false
 38|1|true
 65|WitnessCam
@@ -13,11 +13,11 @@
 12|Rebuttal|true
 36|null|null|C1_Trial_Testimony1_Testimony_0
 4
-9|230|1|15|False|2|69|False|3|101|False|4|134|False|5|173|False
+9|232|1|15|False|2|69|False|3|101|False|4|134|False|5|173|False
 18|1
 21|true
 36|Char_Juno|Juno|C1_Trial_Testimony1_Testimony_1|false|true
-10|1|False|19|226|230|15|69
+10|1|False|19|228|232|15|69
 67|RannCoat|ReadingBook
 69|RannCoat|Normal
 73|RannCoat|Normal
@@ -71,7 +71,7 @@
 18|2
 21|true
 36|Char_Juno|Juno|C1_Trial_Testimony1_Testimony_2|false|true
-10|2|False|73|226|230|15|101
+10|2|False|73|228|232|15|101
 94|false
 12|Press|true
 65|DefenseCam|0.25|false
@@ -103,7 +103,7 @@
 18|3
 21|true
 36|Char_Juno|Juno|C1_Trial_Testimony1_Testimony_3|false|true
-10|3|False|105|226|230|69|134
+10|3|False|105|228|232|69|134
 94|false
 12|Press|true
 65|DefenseCam|0.25|false
@@ -136,7 +136,7 @@
 18|4
 21|true
 36|Char_Juno|Juno|C1_Trial_Testimony1_Testimony_4|false|true
-10|4|False|138|226|230|101|173
+10|4|False|138|228|232|101|173
 67|RannCoat|HandsOnDesk|0.1
 69|RannCoat|Normal
 73|RannCoat|Sad
@@ -175,7 +175,7 @@
 18|5
 21|true
 36|Char_Juno|Juno|C1_Trial_Testimony1_Testimony_5|false|true
-10|5|False|177|226|230|134|209|Evidence/C1_Injury
+10|5|False|177|228|232|134|209|Evidence/C1_Injury
 94|false
 12|Press|true
 65|DefenseCam|0.25|false
@@ -210,7 +210,8 @@
 43|209
 18|1
 21|false
-3|230
+3|232
+94|false
 67|RannCoat|Thinking|0.1
 38|1|true
 64|DefenseCam
@@ -221,6 +222,7 @@
 36|null|null|C1_Trial_Testimony1_Loop_3
 36|null|null|C1_Trial_Testimony1_Loop_4
 38|1|true
+67|RannCoat|Normal|0.1
 65|WitnessCam
 64|WitnessCam
 38|0|false

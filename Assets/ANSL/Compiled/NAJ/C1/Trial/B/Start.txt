@@ -1,4 +1,4 @@
-#FE8381F77F7FD15C8EBD4A54368916A4-10E726449382E722A35AAB2128C1BDFD
+#C4E08F0CC6946204A3476F4AA5717BC7-10E726449382E722A35AAB2128C1BDFD
 86|c1_common|c1_trial_B
 87|Location_C1_TrialPart2
 25
@@ -98,11 +98,11 @@
 64|DefenseCam
 65|DefenseCam
 67|Judge|HoldingHammer|0.1
-36|Char_Rann|null|C1_Trial1_E_27
-36|Char_Rann|null|C1_Trial1_E_28
-36|Char_Rann|null|C1_Trial1_E_29
-36|Char_Rann|null|C1_Trial1_E_30
-36|Char_Rann|null|C1_Trial1_E_31
+36|null|null|C1_Trial1_E_27
+36|null|null|C1_Trial1_E_28
+36|null|null|C1_Trial1_E_29
+36|null|null|C1_Trial1_E_30
+36|null|null|C1_Trial1_E_31
 69|Judge|Normal
 73|Judge|Normal
 64|JudgeCam
@@ -214,8 +214,8 @@
 36|Char_Judge|Judge|C1_Trial1_E_62
 64|DefenseCam
 65|DefenseCam
-36|Char_Rann|null|C1_Trial1_E_63
-36|Char_Rann|null|C1_Trial1_E_64
+36|null|null|C1_Trial1_E_63
+36|null|null|C1_Trial1_E_64
 94|false
 65|WitnessCam|0.25|false
 64|WitnessCam|0.25|true
@@ -293,9 +293,9 @@
 36|Char_Gerald|GeraldNoCoat|C1_Trial1_E_86
 64|DefenseCam
 65|DefenseCam
-36|Char_Rann|null|C1_Trial1_E_87
-36|Char_Rann|null|C1_Trial1_E_88
-36|Char_Rann|null|C1_Trial1_E_89
+36|null|null|C1_Trial1_E_87
+36|null|null|C1_Trial1_E_88
+36|null|null|C1_Trial1_E_89
 69|GeraldNoCoat|Normal
 73|GeraldNoCoat|Normal
 65|WitnessLeftCam|0.25|false
@@ -315,3 +315,4 @@
 64|WitnessCam
 36|Char_Gerald|GeraldNoCoat|C1_Trial1_E_95
 36|Char_Gerald|GeraldNoCoat|C1_Trial1_E_96
+45|Testimony3
