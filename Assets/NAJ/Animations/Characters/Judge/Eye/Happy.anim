@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Thinking
+  m_Name: Happy
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,18 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1937251613, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
+      value: {fileID: -883152269, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
     attribute: m_Sprite
     path: Model/Armature/Root/Spine1/Spine2/Spin3/Spine4/Neck/Head/Head_end/Eye
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 1606710961, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
+    attribute: m_Sprite
+    path: Model/Armature/Root/Spine1/Spine2/Spin3/Spine4/Neck/Head/Head_end/Eyebrows
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -43,8 +52,18 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 3415739937
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1937251613, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
+    - {fileID: -883152269, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
+    - {fileID: 1606710961, guid: b71ab5f3eb182e7489be61f6f66b179d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

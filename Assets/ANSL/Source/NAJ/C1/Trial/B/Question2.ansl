@@ -1,0 +1,46 @@
+# Question 2 : The inconsistency
+
+:setCourtroomCamToJudge()
+:setRannHandsOnDesk(Coat)
+:setRannEyeNeutral(Coat)
+:setJunoEyeNormal()
+:setJudgeEyeNormal()
+:setRobertEyeNormal()
+dialog(Char_Judge;Judge;C1_Trial1_G_69)
+
+choice(List)
+	choice Choice_Question2_Asleep:
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial1_Question2_Asleep_1)
+		dialog(Char_Rann;RannCoat;C1_Trial1_Question2_Asleep_2)
+
+		:setCourtroomCamToJudge()
+		dialog(Char_Judge;Judge;C1_Trial1_Question2_Asleep_3)
+		dialog(Char_Judge;Judge;C1_Trial1_Question2_Asleep_4)
+		dialog(Char_Judge;Judge;C1_Trial1_Question2_Asleep_5)
+
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial1_Question2_Asleep_6)
+		dialog(null;null;C1_Trial1_Question2_Asleep_7)
+
+		load(Question2)
+
+	choice Choice_Question2_DidntSeeJuno:
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial1_Question2_DidntSeeJuno_1)
+
+		:setCourtroomCamToProsecutorImmediate()
+		dialog(Char_Robert;Robert;C1_Trial1_Question2_DidntSeeJuno_2)
+		dialog(Char_Robert;Robert;C1_Trial1_Question2_DidntSeeJuno_3)
+		dialog(Char_Robert;Robert;C1_Trial1_Question2_DidntSeeJuno_4)
+
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial1_Question2_DidntSeeJuno_5)
+		dialog(null;null;C1_Trial1_Question2_DidntSeeJuno_6)
+
+		load(Question2)
+
+	choice Choice_Question2_Scream:
+		load(Question2End)
+
+endchoice

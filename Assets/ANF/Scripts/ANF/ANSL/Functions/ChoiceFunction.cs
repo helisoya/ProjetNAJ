@@ -325,7 +325,7 @@ namespace ANF.ANSL
                 {
                     string ifContent = choices[i + 2];
 
-                    if (ifContent.Equals("null") || variableContainer == null)
+                    if (string.IsNullOrEmpty(ifContent) || variableContainer == null)
                         valid[i / 5] = true;
                     else
                         ANFUtils.CheckIfContentImpl(ifContent, variableContainer, out valid[i / 5]);

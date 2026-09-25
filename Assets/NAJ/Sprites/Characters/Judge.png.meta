@@ -505,6 +505,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Judge_Eye_Happy
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 174
+        width: 75
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4920f3305363094a92c06a4db166263
+      internalID: -883152269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -522,6 +544,7 @@ TextureImporter:
       Judge_Eye_Angry_0: -2076875732
       Judge_Eye_Angry_1: 1551475680
       Judge_Eye_Angry_2: 1476204881
+      Judge_Eye_Happy: -883152269
       Judge_Eye_Normal_0: 292392201
       Judge_Eye_Normal_1: -1090498979
       Judge_Eye_Normal_2: 1937251613

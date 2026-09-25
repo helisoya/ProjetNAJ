@@ -380,3 +380,5 @@ dialog(Char_Robert;Robert;C1_Trial1_F_29)
 :setCourtroomCamToDefenseImmediate()
 dialog(null;null;C1_Trial1_F_30)
 dialog(null;null;C1_Trial1_F_31)
+
+load(Testimony4)

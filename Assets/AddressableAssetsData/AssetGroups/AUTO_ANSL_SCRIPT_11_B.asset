@@ -15,14 +15,32 @@ MonoBehaviour:
   m_GroupName: AUTO_ANSL_SCRIPT_11_B
   m_GUID: 92f77b7db00ebc6448410188ab382040
   m_SerializeEntries:
+  - m_GUID: 0715f7e9caf95b9448463df19e9f5e72
+    m_Address: ANSL/NAJ/C1/Trial/B/Question2End
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 759d51ee8a9f7a4459bf48d0117c1969
     m_Address: ANSL/NAJ/C1/Trial/B/Start
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7aace4a7bd5d87247955d6ada767d2e9
+    m_Address: ANSL/NAJ/C1/Trial/B/Question2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7ba9cd2346185fe42877ec44b7f64386
     m_Address: ANSL/NAJ/C1/Trial/B/Testimony3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e4d863294749a944bb34732ed3cf3e7
+    m_Address: ANSL/NAJ/C1/Trial/B/Testimony4
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts
