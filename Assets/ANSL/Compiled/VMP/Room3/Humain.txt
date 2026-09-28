@@ -1,57 +1,60 @@
-#85FF7D71D6A277D7445D7E2BCA628A16-10E726449382E722A35AAB2128C1BDFD
-41|1|3|TalkedHumain == 1 && CycleCount == 0
-36|null|null|Talk_Character_Done_1
-43|54
+#A371F1C9E923A7D67B2FE9C937693588-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|3|TalkedHumain == 1 && CycleCount == 0
+35|null|null|Talk_Character_Done_1
+42|57
 66|Humain|0|0.5|true
 74|Humain|Front
 75|Humain|Front
 66|Humain|1|0.5|false
 97|CycleCount|8|0|46
-36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|null|Choice_Search|34|null|null|null|Choice_Nothing|44|null|null|null
-41|11|13|TalkedHumain == 1
-36|null|null|Talk_Character_Done_1
-43|33
-41|14|25|SecretHumain == 1 && ConfrontedHumainSecret == 0
-36|null|null|Humain_Secret_0
-28|0|Choice_Yes|16|null|null|null|Choice_No|18|null|null|null
-45|HumainSecret
-43|24
-41|19|21|CycleCount == 1
-45|HumainC1Default
-43|23
-45|HumainC2Default
-43|23
-43|24
-43|31
-41|26|28|CycleCount == 1
-45|HumainC1Default
-43|30
-45|HumainC2Default
-43|30
-43|31
+35|null|null|Choice_InteractCharacter
+27|0|Choice_Talk|10|null|null|null|Choice_Search|34|null|null|null|Choice_Nothing|44|null|null|null
+40|11|13|TalkedHumain == 1
+35|null|null|Talk_Character_Done_1
+42|33
+40|14|25|SecretHumain == 1 && ConfrontedHumainSecret == 0
+35|null|null|Talk_Humain_Confirm_Confront_1
+27|0|Choice_Yes|16|null|null|null|Choice_No|18|null|null|null
+44|HumainSecret
+42|24
+40|19|21|CycleCount == 1
+44|HumainC1Default
+42|23
+44|HumainC2Default
+42|23
+42|24
+42|31
+40|26|28|CycleCount == 1
+44|HumainC1Default
+42|30
+44|HumainC2Default
+42|30
+42|31
 100|TalkedHumain|=|1
-43|33
-43|45
-41|35|41|SearchCounter > 0
+42|33
+42|45
+40|35|41|SearchCounter > 0
 100|SearchCounter|-|1
 100|SecretHumain|=|1
-36|null|null|Humain_SearchBelongings_1
-36|null|null|Humain_SearchBelongings_2
-45|/VMP/Common/PrintSearchCounter
-43|43
-36|null|null|Counter_Search_0
-43|43
-43|45
-43|45
-43|49
-36|Char_Humain|null|Humain_Intro_1
+35|null|null|Steal_Humain_1
+35|null|null|Steal_Humain_2
+44|/VMP/Common/PrintSearchCounter
+42|43
+35|null|null|Counter_Search_0
+42|43
+42|45
+42|45
+42|52
+35|Char_Humain|null|Talk_Humain_Presentation_1
+35|Char_LoupGarou|null|Talk_Humain_Presentation_2
+35|Char_Humain|null|Talk_Humain_Presentation_3
+35|null|null|Talk_Humain_Presentation_4
 100|TalkedHumain|=|1
-43|49
+42|52
 66|Humain|0|0.5|true
 74|Humain|HumainSpot
 75|Humain|HumainSpot
 66|Humain|1|0.5|false
-43|54
-45|/VMP/Common/CycleCheck
-45|Interaction
+42|57
+44|/VMP/Common/CycleCheck
+44|Interaction

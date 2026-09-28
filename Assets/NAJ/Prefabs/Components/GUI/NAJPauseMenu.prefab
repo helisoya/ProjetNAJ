@@ -214,7 +214,7 @@ MonoBehaviour:
   - ANF.GUI.InputReminderUI
   - NAJ.GUI.InventoryUI
   - NAJ.GUI.ExaminationUI
-  - NAJ.GUI.AnimationUI
+  - ANF.GUI.AnimationUI
   - NAJ.GUI.LifePointsUI
   mainMenuMode: 0
   buttonsRoot: {fileID: 2752175258711624528}

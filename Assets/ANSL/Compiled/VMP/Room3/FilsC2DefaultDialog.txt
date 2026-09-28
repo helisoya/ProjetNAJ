@@ -1,7 +1,12 @@
-#5760DF30641E1D6E49021515B12BB31E-10E726449382E722A35AAB2128C1BDFD
-41|1|3|ValueFils >= 3
-45|FilsC2LostMirror
-43|6
-36|Char_Fils|null|Fils_C2Default_1
-45|FilsC2ConfrontSecret
-43|6
+#804C21F06F8C8CB61A97BE5991054DD1-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|3|ValueFils >= 3
+44|FilsC2LostMirror
+42|11
+35|Char_Fils|null|Talk_Fils_DefaultCycle2_1
+35|Char_LoupGarou|null|Talk_Fils_DefaultCycle2_2
+35|Char_Fils|null|Talk_Fils_DefaultCycle2_3
+40|7|9|SecretFils == 1 && FilsWeirdQuest >= 2
+44|FilsC2ConfrontSecret
+42|10
+42|10
+42|11

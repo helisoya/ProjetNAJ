@@ -2,7 +2,7 @@ if(RivalReactionToDrinkQuest == 2)
 	load(RivalGetInfosFromFils)
 else
 	if(SecretRival == 1 && ConfrontedRivalSecret == 0)
-		dialog(null;null;Rival_Confront_0)
+		dialog(null;null;Talk_Rival_Confirm_Concealer_1)
 		choice(List)
 			choice Choice_Yes:
 				load(RivalConfront)

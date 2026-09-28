@@ -1,11 +1,11 @@
-#725BBA0892717A4ABC764DF1615A5C93-10E726449382E722A35AAB2128C1BDFD
-41|1|8|SecretRival == 1 && ConfrontedRivalSecret == 0
-36|null|null|Rival_Confront_0
-28|0|Choice_Yes|3|null|null|null|Choice_No|5|null|null|null
-45|RivalConfront
-43|7
-45|RivalC1DefaultDialog
-43|7
-43|10
-45|RivalC1DefaultDialog
-43|10
+#BE2FCD527023001250631510AA7E4721-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|8|SecretRival == 1 && ConfrontedRivalSecret == 0
+35|null|null|Talk_Rival_Confirm_Concealer_1
+27|0|Choice_Yes|3|null|null|null|Choice_No|5|null|null|null
+44|RivalConfront
+42|7
+44|RivalC1DefaultDialog
+42|7
+42|10
+44|RivalC1DefaultDialog
+42|10

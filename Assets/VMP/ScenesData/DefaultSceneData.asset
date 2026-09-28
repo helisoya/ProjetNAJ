@@ -41,35 +41,23 @@ MonoBehaviour:
   - id: fadeBg
     data: {fileID: 1331905330795673416, guid: 0ad70345a8ff7dd468003a14eec462be, type: 3}
   - id: 
-    data: {fileID: 4819362235645791672, guid: 3132377f1733fd64ea1ea0e37f233582, type: 3}
+    data: {fileID: 5724826130367448010, guid: aba63e862a4e40342bdc09a648bd32e8, type: 3}
   - id: 
-    data: {fileID: 5724826130367448010, guid: 022905ec658687a479fc48d91f16fa39, type: 3}
-  - id: 
-    data: {fileID: 6844632179404603474, guid: d732c073e0f794a4ab38f63bc1a57be0, type: 3}
-  - id: 
-    data: {fileID: 237637143809057935, guid: 6cf9e0c16fec62f4d9fca3a93dc77fe6, type: 3}
+    data: {fileID: 237637143809057935, guid: d9020a8440f88274a9580a6195b6588e, type: 3}
   - id: 
     data: {fileID: 2868892919424814067, guid: 699f3d6f850bf21438a4c3235dc549bc, type: 3}
-  - id: 
-    data: {fileID: 7502116054405208522, guid: e70c0214d98967445badb02e7039cadc, type: 3}
   - id: fadeFg
     data: {fileID: 1331905330795673416, guid: 0ad70345a8ff7dd468003a14eec462be, type: 3}
   - id: 
-    data: {fileID: 5926109112217851707, guid: d7705a57bee67754ebb525fa542c0f56, type: 3}
+    data: {fileID: 9078231338013344640, guid: 0d738e11342e94440830eb4f5fe17177, type: 3}
   - id: 
-    data: {fileID: 9078231338013344640, guid: 720661e4fab69d14ca6b0fc1c88d3f92, type: 3}
+    data: {fileID: 4893906188555742882, guid: 4ce3261435790734091340a2da302ea9, type: 3}
   - id: 
-    data: {fileID: 4893906188555742882, guid: 438213e2fb9a76e4088031c20e0ed578, type: 3}
+    data: {fileID: 4813586622291847291, guid: d84bb1e58da587b4e93538c7419df21e, type: 3}
   - id: 
-    data: {fileID: 4813586622291847291, guid: 8059e479ea9479f479ea903f59b46f8f, type: 3}
+    data: {fileID: 5462081781506776728, guid: ce1081e0eba51ae4ea3aabdae944d830, type: 3}
   - id: 
-    data: {fileID: 8635427533893588802, guid: 2d222088f1bc45841b0d2e567fb9e320, type: 3}
-  - id: 
-    data: {fileID: 1991131649640259627, guid: 7df1e050de8c718409d4605bb62ee2ad, type: 3}
-  - id: 
-    data: {fileID: 5462081781506776728, guid: edc56737f42790e40819bcb973af9e17, type: 3}
-  - id: 
-    data: {fileID: 6123419753822969047, guid: 8c0175ffba14bb8469c0e488a0977164, type: 3}
+    data: {fileID: 6123419753822969047, guid: 49f937d9a165ff64b875b9d1382a127e, type: 3}
   - id: fadeAll
     data: {fileID: 1331905330795673416, guid: 9299cd766ec312648ad187dbaab961ff, type: 3}
   changeSceneUseFading: 1
@@ -100,6 +88,7 @@ MonoBehaviour:
         canBeSaved: 1
         enabledByDefault: 1
         asyncLoading: 1
+        resourceType: 1
         skyboxDataPath: Skyboxes/
         defaultSkybox: Day
         skyboxMaterial: {fileID: 2100000, guid: 79f3e4c0b85311347b7292b2aa8d2833, type: 2}
@@ -131,6 +120,8 @@ MonoBehaviour:
         enabledByDefault: 1
         startPosition: {x: 0, y: 0, z: -10}
         startRotation: {x: 0, y: 0, z: 0}
+        uiToShake: []
+        shakeWorldToUIRation: 100
     - rid: 3493723745760837703
       type: {class: CharacterManager, ns: ANF.Scene, asm: Assembly-CSharp}
       data:

@@ -14,19 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_20_Intro
   m_GUID: 1b05914652807d546a15b482969a62b9
-  m_SerializeEntries:
-  - m_GUID: 6409f1cf6e0a70b48b52b679de855e1d
-    m_Address: ANSL/NAJ/C1/Intro/A
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b86ee8d26636f474da38b9e4c6efac2d
-    m_Address: ANSL/NAJ/C1/Intro/B
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

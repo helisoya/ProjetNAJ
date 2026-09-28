@@ -1,5 +1,27 @@
+setCharacterAlpha(Fils;0;0.5;true)
+setCharacterAlpha(Chasseur;1;0.5;false)
+dialog(null;null;Scene_End_Contradiction_1)
+dialog(Char_Chasseur;null;Scene_End_Contradiction_2)
+dialog(Char_Chasseur;null;Scene_End_Contradiction_3)
+
+setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterAlpha(Fils;1;0.5;false)
+dialog(Char_Fils;null;Scene_End_Contradiction_4)
+
+setCharacterAlpha(Fils;0;0.5;true)
+setCharacterAlpha(Baron;1;0.5;false)
+dialog(Char_Baron;null;Scene_End_Contradiction_5)
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterAlpha(Chasseur;1;0.5;false)
+dialog(Char_Chasseur;null;Scene_End_Contradiction_6)
+
 fadeBg(1;true)
 
-dialog(null;null;Ending_Centrist_1)
+dialog(null;null;Endings_Guilty_Perso_1)
+dialog(null;null;Endings_Guilty_Perso_2)
+dialog(null;null;Endings_Guilty_Perso_3)
+dialog(null;null;Endings_Guilty_Perso_4)
+dialog(null;null;Endings_Guilty_Perso_5)
 
 changeScene(VMPMainMenu)

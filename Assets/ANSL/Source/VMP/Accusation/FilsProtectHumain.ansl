@@ -2,36 +2,8 @@ setCharacterAlpha(Chasseur;0;0.5;true)
 setCharacterAlpha(Rival;0;0.5;true)
 setCharacterAlpha(Fils;1;0.5;false)
 
-dialog(Char_Fils;null;Trial_FilsProtectHumain_1)
-dialog(null;null;Trial_FilsProtectHumain_2)
+dialog(Char_Fils;null;Scene_End_FilsChasseur1_1)
+dialog(Char_Fils;null;Scene_End_FilsChasseur1_2)
+dialog(null;null;Scene_End_FilsChasseur1_3)
 
-choice(List)
-	choice Choice_HelpChasseur:
-		dialog(null;null;Trial_HelpChasseur_1)
-		variable(AttackedSame1;=;2)
-
-	choice Choice_HelpFils:
-		variable(AttackedSame1;=;1)
-		dialog(null;null;Trial_HelpFils_1)
-
-		if(AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2)
-			load(/VMP/Endings/Centrist)
-		else
-			load(/VMP/Endings/ChasseurDead)
-		endif
-
-		return()
-	choice Choice_StaySilent:
-endchoice
-
-# Default : Chasseur win
-
-if(AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2)
-	load(/VMP/Endings/Centrist)
-else
-	load(/VMP/Endings/FilsHumainDead)
-endif
-
-
-
-
+load(FilsChasseurTop)

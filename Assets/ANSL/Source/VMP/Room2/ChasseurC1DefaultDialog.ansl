@@ -1,1 +1,5 @@
-dialog(Char_Chasseur;null;Chasseur_C1Default_1)
+dialog(Char_Chasseur;null;Talk_Chasseur_Rien_1)
+dialog(Char_Chasseur;null;Talk_Chasseur_Rien_2)
+dialog(Char_Chasseur;null;Talk_Chasseur_Rien_3)
+dialog(Char_LoupGarou;null;Talk_Chasseur_Rien_4)
+dialog(Char_Chasseur;null;Talk_Chasseur_Rien_5)

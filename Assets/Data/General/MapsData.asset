@@ -36,3 +36,26 @@ MonoBehaviour:
       rotation: 0
       sprite: {fileID: 21300000, guid: 02481fe7ccaba1a40b10cfce24a9990c, type: 3}
       normalizedPosition: {x: 0.744, y: 0.868}
+  - id: Map_Taliak
+    backgroundSprite: {fileID: 21300000, guid: 9be70adfb54054843bcccf1ae451536e, type: 3}
+    buttons:
+    - id: Crashsite
+      rotation: 0
+      sprite: {fileID: 21300000, guid: 02481fe7ccaba1a40b10cfce24a9990c, type: 3}
+      normalizedPosition: {x: 0.327, y: 0.743}
+    - id: FortTaliak
+      rotation: 0
+      sprite: {fileID: 21300000, guid: 02481fe7ccaba1a40b10cfce24a9990c, type: 3}
+      normalizedPosition: {x: 0.419, y: 0.236}
+    - id: Farm
+      rotation: 0
+      sprite: {fileID: 21300000, guid: 02481fe7ccaba1a40b10cfce24a9990c, type: 3}
+      normalizedPosition: {x: 0.487, y: 0.708}
+    - id: Taliakii
+      rotation: 0
+      sprite: {fileID: 21300000, guid: 02481fe7ccaba1a40b10cfce24a9990c, type: 3}
+      normalizedPosition: {x: 0.56, y: 0.366}
+    - id: Mines
+      rotation: 0
+      sprite: {fileID: 21300000, guid: 02481fe7ccaba1a40b10cfce24a9990c, type: 3}
+      normalizedPosition: {x: 0.455, y: 0.551}

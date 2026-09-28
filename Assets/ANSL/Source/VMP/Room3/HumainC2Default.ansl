@@ -1,13 +1,28 @@
 if(ValueHumain >= 1 || ValueFils >= 1)
 	if(ConfrontedHumainSecret == 1)
-		dialog(Char_Humain;null;Humain_AreYouReal_1)
+		dialog(Char_Humain;null;Talk_Humain_Friend_1)
+		dialog(Char_LoupGarou;null;Talk_Humain_Friend_2)
+		dialog(Char_Humain;null;Talk_Humain_Friend_3)
+		dialog(Char_Humain;null;Talk_Humain_Friend_4)
+		dialog(Char_Humain;null;Talk_Humain_Friend_5)
 
 		choice(List)
-			choice Choice_Yes:
-				dialog(Char_Humain;null;Humain_AreYouReal_Yes_1)
+			choice Choice_ItsTrue:
+				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Nice_1)
+				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Nice_2)
+				dialog(Char_Humain;null;Talk_Humain_Friend_Nice_3)
+				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Nice_4)
+				dialog(Char_Humain;null;Talk_Humain_Friend_Nice_5)
+				dialog(Char_Humain;null;Talk_Humain_Friend_Nice_6)
+				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Nice_7)
+				dialog(null;null;Talk_Humain_Friend_Nice_8)
 				variable(ValueHumain;+;2)
-			choice Choice_No:
-				dialog(Char_Humain;null;Humain_AreYouReal_No_1)
+			choice Choice_ItsPrank:
+				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Bad_1)
+				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Bad_2)
+				dialog(Char_Humain;null;Talk_Humain_Friend_Bad_3)
+				dialog(Char_Humain;null;Talk_Humain_Friend_Bad_4)
+				dialog(null;null;Talk_Humain_Friend_Bad_5)
 				variable(ValueHumain;-;1)
 				variable(ValueFils;-;1)
 		endchoice

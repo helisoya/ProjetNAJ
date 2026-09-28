@@ -14,37 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_21_EntryPoints
   m_GUID: 0828327341cad6d4083e4918ef081e9b
-  m_SerializeEntries:
-  - m_GUID: 3c5c4ab80816fde458166de2db41d8af
-    m_Address: ANSL/NAJ/C1/EntryPoints/Investigation
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c335845651c22324ba749aadf7686989
-    m_Address: ANSL/NAJ/C1/EntryPoints/Intro
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: da47291f6fa166d408ea3e91a80a91ba
-    m_Address: ANSL/NAJ/C1/EntryPoints/TrialStart
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e688a19f8bebf6340945a5b6ac559276
-    m_Address: ANSL/NAJ/C1/EntryPoints/TrialMid
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ef402441805217644b557af8fd233b72
-    m_Address: ANSL/NAJ/C1/EntryPoints/GeneralSetup
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

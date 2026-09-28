@@ -1,7 +1,15 @@
-dialog(Char_Fils;null;Fils_LostMirror_1)
+dialog(Char_Fils;null;Talk_Fils_Mirror_1)
+dialog(Char_LoupGarou;null;Talk_Fils_Mirror_2)
+dialog(Char_Fils;null;Talk_Fils_Mirror_3)
+dialog(Char_LoupGarou;null;Talk_Fils_Mirror_4)
+dialog(Char_Fils;null;Talk_Fils_Mirror_5)
+dialog(Char_Fils;null;Talk_Fils_Mirror_6)
 
 if(FilsMirrorQuest == 1)
-	dialog(Char_Fils;null;Fils_LostMirror_AlreadyFound_1)
+	dialog(Char_LoupGarou;null;Talk_Fils_Mirror_Found_1)
+	dialog(Char_Fils;null;Talk_Fils_Mirror_Found_2)
+	dialog(Char_Fils;null;Talk_Fils_Mirror_Found_3)
+	
 	variable(ValueFils;+;1)
 	variable(FilsMirrorQuest;=;2)
 endif

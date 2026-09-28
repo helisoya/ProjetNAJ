@@ -2,14 +2,15 @@ if(LookCounter > 0)
 variable(LookCounter;-;1)
 
 if(ConfrontedChasseurSecret == 2)
-	dialog(null;null;Boris_Ending_1)
-	dialog(null;null;Boris_Ending_2)
+	dialog(null;null;Watch_Boris_Keys_1)
+	dialog(null;null;Watch_Boris_Keys_2)
+	dialog(null;null;Watch_Boris_Keys_3)
 
 	choice(List)
 		choice Choice_Yes:
 			load(/VMP/Endings/StoleKeyBackEnding)
 		choice Choice_No:
-
+			dialog(null;null;Watch_Boris_Keys_4)
 	endchoice
 endif
 
@@ -18,19 +19,19 @@ endif
 
 switch(BorisCounter)
 case 0:
-	dialog(null;null;Boris_Part1_1)
+	dialog(null;null;Watch_Boris_1)
 	variable(BorisCounter;+;1)
 case 1:
-	dialog(null;null;Boris_Part2_1)
+	dialog(null;null;Watch_Boris_2)
 	variable(BorisCounter;+;1)
 case 2:
-	dialog(null;null;Boris_Part3_1)
+	dialog(null;null;Watch_Boris_3)
 	variable(BorisCounter;+;1)
 case 3:
-	dialog(null;null;Boris_Part4_1)
+	dialog(null;null;Watch_Boris_4)
 	variable(BorisCounter;+;1)
 case 4:
-	dialog(Char_Boris;null;Boris_Part5_1)
+	dialog(Char_Boris;null;Watch_Boris_5)
 	variable(BorisCounter;+;1)
 
 case 5:
@@ -40,8 +41,13 @@ case 5:
 		# Not possible under normal circumstances
 	else
 		# Boris is thirsty
-		dialog(Char_Boris;null;Boris_QuestDrink_1)
-		dialog(Char_Boris;null;Boris_QuestDrink_2)
+		dialog(Char_Boris;null;Talk_Boris_Presentation_1)
+		dialog(Char_Boris;null;Talk_Boris_Presentation_2)
+		dialog(Char_Boris;null;Talk_Boris_Presentation_3)
+		dialog(Char_Boris;null;Talk_Boris_Presentation_4)
+		dialog(Char_Boris;null;Talk_Boris_Presentation_5)
+		dialog(Char_Boris;null;Talk_Boris_Presentation_6)
+		dialog(Char_Boris;null;Talk_Boris_Presentation_7)
 	endif
 
 

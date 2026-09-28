@@ -1,0 +1,49 @@
+choice(List)
+	choice Choice_HelpChasseur:
+		dialog(Char_LoupGarou;null;Scene_End_HelpChasseur_1)
+		dialog(Char_LoupGarou;null;Scene_End_HelpChasseur_2)
+		dialog(Char_LoupGarou;null;Scene_End_HelpChasseur_3)
+
+		if(AttackedSame1 == 0 || AttackedSame2 == 0 || AttackedSame1 == AttackedSame2)
+			setCharacterAlpha(Fils;0;0.5;true)
+			setCharacterAlpha(Humain;1;0.5;false)
+			dialog(Char_Humain;null;Scene_End_HelpChasseur_4)
+
+			setCharacterAlpha(Humain;0;0.5;true)
+			setCharacterAlpha(Chasseur;1;0.5;false)
+			dialog(Char_Chasseur;null;Scene_End_HelpChasseur_5)
+		endif
+
+
+		variable(AttackedSame1;=;2)
+
+	choice Choice_HelpFils:
+		variable(AttackedSame1;=;1)
+		dialog(Char_LoupGarou;null;Scene_End_HelpFils1_1)
+		dialog(Char_LoupGarou;null;Scene_End_HelpFils1_2)
+		dialog(Char_LoupGarou;null;Scene_End_HelpFils1_3)
+		dialog(Char_LoupGarou;null;Scene_End_HelpFils1_4)
+
+		if(AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2)
+			load(/VMP/Endings/Centrist)
+		else
+			load(/VMP/Endings/ChasseurDead)
+		endif
+
+		return()
+	choice Choice_StaySilent:
+		setCharacterAlpha(Fils;0;0.5;true)
+		setCharacterAlpha(Humain;1;0.5;false)
+		dialog(Char_Humain;null;Scene_End_StaySilent_Top_1)
+		setCharacterAlpha(Humain;0;0.5;true)
+		setCharacterAlpha(Chasseur;1;0.5;false)
+		dialog(Char_Chasseur;null;Scene_End_StaySilent_Top_2)
+endchoice
+
+# Default : Chasseur win
+
+if(AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2)
+	load(/VMP/Endings/Centrist)
+else
+	load(/VMP/Endings/FilsHumainDead)
+endif

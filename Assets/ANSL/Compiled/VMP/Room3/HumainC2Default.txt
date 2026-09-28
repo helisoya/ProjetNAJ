@@ -1,18 +1,33 @@
-#5B1CE5C63B7CB502C20A24B9E1BED725-10E726449382E722A35AAB2128C1BDFD
-41|1|15|ValueHumain >= 1 || ValueFils >= 1
-41|2|12|ConfrontedHumainSecret == 1
-36|Char_Humain|null|Humain_AreYouReal_1
-28|0|Choice_Yes|4|null|null|null|Choice_No|7|null|null|null
-36|Char_Humain|null|Humain_AreYouReal_Yes_1
+#6D63586660FF976E38F2E9452F1F55C7-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|30|ValueHumain >= 1 || ValueFils >= 1
+40|2|27|ConfrontedHumainSecret == 1
+35|Char_Humain|null|Talk_Humain_Friend_1
+35|Char_LoupGarou|null|Talk_Humain_Friend_2
+35|Char_Humain|null|Talk_Humain_Friend_3
+35|Char_Humain|null|Talk_Humain_Friend_4
+35|Char_Humain|null|Talk_Humain_Friend_5
+27|0|Choice_ItsTrue|8|null|null|null|Choice_ItsPrank|18|null|null|null
+35|Char_LoupGarou|null|Talk_Humain_Friend_Nice_1
+35|Char_LoupGarou|null|Talk_Humain_Friend_Nice_2
+35|Char_Humain|null|Talk_Humain_Friend_Nice_3
+35|Char_LoupGarou|null|Talk_Humain_Friend_Nice_4
+35|Char_Humain|null|Talk_Humain_Friend_Nice_5
+35|Char_Humain|null|Talk_Humain_Friend_Nice_6
+35|Char_LoupGarou|null|Talk_Humain_Friend_Nice_7
+35|null|null|Talk_Humain_Friend_Nice_8
 100|ValueHumain|+|2
-43|11
-36|Char_Humain|null|Humain_AreYouReal_No_1
+42|26
+35|Char_LoupGarou|null|Talk_Humain_Friend_Bad_1
+35|Char_LoupGarou|null|Talk_Humain_Friend_Bad_2
+35|Char_Humain|null|Talk_Humain_Friend_Bad_3
+35|Char_Humain|null|Talk_Humain_Friend_Bad_4
+35|null|null|Talk_Humain_Friend_Bad_5
 100|ValueHumain|-|1
 100|ValueFils|-|1
-43|11
-43|14
-45|HumainC2DefaultDialog
-43|14
-43|17
-45|HumainC2DefaultDialog
-43|17
+42|26
+42|29
+44|HumainC2DefaultDialog
+42|29
+42|32
+44|HumainC2DefaultDialog
+42|32

@@ -1,68 +1,67 @@
-#D39241EEC2FA903736F2B97ECB138B60-10E726449382E722A35AAB2128C1BDFD
-41|1|3|TalkedBaron == 1 && CycleCount == 0
-36|null|null|Talk_Character_Done_1
-43|65
+#7138FC459E2F705E1826F23FD4E61771-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|3|TalkedBaron == 1 && CycleCount == 0
+35|null|null|Talk_Character_Done_1
+42|64
 66|Baron|0|0.5|true
 74|Baron|Front
 75|Baron|Front
 66|Baron|1|0.5|false
 97|CycleCount|8|0|52
-36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|null|Choice_Search|40|null|null|null|Choice_Nothing|50|null|null|null
-41|11|13|TalkedBaron == 1
-36|null|null|Talk_Character_Done_1
-43|39
-41|14|20|DrinkQuest == 3 && CycleCount == 2
-41|15|17|FilsWeirdQuest == 4
-45|BaronFilsQuestWeirdGood
-43|19
-45|BaronFilsQuestWeirdNeutral
-43|19
-43|21
-43|21
-41|22|24|DrinkQuest == 2 && CycleCount == 1
-45|BaronDrinkQuestOnTime
-43|25
-43|25
-41|26|28|DrinkQuest == 2 && CycleCount == 2
-45|BaronDrinkQuestLate
-43|29
-43|29
-41|30|32|DrinkQuest < 2 && CycleCount == 2
-45|BaronDrinkQuestFail
-43|33
-43|33
-41|34|36|DrinkQuest < 2 && CycleCount == 1
-45|BaronDrinkQuestC1No
-43|37
-43|37
+35|null|null|Choice_InteractCharacter
+27|0|Choice_Talk|10|null|null|null|Choice_Search|40|null|null|null|Choice_Nothing|50|null|null|null
+40|11|13|TalkedBaron == 1
+35|null|null|Talk_Character_Done_1
+42|39
+40|14|20|DrinkQuest == 3 && CycleCount == 2
+40|15|17|FilsWeirdQuest == 4
+44|BaronFilsQuestWeirdGood
+42|19
+44|BaronFilsQuestWeirdNeutral
+42|19
+42|21
+42|21
+40|22|24|DrinkQuest == 2 && CycleCount == 1
+44|BaronDrinkQuestOnTime
+42|25
+42|25
+40|26|28|DrinkQuest == 2 && CycleCount == 2
+44|BaronDrinkQuestLate
+42|29
+42|29
+40|30|32|DrinkQuest < 2 && CycleCount == 2
+44|BaronDrinkQuestFail
+42|33
+42|33
+40|34|36|DrinkQuest < 2 && CycleCount == 1
+44|BaronDrinkQuestC1No
+42|37
+42|37
 100|TalkedBaron|=|1
-43|39
-43|51
-41|41|47|SearchCounter > 0
+42|39
+42|51
+40|41|47|SearchCounter > 0
 100|SearchCounter|-|1
 100|SecretBaron|=|1
-36|null|null|Baron_SearchBelongings_1
-36|null|null|Baron_SearchBelongings_2
-45|/VMP/Common/PrintSearchCounter
-43|49
-36|null|null|Counter_Search_0
-43|49
-43|51
-43|51
-43|60
-36|Char_Baron|null|Baron_Intro_1
-36|null|null|Baron_Intro_2
-36|Char_Baron|null|Baron_Intro_3
-36|Char_Baron|null|Baron_Intro_4
-36|null|null|Baron_Intro_5
+35|null|null|Steal_Baron_1
+35|null|null|Steal_Baron_2
+44|/VMP/Common/PrintSearchCounter
+42|49
+35|null|null|Counter_Search_0
+42|49
+42|51
+42|51
+42|59
+35|Char_Baron|null|Talk_Baron_Presentation_1
+35|Char_Baron|null|Talk_Baron_Presentation_2
+35|null|null|Talk_Baron_Presentation_3
+35|Char_LoupGarou|null|Talk_Baron_Presentation_4
 100|DrinkQuest|=|1
 100|TalkedBaron|=|1
-43|60
+42|59
 66|Baron|0|0.5|true
 74|Baron|BaronSpot
 75|Baron|BaronSpot
 66|Baron|1|0.5|false
-43|65
-45|/VMP/Common/CycleCheck
-45|Interaction
+42|64
+44|/VMP/Common/CycleCheck
+44|Interaction

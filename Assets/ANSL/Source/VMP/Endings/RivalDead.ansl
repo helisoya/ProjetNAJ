@@ -1,5 +1,12 @@
 fadeBg(1;true)
 
-dialog(null;null;Ending_RivalDead_1)
+dialog(null;null;Endings_Guilty_Rival_1)
+dialog(null;null;Endings_Guilty_Rival_2)
+dialog(null;null;Endings_Guilty_Rival_3)
+dialog(null;null;Endings_Guilty_Rival_4)
+dialog(null;null;Endings_Guilty_Rival_5)
+dialog(null;null;Endings_Guilty_Rival_6)
+dialog(null;null;Endings_Guilty_Rival_7)
+
 
 changeScene(VMPMainMenu)

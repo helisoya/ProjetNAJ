@@ -1,28 +1,35 @@
-#92A7BD0E92D75D3F67BEB88AD871DEB9-10E726449382E722A35AAB2128C1BDFD
+#7F22C958921FF5BC1FD053862D2B1EBF-530A4E09197B9415F6E0D4FE7E8BB24C
 66|Rival|0|0.5|true
 66|Baron|1|0.5|false
-36|Char_Baron|null|Trial_BaronSavesPlayer_1
+35|null|null|Scene_End_BaronRival_1
+35|Char_Baron|null|Scene_End_BaronRival_2
+35|Char_Baron|null|Scene_End_BaronRival_3
+35|Char_Baron|null|Scene_End_BaronRival_4
+35|Char_Baron|null|Scene_End_BaronRival_5
 66|Baron|0|0.5|true
 66|Chasseur|1|0.5|false
-36|Char_Chasseur|null|Trial_BaronSavesPlayer_2
+35|Char_Chasseur|null|Scene_End_BaronRival_6
 66|Chasseur|0|0.5|true
 66|Rival|1|0.5|false
-36|Char_Rival|null|Trial_BaronSavesPlayer_3
-41|10|25|ConfrontedChasseurSecret == 2
-28|0|Choice_BetrayHunter|11|null|null|null|Choice_StaySilent|23|null|null|null
+40|13|32|ConfrontedChasseurSecret == 2
+35|null|null|Scene_End_BaronRival_7
+27|0|Choice_BetrayHunter|15|null|null|null|Choice_StaySilent|30|null|null|null
 100|ValueHunter|-|3
-36|null|null|Trial_PlayerSaveRival_1
+35|Char_LoupGarou|null|Scene_End_AccusationChasseur2_1
+35|Char_LoupGarou|null|Scene_End_AccusationChasseur2_2
 66|Rival|0|0.5|true
 66|Chasseur|1|0.5|false
-36|Char_Chasseur|null|Trial_PlayerSaveRival_2
-41|17|19|FilsWeirdQuest == 3
-45|FilsAttackChasseur
-43|21
-45|BaronSavesFils
-43|21
+35|Char_Chasseur|null|Scene_End_AccusationChasseur2_3
+35|Char_Chasseur|null|Scene_End_AccusationChasseur2_4
+35|Char_Chasseur|null|Scene_End_AccusationChasseur2_5
+40|24|26|FilsWeirdQuest == 3
+44|FilsAttackChasseur
+42|28
+44|BaronSavesFils
+42|28
 59
-43|24
-43|24
-43|26
-43|26
-45|/VMP/Endings/RivalDead
+42|31
+42|31
+42|33
+42|33
+44|/VMP/Endings/RivalDead

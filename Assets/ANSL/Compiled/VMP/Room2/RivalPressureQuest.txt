@@ -1,10 +1,17 @@
-#EDBBFC755C6904C166C57B17633E1D4D-10E726449382E722A35AAB2128C1BDFD
+#E7DFEED6F55EFD8C4E86E196BBA84A0B-530A4E09197B9415F6E0D4FE7E8BB24C
 100|RivalPressureQuest|=|2
-41|2|5|RivalReactionToDrinkQuest == 1
-36|Char_Rival|null|Rival_Pressure_LoyalBaron_1
+40|2|9|RivalReactionToDrinkQuest == 1
+35|Char_LoupGarou|null|Talk_Rival_Pressure_LoyalBaron_1
+35|Char_LoupGarou|null|Talk_Rival_Pressure_LoyalBaron_2
+35|Char_LoupGarou|null|Talk_Rival_Pressure_LoyalBaron_3
+35|Char_Rival|null|Talk_Rival_Pressure_LoyalBaron_4
+35|Char_Rival|null|Talk_Rival_Pressure_LoyalBaron_5
 100|ValueRival|-|2
-43|9
-36|Char_Rival|null|Rival_Pressure_LoyalRival_1
+42|16
+35|Char_LoupGarou|null|Talk_Rival_Pressure_LoyalRival_1
+35|Char_LoupGarou|null|Talk_Rival_Pressure_LoyalRival_2
+35|Char_LoupGarou|null|Talk_Rival_Pressure_LoyalRival_3
+35|Char_Rival|null|Talk_Rival_Pressure_LoyalRival_4
 100|ValueRival|+|1
-45|RivalGetInfosFromFils
-43|9
+44|RivalGetInfosFromFils
+42|16

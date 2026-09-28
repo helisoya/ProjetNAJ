@@ -1,10 +1,17 @@
-dialog(null;null;Fils_ConfrontRivalInfos_1)
+dialog(Char_LoupGarou;null;Talk_Fils_GetInfos_1)
+dialog(Char_Fils;null;Talk_Fils_GetInfos_2)
+dialog(Char_LoupGarou;null;Talk_Fils_GetInfos_3)
 
 if(ValueFils >= 3)
-	dialog(Char_Fils;null;Fils_ConfrontRivalInfos_No_1)
+	dialog(Char_Fils;null;Talk_Fils_GetInfos_NotFriend_1)
+	dialog(Char_Fils;null;Talk_Fils_GetInfos_NotFriend_2)
 	variable(ValueFils;-;1)
 	load(FilsC2ConfrontSecret)
 else
-	dialog(Char_Fils;null;Fils_ConfrontRivalInfos_Friend_1)
+	dialog(Char_Fils;null;Talk_Fils_GetInfos_Friend_1)
+	dialog(Char_LoupGarou;null;Talk_Fils_GetInfos_Friend_2)
+	dialog(Char_Fils;null;Talk_Fils_GetInfos_Friend_3)
+	dialog(Char_Fils;null;Talk_Fils_GetInfos_Friend_4)
+	dialog(Char_Fils;null;Talk_Fils_GetInfos_Friend_5)
 	load(FilsC2LostMirror)
 endif

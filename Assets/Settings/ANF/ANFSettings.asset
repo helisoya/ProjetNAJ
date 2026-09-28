@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bfc7de97ad5247b9061be4feb35ce, type: 3}
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
-  startingScript: /NAJ/C1/EntryPoints/TrialMid
+  startingScript: /VMP/EntryPoints/Intro
   mainMenuScene: NAJMainMenu
   gameScene: NAJGame
   saveFolder: Saves/
@@ -204,124 +204,124 @@ MonoBehaviour:
         - typeName: NAJ.ANSL.HideEvidenceInfoFunction
           id: 11
           enabled: 1
-        - typeName: NAJ.ANSL.PlayUIAnimationFunction
+        - typeName: NAJ.ANSL.RefreshLifeBarUIFunction
           id: 12
           enabled: 1
-        - typeName: NAJ.ANSL.RefreshLifeBarUIFunction
+        - typeName: NAJ.ANSL.RemoveAllEvidenceFunction
           id: 13
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveAllEvidenceFunction
+        - typeName: NAJ.ANSL.RemoveAllProfileFunction
           id: 14
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveAllProfileFunction
+        - typeName: NAJ.ANSL.RemoveEvidenceFunction
           id: 15
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveEvidenceFunction
+        - typeName: NAJ.ANSL.RemoveProfileFunction
           id: 16
           enabled: 1
-        - typeName: NAJ.ANSL.RemoveProfileFunction
+        - typeName: NAJ.ANSL.SetExaminationPartFunction
           id: 17
           enabled: 1
-        - typeName: NAJ.ANSL.SetExaminationPartFunction
+        - typeName: NAJ.ANSL.SetLifeBarUIPreviewRangeFunction
           id: 18
           enabled: 1
-        - typeName: NAJ.ANSL.SetLifeBarUIPreviewRangeFunction
+        - typeName: NAJ.ANSL.ShowEvidenceInfoFunction
           id: 19
           enabled: 1
-        - typeName: NAJ.ANSL.ShowEvidenceInfoFunction
+        - typeName: NAJ.ANSL.ShowExaminationUIFunction
           id: 20
           enabled: 1
-        - typeName: NAJ.ANSL.ShowExaminationUIFunction
+        - typeName: NAJ.ANSL.ShowLifeBarUIFunction
           id: 21
           enabled: 1
-        - typeName: NAJ.ANSL.ShowLifeBarUIFunction
+        - typeName: ANF.ANSL.AddCharacterFunction
           id: 22
           enabled: 1
-        - typeName: ANF.ANSL.AddCharacterFunction
+        - typeName: ANF.ANSL.AddStaticFunction
           id: 23
           enabled: 1
-        - typeName: ANF.ANSL.AddStaticFunction
+        - typeName: ANF.ANSL.AutoSaveFunction
           id: 24
           enabled: 1
-        - typeName: ANF.ANSL.AutoSaveFunction
+        - typeName: ANF.ANSL.BlockFunction
           id: 25
           enabled: 1
-        - typeName: ANF.ANSL.BlockFunction
+        - typeName: ANF.ANSL.ChangeSceneFunction
           id: 26
           enabled: 1
-        - typeName: ANF.ANSL.ChangeSceneFunction
+        - typeName: ANF.ANSL.ChoiceFunction
           id: 27
           enabled: 1
-        - typeName: ANF.ANSL.ChoiceFunction
+        - typeName: ANF.ANSL.ClearStack
           id: 28
           enabled: 1
-        - typeName: ANF.ANSL.ClearStack
+        - typeName: ANF.ANSL.CreateUserLogFunction
           id: 29
           enabled: 1
-        - typeName: ANF.ANSL.CreateUserLogFunction
+        - typeName: ANF.ANSL.CreateUserQuestFunction
           id: 30
           enabled: 1
-        - typeName: ANF.ANSL.CreateUserQuestFunction
+        - typeName: ANF.ANSL.CreateUserVariableFunction
           id: 31
           enabled: 1
-        - typeName: ANF.ANSL.CreateUserVariableFunction
+        - typeName: ANF.ANSL.DeleteUserLogFunction
           id: 32
           enabled: 1
-        - typeName: ANF.ANSL.DeleteUserLogFunction
+        - typeName: ANF.ANSL.DeleteUserQuestFunction
           id: 33
           enabled: 1
-        - typeName: ANF.ANSL.DeleteUserQuestFunction
+        - typeName: ANF.ANSL.DeleteUserVariableFunction
           id: 34
           enabled: 1
-        - typeName: ANF.ANSL.DeleteUserVariableFunction
+        - typeName: ANF.ANSL.DialogFunction
           id: 35
           enabled: 1
-        - typeName: ANF.ANSL.DialogFunction
+        - typeName: ANF.ANSL.FadeBgColorFunction
           id: 36
           enabled: 1
-        - typeName: ANF.ANSL.FadeBgColorFunction
+        - typeName: ANF.ANSL.FadeBgFunction
           id: 37
           enabled: 1
-        - typeName: ANF.ANSL.FadeBgFunction
+        - typeName: ANF.ANSL.FadeFgColorFunction
           id: 38
           enabled: 1
-        - typeName: ANF.ANSL.FadeFgColorFunction
+        - typeName: ANF.ANSL.FadeFgFunction
           id: 39
           enabled: 1
-        - typeName: ANF.ANSL.FadeFgFunction
+        - typeName: ANF.ANSL.IfFunction
           id: 40
           enabled: 1
-        - typeName: ANF.ANSL.IfFunction
+        - typeName: ANF.ANSL.InteractionFunction
           id: 41
           enabled: 1
-        - typeName: ANF.ANSL.InteractionFunction
+        - typeName: ANF.ANSL.JumpToFunction
           id: 42
           enabled: 1
-        - typeName: ANF.ANSL.JumpToFunction
+        - typeName: ANF.ANSL.LoadBundleFunction
           id: 43
           enabled: 1
-        - typeName: ANF.ANSL.LoadBundleFunction
+        - typeName: ANF.ANSL.LoadScriptFunction
           id: 44
           enabled: 1
-        - typeName: ANF.ANSL.LoadScriptFunction
+        - typeName: ANF.ANSL.LogFunction
           id: 45
           enabled: 1
-        - typeName: ANF.ANSL.LogFunction
+        - typeName: ANF.ANSL.MapFunction
           id: 46
           enabled: 1
-        - typeName: ANF.ANSL.MapFunction
+        - typeName: ANF.ANSL.PauseContextFunction
           id: 47
           enabled: 1
-        - typeName: ANF.ANSL.PauseContextFunction
+        - typeName: ANF.ANSL.PlayAmbientFunction
           id: 48
           enabled: 1
-        - typeName: ANF.ANSL.PlayAmbientFunction
+        - typeName: ANF.ANSL.PlayMusicFunction
           id: 49
           enabled: 1
-        - typeName: ANF.ANSL.PlayMusicFunction
+        - typeName: ANF.ANSL.PlaySFXFunction
           id: 50
           enabled: 1
-        - typeName: ANF.ANSL.PlaySFXFunction
+        - typeName: ANF.ANSL.PlayUIAnimationFunction
           id: 51
           enabled: 1
         - typeName: ANF.ANSL.PlayVoiceFunction

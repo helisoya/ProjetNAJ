@@ -14,37 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: AUTO_ANSL_SCRIPT_19_Beach
   m_GUID: f21da22ed008dc641ba9ae1395f1c119
-  m_SerializeEntries:
-  - m_GUID: 0c6078b526fe7ce409c9289d94e9a40f
-    m_Address: ANSL/NAJ/C1/Investigation/Beach/ToForestStart
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 223932f23c68e9048ad63478db56c4fd
-    m_Address: ANSL/NAJ/C1/Investigation/Beach/Interaction
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 511f544b74a84c34583db39fe1ff07f6
-    m_Address: ANSL/NAJ/C1/Investigation/Beach/ToCliff
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 51ef74078916ccb4686f06ddf72953be
-    m_Address: ANSL/NAJ/C1/Investigation/Beach/Arrival
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9a6e2d75ed5ee1d4aa8b41d312d82740
-    m_Address: ANSL/NAJ/C1/Investigation/Beach/FirstTime
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Scripts
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

@@ -1,0 +1,40 @@
+#CF00AC15F5987377A9C6C505FA8505CD-530A4E09197B9415F6E0D4FE7E8BB24C
+27|0|Choice_HelpChasseur|1|null|null|null|Choice_HelpFils|15|null|null|null|Choice_StaySilent|27|null|null|null
+35|Char_LoupGarou|null|Scene_End_HelpChasseur_1
+35|Char_LoupGarou|null|Scene_End_HelpChasseur_2
+35|Char_LoupGarou|null|Scene_End_HelpChasseur_3
+40|5|12|AttackedSame1 == 0 || AttackedSame2 == 0 || AttackedSame1 == AttackedSame2
+66|Fils|0|0.5|true
+66|Humain|1|0.5|false
+35|Char_Humain|null|Scene_End_HelpChasseur_4
+66|Humain|0|0.5|true
+66|Chasseur|1|0.5|false
+35|Char_Chasseur|null|Scene_End_HelpChasseur_5
+42|13
+42|13
+100|AttackedSame1|=|2
+42|34
+100|AttackedSame1|=|1
+35|Char_LoupGarou|null|Scene_End_HelpFils1_1
+35|Char_LoupGarou|null|Scene_End_HelpFils1_2
+35|Char_LoupGarou|null|Scene_End_HelpFils1_3
+35|Char_LoupGarou|null|Scene_End_HelpFils1_4
+40|21|23|AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
+44|/VMP/Endings/Centrist
+42|25
+44|/VMP/Endings/ChasseurDead
+42|25
+59
+42|34
+66|Fils|0|0.5|true
+66|Humain|1|0.5|false
+35|Char_Humain|null|Scene_End_StaySilent_Top_1
+66|Humain|0|0.5|true
+66|Chasseur|1|0.5|false
+35|Char_Chasseur|null|Scene_End_StaySilent_Top_2
+42|34
+40|35|37|AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
+44|/VMP/Endings/Centrist
+42|39
+44|/VMP/Endings/FilsHumainDead
+42|39

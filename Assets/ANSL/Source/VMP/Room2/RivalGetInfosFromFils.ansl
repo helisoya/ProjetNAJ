@@ -1,2 +1,5 @@
-dialog(Char_Rival;null;Rival_GetInfosFromFils_1)
+dialog(Char_Rival;null;Talk_Rival_GetInfosFils_1)
+dialog(Char_Rival;null;Talk_Rival_GetInfosFils_2)
+dialog(Char_LoupGarou;null;Talk_Rival_GetInfosFils_3)
+dialog(Char_Rival;null;Talk_Rival_GetInfosFils_4)
 variable(GetInfosFromFilsQuest;=;1)

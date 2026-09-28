@@ -1,5 +1,10 @@
 if(ConfrontedChasseurSecret == 2)
-	dialog(Char_Chasseur;null;Chasseur_C2Friend_1)
+	dialog(Char_Chasseur;null;Talk_Chasseur_Secret_Reminder_1)
+	dialog(Char_Chasseur;null;Talk_Chasseur_Secret_Reminder_2)
 else
-	dialog(Char_Chasseur;null;Chasseur_C2Default_1)
+	dialog(Char_Chasseur;null;Talk_Chasseur_DefaultCycle2_1)
+	dialog(Char_LoupGarou;null;Talk_Chasseur_DefaultCycle2_2)
+	dialog(Char_Chasseur;null;Talk_Chasseur_DefaultCycle2_3)
+	dialog(Char_LoupGarou;null;Talk_Chasseur_DefaultCycle2_4)
+	dialog(Char_Chasseur;null;Talk_Chasseur_DefaultCycle2_5)
 endif

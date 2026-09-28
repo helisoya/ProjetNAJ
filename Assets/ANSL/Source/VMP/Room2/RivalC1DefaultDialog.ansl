@@ -1,1 +1,6 @@
-dialog(Char_Rival;null;Rival_C1Default_1)
+dialog(Char_Rival;null;Talk_Rival_Rien_1)
+dialog(Char_LoupGarou;null;Talk_Rival_Rien_2)
+dialog(Char_Rival;null;Talk_Rival_Rien_3)
+dialog(Char_Rival;null;Talk_Rival_Rien_4)
+dialog(Char_Rival;null;Talk_Rival_Rien_5)
+dialog(Char_Rival;null;Talk_Rival_Rien_6)

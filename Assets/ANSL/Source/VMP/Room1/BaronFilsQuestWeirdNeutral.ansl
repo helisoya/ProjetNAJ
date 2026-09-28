@@ -1,1 +1,3 @@
-dialog(Char_Baron;null;Baron_FilsQuestEnd_Neutral_1)
+dialog(Char_LoupGarou;null;Talk_Baron_SecretFils_Neutral_1)
+dialog(Char_LoupGarou;null;Talk_Baron_SecretFils_Neutral_2)
+dialog(Char_Baron;null;Talk_Baron_SecretFils_Neutral_3)

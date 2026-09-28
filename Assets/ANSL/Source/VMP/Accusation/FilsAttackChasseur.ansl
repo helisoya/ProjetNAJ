@@ -2,16 +2,24 @@ setCharacterAlpha(Chasseur;0;0.5;true)
 setCharacterAlpha(Rival;0;0.5;true)
 setCharacterAlpha(Fils;1;0.5;false)
 
-dialog(Char_Fils;null;Trial_FilsDefense_1)
+dialog(Char_Fils;null;Scene_End_FilsChasseur3_1)
+dialog(Char_Fils;null;Scene_End_FilsChasseur3_2)
+dialog(Char_Fils;null;Scene_End_FilsChasseur3_3)
 
 
 if(ValueFils >= 3)
-	dialog(null;null;Trial_FilsDefense_2)
+	dialog(null;null;Scene_End_Confirm_HelpFils_1)
 	
 	choice(List)
 		choice Choice_HelpFils:
-			dialog(null;null;Trial_SaveFils_1)
+			dialog(Char_Fils;null;Scene_End_HelpFils2_1)
+			dialog(Char_Fils;null;Scene_End_HelpFils2_2)
+			dialog(Char_Fils;null;Scene_End_HelpFils2_3)
+			dialog(Char_Fils;null;Scene_End_HelpFils2_4)
+			dialog(Char_Fils;null;Scene_End_HelpFils2_5)
+			dialog(Char_Fils;null;Scene_End_HelpFils2_6)
 			variable(ValueChasseur;-;3)
+			load(/VMP/Endings/ChasseurDead)
 			return()
 		choice Choice_StaySilent:
 	
@@ -24,14 +32,20 @@ endif
 setCharacterAlpha(Fils;0;0.5;true)
 setCharacterAlpha(Chasseur;1;0.5;false)
 
-dialog(Char_Chasseur;null;Trial_FilsDefense_3)
-
-setCharacterAlpha(Chasseur;0;0.5;true)
-setCharacterAlpha(Fils;1;0.5;false)
-
-dialog(Char_Chasseur;null;Trial_FilsDefense_4)
+dialog(Char_Chasseur;null;Scene_End_HunterHuman1_1)
+dialog(Char_Chasseur;null;Scene_End_HunterHuman1_2)
+dialog(Char_Chasseur;null;Scene_End_HunterHuman1_3)
+dialog(Char_Chasseur;null;Scene_End_HunterHuman1_4)
 
 if(ValueFils <= 0)
+	setCharacterAlpha(Chasseur;0;0.5;true)
+	setCharacterAlpha(Fils;1;0.5;false)
+	dialog(Char_Fils;null;Scene_End_HunterHuman_Ennemy_1)
+	dialog(Char_Fils;null;Scene_End_HunterHuman_Ennemy_2)
+	dialog(Char_Fils;null;Scene_End_Lose_1)
+	dialog(Char_Fils;null;Scene_End_Lose_2)
+	dialog(Char_Fils;null;Scene_End_Lose_3)
+
 	load(/VMP/Endings/PlayerHatedByFils)
 else 
 	load(/VMP/Endings/FilsHumainDead)

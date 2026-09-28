@@ -1,6 +1,6 @@
-#1165D3E9977ED249C272384BE028A9D8-10E726449382E722A35AAB2128C1BDFD
+#1165D3E9977ED249C272384BE028A9D8-530A4E09197B9415F6E0D4FE7E8BB24C
 78|1
-45|GeneralSetup
+44|GeneralSetup
 86|c1_common|c1_trial_B
 87|Location_C1_TrialPart2
 0|C1_Herbarium
@@ -15,11 +15,11 @@
 1|C1_Judge
 1|C1_Juno
 61|Common/Courtroom
-23|Judge|false|JudgeSpot
-23|Robert|false|ProsecutorSpot
-23|RannCoat|false|DefenseSpot
-23|Juno|true|LobbySpot
+22|Judge|false|JudgeSpot
+22|Robert|false|ProsecutorSpot
+22|RannCoat|false|DefenseSpot
+22|Juno|true|LobbySpot
 67|JudgeTurtle|InShell
 64|AllCam
 65|AllCam
-45|../Trial/B/Start
+44|../Trial/B/Start

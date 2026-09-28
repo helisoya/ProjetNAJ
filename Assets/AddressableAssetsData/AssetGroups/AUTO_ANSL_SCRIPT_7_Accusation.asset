@@ -27,6 +27,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b131f41053546042a9353d3d41cb3d4
+    m_Address: ANSL/VMP/Accusation/FilsChasseurTop
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 79e5836889411fa428cf05b6553e234d
     m_Address: ANSL/VMP/Accusation/BaronSavesFils
     m_ReadOnly: 0

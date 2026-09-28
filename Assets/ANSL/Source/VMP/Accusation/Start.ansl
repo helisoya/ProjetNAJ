@@ -16,8 +16,23 @@ addCharacter(Humain;true;Front)
 
 fadeFg(0;false)
 
-dialog(Char_Baron;null;Trial_Start_1)
-dialog(Char_Baron;null;Trial_Start_2)
+dialog(Char_Baron;null;Scene_End_Intro_1)
+dialog(Char_Baron;null;Scene_End_Intro_2)
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterAlpha(Fils;1;0.5;false)
+
+dialog(Char_Fils;null;Scene_End_Intro_3)
+
+setCharacterAlpha(Fils;0;0.5;true)
+setCharacterAlpha(Baron;1;0.5;false)
+
+dialog(Char_Baron;null;Scene_End_Intro_4)
+dialog(Char_Baron;null;Scene_End_Intro_5)
+dialog(Char_Baron;null;Scene_End_Intro_6)
+dialog(Char_Baron;null;Scene_End_Intro_7)
+dialog(Char_Baron;null;Scene_End_Intro_8)
+dialog(Char_Baron;null;Scene_End_Intro_9)
 
 setCharacterAlpha(Baron;0;0.5;true)
 setCharacterAlpha(Rival;1;0.5;false)
@@ -25,21 +40,31 @@ setCharacterAlpha(Rival;1;0.5;false)
 if(RivalReactionToDrinkQuest == 2)
 	# Rival > Baron > Rival > Joueur
 
-	dialog(Char_Rival;null;Trial_Start_FriendRival_1)
-	dialog(Char_Rival;null;Trial_Start_FriendRival_2)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_1)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_2)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_3)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_4)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_5)
 
 	setCharacterAlpha(Rival;0;0.5;true)
 	setCharacterAlpha(Baron;1;0.5;false)
 
-	dialog(Char_Baron;null;Trial_Start_FriendRival_3)
+	dialog(Char_Baron;null;Scene_End_RivalBaron_6)
+	dialog(Char_Baron;null;Scene_End_RivalBaron_7)
+	dialog(Char_Baron;null;Scene_End_RivalBaron_8)
+	dialog(Char_Baron;null;Scene_End_RivalBaron_9)
+	dialog(Char_Baron;null;Scene_End_RivalBaron_10)
 
 	setCharacterAlpha(Baron;0;0.5;true)
 	setCharacterAlpha(Rival;1;0.5;false)
 
-	dialog(Char_Rival;null;Trial_Start_FriendRival_4)
-	dialog(Char_Rival;null;Trial_Start_FriendRival_5)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_11)
+	dialog(null;null;Scene_End_RivalBaron_12)
 
-	dialog(null;null;Trial_Start_FriendRival_6)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_13)
+	dialog(Char_Rival;null;Scene_End_RivalBaron_14)
+
+	dialog(null;null;Scene_End_RivalBaron_15)
 
 	load(PlayerSecretChoice)
 
@@ -47,15 +72,20 @@ else
 	# Default
 	# Rival > Chasseur > Humain
 
-	dialog(Char_Rival;null;Trial_Start_Default_1)
-	dialog(Char_Rival;null;Trial_Start_Default_2)
+	dialog(Char_Rival;null;Scene_End_RivalHunter_1)
+	dialog(Char_Rival;null;Scene_End_RivalHunter_2)
+	dialog(Char_Rival;null;Scene_End_RivalHunter_3)
+	dialog(Char_Rival;null;Scene_End_RivalHunter_4)
+	dialog(Char_Rival;null;Scene_End_RivalHunter_5)
+	dialog(Char_Rival;null;Scene_End_RivalHunter_6)
 
 	setCharacterAlpha(Rival;0;0.5;true)
 	setCharacterAlpha(Chasseur;1;0.5;false)
 
-	dialog(Char_Chasseur;null;Trial_Start_Default_3)
-	dialog(Char_Chasseur;null;Trial_Start_Default_4)
-	dialog(Char_Chasseur;null;Trial_Start_Default_5)
+	dialog(Char_Chasseur;null;Scene_End_HunterHuman1_1)
+	dialog(Char_Chasseur;null;Scene_End_HunterHuman1_2)
+	dialog(Char_Chasseur;null;Scene_End_HunterHuman1_3)
+	dialog(Char_Chasseur;null;Scene_End_HunterHuman1_4)
 
 	load(FilsProtectHumain)
 endif

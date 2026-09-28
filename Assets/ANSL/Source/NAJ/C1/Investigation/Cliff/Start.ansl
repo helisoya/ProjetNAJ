@@ -69,4 +69,7 @@ showDialogWindow(false)
 
 setCameraRotation(0;0;0;2;true)
 
+addEvidence(C1_Injury)
+addEvidence(C1_Coat)
+
 load(Interaction)

@@ -37,8 +37,8 @@ else
 					# Search his belongings
 					variable(SearchCounter;-;1)
 					variable(SecretChasseur;=;1)
-					dialog(null;null;Chasseur_SearchBelongings_1)
-					dialog(null;null;Chasseur_SearchBelongings_2)
+					dialog(null;null;Steal_Chasseur_1)
+					dialog(null;null;Steal_Chasseur_2)
 					load(/VMP/Common/PrintSearchCounter)
 				else
 					# Cannot search
@@ -53,7 +53,10 @@ else
 
 		case 0:
 			# Cycle 0 : Intro
-			dialog(Char_Chasseur;null;Chasseur_Intro_1)
+			dialog(Char_Chasseur;null;Talk_Chasseur_Presentation_1)
+			dialog(Char_LoupGarou;null;Talk_Chasseur_Presentation_2)
+			dialog(Char_Chasseur;null;Talk_Chasseur_Presentation_3)
+			dialog(null;null;Talk_Chasseur_Presentation_4)
 			variable(TalkedChasseur;=;1)
 
 	endswitch

@@ -1,5 +1,11 @@
 fadeBg(1;true)
 
-dialog(null;null;Ending_BaronDead_1)
+dialog(null;null;Endings_Guilty_Baron_1)
+dialog(null;null;Endings_Guilty_Baron_2)
+dialog(null;null;Endings_Guilty_Baron_3)
+dialog(null;null;Endings_Guilty_Baron_4)
+dialog(null;null;Endings_Guilty_Baron_5)
+dialog(null;null;Endings_Guilty_Baron_6)
+dialog(null;null;Endings_Guilty_Baron_7)
 
 changeScene(VMPMainMenu)

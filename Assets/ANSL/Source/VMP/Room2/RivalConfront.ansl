@@ -1,14 +1,25 @@
 variable(ConfrontedRivalSecret;=;1)
-dialog(null;null;Rival_Confront_1)
-dialog(Char_Rival;null;Rival_Confront_2)
-dialog(Char_Rival;null;Rival_Confront_3)
+dialog(Char_LoupGarou;null;Talk_Rival_Clue_1)
+dialog(Char_LoupGarou;null;Talk_Rival_Clue_2)
+dialog(Char_Rival;null;Talk_Rival_Clue_3)
+dialog(Char_Rival;null;Talk_Rival_Clue_4)
+dialog(Char_Rival;null;Talk_Rival_Clue_5)
+dialog(Char_Rival;null;Talk_Rival_Clue_6)
+dialog(Char_Rival;null;Talk_Rival_Clue_7)
+dialog(Char_Rival;null;Talk_Rival_Clue_8)
+dialog(Char_Rival;null;Talk_Rival_Clue_9)
 
 choice(List)
 	choice Choice_Fraud:
-		dialog(null;null;Rival_Confront_Bad_1)
+		dialog(Char_LoupGarou;null;Talk_Rival_Nice_1)
+		dialog(Char_LoupGarou;null;Talk_Rival_Nice_2)
+		dialog(Char_rival;null;Talk_Rival_Nice_3)
+		dialog(Char_LoupGarou;null;Talk_Rival_Nice_4)
 		variable(ValueRival;-;2)
 	choice Choice_ItsCool:
-		dialog(null;null;Rival_Confront_Nice_1)
+		dialog(Char_LoupGarou;null;Talk_Rival_Confront_1)
+		dialog(Char_LoupGarou;null;Talk_Rival_Confront_2)
+		dialog(Char_LoupGarou;null;Talk_Rival_Confront_3)
 		variable(ValueRival;+;2)
 endchoice
 

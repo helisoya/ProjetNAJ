@@ -2,24 +2,58 @@ setLocals(vmp_test)
 
 setBackground(Room1)
 
-addCharacter(Baron;false;Front)
+addCharacter(Baron;true;Front)
+addCharacter(Chasseur;true;Front)
+addCharacter(Fils;true;Front)
+addCharacter(Humain;true;Front)
+addCharacter(Rival;true;Front)
 addCharacter(Boris;false;BorisSpot)
-addCharacter(OulOul;false;OulOulSpot)
 
 variable(SearchCounter;=;0)
 variable(LookCounter;=;2)
 
 fadeFg(0;false)
 
-dialog(Baron;null;Intro_1)
-dialog(null;null;Intro_2)
-dialog(Baron;null;Intro_3)
-dialog(Baron;null;Intro_4)
+dialog(null;null;Scene_Intro_1)
+dialog(null;null;Scene_Intro_2)
+dialog(null;null;Scene_Intro_3)
+dialog(null;null;Scene_Intro_4)
+dialog(null;null;Scene_Intro_5)
+dialog(null;null;Scene_Intro_6)
+dialog(null;null;Scene_Intro_7)
+dialog(null;null;Scene_Intro_8)
+
+setCharacterAlpha(Baron;1;0.5;false)
+dialog(null;null;Scene_Intro_9)
 
 setCharacterAlpha(Baron;0;0.5;true)
+setCharacterAlpha(Fils;1;0.5;false)
+dialog(null;null;Scene_Intro_10)
+
+setCharacterAlpha(Fils;0;0.5;true)
+setCharacterAlpha(Humain;1;0.5;false)
+dialog(null;null;Scene_Intro_11)
+
+setCharacterAlpha(Humain;0;0.5;true)
+setCharacterAlpha(Rival;1;0.5;false)
+dialog(null;null;Scene_Intro_12)
+
+setCharacterAlpha(Rival;0;0.5;true)
+setCharacterAlpha(Chasseur;1;0.5;false)
+dialog(null;null;Scene_Intro_13)
+
+setCharacterAlpha(Chasseur;0;0.5;true)
 setCharacterPosition(Baron;BaronSpot)
 setCharacterRotation(Baron;BaronSpot)
 setCharacterAlpha(Baron;1;0.5;false)
+dialog(null;null;Scene_Intro_14)
+dialog(null;null;Scene_Intro_15)
+dialog(null;null;Scene_Intro_16)
+
+removeCharacter(Chasseur)
+removeCharacter(Fils)
+removeCharacter(Humain)
+removeCharacter(Rival)
 
 load(/VMP/Common/PrintLookCounter)
 

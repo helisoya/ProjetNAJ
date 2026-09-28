@@ -1,6 +1,11 @@
 if(ValueFils >= 3)
 	load(FilsC2LostMirror)
 else
-	dialog(Char_Fils;null;Fils_C2Default_1)
-	load(FilsC2ConfrontSecret)
+	dialog(Char_Fils;null;Talk_Fils_DefaultCycle2_1)
+	dialog(Char_LoupGarou;null;Talk_Fils_DefaultCycle2_2)
+	dialog(Char_Fils;null;Talk_Fils_DefaultCycle2_3)
+
+	if(SecretFils == 1 && FilsWeirdQuest >= 2)
+		load(FilsC2ConfrontSecret)
+	endif
 endif

@@ -2,10 +2,9 @@ if(LookCounter > 0)
 	variable(LookCounter;-;1)
 
 	if(DrinkQuest == 0)
-		dialog(null;null;Drink_0_1)
+		dialog(null;null;Watch_Glass_NoBaron_1)
 	else
-		dialog(null;null;Drink_1_1)
-		dialog(null;null;Drink_1_2)
+		dialog(null;null;Watch_Glass_Baron_1)
 
 		variable(DrinkQuest;=;2)
 

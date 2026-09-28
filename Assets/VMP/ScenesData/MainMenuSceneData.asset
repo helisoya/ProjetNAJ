@@ -21,13 +21,13 @@ MonoBehaviour:
       rid: 3436800196703420487
   registeredGUIComponents:
   - id: 
-    data: {fileID: 4893906188555742882, guid: e8c985bdeb1bdc345833a962ece4ce14, type: 3}
+    data: {fileID: 4893906188555742882, guid: 4836e1b9aa943f0478c169586f689040, type: 3}
   - id: 
     data: {fileID: 4866723388494020783, guid: b7809b1dcef6c9849bdd1921d76beb85, type: 3}
   - id: 
-    data: {fileID: 4813586622291847291, guid: 8059e479ea9479f479ea903f59b46f8f, type: 3}
+    data: {fileID: 4813586622291847291, guid: d84bb1e58da587b4e93538c7419df21e, type: 3}
   - id: 
-    data: {fileID: 6123419753822969047, guid: 8c0175ffba14bb8469c0e488a0977164, type: 3}
+    data: {fileID: 6123419753822969047, guid: 49f937d9a165ff64b875b9d1382a127e, type: 3}
   - id: fadeAll
     data: {fileID: 1331905330795673416, guid: 9299cd766ec312648ad187dbaab961ff, type: 3}
   changeSceneUseFading: 1
@@ -41,6 +41,7 @@ MonoBehaviour:
         canBeSaved: 1
         enabledByDefault: 1
         asyncLoading: 0
+        resourceType: 1
         skyboxDataPath: Skyboxes/
         defaultSkybox: Day
         skyboxMaterial: {fileID: 2100000, guid: 79f3e4c0b85311347b7292b2aa8d2833, type: 2}

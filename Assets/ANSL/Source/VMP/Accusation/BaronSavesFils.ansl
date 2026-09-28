@@ -1,20 +1,33 @@
 setCharacterAlpha(Chasseur;0;0.5;true)
 setCharacterAlpha(Baron;1;0.5;false)
 
-dialog(Char_Baron;null;Trial_BaronSavesFils_1)
+dialog(Char_Baron;null;Scene_End_BaronHelp_1)
+dialog(Char_Baron;null;Scene_End_BaronHelp_2)
 
 setCharacterAlpha(Baron;0;0.5;true)
 setCharacterAlpha(Rival;1;0.5;false)
 
-dialog(Char_Rival;null;Trial_BaronSavesFils_2)
+dialog(Char_Rival;null;Scene_End_BaronHelp_3)
+dialog(Char_Rival;null;Scene_End_BaronHelp_4)
+
+setCharacterAlpha(Rival;0;0.5;true)
+setCharacterAlpha(Baron;1;0.5;false)
+
+dialog(Char_Baron;null;Scene_End_BaronHelp_5)
+
+dialog(null;null;Scene_End_BaronHelp_6)
 
 choice(List)
 	choice Choice_HelpRival:
 		variable(ValueBaron;-;3)
-		dialog(null;null;Trial_KillBaron_1)
+		dialog(Char_LoupGarou;null;Scene_End_AccusationBaron_1)
+		dialog(Char_LoupGarou;null;Scene_End_AccusationBaron_2)
+		dialog(Char_LoupGarou;null;Scene_End_AccusationBaron_3)
 		load(/VMP/Endings/BaronDead)
 	choice Choice_HelpBaron:
 		variable(ValueRival;-;3)
-		dialog(null;null;Trial_SaveBaron_1)
+		dialog(Char_LoupGarou;null;Scene_End_AccusationRival_1)
+		dialog(Char_LoupGarou;null;Scene_End_AccusationRival_2)
+		dialog(Char_LoupGarou;null;Scene_End_AccusationRival_3)
 		load(/VMP/Endings/RivalDead)
 endchoice

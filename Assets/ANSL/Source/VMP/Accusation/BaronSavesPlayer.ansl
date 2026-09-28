@@ -1,29 +1,34 @@
 setCharacterAlpha(Rival;0;0.5;true)
 setCharacterAlpha(Baron;1;0.5;false)
 
-dialog(Char_Baron;null;Trial_BaronSavesPlayer_1)
+dialog(null;null;Scene_End_BaronRival_1)
+dialog(Char_Baron;null;Scene_End_BaronRival_2)
+dialog(Char_Baron;null;Scene_End_BaronRival_3)
+dialog(Char_Baron;null;Scene_End_BaronRival_4)
+dialog(Char_Baron;null;Scene_End_BaronRival_5)
 
 setCharacterAlpha(Baron;0;0.5;true)
 setCharacterAlpha(Chasseur;1;0.5;false)
 
-dialog(Char_Chasseur;null;Trial_BaronSavesPlayer_2)
+dialog(Char_Chasseur;null;Scene_End_BaronRival_6)
 
 setCharacterAlpha(Chasseur;0;0.5;true)
 setCharacterAlpha(Rival;1;0.5;false)
 
-dialog(Char_Rival;null;Trial_BaronSavesPlayer_3)
-
 if(ConfrontedChasseurSecret == 2)
-
+	dialog(null;null;Scene_End_BaronRival_7)
 	choice(List)
 		choice Choice_BetrayHunter:
 			variable(ValueHunter;-;3)
-			dialog(null;null;Trial_PlayerSaveRival_1)
+			dialog(Char_LoupGarou;null;Scene_End_AccusationChasseur2_1)
+			dialog(Char_LoupGarou;null;Scene_End_AccusationChasseur2_2)
 
 			setCharacterAlpha(Rival;0;0.5;true)
 			setCharacterAlpha(Chasseur;1;0.5;false)
 
-			dialog(Char_Chasseur;null;Trial_PlayerSaveRival_2)
+			dialog(Char_Chasseur;null;Scene_End_AccusationChasseur2_3)
+			dialog(Char_Chasseur;null;Scene_End_AccusationChasseur2_4)
+			dialog(Char_Chasseur;null;Scene_End_AccusationChasseur2_5)
 
 			if(FilsWeirdQuest == 3)
 				load(FilsAttackChasseur)

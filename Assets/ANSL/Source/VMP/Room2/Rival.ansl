@@ -45,8 +45,8 @@ else
 					# Search his belongings
 					variable(SearchCounter;-;1)
 					variable(SecretRival;=;1)
-					dialog(null;null;Rival_SearchBelongings_1)
-					dialog(null;null;Rival_SearchBelongings_2)
+					dialog(null;null;Steal_Rival_1)
+					dialog(null;null;Steal_Rival_2)
 					load(/VMP/Common/PrintSearchCounter)
 				else
 					# Cannot search
@@ -61,7 +61,10 @@ else
 
 		case 0:
 			# Cycle 0 : Intro
-			dialog(Char_Rival;null;Rival_Intro_1)
+			dialog(Char_Rival;null;Talk_Rival_Presentation_1)
+			dialog(Char_LoupGarou;null;Talk_Rival_Presentation_2)
+			dialog(Char_Rival;null;Talk_Rival_Presentation_3)
+			dialog(null;null;Talk_Rival_Presentation_4)
 			variable(TalkedRival;=;1)
 
 	endswitch

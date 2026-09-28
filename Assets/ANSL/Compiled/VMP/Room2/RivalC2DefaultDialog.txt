@@ -1,15 +1,25 @@
-#155FD934C29207EA60E3AD4AD71FCCEA-10E726449382E722A35AAB2128C1BDFD
-41|1|3|RivalReactionToDrinkQuest == 1
-36|Char_Rival|null|Rival_C2Default_LoyalBaron_1
-43|14
-36|Char_Rival|null|Rival_C2Default_Loyalty_1
-36|Char_Rival|null|Rival_C2Default_Loyalty_2
-28|0|Choice_Yes|6|null|null|null|Choice_No|10|null|null|null
-36|Char_Rival|null|Rival_C2Default_Loyalty_Nice_1
+#C1A60539C6B7728EE83B882FF7161C61-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|4|RivalReactionToDrinkQuest == 1
+35|Char_Rival|null|Talk_Rival_LoyalBaron_1
+35|Char_Rival|null|Talk_Rival_LoyalBaron_2
+42|24
+35|Char_Rival|null|Talk_Rival_LateLoyaltyCheck_1
+35|Char_Rival|null|Talk_Rival_LateLoyaltyCheck_2
+35|Char_Rival|null|Talk_Rival_LateLoyaltyCheck_3
+27|0|Choice_Yes|8|null|null|null|Choice_No|15|null|null|null
+35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_1
+35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_2
+35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_3
+35|Char_Rival|null|Talk_Rival_LateLoyalRival_4
 100|RivalReactionToDrinkQuest|=|2
 100|ValueRival|+|2
-43|13
-36|Char_Rival|null|Rival_C2Default_Loyalty_Centrist_1
+42|23
+35|Char_LoupGarou|null|Talk_Rival_Centrist_1
+35|Char_LoupGarou|null|Talk_Rival_Centrist_2
+35|Char_Rival|null|Talk_Rival_Centrist_3
+35|Char_Rival|null|Talk_Rival_Centrist_4
+35|Char_Rival|null|Talk_Rival_Centrist_5
+35|Char_Rival|null|Talk_Rival_Centrist_6
 100|ValueRival|-|1
-43|13
-43|14
+42|23
+42|24

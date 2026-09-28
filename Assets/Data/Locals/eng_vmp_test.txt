@@ -1,13 +1,13 @@
 # Characters 
 
-Char_Baron = Lord Vampire Cool
-Char_LoupGaroun = Corentin
-Char_Rival = Yesferatu
-Char_Fils = Minecraft Lover (Son of Lord Vampire Cool)
-Char_Humain = Vampire Vader
+Char_Baron = Hilda Minkhol
+Char_LoupGarou = Me
+Char_Rival = Sofia Yuminhof
+Char_Fils = Bernard Minkhol
+Char_Humain = Count Von GroBe-Fledermausland
 Char_OulOul = ???
-Char_Chasseur = Great Cool
-Char_Boris = HIM
+Char_Chasseur = Lady Poiana
+Char_Boris = ???
 
 # Choice
 
@@ -21,26 +21,30 @@ Choice_Yes = Yes
 Choice_No = No
 
 Choice_NotNow = Not now
-Choice_RevealSecret = Reveal the secret
+Choice_RevealHisSecret = Reveal his secret
 
 Choice_Fraud = You are a fraud
-Choice_ItsCool = Its cool
+Choice_ItsCool = It's fine
+Choice_ReprimendHim = Reprimend him
 
-Choice_CanIJoin = Can I join ?
-Choice_Horrific = Horrific !
+Choice_ContinuePress = Continue pressing
+Choice_Stop = Stop
+
+Choice_ItsTrue = It's true
+Choice_ItsPrank = It's a prank
 
 Choice_IAmLoyalToYou = I am loyal to you
-Choice_IAmLoyalToHim = I am loyal to him
+Choice_IAmLoyalToHer = I am loyal to her
 
-Choice_BetrayHumain = Betray the human
-Choice_BetrayFils = Betray the son
-Choice_BetrayHunter = Betray the hunter
+Choice_BetrayHumain = Betray Todd
+Choice_BetrayFils = Betray Bernard Minkhol
+Choice_BetrayHunter = Betray Lady Poiana
 Choice_StaySilent = Stay silent
 
-Choice_HelpChasseur = Help the hunter
-Choice_HelpBaron = Help the baron
-Choice_HelpRival = Help the son
-Choice_HelpFils = Help the fils
+Choice_HelpChasseur = Help Lady Poiana
+Choice_HelpBaron = Help the baroness
+Choice_HelpRival = Help the Lady Yuminhof
+Choice_HelpFils = Help the baroness's son
 
 
 # Common
@@ -384,3 +388,683 @@ Ending_RivalDead_1 = And thus, Yesferatu died.
 Ending_BaronDead_1 = And thus, the baron died.
 
 Ending_PlayerHatedByFils_1 = Hated by the baron's son. I was killed : (
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Scene_Intro_1 = Here we are, the Vampire Party.
+Scene_Intro_2 = The baroness hosts this event every year on Halloween night, only for the most important vampires around...
+Scene_Intro_3 = And me, because they needed a waiter.
+Scene_Intro_4 = They gather under the moonlight in this glass building, drinking blood and talking, scheming, making alliances.
+Scene_Intro_5 = This is basically just a networking event with extra steps.
+Scene_Intro_6 = But those vampire powerplays are of no interest to me, I'm just here to do my job.
+Scene_Intro_7 = Being a werewolf and all, this goes way over my head.
+Scene_Intro_8 = Oh, the party's about to start, let's see our guest list...
+Scene_Intro_9 = The baroness Hilda Minkhol, of course. I've been her cook for a few years now. She hosts the event.
+Scene_Intro_10 = Her son Bernard Minkhol is also here, as is expected.
+Scene_Intro_11 = He brought an important guest with him, some kind of foreign count or something. Sir Von GroBes-Fledermausland.
+Scene_Intro_12 = Then there's Sofia Yuminhof. She was ostracized from the community, but is now making a comeback. I used to work for her.
+Scene_Intro_13 = And finaly, the rising star of vampire high society, the powerful Lady Poiana.
+Scene_Intro_14 = All those powerful vampires, gathered here for one night only, under this very literal glass ceiling...
+Scene_Intro_15 = That's not a sight you get everyday.
+Scene_Intro_16 = Well, let's go see if anyone needs me.
+
+Talk_Baron_Presentation_1 = Hey, you. I left my drink in the greenhouse portion of the building. Go get it for me.
+Talk_Baron_Presentation_2 = And be quick, I don't want people getting nosy and finding out what I've been drinking.
+Talk_Baron_Presentation_3 = That's because only I know that she's vegan. It's a secret I keep well guarded, as her personal cook.
+Talk_Baron_Presentation_4 = Yes, right away!
+
+Talk_Chasseur_Presentation_1 = Are you the butler or something?
+Talk_Chasseur_Presentation_2 = Well, actually-
+Talk_Chasseur_Presentation_3 = Yeah, doesn't matter. I don't need anything. You can go now.
+Talk_Chasseur_Presentation_4 = What was that about? Lady Poiana seems in a bad mood.
+
+Talk_Rival_Presentation_1 = I didn't expect to find you here. So this is what you became after I left? A servant to this filthy baroness?
+Talk_Rival_Presentation_2 = Well, I mean... it's not like I had a choice...
+Talk_Rival_Presentation_3 = Yeah, sure. Whatever. It was silly of me to assume you would be better than all those backstabbing jerks.
+Talk_Rival_Presentation_4 = I don't know where we stand now. We used to be very close, but it's been years...
+
+Talk_Humain_Presentation_1 = Ah, this party is just amazing. Everything looks great! You people really know how to set a mood.
+Talk_Humain_Presentation_2 = Oh, erm, thanks! I'll let the baroness know. We are honored to have you.
+Talk_Humain_Presentation_3 = Haha, awesome.
+Talk_Humain_Presentation_4 = Well, at least the count seems to be in a good mood. That's nice.
+
+Talk_Fils_Presentation_1 = Oh, hey, listen. The count brought his own blood to drink, so don't offer him any of ours. It would be quite rude.
+Talk_Fils_Presentation_2 = Sure, I will keep that in mind.
+Talk_Fils_Presentation_3 = Why would a guest bring their own drink? I guess that's just customary where he comes from...
+Talk_Fils_Presentation_4 = Alright, well, you can go now.
+
+Watch_Boris_1 = That's just an old piece of decor we use as a coat hanger.
+Watch_Boris_2 = Upon closer inspection, this plastic skeleton seems to be very well-made.
+Watch_Boris_3 = That's still just the coat hanger. Nothing special.
+Watch_Boris_4 = Wait, is it just me or did the skeleton move just then?
+Watch_Boris_5 = Oh god, it just grabbed my arm!
+
+Talk_Boris_Presentation_1 = Ok kid, you got me. I'm not a plastic skeleton.
+Talk_Boris_Presentation_2 = Listen up, and listen good, 'cause I won't repeat myself.
+Talk_Boris_Presentation_3 = There's something going on here, and I know quite a bit more than I let on.
+Talk_Boris_Presentation_4 = Dark secrets are going to rise up to the surface, hatred is bubbling over, this place is basically a ticking time-bomb!
+Talk_Boris_Presentation_5 = You want the key, like everybody else? You really want it?
+Talk_Boris_Presentation_6 = Well, I might just be able to help ya. But it comes at a price. A terrible price, oh yes.
+Talk_Boris_Presentation_7 = You see, I'm awfully... thirsty. Would you be a dear and bring me a drink?
+
+Talk_Boris_NoDrink_1 = Well, kid, whatcha waintin' for? Did you forget the deal we made?
+Talk_Boris_NoDrink_2 = Come on, I need me some of that plasma. No blood, no key. And that's final.
+
+Talk_Boris_Drink_1 = Ah, sweet blood. Haven't drank that in years. Well, haven't drank much of anything in years, actually. Bottom's up!
+Talk_Boris_Drink_2 = Aaaaaaah, that's good. Yeah, that's the stuff.
+Talk_Boris_Drink_3 = Oh right, guess you want that key now? Yeah, figures.
+Talk_Boris_Drink_4 = Well, kid, here it is. Don't know what you're gonna do with it, but hey, that's not really my problem, now, is it?
+Talk_Boris_Drink_5 = Hehe, have fun with that. And thanks again.
+
+Watch_Tools_1 = There's a saw and some plyers. Nothing strange to find in a workshop.
+
+Watch_Plants_1 = I love those plants. They look very nice.
+
+Watch_Glass_NoBaron_1 = This is a glass. Smells like strawberries.
+
+Watch_Glass_Baron_1 = This must be the baronness' glass. Better bring it to her fast.
+
+Scene_Theft_1 = Good evening everyone. I am honoured to welcome every one of you. This great party will start very soon.
+Scene_Theft_2 = Now that we're all here, how about a little walk around the grounds while the cook gets the table ready?
+Scene_Theft_3 = Hilda goes to the door, but...
+Scene_Theft_4 = What the... It's stuck? No, not stuck... Locked!
+Scene_Theft_5 = But the key should be right there...
+Scene_Theft_6 = The guests start to look uneasily at each other.
+Scene_Theft_7 = Yeah, that sounds about right. You invite me back after all those years, only to lock me up!
+Scene_Theft_8 = You're trying to humiliate me or something, Hilda? Well, I won't stand for it! I'm out! Let me leave!
+Scene_Theft_9 = What? No, that's not it at all! I'm just as confused as you all are. And you can't leave. None of us can.
+Scene_Theft_10 = The door's locked and the key's missing. We're trapped.
+Scene_Theft_11 = But who would possibly want to trap us? And why?
+Scene_Theft_12 = Good question... Well, since this lock only works from the inside...
+Scene_Theft_13 = Whoever did it must be one of us!
+Scene_Theft_14 = But why? Why trap us all? What's the goal?
+Scene_Theft_15 = Oh, I get it all right. This building is designed to absorb moonlight. It's entirely made of clear material.
+Scene_Theft_16 = Beautiful at night, but... As soon as the sun will go up in a few hours...
+Scene_Theft_17 = I see realization, then horror, slowly imprint on the guests' faces. Sunlight kills vampires.
+Scene_Theft_18 = We're... We're done for. That's it, the end. All of us.
+Scene_Theft_19 = Soon we'll be like ants under a giant magnifying glass.
+Scene_Theft_20 = I make myself very small, trying not to attract attention to me.
+Scene_Theft_21 = The last thing I need is someone realizing that as a werewolf, I would survive, unlike everone else.
+Scene_Theft_22 = That would make me suspect number one.
+Scene_Theft_23 = I'll need to find the real thief to clear my name... Or at least, they need to beleive they've found the real thief...
+
+Steal_Baron_1 = Dietary supplements. This is iron.
+Steal_Baron_2 = Logical to find some here, given the baroness is vegan.
+
+Steal_Chasseur_1 = Garlic.
+Steal_Chasseur_2 = Why would a vampire carry around garlic?
+
+Steal_Rival_1 = Concealer.
+Steal_Rival_2 = But vampires physically can't get any dark circles or pimples that would need concealing...
+
+Steal_Humain_1 = Dental glue.
+Steal_Humain_2 = Does the count have a problem with his teeth?
+
+Steal_Fils_1 = Human shoes & headwear.
+Steal_Fils_2 = This is very un-vampire-like...
+
+Talk_Baron_Verre_Content_1 = Ah, thank you for that glass. I expected no less.
+Talk_Baron_Verre_Content_2 = Listen, my son is acting weird. Could you go snoop around for me?
+Talk_Baron_Verre_Content_3 = Then come back and tell me what's the matter with him. Understood?
+
+Talk_Baron_Verre_Bof_1 = Well, took you long enough. Give me that.
+Talk_Baron_Verre_Bof_2 = You can go now, that was all.
+
+Talk_Baron_Verre_PasContent_1 = And where is my drink? I thought i specifically asked you to get it for me <i>quickly</i>. Was it too much to ask for?
+Talk_Baron_Verre_PasContent_2 = Be careful, lackey, you're on some thin ice.
+
+Talk_Fils_Ask_Check_1 = Should I check on him as requested ?
+
+Talk_Fils_GoLie_1 = Hey, listen. I need you to do me a favour.
+Talk_Fils_GoLie_2 = I don't know why, but I feel like Lady Poiana has something against me. She thinks I'm a weak vampire.
+Talk_Fils_GoLie_3 = But you know me, you know that's wrong, right? I'm as tough as can be, rutheless and unruly!
+Talk_Fils_GoLie_4 = Could you go and mess with her, so she'll leave me alone?
+Talk_Fils_GoLie_5 = Tell her you saw me fighting a bear... No, a bear! I fought a bear with my bare hands!
+Talk_Fils_GoLie_6 = And tell her I won! Yeah, that'll show her.
+
+Talk_Fils_Ask_1 = Ahem- Hello there Bernard. Anything on your mind lately?
+Talk_Fils_Ask_2 = Why do you ask?
+Talk_Fils_Ask_3 = Oh, no particular reason.
+Talk_Fils_Ask_4 = Did my mother put you up to this?
+Talk_Fils_Ask_5 = What, me? Oh no no no, I would never.
+Talk_Fils_Ask_6 = Oh really...
+Talk_Fils_Ask_7 = He looks skeptical. I don't think he's buying it.
+
+Talk_Fils_Clue_1 = Listen, I found this in your stuff. A soon-to-be baron like you has no business hanging on to those human artefacts.
+
+Talk_Fils_Confront_1 = Do you care to explain yourself? Or is it just going to be more lies and deceptions?
+Talk_Fils_Confront_2 = What? You have no right to look through my belongings, and I don't have to aswer to you.
+Talk_Fils_Confront_3 = We've got nothing to discuss here. We're done. Good day.
+
+Talk_Fils_Nice_1 = But I'm not here to judge you, I don't care what you do in your free time.
+Talk_Fils_Nice_2 = Don't worry, I wont tell your mother. What is this even for, anyway?
+Talk_Fils_Nice_3 = Well, it's just that... This vampire life is so grim and dark. Sometimes, I just...
+Talk_Fils_Nice_4 = I just want to live like a human, listen to My Chemical Romance, wear sneakers! You know what I mean?
+Talk_Fils_Nice_5 = Humans are so cool... But no one understands me.
+Talk_Fils_Nice_6 = Well anyway, thanks for listening. Could you do me another favour?
+Talk_Fils_Nice_7 = I need you to talk to Lady Poiana, and tell her you saw me fighting a bear.
+Talk_Fils_Nice_8 = Make it sound really impressive, but also natural in a cool way.
+
+Talk_Chasseur_Confirm_ConfrontGarlic_1 = Should I confront her on the garlic she owns?
+Talk_Chasseur_Confirm_Lie_1 = Should I lie to her as instructed by master Bernard ?
+
+Talk_Chasseur_Rien_1 = You know, this whole thing is making me pretty mad. I only came here out of politeness.
+Talk_Chasseur_Rien_2 = I've got nothing to do with either the baroness Minkhol or this Sofia Yumenhof, I don't care about them. I bet you don't either.
+Talk_Chasseur_Rien_3 = And yet here we are, all trapped, collateral damage of a petty rivalry.
+Talk_Chasseur_Rien_4 = You really think one of them is guilty?
+Talk_Chasseur_Rien_5 = Oh please, who else could it be?
+
+Talk_Chasseur_Ours_1 = Lady Poiana, I just remembered a story you might be interested in. Would you like to hear it?
+Talk_Chasseur_Ours_2 = ... Sure, why not. I guess it can't hurt.
+Talk_Chasseur_Ours_3 = Well, it's about master Bernard. See, this one night, both of us were out in the woods walking.
+Talk_Chasseur_Ours_4 = All of a sudden, a bear jumped in front of us and attacked! I was petrified!
+Talk_Chasseur_Ours_5 = But Bernard wasn't, and he fought the bear with all his might. In about 30 seconds, he had the bear in an armlock.
+Talk_Chasseur_Ours_6 = It was very cool.
+Talk_Chasseur_Ours_7 = Why, that is impressive indeed. What a nice story.
+
+Talk_Chasseur_Fils_1 = Lady Poiana, I would like to tell you something. It's about master Bernard.
+Talk_Chasseur_Fils_2 = Oh, really? Do tell.
+Talk_Chasseur_Fils_3 = I got him to trust me, and he revealed to me a terrible secret. I think he might even be the one who locked us in.
+Talk_Chasseur_Fils_4 = You see, he hates his vampire life. He likes humans better than vampires! Maybe he hates all vampires!
+Talk_Chasseur_Fils_5 = Very interesting, thank you, dear. No doubt this information will be useful in the future.
+
+Talk_Rival_Confirm_Concealer_1 = Should I confront her on the concealer she owns?
+
+Talk_Rival_Verre_1 = I saw you, you know. Bringing Hilda her drink. You're really nothing but a worm, you're jut doing everything she tells you.
+Talk_Rival_Verre_2 = Well I mean, it's still my job, so...
+Talk_Rival_Verre_3 = Oh, shut up. At least respect our past partnership and lose the act with me.
+
+Talk_Rival_Alliance_1 = But it's true, I really am still on your side! All this time working for the baroness, I've learned some things about her.
+Talk_Rival_Alliance_2 = Some <i>incriminating</i> things.
+Talk_Rival_Alliance_3 = See, the girl is vegan. She hasn't drank blood in several years. She's basically a disgrace of a vampire!
+Talk_Rival_Alliance_4 = Ooh, now that is interesting. I guess you really are still on my side after all, partner.
+
+Talk_Rival_NoAlliance_1 = Well, whatever. I've got a job to do, I shouldn't waste my time talking to you.
+Talk_Rival_NoAlliance_2 = You know, at least the baroness covers my health insurance. And there's a ping-pong table in my break room.
+Talk_Rival_NoAlliance_3 = So you finally show your true colors...
+Talk_Rival_NoAlliance_4 = You disgust me. I don't even want to talk to you, I don't trust you.
+
+Talk_Rival_Rien_1 = So, you coming to say hi, or just to insult me like everybody else?
+Talk_Rival_Rien_2 = I- what? No, I just wanted to talk to you. This is all crazy.
+Talk_Rival_Rien_3 = Yeah. This was supposed to be my big chance to get back in the vampire high-society.
+Talk_Rival_Rien_4 = I'm still sour about the way everyone shunned me. Especially Hilda. They all turned their back on me so easily...
+Talk_Rival_Rien_5 = But I wanted to take my revenge by rising from the ashes, strong as ever. I would have never locked us in like this.
+Talk_Rival_Rien_6 = That's just not my style. You know that, right?
+
+Talk_Rival_Clue_1 = I found some concealer in your stuff, and we both know it's not for zits or dark circles.
+Talk_Rival_Clue_2 = If you really want me to trust you, you'll have to be honnest. What is this for?
+Talk_Rival_Clue_3 = ...
+Talk_Rival_Clue_4 = Well, I really need someone I can trust. So here, I'll tell you. I won't even get mad about you going through my stuff.
+Talk_Rival_Clue_5 = The truth is... I wasn't born a vampire. I was a human, and I was bit a few decades ago.
+Talk_Rival_Clue_6 = I pretended to comme from an important vampire family so I could reach high-society, and it worked for some time!
+Talk_Rival_Clue_7 = I met great people, and we started working together, you and I. Life was amazing, but Hilda got jealous... and suspicious.
+Talk_Rival_Clue_8 = Hilda saw the bite marks. And then she blackmailed me, and forced me to leave. I lost everything that day.
+Talk_Rival_Clue_9 = So when I got this invitation, I decided to cover up the marks. I don't want anyone else to know my secret.
+
+Talk_Rival_Confront_1 = Listen... I don't care that you're not from some noble vampire lineage.
+Talk_Rival_Confront_2 = Your secret is safe with me. Don't worry.
+Talk_Rival_Confront_3 = Partner.
+
+Talk_Rival_Nice_1 = Well, isn't that funny? Weren't you the one talking to me about loyalty? And all this time, our relationship was built on lies?
+Talk_Rival_Nice_2 = You're nothing but a fraud. Your whole life is a joke. And a bad one, at that.
+Talk_Rival_Nice_3 = This is how you treat me? Really? You'll regret your words, fool, you're nothing but a spider and I'll squish you under my foot!
+Talk_Rival_Nice_4 = Yeah, yeah, whatever.
+
+Talk_Humain_Confirm_Confront_1 = Should I confront him on the dental glue he owns ?
+
+Talk_Humain_Rien_1 = Well, this was already a really nice party, but I didn't know it was gonna be a mystery party, too!
+Talk_Humain_Rien_2 = I can't wait to see how this all goes down. I always loved "whodunit" mystery stories!
+
+Talk_Humain_Clue_1 = With all due respect, Sir, I must inquire about something of yours that I found.
+Talk_Humain_Clue_2 = This dental glue. I have always worked with vampires, and I have come to learn that their teeth self-regenerate...
+Talk_Humain_Clue_3 = Why would a vampire such as yourself be in need of dental glue?
+
+Talk_Humain_Stop_1 = I'm sorry, but I overheard your conversation, and I simply cannot stand to watch this.
+Talk_Humain_Stop_2 = Sir Von GroBes-Fledermausland is an honoured guest in this house, and you have insulted him.
+Talk_Humain_Stop_3 = You have no right to look through his personal belongings. And he will not answer your very unappropriate question.
+Talk_Humain_Stop_4 = I'm terribly sorry for my servant's conduct, Sir Von GroBes-Fledermausland. Please, try to pay it no mind.
+
+Talk_Humain_Excuse_1 = Ah, yes, I thought it might-
+Talk_Humain_Excuse_2 = I'm sorry, but I overheard your conversation, and I simply must intervene.
+Talk_Humain_Excuse_3 = See, my friend here is from GroBes-Fledermausland, a distant place with ways different than our own.
+Talk_Humain_Excuse_4 = The use of dental glue is very common there, as it is used to...
+Talk_Humain_Excuse_5 = Well, to put jewlery on vampires' teeth! Yes, everyone does it over there!
+Talk_Humain_Excuse_6 = He just didn't put on any today because...
+Talk_Humain_Excuse_7 = Because I didn't want to distraught you with my foreign ways. I thought I would blend in better without my usual teeth jewlery.
+Talk_Humain_Excuse_8 = Exactly. So you see, there is nothing interesting going on here.
+Talk_Humain_Excuse_9 = Well, thank you for clarifying.
+
+Talk_Humain_Secret_1 = Ah, yes, I thought it might be useful, you know, in case my teeth fall out.
+Talk_Humain_Secret_2 = Your- your teeth might... fall out? Forgive my concern Sir, but is this due to an illness of some sort?
+Talk_Humain_Secret_3 = Suddenly, Bernard spots us from across the room, and starts walking towards us.
+Talk_Humain_Secret_4 = My good Sir, what are you talking about with this cook here?
+Talk_Humain_Secret_5 = Bernard suddenly drops the act and becomes very serious as he gets closer to us.
+Talk_Humain_Secret_6 = Listen, I like you, so I'll put you in the loop. But you must promise not to tell another living soul, alright?
+Talk_Humain_Secret_7 = What is happening?
+Talk_Humain_Secret_8 = Sure, master Bernard.
+Talk_Humain_Secret_9 = My friend is not a count, and he's not from GroBes-Fledermausland (which is a made up place by the way).
+Talk_Humain_Secret_10 = His name is Todd. He's not a vampire. He's... a human.
+Talk_Humain_Secret_11 = Well, actually, now that I think about it, it makes perfect sense.
+Talk_Humain_Secret_12 = He's just a fan of vampires, and he begged me to take him here.
+Talk_Humain_Secret_13 = But if the others find out, they'll think he's a undercover vampire hunter. They'll kill him!
+Talk_Humain_Secret_14 = So please, <i>please</i>, don't tell anyone.
+
+Talk_Chasseur_Secret_1 = Lady Poiana, I would like to ask you about something.
+Talk_Chasseur_Secret_2 = Hmm?
+Talk_Chasseur_Secret_3 = I found garlic amongst your belongings. Isn't it unusual for a vampire to carry that?
+Talk_Chasseur_Secret_4 = You dared look throught my belongings? Grr... I thought better of the baroness's staff.
+Talk_Chasseur_Secret_5 = I'm sorry. With everything going on, I'm not sure of who I can trust.
+Talk_Chasseur_Secret_6 = So... Can you explain why you carry garlic?
+Talk_Chasseur_Secret_7 = It is not important. Leave me alone, foolish servant.
+Talk_Chasseur_Secret_8 = Should I press further?
+Talk_Chasseur_Secret_9 = I appologize for my insolence, but I believe it is more important that you let on.
+Talk_Chasseur_Secret_10 = Bah ! If you must really know, it is for self defense.
+Talk_Chasseur_Secret_11 = I have many ennemies amongst the upper class. But you should know that already, don't you?
+Talk_Chasseur_Secret_12 = It's true that many vampires dislike your recent upbringing.
+Talk_Chasseur_Secret_13 = Then the matter is resolved. Let us stop at that.
+Talk_Chasseur_Secret_14 = Should I press further? I am satisfied, but...
+Talk_Chasseur_Secret_15 = But doesn't garlic affect you too?
+Talk_Chasseur_Secret_16 = Having it on you at all time would weaken you quite a bit.
+Talk_Chasseur_Secret_17 = I simply cannot fathom how this would actually be of any help.
+Talk_Chasseur_Secret_18 = How insolent ! Do you dare question me?
+Talk_Chasseur_Secret_19 = You do know how important I am, don't you?
+Talk_Chasseur_Secret_20 = Uh... Maybe I shouldn't press further. I'm going to get in problem.
+Talk_Chasseur_Secret_21 = May I remind you that amongst all the of upstanding vampires here today, one is our culprit.
+Talk_Chasseur_Secret_22 = It could be you. It could be the baroness. It could be anyone.
+Talk_Chasseur_Secret_23 = So please, I just want to know if I can trust you.
+Talk_Chasseur_Secret_24 = And can I trust you?
+Talk_Chasseur_Secret_25 = Of course.
+Talk_Chasseur_Secret_26 = ... Alright, alright.
+Talk_Chasseur_Secret_27 = Back in the days, I was actually a human. A vampire hunter no less.
+Talk_Chasseur_Secret_28 = A vampire hunter?!
+Talk_Chasseur_Secret_29 = Yes, well... I hate being a vampire, but I can't do anything about it.
+Talk_Chasseur_Secret_30 = I actually use the garlic to supress my vampiric abilities and thirst.
+Talk_Chasseur_Secret_31 = Do you understand how hard my life got?
+Talk_Chasseur_Secret_32 = I get you, I also hate vampires.
+Talk_Chasseur_Secret_33 = They make me do all of their dirty work. It's quite unpleasent.
+Talk_Chasseur_Secret_34 = ...
+Talk_Chasseur_Secret_35 = Eh Eh...
+Talk_Chasseur_Secret_36 = Eh Eh Eh...
+Talk_Chasseur_Secret_37 = My friend. It seems I was mistaken about you.
+Talk_Chasseur_Secret_38 = I know now I can trust you. You and I share a common ennemy.
+Talk_Chasseur_Secret_39 = To tell you the truth, I was the one who stole the key.
+Talk_Chasseur_Secret_40 = You did?
+Talk_Chasseur_Secret_41 = Yes, I plant to kill all the vampires present tonight.
+Talk_Chasseur_Secret_42 = Won't you did as well ?
+Talk_Chasseur_Secret_43 = I cannot live with the fact that I became what I despise most. I can't be allowed to leave this place alive.
+Talk_Chasseur_Secret_44 = But you, my friend, you can survive this. You can carry on my legacy.
+Talk_Chasseur_Secret_45 = Hunt vampires, make them suffer.
+Talk_Chasseur_Secret_46 = Yes, I understand.
+Talk_Chasseur_Secret_47 = Maybe not. But I'll do it if I need to.
+Talk_Chasseur_Secret_48 = Good. In case of an emergency, I hid the keys in the skeleton.
+Talk_Chasseur_Secret_49 = That coat rack we have at the entrance?
+Talk_Chasseur_Secret_50 = Yes, but keep this a secret. We can't allow anyone to find it.
+Talk_Chasseur_Secret_51 = Of course.
+
+Talk_Chasseur_Secret_Fail1_1 = I'll let the baroness know of your insolence.
+
+Talk_Chasseur_Secret_Fail2_1 = I don't expect your sympathy. I simply require your silence on this matter.
+Talk_Chasseur_Secret_Fail2_2 = Of course.
+
+Watch_Plants_Mirror_1 = There is a mirror here. I wonder who brought it here.
+Watch_Plants_Mirror_2 = I'll take it with me for now. Maybe I can find its owner.
+
+Talk_Baron_Verre_Fail_1 = You really disapoint me, lackey. Was asking for my drink too much for you?
+Talk_Baron_Verre_Fail_2 = Don't bother with it anymore. Not that you seem to care anyway...
+
+Talk_Baron_SecretFils_Neutral_1 = I did as requested, but I could not find anything about your son.
+Talk_Baron_SecretFils_Neutral_2 = I appologize for my incompetence.
+Talk_Baron_SecretFils_Neutral_3 = No matter, you did what you could. I'll find out his secrets eventually.
+
+Talk_Baron_SecretFils_Found_1 = I found your son's secret. He's secretly dessing up as a human.
+Talk_Baron_SecretFils_Found_2 = What?! This is a serious revelation.
+Talk_Baron_SecretFils_Found_3 = I'll deal with him in due time. In the meantime, I have another task for you.
+Talk_Baron_SecretFils_Found_4 = Lady Yuminhof is onto me. I think she may uncover my secret soon.
+Talk_Baron_SecretFils_Found_5 = Go remind her that "I know things that could destroy the last remains of her prestige"
+Talk_Baron_SecretFils_Found_6 = As you wish.
+
+Talk_Chasseur_DefaultCycle2_1 = Cook, I believe I saw that exiled vampire doing... illicit things.
+Talk_Chasseur_DefaultCycle2_2 = You mean Lady Yuminhof ?
+Talk_Chasseur_DefaultCycle2_3 = Yes, yes. I saw her tampering with the tools in this workshop.
+Talk_Chasseur_DefaultCycle2_4 = What was she doing ?
+Talk_Chasseur_DefaultCycle2_5 = I don't know. I fear she is ploting something sinister.
+
+Talk_Chasseur_Secret_Reminder_1 = Don't forget. The keys are hidden inside the skeleton.
+Talk_Chasseur_Secret_Reminder_2 = Don't let anyone find them.
+
+Talk_Rival_Pressure_LoyalBaron_1 = Lady Yuminhof, I have a message for you from our most graceful Baroness.
+Talk_Rival_Pressure_LoyalBaron_2 = She warns you that she "knows things that could destroy the last remains of your prestige".
+Talk_Rival_Pressure_LoyalBaron_3 = Moreover, I believe it would be wise for your to stop trying to find our her secrets.
+Talk_Rival_Pressure_LoyalBaron_4 = Kh- Damn you both !
+Talk_Rival_Pressure_LoyalBaron_5 = I'll keep quiet, for now. But don't think that this is the end.
+
+Talk_Rival_Pressure_LoyalRival_1 = Lady Yuminhof, I have a message for you from the Baroness.
+Talk_Rival_Pressure_LoyalRival_2 = She warns you that she "knows things that could destroy the last remains of your prestige".
+Talk_Rival_Pressure_LoyalRival_3 = Of course, she has no idea you already know her secret. Her threats are empty now.
+Talk_Rival_Pressure_LoyalRival_4 = Eh Eh Eh! Good job, lackey. On another note...
+
+Talk_Rival_GetInfosFils_1 = I need more informations on the baroness. I need real drama.
+Talk_Rival_GetInfosFils_2 = If I reveal scandalous secrets about her and her family, I'm sure I could weaken her position as baroness.
+Talk_Rival_GetInfosFils_3 = Indeed. You may even be able to challenge her and get your place back at the top of the vampire hierarchy.
+Talk_Rival_GetInfosFils_4 = Yes! So for this reason, I want you to go get informations from her son. This scroundel should know something juicy.
+
+Talk_Rival_LoyalBaron_1 = What are you still doing around me? Go away.
+Talk_Rival_LoyalBaron_2 = I'll never forgive your betrayal, never!
+
+Talk_Rival_LateLoyaltyCheck_1 = You. I need to know once and for all. Where does your loyalty lie?
+Talk_Rival_LateLoyaltyCheck_2 = I saw that you didn't help the baroness as it was expected of you. Why?
+Talk_Rival_LateLoyaltyCheck_2 = Are you... longing for the time you served me instead?
+
+Talk_Rival_Centrist_1 = No. I was simply overwhelmed by the recent chaos.
+Talk_Rival_Centrist_2 = I may have failed to bring her drink back on time, but it doesn't mean anything else.
+Talk_Rival_Centrist_3 = ... I see.
+Talk_Rival_Centrist_4 = Even when given a generous second chance, you prefer to waste it.
+Talk_Rival_Centrist_5 = A word of advice, cook. You'll gain nothing from distancing yourself from everyone.
+Talk_Rival_Centrist_6 = In fact, I find your attidude... suspicious. Almost as if you were hiding something.
+
+Talk_Rival_LateLoyalRival_1 = Of course. I didn't give her her drink because of that.
+Talk_Rival_LateLoyalRival_2 = In fact, I can tell you her secret: she is secretely vegan.
+Talk_Rival_LateLoyalRival_3 = That drink I didn't give her was actually strawberry juice.
+Talk_Rival_LateLoyalRival_4 = Really? This will come in handy. Thank you, my loyal lackey.
+
+Talk_Humain_DefaultCycle2_1 = ...
+Talk_Humain_DefaultCycle2_2 = Is there something wrong, master Von GroBes-Fledermausland ?
+Talk_Humain_DefaultCycle2_3 = No, no! I was simply... inspecting your fur.
+Talk_Humain_DefaultCycle2_4 = Oh, erm... Okay?
+
+Talk_Humain_Friend_1 = Mister cook! Can I ask you a question?
+Talk_Humain_Friend_2 = Yes, master Todd?
+Talk_Humain_Friend_3 = My beloved friend Bernard told me the... the truth about this place.
+Talk_Humain_Friend_4 = But, this is simply too... too fantastic!
+Talk_Humain_Friend_5 = Surely this cannot be a real vampire feast, right?
+
+Talk_Humain_Friend_Nice_1 = It is, master Todd. All of our guests are vampires.
+Talk_Humain_Friend_Nice_2 = And because of this, it is safer for you to stay quiet about your... human origins.
+Talk_Humain_Friend_Nice_3 = Incredible! A dream come true!
+Talk_Humain_Friend_Nice_4 = Do you like vampires?
+Talk_Humain_Friend_Nice_5 = Of course! I'll have you know I am the founder of the "Nosferatu Lovers Association".
+Talk_Humain_Friend_Nice_6 = We read poems dedicated to our beloved vampire lord all night long. It's so much fun.
+Talk_Humain_Friend_Nice_7 = That sounds fun.
+Talk_Humain_Friend_Nice_8 = Nosferatu is not a real vampire, but I guess I won't shatter his dreams just yet.
+
+Talk_Humain_Friend_Bad_1 = Ah Ah. Actually, I believe he was joking.
+Talk_Humain_Friend_Bad_2 = The "vampires" here just have really good disguises.
+Talk_Humain_Friend_Bad_3 = Eh.... Is that so?
+Talk_Humain_Friend_Bad_4 = Oh, I'm sad now.... I think my night is ruined now...
+Talk_Humain_Friend_Bad_5 = Oops... But I guess it's for his own good.
+
+Talk_Fils_GetInfos_1 = Master Bernard, I wanted to know if you had heard of any gossip around here?
+Talk_Fils_GetInfos_2 = What? Okay, who set you up for this?
+Talk_Fils_GetInfos_3 = ... Lady Yuminhof sent me.
+
+Talk_Fils_GetInfos_NotFriend_1 = Her? I'm sure she just wants to sew discord between me and mom.
+Talk_Fils_GetInfos_NotFriend_2 = I won't tell you anything. You can go now.
+
+Talk_Fils_GetInfos_Friend_1 = Her? Not suprising to be honest. I expected her to come much earlier.
+Talk_Fils_GetInfos_Friend_2 = What should I report back?
+Talk_Fils_GetInfos_Friend_3 = Hmm... Ah! I know.
+Talk_Fils_GetInfos_Friend_4 = Tell her that Lady Poiana is actually a former vampire hunter.
+Talk_Fils_GetInfos_Friend_5 = This should be enough to keep her busy.
+
+Talk_Fils_Mirror_1 = Hey, actually. Can you do me a favor?
+Talk_Fils_Mirror_2 = Of course master Bernard.
+Talk_Fils_Mirror_3 = I lost my mirror around here somewhere. I need to find it before someone else does.
+Talk_Fils_Mirror_4 = A mirror? But don't vampires...
+Talk_Fils_Mirror_5 = Vampires don't have a reflection, yes. This is why this mirror is important to me.
+Talk_Fils_Mirror_6 = Please, help me.
+
+Talk_Fils_Confirm_Confront_1 = Should I confront him on his secret ?
+
+Talk_Fils_Mirror_Found_1 = Actually. Is this your mirror? I found it near the plants.
+Talk_Fils_Mirror_Found_2 = It is! Thank you for helping me!
+Talk_Fils_Mirror_Found_3 = If my mother found it, it would have been the end for me.
+
+Talk_Fils_DefaultCycle2_1 = I believe that Lady Poiana is rather suspect.
+Talk_Fils_DefaultCycle2_2 = Really? What makes you think that?
+Talk_Fils_DefaultCycle2_3 = She seems to be always.... scheming something. I don't know what though.
+
+Scene_NoTime_1 = Listen, everyone. Open your eyes! Who invited us here? Whose roof are we sitting under?
+Scene_NoTime_2 = We don't have much time left. In about 2 hours, the sun will go up, and then we're all done for. Kaput. The end.
+Scene_NoTime_3 = We can't let Hilda get away with this! I demand you let us all out!
+Scene_NoTime_4 = As I told you before, I am as disgruntled as you all about this. We need to find the culprit, but I'm not it.
+Scene_NoTime_5 = Threatening me will get you nowhere. You should do something useful for once and help us find that key.
+Scene_NoTime_6 = Like you said, there's not much time left. Let us not waste it foolishly.
+
+Scene_End_Intro_1 = Everyone, please, gather around. With only one hour left, we must all do something.
+Scene_End_Intro_2 = One person here must be the culprit. If we find them, we're saved. If we don't, we're dead. Simple as that.
+Scene_End_Intro_3 = So what do you propose we do?
+Scene_End_Intro_4 = I was thinking about an assembly. We all share what we think and what we've learned. Then, we vote.
+Scene_End_Intro_5 = And if whoever gets voted doesn't hand over the key... We'll simply kill them, and search their limp body for the key.
+Scene_End_Intro_6 = Everyone sort of tenses up at that last sentence, but no one seems to have a better idea.
+Scene_End_Intro_7 = I'll start. To me, it is clear that this is the work of Sofia Yuminhof here.
+Scene_End_Intro_8 = She's clearly still mad about being kicked out all those years ago, and she just wants revenge.
+Scene_End_Intro_9 = What can you say to defend yourself?
+
+Scene_End_RivalHunter_1 = This is nonsense. I'm here because I want to come back, because I long for my old life.
+Scene_End_RivalHunter_2 = You know me, we used to spend time together. But there is someone here that no one know. Lady Poiana.
+Scene_End_RivalHunter_3 = She was invited here because she's a star, she's an eminent figure of high soociety. But do we actually know her?
+Scene_End_RivalHunter_4 = No, not one bit. In fact, I think most of you met her tonight for the first time. This is very suspicious.
+Scene_End_RivalHunter_5 = As a matter of fact, I once met a human who tried to hunt me that looked just like her.
+Scene_End_RivalHunter_6 = Maybe she's not a vampire at all, and she's just a human vampire hunter!
+
+Scene_End_HunterHuman1_1 = That's just ridiculous! I'm a very respected vampire, with many friends to back me up!
+Scene_End_HunterHuman1_2 = You think you don't know me enough? What about mister Distant-Count-From-Made-Up-Land over here?
+Scene_End_HunterHuman1_3 = I've never heard of him. And he looks like he doesn't know the first thing about being a vampire!
+Scene_End_HunterHuman1_4 = I say he's a spy who thought he could fool us, and then walk away once we were all dead.
+
+Scene_End_FilsChasseur1_1 = Are you out of your mind? You dare accuse a close family friend, and honoured guest, just because he's a foreigner?
+Scene_End_FilsChasseur1_2 = I found garlic in your stuff. Why would you carry that around, if you're not our enemy?
+Scene_End_FilsChasseur1_3 = I should intervene...
+
+Scene_End_StaySilent_Top_1 = Leave my friend alone! He's... He...
+Scene_End_StaySilent_Top_2 = Too late. We know your tricks.
+
+Scene_End_HelpChasseur_1 = This garlic you claim to have seen proves nothing, it could have been planted there by the real culprit.
+Scene_End_HelpChasseur_2 = But you're the one who brought Sir Von GroBes-Fledermausland in this house, while he's clearly a human! This is treason!
+Scene_End_HelpChasseur_3 = Everyone knows all humans hate vampires. He's here to kill us all!
+Scene_End_HelpChasseur_4 = No, not at all! I'm a huge vampire fan! I have a twilight poster in my bedroom!
+Scene_End_HelpChasseur_5 = Fool, you've just admitted you're a human! This is the end for you.
+
+Scene_End_Contradiction_1 = Lady Yuminhof slowly turns to me, looking unconvinced.
+Scene_End_Contradiction_2 = Just wait a minute now, whose side are you on?
+Scene_End_Contradiction_3 = You're just pointing fingers randomly, you're contradicting yourself!
+Scene_End_Contradiction_4 = Yes, you're a real weather vane! I think you're just trying to confuse us.
+Scene_End_Contradiction_5 = That's right! If we're too busy fighting each other, we won't stop and consider the fact that you're not even a vampire.
+Scene_End_Contradiction_6 = Of course! Sunlight will do nothing to a werewolf! It's so obvious, you're the one who did it!
+
+Scene_End_HelpFils1_1 = I can assure you all that master Bernard speaks the thruth.
+Scene_End_HelpFils1_2 = I know Sir Von GroBes-Fledermausland, and he is a trust-worthy vampire. He has been nothing but a distinguished guest.
+Scene_End_HelpFils1_3 = Lady Poiana, on the other hand, has been hostile and tense. Just like someone plotting a mass murder!
+Scene_End_HelpFils1_4 = This garlic found on her simply proves it!
+
+Scene_End_Confession_1 = You know what? Fine! You want to know the truth? I'll give you the truth.
+Scene_End_Confession_2 = I was born a human. My brother died because of a vampire. So I became a vampire hunter.
+Scene_End_Confession_3 = One night I came across Bernard over here. At first I thought he was a human, because we was wearing human clothes.
+Scene_End_Confession_4 = He was wrinting poetry, about how hard life is as a vampire, and so I knew he was one of them.
+Scene_End_Confession_5 = At those words, Bernard starts blushing very hard.
+Scene_End_Confession_6 = So obviously, I tried to kill him. But I was careless, confused by this weird human-loving vampire.
+Scene_End_Confession_7 = We fought, and he got the upper-hand. And right when he should have killed me, I saw him hesitate.
+Scene_End_Confession_8 = This big fluffball had second thoughts! He didn't want to kill a human like me! Ha! Speak of a cardboard vampire.
+Scene_End_Confession_9 = But he wasn't stupid. He knew if he let me go, I'd kill him. So, instead, he cursed me: he bit me and made me a vampire.
+Scene_End_Confession_10 = I had become what I had sworn to destroyed...
+Scene_End_Confession_11 = So I kept garlic on me, to keep the vampire urges from coming. And I started plotting.
+Scene_End_Confession_12 = I didn't want him to tell anyone about me, so I started blackmailing him about this human-loving thing.
+Scene_End_Confession_13 = I made myself know, became an eminent vampire in high-society, and got myself invited here.
+Scene_End_Confession_14 = If I could lock us all in and hide the key, I could go out with a last heroic act, and take you out with me.
+Scene_End_Confession_15 = See, I don't care if the sun kills me to. To me, I died that night Bernard made me one of you.
+Scene_End_Confession_16 = But tonight, I investigated a bit. See, I actually learned a lot about you.
+Scene_End_Confession_17 = Todd the human in disguise, Bernard the human-loving vampire, Hilda the vegan vampire, and Sofia the fraud...
+Scene_End_Confession_18 = Is this pathetic bunch of people really worth my wrath? Am I going to drag you down with me? Do you deserve it?
+Scene_End_Confession_19 = Not to mention this werewolf who didn't even ask to be here.
+Scene_End_Confession_20 = ...
+Scene_End_Confession_21 = I don't care anymore. Do with me as you please. I just wish to let it all go...
+Scene_End_Confession_22 = ...
+Scene_End_Confession_23 = The key is in the skeleton.
+
+Scene_End_RivalBaron_1 = This is nonsense. I'm here because I want to come back, because I long for my old life.
+Scene_End_RivalBaron_2 = I am honnest, I am an open book. All I want is to be invited back into the club.
+Scene_End_RivalBaron_3 = But you are not honnest. There is something about you that your guests don't know.
+Scene_End_RivalBaron_4 = You're actually not a good vampire. See, you don't even drink blood. You're a filthy vegan, and you drink straberry juice!
+Scene_End_RivalBaron_5 = Now, we can't trust someone who has betrayed the very nature of vampires, can we?
+Scene_End_RivalBaron_6 = This is very low of you. I am a vampire in my own right, and the fact that I enjoy strawberry juice proves nothing!
+Scene_End_RivalBaron_7 = You, on the other hand, are not half the open book you pretend to be.
+Scene_End_RivalBaron_8 = See, you pretend to come from a long family line of vampires. But the problem is, Sofia, you weren't born a vampire at all!
+Scene_End_RivalBaron_9 = Sofia "Yuminhof", yeah right. You're actually Sofia Dutronc. You were bit at some point, and decided to lie about your origins.
+Scene_End_RivalBaron_10 = You've never been honnest in your life. How can we believe you now?
+Scene_End_RivalBaron_11 = Oh yeah? You want to use that against me? So what if I lied about my name? My intentions were clear!
+Scene_End_RivalBaron_12 = Sofia is clearly starting to panic. Her eyes dart around the room, then settle on me.
+Scene_End_RivalBaron_13 = And how about the cook? Being a werewolf, the sunlight wouldn't be a threat!
+Scene_End_RivalBaron_14 = And I'm sure the way the Minkhol family treats their personnel is more than enough of a motive.
+Scene_End_RivalBaron_15 = Oh no, this can't be happening! I need to put the blame on someone else...
+
+Scene_End_AccusationChasseur1_1 = Although I am a werewolf, I've always been loyal to vampires, and the Minkhol family has always treated me very well.
+Scene_End_AccusationChasseur1_2 = But there's someone here that can't say as much... Lady Poiana!
+Scene_End_AccusationChasseur1_3 = You see, she was once a human. She was a vampire hunter, actually! I'm sure she still hates vampires!
+Scene_End_AccusationChasseur1_4 = How ridiculous! You think I was a human? Ha! How about mister Distant-Count-From-Made-Up-Land over here?
+Scene_End_AccusationChasseur1_5 = He looks like he doesn't know the first thing about being a vampire! He's clearly a human in disguise!
+Scene_End_AccusationChasseur1_6 = I say he's a spy who thought he could fool us, and then walk away once we were all dead.
+
+Scene_End_AccusationHumain_1 = Although I am a werewolf, I've always been loyal to vampires, and the Minkhol family has always treated me very well.
+Scene_End_AccusationHumain_2 = But there's someone here that can't say as much... Sir Von GroBes-Fledermausland.
+Scene_End_AccusationHumain_3 = He's actually a human in disguise, that's why he's acting so weird!
+
+Scene_End_FilsChasseur2_1 = Are you out of your mind? You dare accuse a close family friend, and honoured guest, just because he's a foreigner?
+Scene_End_FilsChasseur2_2 = I'll let your xenophobia slide for now, because we have a more important matter at hands. I know who the culprit is!
+Scene_End_FilsChasseur2_3 = Lady Poiana... I found garlic in your stuff. Why would you carry that around, if you're not our enemy?
+Scene_End_FilsChasseur2_4 = I should intervene...
+
+Scene_End_AccusationFils_1 = Although I am a werewolf, I've always been loyal to vampires, and the Minkhol family has always treated me very well.
+Scene_End_AccusationFils_2 = But there's someone here that can't say as much... And it's you, master Bernard!
+Scene_End_AccusationFils_3 = See, everyone, the truth is that Bernard actually hates vampires. He hates being a vampire. And most of all...
+Scene_End_AccusationFils_4 = He loves humans.
+Scene_End_AccusationFils_5 = He is a traitor to all of vampirekind! He must be our culprit!
+
+Scene_End_Confirm_HelpFils_1 = Should I help master Bernard ?
+
+Scene_End_FilsChasseur3_1 = Are you out of your mind? You think I'm a traitor, just because I like to learn about my prey?
+Scene_End_FilsChasseur3_2 = But we have a more important matter at hands. There is something I must know.
+Scene_End_FilsChasseur3_3 = Lady Poiana... I found garlic in your stuff. Why would you carry that around, if you're not our enemy?
+
+Scene_End_HelpFils2_1 = I can assure you all that master Bernard speaks the thruth.
+Scene_End_HelpFils2_2 = I know him well, and he is a trust-worthy vampire. He is strong and fearless, nothing like the whimp you described!
+Scene_End_HelpFils2_3 = Lady Poiana, on the other hand, has been hostile and tense. Just like someone plotting a mass murder!
+Scene_End_HelpFils2_4 = And as a matter of fact, I happen to know that she used to be a human.
+Scene_End_HelpFils2_5 = And not any human: a vampire hunter. She hates vampires with all her soul.
+Scene_End_HelpFils2_6 = This garlic found on her simply proves it!
+
+Scene_End_HunterHuman1_1 = That's just ridiculous! If you claim to have found garlic in my belongings, it must have been planted there.
+Scene_End_HunterHuman1_2 = You think I am suspicious? What about mister Distant-Count-From-Made-Up-Land over here?
+Scene_End_HunterHuman1_3 = I've never heard of him. And he looks like he doesn't know the first thing about being a vampire!
+Scene_End_HunterHuman1_4 = I say he's a spy who thought he could fool us, and then walk away once we were all dead.
+
+Scene_End_HunterHuman_Ennemy_1 = Stop it. This is an obvious lie.
+Scene_End_HunterHuman_Ennemy_2 = I say this is part of the cook's plan. He's trying to make us turn on one another.
+
+Scene_End_NoTea_1 = ...But I don't know anything that could help me in this situation!
+
+Scene_End_NoBetrayal_1 = ...But that would be wrong. I can't betray people like that...
+
+Scene_End_BaronRival_1 = Thankfully, the baroness takes my defense.
+Scene_End_BaronRival_2 = You're a liar, and you won't distract us by throwing ridiculous accusations at my cook.
+Scene_End_BaronRival_3 = Look at the poor thing, so scared-looking. See those shaky paws? You think this is the body of a cold-blooded killer? Please.
+Scene_End_BaronRival_4 = Well, I could have done without the insults, but if it gets me out of trouble, I won't complain.
+Scene_End_BaronRival_5 = I juste know you're plotting something.
+Scene_End_BaronRival_6 = Yes, and I saw her tampering with the tools in the workshop! She must be our culprit!
+Scene_End_BaronRival_7 = I'm not sure this is right. Should I really let Sofia take the blame?
+
+Scene_End_AccusationChasseur2_1 = Listen, I can't stay silent. Lady Poiana is trying to divert attention away from her, and she's not being honnest.
+Scene_End_AccusationChasseur2_2 = You see, she was once a human. She was a vampire hunter, actually! I'm sure she still hates vampires!
+Scene_End_AccusationChasseur2_3 = How ridiculous! You think I was a human? Ha! How about little Bernard over there?
+Scene_End_AccusationChasseur2_4 = The boy is in love with humankind! He's just waiting for an occasion to betray all other vampires...
+Scene_End_AccusationChasseur2_5 = And that occasion was tonight.
+
+Scene_End_BaronHelp_1 = Let me stop you right there. You're mistaken. My son is not like that, I know him.
+Scene_End_BaronHelp_2 = This is just lies, meant to tarnish our family's reputation. I won't let you.
+Scene_End_BaronHelp_3 = Oh, how touching. Mama bear is here to protect her cub.
+Scene_End_BaronHelp_4 = You know, that's very suspicious. You have no evidence, but you back him up anyway.
+Scene_End_BaronHelp_5 = Shut the fuck up Sofia, you're the one being suspicious!
+Scene_End_BaronHelp_6 = I should say something...
+
+Scene_End_AccusationBaron_1 = Listen, it's true. The baroness <i>is</i> a vegan, and she <i>is</i> acting weird.
+Scene_End_AccusationBaron_2 = She's the one who brought us here, and the one who mislead us all along. I'm ashamed to have worked for her...
+Scene_End_AccusationBaron_3 = She must be the culprit.
+
+Scene_End_AccusationRival_1 = Listen, it's true. Lady Yuminhof <i>is</i> acting weird.
+Scene_End_AccusationRival_2 = I know the baroness better than anyone, and I can assure you that she cares deeply about vampirekind.
+Scene_End_AccusationRival_3 = Lady Yuminhof must be jealous and sour. This just makes sense, she's clearly the culprit here!
+
+Scene_End_Lose_1 = Well, cook? Don't have anything to say for yourself?
+Scene_End_Lose_2 = Ummmm...
+Scene_End_Lose_3 = I thought so.
+
+Watch_Boris_Keys_1 = This is where Lady Poiana told me the keys were hidden.
+Watch_Boris_Keys_2 = Should I... steal them back ? Maybe I can pretend I found them and get rewarded.
+Watch_Boris_Keys_3 = But then again, I'll essentially be betraying Lady Poiana.
+Watch_Boris_Keys_4 = Yeah, I don't need to do something this foolish.
+
+Endings_StealBackKeys_1 = After that, I gave the keys to the baroness and exposed the treachery of Lady Poiana.
+Endings_StealBackKeys_2 = She called me a traitor, which is true. But I can't go against my master's orders.
+Endings_StealBackKeys_3 = The former vampire hunter was sentenced to death by sunlight.
+Endings_StealBackKeys_4 = As for me, I was rewarded for stopping this menace: I got to retire early.
+Endings_StealBackKeys_5 = I guess I got what I wanted after all, just some peace and quiet. Away from all of this vampire nonsense.
+
+Endings_Guilty_Perso_1 = I was unable to defend myself, as I had no idea how to deflect the accusations to someone else.
+Endings_Guilty_Perso_2 = The baroness declared me guilty of treason against vampires, and I was promptly executed.
+Endings_Guilty_Perso_3 = However, I was not the real culprit, and the key remained hidden somewhere in the building.
+Endings_Guilty_Perso_4 = Unable to leave, the vampires died at dawn, as they could not whistand the sunlight.
+Endings_Guilty_Perso_5 = Now, no one will ever know what really happened that night...
+
+Endings_Guilty_Rival_1 = Lady Yuminhof was soon declared guilty of treason against vampires, and promptly executed by stakes.
+Endings_Guilty_Rival_2 = It seemed as if things had returned to normalcy, until another problem emerged.
+Endings_Guilty_Rival_3 = The keys were still hidden somewhere in the building, and the culprit could not reveal their location anymore.
+Endings_Guilty_Rival_4 = Unable to leave, the vampires died at dawn, as they could not whistand the sunlight.
+Endings_Guilty_Rival_5 = I managed to survive, but with no other known survivors, I soon became suspected of having killed the vampires myself.
+Endings_Guilty_Rival_6 = The lies against me were so vicious that I had to go into exile in another country, far away from these problems.
+Endings_Guilty_Rival_7 = Now, I work as a cook for a local monster-themed restaurant.
+
+Endings_Guilty_Baron_1 = Unable to defend herself, the Baroness was soon believed to be the true culprit behind it all.
+Endings_Guilty_Baron_2 = Lady Yuminof argued that she wanted to kill her political ennemies, and solidify her position as the strongest vampire around.
+Endings_Guilty_Baron_3 = Because of this, Lady Yuminof declared herself the new Baroness, and began interrogating Hilda Mikhol about the key's whereabouts.
+Endings_Guilty_Baron_4 = She was, however, unsuccessful, and soon the sun rose in the sky.
+Endings_Guilty_Baron_5 = Unable to whistand the sunlight, the vampires died. I remained the only known survivor of the incident.
+Endings_Guilty_Baron_6 = In order to avoid being labelled as the true culprit, I exiled myself to another country.
+Endings_Guilty_Baron_7 = Now, I work as a cook for a local monster-themed restaurant, far away from all this vampire nonsense.
+
+Endings_Guilty_Fils_1 = The son and his human friend soon were declared guilty of ploting the end of vampires.
+Endings_Guilty_Fils_2 = The son was killed using stakes, and his human friend was soon killed rather crudely.
+Endings_Guilty_Fils_3 = Happy with herself, the Baroness declared victory over the ennemies of vampires.
+Endings_Guilty_Fils_4 = However, they could not find the keys on their bodies.
+Endings_Guilty_Fils_5 = They soon died because of the harsh sunlight, trapped inside a large building-sized coffin.
+Endings_Guilty_Fils_6 = As the sole survivor, I managed to avoid being suspected by telling the tale of the dangerous humans that killed the vampires.
+Endings_Guilty_Fils_7 = Did master Bernard and his human friend deserve such an end ? Maybe not.
+Endings_Guilty_Fils_8 = But I live, and it is maybe all that matters now.
+
+Endings_Guilty_Chasseur_1 = With Lady Poiana's confession, no doubts remained as to who the culprit was.
+Endings_Guilty_Chasseur_2 = The Baroness promptly executed her using stakes, and the keys were soon found in the skeleton.
+Endings_Guilty_Chasseur_3 = Everyone present collectively decided to ignore the personal revelations made by Lady Poiana.
+Endings_Guilty_Chasseur_4 = The feast was canceled, and all vampires returned to their respective homes.
+Endings_Guilty_Chasseur_5 = Sir Von GroBes-Fledermausland returned to his distant country and was never found again.
+Endings_Guilty_Chasseur_6 = Lady Yuminhof went back into exile, I never heard of her again.
+Endings_Guilty_Chasseur_7 = As for me and the Baroness's family, we remained in her mansion, living life as usual.
+Endings_Guilty_Chasseur_8 = In the end, everything went as well as it could have.

@@ -1,48 +1,51 @@
-#8EB1DA993F84208E6EAE05DD7A1ED76E-10E726449382E722A35AAB2128C1BDFD
-41|1|3|TalkedChasseur == 1 && CycleCount == 0
-36|null|null|Talk_Character_Done_1
-43|45
+#DA2FB8081854DB2F6B0BEFEDFD3FD4E6-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|3|TalkedChasseur == 1 && CycleCount == 0
+35|null|null|Talk_Character_Done_1
+42|48
 66|Chasseur|0|0.5|true
 74|Chasseur|Front
 75|Chasseur|Front
 66|Chasseur|1|0.5|false
 97|CycleCount|8|0|37
-36|null|null|Choice_InteractCharacter
-28|0|Choice_Talk|10|null|null|null|Choice_Search|25|null|null|null|Choice_Nothing|35|null|null|null
-41|11|13|TalkedChasseur == 1
-36|null|null|Talk_Character_Done_1
-43|24
-41|14|16|LieToChasseurQuest == 1
-45|ChasseurLieQuest
-43|22
-41|17|19|CycleCount == 1
-45|ChasseurC1Default
-43|21
-45|ChasseurC2Default
-43|21
-43|22
+35|null|null|Choice_InteractCharacter
+27|0|Choice_Talk|10|null|null|null|Choice_Search|25|null|null|null|Choice_Nothing|35|null|null|null
+40|11|13|TalkedChasseur == 1
+35|null|null|Talk_Character_Done_1
+42|24
+40|14|16|LieToChasseurQuest == 1
+44|ChasseurLieQuest
+42|22
+40|17|19|CycleCount == 1
+44|ChasseurC1Default
+42|21
+44|ChasseurC2Default
+42|21
+42|22
 100|TalkedChasseur|=|1
-43|24
-43|36
-41|26|32|SearchCounter > 0
+42|24
+42|36
+40|26|32|SearchCounter > 0
 100|SearchCounter|-|1
 100|SecretChasseur|=|1
-36|null|null|Chasseur_SearchBelongings_1
-36|null|null|Chasseur_SearchBelongings_2
-45|/VMP/Common/PrintSearchCounter
-43|34
-36|null|null|Counter_Search_0
-43|34
-43|36
-43|36
-43|40
-36|Char_Chasseur|null|Chasseur_Intro_1
+35|null|null|Steal_Chasseur_1
+35|null|null|Steal_Chasseur_2
+44|/VMP/Common/PrintSearchCounter
+42|34
+35|null|null|Counter_Search_0
+42|34
+42|36
+42|36
+42|43
+35|Char_Chasseur|null|Talk_Chasseur_Presentation_1
+35|Char_LoupGarou|null|Talk_Chasseur_Presentation_2
+35|Char_Chasseur|null|Talk_Chasseur_Presentation_3
+35|null|null|Talk_Chasseur_Presentation_4
 100|TalkedChasseur|=|1
-43|40
+42|43
 66|Chasseur|0|0.5|true
 74|Chasseur|ChasseurSpot
 75|Chasseur|ChasseurSpot
 66|Chasseur|1|0.5|false
-43|45
-45|/VMP/Common/CycleCheck
-45|Interaction
+42|48
+44|/VMP/Common/CycleCheck
+44|Interaction

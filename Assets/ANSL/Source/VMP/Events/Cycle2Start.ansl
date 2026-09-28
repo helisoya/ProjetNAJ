@@ -4,13 +4,28 @@ removeAllCharacters()
 
 setBackground(Room1)
 
-addCharacter(Baron;false;BaronSpot)
+addCharacter(Baron;true;Front)
+addCharacter(Rival;false;Front)
 addCharacter(Boris;false;BorisSpot)
-addCharacter(OulOul;false;OulOulSpot)
 
 fadeFg(0;false)
 
-dialog(null;null;Cycle2Start_1)
+dialog(Char_Rival;null;Scene_NoTime_1)
+dialog(Char_Rival;null;Scene_NoTime_2)
+dialog(Char_Rival;null;Scene_NoTime_3)
+
+setCharacterAlpha(Rival;0;0.5;true)
+removeCharacter(Rival)
+setCharacterAlpha(Baron;0;0.5;false)
+
+dialog(Char_Baron;null;Scene_NoTime_4)
+dialog(Char_Baron;null;Scene_NoTime_5)
+dialog(Char_Baron;null;Scene_NoTime_6)
+
+setCharacterAlpha(Baron;0;0.5;true)
+setCharacterPosition(Baron;BaronSpot)
+setCharacterRotation(Baron;BaronSpot)
+setCharacterAlpha(Baron;1;0.5;false)
 
 variable(CycleCount;=;2)
 

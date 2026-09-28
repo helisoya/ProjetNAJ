@@ -1,6 +1,3 @@
-dialog(Char_Baron;null;Baron_DrinkQuestNo_1)
-dialog(null;null;Baron_DrinkQuestNo_2)
-dialog(Char_Baron;null;Baron_DrinkQuestNo_3)
-dialog(Char_Baron;null;Baron_DrinkQuestNo_4)
-dialog(Char_Baron;null;Baron_DrinkQuestNo_5)
+dialog(Char_Baron;null;Talk_Baron_Verre_PasContent_1)
+dialog(Char_Baron;null;Talk_Baron_Verre_PasContent_2)
 variable(ValueBaron;-;1)

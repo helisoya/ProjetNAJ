@@ -1,5 +1,5 @@
 if(SecretChasseur == 1 && ConfrontedChasseurSecret == 0)
-	dialog(null;null;Chasseur_Confront_0)
+	dialog(null;null;Talk_Chasseur_Confirm_ConfrontGarlic_1)
 	choice(List)
 		choice Choice_Yes:
 			load(ChasseurConfront)

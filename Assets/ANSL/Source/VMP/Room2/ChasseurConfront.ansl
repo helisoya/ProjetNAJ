@@ -1,18 +1,91 @@
-dialog(null;null;Chasseur_Confront_1)
-dialog(Char_Chasseur;null;Chasseur_Confront_2)
-dialog(null;null;Chasseur_Confront_3)
-dialog(Char_Chasseur;null;Chasseur_Confront_4)
-dialog(Char_Chasseur;null;Chasseur_Confront_5)
+dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_1)
+dialog(Char_Chasseur;null;Talk_Chasseur_Secret_2)
+dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_3)
+dialog(Char_Chasseur;null;Talk_Chasseur_Secret_4)
+dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_5)
+dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_6)
+dialog(Char_Chasseur;null;Talk_Chasseur_Secret_7)
+dialog(null;null;Talk_Chasseur_Secret_8)
 
 choice(List)
-	choice Choice_CanIJoin:
-		variable(ConfrontedChasseurSecret;=;2)
-		dialog(null;null;Chasseur_Confront_Join_1)
-		dialog(Char_Chasseur;null;Chasseur_Confront_Join_2)
-		variable(ValueChasseur;+;3)
-	choice Choice_Horrific:
+	choice Choice_Yes:
+
+		dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_9)
+		dialog(Char_Chasseur;null;Talk_Chasseur_Secret_10)
+		dialog(Char_Chasseur;null;Talk_Chasseur_Secret_11)
+		dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_12)
+		dialog(Char_Chasseur;null;Talk_Chasseur_Secret_13)
+		dialog(null;null;Talk_Chasseur_Secret_14)
+
+		choice(List)
+			choice Choice_Yes:
+
+				dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_15)
+				dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_16)
+				dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_17)
+				dialog(Char_Chasseur;null;Talk_Chasseur_Secret_18)
+				dialog(Char_Chasseur;null;Talk_Chasseur_Secret_19)
+				dialog(null;null;Talk_Chasseur_Secret_20)
+
+				choice(List)
+					choice Choice_ContinuePress:
+
+						dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_21)
+						dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_22)
+						dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_23)
+						dialog(Char_Chasseur;null;Talk_Chasseur_Secret_24)
+						dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_25)
+						dialog(Char_Chasseur;null;Talk_Chasseur_Secret_26)
+						dialog(Char_Chasseur;null;Talk_Chasseur_Secret_27)
+						dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_28)
+						dialog(Char_Chasseur;null;Talk_Chasseur_Secret_29)
+						dialog(Char_Chasseur;null;Talk_Chasseur_Secret_30)
+						dialog(Char_Chasseur;null;Talk_Chasseur_Secret_31)
+
+						choice(List)
+							choice Choice_Yes:
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_32)
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_33)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_34)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_35)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_36)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_37)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_38)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_39)
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_40)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_41)
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_42)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_43)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_44)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_45)
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_46)
+								dialog(null;null;Talk_Chasseur_Secret_47)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_48)
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_49)
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_50)
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_51)
+								variable(ValueChasseur;+;3)
+								variable(ConfrontedChasseurSecret;=;2)
+
+							choice Choice_No:
+								dialog(Char_Chasseur;null;Talk_Chasseur_Secret_Fail2_1)
+								dialog(Char_LoupGarou;null;Talk_Chasseur_Secret_Fail2_2)
+								variable(ValueChasseur;-;1)
+								variable(ConfrontedChasseurSecret;=;1)
+						endchoice
+
+					choice Choice_Stop:
+						dialog(Char_Chasseur;null;Talk_Chasseur_Secret_Fail1_1)
+						variable(ValueChasseur;-;1)
+						variable(ConfrontedChasseurSecret;=;1)
+				endchoice
+
+			choice Choice_No:
+				dialog(Char_Chasseur;null;Talk_Chasseur_Secret_Fail1_1)
+				variable(ValueChasseur;-;1)
+				variable(ConfrontedChasseurSecret;=;1)
+		endchoice
+
+	choice Choice_No:
 		variable(ConfrontedChasseurSecret;=;1)
-		dialog(Char_Chasseur;null;Chasseur_Confront_NoJoin_1)
-		dialog(Char_Chasseur;null;Chasseur_Confront_NoJoin_2)
-		variable(ValueChasseur;-;1)
 endchoice

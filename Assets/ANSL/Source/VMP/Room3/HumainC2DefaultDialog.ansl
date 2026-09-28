@@ -1,1 +1,4 @@
-dialog(Char_Humain;null;Humain_C2Default_1)
+dialog(Char_Humain;null;Talk_Humain_DefaultCycle2_1)
+dialog(Char_LoupGarou;null;Talk_Humain_DefaultCycle2_2)
+dialog(Char_Humain;null;Talk_Humain_DefaultCycle2_3)
+dialog(Char_LoupGarou;null;Talk_Humain_DefaultCycle2_4)
