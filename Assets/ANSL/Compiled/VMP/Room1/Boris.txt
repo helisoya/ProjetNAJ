@@ -1,5 +1,5 @@
-#F383A01660F916EFD3A071F835E9951C-530A4E09197B9415F6E0D4FE7E8BB24C
-40|1|42|LookCounter > 0
+#3FF1B2DBDB45150582D18A2C6BF84A1C-530A4E09197B9415F6E0D4FE7E8BB24C
+40|1|46|LookCounter > 0
 100|LookCounter|-|1
 40|3|12|ConfrontedChasseurSecret == 2
 35|null|null|Watch_Boris_Keys_1
@@ -12,24 +12,28 @@
 42|11
 42|13
 42|13
-97|BorisCounter|40|0|14|1|17|2|20|3|23|4|26|5|29
+97|BorisCounter|44|0|14|1|17|2|20|3|23|4|26|5|29
 35|null|null|Watch_Boris_1
 100|BorisCounter|+|1
-42|40
+42|44
 35|null|null|Watch_Boris_2
 100|BorisCounter|+|1
-42|40
+42|44
 35|null|null|Watch_Boris_3
 100|BorisCounter|+|1
-42|40
+42|44
 35|null|null|Watch_Boris_4
 100|BorisCounter|+|1
-42|40
-35|Char_Boris|null|Watch_Boris_5
+42|44
+35|null|null|Watch_Boris_5
 100|BorisCounter|+|1
-42|40
-40|30|31|DrinkQuest == 2
-42|39
+42|44
+40|30|32|ConfrontedChasseurSecret == 2
+59
+42|33
+42|33
+40|34|35|DrinkQuest == 2
+42|43
 35|Char_Boris|null|Talk_Boris_Presentation_1
 35|Char_Boris|null|Talk_Boris_Presentation_2
 35|Char_Boris|null|Talk_Boris_Presentation_3
@@ -37,11 +41,11 @@
 35|Char_Boris|null|Talk_Boris_Presentation_5
 35|Char_Boris|null|Talk_Boris_Presentation_6
 35|Char_Boris|null|Talk_Boris_Presentation_7
-42|39
-42|40
+42|43
+42|44
 44|/VMP/Common/PrintLookCounter
-42|44
+42|48
 35|null|null|Counter_Look_0
-42|44
+42|48
 44|/VMP/Common/CycleCheck
 44|Interaction

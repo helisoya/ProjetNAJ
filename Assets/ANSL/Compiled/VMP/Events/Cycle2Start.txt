@@ -1,4 +1,4 @@
-#B48A514C1A6941F601984670F48B60E7-530A4E09197B9415F6E0D4FE7E8BB24C
+#79C9DCEA5FAC77122ED7347A63FE6506-530A4E09197B9415F6E0D4FE7E8BB24C
 39|1|true
 55
 61|Room1
@@ -11,7 +11,7 @@
 35|Char_Rival|null|Scene_NoTime_3
 66|Rival|0|0.5|true
 57|Rival
-66|Baron|0|0.5|false
+66|Baron|1|0.5|false
 35|Char_Baron|null|Scene_NoTime_4
 35|Char_Baron|null|Scene_NoTime_5
 35|Char_Baron|null|Scene_NoTime_6
@@ -27,6 +27,8 @@
 100|TalkedFils|=|0
 100|TalkedHumain|=|0
 100|TalkedRival|=|0
+87|Location_VMP_Cycle2
+24
 44|../Common/PrintLookCounter
 44|../Common/PrintSearchCounter
 44|/VMP/Room1/Interaction

@@ -23,3 +23,12 @@ UIAnimation_Testimony = Testimony
 UIAnimation_Rebuttal = Rebuttal
 UIAnimation_Guilty = Guilty
 UIAnimation_NotGuilty = Not Guilty
+
+# ------------------------------------------------------------------------
+# ---------------------------- VMP ---------------------------------------
+# ------------------------------------------------------------------------
+
+Location_VMP_Intro = Introduction
+Location_VMP_Cycle1 = Cycle 1
+Location_VMP_Cycle2 = Cycle 2
+Location_VMP_Accusation = Accusations

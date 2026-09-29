@@ -1,5 +1,9 @@
 setLocals(vmp_test)
 
+setLocation(Location_VMP_Intro)
+
+autosave()
+
 setBackground(Room1)
 
 addCharacter(Baron;true;Front)

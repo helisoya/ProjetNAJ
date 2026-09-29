@@ -31,10 +31,15 @@ case 3:
 	dialog(null;null;Watch_Boris_4)
 	variable(BorisCounter;+;1)
 case 4:
-	dialog(Char_Boris;null;Watch_Boris_5)
+	dialog(null;null;Watch_Boris_5)
 	variable(BorisCounter;+;1)
 
 case 5:
+	if(ConfrontedChasseurSecret == 2)
+		# No Boris Interaction if you know the chasseur's secret
+		return()
+	endif
+
 	# You can legally address the skeleton in the room
 	if(DrinkQuest == 2)
 		# Give drink to boris

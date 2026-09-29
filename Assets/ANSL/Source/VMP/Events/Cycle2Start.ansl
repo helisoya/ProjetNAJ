@@ -16,7 +16,7 @@ dialog(Char_Rival;null;Scene_NoTime_3)
 
 setCharacterAlpha(Rival;0;0.5;true)
 removeCharacter(Rival)
-setCharacterAlpha(Baron;0;0.5;false)
+setCharacterAlpha(Baron;1;0.5;false)
 
 dialog(Char_Baron;null;Scene_NoTime_4)
 dialog(Char_Baron;null;Scene_NoTime_5)
@@ -30,6 +30,10 @@ setCharacterAlpha(Baron;1;0.5;false)
 variable(CycleCount;=;2)
 
 :ResetCycleVariables(1;2)
+
+setLocation(Location_VMP_Cycle2)
+
+autosave()
 
 load(../Common/PrintLookCounter)
 load(../Common/PrintSearchCounter)

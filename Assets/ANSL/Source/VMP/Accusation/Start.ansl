@@ -16,6 +16,10 @@ addCharacter(Humain;true;Front)
 
 fadeFg(0;false)
 
+setLocation(Location_VMP_Accusation)
+
+autosave()
+
 dialog(Char_Baron;null;Scene_End_Intro_1)
 dialog(Char_Baron;null;Scene_End_Intro_2)
 

@@ -74,10 +74,18 @@ dialog(null;null;Scene_Theft_21)
 dialog(null;null;Scene_Theft_22)
 dialog(null;null;Scene_Theft_23)
 
+removeCharacter(Fils)
+removeCharacter(Humain)
+removeCharacter(Chasseur)
+removeCharacter(Rival)
 
 variable(CycleCount;=;1)
 
 :ResetCycleVariables(3;1)
+
+setLocation(Location_VMP_Cycle1)
+
+autosave()
 
 load(../Common/PrintLookCounter)
 load(../Common/PrintSearchCounter)

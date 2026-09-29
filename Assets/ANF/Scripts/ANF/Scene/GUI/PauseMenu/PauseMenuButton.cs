@@ -169,6 +169,33 @@ namespace ANF.GUI
     }
 
     /// <summary>
+    /// Subclass for the New Game button (Loads the default scene immediately)
+    /// </summary>
+    [System.Serializable]
+    public class PauseMenuButtonDataNewGameImmediate : PauseMenuButtonData
+    {
+        [SerializeField] private string defaultPlayerName = "Player";
+        [SerializeField] private string defaultScript;
+        [SerializeField] private string defaultScene;
+
+        public override void OnClick(PauseMenuUI pauseMenu, ANFManager manager)
+        {
+            PersistentDataManager.instance.GetPlayerData().ResetAll();
+            if (PersistentDataManager.instance.GetPlayerData().GetComponent(out PlayerVariableContainer playerVariableContainer))
+                playerVariableContainer.SetPlayerName(defaultPlayerName);
+
+            string selectedScript = string.IsNullOrEmpty(defaultScript) ? PersistentDataManager.instance.GetANFSettings().startingScript : defaultScript;
+            string selectedScene = string.IsNullOrEmpty(defaultScene) ? PersistentDataManager.instance.GetANFSettings().gameScene : defaultScene;
+
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent(out LoadStateContainer loadStateContainer))
+                loadStateContainer.SetToLoadScript(selectedScript);
+
+            manager.ChangeScene(selectedScene);
+        }
+    }
+
+    /// <summary>
     /// Subclass for the Logs button
     /// </summary>
     [System.Serializable]
