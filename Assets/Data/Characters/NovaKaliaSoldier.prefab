@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: NovaKaliaSoldier
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  centerOffset: {x: 0, y: 4, z: 0}
   objectRenderers:
   - {fileID: 8553242310241742777}
   - {fileID: 8354026028182514013}

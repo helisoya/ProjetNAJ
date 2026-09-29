@@ -308,6 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: RannCoat
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  centerOffset: {x: 0, y: 4, z: 0}
   objectRenderers:
   - {fileID: 116481606677175987}
   - {fileID: 2560881171366322155}

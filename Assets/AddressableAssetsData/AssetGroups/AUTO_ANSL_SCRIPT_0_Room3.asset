@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: AUTO_ANSL_SCRIPT_0_Room3
   m_GUID: d30a8239516b06343be932f5dcba4288
   m_SerializeEntries:
+  - m_GUID: 0bd012658dcc22042a65bc218312e1f5
+    m_Address: ANSL/VMP/Room3/Plants
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 230b18d4adbb8784189293bd85c08427
     m_Address: ANSL/VMP/Room3/FilsRivalInfosConfront
     m_ReadOnly: 0

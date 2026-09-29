@@ -5,7 +5,11 @@ removeAllCharacters()
 setBackground(Room3)
 
 if(DrinkQuest > 1)
-removeStatic(Drink)
+	removeStatic(Drink)
+endif
+
+if(CycleCount < 2 || FilsMirrorQuest > 0)
+	removeStatic(Mirror)
 endif
 
 addCharacter(Humain;false;HumainSpot)

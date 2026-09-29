@@ -1,9 +1,10 @@
 setInteractionScript(Fils;Fils)
 setInteractionScript(Humain;Humain)
 setInteractionScript(DoorToRoom1;../Room1/Arrival)
+setInteractionScript(Plants;Plants)
 
 if(DrinkQuest <= 1)
-setInteractionScript(Drink;Drink)
+	setInteractionScript(Drink;Drink)
 endif
 
 interaction()

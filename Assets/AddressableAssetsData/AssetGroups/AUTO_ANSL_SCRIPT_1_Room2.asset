@@ -69,6 +69,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88942ce0d958d204cba3a362c1a9f339
+    m_Address: ANSL/VMP/Room2/Tools
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 91fe65aec81346d4a95b038beb7918b0
     m_Address: ANSL/VMP/Room2/Rival
     m_ReadOnly: 0

@@ -1,0 +1,12 @@
+if(CycleCount >= 2 && FilsMirrorQuest == 0)
+	dialog(null;null;Watch_Plants_Mirror_1)
+	dialog(null;null;Watch_Plants_Mirror_2)
+
+	variable(FilsMirrorQuest;=;1)
+	setStaticAlpha(Mirror;0;0.5;true)
+	removeStatic(Mirror)
+else
+	dialog(null;null;Watch_Plants_1)
+endif
+
+load(Interaction)

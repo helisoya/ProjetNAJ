@@ -53,12 +53,12 @@ namespace ANF.Utils
 
 			string[] operators = new string[] { "==", "<=", ">=", "<", ">", "!=" };
 
-			string[] split = line.Split("&");
+			string[] split = line.Split("&&");
 			if (split.Length == 1)
 			{
 				result = false;
 				isAnd = false;
-				split = line.Split("|");
+				split = line.Split("||");
 			}
 
 			foreach (string part in split)

@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Gerald
   icon: {fileID: 2800000, guid: c004ae5cf2818174b9b4ac3240682f3f, type: 3}
+  centerOffset: {x: 0, y: 4, z: 0}
   objectRenderers:
   - {fileID: 671662482369661551}
   - {fileID: 4664049015723583807}

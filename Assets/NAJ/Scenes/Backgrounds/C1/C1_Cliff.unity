@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Water
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 110394391}
 --- !u!65 &110394391
@@ -384,6 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Path
   icon: {fileID: 2800000, guid: 9d294c3fe7cc01f4fba33ddb8a34bc95, type: 3}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 446066369}
 --- !u!65 &446066369
@@ -29253,6 +29255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Ship
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 1349008406}
 --- !u!65 &1349008406
@@ -33499,6 +33502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Exit
   icon: {fileID: 2800000, guid: 3e613bb1c0c4b354badb8deec68c7ac8, type: 3}
+  centerOffset: {x: 0, y: 1.5, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 1515668598}
 --- !u!65 &1515668598

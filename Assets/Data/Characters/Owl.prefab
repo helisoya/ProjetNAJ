@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Owl
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  centerOffset: {x: 0, y: 2, z: 0}
   objectRenderers:
   - {fileID: 7081638562480134672}
   interactionCollider: {fileID: 1660645491790823220}

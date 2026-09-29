@@ -1,5 +1,5 @@
 setLocation(TestIf Alt)
-if(random == 0 & random < 1)
+if(random == 0 && random < 1)
 	log(Log;Setting to 5)
 	variable(random;=;5)
 endif

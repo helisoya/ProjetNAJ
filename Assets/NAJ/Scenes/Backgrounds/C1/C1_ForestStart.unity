@@ -4811,6 +4811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Forward
   icon: {fileID: 2800000, guid: 6df575f0ceea0b54395c94f8e3136e0e, type: 3}
+  centerOffset: {x: 0, y: -15, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 580137103}
 --- !u!65 &580137103
@@ -9675,6 +9676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Exit
   icon: {fileID: 2800000, guid: 3e613bb1c0c4b354badb8deec68c7ac8, type: 3}
+  centerOffset: {x: 0, y: 1.5, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 1515668598}
 --- !u!65 &1515668598
@@ -11746,7 +11748,7 @@ MonoBehaviour:
   defaultData:
     currentWeatherEffect: 
     currentLightDirection: {x: 50, y: -30, z: 0}
-    skyboxData: {fileID: 11400000, guid: 3c393467ae28b4f4f89d8d01c5af0816, type: 2}
+    skyboxData: 
   sunLight: {fileID: 8577627912959372659}
   weatherEffects:
     _serializedList:

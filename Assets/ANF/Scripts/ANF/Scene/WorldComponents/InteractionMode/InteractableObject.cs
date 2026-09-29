@@ -12,6 +12,7 @@ namespace ANF.Scene
         [SerializeField] private string ID;
         [Tooltip("The icon display when interacting with the mouse")]
         [SerializeField] private Texture2D icon;
+        [SerializeField] private Vector3 centerOffset;
         private string nextScript;
         private float currentAlpha = 0.0f;
         private Color currentColor = Color.blue;
@@ -56,7 +57,7 @@ namespace ANF.Scene
 		/// <returns>Its approximate visual position</returns>
         public Vector3 GetApproximateVisualPosition()
         {
-            return interactionCollider.bounds.center;
+            return transform.position + centerOffset;
         }
 
         /// <summary>

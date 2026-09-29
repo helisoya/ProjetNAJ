@@ -1,5 +1,6 @@
 setInteractionScript(Chasseur;Chasseur)
 setInteractionScript(Rival;Rival)
 setInteractionScript(DoorToRoom1;../Room1/Arrival)
+setInteractionScript(Tools;Tools)
 
 interaction()
