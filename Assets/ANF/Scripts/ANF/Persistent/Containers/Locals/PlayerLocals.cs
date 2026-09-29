@@ -48,7 +48,7 @@ namespace ANF.Locals
                 json.Add("currentAdditionalFiles", currentAdditionalFiles);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("currentAdditionalFiles"))
                 currentAdditionalFiles = json.GetJArray("currentAdditionalFiles").AsStringArray();
@@ -57,6 +57,8 @@ namespace ANF.Locals
             {
                 locals.ChangeAdditionalFiles(currentAdditionalFiles);
             }
+
+            return true;
         }
     }
 }

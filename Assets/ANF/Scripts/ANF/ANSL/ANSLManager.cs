@@ -57,7 +57,7 @@ namespace ANF.ANSL
         /// <param name="manager">The ANF Manager</param>
         private void GenerateContexts(ANFManager manager)
         {
-            List<KeyValuePair<Type,uint>> functions = ANSLUtils.GetValidANSLFunctionsList(PersistentDataManager.instance.GetANFSettings());
+            List<KeyValuePair<Type, uint>> functions = ANSLUtils.GetValidANSLFunctionsList(PersistentDataManager.instance.GetANFSettings());
 
             contexts = new ANSLContext[maxContexts];
             for (int i = 0; i < contexts.Length; i++)
@@ -200,7 +200,7 @@ namespace ANF.ANSL
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -219,7 +219,7 @@ namespace ANF.ANSL
             json.Add("contexts", contextsArray);
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("contexts"))
             {
@@ -238,6 +238,8 @@ namespace ANF.ANSL
                 }
             }
             CheckEnableState();
+
+            return true;
         }
     }
 }

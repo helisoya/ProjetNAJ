@@ -76,7 +76,7 @@ namespace ANF.Scene
         /// Checks if the component is still cleaning up
         /// </summary>
         /// <returns>True if still cleaning up</returns>
-        public abstract bool IsCleaningUpForSceneChange();
+        public abstract bool IsLoadingOrCleaningUp();
 
         /// <summary>
         /// Changes if the component is enabled or not
@@ -91,7 +91,13 @@ namespace ANF.Scene
         public void SetPaused(bool paused);
 
         public abstract void OnSave(JSON json);
-        public abstract void OnLoad(JSON json);
+
+        /// <summary>
+		/// Callback for loading a JSON
+		/// </summary>
+		/// <param name="json">The JSON to load</param>
+		/// <returns>True if the load was immediate</returns>
+        public abstract bool OnLoad(JSON json);
     }
 }
 

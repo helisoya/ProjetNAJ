@@ -36,7 +36,7 @@ public class ANSLFunctionsWindowEditor : EditorWindow
 
             List<ANSLSettings.ANSLFunctionSettingsData> knownFunctions = anslSettings.registeredFunctions;
 
-            scrollPosition = GUILayout.BeginScrollView(scrollPosition);
+
 
             if (knownFunctions.Count == 0)
             {
@@ -44,6 +44,7 @@ public class ANSLFunctionsWindowEditor : EditorWindow
             }
             else
             {
+
                 float size = position.width / 3.0f;
                 GUILayoutOption[] options = { GUILayout.Width(size) };
 
@@ -52,6 +53,8 @@ public class ANSLFunctionsWindowEditor : EditorWindow
                 GUILayout.Label("Id", options);
                 GUILayout.Label("Active", options);
                 GUILayout.EndHorizontal();
+
+                scrollPosition = GUILayout.BeginScrollView(scrollPosition);
 
                 for (int i = 0; i < knownFunctions.Count; i++)
                 {
@@ -78,6 +81,8 @@ public class ANSLFunctionsWindowEditor : EditorWindow
                     EditorGUI.DrawRect(rect, new Color(0.5f, 0.5f, 0.5f, 1));
                     EditorGUILayout.Space(1);
                 }
+
+                GUILayout.EndScrollView();
             }
 
             GUILayout.BeginHorizontal();
@@ -131,7 +136,6 @@ public class ANSLFunctionsWindowEditor : EditorWindow
 
             GUILayout.EndHorizontal();
 
-            GUILayout.EndScrollView();
             EditorUtility.SetDirty(settings);
         }
     }

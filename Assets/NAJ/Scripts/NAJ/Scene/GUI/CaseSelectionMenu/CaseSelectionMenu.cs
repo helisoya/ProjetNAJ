@@ -312,7 +312,7 @@ namespace NAJ.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -322,9 +322,9 @@ namespace NAJ.GUI
 
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
-
+            return true;
         }
     }
 

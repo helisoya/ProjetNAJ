@@ -373,7 +373,7 @@ namespace NAJ.Persistent
                 json.Add("localProfile", localItems);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             Reset();
 
@@ -438,6 +438,8 @@ namespace NAJ.Persistent
                         knownProfiles.Add(profile.id, profile);
                 }
             }
+
+            return true;
         }
     }
 }

@@ -421,7 +421,7 @@ namespace ANF.Locals
             json.Add("channels", channelArray);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("channels"))
             {
@@ -441,6 +441,8 @@ namespace ANF.Locals
 
             if (json.ContainsKey("currentLanguage"))
                 ChangeLanguage(json.GetString("currentLanguage"));
+
+            return true;
         }
     }
 }

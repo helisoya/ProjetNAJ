@@ -29,6 +29,8 @@ namespace ANF.Scene
     public class BackgroundManager : WorldComponent
     {
 
+        private const int ASYNC_FRAME_WAIT = 4;
+
         /// <summary>
 		/// The type of the background resource
 		/// </summary>
@@ -269,6 +271,7 @@ namespace ANF.Scene
                 RemoveCurrentBackground();
 
                 unloadingBackground = waitingForAsyncOperation;
+                asyncWaitForNextFrames = 0;
 
                 if (!unloadingBackground)
                 {
@@ -292,7 +295,7 @@ namespace ANF.Scene
                 LoadBackground(cachedNextBackgroundID, forceSync);
 
                 loadingBackground = true;
-                asyncWaitForNextFrames = loadingBackground ? 2 : 0;
+                asyncWaitForNextFrames = loadingBackground ? ASYNC_FRAME_WAIT : 0;
 
                 if (!loadingBackground)
                     EndBackgroundLoading();
@@ -562,7 +565,7 @@ namespace ANF.Scene
             }
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             cachedNextBackgroundID = null;
             currentBackgroundID = null;
@@ -588,7 +591,11 @@ namespace ANF.Scene
             {
                 cachedNextBackgroundID = json.GetString("backgroundID");
                 EndBackgroundUnloading(true);
+
+                return loadingBackground;
             }
+
+            return true;
         }
 
 
@@ -636,9 +643,9 @@ namespace ANF.Scene
             return !unloadingBackground;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
-            return waitingForAsyncOperation;
+            return waitingForAsyncOperation || asyncWaitForNextFrames > 0;
         }
     }
 

@@ -117,7 +117,7 @@ namespace ANF.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -127,7 +127,7 @@ namespace ANF.GUI
             json.Add("animations", animations.Keys.ToArray());
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("animations"))
             {
@@ -135,6 +135,8 @@ namespace ANF.GUI
                 foreach (string animation in animations)
                     PlayAnimation(animation);
             }
+
+            return true;
         }
     }
 }

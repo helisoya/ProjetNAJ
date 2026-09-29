@@ -396,86 +396,92 @@ MonoBehaviour:
         - typeName: ANF.ANSL.SetCharacterRotationFunction
           id: 75
           enabled: 1
-        - typeName: ANF.ANSL.SetCharacterTriggerFunction
+        - typeName: ANF.ANSL.SetCharacterScaleFunction
           id: 76
           enabled: 1
-        - typeName: ANF.ANSL.SetFgColorFunction
+        - typeName: ANF.ANSL.SetCharacterTriggerFunction
           id: 77
           enabled: 1
-        - typeName: ANF.ANSL.SetFgFunction
+        - typeName: ANF.ANSL.SetFgColorFunction
           id: 78
           enabled: 1
-        - typeName: ANF.ANSL.SetFogColorFunction
+        - typeName: ANF.ANSL.SetFgFunction
           id: 79
           enabled: 1
-        - typeName: ANF.ANSL.SetFogDensityFunction
+        - typeName: ANF.ANSL.SetFogColorFunction
           id: 80
           enabled: 1
-        - typeName: ANF.ANSL.SetFogEnabledFunction
+        - typeName: ANF.ANSL.SetFogDensityFunction
           id: 81
           enabled: 1
-        - typeName: ANF.ANSL.SetGamepadVibrationFunction
+        - typeName: ANF.ANSL.SetFogEnabledFunction
           id: 82
           enabled: 1
-        - typeName: ANF.ANSL.SetInteractionHiddenFunction
+        - typeName: ANF.ANSL.SetGamepadVibrationFunction
           id: 83
           enabled: 1
-        - typeName: ANF.ANSL.SetInteractionScriptFunction
+        - typeName: ANF.ANSL.SetInteractionHiddenFunction
           id: 84
           enabled: 1
-        - typeName: ANF.ANSL.SetLightDirectionFunction
+        - typeName: ANF.ANSL.SetInteractionScriptFunction
           id: 85
           enabled: 1
-        - typeName: ANF.ANSL.SetLocalsFunction
+        - typeName: ANF.ANSL.SetLightDirectionFunction
           id: 86
           enabled: 1
-        - typeName: ANF.ANSL.SetLocationFunction
+        - typeName: ANF.ANSL.SetLocalsFunction
           id: 87
           enabled: 1
-        - typeName: ANF.ANSL.SetSkyboxFunction
+        - typeName: ANF.ANSL.SetLocationFunction
           id: 88
           enabled: 1
-        - typeName: ANF.ANSL.SetStaticAlphaFunction
+        - typeName: ANF.ANSL.SetSkyboxFunction
           id: 89
           enabled: 1
-        - typeName: ANF.ANSL.SetStaticHiddenFunction
+        - typeName: ANF.ANSL.SetStaticAlphaFunction
           id: 90
           enabled: 1
-        - typeName: ANF.ANSL.SetStaticPositionFunction
+        - typeName: ANF.ANSL.SetStaticHiddenFunction
           id: 91
           enabled: 1
-        - typeName: ANF.ANSL.SetStaticRotationFunction
+        - typeName: ANF.ANSL.SetStaticPositionFunction
           id: 92
           enabled: 1
-        - typeName: ANF.ANSL.SetWeatherEffectFunction
+        - typeName: ANF.ANSL.SetStaticRotationFunction
           id: 93
           enabled: 1
-        - typeName: ANF.ANSL.ShowDialogWindowFunction
+        - typeName: ANF.ANSL.SetStaticScaleFunction
           id: 94
           enabled: 1
-        - typeName: ANF.ANSL.ShowInputReminderFunction
+        - typeName: ANF.ANSL.SetWeatherEffectFunction
           id: 95
           enabled: 1
-        - typeName: ANF.ANSL.StopContextFunction
+        - typeName: ANF.ANSL.ShowDialogWindowFunction
           id: 96
           enabled: 1
-        - typeName: ANF.ANSL.SwitchFunction
+        - typeName: ANF.ANSL.ShowInputReminderFunction
           id: 97
           enabled: 1
-        - typeName: ANF.ANSL.UnloadBundleFunction
+        - typeName: ANF.ANSL.StopContextFunction
           id: 98
           enabled: 1
-        - typeName: ANF.ANSL.UnlockLogFunction
+        - typeName: ANF.ANSL.SwitchFunction
           id: 99
           enabled: 1
-        - typeName: ANF.ANSL.VariableFunction
+        - typeName: ANF.ANSL.UnloadBundleFunction
           id: 100
           enabled: 1
-        - typeName: ANF.ANSL.waitForContextEndFunction
+        - typeName: ANF.ANSL.UnlockLogFunction
           id: 101
           enabled: 1
-        - typeName: ANF.ANSL.WaitFunction
+        - typeName: ANF.ANSL.VariableFunction
           id: 102
+          enabled: 1
+        - typeName: ANF.ANSL.waitForContextEndFunction
+          id: 103
+          enabled: 1
+        - typeName: ANF.ANSL.WaitFunction
+          id: 104
           enabled: 1
     - rid: 5904633997122076775
       type: {class: CaseCompletionContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}

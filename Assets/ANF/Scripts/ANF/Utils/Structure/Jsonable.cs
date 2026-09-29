@@ -17,7 +17,8 @@ namespace ANF.Utils
 		/// Loads the object from a json
 		/// </summary>
 		/// <param name="json">The json</param>
-        public abstract void Load(JSON json);
+        /// <returns>True if the load was immediate. False if it is still ongoing</returns>
+        public abstract bool Load(JSON json);
     }
 }
 

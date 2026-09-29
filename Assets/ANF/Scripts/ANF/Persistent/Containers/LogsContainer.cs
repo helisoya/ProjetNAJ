@@ -184,7 +184,7 @@ namespace ANF.Persistent
                 json.Add("localLogs", localLogs);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             Reset();
 
@@ -205,6 +205,8 @@ namespace ANF.Persistent
                     if (array.ContainsKey(allLogs[i].Value))
                         knownLogs[i] = array.GetBool(allLogs[i].Value);
             }
+
+            return true;
         }
     }
 }

@@ -289,7 +289,7 @@ namespace ANF.GUI
                 json.Add("currentSpeakerID", currentSpeakerID);
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("showingDialog"))
                 showingDialog = json.GetBool("showingDialog");
@@ -321,6 +321,8 @@ namespace ANF.GUI
 
             if (!showingDialog)
                 continueIcon.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
+
+            return true;
         }
 
         /// <summary>
@@ -381,7 +383,7 @@ namespace ANF.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }

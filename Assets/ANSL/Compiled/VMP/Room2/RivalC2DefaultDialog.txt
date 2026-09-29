@@ -1,4 +1,4 @@
-#C1A60539C6B7728EE83B882FF7161C61-530A4E09197B9415F6E0D4FE7E8BB24C
+#C1A60539C6B7728EE83B882FF7161C61-718EFDC1B0E65B9E044C1FE0A1A72EB5
 40|1|4|RivalReactionToDrinkQuest == 1
 35|Char_Rival|null|Talk_Rival_LoyalBaron_1
 35|Char_Rival|null|Talk_Rival_LoyalBaron_2
@@ -11,8 +11,8 @@
 35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_2
 35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_3
 35|Char_Rival|null|Talk_Rival_LateLoyalRival_4
-100|RivalReactionToDrinkQuest|=|2
-100|ValueRival|+|2
+102|RivalReactionToDrinkQuest|=|2
+102|ValueRival|+|2
 42|23
 35|Char_LoupGarou|null|Talk_Rival_Centrist_1
 35|Char_LoupGarou|null|Talk_Rival_Centrist_2
@@ -20,6 +20,6 @@
 35|Char_Rival|null|Talk_Rival_Centrist_4
 35|Char_Rival|null|Talk_Rival_Centrist_5
 35|Char_Rival|null|Talk_Rival_Centrist_6
-100|ValueRival|-|1
+102|ValueRival|-|1
 42|23
 42|24

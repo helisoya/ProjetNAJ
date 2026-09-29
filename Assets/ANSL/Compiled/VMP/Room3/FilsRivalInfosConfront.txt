@@ -1,11 +1,11 @@
-#D86843D3E9B00A40D1F99B10C10F0C41-530A4E09197B9415F6E0D4FE7E8BB24C
+#D86843D3E9B00A40D1F99B10C10F0C41-718EFDC1B0E65B9E044C1FE0A1A72EB5
 35|Char_LoupGarou|null|Talk_Fils_GetInfos_1
 35|Char_Fils|null|Talk_Fils_GetInfos_2
 35|Char_LoupGarou|null|Talk_Fils_GetInfos_3
 40|4|9|ValueFils >= 3
 35|Char_Fils|null|Talk_Fils_GetInfos_NotFriend_1
 35|Char_Fils|null|Talk_Fils_GetInfos_NotFriend_2
-100|ValueFils|-|1
+102|ValueFils|-|1
 44|FilsC2ConfrontSecret
 42|16
 35|Char_Fils|null|Talk_Fils_GetInfos_Friend_1

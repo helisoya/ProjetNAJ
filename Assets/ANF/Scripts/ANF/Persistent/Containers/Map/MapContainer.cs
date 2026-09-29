@@ -177,8 +177,9 @@ namespace ANF.Persistent
         {
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
+            return true;
         }
 
         public void Save(JSON json)

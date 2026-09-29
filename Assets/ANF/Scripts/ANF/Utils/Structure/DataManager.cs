@@ -64,11 +64,15 @@ namespace ANF.Utils
 		/// Loads the data containers from the json
 		/// </summary>
 		/// <param name="json">The data containers</param>
-        public void Load(JSON json)
+        /// <returns>True if the load was immediate. False if it is still ongoing</returns>
+        public bool Load(JSON json)
         {
+            bool immediate = true;
             foreach (string key in components.Keys)
                 if (json.ContainsKey(key))
-                    components[key].Load(json.GetJSON(key));
+                    if (!components[key].Load(json.GetJSON(key)))
+                        immediate = false;
+            return immediate;
         }
 
         /// <summary>

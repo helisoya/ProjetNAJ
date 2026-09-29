@@ -71,7 +71,7 @@ namespace ANF.Persistent
             json.Add("data", array);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("data"))
             {
@@ -95,6 +95,8 @@ namespace ANF.Persistent
                     });
                 }
             }
+
+            return true;
         }
     }
 

@@ -173,7 +173,7 @@ namespace ANF.Persistent
         /// <param name="path">The resource's path</param>
         protected abstract void TryReleaseResource<T>(string path);
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("bundles"))
             {
@@ -211,6 +211,8 @@ namespace ANF.Persistent
                         LoadBundle(item.GetString("name"), (BundleType)item.GetInt("type"));
                 }
             }
+
+            return true;
         }
 
         public void Save(JSON json)

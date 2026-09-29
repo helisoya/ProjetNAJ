@@ -67,7 +67,7 @@ namespace ANF.Persistent
             return false;
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             Reset();
 
@@ -104,6 +104,8 @@ namespace ANF.Persistent
                     }
                 }
             }
+
+            return true;
         }
 
         public void Reset()

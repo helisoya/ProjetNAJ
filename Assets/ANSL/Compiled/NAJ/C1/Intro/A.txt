@@ -1,11 +1,11 @@
-#A412DD310E04D83CF892B617EFCDD901-530A4E09197B9415F6E0D4FE7E8BB24C
+#A412DD310E04D83CF892B617EFCDD901-718EFDC1B0E65B9E044C1FE0A1A72EB5
 61|C1/Boat
-88|Day
-90|WaterStorm|true
-89|Fog|0.25
-81|true
-80|0.004
-79|#B1D7FB
+89|Day
+91|WaterStorm|true
+90|Fog|0.25
+82|true
+81|0.004
+80|#B1D7FB
 63|1
 39|0|false
 24
@@ -16,9 +16,9 @@
 35|null|null|C1_Intro_A_5
 35|null|null|C1_Intro_A_6
 35|null|null|C1_Intro_A_7
-94|false
+96|false
 37|0|false
-102|1
+104|1
 35|null|null|C1_Intro_A_8
 35|null|null|C1_Intro_A_9
 35|null|null|C1_Intro_A_10
@@ -61,7 +61,7 @@
 69|Sartt|Normal
 35|Char_Sartt|Sartt|C1_Intro_A_39
 35|Char_Sartt|Sartt|C1_Intro_A_40
-94|false
+96|false
 37|1|true
 64|-39.4|1|-20.6
 65|0|-108.3|0
@@ -72,7 +72,7 @@
 35|Char_Sartt|Sartt|C1_Intro_A_42
 35|Char_Sartt|Sartt|C1_Intro_A_43
 35|Char_Sartt|Sartt|C1_Intro_A_44
-94|false
+96|false
 37|1|true
 58|Sailors
 58|Kalia
@@ -195,7 +195,7 @@
 35|Char_Gerald|GeraldCoat|C1_Intro_A_135
 35|Char_Gerald|GeraldCoat|C1_Intro_A_136
 35|Char_Rann|null|C1_Intro_A_137
-94|false
+96|false
 37|1|true
 1|C1_Gerald
 35|null|null|C1_Intro_A_138

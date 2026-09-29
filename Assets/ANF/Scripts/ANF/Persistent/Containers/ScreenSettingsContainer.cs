@@ -69,7 +69,7 @@ namespace ANF.Persistent
             }
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             int width = resolution.width;
             int height = resolution.height;
@@ -107,6 +107,8 @@ namespace ANF.Persistent
             SetVSyncCount(vSyncCount);
             SetAntiAliasing(antiAliasing);
             SetShadowQuality(shadowCascadeCount);
+
+            return true;
         }
 
         public void Save(JSON json)

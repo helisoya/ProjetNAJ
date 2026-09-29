@@ -15,6 +15,7 @@ PauseMenu_Quit = Quit
 
 SaveMenu_Title_Save = Select a slot to save to
 SaveMenu_Title_Load = Select a slot to load from
+SaveMenu_CorruptedSave = Corrupted Save
 
 SaveMenu_Popup_Title = Use this slot ?
 SaveMenu_Popup_Confirm = Confirm

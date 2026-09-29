@@ -1,15 +1,15 @@
-#9B88F184DBFF35B937A140B1B9C56628-530A4E09197B9415F6E0D4FE7E8BB24C
-87|TestIf Alt
+#9B88F184DBFF35B937A140B1B9C56628-718EFDC1B0E65B9E044C1FE0A1A72EB5
+88|TestIf Alt
 40|2|5|random == 0 & random < 1
 45|Log|Setting to 5
-100|random|=|5
+102|random|=|5
 42|6
 42|6
 40|7|9|random != 5
 45|Error|Should be at 5
 42|12
 45|Log|Is at 5, removing 1
-100|random|-|1
+102|random|-|1
 42|12
 40|13|15|random == 4
 45|Log|Is at 4

@@ -67,15 +67,17 @@ namespace ANF.Scene
             OnSave(json);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (!canBeSaved)
-                return;
+                return true;
 
-            OnLoad(json);
+            bool immediate = OnLoad(json);
 
             if (json.ContainsKey("isEnabled"))
                 isEnabled = json.GetBool("isEnabled");
+
+            return immediate;
         }
 
         /// <summary>
@@ -92,11 +94,11 @@ namespace ANF.Scene
         public abstract void OnEnabled();
         public abstract void OnDisabled();
         public abstract void OnSave(JSON json);
-        public abstract void OnLoad(JSON json);
+        public abstract bool OnLoad(JSON json);
         public abstract void OnRegisterInputs();
         public abstract void OnUnRegisterInputs();
         public abstract bool OnChangeScene();
-        public abstract bool IsCleaningUpForSceneChange();
+        public abstract bool IsLoadingOrCleaningUp();
 
         public void UpdateComponent()
         {

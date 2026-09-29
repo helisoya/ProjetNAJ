@@ -790,7 +790,7 @@ namespace NAJ.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -805,7 +805,7 @@ namespace NAJ.GUI
             json.Add("selectedItem", selectedItem);
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("cachedPreviousReminders"))
             {
@@ -817,6 +817,8 @@ namespace NAJ.GUI
                 currentMode = (InventoryMode)json.GetInt("currentMode");
             if (json.ContainsKey("selectedItem"))
                 selectedItem = json.GetString("selectedItem");
+
+            return true;
         }
     }
 }

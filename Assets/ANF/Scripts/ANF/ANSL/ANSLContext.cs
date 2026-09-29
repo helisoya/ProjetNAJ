@@ -24,6 +24,7 @@ public class ANSLContext : Jsonable
     private string[] currentScript;
     private uint currentLine;
     private string currentFilePath;
+    private string currentChecksum;
 
     private bool lastFunctionModifiedLine;
     private bool waitingForFunction;
@@ -140,6 +141,8 @@ public class ANSLContext : Jsonable
             currentScript = FileManager.ReadTextAsset(data).ToArray();
             lastFunctionModifiedLine = true;
             currentFileHasChecksum = currentScript.Length > 0 && currentScript[0].StartsWith("#");
+
+            currentChecksum = currentFileHasChecksum ? currentScript[0] : "";
 
             currentLine = startLine;
 
@@ -338,6 +341,8 @@ public class ANSLContext : Jsonable
         json.Add("currentLine", currentLine);
         json.Add("currentFilePath", currentFilePath);
         json.Add("currentFileHasChecksum", currentFileHasChecksum);
+        if (!string.IsNullOrEmpty(currentChecksum))
+            json.Add("currentChecksum", currentChecksum);
 
         json.Add("lastFunctionModifiedLine", lastFunctionModifiedLine);
         json.Add("waitingForFunction", waitingForFunction);
@@ -362,7 +367,7 @@ public class ANSLContext : Jsonable
         }
     }
 
-    public void Load(JSON json)
+    public bool Load(JSON json)
     {
         scriptStack.Clear();
 
@@ -372,6 +377,8 @@ public class ANSLContext : Jsonable
             isPaused = json.GetBool("isPaused");
         if (json.ContainsKey("currentFileHasChecksum"))
             currentFileHasChecksum = json.GetBool("currentFileHasChecksum");
+        if (json.ContainsKey("currentChecksum"))
+            currentChecksum = json.GetString("currentChecksum");
         if (json.ContainsKey("ignoreCheckDepthInternalValue"))
             ignoreCheckDepthInternalValue = json.GetJNumber("ignoreCheckDepthInternalValue").AsUInt();
         if (json.ContainsKey("lastFunctionModifiedLine"))
@@ -408,6 +415,8 @@ public class ANSLContext : Jsonable
         if (isRunning)
         {
             currentScript = FileManager.ReadTextAsset(resourceManager.GetResource<TextAsset>(currentFilePath)).ToArray();
+            currentFileHasChecksum = currentScript.Length > 0 && currentScript[0].StartsWith("#");
+            currentChecksum = currentFileHasChecksum ? currentScript[0] : "";
 
             if (waitingForFunction && json.ContainsKey("currentFunctionParameters"))
             {
@@ -415,6 +424,8 @@ public class ANSLContext : Jsonable
                 functions[currentFunctionId].Load(parameters);
             }
         }
+
+        return true;
     }
     #endregion
 

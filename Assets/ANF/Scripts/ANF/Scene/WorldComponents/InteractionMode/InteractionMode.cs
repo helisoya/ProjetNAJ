@@ -605,7 +605,7 @@ namespace ANF.Scene
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -668,7 +668,7 @@ namespace ANF.Scene
             }
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("registeredObjects"))
             {
@@ -680,6 +680,8 @@ namespace ANF.Scene
                 inInteractionMode = true;
                 reloadInteractionMode = true;
             }
+
+            return true;
         }
     }
 }

@@ -1,5 +1,5 @@
-#26224BB0FA1440CC61E14E5DCF5F8D1E-530A4E09197B9415F6E0D4FE7E8BB24C
-97|C1_AxeProgress|24|0|1|1|9
+#26224BB0FA1440CC61E14E5DCF5F8D1E-718EFDC1B0E65B9E044C1FE0A1A72EB5
+99|C1_AxeProgress|24|0|1|1|9
 35|Char_Rann|null|C1_DeadEnd_Owl_Before_1
 35|null|null|C1_DeadEnd_Owl_Before_2
 35|Char_Rann|null|C1_DeadEnd_Owl_Before_3
@@ -12,15 +12,15 @@
 35|null|null|C1_DeadEnd_Owl_After_2
 35|null|null|C1_DeadEnd_Owl_After_3
 67|Owl|FlyOffScreen
-102|2
+104|2
 35|Char_Rann|null|C1_DeadEnd_Owl_After_4
 35|Char_Rann|null|C1_DeadEnd_Owl_After_5
-89|Axe|0|1|true
-91|Axe|0|0|-50
+90|Axe|0|1|true
+92|Axe|0|0|-50
 35|Char_Rann|null|C1_DeadEnd_Owl_After_6
 35|Char_Rann|null|C1_DeadEnd_Owl_After_7
 35|Char_Rann|null|C1_DeadEnd_Owl_After_8
 35|Char_Rann|null|C1_DeadEnd_Owl_After_9
-100|C1_AxeProgress|=|2
+102|C1_AxeProgress|=|2
 42|24
 44|Interaction

@@ -7,9 +7,11 @@ namespace ANF.Scene
 {
     public abstract class SceneObjectManager<Type> : WorldComponent where Type : SceneObject
     {
+        private const int LOAD_CACHE_FRAME_LIFE = 2;
+
         /// <summary>
-		/// Object Instance
-		/// </summary>
+        /// Object Instance
+        /// </summary>
         public struct ObjectInstance<T>
         {
             public bool loadedFromResources;
@@ -47,15 +49,6 @@ namespace ANF.Scene
 
         public override void OnUpdate()
         {
-            // Keeping the load cache intact will prevent manual scene objects from being created
-            // It is destroyed after X frames (1 by default)
-            if (loadDataCache != null)
-            {
-                loadDataCacheFrameSurvival--;
-                if (loadDataCacheFrameSurvival <= 0)
-                    loadDataCache = null;
-            }
-
             foreach (ObjectInstance<Type> obj in objects.Values)
             {
                 obj.obj.UpdateObject(manager);
@@ -228,10 +221,10 @@ namespace ANF.Scene
             json.Add("objects", objJSON);
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             loadDataCache = new Dictionary<string, JSON>();
-            loadDataCacheFrameSurvival = 5;
+            loadDataCacheFrameSurvival = LOAD_CACHE_FRAME_LIFE;
             List<string> existingNonResources = new List<string>();
             if (json.ContainsKey("objects"))
             {
@@ -269,6 +262,7 @@ namespace ANF.Scene
                 }
             }
 
+            // Remove unused objects
             List<string> allKeys = new List<string>(objects.Keys);
             foreach (string objectId in allKeys)
             {
@@ -276,6 +270,8 @@ namespace ANF.Scene
                     !existingNonResources.Contains(objectId))
                     RemoveSceneObject(objectId);
             }
+
+            return true;
         }
 
         public override bool OnChangeScene()
@@ -296,8 +292,28 @@ namespace ANF.Scene
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
+            // Keeping the load cache intact will prevent manual scene objects from being created
+            // It is destroyed after X frames (1 by default)
+            if (loadDataCache != null)
+            {
+                if (manager.GetWorld().GetComponent(out BackgroundManager backgroundManager))
+                {
+                    if (backgroundManager.IsLoadingOrCleaningUp())
+                        return true;
+                }
+
+                loadDataCacheFrameSurvival--;
+                if (loadDataCacheFrameSurvival <= 0)
+                {
+                    if (loadDataCache.Count > 0)
+                        Debug.LogWarning($"Object Cache deleted with still {loadDataCache.Count} cached objects");
+                    loadDataCache = null;
+                    return true;
+                }
+            }
+
             return false;
         }
     }

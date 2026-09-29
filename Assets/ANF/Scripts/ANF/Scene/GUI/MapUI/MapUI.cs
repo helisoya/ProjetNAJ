@@ -339,7 +339,7 @@ namespace ANF.GUI
             }
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("showingMap"))
                 showingMap = json.GetBool("showingMap");
@@ -363,6 +363,7 @@ namespace ANF.GUI
                         json.Remove("isEnabled");
                 }
             }
+            return true;
         }
 
         public override void OnRegisterInputs()
@@ -384,7 +385,7 @@ namespace ANF.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }

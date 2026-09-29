@@ -53,10 +53,12 @@ namespace NAJ.Persistent
             json.Add("currentProgression", currentProgression);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("currentProgression"))
                 currentProgression = json.GetJNumber("currentProgression").AsUInt();
+
+            return true;
         }
     }
 }

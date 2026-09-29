@@ -165,7 +165,7 @@ namespace ANF.Persistent
                 data.ResetValue();
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             Reset();
             foreach (string key in json.Keys)
@@ -177,6 +177,8 @@ namespace ANF.Persistent
                 }
 
             }
+
+            return true;
         }
 
         public void Save(JSON json)
@@ -447,10 +449,10 @@ namespace ANF.Persistent
                 JSON drawJSON = new JSON();
             }
 
-            public void Load(JSON json)
+            public bool Load(JSON json)
             {
                 if (!json.ContainsKey("type") || !json.ContainsKey("value"))
-                    return;
+                    return true;
 
                 onValueChange = new UnityEvent<object>();
                 type = (SettingsDataType)json.GetInt("type");
@@ -502,6 +504,7 @@ namespace ANF.Persistent
                             break;
                         }
                 }
+                return true;
             }
         }
 

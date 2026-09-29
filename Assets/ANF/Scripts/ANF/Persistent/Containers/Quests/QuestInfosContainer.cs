@@ -160,7 +160,7 @@ namespace ANF.Persistent
             }
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             Reset();
 
@@ -175,6 +175,8 @@ namespace ANF.Persistent
                         CreateUserQuest(itemJson.GetString("variableId"), itemJson.GetString("categoryId"), itemJson.GetInt("maxQuestState"));
                 }
             }
+
+            return true;
         }
 
         public void Reset()

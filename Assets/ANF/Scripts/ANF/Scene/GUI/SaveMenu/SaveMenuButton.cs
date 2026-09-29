@@ -1,5 +1,6 @@
 using ANF.Persistent;
 using DG.Tweening;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -15,6 +16,7 @@ namespace ANF.GUI
         [SerializeField] private Locals.LocalizedText iconText;
         [SerializeField] private Locals.LocalizedText labelText;
         [SerializeField] private Image backgroundImage;
+        [SerializeField] private GameObject corruptedSaveRoot;
 
         private SaveMenuUI saveMenuUI;
         private SaveMenuButtonData data;
@@ -40,6 +42,7 @@ namespace ANF.GUI
                 iconText.GetText().text = data.saveFileIcon;
                 labelText.GetText().text = data.label;
                 backgroundImage.sprite = data.bgSprite;
+                corruptedSaveRoot.SetActive(data.saveIsCorrupted);
             }
         }
 
@@ -49,13 +52,16 @@ namespace ANF.GUI
         /// </summary>
         /// <param name="label">The new label</param>
         /// <param name="bgSprite">The new Background sprite</param>
-        public void UpdateInfos(string label, Sprite bgSprite)
+        /// <param name="isCorrupted">True if the savefile is now corrupted</param>
+        public void UpdateInfos(string label, Sprite bgSprite, bool isCorrupted)
         {
             data.label = label;
             data.bgSprite = bgSprite;
 
             labelText.GetText().text = label;
             backgroundImage.sprite = bgSprite;
+
+            corruptedSaveRoot.SetActive(isCorrupted);
         }
 
         public void OnEnter()
@@ -121,6 +127,7 @@ namespace ANF.GUI
     public class SaveMenuButtonData
     {
         public bool interactable;
+        public bool saveIsCorrupted;
         public bool saveFileExists;
         public string saveFileName;
         public string saveFileIcon;

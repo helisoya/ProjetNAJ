@@ -16,24 +16,25 @@ namespace ANF.Scene
     public class ANFManager : MonoBehaviour, Jsonable
     {
         /// <summary>
-        /// Represents the load state for the scene
+        /// Represents the state for the scene
         /// </summary>
-        private enum LoadState
+        private enum GameState
         {
             WaitingForCleanUp,
-            Loaded
+            WaitingForLoad,
+            InGame,
+            WaitingForChangeScene
         }
 
         [Header("General")]
         [SerializeField] private RectTransform uiRoot;
         [SerializeField] private ANFSceneData sceneData;
 
-        private bool isChangingScene = false;
         private bool waitingForCleanup = false;
         private bool initializedCleanup;
         private string nextSceneToLoad = null;
 
-        private LoadState currentLoadState;
+        private GameState currentGameState;
         private AsyncOperation cleanupOperation;
 
         private World world;
@@ -59,60 +60,76 @@ namespace ANF.Scene
 
         void Update()
         {
-            if (currentLoadState == LoadState.WaitingForCleanUp)
+            switch (currentGameState)
             {
-                if (!cleanupOperation.isDone)
-                    return;
+                case GameState.WaitingForCleanUp:
+                    {
+                        if (!cleanupOperation.isDone)
+                            return;
 
-                currentLoadState = LoadState.Loaded;
+                        currentGameState = GameState.InGame;
 
-                if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
-                {
-                    fade.FadeAlphaTo(0);
-                }
+                        if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
+                        {
+                            fade.FadeAlphaTo(0);
+                        }
 
-                OnStartComponents();
-            }
+                        OnStartComponents();
+                    }
+                    break;
 
-            if (isChangingScene)
-            {
-                if (sceneData.changeSceneUseFading &&
-                    guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
-                {
-                    fade.OnUpdate();
-                    if (fade.fadingAlpha)
-                        return;
-                }
+                case GameState.WaitingForChangeScene:
+                    {
+                        if (sceneData.changeSceneUseFading &&
+                            guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
+                        {
+                            fade.OnUpdate();
+                            if (fade.fadingAlpha)
+                                return;
+                        }
 
-                if (!initializedCleanup)
-                {
-                    initializedCleanup = true;
+                        if (!initializedCleanup)
+                        {
+                            initializedCleanup = true;
 
-                    waitingForCleanup = guiManager.OnChangeScene();
+                            waitingForCleanup = guiManager.OnChangeScene();
 
-                    if (!world.OnChangeScene())
-                        waitingForCleanup = false;
+                            if (!world.OnChangeScene())
+                                waitingForCleanup = false;
 
-                    if (waitingForCleanup)
-                        return;
-                }
-                else if (waitingForCleanup)
-                {
-                    if (world.IsCleaningUpForSceneChange() ||
-                       guiManager.IsCleaningUpForSceneChange())
-                        return;
+                            if (waitingForCleanup)
+                                return;
+                        }
+                        else if (waitingForCleanup)
+                        {
+                            if (world.IsLoadingOrCleaningUp() ||
+                               guiManager.IsLoadingOrCleaningUp())
+                                return;
 
-                    waitingForCleanup = false;
-                }
+                            waitingForCleanup = false;
+                        }
 
+                        SceneManager.LoadScene(nextSceneToLoad);
+                    }
+                    break;
 
+                case GameState.WaitingForLoad:
+                    {
+                        if (world.IsLoadingOrCleaningUp() ||
+                        guiManager.IsLoadingOrCleaningUp())
+                            return;
 
-                SceneManager.LoadScene(nextSceneToLoad);
-            }
-            else
-            {
-                world.OnUpdate();
-                guiManager.OnUpdate();
+                        currentGameState = GameState.InGame;
+                    }
+                    break;
+
+                case GameState.InGame:
+                    {
+                        world.OnUpdate();
+                        guiManager.OnUpdate();
+                    }
+                    break;
+
             }
         }
 
@@ -129,7 +146,7 @@ namespace ANF.Scene
             }
 
             cleanupOperation = Resources.UnloadUnusedAssets();
-            currentLoadState = LoadState.WaitingForCleanUp;
+            currentGameState = GameState.WaitingForCleanUp;
         }
 
         /// <summary>
@@ -156,21 +173,17 @@ namespace ANF.Scene
         /// <param name="nextScene">The next scene</param>
         public void ChangeScene(string nextScene)
         {
+            DOTween.KillAll(false);
+
             if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
             {
-                DOTween.KillAll(false);
-
                 fade.SetEnabled(true);
                 fade.SetPaused(false);
                 fade.FadeAlphaTo(1);
+            }
 
-                isChangingScene = true;
-                nextSceneToLoad = nextScene;
-            }
-            else
-            {
-                SceneManager.LoadScene(nextSceneToLoad);
-            }
+            currentGameState = GameState.WaitingForChangeScene;
+            nextSceneToLoad = nextScene;
         }
 
         public void Save(JSON json)
@@ -184,13 +197,21 @@ namespace ANF.Scene
             json.Add("gui", individualDataJson);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
+            bool immediate = true;
             if (json.ContainsKey("gui"))
-                guiManager.Load(json.GetJSON("gui"));
+                if (!guiManager.Load(json.GetJSON("gui")))
+                    immediate = false;
 
             if (json.ContainsKey("world"))
-                world.Load(json.GetJSON("world"));
+                if (!world.Load(json.GetJSON("world")))
+                    immediate = false;
+
+            if (!immediate)
+                currentGameState = GameState.WaitingForLoad;
+
+            return immediate;
         }
     }
 }

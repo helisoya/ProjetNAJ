@@ -1,6 +1,6 @@
-#F84750CD59A0E6CC6A4525574F14A6B4-530A4E09197B9415F6E0D4FE7E8BB24C
-86|vmp_test
-87|Location_VMP_Intro
+#F84750CD59A0E6CC6A4525574F14A6B4-718EFDC1B0E65B9E044C1FE0A1A72EB5
+87|vmp_test
+88|Location_VMP_Intro
 24
 61|Room1
 22|Baron|true|Front
@@ -9,8 +9,8 @@
 22|Humain|true|Front
 22|Rival|true|Front
 22|Boris|false|BorisSpot
-100|SearchCounter|=|0
-100|LookCounter|=|2
+102|SearchCounter|=|0
+102|LookCounter|=|2
 39|0|false
 35|null|null|Scene_Intro_1
 35|null|null|Scene_Intro_2

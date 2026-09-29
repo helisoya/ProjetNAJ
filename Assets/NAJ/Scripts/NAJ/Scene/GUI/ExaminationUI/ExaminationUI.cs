@@ -269,7 +269,7 @@ namespace NAJ.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -287,7 +287,7 @@ namespace NAJ.GUI
             json.Add("currentIdIndex", currentIdIndex);
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("pressedIds"))
             {
@@ -303,6 +303,8 @@ namespace NAJ.GUI
 
             if (json.ContainsKey("canBeInteractedWith"))
                 SetCanBeInteractedWith(json.GetBool("canBeInteractedWith"));
+
+            return true;
         }
     }
 }

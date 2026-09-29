@@ -105,7 +105,7 @@ namespace ANF.Persistent
             json.Add("ambientVolume", ambientVolume);
         }
 
-        public override void Load(JSON json)
+        public override bool Load(JSON json)
         {
             if (json.ContainsKey("sfxVolume"))
                 sfxVolume = json.GetFloat("sfxVolume");
@@ -115,6 +115,8 @@ namespace ANF.Persistent
                 musicVolume = json.GetFloat("musicVolume");
             if (json.ContainsKey("ambientVolume"))
                 ambientVolume = json.GetFloat("ambientVolume");
+
+            return true;
         }
 
         public override void Reset()

@@ -190,12 +190,14 @@ namespace ANF.ANSL
             OnSave(json);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             OnLoad(json);
 
             if (json.ContainsKey("isProcessing"))
                 isProcessing = json.GetBool("isProcessing");
+
+            return true;
         }
 
         /// <summary>

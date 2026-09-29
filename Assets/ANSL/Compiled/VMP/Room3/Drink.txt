@@ -1,12 +1,12 @@
-#1061DE4715B52886A3D741DF4709FD4C-530A4E09197B9415F6E0D4FE7E8BB24C
+#1061DE4715B52886A3D741DF4709FD4C-718EFDC1B0E65B9E044C1FE0A1A72EB5
 40|1|12|LookCounter > 0
-100|LookCounter|-|1
+102|LookCounter|-|1
 40|3|5|DrinkQuest == 0
 35|null|null|Watch_Glass_NoBaron_1
 42|10
 35|null|null|Watch_Glass_Baron_1
-100|DrinkQuest|=|2
-89|Drink|0|0.5|true
+102|DrinkQuest|=|2
+90|Drink|0|0.5|true
 58|Drink
 42|10
 44|/VMP/Common/PrintLookCounter

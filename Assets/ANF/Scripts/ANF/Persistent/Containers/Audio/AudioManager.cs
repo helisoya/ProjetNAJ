@@ -10,7 +10,7 @@ namespace ANF.Persistent
     {
         public abstract DataContainer CloneContainer();
         public abstract void Initialize(ANFSettings settings);
-        public abstract void Load(JSON json);
+        public abstract bool Load(JSON json);
         public abstract void Save(JSON json);
         public abstract void Reset();
 
@@ -208,7 +208,7 @@ namespace ANF.Persistent
 
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("currentAmbient") && audioManager != null)
             {
@@ -226,6 +226,8 @@ namespace ANF.Persistent
                     volume = json.GetFloat("currentMusicVolume");
                 audioManager.PlayMusic(json.GetString("currentMusic"), volume);
             }
+
+            return true;
         }
 
         public void Save(JSON json)

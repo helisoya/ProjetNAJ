@@ -1,6 +1,6 @@
-#3FF1B2DBDB45150582D18A2C6BF84A1C-530A4E09197B9415F6E0D4FE7E8BB24C
+#3FF1B2DBDB45150582D18A2C6BF84A1C-718EFDC1B0E65B9E044C1FE0A1A72EB5
 40|1|46|LookCounter > 0
-100|LookCounter|-|1
+102|LookCounter|-|1
 40|3|12|ConfrontedChasseurSecret == 2
 35|null|null|Watch_Boris_Keys_1
 35|null|null|Watch_Boris_Keys_2
@@ -12,21 +12,21 @@
 42|11
 42|13
 42|13
-97|BorisCounter|44|0|14|1|17|2|20|3|23|4|26|5|29
+99|BorisCounter|44|0|14|1|17|2|20|3|23|4|26|5|29
 35|null|null|Watch_Boris_1
-100|BorisCounter|+|1
+102|BorisCounter|+|1
 42|44
 35|null|null|Watch_Boris_2
-100|BorisCounter|+|1
+102|BorisCounter|+|1
 42|44
 35|null|null|Watch_Boris_3
-100|BorisCounter|+|1
+102|BorisCounter|+|1
 42|44
 35|null|null|Watch_Boris_4
-100|BorisCounter|+|1
+102|BorisCounter|+|1
 42|44
 35|null|null|Watch_Boris_5
-100|BorisCounter|+|1
+102|BorisCounter|+|1
 42|44
 40|30|32|ConfrontedChasseurSecret == 2
 59

@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using ANF.Persistent;
 using ANF.Scene;
 using ANF.Utils;
 using DG.Tweening;
 using Leguar.TotalJSON;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -113,9 +115,62 @@ namespace ANF.GUI
             JSON saveFile = SaveUtils.LoadJSON(savePath);
             string label = slotInfo.GetLabel(saveFile);
             Sprite bgSprite = slotInfo.GetBackground(saveFile);
+            bool saveIsCorrupted = false;
 
             if (interactable && ((!saveFileExists && !inSaveMode) || (inSaveMode && id == 0))) // No manual save to autosave and no load to empty stuff
                 interactable = false;
+
+            if (saveFileExists)
+            {
+                // Check if savefile is corrupted
+                try
+                {
+                    if (PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
+                    {
+                        JSON json = SaveUtils.LoadJSON(savePath);
+
+                        JArray array = json.GetJSON("worldData").GetJSON("world").GetJSON("ANF.ANSL.ANSLManager").GetJArray("contexts");
+                        for (int i = 0; i < array.Length; i++)
+                        {
+                            if (array.GetJSON(i).GetBool("currentFileHasChecksum"))
+                            {
+                                string path = array.GetJSON(i).GetString("currentFilePath");
+
+                                if (!array.GetJSON(i).ContainsKey("currentChecksum"))
+                                {
+                                    saveIsCorrupted = true;
+                                    break;
+                                }
+
+                                string checksum = array.GetJSON(i).GetString("currentChecksum");
+
+                                TextAsset asset = resourceManager.GetResource<TextAsset>(path);
+
+                                if (asset)
+                                {
+                                    List<string> lines = FileManager.ReadTextAsset(asset);
+                                    if (lines.Count > 0 && lines[0].StartsWith("#") &&
+                                        !lines[0].Equals(checksum))
+                                        saveIsCorrupted = true;
+
+                                    asset = null;
+                                    resourceManager.ReleaseResource<TextAsset>(path);
+                                }
+
+                                if (saveIsCorrupted)
+                                    break;
+
+                            }
+                        }
+
+                        json = null;
+                    }
+                }
+                catch
+                {
+                    // Could not check checksums for some reason
+                }
+            }
 
             SaveMenuButton button = Instantiate(buttonPrefab, buttonsRoot);
             button.Initialize(id, this,
@@ -127,6 +182,7 @@ namespace ANF.GUI
                 saveFileName = savePath,
                 label = label,
                 bgSprite = bgSprite,
+                saveIsCorrupted = saveIsCorrupted,
             });
 
             return button;
@@ -285,7 +341,8 @@ namespace ANF.GUI
                 saveFileName = data.saveFileName,
                 bgSprite = data.bgSprite,
                 interactable = false,
-                label = data.label
+                label = data.label,
+                saveIsCorrupted = data.saveIsCorrupted
             };
 
             confirmPopupPreviewButton.Initialize(-1, this, currentPopupData);
@@ -333,21 +390,25 @@ namespace ANF.GUI
                     string newLabel = slotInfo.GetLabel(newFile);
                     Sprite newSprite = slotInfo.GetBackground(newFile);
 
-                    buttons[currentButtonIdx].UpdateInfos(newLabel, newSprite);
-                    confirmPopupPreviewButton.UpdateInfos(newLabel, newSprite);
+                    buttons[currentButtonIdx].UpdateInfos(newLabel, newSprite, false);
+                    confirmPopupPreviewButton.UpdateInfos(newLabel, newSprite, false);
                 }
                 else
                 {
                     if (PersistentDataManager.instance.GetGlobalData().GetComponent<LoadStateContainer>(out LoadStateContainer container))
                     {
                         string nextScene = PersistentDataManager.instance.GetANFSettings().gameScene;
-                        JSON saveFile = SaveUtils.LoadJSON(currentPopupData.saveFileName);
-                        if (saveFile != null && saveFile.ContainsKey("currentScene"))
-                            nextScene = saveFile.GetString("currentScene");
+                        if (currentPopupData != null)
+                        {
+                            JSON saveFile = SaveUtils.LoadJSON(currentPopupData.saveFileName);
+                            if (saveFile != null && saveFile.ContainsKey("currentScene"))
+                                nextScene = saveFile.GetString("currentScene");
 
-                        container.SetToLoadSaveFile(currentPopupData.saveFileName);
+                            container.SetToLoadSaveFile(currentPopupData.saveFileName);
 
-                        manager.ChangeScene(nextScene);
+                            manager.ChangeScene(nextScene);
+                        }
+
                         return;
                     }
                 }
@@ -414,7 +475,7 @@ namespace ANF.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -424,9 +485,9 @@ namespace ANF.GUI
 
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
-
+            return true;
         }
     }
 

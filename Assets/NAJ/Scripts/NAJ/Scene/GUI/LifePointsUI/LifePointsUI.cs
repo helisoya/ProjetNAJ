@@ -60,8 +60,8 @@ namespace NAJ.GUI
         {
             if (playerVariableContainer != null && refreshValues)
             {
-                print(playerVariableContainer.GetVariable(lifePointsVariableName, out currentLifePoints));
-                print(playerVariableContainer.GetVariable(maxLifePointsVariableName, out maxLifePoints));
+                playerVariableContainer.GetVariable(lifePointsVariableName, out currentLifePoints);
+                playerVariableContainer.GetVariable(maxLifePointsVariableName, out maxLifePoints);
             }
 
             if (maxLifePoints == 0)
@@ -69,9 +69,6 @@ namespace NAJ.GUI
 
             currentPreviewTarget = currentLifePoints / (float)maxLifePoints;
             currentLifeTarget = Mathf.Max(0, currentLifePoints - currentPreviewRange) / (float)maxLifePoints;
-
-            print(currentPreviewTarget + " " + currentLifeTarget);
-
 
             bool losingPreviewIsDamage = currentPreviewTarget > currentLifeTarget;
             Color selectedColor = losingPreviewIsDamage ? damageColor : regainColor;
@@ -136,7 +133,7 @@ namespace NAJ.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -150,7 +147,7 @@ namespace NAJ.GUI
             json.Add("currentLifeTarget", currentLifeTarget);
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("currentLifePoints"))
                 currentLifePoints = json.GetInt("currentLifePoints");
@@ -164,6 +161,8 @@ namespace NAJ.GUI
                 currentLifeTarget = json.GetFloat("currentLifeTarget");
 
             Refresh(true, false);
+
+            return true;
         }
     }
 }

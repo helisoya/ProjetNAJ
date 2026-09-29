@@ -97,7 +97,7 @@ namespace ANF.GUI
             {
                 isPaused = newValue;
                 if (newValue)
-                {                    
+                {
                     OnPaused();
                     if (pausedTransition != null)
                         pausedTransition.TransitionOut();
@@ -120,12 +120,12 @@ namespace ANF.GUI
             OnSave(json);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (!canBeSaved)
-                return;
+                return true;
 
-            OnLoad(json);
+            bool immediate = OnLoad(json);
 
             if (json.ContainsKey("isEnabled"))
             {
@@ -133,11 +133,13 @@ namespace ANF.GUI
                 enabled = !open;
                 SetEnabled(open);
             }
+
+            return immediate;
         }
 
         public void UpdateComponent()
         {
-            if(delayedClosing)
+            if (delayedClosing)
             {
                 SetEnabled(false);
             }
@@ -161,10 +163,10 @@ namespace ANF.GUI
         public abstract void OnEnabled();
         public abstract void OnDisabled();
         public abstract void OnSave(JSON json);
-        public abstract void OnLoad(JSON json);
+        public abstract bool OnLoad(JSON json);
         public abstract void OnRegisterInputs();
         public abstract void OnUnRegisterInputs();
         public abstract bool OnChangeScene();
-        public abstract bool IsCleaningUpForSceneChange();
+        public abstract bool IsLoadingOrCleaningUp();
     }
 }

@@ -155,7 +155,7 @@ namespace ANF.Scene
 
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             if (json.ContainsKey("currentEnabled"))
                 SetFogEnabled(json.GetBool("currentEnabled"));
@@ -187,6 +187,8 @@ namespace ANF.Scene
 
                 lerpDensity.Load(json.GetJSON("lerpDensity"));
             }
+
+            return true;
         }
 
         public override void OnSave(JSON json)
@@ -236,7 +238,7 @@ namespace ANF.Scene
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }

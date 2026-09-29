@@ -72,11 +72,11 @@ namespace ANF.Scene
         /// Checks if some components are still cleaning up for scene change
         /// </summary>
         /// <returns>True if the cleanup is still ongoing</returns>
-        public bool IsCleaningUpForSceneChange()
+        public bool IsLoadingOrCleaningUp()
         {
             bool cleaningUp = false;
             foreach (T component in components.Values)
-                if (component.IsCleaningUpForSceneChange())
+                if (component.IsLoadingOrCleaningUp())
                     cleaningUp = true;
 
             return cleaningUp;

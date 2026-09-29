@@ -118,10 +118,12 @@ namespace ANF.Persistent
             json.Add("bindings", playerInput.actions.SaveBindingOverridesAsJson());
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("bindings"))
                 playerInput.actions.LoadBindingOverridesFromJson(json.GetString("bindings"));
+
+            return true;
         }
     }
 }

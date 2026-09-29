@@ -15,6 +15,7 @@ namespace ANF.Scene
 
         protected LerpInstanceVector3 lerpPosition;
         protected LerpInstanceVector3 lerpRotation;
+        protected LerpInstanceVector3 lerpScale;
         protected LerpInstanceFloat lerpAlpha;
         protected bool skipModeEnabled;
         private float currentAlpha;
@@ -39,6 +40,11 @@ namespace ANF.Scene
             get { return lerpRotation != null && lerpRotation.lerping; }
         }
 
+        public bool Scaling
+        {
+            get { return lerpScale != null && lerpScale.lerping; }
+        }
+
         public bool Fading
         {
             get { return lerpAlpha != null && lerpAlpha.lerping; }
@@ -51,6 +57,8 @@ namespace ANF.Scene
                 lerpPosition.ChangeDuration(0.1f);
             if (lerpRotation != null && lerpRotation.lerping)
                 lerpRotation.ChangeDuration(0.1f);
+            if (lerpScale != null && lerpScale.lerping)
+                lerpScale.ChangeDuration(0.1f);
             if (lerpAlpha != null && lerpAlpha.lerping)
                 lerpAlpha.ChangeDuration(0.1f);
         }
@@ -123,6 +131,31 @@ namespace ANF.Scene
         }
 
         /// <summary>
+        /// Sets the object's sscale. Can be immediate or over time
+        /// </summary>
+        /// <param name="scale">The new scale</param>
+        /// <param name="immediate">True if the change must be immediate</param>
+        /// <param name="duration">The scale's duration if not immediate</param>
+        public void SetScale(Vector3 scale, bool immediate = true, float duration = 1.0f)
+        {
+            if (immediate)
+            {
+                transform.localScale = scale;
+
+                if (lerpScale != null)
+                    lerpScale.StopLerp();
+            }
+            else
+            {
+                if (lerpScale == null)
+                    lerpScale = new LerpInstanceVector3();
+
+                lerpScale.StartLerp(transform.localScale, scale, skipModeEnabled ? 0.1f : duration);
+            }
+        }
+
+
+        /// <summary>
 		/// Sets the objects position. Can be immediate or over time
 		/// </summary>
 		/// <param name="position">The new position</param>
@@ -190,6 +223,12 @@ namespace ANF.Scene
 		/// <param name="manager">The ANF Manager</param>
         public void UpdateObject(ANFManager manager)
         {
+
+            if (lerpScale != null && lerpScale.lerping)
+            {
+                transform.localScale = lerpScale.Update();
+            }
+
             if (lerpPosition != null && lerpPosition.lerping)
             {
                 transform.position = lerpPosition.Update();
@@ -208,7 +247,7 @@ namespace ANF.Scene
             OnUpdate(manager);
         }
 
-        public void Load(JSON json)
+        public bool Load(JSON json)
         {
             if (json.ContainsKey("currentPosition"))
                 transform.position = json.GetJArray("currentPosition").AsVector3();
@@ -219,6 +258,9 @@ namespace ANF.Scene
             if (json.ContainsKey("currentRotation"))
                 transform.eulerAngles = json.GetJArray("currentRotation").AsVector3();
 
+            if (json.ContainsKey("currentScale"))
+                transform.localScale = json.GetJArray("currentScale").AsVector3();
+
             if (json.ContainsKey("currentAlpha"))
                 InternalSetAlpha(json.GetFloat("currentAlpha"));
 
@@ -228,6 +270,14 @@ namespace ANF.Scene
                     lerpPosition = new LerpInstanceVector3();
 
                 lerpPosition.Load(json.GetJSON("positionLerp"));
+            }
+
+            if (json.ContainsKey("scaleLerp"))
+            {
+                if (lerpScale == null)
+                    lerpScale = new LerpInstanceVector3();
+
+                lerpScale.Load(json.GetJSON("scaleLerp"));
             }
 
             if (json.ContainsKey("rotationLerp"))
@@ -247,12 +297,15 @@ namespace ANF.Scene
             }
 
             OnLoad(json);
+
+            return true;
         }
 
         public void Save(JSON json)
         {
             json.Add("currentPosition", transform.position);
             json.Add("currentRotation", transform.eulerAngles);
+            json.Add("currentScale", transform.localScale);
             json.Add("currentAlpha", currentAlpha);
             json.Add("hidden", hidden);
 
@@ -261,6 +314,13 @@ namespace ANF.Scene
                 JSON lerpJSON = new JSON();
                 lerpPosition.Save(lerpJSON);
                 json.Add("positionLerp", lerpJSON);
+            }
+
+            if (lerpScale != null)
+            {
+                JSON lerpJSON = new JSON();
+                lerpScale.Save(lerpJSON);
+                json.Add("scaleLerp", lerpJSON);
             }
 
             if (lerpRotation != null)

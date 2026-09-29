@@ -49,7 +49,7 @@ namespace ANF.GUI
             if (data != null)
             {
                 string currentSpeaker = null;
-                for(int i = data.Count-1; i >=0; i--)
+                for (int i = data.Count - 1; i >= 0; i--)
                 {
                     HistoryData entry = data[i];
                     Locals.LocalizedText text;
@@ -148,7 +148,7 @@ namespace ANF.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
@@ -158,9 +158,9 @@ namespace ANF.GUI
 
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
-
+            return true;
         }
     }
 }

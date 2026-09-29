@@ -165,9 +165,9 @@ namespace ANF.Scene
 
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
-
+            return true;
         }
 
         public override void OnRegisterInputs()
@@ -196,7 +196,7 @@ namespace ANF.Scene
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }

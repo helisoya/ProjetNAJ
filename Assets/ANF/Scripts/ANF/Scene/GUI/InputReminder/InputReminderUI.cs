@@ -92,13 +92,15 @@ namespace ANF.GUI
             }
         }
 
-        public override void OnLoad(JSON json)
+        public override bool OnLoad(JSON json)
         {
             foreach (string key in json.Keys)
             {
                 if (registeredReminders.ContainsKey(key))
                     SetReminderEnabled(key, json.GetBool(key));
             }
+
+            return true;
         }
 
         /// <summary>
@@ -150,7 +152,7 @@ namespace ANF.GUI
             return true;
         }
 
-        public override bool IsCleaningUpForSceneChange()
+        public override bool IsLoadingOrCleaningUp()
         {
             return false;
         }
