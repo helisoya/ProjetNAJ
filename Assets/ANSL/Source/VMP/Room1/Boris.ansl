@@ -40,6 +40,9 @@ case 5:
 		return()
 	endif
 
+	setStaticAlpha(BorisScene;0;0.5;true)
+	setStaticAlpha(Boris;1;0.5;false)
+
 	# You can legally address the skeleton in the room
 	if(DrinkQuest == 2)
 		# Give drink to boris
@@ -55,7 +58,9 @@ case 5:
 		dialog(Char_Boris;null;Talk_Boris_Presentation_7)
 	endif
 
-
+	setStaticAlpha(Boris;0;0.5;true)
+	setStaticAlpha(BorisScene;1;0.5;false)
+	
 endswitch
 
 load(/VMP/Common/PrintLookCounter)

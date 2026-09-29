@@ -6,7 +6,7 @@ setBackground(Room1)
 
 addCharacter(Baron;true;Front)
 addCharacter(Rival;false;Front)
-addCharacter(Boris;false;BorisSpot)
+addCharacter(Boris;true;Front)
 
 fadeFg(0;false)
 

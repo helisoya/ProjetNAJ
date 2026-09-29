@@ -5,7 +5,7 @@ removeAllCharacters()
 setBackground(Room1)
 
 addCharacter(Baron;false;Front)
-addCharacter(Boris;false;BorisSpot)
+addCharacter(Boris;true;Front)
 
 addCharacter(Chasseur;true;Front)
 addCharacter(Humain;true;Front)

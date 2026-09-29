@@ -11,7 +11,7 @@ addCharacter(Chasseur;true;Front)
 addCharacter(Fils;true;Front)
 addCharacter(Humain;true;Front)
 addCharacter(Rival;true;Front)
-addCharacter(Boris;false;BorisSpot)
+addCharacter(Boris;true;Front)
 
 variable(SearchCounter;=;0)
 variable(LookCounter;=;2)

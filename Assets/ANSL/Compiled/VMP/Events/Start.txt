@@ -1,4 +1,4 @@
-#F84750CD59A0E6CC6A4525574F14A6B4-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#0DC428409F4DFB1B7392E44CCE550F90-718EFDC1B0E65B9E044C1FE0A1A72EB5
 87|vmp_test
 88|Location_VMP_Intro
 24
@@ -8,7 +8,7 @@
 22|Fils|true|Front
 22|Humain|true|Front
 22|Rival|true|Front
-22|Boris|false|BorisSpot
+22|Boris|true|Front
 102|SearchCounter|=|0
 102|LookCounter|=|2
 39|0|false
