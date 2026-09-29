@@ -479,15 +479,15 @@ namespace NAJ.ANSL
             foreach (string partId in keys)
             {
                 string[] parameters = partsParameters[partId];
-                partsData += $"|{partId}|{partsLines[partId].x}|{parameters.Length > 0 && parameters[0].Equals("press")}";
+                partsData += $"{ANSLUtils.COMPILED_DELIMITER}{partId}{ANSLUtils.COMPILED_DELIMITER}{partsLines[partId].x}{ANSLUtils.COMPILED_DELIMITER}{parameters.Length > 0 && parameters[0].Equals("press")}";
             }
-            compiledLines.Add($"{id}|{endLine}{partsData}");
+            compiledLines.Add($"{id}{ANSLUtils.COMPILED_DELIMITER}{endLine}{partsData}");
 
             for (int i = 0; i < keys.Length; i++)
             {
                 string partId = keys[i];
-                compiledLines.Add($"{setExaminationPart}|{partId}");
-                compiledLines.Add($"{showExaminationUIId}|true");
+                compiledLines.Add($"{setExaminationPart}{ANSLUtils.COMPILED_DELIMITER}{partId}");
+                compiledLines.Add($"{showExaminationUIId}{ANSLUtils.COMPILED_DELIMITER}true");
                 compiledLines.AddRange(compiledParts[partId]);
 
                 string[] parameters = partsParameters[partId];
@@ -497,18 +497,18 @@ namespace NAJ.ANSL
                 {
                     for (int j = 1; j < parameters.Length; j++)
                     {
-                        evidenceToShow += $"|{parameters[j]}";
+                        evidenceToShow += $"{ANSLUtils.COMPILED_DELIMITER}{parameters[j]}";
                     }
                 }
 
-                compiledLines.Add($"{examinationPartWaiter}|{partId}|{shouldPress}|{partsLines[partId].y}|{failLine}|{endLine}" +
-                    $"|{(i > 0 ? partsLines[keys[i - 1]].x : partsLines[keys[0]].x)}|{(i == keys.Length - 1 ? loopLine : partsLines[keys[i + 1]].x)}{evidenceToShow}");
+                compiledLines.Add($"{examinationPartWaiter}{ANSLUtils.COMPILED_DELIMITER}{partId}{ANSLUtils.COMPILED_DELIMITER}{shouldPress}{ANSLUtils.COMPILED_DELIMITER}{partsLines[partId].y}{ANSLUtils.COMPILED_DELIMITER}{failLine}{ANSLUtils.COMPILED_DELIMITER}{endLine}" +
+                    $"{ANSLUtils.COMPILED_DELIMITER}{(i > 0 ? partsLines[keys[i - 1]].x : partsLines[keys[0]].x)}{ANSLUtils.COMPILED_DELIMITER}{(i == keys.Length - 1 ? loopLine : partsLines[keys[i + 1]].x)}{evidenceToShow}");
 
                 compiledLines.AddRange(compiledPress[partId]);
                 if (i != keys.Length - 1)
-                    compiledLines.Add($"{setExaminationPart}|{keys[i + 1]}");
+                    compiledLines.Add($"{setExaminationPart}{ANSLUtils.COMPILED_DELIMITER}{keys[i + 1]}");
 
-                compiledLines.Add($"{jumpToFunctionId}|{(i == keys.Length - 1 ? loopLine : outputLine)}");
+                compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{(i == keys.Length - 1 ? loopLine : outputLine)}");
             }
 
 
@@ -517,20 +517,20 @@ namespace NAJ.ANSL
             {
                 if (partsParameters[keys[i]].Length > 0 && partsParameters[keys[i]][0].Equals("press"))
                 {
-                    idsToCheck += $"|{keys[i]}";
+                    idsToCheck += $"{ANSLUtils.COMPILED_DELIMITER}{keys[i]}";
                 }
             }
 
-            compiledLines.Add($"{setExaminationPart}|{keys[0]}");
-            compiledLines.Add($"{showExaminationUIId}|false");
-            compiledLines.Add($"{checkExaminationPressedFunction}|{endLine}{idsToCheck}");
+            compiledLines.Add($"{setExaminationPart}{ANSLUtils.COMPILED_DELIMITER}{keys[0]}");
+            compiledLines.Add($"{showExaminationUIId}{ANSLUtils.COMPILED_DELIMITER}false");
+            compiledLines.Add($"{checkExaminationPressedFunction}{ANSLUtils.COMPILED_DELIMITER}{endLine}{idsToCheck}");
             compiledLines.AddRange(compiledLoop);
-            compiledLines.Add($"{jumpToFunctionId}|{outputLine}");
+            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{outputLine}");
 
-            compiledLines.Add($"{setExaminationPart}|{keys[0]}");
-            compiledLines.Add($"{showExaminationUIId}|false");
+            compiledLines.Add($"{setExaminationPart}{ANSLUtils.COMPILED_DELIMITER}{keys[0]}");
+            compiledLines.Add($"{showExaminationUIId}{ANSLUtils.COMPILED_DELIMITER}false");
             compiledLines.AddRange(compiledFail);
-            compiledLines.Add($"{jumpToFunctionId}|{outputLine}");
+            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{outputLine}");
 
             return true;
         }

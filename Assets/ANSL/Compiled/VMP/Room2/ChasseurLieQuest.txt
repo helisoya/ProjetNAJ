@@ -1,28 +1,28 @@
 #A983AF8703C8156A2267D93C0905DBC4-718EFDC1B0E65B9E044C1FE0A1A72EB5
-35|null|null|Talk_Chasseur_Confirm_Lie_1
-27|0|Choice_Yes|2|null|null|null|Choice_RevealHisSecret|12|null|null|null|Choice_NotNow|21|null|null|null
-35|Char_LoupGarou|null|Talk_Chasseur_Ours_1
-35|Char_Chasseur|null|Talk_Chasseur_Ours_2
-35|Char_LoupGarou|null|Talk_Chasseur_Ours_3
-35|Char_LoupGarou|null|Talk_Chasseur_Ours_4
-35|Char_LoupGarou|null|Talk_Chasseur_Ours_5
-35|Char_LoupGarou|null|Talk_Chasseur_Ours_6
-35|Char_Chasseur|null|Talk_Chasseur_Ours_7
-102|LieToChasseurQuest|=|2
-102|ValueFils|+|3
-42|27
-35|Char_LoupGarou|null|Talk_Chasseur_Fils_1
-35|Char_Chasseur|null|Talk_Chasseur_Fils_2
-35|Char_LoupGarou|null|Talk_Chasseur_Fils_3
-35|Char_LoupGarou|null|Talk_Chasseur_Fils_4
-35|Char_Chasseur|null|Talk_Chasseur_Fils_5
-102|LieToChasseurQuest|=|3
-102|ValueFils|-|3
-102|ValueChasseur|+|2
-42|27
-99|CycleCount|26|1|22|2|24
-44|ChasseurC1Default
-42|26
-44|ChasseurC2Default
-42|26
-42|27
+35nullnullTalk_Chasseur_Confirm_Lie_1
+270Choice_Yes2nullnullnullChoice_RevealHisSecret12nullnullnullChoice_NotNow21nullnullnull
+35Char_LoupGarounullTalk_Chasseur_Ours_1
+35Char_ChasseurnullTalk_Chasseur_Ours_2
+35Char_LoupGarounullTalk_Chasseur_Ours_3
+35Char_LoupGarounullTalk_Chasseur_Ours_4
+35Char_LoupGarounullTalk_Chasseur_Ours_5
+35Char_LoupGarounullTalk_Chasseur_Ours_6
+35Char_ChasseurnullTalk_Chasseur_Ours_7
+102LieToChasseurQuest=2
+102ValueFils+3
+4227
+35Char_LoupGarounullTalk_Chasseur_Fils_1
+35Char_ChasseurnullTalk_Chasseur_Fils_2
+35Char_LoupGarounullTalk_Chasseur_Fils_3
+35Char_LoupGarounullTalk_Chasseur_Fils_4
+35Char_ChasseurnullTalk_Chasseur_Fils_5
+102LieToChasseurQuest=3
+102ValueFils-3
+102ValueChasseur+2
+4227
+99CycleCount26122224
+44ChasseurC1Default
+4226
+44ChasseurC2Default
+4226
+4227

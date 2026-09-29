@@ -1,11 +1,11 @@
 #BE2FCD527023001250631510AA7E4721-718EFDC1B0E65B9E044C1FE0A1A72EB5
-40|1|8|SecretRival == 1 && ConfrontedRivalSecret == 0
-35|null|null|Talk_Rival_Confirm_Concealer_1
-27|0|Choice_Yes|3|null|null|null|Choice_No|5|null|null|null
-44|RivalConfront
-42|7
-44|RivalC1DefaultDialog
-42|7
-42|10
-44|RivalC1DefaultDialog
-42|10
+4018SecretRival == 1 && ConfrontedRivalSecret == 0
+35nullnullTalk_Rival_Confirm_Concealer_1
+270Choice_Yes3nullnullnullChoice_No5nullnullnull
+44RivalConfront
+427
+44RivalC1DefaultDialog
+427
+4210
+44RivalC1DefaultDialog
+4210

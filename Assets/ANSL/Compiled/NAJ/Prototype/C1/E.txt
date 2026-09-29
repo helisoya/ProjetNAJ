@@ -1,156 +1,156 @@
 #D6590ED3AA2BAB35A95EA597624C897C-718EFDC1B0E65B9E044C1FE0A1A72EB5
-64|DefenseCam|0.5|false
-65|DefenseCam|0.5|true
-35|Prototype_Rann|null|Prototype_E_1
-35|Prototype_Rann|null|Prototype_E_2
-64|JudgeCam
-65|JudgeCam
-35|Prototype_Judge|Judge|Prototype_E_3
-35|Prototype_Judge|Judge|Prototype_E_4
-64|ProsecutionCam
-65|ProsecutionCam
-35|Prototype_Sherif|Sherif|Prototype_E_5
-35|Prototype_Sherif|Sherif|Prototype_E_6
-64|JudgeCam
-65|JudgeCam
-35|Prototype_Judge|Judge|Prototype_E_7
-64|ProsecutionCam
-65|ProsecutionCam
-35|Prototype_Sherif|Sherif|Prototype_E_8
-37|1|true
-57|Juno
-22|Gerald|false|WitnessSpot
-35|null|null|Prototype_E_9
-64|JudgeCam
-65|JudgeCam
-37|0|false
-35|Prototype_Judge|Judge|Prototype_E_10
-64|DefenseCam
-65|DefenseCam
-35|Prototype_Rann|null|Prototype_E_11
-64|JudgeCam
-65|JudgeCam
-35|Prototype_Judge|Judge|Prototype_E_12
-64|ProsecutionCam
-65|ProsecutionCam
-35|Prototype_Sherif|Sherif|Prototype_E_13
-35|Prototype_Sherif|Sherif|Prototype_E_14
-35|Prototype_Sherif|Sherif|Prototype_E_15
-35|Prototype_Sherif|Sherif|Prototype_E_16
-64|DefenseCam|0.5|false
-65|DefenseCam|0.5|true
-35|Prototype_Rann|null|Prototype_E_17
-0|C1_DebtReport
-19|Evidence/C1_DebtReport|Full
-35|null|null|Prototype_E_18
+64DefenseCam0.5false
+65DefenseCam0.5true
+35Prototype_RannnullPrototype_E_1
+35Prototype_RannnullPrototype_E_2
+64JudgeCam
+65JudgeCam
+35Prototype_JudgeJudgePrototype_E_3
+35Prototype_JudgeJudgePrototype_E_4
+64ProsecutionCam
+65ProsecutionCam
+35Prototype_SherifSherifPrototype_E_5
+35Prototype_SherifSherifPrototype_E_6
+64JudgeCam
+65JudgeCam
+35Prototype_JudgeJudgePrototype_E_7
+64ProsecutionCam
+65ProsecutionCam
+35Prototype_SherifSherifPrototype_E_8
+371true
+57Juno
+22GeraldfalseWitnessSpot
+35nullnullPrototype_E_9
+64JudgeCam
+65JudgeCam
+370false
+35Prototype_JudgeJudgePrototype_E_10
+64DefenseCam
+65DefenseCam
+35Prototype_RannnullPrototype_E_11
+64JudgeCam
+65JudgeCam
+35Prototype_JudgeJudgePrototype_E_12
+64ProsecutionCam
+65ProsecutionCam
+35Prototype_SherifSherifPrototype_E_13
+35Prototype_SherifSherifPrototype_E_14
+35Prototype_SherifSherifPrototype_E_15
+35Prototype_SherifSherifPrototype_E_16
+64DefenseCam0.5false
+65DefenseCam0.5true
+35Prototype_RannnullPrototype_E_17
+0C1_DebtReport
+19Evidence/C1_DebtReportFull
+35nullnullPrototype_E_18
 11
-64|ProsecutionCam|0.5|false
-65|ProsecutionCam|0.5|true
-35|Prototype_Sherif|Sherif|Prototype_E_19
-64|DefenseCam|0.5|false
-65|DefenseCam|0.5|true
-35|Prototype_Rann|null|Prototype_E_20
-35|Prototype_Rann|null|Prototype_E_21
-64|ProsecutionCam|0.5|false
-65|ProsecutionCam|0.5|true
-35|Prototype_Sherif|Sherif|Prototype_E_22
-0|C1_DeathMessage
-19|Evidence/C1_DeathMessage|Full
-35|null|null|Prototype_E_23
+64ProsecutionCam0.5false
+65ProsecutionCam0.5true
+35Prototype_SherifSherifPrototype_E_19
+64DefenseCam0.5false
+65DefenseCam0.5true
+35Prototype_RannnullPrototype_E_20
+35Prototype_RannnullPrototype_E_21
+64ProsecutionCam0.5false
+65ProsecutionCam0.5true
+35Prototype_SherifSherifPrototype_E_22
+0C1_DeathMessage
+19Evidence/C1_DeathMessageFull
+35nullnullPrototype_E_23
 11
-35|Prototype_Sherif|Sherif|Prototype_E_24
-35|Prototype_Sherif|Sherif|Prototype_E_25
-64|WitnessCam|0.5|false
-65|WitnessCam|0.5|true
-35|Prototype_Gerald|Gerald|Prototype_E_26
-35|Prototype_Gerald|Gerald|Prototype_E_27
-35|Prototype_Gerald|Gerald|Prototype_E_28
-64|JudgeCam
-65|JudgeCam
-35|Prototype_Judge|Judge|Prototype_E_29
-39|1|true
-104|1
-64|WitnessCam
-65|WitnessCam
-39|0|false
+35Prototype_SherifSherifPrototype_E_24
+35Prototype_SherifSherifPrototype_E_25
+64WitnessCam0.5false
+65WitnessCam0.5true
+35Prototype_GeraldGeraldPrototype_E_26
+35Prototype_GeraldGeraldPrototype_E_27
+35Prototype_GeraldGeraldPrototype_E_28
+64JudgeCam
+65JudgeCam
+35Prototype_JudgeJudgePrototype_E_29
+391true
+1041
+64WitnessCam
+65WitnessCam
+390false
 4
-9|154|1|76|False|2|92|False|3|108|False
-17|1
-20|true
-35|Prototype_Gerald|Gerald|Prototype_E3_1|false|true
-10|1|False|80|137|154|76|92
-64|DefenseCam|0.5|false
-65|DefenseCam|0.5|true
-35|Prototype_Rann|null|Prototype_E3_1_Press_1
-64|WitnessCam|0.5|false
-65|WitnessCam|0.5|true
-35|Prototype_Gerald|Gerald|Prototype_E3_1_Press_2
-39|1|true
-64|WitnessCam
-65|WitnessCam
-39|0|false
-17|2
-42|75
-17|2
-20|true
-35|Prototype_Gerald|Gerald|Prototype_E3_2|false|true
-10|2|False|96|137|154|76|108
-64|DefenseCam|0.5|false
-65|DefenseCam|0.5|true
-35|Prototype_Rann|null|Prototype_E3_2_Press_1
-64|WitnessCam|0.5|false
-65|WitnessCam|0.5|true
-35|Prototype_Gerald|Gerald|Prototype_E3_2_Press_2
-39|1|true
-64|WitnessCam
-65|WitnessCam
-39|0|false
-17|3
-42|75
-17|3
-20|true
-35|Prototype_Gerald|Gerald|Prototype_E3_3|false|true
-10|3|False|112|137|154|92|123|Evidence/C1_AutopsyReport
-64|DefenseCam|0.5|false
-65|DefenseCam|0.5|true
-35|Prototype_Rann|null|Prototype_E3_3_Press_1
-64|WitnessCam|0.5|false
-65|WitnessCam|0.5|true
-35|Prototype_Gerald|Gerald|Prototype_E3_3_Press_2
-39|1|true
-64|WitnessCam
-65|WitnessCam
-39|0|false
-42|123
-17|1
-20|false
-3|154
-39|1|true
-64|DefenseCam
-65|DefenseCam
-39|0|false
-35|Prototype_Rann|null|Prototype_E3_Loop_1
-35|Prototype_Rann|null|Prototype_E3_Loop_2
-39|1|true
-64|WitnessCam
-65|WitnessCam
-39|0|false
-42|75
-17|1
-20|false
-64|DefenseCam|0.5|false
-65|DefenseCam|0.5|true
-35|Prototype_Rann|null|Prototype_E_Fail_1
-64|JudgeCam
-65|JudgeCam
-35|Prototype_Judge|Judge|Prototype_E_Fail_2
-35|Prototype_Judge|Judge|Prototype_E_Fail_3
-64|DefenseCam
-65|DefenseCam
-35|Prototype_Rann|null|Prototype_E_Fail_4
-39|1|true
-64|WitnessCam
-65|WitnessCam
-39|0|false
-42|75
-44|F
+9154176False292False3108False
+171
+20true
+35Prototype_GeraldGeraldPrototype_E3_1falsetrue
+101False801371547692
+64DefenseCam0.5false
+65DefenseCam0.5true
+35Prototype_RannnullPrototype_E3_1_Press_1
+64WitnessCam0.5false
+65WitnessCam0.5true
+35Prototype_GeraldGeraldPrototype_E3_1_Press_2
+391true
+64WitnessCam
+65WitnessCam
+390false
+172
+4275
+172
+20true
+35Prototype_GeraldGeraldPrototype_E3_2falsetrue
+102False9613715476108
+64DefenseCam0.5false
+65DefenseCam0.5true
+35Prototype_RannnullPrototype_E3_2_Press_1
+64WitnessCam0.5false
+65WitnessCam0.5true
+35Prototype_GeraldGeraldPrototype_E3_2_Press_2
+391true
+64WitnessCam
+65WitnessCam
+390false
+173
+4275
+173
+20true
+35Prototype_GeraldGeraldPrototype_E3_3falsetrue
+103False11213715492123Evidence/C1_AutopsyReport
+64DefenseCam0.5false
+65DefenseCam0.5true
+35Prototype_RannnullPrototype_E3_3_Press_1
+64WitnessCam0.5false
+65WitnessCam0.5true
+35Prototype_GeraldGeraldPrototype_E3_3_Press_2
+391true
+64WitnessCam
+65WitnessCam
+390false
+42123
+171
+20false
+3154
+391true
+64DefenseCam
+65DefenseCam
+390false
+35Prototype_RannnullPrototype_E3_Loop_1
+35Prototype_RannnullPrototype_E3_Loop_2
+391true
+64WitnessCam
+65WitnessCam
+390false
+4275
+171
+20false
+64DefenseCam0.5false
+65DefenseCam0.5true
+35Prototype_RannnullPrototype_E_Fail_1
+64JudgeCam
+65JudgeCam
+35Prototype_JudgeJudgePrototype_E_Fail_2
+35Prototype_JudgeJudgePrototype_E_Fail_3
+64DefenseCam
+65DefenseCam
+35Prototype_RannnullPrototype_E_Fail_4
+391true
+64WitnessCam
+65WitnessCam
+390false
+4275
+44F

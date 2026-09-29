@@ -155,7 +155,7 @@ namespace ANF.ANSL
 
                     if (idxStart + 1 != idxEnd)
                     {
-                        string[] parameterSplit = currentLine.Substring(idxStart + 1, currentLine.Length - idxStart - 2).Split(';');
+                        string[] parameterSplit = currentLine.Substring(idxStart + 1, currentLine.Length - idxStart - 2).Split(ANSLUtils.SOURCE_DELIMITER);
 
                         if (parameterSplit != null || parameterSplit.Length > 0)
                         {
@@ -280,7 +280,7 @@ namespace ANF.ANSL
                             string[] parameters = new string[] { };
 
                             if (startIdx + 1 != endIdx)
-                                parameters = line.Substring(startIdx + 1, line.Length - startIdx - 2).Split(';');
+                                parameters = line.Substring(startIdx + 1, line.Length - startIdx - 2).Split(ANSLUtils.SOURCE_DELIMITER);
 
                             if (macroData.parameters.Count != parameters.Length)
                             {

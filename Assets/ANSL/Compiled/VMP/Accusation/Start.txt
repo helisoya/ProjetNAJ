@@ -1,63 +1,63 @@
 #F1B18FAE34A877F14F3549C4313C823C-718EFDC1B0E65B9E044C1FE0A1A72EB5
-39|1|true
+391true
 55
-61|Room1
-22|Baron|false|Front
-22|Chasseur|true|Front
-22|Fils|true|Front
-22|Rival|true|Front
-22|Humain|true|Front
-39|0|false
-88|Location_VMP_Accusation
+61Room1
+22BaronfalseFront
+22ChasseurtrueFront
+22FilstrueFront
+22RivaltrueFront
+22HumaintrueFront
+390false
+88Location_VMP_Accusation
 24
-35|Char_Baron|null|Scene_End_Intro_1
-35|Char_Baron|null|Scene_End_Intro_2
-66|Baron|0|0.5|true
-66|Fils|1|0.5|false
-35|Char_Fils|null|Scene_End_Intro_3
-66|Fils|0|0.5|true
-66|Baron|1|0.5|false
-35|Char_Baron|null|Scene_End_Intro_4
-35|Char_Baron|null|Scene_End_Intro_5
-35|Char_Baron|null|Scene_End_Intro_6
-35|Char_Baron|null|Scene_End_Intro_7
-35|Char_Baron|null|Scene_End_Intro_8
-35|Char_Baron|null|Scene_End_Intro_9
-66|Baron|0|0.5|true
-66|Rival|1|0.5|false
-40|27|48|RivalReactionToDrinkQuest == 2
-35|Char_Rival|null|Scene_End_RivalBaron_1
-35|Char_Rival|null|Scene_End_RivalBaron_2
-35|Char_Rival|null|Scene_End_RivalBaron_3
-35|Char_Rival|null|Scene_End_RivalBaron_4
-35|Char_Rival|null|Scene_End_RivalBaron_5
-66|Rival|0|0.5|true
-66|Baron|1|0.5|false
-35|Char_Baron|null|Scene_End_RivalBaron_6
-35|Char_Baron|null|Scene_End_RivalBaron_7
-35|Char_Baron|null|Scene_End_RivalBaron_8
-35|Char_Baron|null|Scene_End_RivalBaron_9
-35|Char_Baron|null|Scene_End_RivalBaron_10
-66|Baron|0|0.5|true
-66|Rival|1|0.5|false
-35|Char_Rival|null|Scene_End_RivalBaron_11
-35|null|null|Scene_End_RivalBaron_12
-35|Char_Rival|null|Scene_End_RivalBaron_13
-35|Char_Rival|null|Scene_End_RivalBaron_14
-35|null|null|Scene_End_RivalBaron_15
-44|PlayerSecretChoice
-42|62
-35|Char_Rival|null|Scene_End_RivalHunter_1
-35|Char_Rival|null|Scene_End_RivalHunter_2
-35|Char_Rival|null|Scene_End_RivalHunter_3
-35|Char_Rival|null|Scene_End_RivalHunter_4
-35|Char_Rival|null|Scene_End_RivalHunter_5
-35|Char_Rival|null|Scene_End_RivalHunter_6
-66|Rival|0|0.5|true
-66|Chasseur|1|0.5|false
-35|Char_Chasseur|null|Scene_End_HunterHuman1_1
-35|Char_Chasseur|null|Scene_End_HunterHuman1_2
-35|Char_Chasseur|null|Scene_End_HunterHuman1_3
-35|Char_Chasseur|null|Scene_End_HunterHuman1_4
-44|FilsProtectHumain
-42|62
+35Char_BaronnullScene_End_Intro_1
+35Char_BaronnullScene_End_Intro_2
+66Baron00.5true
+66Fils10.5false
+35Char_FilsnullScene_End_Intro_3
+66Fils00.5true
+66Baron10.5false
+35Char_BaronnullScene_End_Intro_4
+35Char_BaronnullScene_End_Intro_5
+35Char_BaronnullScene_End_Intro_6
+35Char_BaronnullScene_End_Intro_7
+35Char_BaronnullScene_End_Intro_8
+35Char_BaronnullScene_End_Intro_9
+66Baron00.5true
+66Rival10.5false
+402748RivalReactionToDrinkQuest == 2
+35Char_RivalnullScene_End_RivalBaron_1
+35Char_RivalnullScene_End_RivalBaron_2
+35Char_RivalnullScene_End_RivalBaron_3
+35Char_RivalnullScene_End_RivalBaron_4
+35Char_RivalnullScene_End_RivalBaron_5
+66Rival00.5true
+66Baron10.5false
+35Char_BaronnullScene_End_RivalBaron_6
+35Char_BaronnullScene_End_RivalBaron_7
+35Char_BaronnullScene_End_RivalBaron_8
+35Char_BaronnullScene_End_RivalBaron_9
+35Char_BaronnullScene_End_RivalBaron_10
+66Baron00.5true
+66Rival10.5false
+35Char_RivalnullScene_End_RivalBaron_11
+35nullnullScene_End_RivalBaron_12
+35Char_RivalnullScene_End_RivalBaron_13
+35Char_RivalnullScene_End_RivalBaron_14
+35nullnullScene_End_RivalBaron_15
+44PlayerSecretChoice
+4262
+35Char_RivalnullScene_End_RivalHunter_1
+35Char_RivalnullScene_End_RivalHunter_2
+35Char_RivalnullScene_End_RivalHunter_3
+35Char_RivalnullScene_End_RivalHunter_4
+35Char_RivalnullScene_End_RivalHunter_5
+35Char_RivalnullScene_End_RivalHunter_6
+66Rival00.5true
+66Chasseur10.5false
+35Char_ChasseurnullScene_End_HunterHuman1_1
+35Char_ChasseurnullScene_End_HunterHuman1_2
+35Char_ChasseurnullScene_End_HunterHuman1_3
+35Char_ChasseurnullScene_End_HunterHuman1_4
+44FilsProtectHumain
+4262

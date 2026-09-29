@@ -1,34 +1,34 @@
 #97E884330D22657C4513A9DECD178B43-718EFDC1B0E65B9E044C1FE0A1A72EB5
-39|1|true
+391true
 55
-61|Room1
-22|Baron|true|Front
-22|Rival|false|Front
-22|Boris|true|Front
-39|0|false
-35|Char_Rival|null|Scene_NoTime_1
-35|Char_Rival|null|Scene_NoTime_2
-35|Char_Rival|null|Scene_NoTime_3
-66|Rival|0|0.5|true
-57|Rival
-66|Baron|1|0.5|false
-35|Char_Baron|null|Scene_NoTime_4
-35|Char_Baron|null|Scene_NoTime_5
-35|Char_Baron|null|Scene_NoTime_6
-66|Baron|0|0.5|true
-74|Baron|BaronSpot
-75|Baron|BaronSpot
-66|Baron|1|0.5|false
-102|CycleCount|=|2
-102|LookCounter|=|1
-102|SearchCounter|=|2
-102|TalkedBaron|=|0
-102|TalkedChasseur|=|0
-102|TalkedFils|=|0
-102|TalkedHumain|=|0
-102|TalkedRival|=|0
-88|Location_VMP_Cycle2
+61Room1
+22BarontrueFront
+22RivalfalseFront
+22BoristrueFront
+390false
+35Char_RivalnullScene_NoTime_1
+35Char_RivalnullScene_NoTime_2
+35Char_RivalnullScene_NoTime_3
+66Rival00.5true
+57Rival
+66Baron10.5false
+35Char_BaronnullScene_NoTime_4
+35Char_BaronnullScene_NoTime_5
+35Char_BaronnullScene_NoTime_6
+66Baron00.5true
+74BaronBaronSpot
+75BaronBaronSpot
+66Baron10.5false
+102CycleCount=2
+102LookCounter=1
+102SearchCounter=2
+102TalkedBaron=0
+102TalkedChasseur=0
+102TalkedFils=0
+102TalkedHumain=0
+102TalkedRival=0
+88Location_VMP_Cycle2
 24
-44|../Common/PrintLookCounter
-44|../Common/PrintSearchCounter
-44|/VMP/Room1/Interaction
+44../Common/PrintLookCounter
+44../Common/PrintSearchCounter
+44/VMP/Room1/Interaction

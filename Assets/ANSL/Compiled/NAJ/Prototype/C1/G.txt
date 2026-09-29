@@ -1,12 +1,12 @@
 #DC9263A76A8CADD2C777039400EE97D7-718EFDC1B0E65B9E044C1FE0A1A72EB5
-64|JudgeCam
-65|JudgeCam
-35|Prototype_Judge|Judge|Prototype_G_1
-35|Prototype_Judge|Judge|Prototype_G_2
-64|DefenseCam
-65|DefenseCam
-35|Prototype_Rann|null|Prototype_G_3
-64|JudgeCam
-65|JudgeCam
-35|Prototype_Judge|Judge|Prototype_G_4
-44|G2
+64JudgeCam
+65JudgeCam
+35Prototype_JudgeJudgePrototype_G_1
+35Prototype_JudgeJudgePrototype_G_2
+64DefenseCam
+65DefenseCam
+35Prototype_RannnullPrototype_G_3
+64JudgeCam
+65JudgeCam
+35Prototype_JudgeJudgePrototype_G_4
+44G2

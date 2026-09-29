@@ -1,6 +1,6 @@
 #61A84EEEADEB71126EEFE78664F9F6C8-718EFDC1B0E65B9E044C1FE0A1A72EB5
-85|Exit|ToForestStart
-85|Flag|Flag
-85|Left|ToDeadEnd
-85|Right|ToRiverPath
+85ExitToForestStart
+85FlagFlag
+85LeftToDeadEnd
+85RightToRiverPath
 41

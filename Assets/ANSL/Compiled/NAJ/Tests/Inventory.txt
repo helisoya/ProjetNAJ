@@ -1,70 +1,70 @@
 #0DBB6C488401EFF66F6CDBF95FE0E4EE-718EFDC1B0E65B9E044C1FE0A1A72EB5
-87|testNAJ
-88|TestInventory
-5|TestEvidence1|0|PlaceHolders
-5|TestEvidence2|3|PlaceHolders|PlaceHolders2
-5|TestEvidence3|1|PlaceHolders|PlaceHolders3
-5|TestEvidence4|5|PlaceHolders|PlaceHolders4
-5|TestEvidence5|0|PlaceHolders
-5|TestEvidence6|0|PlaceHolders
-5|TestEvidence7|0|PlaceHolders
-5|TestEvidence8|2|PlaceHolders|PlaceHolders8
-5|TestEvidence9|0|PlaceHolders
-6|TestProfile1|PlaceHolders2
-6|TestProfile2|PlaceHolders2
-6|TestProfile3|PlaceHolders2
-6|TestProfile4|PlaceHolders2
-6|TestProfile5|PlaceHolders2
-6|TestProfile6|PlaceHolders2
-6|TestProfile7|PlaceHolders2
-6|TestProfile8|PlaceHolders2
-6|TestProfile9|PlaceHolders2
-35|null|null|Test_Inventory_1
-0|TestEvidence1
-0|TestEvidence2
-0|TestEvidence3
-0|TestEvidence4
-0|TestEvidence5
-0|TestEvidence6
-0|TestEvidence7
-0|TestEvidence8
-0|TestEvidence9
-35|null|null|Test_Inventory_2
-1|TestProfile1
-1|TestProfile2
-1|TestProfile3
-1|TestProfile4
-1|TestProfile5
-1|TestProfile6
-1|TestProfile7
-1|TestProfile8
-1|TestProfile9
-35|null|null|Test_Inventory_3
-35|null|null|Test_Inventory_4
-2|Any|43|45|Profile/TestProfile3
-35|null|null|OK
-42|47
-35|null|null|BAD
-42|47
-35|null|null|Test_Inventory_5
-2|Any|49|51|Profile/TestProfile5|Evidence/TestEvidence2
-35|null|null|OK
-42|53
-35|null|null|BAD
-42|53
-35|null|null|Test_Inventory_6
-2|Evidence|55|57|Evidence/TestEvidence8
-35|null|null|OK
-42|59
-35|null|null|BAD
-42|59
-35|null|null|Test_Inventory_7
-2|Profile|61|63|Profile/TestProfile7
-35|null|null|OK
-42|65
-35|null|null|BAD
-42|65
+87testNAJ
+88TestInventory
+5TestEvidence10PlaceHolders
+5TestEvidence23PlaceHoldersPlaceHolders2
+5TestEvidence31PlaceHoldersPlaceHolders3
+5TestEvidence45PlaceHoldersPlaceHolders4
+5TestEvidence50PlaceHolders
+5TestEvidence60PlaceHolders
+5TestEvidence70PlaceHolders
+5TestEvidence82PlaceHoldersPlaceHolders8
+5TestEvidence90PlaceHolders
+6TestProfile1PlaceHolders2
+6TestProfile2PlaceHolders2
+6TestProfile3PlaceHolders2
+6TestProfile4PlaceHolders2
+6TestProfile5PlaceHolders2
+6TestProfile6PlaceHolders2
+6TestProfile7PlaceHolders2
+6TestProfile8PlaceHolders2
+6TestProfile9PlaceHolders2
+35nullnullTest_Inventory_1
+0TestEvidence1
+0TestEvidence2
+0TestEvidence3
+0TestEvidence4
+0TestEvidence5
+0TestEvidence6
+0TestEvidence7
+0TestEvidence8
+0TestEvidence9
+35nullnullTest_Inventory_2
+1TestProfile1
+1TestProfile2
+1TestProfile3
+1TestProfile4
+1TestProfile5
+1TestProfile6
+1TestProfile7
+1TestProfile8
+1TestProfile9
+35nullnullTest_Inventory_3
+35nullnullTest_Inventory_4
+2Any4345Profile/TestProfile3
+35nullnullOK
+4247
+35nullnullBAD
+4247
+35nullnullTest_Inventory_5
+2Any4951Profile/TestProfile5Evidence/TestEvidence2
+35nullnullOK
+4253
+35nullnullBAD
+4253
+35nullnullTest_Inventory_6
+2Evidence5557Evidence/TestEvidence8
+35nullnullOK
+4259
+35nullnullBAD
+4259
+35nullnullTest_Inventory_7
+2Profile6163Profile/TestProfile7
+35nullnullOK
+4265
+35nullnullBAD
+4265
 13
-35|null|null|Test_Inventory_8
+35nullnullTest_Inventory_8
 14
-35|null|null|Test_Inventory_9
+35nullnullTest_Inventory_9

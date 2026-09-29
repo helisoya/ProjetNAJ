@@ -62,7 +62,7 @@ namespace ANF.ANSL
                 return false;
             }
 
-            string[] parameters = split[1].Split(';');
+            string[] parameters = split[1].Split(ANSLUtils.SOURCE_DELIMITER);
             if (parameters.Length == 1 && parameters[0].Length == 0)
                 parameters = null;
 
@@ -85,7 +85,7 @@ namespace ANF.ANSL
             {
                 foreach (string parameter in parameters)
                 {
-                    compiledLine += "|" + parameter;
+                    compiledLine += ANSLUtils.COMPILED_DELIMITER + parameter;
                 }
             }
 

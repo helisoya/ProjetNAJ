@@ -1,15 +1,15 @@
 #063D847BD7E7F0B57CEA3B98F3A333E9-718EFDC1B0E65B9E044C1FE0A1A72EB5
-35|Char_Fils|null|Talk_Fils_Mirror_1
-35|Char_LoupGarou|null|Talk_Fils_Mirror_2
-35|Char_Fils|null|Talk_Fils_Mirror_3
-35|Char_LoupGarou|null|Talk_Fils_Mirror_4
-35|Char_Fils|null|Talk_Fils_Mirror_5
-35|Char_Fils|null|Talk_Fils_Mirror_6
-40|7|13|FilsMirrorQuest == 1
-35|Char_LoupGarou|null|Talk_Fils_Mirror_Found_1
-35|Char_Fils|null|Talk_Fils_Mirror_Found_2
-35|Char_Fils|null|Talk_Fils_Mirror_Found_3
-102|ValueFils|+|1
-102|FilsMirrorQuest|=|2
-42|14
-42|14
+35Char_FilsnullTalk_Fils_Mirror_1
+35Char_LoupGarounullTalk_Fils_Mirror_2
+35Char_FilsnullTalk_Fils_Mirror_3
+35Char_LoupGarounullTalk_Fils_Mirror_4
+35Char_FilsnullTalk_Fils_Mirror_5
+35Char_FilsnullTalk_Fils_Mirror_6
+40713FilsMirrorQuest == 1
+35Char_LoupGarounullTalk_Fils_Mirror_Found_1
+35Char_FilsnullTalk_Fils_Mirror_Found_2
+35Char_FilsnullTalk_Fils_Mirror_Found_3
+102ValueFils+1
+102FilsMirrorQuest=2
+4214
+4214

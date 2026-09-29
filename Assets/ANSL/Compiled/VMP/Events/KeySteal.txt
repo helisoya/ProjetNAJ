@@ -1,69 +1,69 @@
 #0B9ED292000C19ABB486065088302E68-718EFDC1B0E65B9E044C1FE0A1A72EB5
-39|1|true
+391true
 55
-61|Room1
-22|Baron|false|Front
-22|Boris|true|Front
-22|Chasseur|true|Front
-22|Humain|true|Front
-22|Fils|true|Front
-22|Rival|true|Front
-39|0|false
-35|Char_Baron|null|Scene_Theft_1
-35|Char_Baron|null|Scene_Theft_2
-35|null|null|Scene_Theft_3
-35|Char_Baron|null|Scene_Theft_4
-35|Char_Baron|null|Scene_Theft_5
-35|null|null|Scene_Theft_6
-66|Baron|0|0.5|true
-66|Rival|1|0.5|false
-35|Char_Rival|null|Scene_Theft_7
-35|Char_Rival|null|Scene_Theft_8
-66|Rival|0|0.5|true
-66|Baron|1|0.5|false
-35|Char_Baron|null|Scene_Theft_9
-35|Char_Baron|null|Scene_Theft_10
-66|Baron|0|0.5|true
-66|Chasseur|1|0.5|false
-35|Char_Chasseur|null|Scene_Theft_11
-66|Chasseur|0|0.5|true
-66|Fils|1|0.5|false
-35|Char_Fils|null|Scene_Theft_12
-35|Char_Fils|null|Scene_Theft_13
-66|Fils|0|0.5|true
-66|Humain|1|0.5|false
-35|Char_Humain|null|Scene_Theft_14
-66|Humain|0|0.5|true
-66|Baron|1|0.5|false
-35|Char_Baron|null|Scene_Theft_15
-35|Char_Baron|null|Scene_Theft_16
-35|null|null|Scene_Theft_17
-66|Baron|0|0.5|true
-66|Rival|1|0.5|false
-35|Char_Rival|null|Scene_Theft_18
-35|Char_Rival|null|Scene_Theft_19
-66|Rival|0|0.5|true
-74|Baron|BaronSpot
-75|Baron|BaronSpot
-66|Baron|1|0.5|false
-35|null|null|Scene_Theft_20
-35|null|null|Scene_Theft_21
-35|null|null|Scene_Theft_22
-35|null|null|Scene_Theft_23
-57|Fils
-57|Humain
-57|Chasseur
-57|Rival
-102|CycleCount|=|1
-102|LookCounter|=|3
-102|SearchCounter|=|1
-102|TalkedBaron|=|0
-102|TalkedChasseur|=|0
-102|TalkedFils|=|0
-102|TalkedHumain|=|0
-102|TalkedRival|=|0
-88|Location_VMP_Cycle1
+61Room1
+22BaronfalseFront
+22BoristrueFront
+22ChasseurtrueFront
+22HumaintrueFront
+22FilstrueFront
+22RivaltrueFront
+390false
+35Char_BaronnullScene_Theft_1
+35Char_BaronnullScene_Theft_2
+35nullnullScene_Theft_3
+35Char_BaronnullScene_Theft_4
+35Char_BaronnullScene_Theft_5
+35nullnullScene_Theft_6
+66Baron00.5true
+66Rival10.5false
+35Char_RivalnullScene_Theft_7
+35Char_RivalnullScene_Theft_8
+66Rival00.5true
+66Baron10.5false
+35Char_BaronnullScene_Theft_9
+35Char_BaronnullScene_Theft_10
+66Baron00.5true
+66Chasseur10.5false
+35Char_ChasseurnullScene_Theft_11
+66Chasseur00.5true
+66Fils10.5false
+35Char_FilsnullScene_Theft_12
+35Char_FilsnullScene_Theft_13
+66Fils00.5true
+66Humain10.5false
+35Char_HumainnullScene_Theft_14
+66Humain00.5true
+66Baron10.5false
+35Char_BaronnullScene_Theft_15
+35Char_BaronnullScene_Theft_16
+35nullnullScene_Theft_17
+66Baron00.5true
+66Rival10.5false
+35Char_RivalnullScene_Theft_18
+35Char_RivalnullScene_Theft_19
+66Rival00.5true
+74BaronBaronSpot
+75BaronBaronSpot
+66Baron10.5false
+35nullnullScene_Theft_20
+35nullnullScene_Theft_21
+35nullnullScene_Theft_22
+35nullnullScene_Theft_23
+57Fils
+57Humain
+57Chasseur
+57Rival
+102CycleCount=1
+102LookCounter=3
+102SearchCounter=1
+102TalkedBaron=0
+102TalkedChasseur=0
+102TalkedFils=0
+102TalkedHumain=0
+102TalkedRival=0
+88Location_VMP_Cycle1
 24
-44|../Common/PrintLookCounter
-44|../Common/PrintSearchCounter
-44|/VMP/Room1/Interaction
+44../Common/PrintLookCounter
+44../Common/PrintSearchCounter
+44/VMP/Room1/Interaction

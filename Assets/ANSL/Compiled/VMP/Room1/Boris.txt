@@ -1,55 +1,55 @@
 #12102FD7C231F68101BD74D5F7699F89-718EFDC1B0E65B9E044C1FE0A1A72EB5
-40|1|50|LookCounter > 0
-102|LookCounter|-|1
-40|3|12|ConfrontedChasseurSecret == 2
-35|null|null|Watch_Boris_Keys_1
-35|null|null|Watch_Boris_Keys_2
-35|null|null|Watch_Boris_Keys_3
-27|0|Choice_Yes|7|null|null|null|Choice_No|9|null|null|null
-44|/VMP/Endings/StoleKeyBackEnding
-42|11
-35|null|null|Watch_Boris_Keys_4
-42|11
-42|13
-42|13
-99|BorisCounter|48|0|14|1|17|2|20|3|23|4|26|5|29
-35|null|null|Watch_Boris_1
-102|BorisCounter|+|1
-42|48
-35|null|null|Watch_Boris_2
-102|BorisCounter|+|1
-42|48
-35|null|null|Watch_Boris_3
-102|BorisCounter|+|1
-42|48
-35|null|null|Watch_Boris_4
-102|BorisCounter|+|1
-42|48
-35|null|null|Watch_Boris_5
-102|BorisCounter|+|1
-42|48
-40|30|32|ConfrontedChasseurSecret == 2
+40150LookCounter > 0
+102LookCounter-1
+40312ConfrontedChasseurSecret == 2
+35nullnullWatch_Boris_Keys_1
+35nullnullWatch_Boris_Keys_2
+35nullnullWatch_Boris_Keys_3
+270Choice_Yes7nullnullnullChoice_No9nullnullnull
+44/VMP/Endings/StoleKeyBackEnding
+4211
+35nullnullWatch_Boris_Keys_4
+4211
+4213
+4213
+99BorisCounter48014117220323426529
+35nullnullWatch_Boris_1
+102BorisCounter+1
+4248
+35nullnullWatch_Boris_2
+102BorisCounter+1
+4248
+35nullnullWatch_Boris_3
+102BorisCounter+1
+4248
+35nullnullWatch_Boris_4
+102BorisCounter+1
+4248
+35nullnullWatch_Boris_5
+102BorisCounter+1
+4248
+403032ConfrontedChasseurSecret == 2
 59
-42|33
-42|33
-90|BorisScene|0|0.5|true
-90|Boris|1|0.5|false
-40|36|37|DrinkQuest == 2
-42|45
-35|Char_Boris|null|Talk_Boris_Presentation_1
-35|Char_Boris|null|Talk_Boris_Presentation_2
-35|Char_Boris|null|Talk_Boris_Presentation_3
-35|Char_Boris|null|Talk_Boris_Presentation_4
-35|Char_Boris|null|Talk_Boris_Presentation_5
-35|Char_Boris|null|Talk_Boris_Presentation_6
-35|Char_Boris|null|Talk_Boris_Presentation_7
-42|45
-90|Boris|0|0.5|true
-90|BorisScene|1|0.5|false
-42|48
-44|/VMP/Common/PrintLookCounter
-42|52
-35|null|null|Counter_Look_0
-42|52
-44|/VMP/Common/CycleCheck
-44|Interaction
+4233
+4233
+90BorisScene00.5true
+90Boris10.5false
+403637DrinkQuest == 2
+4245
+35Char_BorisnullTalk_Boris_Presentation_1
+35Char_BorisnullTalk_Boris_Presentation_2
+35Char_BorisnullTalk_Boris_Presentation_3
+35Char_BorisnullTalk_Boris_Presentation_4
+35Char_BorisnullTalk_Boris_Presentation_5
+35Char_BorisnullTalk_Boris_Presentation_6
+35Char_BorisnullTalk_Boris_Presentation_7
+4245
+90Boris00.5true
+90BorisScene10.5false
+4248
+44/VMP/Common/PrintLookCounter
+4252
+35nullnullCounter_Look_0
+4252
+44/VMP/Common/CycleCheck
+44Interaction

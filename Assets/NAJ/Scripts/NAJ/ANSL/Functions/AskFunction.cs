@@ -69,7 +69,7 @@ namespace NAJ.ANSL
                 return false;
             }
 
-            string[] contentSplit = content.Split(';');
+            string[] contentSplit = content.Split(ANSLUtils.SOURCE_DELIMITER);
 
             if (contentSplit.Length < 2)
             {
@@ -197,15 +197,15 @@ namespace NAJ.ANSL
             string type = contentSplit[0];
             string anwsers = "";
             for (int i = 1; i < contentSplit.Length; i++)
-                anwsers += $"|{contentSplit[i]}";
+                anwsers += $"{ANSLUtils.COMPILED_DELIMITER}{contentSplit[i]}";
 
             uint jumpToFunctionId = compiler.GetRegisteredFunctionId<JumpToFunction>();
 
-            compiledLines.Add($"{id}|{type}|{startTrue}|{startFalse}{anwsers}");
+            compiledLines.Add($"{id}{ANSLUtils.COMPILED_DELIMITER}{type}{ANSLUtils.COMPILED_DELIMITER}{startTrue}{ANSLUtils.COMPILED_DELIMITER}{startFalse}{anwsers}");
             compiledLines.AddRange(compiledTrue);
-            compiledLines.Add($"{jumpToFunctionId}|{endIndex}");
+            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{endIndex}");
             compiledLines.AddRange(compiledFalse);
-            compiledLines.Add($"{jumpToFunctionId}|{endIndex}");
+            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{endIndex}");
 
             return true;
         }

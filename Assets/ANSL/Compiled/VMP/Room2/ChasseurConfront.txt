@@ -1,77 +1,77 @@
 #2A0A81311180B9F7B0D90B4F7E4BDDEF-718EFDC1B0E65B9E044C1FE0A1A72EB5
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_1
-35|Char_Chasseur|null|Talk_Chasseur_Secret_2
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_3
-35|Char_Chasseur|null|Talk_Chasseur_Secret_4
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_5
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_6
-35|Char_Chasseur|null|Talk_Chasseur_Secret_7
-35|null|null|Talk_Chasseur_Secret_8
-27|0|Choice_Yes|9|null|null|null|Choice_No|74|null|null|null
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_9
-35|Char_Chasseur|null|Talk_Chasseur_Secret_10
-35|Char_Chasseur|null|Talk_Chasseur_Secret_11
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_12
-35|Char_Chasseur|null|Talk_Chasseur_Secret_13
-35|null|null|Talk_Chasseur_Secret_14
-27|0|Choice_Yes|16|null|null|null|Choice_No|69|null|null|null
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_15
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_16
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_17
-35|Char_Chasseur|null|Talk_Chasseur_Secret_18
-35|Char_Chasseur|null|Talk_Chasseur_Secret_19
-35|null|null|Talk_Chasseur_Secret_20
-27|0|Choice_ContinuePress|23|null|null|null|Choice_Stop|64|null|null|null
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_21
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_22
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_23
-35|Char_Chasseur|null|Talk_Chasseur_Secret_24
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_25
-35|Char_Chasseur|null|Talk_Chasseur_Secret_26
-35|Char_Chasseur|null|Talk_Chasseur_Secret_27
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_28
-35|Char_Chasseur|null|Talk_Chasseur_Secret_29
-35|Char_Chasseur|null|Talk_Chasseur_Secret_30
-35|Char_Chasseur|null|Talk_Chasseur_Secret_31
-27|0|Choice_Yes|35|null|null|null|Choice_No|58|null|null|null
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_32
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_33
-35|Char_Chasseur|null|Talk_Chasseur_Secret_34
-35|Char_Chasseur|null|Talk_Chasseur_Secret_35
-35|Char_Chasseur|null|Talk_Chasseur_Secret_36
-35|Char_Chasseur|null|Talk_Chasseur_Secret_37
-35|Char_Chasseur|null|Talk_Chasseur_Secret_38
-35|Char_Chasseur|null|Talk_Chasseur_Secret_39
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_40
-35|Char_Chasseur|null|Talk_Chasseur_Secret_41
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_42
-35|Char_Chasseur|null|Talk_Chasseur_Secret_43
-35|Char_Chasseur|null|Talk_Chasseur_Secret_44
-35|Char_Chasseur|null|Talk_Chasseur_Secret_45
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_46
-35|null|null|Talk_Chasseur_Secret_47
-35|Char_Chasseur|null|Talk_Chasseur_Secret_48
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_49
-35|Char_Chasseur|null|Talk_Chasseur_Secret_50
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_51
-102|ValueChasseur|+|3
-102|ConfrontedChasseurSecret|=|2
-42|63
-35|Char_Chasseur|null|Talk_Chasseur_Secret_Fail2_1
-35|Char_LoupGarou|null|Talk_Chasseur_Secret_Fail2_2
-102|ValueChasseur|-|1
-102|ConfrontedChasseurSecret|=|1
-42|63
-42|68
-35|Char_Chasseur|null|Talk_Chasseur_Secret_Fail1_1
-102|ValueChasseur|-|1
-102|ConfrontedChasseurSecret|=|1
-42|68
-42|73
-35|Char_Chasseur|null|Talk_Chasseur_Secret_Fail1_1
-102|ValueChasseur|-|1
-102|ConfrontedChasseurSecret|=|1
-42|73
-42|76
-102|ConfrontedChasseurSecret|=|1
-42|76
+35Char_LoupGarounullTalk_Chasseur_Secret_1
+35Char_ChasseurnullTalk_Chasseur_Secret_2
+35Char_LoupGarounullTalk_Chasseur_Secret_3
+35Char_ChasseurnullTalk_Chasseur_Secret_4
+35Char_LoupGarounullTalk_Chasseur_Secret_5
+35Char_LoupGarounullTalk_Chasseur_Secret_6
+35Char_ChasseurnullTalk_Chasseur_Secret_7
+35nullnullTalk_Chasseur_Secret_8
+270Choice_Yes9nullnullnullChoice_No74nullnullnull
+35Char_LoupGarounullTalk_Chasseur_Secret_9
+35Char_ChasseurnullTalk_Chasseur_Secret_10
+35Char_ChasseurnullTalk_Chasseur_Secret_11
+35Char_LoupGarounullTalk_Chasseur_Secret_12
+35Char_ChasseurnullTalk_Chasseur_Secret_13
+35nullnullTalk_Chasseur_Secret_14
+270Choice_Yes16nullnullnullChoice_No69nullnullnull
+35Char_LoupGarounullTalk_Chasseur_Secret_15
+35Char_LoupGarounullTalk_Chasseur_Secret_16
+35Char_LoupGarounullTalk_Chasseur_Secret_17
+35Char_ChasseurnullTalk_Chasseur_Secret_18
+35Char_ChasseurnullTalk_Chasseur_Secret_19
+35nullnullTalk_Chasseur_Secret_20
+270Choice_ContinuePress23nullnullnullChoice_Stop64nullnullnull
+35Char_LoupGarounullTalk_Chasseur_Secret_21
+35Char_LoupGarounullTalk_Chasseur_Secret_22
+35Char_LoupGarounullTalk_Chasseur_Secret_23
+35Char_ChasseurnullTalk_Chasseur_Secret_24
+35Char_LoupGarounullTalk_Chasseur_Secret_25
+35Char_ChasseurnullTalk_Chasseur_Secret_26
+35Char_ChasseurnullTalk_Chasseur_Secret_27
+35Char_LoupGarounullTalk_Chasseur_Secret_28
+35Char_ChasseurnullTalk_Chasseur_Secret_29
+35Char_ChasseurnullTalk_Chasseur_Secret_30
+35Char_ChasseurnullTalk_Chasseur_Secret_31
+270Choice_Yes35nullnullnullChoice_No58nullnullnull
+35Char_LoupGarounullTalk_Chasseur_Secret_32
+35Char_LoupGarounullTalk_Chasseur_Secret_33
+35Char_ChasseurnullTalk_Chasseur_Secret_34
+35Char_ChasseurnullTalk_Chasseur_Secret_35
+35Char_ChasseurnullTalk_Chasseur_Secret_36
+35Char_ChasseurnullTalk_Chasseur_Secret_37
+35Char_ChasseurnullTalk_Chasseur_Secret_38
+35Char_ChasseurnullTalk_Chasseur_Secret_39
+35Char_LoupGarounullTalk_Chasseur_Secret_40
+35Char_ChasseurnullTalk_Chasseur_Secret_41
+35Char_LoupGarounullTalk_Chasseur_Secret_42
+35Char_ChasseurnullTalk_Chasseur_Secret_43
+35Char_ChasseurnullTalk_Chasseur_Secret_44
+35Char_ChasseurnullTalk_Chasseur_Secret_45
+35Char_LoupGarounullTalk_Chasseur_Secret_46
+35nullnullTalk_Chasseur_Secret_47
+35Char_ChasseurnullTalk_Chasseur_Secret_48
+35Char_LoupGarounullTalk_Chasseur_Secret_49
+35Char_ChasseurnullTalk_Chasseur_Secret_50
+35Char_LoupGarounullTalk_Chasseur_Secret_51
+102ValueChasseur+3
+102ConfrontedChasseurSecret=2
+4263
+35Char_ChasseurnullTalk_Chasseur_Secret_Fail2_1
+35Char_LoupGarounullTalk_Chasseur_Secret_Fail2_2
+102ValueChasseur-1
+102ConfrontedChasseurSecret=1
+4263
+4268
+35Char_ChasseurnullTalk_Chasseur_Secret_Fail1_1
+102ValueChasseur-1
+102ConfrontedChasseurSecret=1
+4268
+4273
+35Char_ChasseurnullTalk_Chasseur_Secret_Fail1_1
+102ValueChasseur-1
+102ConfrontedChasseurSecret=1
+4273
+4276
+102ConfrontedChasseurSecret=1
+4276

@@ -1,14 +1,14 @@
 #4441D732B45C128C67AD9FBCB9F08DC2-718EFDC1B0E65B9E044C1FE0A1A72EB5
-88|TestStatics
-25|false
-61|TestBackground
-23|TestStatic
-92|TestStatic|Test
-23|TestStatic2
-25|true
-93|TestStatic|0|45|0|1|false
-92|TestStatic2|Test2|1|true
-85|TestStatic|Statics_1
-85|TestStatic2|Statics_2
-85|Exit|Statics_Exit
+88TestStatics
+25false
+61TestBackground
+23TestStatic
+92TestStaticTest
+23TestStatic2
+25true
+93TestStatic04501false
+92TestStatic2Test21true
+85TestStaticStatics_1
+85TestStatic2Statics_2
+85ExitStatics_Exit
 41

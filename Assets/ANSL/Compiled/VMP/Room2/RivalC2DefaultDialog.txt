@@ -1,25 +1,25 @@
 #C1A60539C6B7728EE83B882FF7161C61-718EFDC1B0E65B9E044C1FE0A1A72EB5
-40|1|4|RivalReactionToDrinkQuest == 1
-35|Char_Rival|null|Talk_Rival_LoyalBaron_1
-35|Char_Rival|null|Talk_Rival_LoyalBaron_2
-42|24
-35|Char_Rival|null|Talk_Rival_LateLoyaltyCheck_1
-35|Char_Rival|null|Talk_Rival_LateLoyaltyCheck_2
-35|Char_Rival|null|Talk_Rival_LateLoyaltyCheck_3
-27|0|Choice_Yes|8|null|null|null|Choice_No|15|null|null|null
-35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_1
-35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_2
-35|Char_LoupGarou|null|Talk_Rival_LateLoyalRival_3
-35|Char_Rival|null|Talk_Rival_LateLoyalRival_4
-102|RivalReactionToDrinkQuest|=|2
-102|ValueRival|+|2
-42|23
-35|Char_LoupGarou|null|Talk_Rival_Centrist_1
-35|Char_LoupGarou|null|Talk_Rival_Centrist_2
-35|Char_Rival|null|Talk_Rival_Centrist_3
-35|Char_Rival|null|Talk_Rival_Centrist_4
-35|Char_Rival|null|Talk_Rival_Centrist_5
-35|Char_Rival|null|Talk_Rival_Centrist_6
-102|ValueRival|-|1
-42|23
-42|24
+4014RivalReactionToDrinkQuest == 1
+35Char_RivalnullTalk_Rival_LoyalBaron_1
+35Char_RivalnullTalk_Rival_LoyalBaron_2
+4224
+35Char_RivalnullTalk_Rival_LateLoyaltyCheck_1
+35Char_RivalnullTalk_Rival_LateLoyaltyCheck_2
+35Char_RivalnullTalk_Rival_LateLoyaltyCheck_3
+270Choice_Yes8nullnullnullChoice_No15nullnullnull
+35Char_LoupGarounullTalk_Rival_LateLoyalRival_1
+35Char_LoupGarounullTalk_Rival_LateLoyalRival_2
+35Char_LoupGarounullTalk_Rival_LateLoyalRival_3
+35Char_RivalnullTalk_Rival_LateLoyalRival_4
+102RivalReactionToDrinkQuest=2
+102ValueRival+2
+4223
+35Char_LoupGarounullTalk_Rival_Centrist_1
+35Char_LoupGarounullTalk_Rival_Centrist_2
+35Char_RivalnullTalk_Rival_Centrist_3
+35Char_RivalnullTalk_Rival_Centrist_4
+35Char_RivalnullTalk_Rival_Centrist_5
+35Char_RivalnullTalk_Rival_Centrist_6
+102ValueRival-1
+4223
+4224

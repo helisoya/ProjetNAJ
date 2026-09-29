@@ -179,11 +179,11 @@ namespace ANF.ANSL
 
             uint jumpToFunctionId = compiler.GetRegisteredFunctionId<JumpToFunction>();
 
-            compiledLines.Add($"{id}|{startTrue}|{startFalse}|{ifContent}");
+            compiledLines.Add($"{id}{ANSLUtils.COMPILED_DELIMITER}{startTrue}{ANSLUtils.COMPILED_DELIMITER}{startFalse}{ANSLUtils.COMPILED_DELIMITER}{ifContent}");
             compiledLines.AddRange(compiledTrue);
-            compiledLines.Add($"{jumpToFunctionId}|{endIndex}");
+            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{endIndex}");
             compiledLines.AddRange(compiledFalse);
-            compiledLines.Add($"{jumpToFunctionId}|{endIndex}");
+            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{endIndex}");
 
             return true;
         }

@@ -1,6 +1,6 @@
 #EFBF801016949EB040C5E75E6093791F-718EFDC1B0E65B9E044C1FE0A1A72EB5
-35|Char_Rival|null|Talk_Rival_GetInfosFils_1
-35|Char_Rival|null|Talk_Rival_GetInfosFils_2
-35|Char_LoupGarou|null|Talk_Rival_GetInfosFils_3
-35|Char_Rival|null|Talk_Rival_GetInfosFils_4
-102|GetInfosFromFilsQuest|=|1
+35Char_RivalnullTalk_Rival_GetInfosFils_1
+35Char_RivalnullTalk_Rival_GetInfosFils_2
+35Char_LoupGarounullTalk_Rival_GetInfosFils_3
+35Char_RivalnullTalk_Rival_GetInfosFils_4
+102GetInfosFromFilsQuest=1

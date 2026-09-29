@@ -177,7 +177,7 @@ public class ANSLContext : Jsonable
 
         if (currentLine < currentScript.Length - checkSumAdd)
         {
-            string[] split = currentScript[currentLine + checkSumAdd].Split('|', 2);
+            string[] split = currentScript[currentLine + checkSumAdd].Split(ANSLUtils.COMPILED_DELIMITER, 2);
             uint functionId;
 
             if (split.Length == 0 || string.IsNullOrEmpty(currentScript[currentLine + checkSumAdd]) ||
@@ -190,7 +190,7 @@ public class ANSLContext : Jsonable
             }
             else
             {
-                FunctionParameters parameters = ANSLUtils.CreateParametersInterface(split.Length > 1 ? split[1].Split('|') : null, functions[functionId].GetParametersTemplates());
+                FunctionParameters parameters = ANSLUtils.CreateParametersInterface(split.Length > 1 ? split[1].Split(ANSLUtils.COMPILED_DELIMITER) : null, functions[functionId].GetParametersTemplates());
 
                 if (parameters == null)
                 {

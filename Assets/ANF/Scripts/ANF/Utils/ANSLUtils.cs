@@ -23,6 +23,9 @@ namespace ANF.Utils
     /// </summary>
     public class ANSLUtils
     {
+        public const char SOURCE_DELIMITER = ';';
+        public const char COMPILED_DELIMITER = (char)31;
+
         #region General
 
         /// <summary>

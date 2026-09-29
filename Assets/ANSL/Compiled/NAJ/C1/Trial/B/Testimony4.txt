@@ -1,477 +1,477 @@
 #016F3A899BA2FF92BDCE27C9F66BCE16-718EFDC1B0E65B9E044C1FE0A1A72EB5
-96|false
-37|1|true
-65|WitnessCam
-64|WitnessCam
-69|GeraldNoCoat|Normal
-73|GeraldNoCoat|Serious
-67|GeraldNoCoat|Thinking|0.1
-69|Robert|Normal
-73|Robert|Normal
-67|Robert|Normal|0.1
-67|RannCoat|Normal|0.1
-69|RannCoat|Normal
-73|RannCoat|Neutral
-67|Judge|Normal|0.1
-67|Robert|Normal|0.1
-37|0|false
-51|Testimony|true
-35|null|null|C1_Trial_Testimony4_Start_1
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Start_2
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Start_3
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Start_4
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Start_5
-96|false
-37|1|true
-69|Judge|Surprise
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-37|0|false
-67|GeraldNoCoat|Normal|0.1
-67|Judge|DamageToNormal
-60|0.1|0.2|true|true
-35|Char_Judge|Judge|C1_Trial_Testimony4_Start_6
-65|WitnessCam
-64|WitnessCam
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Start_7
-60|0.1|0.2|true|true
-67|RannCoat|Angry|0.1
-67|RannCoat|DamageToAngry
-64|DefenseCam
-65|DefenseCam
-35|Char_Rann|RannCoat|C1_Trial_Testimony4_Start_8
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial_Testimony4_Start_9
-35|Char_Judge|Judge|C1_Trial_Testimony4_Start_10
-69|Robert|Thinking
-73|Robert|Normal
-65|ProsecutionCam
-64|ProsecutionCam
-35|Char_Robert|Robert|C1_Trial_Testimony4_Start_11
-35|Char_Robert|Robert|C1_Trial_Testimony4_Start_12
-64|DefenseCam
-65|DefenseCam
-35|null|null|C1_Trial_Testimony4_Start_13
-35|null|null|C1_Trial_Testimony4_Start_14
-35|null|null|C1_Trial_Testimony4_Start_15
-35|null|null|C1_Trial_Testimony4_Start_16
-35|null|null|C1_Trial_Testimony4_Start_17
-69|Judge|Normal
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial_Testimony4_Start_18
-35|Char_Judge|Judge|C1_Trial_Testimony4_Start_19
-35|Char_Judge|Judge|C1_Trial_Testimony4_Start_20
-64|DefenseCam
-65|DefenseCam
-35|null|null|C1_Trial_Testimony4_Start_21
-35|null|null|C1_Trial_Testimony4_Start_22
-96|false
-37|1|true
-65|WitnessCam
-64|WitnessCam
-69|GeraldNoCoat|Normal
-73|GeraldNoCoat|Serious
-67|GeraldNoCoat|Thinking|0.1
-69|Robert|Normal
-73|Robert|Normal
-67|Robert|Normal|0.1
-67|RannCoat|Normal|0.1
-69|RannCoat|Normal
-73|RannCoat|Neutral
-67|Judge|Normal|0.1
-37|0|false
-51|Rebuttal|true
-35|null|null|C1_Trial_Testimony4_Testimony_0
+96false
+371true
+65WitnessCam
+64WitnessCam
+69GeraldNoCoatNormal
+73GeraldNoCoatSerious
+67GeraldNoCoatThinking0.1
+69RobertNormal
+73RobertNormal
+67RobertNormal0.1
+67RannCoatNormal0.1
+69RannCoatNormal
+73RannCoatNeutral
+67JudgeNormal0.1
+67RobertNormal0.1
+370false
+51Testimonytrue
+35nullnullC1_Trial_Testimony4_Start_1
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Start_2
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Start_3
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Start_4
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Start_5
+96false
+371true
+69JudgeSurprise
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+370false
+67GeraldNoCoatNormal0.1
+67JudgeDamageToNormal
+600.10.2truetrue
+35Char_JudgeJudgeC1_Trial_Testimony4_Start_6
+65WitnessCam
+64WitnessCam
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Start_7
+600.10.2truetrue
+67RannCoatAngry0.1
+67RannCoatDamageToAngry
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial_Testimony4_Start_8
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial_Testimony4_Start_9
+35Char_JudgeJudgeC1_Trial_Testimony4_Start_10
+69RobertThinking
+73RobertNormal
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertRobertC1_Trial_Testimony4_Start_11
+35Char_RobertRobertC1_Trial_Testimony4_Start_12
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial_Testimony4_Start_13
+35nullnullC1_Trial_Testimony4_Start_14
+35nullnullC1_Trial_Testimony4_Start_15
+35nullnullC1_Trial_Testimony4_Start_16
+35nullnullC1_Trial_Testimony4_Start_17
+69JudgeNormal
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial_Testimony4_Start_18
+35Char_JudgeJudgeC1_Trial_Testimony4_Start_19
+35Char_JudgeJudgeC1_Trial_Testimony4_Start_20
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial_Testimony4_Start_21
+35nullnullC1_Trial_Testimony4_Start_22
+96false
+371true
+65WitnessCam
+64WitnessCam
+69GeraldNoCoatNormal
+73GeraldNoCoatSerious
+67GeraldNoCoatThinking0.1
+69RobertNormal
+73RobertNormal
+67RobertNormal0.1
+67RannCoatNormal0.1
+69RannCoatNormal
+73RannCoatNeutral
+67JudgeNormal0.1
+370false
+51Rebuttaltrue
+35nullnullC1_Trial_Testimony4_Testimony_0
 4
-9|254|1|89|True|2|148|True|3|180|True|4|211|True
-17|1
-20|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Testimony_1|false|true
-10|1|True|93|250|254|89|148
-96|false
-51|Press|true
-65|DefenseCam|0.25|false
-64|DefenseCam|0.25|true
-35|Char_Rann|RannCoat|C1_Trial_Testimony4_Press1_1
-96|false
-67|GeraldNoCoat|Normal|0.1
-69|GeraldNoCoat|Normal
-73|GeraldNoCoat|Normal
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press1_2
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press1_3
-64|DefenseCam
-65|DefenseCam
-35|Char_Rann|null|C1_Trial_Testimony4_Press1_4
-96|false
-69|GeraldNoCoat|Normal
-73|GeraldNoCoat|Serious
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press1_5
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press1_6
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press1_7
-67|GeraldNoCoat|OnBar|0.1
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press1_8
-96|false
-67|RannCoat|Angry|0.1
-65|DefenseCam|0.25|false
-64|DefenseCam|0.25|true
-69|GeraldNoCoat|Normal
-73|GeraldNoCoat|Serious
-67|GeraldNoCoat|Thinking|0.1
-35|Char_Rann|RannCoat|C1_Trial_Testimony4_Press1_9
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial_Testimony4_Press1_10
-69|Judge|Thinking
-73|Judge|Normal
-35|Char_Judge|Judge|C1_Trial_Testimony4_Press1_11
-64|DefenseCam
-65|DefenseCam
-35|Char_Rann|null|C1_Trial_Testimony4_Press1_12
-96|false
-37|1|true
-67|RannCoat|Normal|0.1
-69|RannCoat|Normal
-73|RannCoat|Neutral
-69|Judge|Normal
-73|Judge|Normal
-65|WitnessCam
-64|WitnessCam
-37|0|false
-17|2
-42|88
-17|2
-20|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Testimony_2|false|true
-10|2|True|152|250|254|89|180
-96|false
-51|Press|true
-65|DefenseCam|0.25|false
-64|DefenseCam|0.25|true
-35|Char_Rann|RannCoat|C1_Trial_Testimony4_Press2_1
-96|false
-67|GeraldNoCoat|Normal|0.1
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press2_2
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press2_3
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial_Testimony4_Press2_4
-64|DefenseCam
-65|DefenseCam
-35|Char_Rann|null|C1_Trial_Testimony4_Press2_5
-96|false
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press2_6
-96|false
-37|1|true
-67|GeraldNoCoat|Thinking|0.1
-104|0.15
-37|0|false
-17|3
-42|88
-17|3
-20|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Testimony_3|false|true
-10|3|True|184|250|254|148|211
-96|false
-51|Press|true
-65|DefenseCam|0.25|false
-64|DefenseCam|0.25|true
-35|Char_Rann|RannCoat|C1_Trial_Testimony4_Press3_1
-96|false
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press3_2
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press3_3
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press3_4
-69|Judge|Thinking
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial_Testimony4_Press3_5
-35|Char_Judge|Judge|C1_Trial_Testimony4_Press3_6
-69|Judge|Normal
-73|Judge|Normal
-35|Char_Judge|Judge|C1_Trial_Testimony4_Press3_7
-96|false
-37|1|true
-65|WitnessCam
-64|WitnessCam
-37|0|false
-17|4
-42|88
-17|4
-20|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Testimony_4|false|true
-10|4|True|215|250|254|180|231
-96|false
-51|Press|true
-65|DefenseCam|0.25|false
-64|DefenseCam|0.25|true
-35|Char_Rann|RannCoat|C1_Trial_Testimony4_Press4_1
-96|false
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press4_2
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press4_3
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press4_4
-35|Char_Gerald|GeraldNoCoat|C1_Trial_Testimony4_Press4_5
-96|false
-37|1|true
-37|0|false
-42|231
-17|1
-20|false
-3|254|1|2|3|4
-96|false
-67|RannCoat|Thinking|0.1
-37|1|true
-64|DefenseCam
-65|DefenseCam
-37|0|false
-35|null|null|C1_Trial_Testimony4_Loop_1
-35|null|null|C1_Trial_Testimony4_Loop_2
-35|null|null|C1_Trial_Testimony4_Loop_3
-35|null|null|C1_Trial_Testimony4_Loop_4
-37|1|true
-67|RannCoat|Normal|0.1
-65|WitnessCam
-64|WitnessCam
-37|0|false
-42|88
-17|1
-20|false
-44|../Common/ExaminationFail
-42|88
-67|RannCoat|Angry|0.1
-96|false
-64|HammerCam
-65|HammerCam
-67|Judge|Strike
-104|1
-67|Judge|HoldingHammer
-65|JudgeCam
-64|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_1
-64|DefenseCam
-65|DefenseCam
-35|null|null|C1_Trial1_G_2
-35|null|null|C1_Trial1_G_3
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_4
-35|Char_Judge|Judge|C1_Trial1_G_5
-35|Char_Judge|Judge|C1_Trial1_G_6
-69|RannCoat|Normal
-73|RannCoat|Sad
-64|DefenseCam
-65|DefenseCam
-35|null|null|C1_Trial1_G_7
-35|null|null|C1_Trial1_G_8
-67|Judge|ReadingBook
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_9
-69|RannCoat|Normal
-73|RannCoat|Oops
-67|RannCoat|Stress|0.1
-69|Judge|Happy
-73|Judge|Normal
-35|Char_Judge|Judge|C1_Trial1_G_10
-35|Char_Judge|Judge|C1_Trial1_G_11
-64|DefenseCam
-65|DefenseCam
-67|Judge|HoldingHammer|0.1
-35|Char_Rann|RannCoat|C1_Trial1_G_12
-35|Char_Rann|RannCoat|C1_Trial1_G_13
-96|false
-65|ProsecutionCam|0.25|false
-64|ProsecutionCam|0.25|true
-35|Char_Robert|Robert|C1_Trial1_G_14
-67|RannCoat|Angry|0.1
-69|RannCoat|Surprise
-73|RannCoat|Surprise
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_15
-35|Char_Judge|Judge|C1_Trial1_G_16
-64|DefenseCam
-65|DefenseCam
-35|Char_Rann|RannCoat|C1_Trial1_G_17
-69|Judge|Normal
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_18
-96|false
-51|Guilty|true
-35|Char_Judge|Judge|C1_Trial1_G_19
-35|Char_Judge|Judge|C1_Trial1_G_20
-65|ProsecutionCam
-64|ProsecutionCam
-35|Char_Robert|Robert|C1_Trial1_G_21
-66|NovaKaliaSoldier|0
-66|Juno|1
-74|Juno|WitnessLeftSpot
-75|Juno|WitnessLeftSpot
-69|Juno|Serious
-73|Juno|Serious
-67|Juno|Normal|0.1
-96|false
-65|WitnessLeftCam|0.25|false
-64|WitnessLeftCam|0.25|true
-35|Char_Juno|Juno|C1_Trial1_G_22
-69|Judge|Surprise
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_23
-35|Char_Judge|Judge|C1_Trial1_G_24
-35|Char_Judge|Judge|C1_Trial1_G_25
-69|Judge|Happy
-73|Judge|Normal
-35|Char_Judge|Judge|C1_Trial1_G_26
-65|WitnessLeftCam
-64|WitnessLeftCam
-35|Char_Juno|Juno|C1_Trial1_G_27
-96|false
-69|Robert|Thinking
-73|Robert|Normal
-65|ProsecutionCam|0.25|false
-64|ProsecutionCam|0.25|true
-35|Char_Robert|Robert|C1_Trial1_G_28
-35|Char_Robert|Robert|C1_Trial1_G_29
-35|Char_Robert|Robert|C1_Trial1_G_30
-65|WitnessLeftCam
-64|WitnessLeftCam
-35|Char_Juno|Juno|C1_Trial1_G_31
-96|false
-60|0.1|0.2
-69|GeraldNoCoat|Surprise
-73|GeraldNoCoat|Serious
-67|GeraldNoCoat|Surprise|0.1
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial1_G_32
-35|Char_Gerald|GeraldNoCoat|C1_Trial1_G_33
-35|Char_Gerald|GeraldNoCoat|C1_Trial1_G_34
-96|false
-65|WitnessLeftCam|0.25|false
-64|WitnessLeftCam|0.25|true
-35|Char_Juno|Juno|C1_Trial1_G_35
-35|Char_Juno|Juno|C1_Trial1_G_36
-96|false
-65|WitnessCam|0.25|false
-64|WitnessCam|0.25|true
-35|Char_Gerald|GeraldNoCoat|C1_Trial1_G_37
-96|false
-69|Robert|Normal
-73|Robert|Normal
-65|ProsecutionCam|0.25|false
-64|ProsecutionCam|0.25|true
-35|Char_Robert|Robert|C1_Trial1_G_38
-35|Char_Robert|Robert|C1_Trial1_G_39
-35|Char_Robert|Robert|C1_Trial1_G_40
-35|Char_Robert|Robert|C1_Trial1_G_41
-96|false
-65|WitnessLeftCam|0.25|false
-64|WitnessLeftCam|0.25|true
-35|Char_Juno|Juno|C1_Trial1_G_42
-96|false
-65|ProsecutionCam|0.25|false
-64|ProsecutionCam|0.25|true
-35|Char_Robert|Robert|C1_Trial1_G_43
-35|Char_Robert|Robert|C1_Trial1_G_44
-96|false
-65|WitnessLeftCam|0.25|false
-64|WitnessLeftCam|0.25|true
-35|Char_Juno|Juno|C1_Trial1_G_45
-96|false
-66|Juno|0
-69|Judge|Normal
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_46
-65|ProsecutionCam
-64|ProsecutionCam
-35|Char_Robert|Robert|C1_Trial1_G_47
-35|Char_Robert|Robert|C1_Trial1_G_48
-69|RannCoat|Normal
-73|RannCoat|Neutral
-64|DefenseCam
-65|DefenseCam
-35|null|null|C1_Trial1_G_49
-35|null|null|C1_Trial1_G_50
-35|null|null|C1_Trial1_G_51
-35|null|null|C1_Trial1_G_52
-96|false
-62|1|1|1|1
-37|1|true
-66|Juno|1
-66|GeraldNoCoat|0
-74|Juno|WitnessSpot
-75|Juno|WitnessSpot
-65|WitnessCam
-64|WitnessCam
-37|0|false
-35|Char_Juno|Juno|C1_Trial1_G_53
-35|Char_Juno|Juno|C1_Trial1_G_54
-35|Char_Juno|Juno|C1_Trial1_G_55
-35|Char_Juno|Juno|C1_Trial1_G_56
-96|false
-67|RannCoat|HandsOnDesk|0.1
-67|Judge|Normal|0.1
-37|1|true
-66|Juno|0
-66|GeraldNoCoat|1
-74|Juno|LobbySpot
-75|Juno|LobbySpot
-64|DefenseCam
-65|DefenseCam
-37|0|false
-35|null|null|C1_Trial1_G_57
-35|null|null|C1_Trial1_G_58
-35|Char_Rann|RannCoat|C1_Trial1_G_59
-60|0.1|0.2
-69|Judge|Surprise
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_60
-35|Char_Judge|Judge|C1_Trial1_G_61
-64|DefenseCam
-65|DefenseCam
-35|Char_Rann|RannCoat|C1_Trial1_G_62
-65|ProsecutionCam
-64|ProsecutionCam
-35|Char_Robert|Robert|C1_Trial1_G_63
-69|Judge|Normal
-73|Judge|Normal
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_64
-69|Robert|Angry
-73|Robert|Angry
-65|ProsecutionCam
-64|ProsecutionCam
-35|Char_Robert|Robert|C1_Trial1_G_65
-64|JudgeCam
-65|JudgeCam
-35|Char_Judge|Judge|C1_Trial1_G_66
-35|Char_Judge|Judge|C1_Trial1_G_67
-65|ProsecutionCam
-64|ProsecutionCam
-35|Char_Robert|Robert|C1_Trial1_G_68
-62|0|0|0|1
-44|Question2
+9254189True2148True3180True4211True
+171
+20true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Testimony_1falsetrue
+101True9325025489148
+96false
+51Presstrue
+65DefenseCam0.25false
+64DefenseCam0.25true
+35Char_RannRannCoatC1_Trial_Testimony4_Press1_1
+96false
+67GeraldNoCoatNormal0.1
+69GeraldNoCoatNormal
+73GeraldNoCoatNormal
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press1_2
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press1_3
+64DefenseCam
+65DefenseCam
+35Char_RannnullC1_Trial_Testimony4_Press1_4
+96false
+69GeraldNoCoatNormal
+73GeraldNoCoatSerious
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press1_5
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press1_6
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press1_7
+67GeraldNoCoatOnBar0.1
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press1_8
+96false
+67RannCoatAngry0.1
+65DefenseCam0.25false
+64DefenseCam0.25true
+69GeraldNoCoatNormal
+73GeraldNoCoatSerious
+67GeraldNoCoatThinking0.1
+35Char_RannRannCoatC1_Trial_Testimony4_Press1_9
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial_Testimony4_Press1_10
+69JudgeThinking
+73JudgeNormal
+35Char_JudgeJudgeC1_Trial_Testimony4_Press1_11
+64DefenseCam
+65DefenseCam
+35Char_RannnullC1_Trial_Testimony4_Press1_12
+96false
+371true
+67RannCoatNormal0.1
+69RannCoatNormal
+73RannCoatNeutral
+69JudgeNormal
+73JudgeNormal
+65WitnessCam
+64WitnessCam
+370false
+172
+4288
+172
+20true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Testimony_2falsetrue
+102True15225025489180
+96false
+51Presstrue
+65DefenseCam0.25false
+64DefenseCam0.25true
+35Char_RannRannCoatC1_Trial_Testimony4_Press2_1
+96false
+67GeraldNoCoatNormal0.1
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press2_2
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press2_3
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial_Testimony4_Press2_4
+64DefenseCam
+65DefenseCam
+35Char_RannnullC1_Trial_Testimony4_Press2_5
+96false
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press2_6
+96false
+371true
+67GeraldNoCoatThinking0.1
+1040.15
+370false
+173
+4288
+173
+20true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Testimony_3falsetrue
+103True184250254148211
+96false
+51Presstrue
+65DefenseCam0.25false
+64DefenseCam0.25true
+35Char_RannRannCoatC1_Trial_Testimony4_Press3_1
+96false
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press3_2
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press3_3
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press3_4
+69JudgeThinking
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial_Testimony4_Press3_5
+35Char_JudgeJudgeC1_Trial_Testimony4_Press3_6
+69JudgeNormal
+73JudgeNormal
+35Char_JudgeJudgeC1_Trial_Testimony4_Press3_7
+96false
+371true
+65WitnessCam
+64WitnessCam
+370false
+174
+4288
+174
+20true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Testimony_4falsetrue
+104True215250254180231
+96false
+51Presstrue
+65DefenseCam0.25false
+64DefenseCam0.25true
+35Char_RannRannCoatC1_Trial_Testimony4_Press4_1
+96false
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press4_2
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press4_3
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press4_4
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony4_Press4_5
+96false
+371true
+370false
+42231
+171
+20false
+32541234
+96false
+67RannCoatThinking0.1
+371true
+64DefenseCam
+65DefenseCam
+370false
+35nullnullC1_Trial_Testimony4_Loop_1
+35nullnullC1_Trial_Testimony4_Loop_2
+35nullnullC1_Trial_Testimony4_Loop_3
+35nullnullC1_Trial_Testimony4_Loop_4
+371true
+67RannCoatNormal0.1
+65WitnessCam
+64WitnessCam
+370false
+4288
+171
+20false
+44../Common/ExaminationFail
+4288
+67RannCoatAngry0.1
+96false
+64HammerCam
+65HammerCam
+67JudgeStrike
+1041
+67JudgeHoldingHammer
+65JudgeCam
+64JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_1
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial1_G_2
+35nullnullC1_Trial1_G_3
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_4
+35Char_JudgeJudgeC1_Trial1_G_5
+35Char_JudgeJudgeC1_Trial1_G_6
+69RannCoatNormal
+73RannCoatSad
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial1_G_7
+35nullnullC1_Trial1_G_8
+67JudgeReadingBook
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_9
+69RannCoatNormal
+73RannCoatOops
+67RannCoatStress0.1
+69JudgeHappy
+73JudgeNormal
+35Char_JudgeJudgeC1_Trial1_G_10
+35Char_JudgeJudgeC1_Trial1_G_11
+64DefenseCam
+65DefenseCam
+67JudgeHoldingHammer0.1
+35Char_RannRannCoatC1_Trial1_G_12
+35Char_RannRannCoatC1_Trial1_G_13
+96false
+65ProsecutionCam0.25false
+64ProsecutionCam0.25true
+35Char_RobertRobertC1_Trial1_G_14
+67RannCoatAngry0.1
+69RannCoatSurprise
+73RannCoatSurprise
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_15
+35Char_JudgeJudgeC1_Trial1_G_16
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial1_G_17
+69JudgeNormal
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_18
+96false
+51Guiltytrue
+35Char_JudgeJudgeC1_Trial1_G_19
+35Char_JudgeJudgeC1_Trial1_G_20
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertRobertC1_Trial1_G_21
+66NovaKaliaSoldier0
+66Juno1
+74JunoWitnessLeftSpot
+75JunoWitnessLeftSpot
+69JunoSerious
+73JunoSerious
+67JunoNormal0.1
+96false
+65WitnessLeftCam0.25false
+64WitnessLeftCam0.25true
+35Char_JunoJunoC1_Trial1_G_22
+69JudgeSurprise
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_23
+35Char_JudgeJudgeC1_Trial1_G_24
+35Char_JudgeJudgeC1_Trial1_G_25
+69JudgeHappy
+73JudgeNormal
+35Char_JudgeJudgeC1_Trial1_G_26
+65WitnessLeftCam
+64WitnessLeftCam
+35Char_JunoJunoC1_Trial1_G_27
+96false
+69RobertThinking
+73RobertNormal
+65ProsecutionCam0.25false
+64ProsecutionCam0.25true
+35Char_RobertRobertC1_Trial1_G_28
+35Char_RobertRobertC1_Trial1_G_29
+35Char_RobertRobertC1_Trial1_G_30
+65WitnessLeftCam
+64WitnessLeftCam
+35Char_JunoJunoC1_Trial1_G_31
+96false
+600.10.2
+69GeraldNoCoatSurprise
+73GeraldNoCoatSerious
+67GeraldNoCoatSurprise0.1
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial1_G_32
+35Char_GeraldGeraldNoCoatC1_Trial1_G_33
+35Char_GeraldGeraldNoCoatC1_Trial1_G_34
+96false
+65WitnessLeftCam0.25false
+64WitnessLeftCam0.25true
+35Char_JunoJunoC1_Trial1_G_35
+35Char_JunoJunoC1_Trial1_G_36
+96false
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial1_G_37
+96false
+69RobertNormal
+73RobertNormal
+65ProsecutionCam0.25false
+64ProsecutionCam0.25true
+35Char_RobertRobertC1_Trial1_G_38
+35Char_RobertRobertC1_Trial1_G_39
+35Char_RobertRobertC1_Trial1_G_40
+35Char_RobertRobertC1_Trial1_G_41
+96false
+65WitnessLeftCam0.25false
+64WitnessLeftCam0.25true
+35Char_JunoJunoC1_Trial1_G_42
+96false
+65ProsecutionCam0.25false
+64ProsecutionCam0.25true
+35Char_RobertRobertC1_Trial1_G_43
+35Char_RobertRobertC1_Trial1_G_44
+96false
+65WitnessLeftCam0.25false
+64WitnessLeftCam0.25true
+35Char_JunoJunoC1_Trial1_G_45
+96false
+66Juno0
+69JudgeNormal
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_46
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertRobertC1_Trial1_G_47
+35Char_RobertRobertC1_Trial1_G_48
+69RannCoatNormal
+73RannCoatNeutral
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial1_G_49
+35nullnullC1_Trial1_G_50
+35nullnullC1_Trial1_G_51
+35nullnullC1_Trial1_G_52
+96false
+621111
+371true
+66Juno1
+66GeraldNoCoat0
+74JunoWitnessSpot
+75JunoWitnessSpot
+65WitnessCam
+64WitnessCam
+370false
+35Char_JunoJunoC1_Trial1_G_53
+35Char_JunoJunoC1_Trial1_G_54
+35Char_JunoJunoC1_Trial1_G_55
+35Char_JunoJunoC1_Trial1_G_56
+96false
+67RannCoatHandsOnDesk0.1
+67JudgeNormal0.1
+371true
+66Juno0
+66GeraldNoCoat1
+74JunoLobbySpot
+75JunoLobbySpot
+64DefenseCam
+65DefenseCam
+370false
+35nullnullC1_Trial1_G_57
+35nullnullC1_Trial1_G_58
+35Char_RannRannCoatC1_Trial1_G_59
+600.10.2
+69JudgeSurprise
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_60
+35Char_JudgeJudgeC1_Trial1_G_61
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial1_G_62
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertRobertC1_Trial1_G_63
+69JudgeNormal
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_64
+69RobertAngry
+73RobertAngry
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertRobertC1_Trial1_G_65
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_G_66
+35Char_JudgeJudgeC1_Trial1_G_67
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertRobertC1_Trial1_G_68
+620001
+44Question2

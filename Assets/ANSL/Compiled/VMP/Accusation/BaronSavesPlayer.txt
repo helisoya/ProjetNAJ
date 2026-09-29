@@ -1,35 +1,35 @@
 #7F22C958921FF5BC1FD053862D2B1EBF-718EFDC1B0E65B9E044C1FE0A1A72EB5
-66|Rival|0|0.5|true
-66|Baron|1|0.5|false
-35|null|null|Scene_End_BaronRival_1
-35|Char_Baron|null|Scene_End_BaronRival_2
-35|Char_Baron|null|Scene_End_BaronRival_3
-35|Char_Baron|null|Scene_End_BaronRival_4
-35|Char_Baron|null|Scene_End_BaronRival_5
-66|Baron|0|0.5|true
-66|Chasseur|1|0.5|false
-35|Char_Chasseur|null|Scene_End_BaronRival_6
-66|Chasseur|0|0.5|true
-66|Rival|1|0.5|false
-40|13|32|ConfrontedChasseurSecret == 2
-35|null|null|Scene_End_BaronRival_7
-27|0|Choice_BetrayHunter|15|null|null|null|Choice_StaySilent|30|null|null|null
-102|ValueHunter|-|3
-35|Char_LoupGarou|null|Scene_End_AccusationChasseur2_1
-35|Char_LoupGarou|null|Scene_End_AccusationChasseur2_2
-66|Rival|0|0.5|true
-66|Chasseur|1|0.5|false
-35|Char_Chasseur|null|Scene_End_AccusationChasseur2_3
-35|Char_Chasseur|null|Scene_End_AccusationChasseur2_4
-35|Char_Chasseur|null|Scene_End_AccusationChasseur2_5
-40|24|26|FilsWeirdQuest == 3
-44|FilsAttackChasseur
-42|28
-44|BaronSavesFils
-42|28
+66Rival00.5true
+66Baron10.5false
+35nullnullScene_End_BaronRival_1
+35Char_BaronnullScene_End_BaronRival_2
+35Char_BaronnullScene_End_BaronRival_3
+35Char_BaronnullScene_End_BaronRival_4
+35Char_BaronnullScene_End_BaronRival_5
+66Baron00.5true
+66Chasseur10.5false
+35Char_ChasseurnullScene_End_BaronRival_6
+66Chasseur00.5true
+66Rival10.5false
+401332ConfrontedChasseurSecret == 2
+35nullnullScene_End_BaronRival_7
+270Choice_BetrayHunter15nullnullnullChoice_StaySilent30nullnullnull
+102ValueHunter-3
+35Char_LoupGarounullScene_End_AccusationChasseur2_1
+35Char_LoupGarounullScene_End_AccusationChasseur2_2
+66Rival00.5true
+66Chasseur10.5false
+35Char_ChasseurnullScene_End_AccusationChasseur2_3
+35Char_ChasseurnullScene_End_AccusationChasseur2_4
+35Char_ChasseurnullScene_End_AccusationChasseur2_5
+402426FilsWeirdQuest == 3
+44FilsAttackChasseur
+4228
+44BaronSavesFils
+4228
 59
-42|31
-42|31
-42|33
-42|33
-44|/VMP/Endings/RivalDead
+4231
+4231
+4233
+4233
+44/VMP/Endings/RivalDead

@@ -291,15 +291,23 @@ namespace ANF.ANSL
             // Choice
             // ID TYPE [CHOICE_ID NEXT_LINE IF_CONTENT SPRITE_NAME SPRITE_SHEET]
 
-            string compiledChoiceLine = $"{id}|{choiceType.ToString()}";
+            string compiledChoiceLine = $"{id}{ANSLUtils.COMPILED_DELIMITER}{choiceType.ToString()}";
             for (int i = 0; i < compiledParts.Count; i++)
             {
-                compiledChoiceLine += $"|{buttonKey[i]}|{starts[i]}|{buttonIf[i]}|{buttonSprite[i]}|{buttonSpriteSheet[i]}";
+                compiledChoiceLine += $"{ANSLUtils.COMPILED_DELIMITER}{buttonKey[i]}" +
+                ANSLUtils.COMPILED_DELIMITER +
+                $"{starts[i]}" +
+                ANSLUtils.COMPILED_DELIMITER +
+                $"{buttonIf[i]}" +
+                ANSLUtils.COMPILED_DELIMITER +
+                $"{buttonSprite[i]}" +
+                ANSLUtils.COMPILED_DELIMITER +
+                $"{buttonSpriteSheet[i]}";
 
                 compiledLines.AddRange(compiledParts[i]);
 
                 uint jumpToFunctionId = compiler.GetRegisteredFunctionId<JumpToFunction>();
-                compiledLines.Add($"{jumpToFunctionId}|{startIdx}");
+                compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{startIdx}");
             }
 
             compiledLines.Insert(0, compiledChoiceLine);

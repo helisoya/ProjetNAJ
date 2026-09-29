@@ -1,19 +1,19 @@
 #B627AE31954E5A0FAFBBE3AA5C7FAA51-718EFDC1B0E65B9E044C1FE0A1A72EB5
-35|Char_Rival|null|Talk_Rival_Verre_1
-35|Char_LoupGarou|null|Talk_Rival_Verre_1
-35|Char_Rival|null|Talk_Rival_Verre_3
-27|0|Choice_IAmLoyalToYou|4|null|null|null|Choice_IAmLoyalToHer|11|null|null|null
-35|Char_LoupGarou|null|Talk_Rival_Alliance_1
-35|Char_LoupGarou|null|Talk_Rival_Alliance_2
-35|Char_LoupGarou|null|Talk_Rival_Alliance_3
-35|Char_Rival|null|Talk_Rival_Alliance_4
-102|RivalReactionToDrinkQuest|=|2
-102|ValueRival|+|3
-42|18
-35|Char_LoupGarou|null|Talk_Rival_Alliance_1
-35|Char_LoupGarou|null|Talk_Rival_Alliance_2
-35|Char_Rival|null|Talk_Rival_Alliance_3
-35|Char_Rival|null|Talk_Rival_Alliance_4
-102|RivalReactionToDrinkQuest|=|1
-102|ValueRival|-|2
-42|18
+35Char_RivalnullTalk_Rival_Verre_1
+35Char_LoupGarounullTalk_Rival_Verre_1
+35Char_RivalnullTalk_Rival_Verre_3
+270Choice_IAmLoyalToYou4nullnullnullChoice_IAmLoyalToHer11nullnullnull
+35Char_LoupGarounullTalk_Rival_Alliance_1
+35Char_LoupGarounullTalk_Rival_Alliance_2
+35Char_LoupGarounullTalk_Rival_Alliance_3
+35Char_RivalnullTalk_Rival_Alliance_4
+102RivalReactionToDrinkQuest=2
+102ValueRival+3
+4218
+35Char_LoupGarounullTalk_Rival_Alliance_1
+35Char_LoupGarounullTalk_Rival_Alliance_2
+35Char_RivalnullTalk_Rival_Alliance_3
+35Char_RivalnullTalk_Rival_Alliance_4
+102RivalReactionToDrinkQuest=1
+102ValueRival-2
+4218

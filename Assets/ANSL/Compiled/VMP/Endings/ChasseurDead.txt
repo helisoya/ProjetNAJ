@@ -1,36 +1,36 @@
 #0FFD29900211A0B6E8B7B1DE011EAAB3-718EFDC1B0E65B9E044C1FE0A1A72EB5
-66|Fils|0|0.5|true
-66|Chasseur|1|0.5|false
-35|Char_Chasseur|null|Scene_End_Confession_1
-35|Char_Chasseur|null|Scene_End_Confession_2
-35|Char_Chasseur|null|Scene_End_Confession_3
-35|Char_Chasseur|null|Scene_End_Confession_4
-35|null|null|Scene_End_Confession_5
-35|Char_Chasseur|null|Scene_End_Confession_6
-35|Char_Chasseur|null|Scene_End_Confession_7
-35|Char_Chasseur|null|Scene_End_Confession_8
-35|Char_Chasseur|null|Scene_End_Confession_9
-35|Char_Chasseur|null|Scene_End_Confession_10
-35|Char_Chasseur|null|Scene_End_Confession_11
-35|Char_Chasseur|null|Scene_End_Confession_12
-35|Char_Chasseur|null|Scene_End_Confession_13
-35|Char_Chasseur|null|Scene_End_Confession_14
-35|Char_Chasseur|null|Scene_End_Confession_15
-35|Char_Chasseur|null|Scene_End_Confession_16
-35|Char_Chasseur|null|Scene_End_Confession_17
-35|Char_Chasseur|null|Scene_End_Confession_18
-35|Char_Chasseur|null|Scene_End_Confession_19
-35|Char_Chasseur|null|Scene_End_Confession_20
-35|Char_Chasseur|null|Scene_End_Confession_21
-35|Char_Chasseur|null|Scene_End_Confession_22
-35|Char_Chasseur|null|Scene_End_Confession_23
-37|1|true
-35|null|null|Endings_Guilty_Chasseur_1
-35|null|null|Endings_Guilty_Chasseur_2
-35|null|null|Endings_Guilty_Chasseur_3
-35|null|null|Endings_Guilty_Chasseur_4
-35|null|null|Endings_Guilty_Chasseur_5
-35|null|null|Endings_Guilty_Chasseur_6
-35|null|null|Endings_Guilty_Chasseur_7
-35|null|null|Endings_Guilty_Chasseur_8
-26|VMPMainMenu
+66Fils00.5true
+66Chasseur10.5false
+35Char_ChasseurnullScene_End_Confession_1
+35Char_ChasseurnullScene_End_Confession_2
+35Char_ChasseurnullScene_End_Confession_3
+35Char_ChasseurnullScene_End_Confession_4
+35nullnullScene_End_Confession_5
+35Char_ChasseurnullScene_End_Confession_6
+35Char_ChasseurnullScene_End_Confession_7
+35Char_ChasseurnullScene_End_Confession_8
+35Char_ChasseurnullScene_End_Confession_9
+35Char_ChasseurnullScene_End_Confession_10
+35Char_ChasseurnullScene_End_Confession_11
+35Char_ChasseurnullScene_End_Confession_12
+35Char_ChasseurnullScene_End_Confession_13
+35Char_ChasseurnullScene_End_Confession_14
+35Char_ChasseurnullScene_End_Confession_15
+35Char_ChasseurnullScene_End_Confession_16
+35Char_ChasseurnullScene_End_Confession_17
+35Char_ChasseurnullScene_End_Confession_18
+35Char_ChasseurnullScene_End_Confession_19
+35Char_ChasseurnullScene_End_Confession_20
+35Char_ChasseurnullScene_End_Confession_21
+35Char_ChasseurnullScene_End_Confession_22
+35Char_ChasseurnullScene_End_Confession_23
+371true
+35nullnullEndings_Guilty_Chasseur_1
+35nullnullEndings_Guilty_Chasseur_2
+35nullnullEndings_Guilty_Chasseur_3
+35nullnullEndings_Guilty_Chasseur_4
+35nullnullEndings_Guilty_Chasseur_5
+35nullnullEndings_Guilty_Chasseur_6
+35nullnullEndings_Guilty_Chasseur_7
+35nullnullEndings_Guilty_Chasseur_8
+26VMPMainMenu

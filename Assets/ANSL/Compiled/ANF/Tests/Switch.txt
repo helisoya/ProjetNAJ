@@ -1,16 +1,16 @@
 #035F3D617DD6BB826C0FB28283F170A2-718EFDC1B0E65B9E044C1FE0A1A72EB5
-88|TestSwitch
-99|random|4|0|2|8|6|1|8|5|13
-45|Log|Is at 0
-42|15
-45|Log|Default
-42|15
-45|Log|Is 8
-42|15
-40|9|11|random == 1
-45|Error|Is at 1
-42|12
-42|12
-42|15
-45|Log|Is at 5
-42|15
+88TestSwitch
+99random4028618513
+45LogIs at 0
+4215
+45LogDefault
+4215
+45LogIs 8
+4215
+40911random == 1
+45ErrorIs at 1
+4212
+4212
+4215
+45LogIs at 5
+4215

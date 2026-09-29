@@ -87,9 +87,9 @@ namespace ANF.ANSL
                 return false;
             }
 
-            compiledLines.Add($"{id}|false");
+            compiledLines.Add($"{id}{ANSLUtils.COMPILED_DELIMITER}false");
             compiledLines.AddRange(compiledBetween);
-            compiledLines.Add($"{id}|true");
+            compiledLines.Add($"{id}{ANSLUtils.COMPILED_DELIMITER}true");
 
             return true;
         }

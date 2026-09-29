@@ -246,14 +246,14 @@ namespace ANF.ANSL
 
             uint jumpToFunctionId = compiler.GetRegisteredFunctionId<JumpToFunction>();
 
-            string compiledSwitchLine = $"{id}|{variable}|{startDefault}";
+            string compiledSwitchLine = $"{id}{ANSLUtils.COMPILED_DELIMITER}{variable}{ANSLUtils.COMPILED_DELIMITER}{startDefault}";
             for (int i = 0; i < compiledParts.Count; i++)
             {
                 if (variables[i] != int.MinValue)
-                    compiledSwitchLine += $"|{variables[i]}|{starts[i]}";
+                    compiledSwitchLine += $"{ANSLUtils.COMPILED_DELIMITER}{variables[i]}{ANSLUtils.COMPILED_DELIMITER}{starts[i]}";
 
                 compiledLines.AddRange(compiledParts[i]);
-                compiledLines.Add($"{jumpToFunctionId}|{startIdx}");
+                compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{startIdx}");
             }
 
             compiledLines.Insert(0, compiledSwitchLine);
