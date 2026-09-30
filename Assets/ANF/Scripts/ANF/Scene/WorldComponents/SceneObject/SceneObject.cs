@@ -18,7 +18,7 @@ namespace ANF.Scene
         protected LerpInstanceVector3 lerpScale;
         protected LerpInstanceFloat lerpAlpha;
         protected bool skipModeEnabled;
-        private float currentAlpha;
+        private float currentAlpha = 1.0f;
         private bool hidden = false;
 
         public bool Hidden
@@ -69,7 +69,6 @@ namespace ANF.Scene
 		/// <param name="manager">The ANFManager</param>
         public void Create(ANFManager manager)
         {
-            currentAlpha = 1.0f;
             if (linkedInteraction != null && manager.GetWorld().GetComponent<InteractionMode>(out InteractionMode interactionMode))
             {
                 interactionMode.Register(linkedInteraction);

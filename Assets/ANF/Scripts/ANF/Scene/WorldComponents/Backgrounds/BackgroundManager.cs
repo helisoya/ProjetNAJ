@@ -298,7 +298,11 @@ namespace ANF.Scene
                 asyncWaitForNextFrames = loadingBackground ? ASYNC_FRAME_WAIT : 0;
 
                 if (!loadingBackground)
+                {
+                    Debug.LogError("Unload bug");
                     EndBackgroundLoading();
+                }
+
             }
         }
 
@@ -508,7 +512,6 @@ namespace ANF.Scene
                     asyncWaitForNextFrames--;
                     return;
                 }
-
                 EndBackgroundLoading();
             }
 
@@ -655,8 +658,12 @@ namespace ANF.Scene
                 return true;
             }
 
-            if (updateComponent)
+            if (updateComponent && asyncWaitForNextFrames != -42)
+            {
+                asyncWaitForNextFrames = -42;
                 EndBackgroundLoading();
+            }
+
 
             return false;
         }

@@ -18,6 +18,7 @@ dialog(Char_Baron;null;Scene_Theft_1)
 dialog(Char_Baron;null;Scene_Theft_2)
 dialog(null;null;Scene_Theft_3)
 
+playMusic(Cycle)
 setCharacterBody(Baron;Angry)
 dialog(Char_Baron;null;Scene_Theft_4)
 dialog(Char_Baron;null;Scene_Theft_5)

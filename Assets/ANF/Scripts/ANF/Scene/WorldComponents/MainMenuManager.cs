@@ -23,6 +23,8 @@ namespace ANF.Scene
         [SerializeField] private string defaultBackground = "";
         [SerializeField] private string defaultWeather = "";
         [SerializeField] private string defaultSkybox = "";
+        [SerializeField] private string music = "";
+        [SerializeField] private string ambient = "";
         [SerializeField] private MainMenuBackgroundType backgroundType = MainMenuBackgroundType.UseAutosave;
 
         private bool waitingForBackgroundLoad = false;
@@ -39,7 +41,9 @@ namespace ANF.Scene
                 canBeSaved = canBeSaved,
                 enabledByDefault = enabledByDefault,
                 defaultBackground = defaultBackground,
-                backgroundType = backgroundType
+                backgroundType = backgroundType,
+                ambient = ambient,
+                music = music
             };
         }
 
@@ -54,6 +58,12 @@ namespace ANF.Scene
             if (manager.GetGUIManager().GetComponent(out fade))
             {
                 fade.FadeAlphaTo(1, true);
+            }
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent(out AudioManager audioManager))
+            {
+                audioManager.PlayAmbient(string.IsNullOrEmpty(ambient) ? null : ambient, 1);
+                audioManager.PlayMusic(string.IsNullOrEmpty(music) ? null : music, 1);
             }
 
             if (manager.GetWorld().GetComponent(out backgroundManager))

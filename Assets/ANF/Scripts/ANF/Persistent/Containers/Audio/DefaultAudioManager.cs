@@ -146,6 +146,7 @@ namespace ANF.Persistent
                 obj.transform.SetParent(sfxSource.transform);
                 AudioSource source = obj.AddComponent<AudioSource>();
                 source.clip = clip;
+                source.outputAudioMixerGroup = mixer.FindMatchingGroups("Ambient")[0];
 
                 musics.Add(new DefaultAudioSong(source, ambientName, baseVolume));
             }
@@ -170,6 +171,7 @@ namespace ANF.Persistent
                 obj.transform.SetParent(sfxSource.transform);
                 AudioSource source = obj.AddComponent<AudioSource>();
                 source.clip = clip;
+                source.outputAudioMixerGroup = mixer.FindMatchingGroups("BGM")[0];
 
                 musics.Add(new DefaultAudioSong(source, musicName, baseVolume));
             }

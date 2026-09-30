@@ -1,4 +1,4 @@
-#FF6805D6FD9EC553A354ECF5EDDAB944-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#13DC2EB64EC797340C5972AF3074EB67-718EFDC1B0E65B9E044C1FE0A1A72EB5
 391true
 55
 61Room1
@@ -11,6 +11,7 @@
 67FilsAngry
 67RivalAngry
 67HumainSad
+49Accusation
 390false
 88Location_VMP_Accusation
 24
@@ -29,7 +30,7 @@
 35Char_BaronnullScene_End_Intro_9
 66Baron00.5true
 66Rival10.5false
-403152RivalReactionToDrinkQuest == 2
+403253RivalReactionToDrinkQuest == 2
 35Char_RivalnullScene_End_RivalBaron_1
 35Char_RivalnullScene_End_RivalBaron_2
 35Char_RivalnullScene_End_RivalBaron_3
@@ -50,7 +51,7 @@
 35Char_RivalnullScene_End_RivalBaron_14
 35nullnullScene_End_RivalBaron_15
 44PlayerSecretChoice
-4266
+4267
 35Char_RivalnullScene_End_RivalHunter_1
 35Char_RivalnullScene_End_RivalHunter_2
 35Char_RivalnullScene_End_RivalHunter_3
@@ -64,4 +65,4 @@
 35Char_ChasseurnullScene_End_HunterHuman1_3
 35Char_ChasseurnullScene_End_HunterHuman1_4
 44FilsProtectHumain
-4266
+4267

@@ -1,3 +1,4 @@
+playMusic(Intro)
 setLocals(vmp_test)
 
 setLocation(Location_VMP_Intro)

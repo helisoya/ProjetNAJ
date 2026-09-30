@@ -18,6 +18,8 @@ setCharacterBody(Fils;Angry)
 setCharacterBody(Rival;Angry)
 setCharacterBody(Humain;Sad)
 
+playMusic(Accusation)
+
 fadeFg(0;false)
 
 setLocation(Location_VMP_Accusation)

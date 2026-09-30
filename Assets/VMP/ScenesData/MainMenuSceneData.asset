@@ -53,4 +53,6 @@ MonoBehaviour:
         defaultBackground: Room1
         defaultWeather: 
         defaultSkybox: Day
+        music: Intro
+        ambient: 
         backgroundType: 1

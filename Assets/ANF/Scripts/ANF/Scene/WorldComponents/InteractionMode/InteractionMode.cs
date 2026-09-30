@@ -28,6 +28,8 @@ namespace ANF.Scene
     [System.Serializable]
     public class InteractionMode : WorldComponent
     {
+        private const int LOAD_CACHE_FRAME_LIFE = 2;
+
         [Header("Infos")]
         [SerializeField] private LayerMask interactablesMask;
         [SerializeField] private string[] guiComponentsToDisable;
@@ -59,6 +61,7 @@ namespace ANF.Scene
         private bool keyboardMode = true;
 
         private JSON loadedDataCache = null;
+        private int currentLoadCacheFrameLife = 0;
 
         public bool inInteractionMode { get; private set; } = false;
         public string selectedScript { get; private set; } = null;
@@ -195,9 +198,6 @@ namespace ANF.Scene
                 if (manager.GetGUIManager().GetComponent<GUIComponent>(guiComponent, out GUIComponent component))
                     component.SetEnabled(false);
             }
-
-            RestoreFromCache();
-            loadedDataCache = null;
 
             canTryMouseClick = false;
 
@@ -607,21 +607,45 @@ namespace ANF.Scene
 
         public override bool IsLoadingOrCleaningUp(bool updateComponent)
         {
-            return false;
-        }
-
-        /// <summary>
-        /// Try to restore all interactable objects from the loaded data cache
-        /// </summary>
-        private void RestoreFromCache()
-        {
-            foreach (InteractableObject obj in registeredObjects.Values)
+            // Keeping the load cache intact until background & character/statics manager are loaded
+            // It is destroyed after X frames (2 by default)
+            if (loadedDataCache != null)
             {
-                RestoreFromCache(obj);
+                if (manager.GetWorld().GetComponent(out BackgroundManager backgroundManager))
+                {
+                    if (backgroundManager.IsLoadingOrCleaningUp(false))
+                        return true;
+                }
 
-                if (loadedDataCache == null)
-                    return;
+                if (manager.GetWorld().GetComponent(out CharacterManager characterManager))
+                {
+                    if (characterManager.IsLoadingOrCleaningUp(false))
+                        return true;
+                }
+
+                if (manager.GetWorld().GetComponent(out StaticObjectManager staticObjectManager))
+                {
+                    if (staticObjectManager.IsLoadingOrCleaningUp(false))
+                        return true;
+                }
+
+                if (updateComponent)
+                    currentLoadCacheFrameLife--;
+
+                if (currentLoadCacheFrameLife <= 0)
+                {
+                    if (updateComponent)
+                    {
+                        if (loadedDataCache.Count > 0)
+                            Debug.LogWarning($"Interaction Cache deleted with still {loadedDataCache.Count} cached objects");
+                        loadedDataCache = null;
+                    }
+                    return false;
+                }
+                return true;
             }
+
+            return false;
         }
 
         /// <summary>
@@ -642,9 +666,6 @@ namespace ANF.Scene
                     obj.SetNextScript(objJSON.GetString("script"));
 
                 loadedDataCache.Remove(obj.GetID());
-
-                if (loadedDataCache.Count == 0)
-                    loadedDataCache = null;
             }
         }
 
@@ -670,9 +691,20 @@ namespace ANF.Scene
 
         public override bool OnLoad(JSON json)
         {
+            loadedDataCache = null;
             if (json.ContainsKey("registeredObjects"))
             {
                 loadedDataCache = new JSON(json.GetJSON("registeredObjects").AsDictionary());
+
+                foreach (InteractableObject obj in registeredObjects.Values)
+                {
+                    RestoreFromCache(obj);
+                }
+
+                if (loadedDataCache.Count == 0)
+                    loadedDataCache = null;
+                else
+                    currentLoadCacheFrameLife = LOAD_CACHE_FRAME_LIFE;
             }
 
             if (json.ContainsKey("inInteractionMode"))
@@ -681,7 +713,7 @@ namespace ANF.Scene
                 reloadInteractionMode = true;
             }
 
-            return true;
+            return loadedDataCache == null;
         }
     }
 }
