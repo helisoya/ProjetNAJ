@@ -86,6 +86,7 @@ else
 	setCharacterAlpha(Fils;0;0.5;true)
 	setCharacterPosition(Fils;FilsSpot)
 	setCharacterRotation(Fils;FilsSpot)
+	setCharacterBody(Fils;Normal)
 	setCharacterAlpha(Fils;1;0.5;false)
 
 endif

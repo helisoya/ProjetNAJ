@@ -84,6 +84,7 @@ else
 	setCharacterAlpha(Baron;0;0.5;true)
 	setCharacterPosition(Baron;BaronSpot)
 	setCharacterRotation(Baron;BaronSpot)
+	setCharacterBody(Baron;Normal)
 	setCharacterAlpha(Baron;1;0.5;false)
 
 endif

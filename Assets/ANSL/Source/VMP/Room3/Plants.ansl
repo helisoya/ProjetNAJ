@@ -1,12 +1,21 @@
-if(CycleCount >= 2 && FilsMirrorQuest == 0)
-	dialog(null;null;Watch_Plants_Mirror_1)
-	dialog(null;null;Watch_Plants_Mirror_2)
+if(LookCounter > 0)
+	if(CycleCount >= 2 && FilsMirrorQuest == 0)
+		dialog(null;null;Watch_Plants_Mirror_1)
+		dialog(null;null;Watch_Plants_Mirror_2)
 
-	variable(FilsMirrorQuest;=;1)
-	setStaticAlpha(Mirror;0;0.5;true)
-	removeStatic(Mirror)
+		variable(FilsMirrorQuest;=;1)
+		setStaticAlpha(Mirror;0;0.5;true)
+		removeStatic(Mirror)
+	else
+		dialog(null;null;Watch_Plants_1)
+	endif
+
+	variable(LookCounter;-;1)
+	load(/VMP/Common/PrintLookCounter)
 else
-	dialog(null;null;Watch_Plants_1)
+	dialog(null;null;Counter_Look_0)
 endif
+
+load(/VMP/Common/CycleCheck)
 
 load(Interaction)

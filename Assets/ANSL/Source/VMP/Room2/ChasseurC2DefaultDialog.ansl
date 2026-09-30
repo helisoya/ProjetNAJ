@@ -1,4 +1,5 @@
 if(ConfrontedChasseurSecret == 2)
+	setCharacterBody(Chasseur;Normal)
 	dialog(Char_Chasseur;null;Talk_Chasseur_Secret_Reminder_1)
 	dialog(Char_Chasseur;null;Talk_Chasseur_Secret_Reminder_2)
 else

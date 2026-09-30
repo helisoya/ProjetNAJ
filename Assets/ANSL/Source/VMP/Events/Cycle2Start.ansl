@@ -7,6 +7,8 @@ setBackground(Room1)
 addCharacter(Baron;true;Front)
 addCharacter(Rival;false;Front)
 addCharacter(Boris;true;Front)
+setCharacterBody(Rival;Angry)
+setCharacterBody(Baron;Angry)
 
 fadeFg(0;false)
 
@@ -25,6 +27,7 @@ dialog(Char_Baron;null;Scene_NoTime_6)
 setCharacterAlpha(Baron;0;0.5;true)
 setCharacterPosition(Baron;BaronSpot)
 setCharacterRotation(Baron;BaronSpot)
+setCharacterBody(Baron;Normal)
 setCharacterAlpha(Baron;1;0.5;false)
 
 variable(CycleCount;=;2)

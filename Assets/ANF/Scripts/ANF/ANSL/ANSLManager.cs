@@ -200,7 +200,7 @@ namespace ANF.ANSL
             return true;
         }
 
-        public override bool IsLoadingOrCleaningUp()
+        public override bool IsLoadingOrCleaningUp(bool updateComponent)
         {
             return false;
         }

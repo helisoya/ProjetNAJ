@@ -100,6 +100,11 @@ namespace ANF.Scene
         public override void OnInitialize()
         {
             cameraTransform = Camera.main.transform;
+            if (cameraTransform)
+            {
+                currentPosition = cameraTransform.position;
+                currentRotation = cameraTransform.eulerAngles;
+            }
         }
 
         public override void OnStart()
@@ -296,7 +301,7 @@ namespace ANF.Scene
             return true;
         }
 
-        public override bool IsLoadingOrCleaningUp()
+        public override bool IsLoadingOrCleaningUp(bool updateComponent)
         {
             return false;
         }

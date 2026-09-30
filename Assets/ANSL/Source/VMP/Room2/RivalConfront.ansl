@@ -13,12 +13,14 @@ choice(List)
 	choice Choice_Fraud:
 		dialog(Char_LoupGarou;null;Talk_Rival_Nice_1)
 		dialog(Char_LoupGarou;null;Talk_Rival_Nice_2)
+		setCharacterBody(Rival;Angry)
 		dialog(Char_rival;null;Talk_Rival_Nice_3)
 		dialog(Char_LoupGarou;null;Talk_Rival_Nice_4)
 		variable(ValueRival;-;2)
 	choice Choice_ItsCool:
 		dialog(Char_LoupGarou;null;Talk_Rival_Confront_1)
 		dialog(Char_LoupGarou;null;Talk_Rival_Confront_2)
+		setCharacterBody(Rival;Happy)
 		dialog(Char_LoupGarou;null;Talk_Rival_Confront_3)
 		variable(ValueRival;+;2)
 endchoice

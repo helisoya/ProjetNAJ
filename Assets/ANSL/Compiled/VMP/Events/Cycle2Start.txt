@@ -1,10 +1,12 @@
-#97E884330D22657C4513A9DECD178B43-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#8636B78A7AADE33ADA787EE0CEB41AD1-718EFDC1B0E65B9E044C1FE0A1A72EB5
 391true
 55
 61Room1
 22BarontrueFront
 22RivalfalseFront
 22BoristrueFront
+67RivalAngry
+67BaronAngry
 390false
 35Char_RivalnullScene_NoTime_1
 35Char_RivalnullScene_NoTime_2
@@ -18,6 +20,7 @@
 66Baron00.5true
 74BaronBaronSpot
 75BaronBaronSpot
+67BaronNormal
 66Baron10.5false
 102CycleCount=2
 102LookCounter=1

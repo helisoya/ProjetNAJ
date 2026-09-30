@@ -7,10 +7,10 @@ namespace ANF.ANSL
     /// If the change is immediate, the script will be loaded instantly. If not, it will wait for the next Update
     /// </summary>
     [ANSLFunctionAttribute(
-        
+
         functionBody: "load",
         functionAutoComplete: new string[] { "load(Script)", "load(Script;StartIndex)" },
-        functionDesc: "Jump to is an internal function. It cannot be called from anywhere")]
+        functionDesc: "Loads a new ANSL script")]
     public class LoadScriptFunction : ANSLFunction
     {
         public override FunctionParameterType[][] GetParametersTemplates()

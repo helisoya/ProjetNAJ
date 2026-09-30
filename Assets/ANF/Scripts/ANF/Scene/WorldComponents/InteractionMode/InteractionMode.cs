@@ -605,7 +605,7 @@ namespace ANF.Scene
             return true;
         }
 
-        public override bool IsLoadingOrCleaningUp()
+        public override bool IsLoadingOrCleaningUp(bool updateComponent)
         {
             return false;
         }

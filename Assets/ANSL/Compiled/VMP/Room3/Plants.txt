@@ -1,11 +1,18 @@
-#6BF5EE701FC81F9533FA0FD89EF6802F-718EFDC1B0E65B9E044C1FE0A1A72EB5
-4017CycleCount >= 2 && FilsMirrorQuest == 0
+#F90FCED50A00C8FF03403E6AD449DDCE-718EFDC1B0E65B9E044C1FE0A1A72EB5
+40113LookCounter > 0
+4028CycleCount >= 2 && FilsMirrorQuest == 0
 35nullnullWatch_Plants_Mirror_1
 35nullnullWatch_Plants_Mirror_2
 102FilsMirrorQuest=1
 90Mirror00.5true
 58Mirror
-429
+4210
 35nullnullWatch_Plants_1
-429
+4210
+102LookCounter-1
+44/VMP/Common/PrintLookCounter
+4215
+35nullnullCounter_Look_0
+4215
+44/VMP/Common/CycleCheck
 44Interaction

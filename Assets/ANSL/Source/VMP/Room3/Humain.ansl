@@ -75,6 +75,7 @@ else
 	setCharacterAlpha(Humain;0;0.5;true)
 	setCharacterPosition(Humain;HumainSpot)
 	setCharacterRotation(Humain;HumainSpot)
+	setCharacterBody(Humain;Normal)
 	setCharacterAlpha(Humain;1;0.5;false)
 
 endif

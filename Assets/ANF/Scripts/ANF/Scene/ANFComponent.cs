@@ -75,8 +75,9 @@ namespace ANF.Scene
         /// <summary>
         /// Checks if the component is still cleaning up
         /// </summary>
+        /// <param name="updateComponent">True if the component should be updated.</params>
         /// <returns>True if still cleaning up</returns>
-        public abstract bool IsLoadingOrCleaningUp();
+        public abstract bool IsLoadingOrCleaningUp(bool updateComponent);
 
         /// <summary>
         /// Changes if the component is enabled or not

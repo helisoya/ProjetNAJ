@@ -1,3 +1,12 @@
-dialog(null;null;Watch_Tools_1)
+if(LookCounter > 0)
+	dialog(null;null;Watch_Tools_1)
+
+	variable(LookCounter;-;1)
+	load(/VMP/Common/PrintLookCounter)
+else
+	dialog(null;null;Counter_Look_0)
+endif
+
+load(/VMP/Common/CycleCheck)
 
 load(Interaction)

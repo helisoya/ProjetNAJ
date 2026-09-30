@@ -18,6 +18,7 @@ if(ValueHumain >= 1 || ValueFils >= 1)
 				dialog(null;null;Talk_Humain_Friend_Nice_8)
 				variable(ValueHumain;+;2)
 			choice Choice_ItsPrank:
+				setCharacterBody(Humain;Sad)
 				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Bad_1)
 				dialog(Char_LoupGarou;null;Talk_Humain_Friend_Bad_2)
 				dialog(Char_Humain;null;Talk_Humain_Friend_Bad_3)

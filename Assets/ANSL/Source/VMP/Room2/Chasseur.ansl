@@ -64,6 +64,7 @@ else
 	setCharacterAlpha(Chasseur;0;0.5;true)
 	setCharacterPosition(Chasseur;ChasseurSpot)
 	setCharacterRotation(Chasseur;ChasseurSpot)
+	setCharacterBody(Chasseur;Angry)
 	setCharacterAlpha(Chasseur;1;0.5;false)
 
 endif

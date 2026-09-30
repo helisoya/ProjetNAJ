@@ -1,4 +1,4 @@
-#12102FD7C231F68101BD74D5F7699F89-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#86740BA522FF21E70A8CD93EC27AA891-718EFDC1B0E65B9E044C1FE0A1A72EB5
 40150LookCounter > 0
 102LookCounter-1
 40312ConfrontedChasseurSecret == 2
@@ -12,28 +12,28 @@
 4211
 4213
 4213
-99BorisCounter48014117220323426529
+90BorisScene00.5true
+66Boris10.5false
+99BorisCounter46016119222325428531
 35nullnullWatch_Boris_1
 102BorisCounter+1
-4248
+4246
 35nullnullWatch_Boris_2
 102BorisCounter+1
-4248
+4246
 35nullnullWatch_Boris_3
 102BorisCounter+1
-4248
+4246
 35nullnullWatch_Boris_4
 102BorisCounter+1
-4248
+4246
 35nullnullWatch_Boris_5
 102BorisCounter+1
-4248
-403032ConfrontedChasseurSecret == 2
+4246
+403234ConfrontedChasseurSecret == 2
 59
-4233
-4233
-90BorisScene00.5true
-90Boris10.5false
+4235
+4235
 403637DrinkQuest == 2
 4245
 35Char_BorisnullTalk_Boris_Presentation_1
@@ -44,9 +44,9 @@
 35Char_BorisnullTalk_Boris_Presentation_6
 35Char_BorisnullTalk_Boris_Presentation_7
 4245
-90Boris00.5true
+4246
+66Boris00.5true
 90BorisScene10.5false
-4248
 44/VMP/Common/PrintLookCounter
 4252
 35nullnullCounter_Look_0

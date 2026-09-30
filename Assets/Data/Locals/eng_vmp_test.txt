@@ -4,7 +4,7 @@ Char_Baron = Hilda Minkhol
 Char_LoupGarou = Me
 Char_Rival = Sofia Yuminhof
 Char_Fils = Bernard Minkhol
-Char_Humain = Count Von GroBe-Fledermausland
+Char_Humain = Count Von Große-Fledermausland
 Char_OulOul = ???
 Char_Chasseur = Lady Poiana
 Char_Boris = ???
@@ -58,7 +58,7 @@ Counter_Look_4 = I have the time to look at 4 more things.
 Counter_Look_3 = I have the time to look at 3 more things.
 Counter_Look_2 = I have the time to look at 2 more things.
 Counter_Look_1 = I have the time to look at 1 more thing.
-Counter_Look_0 = I don't have to time to look at more things...
+Counter_Look_0 = I don't have the time to look at more things...
 
 Counter_Search_9 = I have the time to search 9 more guests.
 Counter_Search_8 = I have the time to search 8 more guests.
@@ -422,7 +422,7 @@ Scene_Intro_7 = Being a werewolf and all, this goes way over my head.
 Scene_Intro_8 = Oh, the party's about to start, let's see our guest list...
 Scene_Intro_9 = The baroness Hilda Minkhol, of course. I've been her cook for a few years now. She hosts the event.
 Scene_Intro_10 = Her son Bernard Minkhol is also here, as is expected.
-Scene_Intro_11 = He brought an important guest with him, some kind of foreign count or something. Sir Von GroBes-Fledermausland.
+Scene_Intro_11 = He brought an important guest with him, some kind of foreign count or something. Sir Von Großes-Fledermausland.
 Scene_Intro_12 = Then there's Sofia Yuminhof. She was ostracized from the community, but is now making a comeback. I used to work for her.
 Scene_Intro_13 = And finaly, the rising star of vampire high society, the powerful Lady Poiana.
 Scene_Intro_14 = All those powerful vampires, gathered here for one night only, under this very literal glass ceiling...
@@ -477,7 +477,7 @@ Talk_Boris_Drink_3 = Oh right, guess you want that key now? Yeah, figures.
 Talk_Boris_Drink_4 = Well, kid, here it is. Don't know what you're gonna do with it, but hey, that's not really my problem, now, is it?
 Talk_Boris_Drink_5 = Hehe, have fun with that. And thanks again.
 
-Watch_Tools_1 = There's a saw and some plyers. Nothing strange to find in a workshop.
+Watch_Tools_1 = There's a saw and some other tools. Nothing strange to find in a workshop.
 
 Watch_Plants_1 = I love those plants. They look very nice.
 
@@ -507,7 +507,7 @@ Scene_Theft_19 = Soon we'll be like ants under a giant magnifying glass.
 Scene_Theft_20 = I make myself very small, trying not to attract attention to me.
 Scene_Theft_21 = The last thing I need is someone realizing that as a werewolf, I would survive, unlike everone else.
 Scene_Theft_22 = That would make me suspect number one.
-Scene_Theft_23 = I'll need to find the real thief to clear my name... Or at least, they need to beleive they've found the real thief...
+Scene_Theft_23 = I'll need to find the real thief to clear my name... Or at least, they need to believe they've found the real thief...
 
 Steal_Baron_1 = Dietary supplements. This is iron.
 Steal_Baron_2 = Logical to find some here, given the baroness is vegan.
@@ -540,7 +540,7 @@ Talk_Fils_GoLie_1 = Hey, listen. I need you to do me a favour.
 Talk_Fils_GoLie_2 = I don't know why, but I feel like Lady Poiana has something against me. She thinks I'm a weak vampire.
 Talk_Fils_GoLie_3 = But you know me, you know that's wrong, right? I'm as tough as can be, rutheless and unruly!
 Talk_Fils_GoLie_4 = Could you go and mess with her, so she'll leave me alone?
-Talk_Fils_GoLie_5 = Tell her you saw me fighting a bear... No, a bear! I fought a bear with my bare hands!
+Talk_Fils_GoLie_5 = Tell her you saw me fighting a boar... No, a bear! I fought a bear with my bare hands!
 Talk_Fils_GoLie_6 = And tell her I won! Yeah, that'll show her.
 
 Talk_Fils_Ask_1 = Ahem- Hello there Bernard. Anything on your mind lately?
@@ -641,13 +641,13 @@ Talk_Humain_Clue_2 = This dental glue. I have always worked with vampires, and I
 Talk_Humain_Clue_3 = Why would a vampire such as yourself be in need of dental glue?
 
 Talk_Humain_Stop_1 = I'm sorry, but I overheard your conversation, and I simply cannot stand to watch this.
-Talk_Humain_Stop_2 = Sir Von GroBes-Fledermausland is an honoured guest in this house, and you have insulted him.
+Talk_Humain_Stop_2 = Sir Von Großes-Fledermausland is an honoured guest in this house, and you have insulted him.
 Talk_Humain_Stop_3 = You have no right to look through his personal belongings. And he will not answer your very unappropriate question.
-Talk_Humain_Stop_4 = I'm terribly sorry for my servant's conduct, Sir Von GroBes-Fledermausland. Please, try to pay it no mind.
+Talk_Humain_Stop_4 = I'm terribly sorry for my servant's conduct, Sir Von Großes-Fledermausland. Please, try to pay it no mind.
 
 Talk_Humain_Excuse_1 = Ah, yes, I thought it might-
 Talk_Humain_Excuse_2 = I'm sorry, but I overheard your conversation, and I simply must intervene.
-Talk_Humain_Excuse_3 = See, my friend here is from GroBes-Fledermausland, a distant place with ways different than our own.
+Talk_Humain_Excuse_3 = See, my friend here is from Großes-Fledermausland, a distant place with ways different than our own.
 Talk_Humain_Excuse_4 = The use of dental glue is very common there, as it is used to...
 Talk_Humain_Excuse_5 = Well, to put jewlery on vampires' teeth! Yes, everyone does it over there!
 Talk_Humain_Excuse_6 = He just didn't put on any today because...
@@ -663,7 +663,7 @@ Talk_Humain_Secret_5 = Bernard suddenly drops the act and becomes very serious a
 Talk_Humain_Secret_6 = Listen, I like you, so I'll put you in the loop. But you must promise not to tell another living soul, alright?
 Talk_Humain_Secret_7 = What is happening?
 Talk_Humain_Secret_8 = Sure, master Bernard.
-Talk_Humain_Secret_9 = My friend is not a count, and he's not from GroBes-Fledermausland (which is a made up place by the way).
+Talk_Humain_Secret_9 = My friend is not a count, and he's not from Großes-Fledermausland (which is a made up place by the way).
 Talk_Humain_Secret_10 = His name is Todd. He's not a vampire. He's... a human.
 Talk_Humain_Secret_11 = Well, actually, now that I think about it, it makes perfect sense.
 Talk_Humain_Secret_12 = He's just a fan of vampires, and he begged me to take him here.
@@ -789,7 +789,7 @@ Talk_Rival_LateLoyalRival_3 = That drink I didn't give her was actually strawber
 Talk_Rival_LateLoyalRival_4 = Really? This will come in handy. Thank you, my loyal lackey.
 
 Talk_Humain_DefaultCycle2_1 = ...
-Talk_Humain_DefaultCycle2_2 = Is there something wrong, master Von GroBes-Fledermausland ?
+Talk_Humain_DefaultCycle2_2 = Is there something wrong, master Von Großes-Fledermausland ?
 Talk_Humain_DefaultCycle2_3 = No, no! I was simply... inspecting your fur.
 Talk_Humain_DefaultCycle2_4 = Oh, erm... Okay?
 
@@ -881,7 +881,7 @@ Scene_End_StaySilent_Top_1 = Leave my friend alone! He's... He...
 Scene_End_StaySilent_Top_2 = Too late. We know your tricks.
 
 Scene_End_HelpChasseur_1 = This garlic you claim to have seen proves nothing, it could have been planted there by the real culprit.
-Scene_End_HelpChasseur_2 = But you're the one who brought Sir Von GroBes-Fledermausland in this house, while he's clearly a human! This is treason!
+Scene_End_HelpChasseur_2 = But you're the one who brought Sir Von Großes-Fledermausland in this house, while he's clearly a human! This is treason!
 Scene_End_HelpChasseur_3 = Everyone knows all humans hate vampires. He's here to kill us all!
 Scene_End_HelpChasseur_4 = No, not at all! I'm a huge vampire fan! I have a twilight poster in my bedroom!
 Scene_End_HelpChasseur_5 = Fool, you've just admitted you're a human! This is the end for you.
@@ -894,20 +894,20 @@ Scene_End_Contradiction_5 = That's right! If we're too busy fighting each other,
 Scene_End_Contradiction_6 = Of course! Sunlight will do nothing to a werewolf! It's so obvious, you're the one who did it!
 
 Scene_End_HelpFils1_1 = I can assure you all that master Bernard speaks the thruth.
-Scene_End_HelpFils1_2 = I know Sir Von GroBes-Fledermausland, and he is a trust-worthy vampire. He has been nothing but a distinguished guest.
+Scene_End_HelpFils1_2 = I know Sir Von Großes-Fledermausland, and he is a trust-worthy vampire. He has been nothing but a distinguished guest.
 Scene_End_HelpFils1_3 = Lady Poiana, on the other hand, has been hostile and tense. Just like someone plotting a mass murder!
 Scene_End_HelpFils1_4 = This garlic found on her simply proves it!
 
 Scene_End_Confession_1 = You know what? Fine! You want to know the truth? I'll give you the truth.
 Scene_End_Confession_2 = I was born a human. My brother died because of a vampire. So I became a vampire hunter.
 Scene_End_Confession_3 = One night I came across Bernard over here. At first I thought he was a human, because we was wearing human clothes.
-Scene_End_Confession_4 = He was wrinting poetry, about how hard life is as a vampire, and so I knew he was one of them.
+Scene_End_Confession_4 = He was writing poetry, about how hard life is as a vampire, and so I knew he was one of them.
 Scene_End_Confession_5 = At those words, Bernard starts blushing very hard.
 Scene_End_Confession_6 = So obviously, I tried to kill him. But I was careless, confused by this weird human-loving vampire.
 Scene_End_Confession_7 = We fought, and he got the upper-hand. And right when he should have killed me, I saw him hesitate.
 Scene_End_Confession_8 = This big fluffball had second thoughts! He didn't want to kill a human like me! Ha! Speak of a cardboard vampire.
 Scene_End_Confession_9 = But he wasn't stupid. He knew if he let me go, I'd kill him. So, instead, he cursed me: he bit me and made me a vampire.
-Scene_End_Confession_10 = I had become what I had sworn to destroyed...
+Scene_End_Confession_10 = I had become what I had sworn to destroy...
 Scene_End_Confession_11 = So I kept garlic on me, to keep the vampire urges from coming. And I started plotting.
 Scene_End_Confession_12 = I didn't want him to tell anyone about me, so I started blackmailing him about this human-loving thing.
 Scene_End_Confession_13 = I made myself know, became an eminent vampire in high-society, and got myself invited here.
@@ -946,7 +946,7 @@ Scene_End_AccusationChasseur1_5 = He looks like he doesn't know the first thing 
 Scene_End_AccusationChasseur1_6 = I say he's a spy who thought he could fool us, and then walk away once we were all dead.
 
 Scene_End_AccusationHumain_1 = Although I am a werewolf, I've always been loyal to vampires, and the Minkhol family has always treated me very well.
-Scene_End_AccusationHumain_2 = But there's someone here that can't say as much... Sir Von GroBes-Fledermausland.
+Scene_End_AccusationHumain_2 = But there's someone here that can't say as much... Sir Von Großes-Fledermausland.
 Scene_End_AccusationHumain_3 = He's actually a human in disguise, that's why he's acting so weird!
 
 Scene_End_FilsChasseur2_1 = Are you out of your mind? You dare accuse a close family friend, and honoured guest, just because he's a foreigner?
@@ -1064,7 +1064,7 @@ Endings_Guilty_Chasseur_1 = With Lady Poiana's confession, no doubts remained as
 Endings_Guilty_Chasseur_2 = The Baroness promptly executed her using stakes, and the keys were soon found in the skeleton.
 Endings_Guilty_Chasseur_3 = Everyone present collectively decided to ignore the personal revelations made by Lady Poiana.
 Endings_Guilty_Chasseur_4 = The feast was canceled, and all vampires returned to their respective homes.
-Endings_Guilty_Chasseur_5 = Sir Von GroBes-Fledermausland returned to his distant country and was never found again.
+Endings_Guilty_Chasseur_5 = Sir Von Großes-Fledermausland returned to his distant country and was never found again.
 Endings_Guilty_Chasseur_6 = Lady Yuminhof went back into exile, I never heard of her again.
 Endings_Guilty_Chasseur_7 = As for me and the Baroness's family, we remained in her mansion, living life as usual.
 Endings_Guilty_Chasseur_8 = In the end, everything went as well as it could have.

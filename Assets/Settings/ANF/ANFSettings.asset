@@ -81,8 +81,9 @@ MonoBehaviour:
         staticData:
           languages:
           - eng
-          - fra
           fonts:
+          - {fileID: 11400000, guid: 6abe842a1ae962b44b8125a78a5d9d69, type: 2}
+          - {fileID: 11400000, guid: 298bcc652e05faa46afa7781747b710b, type: 2}
           - {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
           sizes:
           - sizes: 0e0000000a00000006000000

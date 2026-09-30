@@ -17,12 +17,15 @@ fadeFg(0;false)
 dialog(Char_Baron;null;Scene_Theft_1)
 dialog(Char_Baron;null;Scene_Theft_2)
 dialog(null;null;Scene_Theft_3)
+
+setCharacterBody(Baron;Angry)
 dialog(Char_Baron;null;Scene_Theft_4)
 dialog(Char_Baron;null;Scene_Theft_5)
 dialog(null;null;Scene_Theft_6)
 
 
 setCharacterAlpha(Baron;0;0.5;true)
+setCharacterBody(Rival;Angry)
 setCharacterAlpha(Rival;1;0.5;false)
 
 
@@ -41,12 +44,14 @@ setCharacterAlpha(Chasseur;1;0.5;false)
 dialog(Char_Chasseur;null;Scene_Theft_11)
 
 setCharacterAlpha(Chasseur;0;0.5;true)
+setCharacterBody(Fils;Angry)
 setCharacterAlpha(Fils;1;0.5;false)
 
 dialog(Char_Fils;null;Scene_Theft_12)
 dialog(Char_Fils;null;Scene_Theft_13)
 
 setCharacterAlpha(Fils;0;0.5;true)
+setCharacterBody(Humain;Sad)
 setCharacterAlpha(Humain;1;0.5;false)
 
 dialog(Char_Humain;null;Scene_Theft_14)
@@ -65,6 +70,7 @@ dialog(Char_Rival;null;Scene_Theft_18)
 dialog(Char_Rival;null;Scene_Theft_19)
 
 setCharacterAlpha(Rival;0;0.5;true)
+setCharacterBody(Baron;Normal)
 setCharacterPosition(Baron;BaronSpot)
 setCharacterRotation(Baron;BaronSpot)
 setCharacterAlpha(Baron;1;0.5;false)

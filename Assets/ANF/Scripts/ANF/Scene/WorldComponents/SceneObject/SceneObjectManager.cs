@@ -271,7 +271,7 @@ namespace ANF.Scene
                     RemoveSceneObject(objectId);
             }
 
-            return true;
+            return false;
         }
 
         public override bool OnChangeScene()
@@ -292,7 +292,7 @@ namespace ANF.Scene
             return true;
         }
 
-        public override bool IsLoadingOrCleaningUp()
+        public override bool IsLoadingOrCleaningUp(bool updateComponent)
         {
             // Keeping the load cache intact will prevent manual scene objects from being created
             // It is destroyed after X frames (1 by default)
@@ -300,18 +300,24 @@ namespace ANF.Scene
             {
                 if (manager.GetWorld().GetComponent(out BackgroundManager backgroundManager))
                 {
-                    if (backgroundManager.IsLoadingOrCleaningUp())
+                    if (backgroundManager.IsLoadingOrCleaningUp(false))
                         return true;
                 }
 
-                loadDataCacheFrameSurvival--;
+                if (updateComponent)
+                    loadDataCacheFrameSurvival--;
+
                 if (loadDataCacheFrameSurvival <= 0)
                 {
-                    if (loadDataCache.Count > 0)
-                        Debug.LogWarning($"Object Cache deleted with still {loadDataCache.Count} cached objects");
-                    loadDataCache = null;
-                    return true;
+                    if (updateComponent)
+                    {
+                        if (loadDataCache.Count > 0)
+                            Debug.LogWarning($"Object Cache deleted with still {loadDataCache.Count} cached objects");
+                        loadDataCache = null;
+                    }
+                    return false;
                 }
+                return true;
             }
 
             return false;

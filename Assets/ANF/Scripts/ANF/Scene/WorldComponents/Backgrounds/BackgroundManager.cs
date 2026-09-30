@@ -592,7 +592,7 @@ namespace ANF.Scene
                 cachedNextBackgroundID = json.GetString("backgroundID");
                 EndBackgroundUnloading(true);
 
-                return loadingBackground;
+                return !loadingBackground;
             }
 
             return true;
@@ -643,9 +643,22 @@ namespace ANF.Scene
             return !unloadingBackground;
         }
 
-        public override bool IsLoadingOrCleaningUp()
+        public override bool IsLoadingOrCleaningUp(bool updateComponent)
         {
-            return waitingForAsyncOperation || asyncWaitForNextFrames > 0;
+            if (waitingForAsyncOperation)
+                return true;
+
+            if (asyncWaitForNextFrames > 0)
+            {
+                if (updateComponent)
+                    asyncWaitForNextFrames--;
+                return true;
+            }
+
+            if (updateComponent)
+                EndBackgroundLoading();
+
+            return false;
         }
     }
 

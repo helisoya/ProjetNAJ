@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using ANF.Utils;
 
 namespace ANF.Scene
@@ -76,7 +77,7 @@ namespace ANF.Scene
         {
             bool cleaningUp = false;
             foreach (T component in components.Values)
-                if (component.IsLoadingOrCleaningUp())
+                if (component.IsLoadingOrCleaningUp(true))
                     cleaningUp = true;
 
             return cleaningUp;

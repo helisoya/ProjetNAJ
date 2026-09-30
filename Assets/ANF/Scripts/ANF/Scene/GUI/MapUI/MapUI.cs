@@ -385,7 +385,7 @@ namespace ANF.GUI
             return true;
         }
 
-        public override bool IsLoadingOrCleaningUp()
+        public override bool IsLoadingOrCleaningUp(bool updateComponent)
         {
             return false;
         }

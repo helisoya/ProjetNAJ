@@ -1,3 +1,4 @@
+setCharacterBody(Baron;Angry)
 dialog(Char_Baron;null;Talk_Baron_Verre_PasContent_1)
 dialog(Char_Baron;null;Talk_Baron_Verre_PasContent_2)
 variable(ValueBaron;-;1)

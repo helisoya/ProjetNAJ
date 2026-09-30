@@ -1,9 +1,11 @@
 if(RivalReactionToDrinkQuest == 1)
+	setCharacterBody(Rival;Angry)
 	dialog(Char_Rival;null;Talk_Rival_LoyalBaron_1)
 	dialog(Char_Rival;null;Talk_Rival_LoyalBaron_2)
 else
 	dialog(Char_Rival;null;Talk_Rival_LateLoyaltyCheck_1)
 	dialog(Char_Rival;null;Talk_Rival_LateLoyaltyCheck_2)
+	setCharacterBody(Rival;Happy)
 	dialog(Char_Rival;null;Talk_Rival_LateLoyaltyCheck_3)
 
 	choice(List)
@@ -11,6 +13,7 @@ else
 			dialog(Char_LoupGarou;null;Talk_Rival_LateLoyalRival_1)
 			dialog(Char_LoupGarou;null;Talk_Rival_LateLoyalRival_2)
 			dialog(Char_LoupGarou;null;Talk_Rival_LateLoyalRival_3)
+			setCharacterBody(Rival;Angry)
 			dialog(Char_Rival;null;Talk_Rival_LateLoyalRival_4)
 			variable(RivalReactionToDrinkQuest;=;2)
 			variable(ValueRival;+;2)

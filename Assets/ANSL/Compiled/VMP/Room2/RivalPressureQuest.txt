@@ -1,17 +1,19 @@
-#E7DFEED6F55EFD8C4E86E196BBA84A0B-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#83305703185B37E55D98EEAB703AF71B-718EFDC1B0E65B9E044C1FE0A1A72EB5
 102RivalPressureQuest=2
-4029RivalReactionToDrinkQuest == 1
+40210RivalReactionToDrinkQuest == 1
 35Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_1
 35Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_2
 35Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_3
+67RivalAngry
 35Char_RivalnullTalk_Rival_Pressure_LoyalBaron_4
 35Char_RivalnullTalk_Rival_Pressure_LoyalBaron_5
 102ValueRival-2
-4216
+4218
 35Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_1
 35Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_2
 35Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_3
+67RivalHappy
 35Char_RivalnullTalk_Rival_Pressure_LoyalRival_4
 102ValueRival+1
 44RivalGetInfosFromFils
-4216
+4218

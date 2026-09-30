@@ -72,6 +72,7 @@ else
 	setCharacterAlpha(Rival;0;0.5;true)
 	setCharacterPosition(Rival;RivalSpot)
 	setCharacterRotation(Rival;RivalSpot)
+	setCharacterBody(Rival;Normal)
 	setCharacterAlpha(Rival;1;0.5;false)
 
 endif

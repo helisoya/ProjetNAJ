@@ -69,12 +69,15 @@ namespace ANF.Scene
 
                         currentGameState = GameState.InGame;
 
-                        if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
-                        {
-                            fade.FadeAlphaTo(0);
-                        }
-
                         OnStartComponents();
+
+                        if (currentGameState != GameState.WaitingForLoad)
+                        {
+                            if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
+                            {
+                                fade.FadeAlphaTo(0);
+                            }
+                        }
                     }
                     break;
 
@@ -115,9 +118,16 @@ namespace ANF.Scene
 
                 case GameState.WaitingForLoad:
                     {
-                        if (world.IsLoadingOrCleaningUp() ||
-                        guiManager.IsLoadingOrCleaningUp())
+                        bool worldLoading = world.IsLoadingOrCleaningUp();
+                        bool guiLoading = guiManager.IsLoadingOrCleaningUp();
+
+                        if (worldLoading || guiLoading)
                             return;
+
+                        if (sceneData.changeSceneUseFading && guiManager.GetComponent<GUI.Fade>(sceneData.changeSceneFadingName, out GUI.Fade fade))
+                        {
+                            fade.FadeAlphaTo(0);
+                        }
 
                         currentGameState = GameState.InGame;
                     }
@@ -210,6 +220,8 @@ namespace ANF.Scene
 
             if (!immediate)
                 currentGameState = GameState.WaitingForLoad;
+            else
+                currentGameState = GameState.InGame;
 
             return immediate;
         }
