@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
   startingScript: /NAJ/C1/EntryPoints/TrialMid
-  mainMenuScene: VMPMainMenu
-  gameScene: VMPGame
+  mainMenuScene: NAJMainMenu
+  gameScene: NAJGame
   saveFolder: Saves/
   saveSlotsAmount: 11
   generalDataPath: General/
