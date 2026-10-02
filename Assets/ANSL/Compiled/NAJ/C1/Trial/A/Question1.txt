@@ -1,4 +1,4 @@
-#549B11839C4F5CE38019D0CD5052E4A1-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#549B11839C4F5CE38019D0CD5052E4A1-8D103ABC3C0B157D3F6A342F02C946F9
 64JudgeCam
 65JudgeCam
 67RannCoatNormal0.1
@@ -16,13 +16,13 @@
 64DefenseCam
 65DefenseCam
 35Char_RannRannCoatC1_Trial_Question1_Juno_1
-96true
+97true
 69JunoSurprise
 73JunoSurprise
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Question1_Juno_2
-96true
+97true
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial_Question1_Juno_3
@@ -30,7 +30,7 @@
 35Char_RobertRobertC1_Trial_Question1_Juno_5
 35Char_RobertRobertC1_Trial_Question1_Juno_6
 35Char_RobertRobertC1_Trial_Question1_Juno_7
-96true
+97true
 67RannCoatStress0.1
 69RannCoatNormal
 73RannCoatOops
@@ -38,7 +38,7 @@
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Question1_Juno_8
 35Char_RannRannCoatC1_Trial_Question1_Juno_9
-96true
+97true
 21true
 181truetrue
 69JudgeAngry
@@ -49,9 +49,9 @@
 35Char_JudgeJudgeC1_Trial_Question1_Juno_11
 35Char_JudgeJudgeC1_Trial_Question1_Juno_12
 600.10.25truetrue
-102LifePoints-1
+103LifePoints-1
 405254LifePoints < 0
-102LifePoints=0
+103LifePoints=0
 4255
 4255
 180falsefalse
@@ -92,12 +92,12 @@
 64DefenseCam
 65DefenseCam
 35Char_RannRannCoatC1_Trial_Question1_Suicide_1
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial_Question1_Suicide_2
 35Char_RobertRobertC1_Trial_Question1_Suicide_3
-96false
+97false
 67RannCoatStress0.1
 69RannCoatNormal
 73RannCoatOops
@@ -116,13 +116,13 @@
 64DefenseCam
 65DefenseCam
 35Char_RannRannCoatC1_Trial_Question1_Animal_1
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial_Question1_Animal_2
 35Char_RobertRobertC1_Trial_Question1_Animal_3
 35Char_RobertRobertC1_Trial_Question1_Animal_4
-96false
+97false
 67RannCoatStress0.1
 69RannCoatNormal
 73RannCoatOops

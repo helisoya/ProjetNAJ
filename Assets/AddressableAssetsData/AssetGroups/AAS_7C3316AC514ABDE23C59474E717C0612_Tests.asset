@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AAS_7C3316AC514ABDE23C59474E717C0612_Tests
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AAS_7C3316AC514ABDE23C59474E717C0612_Tests
+  m_GUID: d0304c1a32c0c8f43b0ab45f3314c32b
+  m_SerializeEntries:
+  - m_GUID: 07e71e557b10fb141847422294d129e3
+    m_Address: ANSL/NAJ/Tests/Inventory
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69a63778aa615764ebc0103cca84ed32
+    m_Address: ANSL/NAJ/Tests/CrossExamination
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71575a32bf2939e42be02ddd63c7cd9b
+    m_Address: ANSL/NAJ/Tests/CrossExamination2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92559bfb38d8c7e439454b5d8f18eb6a
+    m_Address: ANSL/NAJ/Tests/EvidenceInfo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5441acd6b41d9f3449cb298fc9216131, type: 2}
+    - {fileID: 11400000, guid: 4a39e2c708cdd594ab1542c331bd0db5, type: 2}

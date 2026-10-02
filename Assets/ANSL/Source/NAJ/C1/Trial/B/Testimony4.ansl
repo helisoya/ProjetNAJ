@@ -412,6 +412,7 @@ showDialogWindow(false)
 
 setBgColor(1;1;1;1)
 fadeBg(1;true)
+setVolumeWeight(Flashback;1)
 
 setCharacterAlpha(Juno;1)
 setCharacterAlpha(GeraldNoCoat;0)
@@ -433,6 +434,7 @@ showDialogWindow(false)
 
 fadeBg(1;true)
 
+setVolumeWeight(Flashback;0)
 setCharacterAlpha(Juno;0)
 setCharacterAlpha(GeraldNoCoat;1)
 setCharacterPosition(Juno;LobbySpot)

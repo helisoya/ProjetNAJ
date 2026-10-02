@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AAS_5AC2F1A43D29187C996C98EB69640884_Room3
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AAS_5AC2F1A43D29187C996C98EB69640884_Room3
+  m_GUID: 7dcb06ba05a58f94295f49f059053064
+  m_SerializeEntries:
+  - m_GUID: 0bd012658dcc22042a65bc218312e1f5
+    m_Address: ANSL/VMP/Room3/Plants
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 230b18d4adbb8784189293bd85c08427
+    m_Address: ANSL/VMP/Room3/FilsRivalInfosConfront
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a5f560bede1a8e43b271852b1b34425
+    m_Address: ANSL/VMP/Room3/Arrival
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 496377ecbe7b65743a614cf16d63c14d
+    m_Address: ANSL/VMP/Room3/Drink
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50d18c0f729fa934ba5ee2bb020cc6f2
+    m_Address: ANSL/VMP/Room3/FilsC2LostMirror
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62b8d7aede98ab04aab78d9b12022f75
+    m_Address: ANSL/VMP/Room3/HumainC2Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71e4886fac00d2a42a5fd9475478509c
+    m_Address: ANSL/VMP/Room3/FilsC1DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81b35a3f54bf4f0409c19c6dd26f3f3b
+    m_Address: ANSL/VMP/Room3/FilsC1Confront
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87ac4b813b76a124d96124bf6483ffe0
+    m_Address: ANSL/VMP/Room3/Fils
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b75195dd00d17f4498a431f17dd7704
+    m_Address: ANSL/VMP/Room3/HumainSecret
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac62734b730a5204e829fefcff9df349
+    m_Address: ANSL/VMP/Room3/HumainC1Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b60252ef70bb16a4e8c0a94d615cab78
+    m_Address: ANSL/VMP/Room3/Interaction
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd349e4b7ca7632468813e5b0edc133f
+    m_Address: ANSL/VMP/Room3/FilsC2ConfrontSecret
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6327fc1b81f65441816b11d6ff09721
+    m_Address: ANSL/VMP/Room3/Humain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efea59d701d8f354685c0ac36b31ec3c
+    m_Address: ANSL/VMP/Room3/FilsC2DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5bdb60cccdd1184b8b6bf1f0dedbf89
+    m_Address: ANSL/VMP/Room3/HumainC2DefaultDialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a9b1340c127649647b565a49ff40a88c, type: 2}
+    - {fileID: 11400000, guid: 66e4a4b49445b00439960286e2e57f60, type: 2}

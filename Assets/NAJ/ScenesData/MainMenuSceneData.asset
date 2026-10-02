@@ -19,6 +19,9 @@ MonoBehaviour:
   - id: 
     data:
       rid: 3436800196703420487
+  - id: 
+    data:
+      rid: 992773290572120153
   registeredGUIComponents:
   - id: 
     data: {fileID: 4893906188555742882, guid: e8c985bdeb1bdc345833a962ece4ce14, type: 3}
@@ -35,6 +38,21 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 992773290572120153
+      type: {class: PostProcessManager, ns: ANF.Scene, asm: Assembly-CSharp}
+      data:
+        canBeSaved: 1
+        enabledByDefault: 1
+        defaultData:
+        - id: Base
+          volume: {fileID: 11400000, guid: 07d25d3176b9347409140f2659582354, type: 2}
+          defaultValue: 1
+        - id: OutdoorBloom
+          volume: {fileID: 11400000, guid: 34678e5f2d296d2459643539bd659b49, type: 2}
+          defaultValue: 0
+        - id: Flashback
+          volume: {fileID: 11400000, guid: 6f5f35a470b87cc4f97274a77b44f12e, type: 2}
+          defaultValue: 0
     - rid: 3436799676236169305
       type: {class: BackgroundManager, ns: ANF.Scene, asm: Assembly-CSharp}
       data:
@@ -53,4 +71,6 @@ MonoBehaviour:
         defaultBackground: C1/Beach
         defaultWeather: 
         defaultSkybox: Day
+        music: 
+        ambient: 
         backgroundType: 1

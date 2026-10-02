@@ -7,6 +7,8 @@ using System.Reflection;
 using Unity.VisualScripting;
 using System.Security.Cryptography;
 using System.Text;
+using UnityEngine.AddressableAssets;
+
 
 
 #if UNITY_EDITOR
@@ -173,6 +175,29 @@ namespace ANF.Utils
             }
         }
 
+        /// <summary>
+        /// Generate string's checksum
+        /// </summary>
+        /// <param name="data">The string</param>
+        /// <returns>The string's checksum</returns>
+        public static string GenerateCheckSumString(string data)
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    using (BinaryWriter writer = new BinaryWriter(stream, Encoding.UTF8, true))
+                    {
+                        writer.Write(data);
+                    }
+
+                    stream.Position = 0;
+
+                    byte[] hash = md5.ComputeHash(stream);
+                    return BitConverter.ToString(hash).Replace("-", "");
+                }
+            }
+        }
 
         /// <summary>
 		/// Generate a function list's hash
@@ -405,12 +430,8 @@ namespace ANF.Utils
             Stack<string> directories = new Stack<string>();
             directories.Push(anslSettings.anslSourceFolder);
 
-            int directoryID = 0;
-            bool hasANSLFiles;
-
             while (directories.Count > 0)
             {
-                hasANSLFiles = false;
                 string directory = directories.Pop();
                 string directoryName = new DirectoryInfo(directory).Name;
 
@@ -423,13 +444,9 @@ namespace ANF.Utils
                         definesFiles.Add(file);
                     else if (file.EndsWith(".ansl"))
                     {
-                        hasANSLFiles = true;
-                        anslFiles.Add(new KeyValuePair<string, string>(file, $"{directoryID}_{directoryName}"));
+                        anslFiles.Add(new KeyValuePair<string, string>(file, $"{ANSLUtils.GenerateCheckSumString(directory)}_{directoryName}"));
                     }
                 }
-
-                if (hasANSLFiles)
-                    directoryID++;
             }
 
             totalProgress += anslFiles.Count + definesFiles.Count;
@@ -485,17 +502,28 @@ namespace ANF.Utils
                     if (result == ANSLCompiler.ResultType.Success && anslSettings.linkScriptsToAddressables)
                     {
                         AssetDatabase.ImportAsset(destPath, ImportAssetOptions.ForceSynchronousImport);
-                        AddressableAssetGroup group = addressableSettings.FindGroup($"AUTO_ANSL_SCRIPT_{file.Value}");
+                        AddressableAssetGroup group = addressableSettings.FindGroup($"AAS_{file.Value}");
 
                         if (!group)
                         {
-                            group = addressableSettings.CreateGroup($"AUTO_ANSL_SCRIPT_{file.Value}", false, false, false,
+
+                            group = addressableSettings.CreateGroup($"AAS_{file.Value}", false, false, false,
                             null, typeof(BundledAssetGroupSchema), typeof(ContentUpdateGroupSchema));
+                            group.GetSchema<BundledAssetGroupSchema>().BundleNaming = BundledAssetGroupSchema.BundleNamingStyle.NoHash;
                         }
 
                         AddressableAssetEntry entry = addressableSettings.CreateOrMoveEntry(AssetDatabase.AssetPathToGUID(destPath), group);
                         entry.SetAddress(resourcePath);
                         entry.SetLabel(anslSettings.addressablesLabel, true);
+                    }
+
+                    int i = 0;
+                    while (i < addressableSettings.groups.Count)
+                    {
+                        if (addressableSettings.groups[i].Name.StartsWith("AAS_") && addressableSettings.groups[i].entries.Count == 0)
+                            addressableSettings.RemoveGroup(addressableSettings.groups[i]);
+                        else
+                            i++;
                     }
                 }
 

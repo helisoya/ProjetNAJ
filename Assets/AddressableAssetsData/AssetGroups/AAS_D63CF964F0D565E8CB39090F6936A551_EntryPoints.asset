@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AAS_D63CF964F0D565E8CB39090F6936A551_EntryPoints
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AAS_D63CF964F0D565E8CB39090F6936A551_EntryPoints
+  m_GUID: c9286406f81a18a42add3539f42bf093
+  m_SerializeEntries:
+  - m_GUID: 3c5c4ab80816fde458166de2db41d8af
+    m_Address: ANSL/NAJ/C1/EntryPoints/Investigation
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c335845651c22324ba749aadf7686989
+    m_Address: ANSL/NAJ/C1/EntryPoints/Intro
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da47291f6fa166d408ea3e91a80a91ba
+    m_Address: ANSL/NAJ/C1/EntryPoints/TrialStart
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e688a19f8bebf6340945a5b6ac559276
+    m_Address: ANSL/NAJ/C1/EntryPoints/TrialMid
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef402441805217644b557af8fd233b72
+    m_Address: ANSL/NAJ/C1/EntryPoints/GeneralSetup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1c8341c0ca2c0e34fbcef5b1937a0b37, type: 2}
+    - {fileID: 11400000, guid: 952f6ac8e36e8334e9fb7056c29516ec, type: 2}

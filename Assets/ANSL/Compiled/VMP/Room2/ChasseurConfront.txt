@@ -1,4 +1,4 @@
-#2A8029E071DF81FD49177333E0419CA7-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#2A8029E071DF81FD49177333E0419CA7-8D103ABC3C0B157D3F6A342F02C946F9
 35Char_LoupGarounullTalk_Chasseur_Secret_1
 35Char_ChasseurnullTalk_Chasseur_Secret_2
 35Char_LoupGarounullTalk_Chasseur_Secret_3
@@ -55,24 +55,24 @@
 35Char_LoupGarounullTalk_Chasseur_Secret_49
 35Char_ChasseurnullTalk_Chasseur_Secret_50
 35Char_LoupGarounullTalk_Chasseur_Secret_51
-102ValueChasseur+3
-102ConfrontedChasseurSecret=2
+103ValueChasseur+3
+103ConfrontedChasseurSecret=2
 4264
 35Char_ChasseurnullTalk_Chasseur_Secret_Fail2_1
 35Char_LoupGarounullTalk_Chasseur_Secret_Fail2_2
-102ValueChasseur-1
-102ConfrontedChasseurSecret=1
+103ValueChasseur-1
+103ConfrontedChasseurSecret=1
 4264
 4269
 35Char_ChasseurnullTalk_Chasseur_Secret_Fail1_1
-102ValueChasseur-1
-102ConfrontedChasseurSecret=1
+103ValueChasseur-1
+103ConfrontedChasseurSecret=1
 4269
 4274
 35Char_ChasseurnullTalk_Chasseur_Secret_Fail1_1
-102ValueChasseur-1
-102ConfrontedChasseurSecret=1
+103ValueChasseur-1
+103ConfrontedChasseurSecret=1
 4274
 4277
-102ConfrontedChasseurSecret=1
+103ConfrontedChasseurSecret=1
 4277

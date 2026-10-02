@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bfc7de97ad5247b9061be4feb35ce, type: 3}
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
-  startingScript: /VMP/EntryPoints/Intro
+  startingScript: /NAJ/C1/EntryPoints/TrialMid
   mainMenuScene: VMPMainMenu
   gameScene: VMPGame
   saveFolder: Saves/
@@ -81,10 +81,10 @@ MonoBehaviour:
         staticData:
           languages:
           - eng
+          - fra
           fonts:
-          - {fileID: 11400000, guid: 6abe842a1ae962b44b8125a78a5d9d69, type: 2}
-          - {fileID: 11400000, guid: 298bcc652e05faa46afa7781747b710b, type: 2}
           - {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
+          - {fileID: 11400000, guid: 298bcc652e05faa46afa7781747b710b, type: 2}
           sizes:
           - sizes: 0e0000000a00000006000000
           - sizes: 14000000100000000c000000
@@ -454,35 +454,38 @@ MonoBehaviour:
         - typeName: ANF.ANSL.SetStaticScaleFunction
           id: 94
           enabled: 1
-        - typeName: ANF.ANSL.SetWeatherEffectFunction
+        - typeName: ANF.ANSL.SetVolumeWeightFunction
           id: 95
           enabled: 1
-        - typeName: ANF.ANSL.ShowDialogWindowFunction
+        - typeName: ANF.ANSL.SetWeatherEffectFunction
           id: 96
           enabled: 1
-        - typeName: ANF.ANSL.ShowInputReminderFunction
+        - typeName: ANF.ANSL.ShowDialogWindowFunction
           id: 97
           enabled: 1
-        - typeName: ANF.ANSL.StopContextFunction
+        - typeName: ANF.ANSL.ShowInputReminderFunction
           id: 98
           enabled: 1
-        - typeName: ANF.ANSL.SwitchFunction
+        - typeName: ANF.ANSL.StopContextFunction
           id: 99
           enabled: 1
-        - typeName: ANF.ANSL.UnloadBundleFunction
+        - typeName: ANF.ANSL.SwitchFunction
           id: 100
           enabled: 1
-        - typeName: ANF.ANSL.UnlockLogFunction
+        - typeName: ANF.ANSL.UnloadBundleFunction
           id: 101
           enabled: 1
-        - typeName: ANF.ANSL.VariableFunction
+        - typeName: ANF.ANSL.UnlockLogFunction
           id: 102
           enabled: 1
-        - typeName: ANF.ANSL.waitForContextEndFunction
+        - typeName: ANF.ANSL.VariableFunction
           id: 103
           enabled: 1
-        - typeName: ANF.ANSL.WaitFunction
+        - typeName: ANF.ANSL.waitForContextEndFunction
           id: 104
+          enabled: 1
+        - typeName: ANF.ANSL.WaitFunction
+          id: 105
           enabled: 1
     - rid: 5904633997122076775
       type: {class: CaseCompletionContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}

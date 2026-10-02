@@ -1,5 +1,5 @@
-#68652AB05F28FA7EF130D0FFADB29CCA-718EFDC1B0E65B9E044C1FE0A1A72EB5
-96false
+#68652AB05F28FA7EF130D0FFADB29CCA-8D103ABC3C0B157D3F6A342F02C946F9
+97false
 371true
 65WitnessCam
 64WitnessCam
@@ -21,24 +21,24 @@
 67RannCoatReadingBook
 69RannCoatNormal
 73RannCoatNormal
-96false
+97false
 51Presstrue
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Testimony1_Press1_1
-96false
+97false
 69JunoSurprise
 73JunoSurprise
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Testimony1_Press1_2
-96false
+97false
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Testimony1_Press1_3
 35nullnullC1_Trial_Testimony1_Press1_4
 35Char_RannRannCoatC1_Trial_Testimony1_Press1_5
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Testimony1_Press1_6
@@ -52,11 +52,11 @@
 64DefenseCam
 65DefenseCam
 35Char_RannRannCoatC1_Trial_Testimony1_Press1_9
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial_Testimony1_Press1_10
-96false
+97false
 371true
 69RannCoatNormal
 73RannCoatNeutral
@@ -72,30 +72,30 @@
 20true
 35Char_JunoJunoC1_Trial_Testimony1_Testimony_2falsetrue
 102False7322823215101
-96false
+97false
 51Presstrue
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Testimony1_Press2_1
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Testimony1_Press2_2
 35Char_JunoJunoC1_Trial_Testimony1_Press2_3
-96false
+97false
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Testimony1_Press2_4
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial_Testimony1_Press2_5
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Testimony1_Press2_6
 35Char_JunoJunoC1_Trial_Testimony1_Press2_7
-96false
+97false
 371true
 370false
 173
@@ -104,17 +104,17 @@
 20true
 35Char_JunoJunoC1_Trial_Testimony1_Testimony_3falsetrue
 103False10522823269134
-96false
+97false
 51Presstrue
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Testimony1_Press3_1
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Testimony1_Press3_2
 35Char_JunoJunoC1_Trial_Testimony1_Press3_3
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial_Testimony1_Press3_4
@@ -126,7 +126,7 @@
 64ProsecutionCam
 35Char_RobertRobertC1_Trial_Testimony1_Press3_7
 35Char_RobertRobertC1_Trial_Testimony1_Press3_8
-96false
+97false
 371true
 65WitnessCam
 64WitnessCam
@@ -140,29 +140,29 @@
 67RannCoatHandsOnDesk0.1
 69RannCoatNormal
 73RannCoatSad
-96false
+97false
 51Presstrue
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Testimony1_Press4_1
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Testimony1_Press4_2
 35Char_JunoJunoC1_Trial_Testimony1_Press4_3
-96false
+97false
 67RannCoatAngry0.1
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial_Testimony1_Press4_4
 35Char_RobertRobertC1_Trial_Testimony1_Press4_5
-96false
+97false
 65DefenseCam0.25false
 64DefenseCam0.25true
 35nullnullC1_Trial_Testimony1_Press4_6
 35nullnullC1_Trial_Testimony1_Press4_7
 35nullnullC1_Trial_Testimony1_Press4_8
-96false
+97false
 371true
 69RannCoatNormal
 73RannCoatNeutral
@@ -176,13 +176,13 @@
 20true
 35Char_JunoJunoC1_Trial_Testimony1_Testimony_5falsetrue
 105False177228232134209Evidence/C1_Injury
-96false
+97false
 51Presstrue
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_Testimony1_Press5_1
 35Char_RannRannCoatC1_Trial_Testimony1_Press5_2
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_Testimony1_Press5_3
@@ -201,7 +201,7 @@
 35nullnullC1_Trial_Testimony1_Press5_7
 35nullnullC1_Trial_Testimony1_Press5_8
 35nullnullC1_Trial_Testimony1_Press5_9
-96false
+97false
 371true
 65WitnessCam
 64WitnessCam
@@ -211,7 +211,7 @@
 171
 20false
 3232
-96false
+97false
 67RannCoatThinking0.1
 371true
 64DefenseCam
@@ -231,7 +231,7 @@
 20false
 44../Common/ExaminationFail
 4214
-96false
+97false
 51Objectiontrue
 24
 67RannCoatHandsOnDesk0.1
@@ -248,20 +248,20 @@
 35Char_RannRannCoatC1_Trial_B_3
 67RannCoatNormal0.1
 35Char_RannRannCoatC1_Trial_B_4
-96false
+97false
 69JunoSurprise
 73JunoSurprise
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_B_5
-96false
+97false
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial_B_6
 19Evidence/C1_InjuryLeft
 35Char_RannRannCoatC1_Trial_B_7
 35Char_RannRannCoatC1_Trial_B_8
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_JunoJunoC1_Trial_B_9
@@ -342,5 +342,5 @@
 65WitnessCam
 64WitnessCam
 35Char_JunoJunoC1_Trial_B_39
-96false
+97false
 44Testimony2

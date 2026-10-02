@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AAS_E57E58941E468C2C73C70F4149648D56_Mockups
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AAS_E57E58941E468C2C73C70F4149648D56_Mockups
+  m_GUID: 6772896089cc0eb4aa44bb7c2ffcc6eb
+  m_SerializeEntries:
+  - m_GUID: df2dd5f5c88ff2f418a9f0a231907e7b
+    m_Address: ANSL/NAJ/Mockups/TaliakMap
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e9c538d5f437b3a4a8c851d105283055, type: 2}
+    - {fileID: 11400000, guid: a74fa2ecd91b408478fd1dc5f2601f2d, type: 2}

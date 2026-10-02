@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AAS_8CDE0C8FD1124E77B91E618C792E263D_Common
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AAS_8CDE0C8FD1124E77B91E618C792E263D_Common
+  m_GUID: 2072351b0b2eaf54498905b9b6b1e067
+  m_SerializeEntries:
+  - m_GUID: 3e299f2445bd0a44e92920d0924e8432
+    m_Address: ANSL/NAJ/C1/Trial/Common/ExaminationFail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5e7613eb9458d043a95221eae426dd4
+    m_Address: ANSL/NAJ/C1/Trial/Common/Death
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 37a47421cbf79d34fb546b80cd45e5c9, type: 2}
+    - {fileID: 11400000, guid: 06c1da20abbaae8428d97cefb5611e08, type: 2}

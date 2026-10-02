@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: AAS_EAD6B7781B4B75EDF3F4837CD6127B03_Forest
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: AAS_EAD6B7781B4B75EDF3F4837CD6127B03_Forest
+  m_GUID: 1b099e40593987049af658a5713eab89
+  m_SerializeEntries:
+  - m_GUID: 04f252e22977e9d48a76864ceeba2e4c
+    m_Address: ANSL/NAJ/C1/Investigation/Forest/ToRiverPath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3468081750af931449e937222ccbf5f4
+    m_Address: ANSL/NAJ/C1/Investigation/Forest/Arrival
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f41028f2cba3e44d81b61317ea02e9a
+    m_Address: ANSL/NAJ/C1/Investigation/Forest/ToDeadEnd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94ec72afa6b5efc45879379a64ac2980
+    m_Address: ANSL/NAJ/C1/Investigation/Forest/ToForestStart
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf4cd315708809d4bb55c3e2afade872
+    m_Address: ANSL/NAJ/C1/Investigation/Forest/Interaction
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd96dc9a3ab7e69459dc4b567a9e2131
+    m_Address: ANSL/NAJ/C1/Investigation/Forest/Flag
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb775f0e5b27be941b06d7f4259234fe
+    m_Address: ANSL/NAJ/C1/Investigation/Forest/FirstTime
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 753bfaeefb83dd14ea2a07772ab439f5, type: 2}
+    - {fileID: 11400000, guid: 68a91005fea572745894d2ad23cf4098, type: 2}

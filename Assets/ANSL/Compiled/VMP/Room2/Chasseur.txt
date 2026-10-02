@@ -1,4 +1,4 @@
-#C0433C264A0C44D4E35118D03C53FF53-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#C0433C264A0C44D4E35118D03C53FF53-8D103ABC3C0B157D3F6A342F02C946F9
 4013TalkedChasseur == 1 && CycleCount == 0
 35nullnullTalk_Character_Done_1
 4249
@@ -6,7 +6,7 @@
 74ChasseurFront
 75ChasseurFront
 66Chasseur10.5false
-99CycleCount8037
+100CycleCount8037
 35nullnullChoice_InteractCharacter
 270Choice_Talk10nullnullnullChoice_Search25nullnullnullChoice_Nothing35nullnullnull
 401113TalkedChasseur == 1
@@ -21,12 +21,12 @@
 44ChasseurC2Default
 4221
 4222
-102TalkedChasseur=1
+103TalkedChasseur=1
 4224
 4236
 402632SearchCounter > 0
-102SearchCounter-1
-102SecretChasseur=1
+103SearchCounter-1
+103SecretChasseur=1
 35nullnullSteal_Chasseur_1
 35nullnullSteal_Chasseur_2
 44/VMP/Common/PrintSearchCounter
@@ -40,7 +40,7 @@
 35Char_LoupGarounullTalk_Chasseur_Presentation_2
 35Char_ChasseurnullTalk_Chasseur_Presentation_3
 35nullnullTalk_Chasseur_Presentation_4
-102TalkedChasseur=1
+103TalkedChasseur=1
 4243
 66Chasseur00.5true
 74ChasseurChasseurSpot

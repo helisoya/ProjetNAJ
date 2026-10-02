@@ -1,4 +1,4 @@
-#43F6329A927A5CFF9FD08CCC315EA20E-718EFDC1B0E65B9E044C1FE0A1A72EB5
+#43F6329A927A5CFF9FD08CCC315EA20E-8D103ABC3C0B157D3F6A342F02C946F9
 64DefenseCam
 65DefenseCam
 35Char_RannRannCoatC1_Trial1_H_1
@@ -22,11 +22,11 @@
 35Char_RannRannCoatC1_Trial1_H_6
 35Char_RannRannCoatC1_Trial1_H_7
 35Char_RannRannCoatC1_Trial1_H_8
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial1_H_9
-96false
+97false
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial1_H_10
@@ -47,22 +47,22 @@
 35Char_GeraldGeraldNoCoatC1_Trial1_H_16true
 35Char_GeraldGeraldNoCoatC1_Trial1_H_17true
 35Char_GeraldGeraldNoCoatC1_Trial1_H_18
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial1_H_19
 35Char_RobertRobertC1_Trial1_H_20
 35Char_RobertRobertC1_Trial1_H_21
 35Char_RobertRobertC1_Trial1_H_22
-96false
+97false
 65DefenseCam0.25false
 64DefenseCam0.25true
 35Char_RannRannCoatC1_Trial1_H_23
-96false
+97false
 64HammerCam
 65HammerCam
 67JudgeStrike
-1041
+1051
 67JudgeNormal
 65JudgeCam
 64JudgeCam
@@ -76,7 +76,7 @@
 69GeraldNoCoatSurprise
 73GeraldNoCoatSerious
 35Char_RobertRobertC1_Trial1_H_28
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_GeraldGeraldNoCoatC1_Trial1_H_29
@@ -116,19 +116,19 @@
 64DefenseCam
 65DefenseCam
 35Char_RannRannCoatC1_Trial1_H_42
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial1_H_43
 35Char_RobertRobertC1_Trial1_H_44
 35Char_RobertRobertC1_Trial1_H_45
 35Char_RobertRobertC1_Trial1_H_46
-96false
+97false
 65WitnessCam0.25false
 64WitnessCam0.25true
 35Char_GeraldGeraldNoCoatC1_Trial1_H_47
 35Char_GeraldGeraldNoCoatC1_Trial1_H_48
-96false
+97false
 69RobertThinking
 73RobertNormal
 65ProsecutionCam0.25false
@@ -173,7 +173,7 @@
 65DefenseCam
 35Char_RannRannCoatC1_Trial1_H_64
 35Char_RannRannCoatC1_Trial1_H_65
-96false
+97false
 69RobertThinking
 73RobertNormal
 65ProsecutionCam0.25false
@@ -242,15 +242,15 @@
 35Char_GeraldGeraldNoCoatC1_Trial1_H_87
 35Char_GeraldGeraldNoCoatC1_Trial1_H_88
 35Char_GeraldGeraldNoCoatC1_Trial1_H_89
-96false
+97false
 65ProsecutionCam0.25false
 64ProsecutionCam0.25true
 35Char_RobertRobertC1_Trial1_H_90
-96false
+97false
 64HammerCam
 65HammerCam
 67JudgeStrike
-1041
+1051
 67JudgeNormal
 65JudgeCam
 64JudgeCam
