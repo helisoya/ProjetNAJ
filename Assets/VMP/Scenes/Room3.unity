@@ -249,7 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers:
   - {fileID: 785732072}
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!212 &785732072
 SpriteRenderer:
   serializedVersion: 2
@@ -1263,7 +1263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers:
   - {fileID: 2885226742897863539}
-  linkedInteraction: {fileID: 1886096706504522756}
+  linkedInteractions:
+  - {fileID: 1886096706504522756}
 --- !u!114 &7763182264744372916
 MonoBehaviour:
   m_ObjectHideFlags: 0

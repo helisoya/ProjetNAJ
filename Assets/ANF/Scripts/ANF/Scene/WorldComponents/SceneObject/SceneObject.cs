@@ -11,7 +11,7 @@ namespace ANF.Scene
     {
         [Header("Base")]
         [SerializeField] protected Renderer[] renderers;
-        [SerializeField] protected InteractableObject linkedInteraction;
+        [SerializeField] protected InteractableObject[] linkedInteractions;
 
         protected LerpInstanceVector3 lerpPosition;
         protected LerpInstanceVector3 lerpRotation;
@@ -69,9 +69,10 @@ namespace ANF.Scene
 		/// <param name="manager">The ANFManager</param>
         public void Create(ANFManager manager)
         {
-            if (linkedInteraction != null && manager.GetWorld().GetComponent<InteractionMode>(out InteractionMode interactionMode))
+            if (linkedInteractions != null && manager.GetWorld().GetComponent<InteractionMode>(out InteractionMode interactionMode))
             {
-                interactionMode.Register(linkedInteraction);
+                foreach (InteractableObject linkedInteraction in linkedInteractions)
+                    interactionMode.Register(linkedInteraction);
             }
 
             OnCreate(manager);
@@ -83,9 +84,10 @@ namespace ANF.Scene
 		/// <param name="manager">The ANF Manager</param>
         public void Remove(ANFManager manager)
         {
-            if (linkedInteraction != null && manager.GetWorld().GetComponent<InteractionMode>(out InteractionMode interactionMode))
+            if (linkedInteractions != null && manager.GetWorld().GetComponent<InteractionMode>(out InteractionMode interactionMode))
             {
-                interactionMode.UnRegister(linkedInteraction);
+                foreach (InteractableObject linkedInteraction in linkedInteractions)
+                    interactionMode.UnRegister(linkedInteraction);
             }
 
             OnRemove(manager);

@@ -54,7 +54,8 @@ MonoBehaviour:
   - {fileID: 3741044518072188375}
   - {fileID: 2948321191096849295}
   - {fileID: 975040945188477556}
-  linkedInteraction: {fileID: 231225591959009733}
+  linkedInteractions:
+  - {fileID: 231225591959009733}
   characterName: Sartt
   animator: {fileID: 741417314170966600}
   talkingTransitionDuration: 0.1

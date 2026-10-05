@@ -585,7 +585,8 @@ MonoBehaviour:
   - {fileID: 7168840562916857019}
   - {fileID: 8963973151699278940}
   - {fileID: 3901963075409525982}
-  linkedInteraction: {fileID: 3200545546295636278}
+  linkedInteractions:
+  - {fileID: 3200545546295636278}
   characterName: Robert
   animator: {fileID: 2920270551846627609}
   talkingTransitionDuration: 0.1

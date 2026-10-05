@@ -21,7 +21,7 @@ namespace ANF.Scene
             this.characterName = characterName;
             this.animator = animator;
             this.renderers = renderers;
-            this.linkedInteraction = interactableObject;
+            this.linkedInteractions = new InteractableObject[1] { interactableObject };
         }
 
         public override void OnSkipModeToggle(bool enabled)

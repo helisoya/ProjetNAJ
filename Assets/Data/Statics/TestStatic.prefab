@@ -68,6 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: TestStatic
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers:
   - {fileID: 8061731123475443399}
   interactionCollider: {fileID: 1713994903211634369}
@@ -177,4 +178,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers:
   - {fileID: 8061731123475443399}
-  linkedInteraction: {fileID: 8264830703841308779}
+  linkedInteractions:
+  - {fileID: 8264830703841308779}

@@ -1,0 +1,11 @@
+dialog(null;null;C1_Investigation_End_Head_1)
+dialog(null;null;C1_Investigation_End_Head_2)
+dialog(null;null;C1_Investigation_End_Head_3)
+
+variable(C1_InteractedHead;=;1)
+
+if(C1_InteractedKnife == 1)
+	load(End)
+else
+	load(Interaction)
+endif

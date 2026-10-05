@@ -266,7 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers:
   - {fileID: 525257000}
-  linkedInteraction: {fileID: 774413076}
+  linkedInteractions:
+  - {fileID: 774413076}
 --- !u!212 &525257000
 SpriteRenderer:
   serializedVersion: 2

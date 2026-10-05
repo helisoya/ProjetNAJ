@@ -120,7 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.Character
   renderers:
   - {fileID: 3797000896380841428}
-  linkedInteraction: {fileID: 4042852236000843689}
+  linkedInteractions:
+  - {fileID: 4042852236000843689}
   characterName: JudgeTurtle
   animator: {fileID: 4729554380168361167}
   talkingTransitionDuration: 0.1

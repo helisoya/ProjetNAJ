@@ -52,7 +52,8 @@ MonoBehaviour:
   - {fileID: 4114844922505277334}
   - {fileID: 2805544720258198720}
   - {fileID: 3499973942429318845}
-  linkedInteraction: {fileID: 231225591959009733}
+  linkedInteractions:
+  - {fileID: 231225591959009733}
   characterName: Sherif
   animator: {fileID: 741417314170966600}
   talkingTransitionDuration: 0.1

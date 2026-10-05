@@ -369,34 +369,38 @@ C1_Investigation_End_14 = Sir ? Captain ?
 C1_Investigation_End_15 = <color=#72B6E8>I make my way to him. I hope he’s alright.</color>
 C1_Investigation_End_16 = Huh ?!
 C1_Investigation_End_17 = <color=#72B6E8>What is going on ?! Did he- Did he get killed ?</color>
-C1_Investigation_End_18 = <color=#72B6E8>I check for a pulse. Please be alive…</color>
-C1_Investigation_End_19 = <color=#72B6E8>… No… Dead.</color>
-C1_Investigation_End_20 = But… how ? Why ?
-C1_Investigation_End_21 = Did someone kill him ?
-C1_Investigation_End_22 = Or did he get impaled during the crash ?
-C1_Investigation_End_23 = <color=#72B6E8>Calm down, Rann. There must be a perfectly logical explanation for this.</color>
-C1_Investigation_End_24 = Don’t move ! Hands in the air, criminal.
-C1_Investigation_End_25 = Huh ?
-C1_Investigation_End_26 = <color=#72B6E8>I do as asked.</color>
-C1_Investigation_End_27 = S- Sir ! This is terrible, the captain…
-C1_Investigation_End_28 = Dead. By your hands.
-C1_Investigation_End_29 = W- What ?!
-C1_Investigation_End_30 = No ! I swear ! He was already like that when I arrived.
-C1_Investigation_End_31 = Don’t give me that. I heard what happened from that girl.
-C1_Investigation_End_32 = Besides, you still have the murder weapon in your hands.
-C1_Investigation_End_33 = Put that axe on the ground. Slowly.
-C1_Investigation_End_34 = Y-Yes !
-C1_Investigation_End_35 = <color=#72B6E8>I do as asked. Who is this man ?!</color>
-C1_Investigation_End_36 = Now start walking. You’re in a lot of trouble, Miss.
-C1_Investigation_End_37 = Criminals like you should perish in jail.
-C1_Investigation_End_38 = <color=#72B6E8>And that’s how I got arrested for murder.</color>
-C1_Investigation_End_39 = <color=#72B6E8>As I suspected, the island we crashed into was settled.</color>
-C1_Investigation_End_40 = <color=#72B6E8>People took notice when our monstrosity of a boat made its entrance.</color>
-C1_Investigation_End_41 = <color=#72B6E8>I fainted shortly after being arrested. The pain in my leg combined with all the stress was too much for me to handle.</color>
-C1_Investigation_End_42 = <color=#72B6E8>I heard my trial is set for tomorrow. I don’t think I’ll even get to see a lawyer.</color>
-C1_Investigation_End_43 = <color=#72B6E8>What is this place anyway ? It feels… weirdly familiar.</color>
-C1_Investigation_End_44 = <color=#72B6E8>Not that I ever came here before, no. But, I don’t know…</color>
-C1_Investigation_End_45 = <color=#72B6E8>The policeman who arrested me spoke my language, as does everyone here apparently.</color>
-C1_Investigation_End_46 = <color=#72B6E8>Maybe… maybe they really did find their land…</color>
-C1_Investigation_End_47 = <color=#72B6E8>Well… it doesn’t matter right now.</color>
-C1_Investigation_End_48 = <color=#72B6E8>I should deal with that whole murder thing first. Then I’ll have all the time in the world to figure out where exactly I am.</color>
+C1_Investigation_End_18 = <color=#72B6E8>I should check on him.</color>
+
+C1_Investigation_End_Head_1 = <color=#72B6E8>I check for a pulse. Please be alive…</color>
+C1_Investigation_End_Head_2 = <color=#72B6E8>… No… Dead.</color>
+C1_Investigation_End_Head_3 = <color=#72B6E8>How did this happen ?</color>
+
+C1_Investigation_End_Knife_1 = <color=#72B6E8>Who was responsible for this ?</color>
+C1_Investigation_End_Knife_2 = <color=#72B6E8>Or… was it an accident ?</color>
+
+C1_Investigation_End_19 = <color=#72B6E8>Calm down, Rann. There must be a perfectly logical explanation for this.</color>
+C1_Investigation_End_20 = Don’t move ! Hands in the air, criminal.
+C1_Investigation_End_21 = Huh ?
+C1_Investigation_End_22 = <color=#72B6E8>I do as asked.</color>
+C1_Investigation_End_23 = S- Sir ! This is terrible, the captain…
+C1_Investigation_End_24 = Dead. By your hands.
+C1_Investigation_End_25 = W- What ?!
+C1_Investigation_End_26 = No ! I swear ! He was already like that when I arrived.
+C1_Investigation_End_27 = Don’t give me that. I heard what happened from that girl.
+C1_Investigation_End_28 = Besides, you still have the murder weapon in your hands.
+C1_Investigation_End_29 = Put that axe on the ground. Slowly.
+C1_Investigation_End_30 = Y-Yes !
+C1_Investigation_End_31 = <color=#72B6E8>I do as asked. Who is this man ?!</color>
+C1_Investigation_End_32 = Now start walking. You’re in a lot of trouble, Miss.
+C1_Investigation_End_33 = Criminals like you should perish in jail.
+C1_Investigation_End_34 = <color=#72B6E8>And that’s how I got arrested for murder.</color>
+C1_Investigation_End_35 = <color=#72B6E8>As I suspected, the island we crashed into was settled.</color>
+C1_Investigation_End_36 = <color=#72B6E8>People took notice when our monstrosity of a boat made its entrance.</color>
+C1_Investigation_End_37 = <color=#72B6E8>I fainted shortly after being arrested. The pain in my leg combined with all the stress was too much for me to handle.</color>
+C1_Investigation_End_38 = <color=#72B6E8>I heard my trial is set for tomorrow. I don’t think I’ll even get to see a lawyer.</color>
+C1_Investigation_End_39 = <color=#72B6E8>What is this place anyway ? It feels… weirdly familiar.</color>
+C1_Investigation_End_40 = <color=#72B6E8>Not that I ever came here before, no. But, I don’t know…</color>
+C1_Investigation_End_41 = <color=#72B6E8>The policeman who arrested me spoke my language, as does everyone here apparently.</color>
+C1_Investigation_End_42 = <color=#72B6E8>Maybe… maybe they really did find their land…</color>
+C1_Investigation_End_43 = <color=#72B6E8>Well… it doesn’t matter right now.</color>
+C1_Investigation_End_44 = <color=#72B6E8>I should deal with that whole murder thing first. Then I’ll have all the time in the world to figure out where exactly I am.</color>

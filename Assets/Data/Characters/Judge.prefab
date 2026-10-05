@@ -144,7 +144,8 @@ MonoBehaviour:
   - {fileID: 2805544720258198720}
   - {fileID: 5843731086412722905}
   - {fileID: 1176219484842898245}
-  linkedInteraction: {fileID: 231225591959009733}
+  linkedInteractions:
+  - {fileID: 231225591959009733}
   characterName: Judge
   animator: {fileID: 741417314170966600}
   talkingTransitionDuration: 0.1

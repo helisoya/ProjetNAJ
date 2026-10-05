@@ -326,7 +326,8 @@ MonoBehaviour:
   - {fileID: 169516961166851818}
   - {fileID: 3072900441610931299}
   - {fileID: 4338944677723518249}
-  linkedInteraction: {fileID: 3683721477384132652}
+  linkedInteractions:
+  - {fileID: 3683721477384132652}
   characterName: GeraldCoat
   animator: {fileID: 4858100431602199483}
   talkingTransitionDuration: 0.1

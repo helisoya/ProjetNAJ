@@ -144,7 +144,8 @@ MonoBehaviour:
   - {fileID: 1275358594189745344}
   - {fileID: 2301259469994825580}
   - {fileID: 1071730769852482809}
-  linkedInteraction: {fileID: 7409376685623027575}
+  linkedInteractions:
+  - {fileID: 7409376685623027575}
   characterName: RannCoat
   animator: {fileID: 2547321628801850032}
   talkingTransitionDuration: 0.1

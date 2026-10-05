@@ -237,7 +237,8 @@ MonoBehaviour:
   - {fileID: 6083177215973830727}
   - {fileID: 8668354657965562050}
   - {fileID: 4003427176701331312}
-  linkedInteraction: {fileID: 7728905221967740066}
+  linkedInteractions:
+  - {fileID: 7728905221967740066}
   characterName: TestCharacter
   animator: {fileID: 6684996369604369042}
   talkingTransitionDuration: 0.1

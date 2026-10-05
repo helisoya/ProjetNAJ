@@ -120,7 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.Character
   renderers:
   - {fileID: 7081638562480134672}
-  linkedInteraction: {fileID: 2647784255500157500}
+  linkedInteractions:
+  - {fileID: 2647784255500157500}
   characterName: Owl
   animator: {fileID: 1670892383775952001}
   talkingTransitionDuration: 0.1

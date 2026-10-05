@@ -1,0 +1,7 @@
+clearStack()
+
+setInteractionHidden(Exit;true)
+setInteractionScript(SarttHead;Head)
+setInteractionScript(SarttKnife;Knife)
+
+interaction()
