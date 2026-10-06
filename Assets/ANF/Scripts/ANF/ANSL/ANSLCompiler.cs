@@ -453,6 +453,35 @@ namespace ANF.ANSL
         }
 
         /// <summary>
+        /// Checks a line and caches a version without tabs and spaces at the start
+        /// </summary>
+        public void CheckLine(int line)
+        {
+            currentLine = line;
+            if (currentLine >= inLines.Count)
+            {
+                // End of file
+                cachedCurrentLine = "EOF";
+                cachedCurrentLineClean = "EOF";
+            }
+            else
+            {
+                cachedCurrentLine = inLines[currentLine];
+                cachedCurrentLineClean = cachedCurrentLine.Replace("\t", "");
+                while (cachedCurrentLineClean.StartsWith(" ") && cachedCurrentLineClean.Length > 0)
+                    cachedCurrentLineClean = cachedCurrentLineClean.Substring(1);
+                while (cachedCurrentLineClean.EndsWith(" ") && cachedCurrentLineClean.Length > 0)
+                    cachedCurrentLineClean = cachedCurrentLineClean.Substring(0, cachedCurrentLine.Length - 1);
+
+                if (cachedCurrentLineClean.StartsWith('#'))
+                {
+                    cachedCurrentLineClean = null;
+                    cachedCurrentLine = null;
+                }
+            }
+        }
+
+        /// <summary>
         /// Checks the next line and caches a version without tabs and spaces at the start
         /// </summary>
         public void CheckNextLine()

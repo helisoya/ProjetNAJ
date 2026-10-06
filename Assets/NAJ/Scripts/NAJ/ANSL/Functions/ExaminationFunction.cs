@@ -32,6 +32,42 @@ namespace NAJ.ANSL
             };
         }
 
+        /// <summary>
+		/// Flags for compiling an examination
+		/// </summary>
+        private enum ExaminationCompilerFlag
+        {
+            None,
+            CompilingPress,
+            CompilingPart,
+            CompilingFail,
+            CompilingLoop
+        }
+
+        private void CompilerCloseStep(ExaminationCompilerFlag currentFlag, string currentPartId, ANSLCompiler compiler,
+            ref Vector2Int uncompiledLoop, ref Vector2Int uncompiledFail,
+            Dictionary<string, Vector2Int> uncompiledPress, Dictionary<string, Vector2Int> uncompiledParts)
+        {
+            switch (currentFlag)
+            {
+                case ExaminationCompilerFlag.CompilingPress:
+                    uncompiledPress[currentPartId] = new Vector2Int(uncompiledPress[currentPartId].x, compiler.GetCurrentLineCounter() - 1);
+                    break;
+
+                case ExaminationCompilerFlag.CompilingPart:
+                    uncompiledParts[currentPartId] = new Vector2Int(uncompiledParts[currentPartId].x, compiler.GetCurrentLineCounter() - 1);
+                    break;
+
+                case ExaminationCompilerFlag.CompilingFail:
+                    uncompiledFail.y = compiler.GetCurrentLineCounter() - 1;
+                    break;
+
+                case ExaminationCompilerFlag.CompilingLoop:
+                    uncompiledLoop.y = compiler.GetCurrentLineCounter() - 1;
+                    break;
+            }
+        }
+
         public override bool Compile(out List<string> compiledLines, string cleanedLine, uint id, ANSLCompiler compiler, List<ANSLUtils.ANSLError> errors, int outputLine)
         {
             compiledLines = new List<string>();
@@ -49,17 +85,19 @@ namespace NAJ.ANSL
                 return false;
             }
 
-            List<string> uncompiledFail = new List<string>();
-            List<string> uncompiledLoop = new List<string>();
-            Dictionary<string, List<string>> uncompiledParts = new Dictionary<string, List<string>>();
-            Dictionary<string, List<string>> uncompiledPress = new Dictionary<string, List<string>>();
+            Vector2Int uncompiledFail = new Vector2Int(-1, -1);
+            Vector2Int uncompiledLoop = new Vector2Int(-1, -1);
+            Dictionary<string, Vector2Int> uncompiledParts = new Dictionary<string, Vector2Int>();
+            Dictionary<string, Vector2Int> uncompiledPress = new Dictionary<string, Vector2Int>();
             Dictionary<string, string[]> partsParameters = new Dictionary<string, string[]>();
 
             List<string> compiledFail = new List<string>();
             List<string> compiledLoop = new List<string>();
             Dictionary<string, List<string>> compiledParts = new Dictionary<string, List<string>>();
             Dictionary<string, List<string>> compiledPress = new Dictionary<string, List<string>>();
-            List<string> currentList = null;
+            string currentPartId = null;
+            ExaminationCompilerFlag currentFlag = ExaminationCompilerFlag.None;
+
             bool canContinue = true;
             bool foundEnd = false;
             bool foundFail = false;
@@ -92,7 +130,12 @@ namespace NAJ.ANSL
                     }
 
                     foundFail = true;
-                    currentList = uncompiledFail;
+
+                    CompilerCloseStep(currentFlag, currentPartId, compiler, ref uncompiledLoop, ref uncompiledFail, uncompiledPress, uncompiledParts);
+
+                    currentFlag = ExaminationCompilerFlag.CompilingFail;
+                    currentPartId = null;
+                    uncompiledFail.x = compiler.GetCurrentLineCounter() + 1;
                 }
                 else if (currentNextLine.Equals("loop"))
                 {
@@ -110,7 +153,12 @@ namespace NAJ.ANSL
                     }
 
                     foundLoop = true;
-                    currentList = uncompiledLoop;
+
+                    CompilerCloseStep(currentFlag, currentPartId, compiler, ref uncompiledLoop, ref uncompiledFail, uncompiledPress, uncompiledParts);
+
+                    currentFlag = ExaminationCompilerFlag.CompilingLoop;
+                    currentPartId = null;
+                    uncompiledLoop.x = compiler.GetCurrentLineCounter() + 1;
                 }
                 else if (currentNextLine.Equals("endexamination"))
                 {
@@ -182,8 +230,12 @@ namespace NAJ.ANSL
                         parameters[i - 2] = split[i];
                     }
                     partsParameters.Add(partId, parameters);
-                    currentList = new List<string>();
-                    uncompiledParts.Add(partId, currentList);
+
+                    CompilerCloseStep(currentFlag, currentPartId, compiler, ref uncompiledLoop, ref uncompiledFail, uncompiledPress, uncompiledParts);
+
+                    currentFlag = ExaminationCompilerFlag.CompilingPart;
+                    currentPartId = partId;
+                    uncompiledParts.Add(partId, new Vector2Int(compiler.GetCurrentLineCounter() + 1, -1));
                 }
                 else if (currentNextLine.StartsWith("press"))
                 {
@@ -227,12 +279,15 @@ namespace NAJ.ANSL
                         return false;
                     }
 
-                    currentList = new List<string>();
-                    uncompiledPress.Add(partId, currentList);
+                    CompilerCloseStep(currentFlag, currentPartId, compiler, ref uncompiledLoop, ref uncompiledFail, uncompiledPress, uncompiledParts);
+
+                    currentFlag = ExaminationCompilerFlag.CompilingPress;
+                    currentPartId = partId;
+                    uncompiledPress.Add(partId, new Vector2Int(compiler.GetCurrentLineCounter() + 1, -1));
                 }
                 else
                 {
-                    if (currentList == null)
+                    if (currentFlag == ExaminationCompilerFlag.None)
                     {
                         // Already found a fail
                         errors.Add(new ANSLUtils.ANSLError()
@@ -244,8 +299,6 @@ namespace NAJ.ANSL
                         });
                         return false;
                     }
-
-                    currentList.Add(currentNextLine);
                 }
 
                 if (canContinue)
@@ -333,6 +386,11 @@ namespace NAJ.ANSL
                 }
             }
 
+            if (currentFlag != ExaminationCompilerFlag.None)
+            {
+                CompilerCloseStep(currentFlag, currentPartId, compiler, ref uncompiledLoop, ref uncompiledFail, uncompiledPress, uncompiledParts);
+            }
+
             // Fomat :
             // EXAMINATION_FUNCTION ...
             // SET_EXAMINATION_PART_FUNCTION 1
@@ -359,6 +417,7 @@ namespace NAJ.ANSL
             // JUMP_TO_FUNCTION ouputLine
 
             int currentLine = outputLine + 1;
+            int sourceFileNextLine = compiler.GetCurrentLineCounter();
 
             string[] keys = partsParameters.Keys.ToArray();
             Dictionary<string, Vector2Int> partsLines = new Dictionary<string, Vector2Int>();
@@ -369,10 +428,20 @@ namespace NAJ.ANSL
             for (int i = 0; i < keys.Length; i++)
             {
                 string key = keys[i];
-                if (uncompiledParts[key].Count == 0)
+                if (uncompiledParts[key].y == -1 || uncompiledParts[key].x == -1)
+                {
+                    errors.Add(new ANSLUtils.ANSLError()
+                    {
+                        type = ANSLUtils.ANSLErrorType.WARNING,
+                        filePath = compiler.GetSourceFilepath(),
+                        line = compiler.GetCurrentLineCounter(),
+                        errorMessage = $"Press {key} has unknown range : {uncompiledParts[key].x}-{uncompiledParts[key].y}."
+                    });
                     continue;
+                }
 
-                currentList = new List<string>();
+
+                List<string> currentList = new List<string>();
                 compiledParts.Add(key, currentList);
 
                 Vector2Int lines = new Vector2Int();
@@ -380,12 +449,17 @@ namespace NAJ.ANSL
 
                 currentLine += 2; // Skip SET_EXAMINATION_PART_FUNCTION & SHOW_EXAMINATION_UI_FUNCTION
 
-                foreach (string uncompiledLine in uncompiledParts[key])
+                Vector2Int range = uncompiledParts[key];
+
+                compiler.CheckLine(range.x);
+
+                while (compiler.GetCurrentLineCounter() <= range.y)
                 {
-                    if (compiler.CompileLine(uncompiledLine, out List<string> compiled, currentLine))
+                    if (compiler.CompileLine(compiler.GetCurrentLineClean(), out List<string> compiled, currentLine))
                     {
                         currentLine += compiled.Count; // Skip compiled lines
                         currentList.AddRange(compiled);
+                        compiler.CheckNextLine();
                     }
                     else
                     {
@@ -400,12 +474,17 @@ namespace NAJ.ANSL
                 currentList = new List<string>();
                 compiledPress.Add(key, currentList);
 
-                foreach (string uncompiledLine in uncompiledPress[key])
+                range = uncompiledPress[key];
+
+                compiler.CheckLine(range.x);
+
+                while (compiler.GetCurrentLineCounter() <= range.y)
                 {
-                    if (compiler.CompileLine(uncompiledLine, out List<string> compiled, currentLine))
+                    if (compiler.CompileLine(compiler.GetCurrentLineClean(), out List<string> compiled, currentLine))
                     {
                         currentLine += compiled.Count; // Skip compiled lines
                         currentList.AddRange(compiled);
+                        compiler.CheckNextLine();
                     }
                     else
                     {
@@ -422,18 +501,21 @@ namespace NAJ.ANSL
 
             loopLine = currentLine;
 
-            if (uncompiledLoop.Count != 0)
+            if (uncompiledLoop.x != -1 && uncompiledLoop.y != -1)
             {
                 compiledLoop = new List<string>();
 
                 currentLine += 3; // Skip CHECK_EXAMINATION_PRESSED, SET_EXAMINATION_PART_FUNCTION & SHOW_EXAMINATION_UI_FUNCTION
 
-                foreach (string uncompiledLine in uncompiledLoop)
+                compiler.CheckLine(uncompiledLoop.x);
+
+                while (compiler.GetCurrentLineCounter() <= uncompiledLoop.y)
                 {
-                    if (compiler.CompileLine(uncompiledLine, out List<string> compiled, currentLine))
+                    if (compiler.CompileLine(compiler.GetCurrentLineClean(), out List<string> compiled, currentLine))
                     {
                         currentLine += compiled.Count; // Skip compiled lines
                         compiledLoop.AddRange(compiled);
+                        compiler.CheckNextLine();
                     }
                     else
                     {
@@ -442,21 +524,35 @@ namespace NAJ.ANSL
                 }
                 currentLine++; // SKIP JUMP_TO_FUNCTION
             }
+            else
+            {
+                errors.Add(new ANSLUtils.ANSLError()
+                {
+                    type = ANSLUtils.ANSLErrorType.WARNING,
+                    filePath = compiler.GetSourceFilepath(),
+                    line = compiler.GetCurrentLineCounter(),
+                    errorMessage = $"No loop content detected {uncompiledLoop.x}-{uncompiledLoop.y}"
+                });
+            }
+
 
             failLine = currentLine;
 
-            if (uncompiledFail.Count != 0)
+            if (uncompiledFail.x != -1 && uncompiledFail.y != -1)
             {
                 compiledFail = new List<string>();
 
                 currentLine += 2; // Skip SET_EXAMINATION_PART_FUNCTION & SHOW_EXAMINATION_UI_FUNCTION
 
-                foreach (string uncompiledLine in uncompiledFail)
+                compiler.CheckLine(uncompiledFail.x);
+
+                while (compiler.GetCurrentLineCounter() <= uncompiledFail.y)
                 {
-                    if (compiler.CompileLine(uncompiledLine, out List<string> compiled, currentLine))
+                    if (compiler.CompileLine(compiler.GetCurrentLineClean(), out List<string> compiled, currentLine))
                     {
                         currentLine += compiled.Count; // Skip compiled lines
                         compiledFail.AddRange(compiled);
+                        compiler.CheckNextLine();
                     }
                     else
                     {
@@ -464,6 +560,16 @@ namespace NAJ.ANSL
                     }
                 }
                 currentLine++; // SKIP JUMP_TO_FUNCTION
+            }
+            else
+            {
+                errors.Add(new ANSLUtils.ANSLError()
+                {
+                    type = ANSLUtils.ANSLErrorType.WARNING,
+                    filePath = compiler.GetSourceFilepath(),
+                    line = compiler.GetCurrentLineCounter(),
+                    errorMessage = $"No fail content detected {uncompiledFail.x}-{uncompiledFail.y}"
+                });
             }
 
             int endLine = currentLine;
@@ -531,6 +637,8 @@ namespace NAJ.ANSL
             compiledLines.Add($"{showExaminationUIId}{ANSLUtils.COMPILED_DELIMITER}false");
             compiledLines.AddRange(compiledFail);
             compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{outputLine}");
+
+            compiler.CheckLine(sourceFileNextLine);
 
             return true;
         }

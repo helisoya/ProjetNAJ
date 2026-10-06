@@ -1,0 +1,79 @@
+#9C5E46295043F1147B3E46ED70AA2FCC-8D103ABC3C0B157D3F6A342F02C946F9
+67RannCoatNormal0.1
+69RannCoatNormal
+73RannCoatNeutral
+35Char_RannRannCoatC1_Trial_Testimony5_Press3_32
+2Profile563Profile/C1_Gerald
+35Char_RannRannCoatC1_Trial_Testimony5_Press3_34
+97false
+600.10.2
+69GeraldNoCoatSurprise
+73GeraldNoCoatSerious
+67GeraldNoCoatSurprise0.1
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_35
+67RobertRelaxed0.1
+69RobertThinking
+73RobertNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial_Testimony5_Press3_36
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertRobertC1_Trial_Testimony5_Press3_37
+35Char_RobertRobertC1_Trial_Testimony5_Press3_38
+35Char_RobertRobertC1_Trial_Testimony5_Press3_39
+97false
+600.10.2
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_40
+67GeraldNoCoatOnBar0.1
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_41
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_42
+97false
+67RannCoatAngry0.1
+65DefenseCam0.25false
+64DefenseCam0.25true
+35Char_RannRannCoatC1_Trial_Testimony5_Press3_43
+67GeraldNoCoatThinking0.1
+69GeraldNoCoatNormal
+73GeraldNoCoatSerious
+69JudgeThinking
+73JudgeNormal
+97false
+64HammerCam
+65HammerCam
+67JudgeStrike
+1051
+67JudgeNormal
+65JudgeCam
+64JudgeCam
+35Char_JudgeJudgeC1_Trial_Testimony5_Press3_44
+69JudgeNormal
+73JudgeNormal
+35Char_JudgeJudgeC1_Trial_Testimony5_Press3_45
+65WitnessCam
+64WitnessCam
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_46
+67GeraldNoCoatOnBar0.1
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_47
+35Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_48
+44Testimony5End
+4278
+67RannCoatStress0.1
+69RannCoatNormal
+73RannCoatOops
+35Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_1
+64JudgeCam
+65JudgeCam
+35Char_JudgenullC1_Trial_Testimony5_Press3_IncriminateFail_2
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertnullC1_Trial_Testimony5_Press3_IncriminateFail_3
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_4
+44Testimony5Question
+4278

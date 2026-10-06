@@ -143,7 +143,7 @@ press 1
 	dialog(Char_Judge;Judge;C1_Trial_Testimony4_Press1_11)
 
 	:setCourtroomCamToDefenseImmediate()
-	dialog(Char_Rann;null;C1_Trial_Testimony4_Press1_12)
+	dialog(null;null;C1_Trial_Testimony4_Press1_12)
 	showDialogWindow(false)
 
 	fadeBg(1;true)
@@ -173,7 +173,7 @@ press 2
 	dialog(Char_Judge;Judge;C1_Trial_Testimony4_Press2_4)
 
 	:setCourtroomCamToDefenseImmediate()
-	dialog(Char_Rann;null;C1_Trial_Testimony4_Press2_5)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony4_Press2_5)
 	showDialogWindow(false)
 
 	:setCourtroomCamToWitness(true)

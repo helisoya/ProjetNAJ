@@ -1,0 +1,73 @@
+:setRannNormal(Coat)
+:setRannEyeNeutral(Coat)
+
+dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_32)
+
+ask(Profile;Profile/C1_Gerald)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_34)
+	showDialogWindow(false)
+
+	screenshake(0.1;0.2)
+	:setGeraldEyeSurprise(NoCoat)
+	:setGeraldSurprise(NoCoat)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_35)
+
+	:setRobertRelaxed()
+	:setRobertEyeThinking()
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_36)
+
+	:setCourtroomCamToProsecutorImmediate()
+	dialog(Char_Robert;Robert;C1_Trial_Testimony5_Press3_37)
+	dialog(Char_Robert;Robert;C1_Trial_Testimony5_Press3_38)
+	dialog(Char_Robert;Robert;C1_Trial_Testimony5_Press3_39)
+	showDialogWindow(false)
+
+	screenshake(0.1;0.2)
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_40)
+
+	:setGeraldOnBar(NoCoat)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_41)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_42)
+	showDialogWindow(false)
+
+	:setRannAngry(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_43)
+
+	:setGeraldThinking(NoCoat)
+	:setGeraldEyeSerious(NoCoat)
+	:setJudgeEyeThinking()
+	:playJudgeHammerAnimation(Normal;JudgeCam)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_44)
+
+	:setJudgeEyeNormal()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_45)
+
+	:setCourtroomCamToWitnessImmediate()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_46)
+
+	:setGeraldOnBar(NoCoat)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_47)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_48)
+
+	load(Testimony5End)
+
+wrong
+	:setRannStress(Coat)
+	:setRannEyeOops(Coat)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateFail_1)
+
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;null;C1_Trial_Testimony5_Press3_IncriminateFail_2)
+	
+	:setCourtroomCamToProsecutorImmediate()
+	dialog(Char_Robert;null;C1_Trial_Testimony5_Press3_IncriminateFail_3)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateFail_4)
+
+	load(Testimony5Question)
+endask

@@ -1,0 +1,166 @@
+#DB1951E5AE3B267A1DF4647CC9142C37-8D103ABC3C0B157D3F6A342F02C946F9
+64DefenseCam
+65DefenseCam
+67RobertNormal0.1
+69RobertNormal
+73RobertNormal
+69JudgeNormal
+73JudgeNormal
+35nullnullC1_Trial1_I_62
+35Char_RannRannCoatC1_Trial1_I_63
+2Profile10126Profile/C1_Gerald
+35nullnullC1_Trial1_I_64
+35Char_RannRannCoatC1_Trial1_I_65
+97false
+65ProsecutionCam0.25false
+64ProsecutionCam0.25true
+35Char_RobertRobertC1_Trial1_I_66
+35Char_RobertRobertC1_Trial1_I_67
+97false
+65DefenseCam0.25false
+64DefenseCam0.25true
+35Char_RannRannCoatC1_Trial1_I_68
+35Char_RannRannCoatC1_Trial1_I_69
+69JudgeSurprise
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_I_70
+35Char_JudgeJudgeC1_Trial1_I_71
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial1_I_72
+35Char_RannRannCoatC1_Trial1_I_73
+35Char_RannRannCoatC1_Trial1_I_74
+35Char_RannRannCoatC1_Trial1_I_75
+67RannCoatNormal0.1
+64JudgeCam
+65JudgeCam
+35Char_JudgeJudgeC1_Trial1_I_76
+35Char_JudgeJudgeC1_Trial1_I_77
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial1_I_78
+35Char_RannRannCoatC1_Trial1_I_79
+600.10.2
+67GeraldNoCoatSurprise0.1
+69GeraldNoCoatSurprise
+73GeraldNoCoatSerious
+65WitnessCam
+64WitnessCam
+35Char_GeraldGeraldNoCoatC1_Trial1_I_80
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial1_I_81
+35Char_RannRannCoatC1_Trial1_I_82
+35Char_RannRannCoatC1_Trial1_I_83
+600.10.2
+65WitnessCam
+64WitnessCam
+35Char_GeraldGeraldNoCoatC1_Trial1_I_84
+67GeraldNoCoatSad0.1
+35Char_GeraldGeraldNoCoatC1_Trial1_I_85
+69GeraldNoCoatNormal
+73GeraldNoCoatSerious
+67GeraldNoCoatOnBar0.1
+35Char_GeraldGeraldNoCoatC1_Trial1_I_86
+35Char_GeraldGeraldNoCoatC1_Trial1_I_87
+97false
+65DefenseCam0.25false
+64DefenseCam0.25true
+35Char_RannRannCoatC1_Trial1_I_88
+35Char_RannRannCoatC1_Trial1_I_89
+35Char_RannRannCoatC1_Trial1_I_90
+97false
+65WitnessCam0.25false
+64WitnessCam0.25true
+35Char_GeraldGeraldNoCoatC1_Trial1_I_91
+600.10.2
+35Char_GeraldGeraldNoCoatC1_Trial1_I_92
+35Char_GeraldGeraldNoCoatC1_Trial1_I_93
+69JudgeThinking
+73JudgeNormal
+97false
+64HammerCam
+65HammerCam
+67JudgeStrike
+1051
+67JudgeNormal
+65JudgeCam
+64JudgeCam
+35Char_JudgeJudgeC1_Trial1_I_94
+35Char_JudgeJudgeC1_Trial1_I_95
+35Char_JudgeJudgeC1_Trial1_I_96
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial1_I_97
+69JudgeNormal
+73JudgeNormal
+64JudgeCam
+65JudgeCam
+67RannCoatAngry0.1
+35Char_JudgeJudgeC1_Trial1_I_98
+35Char_JudgeJudgeC1_Trial1_I_99
+35Char_JudgeJudgeC1_Trial1_I_100
+35Char_JudgeJudgeC1_Trial1_I_101
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial1_I_102
+35nullnullC1_Trial1_I_103
+35nullnullC1_Trial1_I_104
+65WitnessCam
+64WitnessCam
+35Char_GeraldGeraldNoCoatC1_Trial1_I_105
+67GeraldNoCoatNormal0.1
+35Char_GeraldGeraldNoCoatC1_Trial1_I_106
+67RannCoatNormal0.1
+69RobertThinking
+73RobertNormal
+65ProsecutionCam
+64ProsecutionCam
+35Char_RobertnullC1_Trial1_I_107
+64DefenseCam
+65DefenseCam
+35nullnullC1_Trial1_I_108
+35nullnullC1_Trial1_I_109
+44Testimony7
+42165
+21true
+181truetrue
+35Char_RannRannCoatC1_Trial1_I_Fail_1
+97false
+65ProsecutionCam0.25false
+64ProsecutionCam0.25true
+69RannCoatNormal
+73RannCoatOops
+67RannCoatStress0.1
+35Char_RobertRobertC1_Trial1_I_Fail_2
+64DefenseCam
+65DefenseCam
+35Char_RannRannCoatC1_Trial1_I_Fail_3
+35Char_RannRannCoatC1_Trial1_I_Fail_4true
+600.10.25truetrue
+103LifePoints-1
+40143145LifePoints < 0
+103LifePoints=0
+42146
+42146
+180falsefalse
+12falsetrue
+35Char_RannRannCoatC1_Trial1_I_Fail_5
+21false
+40151153LifePoints <= 0
+44Death
+42164
+69JudgeAngry
+73JudgeAngry
+64JudgeCam
+65JudgeCam
+67RannCoatHandsOnDesk0.1
+69RannCoatNormal
+73RannCoatNeutral
+35Char_JudgeJudgeC1_Trial1_I_Fail_6
+35Char_JudgeJudgeC1_Trial1_I_Fail_7
+44IncriminateGerald
+42164
+42165

@@ -1,0 +1,156 @@
+:setCourtroomCamToDefenseImmediate()
+:setRobertNormal()
+:setRobertEyeNormal()
+:setJudgeEyeNormal()
+
+dialog(null;null;C1_Trial1_I_62)
+dialog(Char_Rann;RannCoat;C1_Trial1_I_63)
+
+ask(Profile;Profile/C1_Gerald)
+	dialog(null;null;C1_Trial1_I_64)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_65)
+	showDialogWindow(false)
+
+	:setCourtroomCamToProsecutor(true)
+	dialog(Char_Robert;Robert;C1_Trial1_I_66)
+	dialog(Char_Robert;Robert;C1_Trial1_I_67)
+	showDialogWindow(false)
+
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_68)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_69)
+
+	:setJudgeEyeSurprise()
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial1_I_70)
+	dialog(Char_Judge;Judge;C1_Trial1_I_71)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_72)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_73)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_74)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_75)
+
+	:setRannNormal(Coat)
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial1_I_76)
+	dialog(Char_Judge;Judge;C1_Trial1_I_77)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_78)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_79)
+
+	screenshake(0.1;0.2)
+	:setGeraldSurprise(NoCoat)
+	:setGeraldEyeSurprise(NoCoat)
+	:setCourtroomCamToWitnessImmediate()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_80)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_81)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_82)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_83)
+
+	screenshake(0.1;0.2)
+	:setCourtroomCamToWitnessImmediate()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_84)
+
+	:setGeraldSad(NoCoat)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_85)
+
+	:setGeraldEyeSerious(NoCoat)
+	:setGeraldOnBar(NoCoat)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_86)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_87)
+	showDialogWindow(false)
+
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_88)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_89)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_90)
+	showDialogWindow(false)
+
+	:setCourtroomCamToWitness(true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_91)
+
+	screenshake(0.1;0.2)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_92)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_93)
+
+	:setJudgeEyeThinking()
+	:playJudgeHammerAnimation(Normal;JudgeCam)
+	dialog(Char_Judge;Judge;C1_Trial1_I_94)
+	dialog(Char_Judge;Judge;C1_Trial1_I_95)
+	dialog(Char_Judge;Judge;C1_Trial1_I_96)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(null;null;C1_Trial1_I_97)
+
+	:setJudgeEyeNormal()
+	:setCourtroomCamToJudge()
+	:setRannAngry(Coat)
+	dialog(Char_Judge;Judge;C1_Trial1_I_98)
+	dialog(Char_Judge;Judge;C1_Trial1_I_99)
+	dialog(Char_Judge;Judge;C1_Trial1_I_100)
+	dialog(Char_Judge;Judge;C1_Trial1_I_101)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(null;null;C1_Trial1_I_102)
+	dialog(null;null;C1_Trial1_I_103)
+	dialog(null;null;C1_Trial1_I_104)
+
+	:setCourtroomCamToWitnessImmediate()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_105)
+	
+	:setGeraldNormal(NoCoat)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_106)
+	
+	:setRannNormal(Coat)
+	:setRobertEyeThinking()
+	:setCourtroomCamToProsecutorImmediate()
+	dialog(Char_Robert;null;C1_Trial1_I_107)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(null;null;C1_Trial1_I_108)
+	dialog(null;null;C1_Trial1_I_109)
+
+	load(Testimony7)
+
+wrong
+	showLifeBarUI(true)
+	setLifeBarUIPreviewRange(1;true;true)
+
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_1)
+	showDialogWindow(false)
+
+	:setCourtroomCamToProsecutor(true)
+	:setRannEyeOops(Coat)
+	:setRannStress(Coat)
+	dialog(Char_Robert;Robert;C1_Trial1_I_Fail_2)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_3)
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_4;true)
+
+	screenshake(0.1;0.25;true;true)
+	:removeHealth(1)
+	setLifeBarUIPreviewRange(0;false;false)
+	refreshLifeBarUI(false;true)
+
+	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_5)
+
+	showLifeBarUI(false)
+
+	if(LifePoints <= 0)
+		load(Death)
+	else
+		:setJudgeEyeAngry()
+		:setCourtroomCamToJudge()
+		:setRannHandsOnDesk(Coat)
+		:setRannEyeNeutral(Coat)
+		dialog(Char_Judge;Judge;C1_Trial1_I_Fail_6)
+		dialog(Char_Judge;Judge;C1_Trial1_I_Fail_7)
+
+		load(IncriminateGerald)
+	endif
+endask

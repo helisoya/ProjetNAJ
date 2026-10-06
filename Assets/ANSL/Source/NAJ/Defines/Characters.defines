@@ -209,6 +209,10 @@ Define setJudgeOnShell()
 setCharacterBody(Judge;OnShell;0.1)
 EndDefine
 
+Define setJudgeStress()
+setCharacterBody(Judge;Stress;0.1)
+EndDefine
+
 Define setJudgeReadingBook()
 setCharacterBody(Judge;ReadingBook)
 EndDefine
@@ -231,6 +235,10 @@ EndDefine
 
 Define setJudgeDamageToHoldingHammer()
 setCharacterBody(Judge;DamageToHoldingHammer)
+EndDefine
+
+Define setJudgeThrowBookAway()
+setCharacterBody(Judge;ThrowBookAway)
 EndDefine
 
 Define setJudgeEyeNormal()

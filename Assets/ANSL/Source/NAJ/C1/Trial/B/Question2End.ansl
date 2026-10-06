@@ -199,10 +199,7 @@ dialog(Char_Robert;Robert;C1_Trial1_H_78)
 :setRobertEyeNormal()
 dialog(Char_Robert;Robert;C1_Trial1_H_79)
 
-showEvidenceInfo(Evidence/C1_Knife;Full)
 addEvidence(C1_Knife)
-dialog(null;null;C1_Trial_Evidence_Knife_1)
-hideEvidenceInfo()
 
 :setCourtroomCamToJudge()
 dialog(Char_Judge;Judge;C1_Trial1_H_80)
@@ -233,3 +230,4 @@ dialog(Char_Judge;Judge;C1_Trial1_H_91)
 :setCourtroomCamToDefenseImmediate()
 dialog(null;null;C1_Trial1_H_92)
 
+load(Testimony5)

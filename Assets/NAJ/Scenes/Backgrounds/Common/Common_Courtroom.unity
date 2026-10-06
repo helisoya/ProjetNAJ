@@ -52084,6 +52084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Exit
   icon: {fileID: 2800000, guid: 3e613bb1c0c4b354badb8deec68c7ac8, type: 3}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 1515668598}
 --- !u!65 &1515668598
