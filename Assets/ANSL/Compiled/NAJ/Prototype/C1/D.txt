@@ -1,17 +1,17 @@
-#BD18DE2B169AB831227772C1A1C43A8E-8D103ABC3C0B157D3F6A342F02C946F9
-64DefenseCam0.5false
-65DefenseCam0.5true
-35Prototype_RannnullPrototype_D_1
-35Prototype_RannnullPrototype_D_2
-64ProsecutionCam0.5false
-65ProsecutionCam0.5true
-35Prototype_SherifSherifPrototype_D_3
-64JudgeCam
+#BD18DE2B169AB831227772C1A1C43A8E-3808802B8FD62756E93CBEE04725A2AF
+65DefenseCam0.5false
+66DefenseCam0.5true
+36Prototype_RannnullPrototype_D_1
+36Prototype_RannnullPrototype_D_2
+65ProsecutionCam0.5false
+66ProsecutionCam0.5true
+36Prototype_SherifSherifPrototype_D_3
 65JudgeCam
-35Prototype_JudgeJudgePrototype_D_4
-35Prototype_JudgeJudgePrototype_D_5
-35Prototype_JudgeJudgePrototype_D_6
-64DefenseCam
+66JudgeCam
+36Prototype_JudgeJudgePrototype_D_4
+36Prototype_JudgeJudgePrototype_D_5
+36Prototype_JudgeJudgePrototype_D_6
 65DefenseCam
-35Prototype_RannnullPrototype_D_7
-44D2
+66DefenseCam
+36Prototype_RannnullPrototype_D_7
+45D2

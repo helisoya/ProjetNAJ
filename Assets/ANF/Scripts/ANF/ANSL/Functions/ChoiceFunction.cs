@@ -317,6 +317,7 @@ namespace ANF.ANSL
 
         protected override void OnStartProcess()
         {
+            waitingForChoice = false;
             if (parameters.GetParameter(0, out int type) &&
                 parameters.GetParameter(1, out string[] choices) &&
                 manager.GetGUIManager().GetComponent<ChoiceUI>(out choiceUI))
@@ -383,12 +384,13 @@ namespace ANF.ANSL
             if (choiceUI != null && choiceUI.showingChoice)
                 return;
 
-            if (choiceUI)
+            if (choiceUI && waitingForChoice)
             {
                 if (choiceUI.showingChoice)
                     return;
 
                 EndProcess();
+                waitingForChoice = false;
                 context.SetLineCounter(choiceUI.selectedLine);
                 choiceUI = null;
             }

@@ -475,8 +475,8 @@ namespace ANF.GUI
                         if (arrayData[i].ContainsKey("textKey"))
                             currentData.entries[i].textKey = arrayData[i].GetString("textKey");
 
-                        if (arrayData[i].ContainsKey("linkedLine"))
-                            currentData.entries[i].linkedLine = arrayData[i].GetJNumber("linkedLine").AsUInt();
+                        if (arrayData[i].ContainsKey("linkedScript"))
+                            currentData.entries[i].linkedLine = arrayData[i].GetJNumber("linkedScript").AsUInt();
 
                         if (arrayData[i].ContainsKey("linkedSprite"))
                             currentData.entries[i].linkedSprite = arrayData[i].GetString("linkedSprite");

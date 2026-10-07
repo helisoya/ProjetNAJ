@@ -109,917 +109,923 @@
 	},
 	"17_0": {
 		"scope": "ansl",
+		"prefix": "setCaseCompletion",
+		"body": ["setCaseCompletion(Number)"],
+		"description": "Tries to set the max case completed (int)"
+	},
+	"18_0": {
+		"scope": "ansl",
 		"prefix": "setExaminationPart",
 		"body": ["setExaminationPart(Id)"],
 		"description": "Sets what part of the examination is the current one."
 	},
-	"18_0": {
+	"19_0": {
 		"scope": "ansl",
 		"prefix": "setLifeBarUIPreviewRange",
 		"body": ["setLifeBarUIPreviewRange(Range;Immediate;Refresh)"],
 		"description": "Changes the life bar UI's preview range (This will chip away at the health bar)"
 	},
-	"19_0": {
+	"20_0": {
 		"scope": "ansl",
 		"prefix": "showEvidenceInfo",
 		"body": ["showEvidenceInfo(Item;Placement)"],
 		"description": "Shows the information of a specific item on screen (Evidence/XXX or Profile/XXX)"
 	},
-	"20_0": {
+	"21_0": {
 		"scope": "ansl",
 		"prefix": "showExaminationUI",
 		"body": ["showExaminationUI(Shown)"],
 		"description": "Shows/Hides the cross examination UI"
 	},
-	"21_0": {
+	"22_0": {
 		"scope": "ansl",
 		"prefix": "showLifeBarUI",
 		"body": ["showLifeBarUI(Shown)"],
 		"description": "Shows/Hides the life bar UI"
 	},
-	"22_0": {
+	"23_0": {
 		"scope": "ansl",
 		"prefix": "addCharacter",
 		"body": ["addCharacter(Name)"],
 		"description": "Add a new Character (one per type)"
 	},
-	"22_1": {
+	"23_1": {
 		"scope": "ansl",
 		"prefix": "addCharacter",
 		"body": ["addCharacter(Name;Hidden)"],
 		"description": "Add a new Character (one per type)"
 	},
-	"22_2": {
+	"23_2": {
 		"scope": "ansl",
 		"prefix": "addCharacter",
 		"body": ["addCharacter(Name;Hidden;StartingMarker)"],
 		"description": "Add a new Character (one per type)"
 	},
-	"23_0": {
+	"24_0": {
 		"scope": "ansl",
 		"prefix": "addStatic",
 		"body": ["addStatic(Name)"],
 		"description": "Add a new static object (one per type)"
 	},
-	"23_1": {
+	"24_1": {
 		"scope": "ansl",
 		"prefix": "addStatic",
 		"body": ["addStatic(Name;Hidden)"],
 		"description": "Add a new static object (one per type)"
 	},
-	"23_2": {
+	"24_2": {
 		"scope": "ansl",
 		"prefix": "addStatic",
 		"body": ["addStatic(Name;Hidden;StartingMarker)"],
 		"description": "Add a new static object (one per type)"
 	},
-	"24_0": {
+	"25_0": {
 		"scope": "ansl",
 		"prefix": "autosave",
 		"body": ["autosave()"],
 		"description": "Starts an autosave"
 	},
-	"24_1": {
+	"25_1": {
 		"scope": "ansl",
 		"prefix": "autosave",
 		"body": ["autosave(SaveIndex)"],
 		"description": "Starts an autosave"
 	},
-	"25_0": {
+	"26_0": {
 		"scope": "ansl",
 		"prefix": "block",
 		"body": ["block\n\nendblock"],
 		"description": "All functions inside a block will be processed during the same frame, ignoring any depth check."
 	},
-	"26_0": {
+	"27_0": {
 		"scope": "ansl",
 		"prefix": "changeScene",
 		"body": ["changeScene(Name)"],
 		"description": "Changes the current scene"
 	},
-	"27_0": {
+	"28_0": {
 		"scope": "ansl",
 		"prefix": "choice",
 		"body": ["choice(List)\n\tchoice Key:\n\nendchoice"],
 		"description": "Starts a choice (List/Circle/Arc)"
 	},
-	"28_0": {
+	"29_0": {
 		"scope": "ansl",
 		"prefix": "clearStack",
 		"body": ["clearStack()"],
 		"description": "Clears the context's stack. Can also clear other context's"
 	},
-	"28_1": {
+	"29_1": {
 		"scope": "ansl",
 		"prefix": "clearStack",
 		"body": ["clearStack(ContextIndex)"],
 		"description": "Clears the context's stack. Can also clear other context's"
 	},
-	"29_0": {
+	"30_0": {
 		"scope": "ansl",
 		"prefix": "createUserLog",
 		"body": ["createUserLog(Log)"],
 		"description": "Creates a User Log"
 	},
-	"30_0": {
+	"31_0": {
 		"scope": "ansl",
 		"prefix": "createUserQuest",
 		"body": ["createUserQuest(Variable;Category;MaxState)"],
 		"description": "Creates a User Quest"
 	},
-	"31_0": {
+	"32_0": {
 		"scope": "ansl",
 		"prefix": "createUserVariable",
 		"body": ["createUserVariable(Name;Value)"],
 		"description": "Creates a user variable"
 	},
-	"31_1": {
+	"32_1": {
 		"scope": "ansl",
 		"prefix": "createUserVariable",
 		"body": ["createUserVariable(Name;VariableToCopy)"],
 		"description": "Creates a user variable"
 	},
-	"32_0": {
+	"33_0": {
 		"scope": "ansl",
 		"prefix": "deleteUserLog",
 		"body": ["deleteUserLog(Log)"],
 		"description": "Deletes a User Log"
 	},
-	"33_0": {
+	"34_0": {
 		"scope": "ansl",
 		"prefix": "deleteUserQuest",
 		"body": ["deleteUserQuest(Variable;Category)"],
 		"description": "Deletes a User Quest"
 	},
-	"34_0": {
-		"scope": "ansl",
-		"prefix": "deleteUserVariable",
-		"body": ["deleteUserVariable(Name)"],
-		"description": "Removes a user variable"
-	},
-	"34_1": {
-		"scope": "ansl",
-		"prefix": "deleteUserVariable",
-		"body": ["deleteUserVariable(Name)"],
-		"description": "Removes a user variable"
-	},
 	"35_0": {
+		"scope": "ansl",
+		"prefix": "deleteUserVariable",
+		"body": ["deleteUserVariable(Name)"],
+		"description": "Removes a user variable"
+	},
+	"35_1": {
+		"scope": "ansl",
+		"prefix": "deleteUserVariable",
+		"body": ["deleteUserVariable(Name)"],
+		"description": "Removes a user variable"
+	},
+	"36_0": {
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": ["dialog(SpeakerId;CharacterId;DialogId)"],
 		"description": "Shows a dialog"
 	},
-	"35_1": {
+	"36_1": {
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": ["dialog(SpeakerId;CharacterId;DialogId;Additive)"],
 		"description": "Shows a dialog"
 	},
-	"35_2": {
+	"36_2": {
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": ["dialog(SpeakerId;CharacterId;DialogId;Additive;NoEndUserInput)"],
 		"description": "Shows a dialog"
 	},
-	"35_3": {
+	"36_3": {
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": ["dialog(SpeakerId;CharacterId;DialogId;Additive;NoEndUserInput;CloseAfterwards)"],
 		"description": "Shows a dialog"
 	},
-	"36_0": {
+	"37_0": {
 		"scope": "ansl",
 		"prefix": "fadeBgColor",
 		"body": ["fadeBgColor(R;G;B;A;WaitForEnd)"],
 		"description": "Changes the color of the background fade over time"
 	},
-	"36_1": {
+	"37_1": {
 		"scope": "ansl",
 		"prefix": "fadeBgColor",
 		"body": ["fadeBgColor(R;G;B;A;WaitForEnd;Duration)"],
 		"description": "Changes the color of the background fade over time"
 	},
-	"37_0": {
+	"38_0": {
 		"scope": "ansl",
 		"prefix": "fadeBg",
 		"body": ["fadeBg(Alpha;WaitForEnd)"],
 		"description": "Fades the Background to a specific value"
 	},
-	"37_1": {
+	"38_1": {
 		"scope": "ansl",
 		"prefix": "fadeBg",
 		"body": ["fadeBg(Alpha;WaitForEnd;Duration)"],
 		"description": "Fades the Background to a specific value"
 	},
-	"38_0": {
+	"39_0": {
 		"scope": "ansl",
 		"prefix": "fadeFgColor",
 		"body": ["fadeFgColor(R;G;B;A;WaitForEnd)"],
 		"description": "Changes the color of the foreground fade over time"
 	},
-	"38_1": {
+	"39_1": {
 		"scope": "ansl",
 		"prefix": "fadeFgColor",
 		"body": ["fadeFgColor(R;G;B;A;WaitForEnd;Duration)"],
 		"description": "Changes the color of the foreground fade over time"
 	},
-	"39_0": {
+	"40_0": {
 		"scope": "ansl",
 		"prefix": "fadeFg",
 		"body": ["fadeFg(Alpha;WaitForEnd)"],
 		"description": "Fades the Foreground to a specific value"
 	},
-	"39_1": {
+	"40_1": {
 		"scope": "ansl",
 		"prefix": "fadeFg",
 		"body": ["fadeFg(Alpha;WaitForEnd;Duration)"],
 		"description": "Fades the Foreground to a specific value"
 	},
-	"40_0": {
+	"41_0": {
 		"scope": "ansl",
 		"prefix": "if",
 		"body": ["if()\n\nelse\n\nendif"],
 		"description": "Checks variables. You can't use both || and && in the same check."
 	},
-	"41_0": {
+	"42_0": {
 		"scope": "ansl",
 		"prefix": "interaction",
 		"body": ["interaction()"],
 		"description": "Starts the interaction mode"
 	},
-	"43_0": {
+	"44_0": {
 		"scope": "ansl",
 		"prefix": "loadBundle",
 		"body": ["loadBundle(Bundle;DataType)"],
 		"description": "Loads a bundle in memory (AudioClip / TextAsset / Sprite / Texture2D / GameObject)"
 	},
-	"44_0": {
+	"45_0": {
 		"scope": "ansl",
 		"prefix": "load",
 		"body": ["load(Script)"],
 		"description": "Loads a new ANSL script"
 	},
-	"44_1": {
+	"45_1": {
 		"scope": "ansl",
 		"prefix": "load",
 		"body": ["load(Script;StartIndex)"],
 		"description": "Loads a new ANSL script"
 	},
-	"45_0": {
+	"46_0": {
 		"scope": "ansl",
 		"prefix": "log",
 		"body": ["log(Type;Message)"],
 		"description": "Logs a message to the debug console. (Can be Log, Warning or Error)"
 	},
-	"46_0": {
+	"47_0": {
 		"scope": "ansl",
 		"prefix": "map",
 		"body": ["map(Map;Def;CurrentLocation)"],
 		"description": "Opens a map using a specific definition. Current player location on map can be null"
 	},
-	"47_0": {
+	"48_0": {
 		"scope": "ansl",
 		"prefix": "pauseContext",
 		"body": ["pauseContext(Id)"],
 		"description": "Pauses an ANSL Context"
 	},
-	"48_0": {
+	"49_0": {
 		"scope": "ansl",
 		"prefix": "playAmbient",
 		"body": ["playAmbient(Ambient)"],
 		"description": "Plays an ambient"
 	},
-	"48_1": {
+	"49_1": {
 		"scope": "ansl",
 		"prefix": "playAmbient",
 		"body": ["playAmbient(Ambient;BaseVolume)"],
 		"description": "Plays an ambient"
 	},
-	"49_0": {
+	"50_0": {
 		"scope": "ansl",
 		"prefix": "playMusic",
 		"body": ["playMusic(Music)"],
 		"description": "Plays a music"
 	},
-	"49_1": {
+	"50_1": {
 		"scope": "ansl",
 		"prefix": "playMusic",
 		"body": ["playMusic(Music;BaseVolume)"],
 		"description": "Plays a music"
 	},
-	"50_0": {
+	"51_0": {
 		"scope": "ansl",
 		"prefix": "playSFX",
 		"body": ["playSFX(Sfx)"],
 		"description": "Plays an SFX"
 	},
-	"50_1": {
+	"51_1": {
 		"scope": "ansl",
 		"prefix": "playSFX",
 		"body": ["playSFX(Sfx;BaseVolume)"],
 		"description": "Plays an SFX"
 	},
-	"51_0": {
+	"52_0": {
 		"scope": "ansl",
 		"prefix": "playUIAnimation",
 		"body": ["playUIAnimation(Id;WaitForEnd)"],
 		"description": "Plays a UI Animation"
 	},
-	"52_0": {
+	"53_0": {
 		"scope": "ansl",
 		"prefix": "playVoice",
 		"body": ["playVoice(Voice)"],
 		"description": "Plays a Voice"
 	},
-	"52_1": {
+	"53_1": {
 		"scope": "ansl",
 		"prefix": "playVoice",
 		"body": ["playVoice(Voice;BaseVolume)"],
 		"description": "Plays a Voice"
 	},
-	"53_0": {
+	"54_0": {
 		"scope": "ansl",
 		"prefix": "playerName",
 		"body": ["playerName(playerName)"],
 		"description": "Changes the player's name"
 	},
-	"54_0": {
+	"55_0": {
 		"scope": "ansl",
 		"prefix": "random",
 		"body": ["random(Min;Max)"],
 		"description": "Generates a random variable between [Min,Max["
 	},
-	"55_0": {
+	"56_0": {
 		"scope": "ansl",
 		"prefix": "removeAllCharacters",
 		"body": ["removeAllCharacters()"],
 		"description": "Removes all characters"
 	},
-	"55_1": {
+	"56_1": {
 		"scope": "ansl",
 		"prefix": "removeAllCharacters",
 		"body": ["removeAllCharacters(RemoveEverything)"],
 		"description": "Removes all characters"
 	},
-	"56_0": {
+	"57_0": {
 		"scope": "ansl",
 		"prefix": "removeAllStatics",
 		"body": ["removeAllStatics()"],
 		"description": "Removes all statics object"
 	},
-	"56_1": {
+	"57_1": {
 		"scope": "ansl",
 		"prefix": "removeAllStatics",
 		"body": ["removeAllStatics(RemoveEverything)"],
 		"description": "Removes all statics object"
 	},
-	"57_0": {
+	"58_0": {
 		"scope": "ansl",
 		"prefix": "removeCharacter",
 		"body": ["removeCharacter(Name)"],
 		"description": "Removes a character"
 	},
-	"58_0": {
+	"59_0": {
 		"scope": "ansl",
 		"prefix": "removeStatic",
 		"body": ["removeStatic(Name)"],
 		"description": "Removes a static object"
 	},
-	"59_0": {
+	"60_0": {
 		"scope": "ansl",
 		"prefix": "return",
 		"body": ["return()"],
 		"description": "Stops the current script"
 	},
-	"60_0": {
+	"61_0": {
 		"scope": "ansl",
 		"prefix": "screenshake",
 		"body": ["screenshake(Strength;Duration)"],
 		"description": "Starts a screen shake"
 	},
-	"60_1": {
+	"61_1": {
 		"scope": "ansl",
 		"prefix": "screenshake",
 		"body": ["screenshake(Strength;Duration;ShakeCamera;ShakeUI)"],
 		"description": "Starts a screen shake"
 	},
-	"61_0": {
+	"62_0": {
 		"scope": "ansl",
 		"prefix": "setBackground",
 		"body": ["setBackground(Background)"],
 		"description": "Changes the current background. Background can be null"
 	},
-	"61_1": {
+	"62_1": {
 		"scope": "ansl",
 		"prefix": "setBackground",
 		"body": ["setBackground(Background;UseDefaultData)"],
 		"description": "Changes the current background. Background can be null"
 	},
-	"62_0": {
+	"63_0": {
 		"scope": "ansl",
 		"prefix": "setBgColor",
 		"body": ["setBgColor(R;G;B;A)"],
 		"description": "Changes the color of the background fade immediately"
 	},
-	"63_0": {
+	"64_0": {
 		"scope": "ansl",
 		"prefix": "setBg",
 		"body": ["setBg(Alpha)"],
 		"description": "Sets the Background's alpha to a specific value"
 	},
-	"64_0": {
+	"65_0": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(X;Y;Z)"],
 		"description": "Moves the camera"
 	},
-	"64_1": {
+	"65_1": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Moves the camera"
 	},
-	"64_2": {
+	"65_2": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(Marker)"],
 		"description": "Moves the camera"
 	},
-	"64_3": {
+	"65_3": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(Marker;Duration;WaitForEnd)"],
 		"description": "Moves the camera"
 	},
-	"64_4": {
+	"65_4": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(default)"],
 		"description": "Moves the camera"
 	},
-	"64_5": {
+	"65_5": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(default;Duration;WaitForEnd)"],
 		"description": "Moves the camera"
 	},
-	"65_0": {
+	"66_0": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(X;Y;Z)"],
 		"description": "Rotates the camera"
 	},
-	"65_1": {
+	"66_1": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Rotates the camera"
 	},
-	"65_2": {
+	"66_2": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(Marker)"],
 		"description": "Rotates the camera"
 	},
-	"65_3": {
+	"66_3": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(Marker;Duration;WaitForEnd)"],
 		"description": "Rotates the camera"
 	},
-	"65_4": {
+	"66_4": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(default)"],
 		"description": "Rotates the camera"
 	},
-	"65_5": {
+	"66_5": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(default;Duration;WaitForEnd)"],
 		"description": "Rotates the camera"
 	},
-	"66_0": {
+	"67_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterAlpha",
 		"body": ["setCharacterAlpha(Name;Alpha)"],
 		"description": "Fades a character"
 	},
-	"66_1": {
+	"67_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterAlpha",
 		"body": ["setCharacterAlpha(Name;Alpha;Duration;WaitForEnd)"],
 		"description": "Fades a character"
 	},
-	"67_0": {
+	"68_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterBody",
 		"body": ["setCharacterBody(Name;Body)"],
 		"description": "Changes a character's body animation"
 	},
-	"67_1": {
+	"68_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterBody",
 		"body": ["setCharacterBody(Name;Body;TransitionDuration)"],
 		"description": "Changes a character's body animation"
 	},
-	"68_0": {
+	"69_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterBool",
 		"body": ["setCharacterBool(Name;ParameterName;Value)"],
 		"description": "Sets a character's animator bool"
 	},
-	"69_0": {
+	"70_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterEye",
 		"body": ["setCharacterEye(Name;Eye)"],
 		"description": "Changes a character's eye animation"
 	},
-	"69_1": {
+	"70_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterEye",
 		"body": ["setCharacterEye(Name;Eye;TransitionDuration)"],
 		"description": "Changes a character's eye animation"
 	},
-	"70_0": {
+	"71_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterFloat",
 		"body": ["setCharacterFloat(Name;ParameterName;Value)"],
 		"description": "Sets a character's animator float"
 	},
-	"70_1": {
+	"71_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterFloat",
 		"body": ["setCharacterFloat(Name;ParameterName;Value;TransitionDuration;WaitForEnd)"],
 		"description": "Sets a character's animator float"
 	},
-	"71_0": {
+	"72_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterHidden",
 		"body": ["setCharacterHidden(Name;Hidden)"],
 		"description": "Sets if a character is hidden or not"
 	},
-	"72_0": {
+	"73_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterInt",
 		"body": ["setCharacterInt(Name;ParameterName;Value)"],
 		"description": "Sets a character's animator int"
 	},
-	"73_0": {
+	"74_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterMouth",
 		"body": ["setCharacterMouth(Name;Mouth)"],
 		"description": "Changes a character's mouth animation"
 	},
-	"73_1": {
+	"74_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterMouth",
 		"body": ["setCharacterMouth(Name;Mouth;TransitionDuration)"],
 		"description": "Changes a character's mouth animation"
 	},
-	"74_0": {
+	"75_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;X;Y;Z)"],
 		"description": "Moves a character"
 	},
-	"74_1": {
+	"75_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Moves a character"
 	},
-	"74_2": {
+	"75_2": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;Marker)"],
 		"description": "Moves a character"
 	},
-	"74_3": {
+	"75_3": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Moves a character"
 	},
-	"75_0": {
+	"76_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;X;Y;Z)"],
 		"description": "Rotates a character"
 	},
-	"75_1": {
+	"76_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Rotates a character"
 	},
-	"75_2": {
+	"76_2": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;Marker)"],
 		"description": "Rotates a character"
 	},
-	"75_3": {
+	"76_3": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Rotates a character"
 	},
-	"76_0": {
+	"77_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;X;Y;Z)"],
 		"description": "Scales a Character"
 	},
-	"76_1": {
+	"77_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Scales a Character"
 	},
-	"76_2": {
+	"77_2": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;Scale)"],
 		"description": "Scales a Character"
 	},
-	"76_3": {
+	"77_3": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;Scale;Duration;WaitForEnd)"],
 		"description": "Scales a Character"
 	},
-	"77_0": {
+	"78_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterTrigger",
 		"body": ["setCharacterTrigger(Name;Trigger)"],
 		"description": "Sets a character's animator trigger"
 	},
-	"78_0": {
+	"79_0": {
 		"scope": "ansl",
 		"prefix": "setFgColor",
 		"body": ["setFgColor(R;G;B;A)"],
 		"description": "Changes the color of the foreground fade immediately"
 	},
-	"79_0": {
+	"80_0": {
 		"scope": "ansl",
 		"prefix": "setFg",
 		"body": ["setFg(Alpha)"],
 		"description": "Sets the Foreground's alpha to a specific value"
 	},
-	"80_0": {
+	"81_0": {
 		"scope": "ansl",
 		"prefix": "setFogColor",
 		"body": ["setFogColor(Color)"],
 		"description": "Changes the fog's color (#RRGGBB format)"
 	},
-	"80_1": {
+	"81_1": {
 		"scope": "ansl",
 		"prefix": "setFogColor",
 		"body": ["setFogColor(Color;Duration;WaitForEnd)"],
 		"description": "Changes the fog's color (#RRGGBB format)"
 	},
-	"81_0": {
+	"82_0": {
 		"scope": "ansl",
 		"prefix": "setFogDensity",
 		"body": ["setFogDensity(Density)"],
 		"description": "Changes the fog's density"
 	},
-	"81_1": {
+	"82_1": {
 		"scope": "ansl",
 		"prefix": "setFogDensity",
 		"body": ["setFogDensity(Density;Duration;WaitForEnd)"],
 		"description": "Changes the fog's density"
 	},
-	"82_0": {
+	"83_0": {
 		"scope": "ansl",
 		"prefix": "setFogEnabled",
 		"body": ["setFogEnabled(Enabled)"],
 		"description": "Changes if the fog is visible or not"
 	},
-	"83_0": {
+	"84_0": {
 		"scope": "ansl",
 		"prefix": "setGamepadVibration",
 		"body": ["setGamepadVibration(Both)"],
 		"description": "Sets the gamepad's vibration"
 	},
-	"83_1": {
+	"84_1": {
 		"scope": "ansl",
 		"prefix": "setGamepadVibration",
 		"body": ["setGamepadVibration(Left;Right)"],
 		"description": "Sets the gamepad's vibration"
 	},
-	"84_0": {
+	"85_0": {
 		"scope": "ansl",
 		"prefix": "setInteractionHidden",
 		"body": ["setInteractionHidden(Id;Hidden)"],
 		"description": "Changes if interactable object is hidden or not"
 	},
-	"85_0": {
+	"86_0": {
 		"scope": "ansl",
 		"prefix": "setInteractionScript",
 		"body": ["setInteractionScript(Id;Script)"],
 		"description": "Changes an interactable object's linked script"
 	},
-	"86_0": {
+	"87_0": {
 		"scope": "ansl",
 		"prefix": "setLightDirection",
 		"body": ["setLightDirection(X;Y;Z)"],
 		"description": "Changes the current background's light direction"
 	},
-	"87_0": {
+	"88_0": {
 		"scope": "ansl",
 		"prefix": "setLocals",
 		"body": ["setLocals(Locals)"],
 		"description": "Shows/Hides the dialog window"
 	},
-	"88_0": {
+	"89_0": {
 		"scope": "ansl",
 		"prefix": "setLocation",
 		"body": ["setLocation(Location)"],
 		"description": "Changes the location (visible on the save slot's info)"
 	},
-	"89_0": {
+	"90_0": {
 		"scope": "ansl",
 		"prefix": "setSkybox",
 		"body": ["setSkybox(Skybox)"],
 		"description": "Changes the current background's skybox"
 	},
-	"89_1": {
+	"90_1": {
 		"scope": "ansl",
 		"prefix": "setSkybox",
 		"body": ["setSkybox(Skybox;Duration;WaitForEnd)"],
 		"description": "Changes the current background's skybox"
 	},
-	"90_0": {
+	"91_0": {
 		"scope": "ansl",
 		"prefix": "setStaticAlpha",
 		"body": ["setStaticAlpha(Name;Alpha)"],
 		"description": "Fades a static object"
 	},
-	"90_1": {
+	"91_1": {
 		"scope": "ansl",
 		"prefix": "setStaticAlpha",
 		"body": ["setStaticAlpha(Name;Alpha;Duration;WaitForEnd)"],
 		"description": "Fades a static object"
 	},
-	"91_0": {
+	"92_0": {
 		"scope": "ansl",
 		"prefix": "setStaticHidden",
 		"body": ["setStaticHidden(Name;Hidden)"],
 		"description": "Sets if a static object is hidden or not"
 	},
-	"92_0": {
+	"93_0": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;X;Y;Z)"],
 		"description": "Moves a static object"
 	},
-	"92_1": {
+	"93_1": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Moves a static object"
 	},
-	"92_2": {
+	"93_2": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;Marker)"],
 		"description": "Moves a static object"
 	},
-	"92_3": {
+	"93_3": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Moves a static object"
 	},
-	"93_0": {
+	"94_0": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;X;Y;Z)"],
 		"description": "Rotates a static object"
 	},
-	"93_1": {
+	"94_1": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Rotates a static object"
 	},
-	"93_2": {
+	"94_2": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;Marker)"],
 		"description": "Rotates a static object"
 	},
-	"93_3": {
+	"94_3": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Rotates a static object"
 	},
-	"94_0": {
+	"95_0": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;X;Y;Z)"],
 		"description": "Scales a static object"
 	},
-	"94_1": {
+	"95_1": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Scales a static object"
 	},
-	"94_2": {
+	"95_2": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;Scale)"],
 		"description": "Scales a static object"
 	},
-	"94_3": {
+	"95_3": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;Scale;Duration;WaitForEnd)"],
 		"description": "Scales a static object"
 	},
-	"95_0": {
+	"96_0": {
 		"scope": "ansl",
 		"prefix": "setVolumeWeight",
 		"body": ["setVolumeWeight(Name;Weight)"],
 		"description": "Sets a post process volume's weight"
 	},
-	"95_1": {
+	"96_1": {
 		"scope": "ansl",
 		"prefix": "setVolumeWeight",
 		"body": ["setVolumeWeight(Name;Weight;Duration;WaitForEnd)"],
 		"description": "Sets a post process volume's weight"
 	},
-	"96_0": {
+	"97_0": {
 		"scope": "ansl",
 		"prefix": "setWeatherEffect",
 		"body": ["setWeatherEffect(WeatherEffect)"],
 		"description": "Changes the current background's weather effect"
 	},
-	"97_0": {
+	"98_0": {
 		"scope": "ansl",
 		"prefix": "showDialogWindow",
 		"body": ["showDialogWindow(Shown)"],
 		"description": "Shows/Hides the dialog window"
 	},
-	"98_0": {
+	"99_0": {
 		"scope": "ansl",
 		"prefix": "showInputReminder",
 		"body": ["showInputReminder(Id;Enabled)"],
 		"description": "Shows/Hides an input reminder"
 	},
-	"99_0": {
+	"100_0": {
 		"scope": "ansl",
 		"prefix": "stopContext",
 		"body": ["stopContext(Id)"],
 		"description": "Stops an ANSL Context"
 	},
-	"100_0": {
+	"101_0": {
 		"scope": "ansl",
 		"prefix": "switch",
 		"body": ["switch(Variable)\n\tcase default:\n\n\tcase 0:\n\nendswitch"],
 		"description": "Checks a single variables. You can use 'case default:' to check when none of the checks are valid"
 	},
-	"101_0": {
+	"102_0": {
 		"scope": "ansl",
 		"prefix": "unloadBundle",
 		"body": ["unloadBundle(Bundle;DataType)"],
 		"description": "Unloads a bundle from memory (AudioClip / TextAsset / Sprite / Texture2D / GameObject)"
 	},
-	"102_0": {
+	"103_0": {
 		"scope": "ansl",
 		"prefix": "unlockLog",
 		"body": ["unlockLog(Log;ShowPopup)"],
 		"description": "Unlocks a log"
 	},
-	"103_0": {
+	"104_0": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Value)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"103_1": {
+	"104_1": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Variable)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"103_2": {
+	"104_2": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;default)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"104_0": {
+	"105_0": {
 		"scope": "ansl",
 		"prefix": "waitForContextEnd",
 		"body": ["waitForContextEnd(contextId)"],
 		"description": "Waits for the end of a context"
 	},
-	"105_0": {
+	"106_0": {
 		"scope": "ansl",
 		"prefix": "wait",
 		"body": ["wait(Seconds)"],
@@ -1147,401 +1153,407 @@
 	},
 	"Macro_20": {
 		"scope": "ansl",
+		"prefix": ":setGeraldPunchBar",
+		"body": [":setGeraldPunchBar(Type)"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_21": {
+		"scope": "ansl",
 		"prefix": ":setGeraldTapHead",
 		"body": [":setGeraldTapHead(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_21": {
+	"Macro_22": {
 		"scope": "ansl",
 		"prefix": ":setGeraldThinking",
 		"body": [":setGeraldThinking(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_22": {
+	"Macro_23": {
 		"scope": "ansl",
 		"prefix": ":setGeraldOnBar",
 		"body": [":setGeraldOnBar(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_23": {
+	"Macro_24": {
 		"scope": "ansl",
 		"prefix": ":setGeraldUseKnife",
 		"body": [":setGeraldUseKnife(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_24": {
+	"Macro_25": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeNormal",
 		"body": [":setGeraldEyeNormal(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_25": {
+	"Macro_26": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeSerious",
 		"body": [":setGeraldEyeSerious(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_26": {
+	"Macro_27": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeMad",
 		"body": [":setGeraldEyeMad(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_27": {
+	"Macro_28": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeWink",
 		"body": [":setGeraldEyeWink(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_28": {
+	"Macro_29": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeSurprise",
 		"body": [":setGeraldEyeSurprise(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_29": {
+	"Macro_30": {
 		"scope": "ansl",
 		"prefix": ":setRannNormal",
 		"body": [":setRannNormal(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_30": {
+	"Macro_31": {
 		"scope": "ansl",
 		"prefix": ":setRannStress",
 		"body": [":setRannStress(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_31": {
+	"Macro_32": {
 		"scope": "ansl",
 		"prefix": ":setRannHandsOnDesk",
 		"body": [":setRannHandsOnDesk(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_32": {
+	"Macro_33": {
 		"scope": "ansl",
 		"prefix": ":setRannAngry",
 		"body": [":setRannAngry(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_33": {
+	"Macro_34": {
 		"scope": "ansl",
 		"prefix": ":setRannThinking",
 		"body": [":setRannThinking(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_34": {
+	"Macro_35": {
 		"scope": "ansl",
 		"prefix": ":setRannReadingBook",
 		"body": [":setRannReadingBook(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_35": {
+	"Macro_36": {
 		"scope": "ansl",
 		"prefix": ":setRannDamageToAngry",
 		"body": [":setRannDamageToAngry(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_36": {
+	"Macro_37": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeNormal",
 		"body": [":setRannEyeNormal(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_37": {
+	"Macro_38": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeSurprise",
 		"body": [":setRannEyeSurprise(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_38": {
+	"Macro_39": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeLockIn",
 		"body": [":setRannEyeLockIn(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_39": {
+	"Macro_40": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeNeutral",
 		"body": [":setRannEyeNeutral(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_40": {
+	"Macro_41": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeSad",
 		"body": [":setRannEyeSad(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_41": {
+	"Macro_42": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeOops",
 		"body": [":setRannEyeOops(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_42": {
+	"Macro_43": {
 		"scope": "ansl",
 		"prefix": ":setJudgeNormal",
 		"body": [":setJudgeNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_43": {
+	"Macro_44": {
 		"scope": "ansl",
 		"prefix": ":setJudgeReadyStrike",
 		"body": [":setJudgeReadyStrike()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_44": {
+	"Macro_45": {
 		"scope": "ansl",
 		"prefix": ":setJudgeHoldingHammer",
 		"body": [":setJudgeHoldingHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_45": {
+	"Macro_46": {
 		"scope": "ansl",
 		"prefix": ":setJudgeOnShell",
 		"body": [":setJudgeOnShell()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_46": {
+	"Macro_47": {
 		"scope": "ansl",
 		"prefix": ":setJudgeStress",
 		"body": [":setJudgeStress()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_47": {
+	"Macro_48": {
 		"scope": "ansl",
 		"prefix": ":setJudgeReadingBook",
 		"body": [":setJudgeReadingBook()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_48": {
+	"Macro_49": {
 		"scope": "ansl",
 		"prefix": ":setJudgeTurningHammer",
 		"body": [":setJudgeTurningHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_49": {
+	"Macro_50": {
 		"scope": "ansl",
 		"prefix": ":setJudgeRestingHammer",
 		"body": [":setJudgeRestingHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_50": {
+	"Macro_51": {
 		"scope": "ansl",
 		"prefix": ":setJudgeStrike",
 		"body": [":setJudgeStrike()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_51": {
+	"Macro_52": {
 		"scope": "ansl",
 		"prefix": ":setJudgeDamageToNormal",
 		"body": [":setJudgeDamageToNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_52": {
+	"Macro_53": {
 		"scope": "ansl",
 		"prefix": ":setJudgeDamageToHoldingHammer",
 		"body": [":setJudgeDamageToHoldingHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_53": {
+	"Macro_54": {
 		"scope": "ansl",
 		"prefix": ":setJudgeThrowBookAway",
 		"body": [":setJudgeThrowBookAway()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_54": {
+	"Macro_55": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeNormal",
 		"body": [":setJudgeEyeNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_55": {
+	"Macro_56": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeHappy",
 		"body": [":setJudgeEyeHappy()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_56": {
+	"Macro_57": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeThinking",
 		"body": [":setJudgeEyeThinking()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_57": {
+	"Macro_58": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeSurprise",
 		"body": [":setJudgeEyeSurprise()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_58": {
+	"Macro_59": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeAngry",
 		"body": [":setJudgeEyeAngry()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_59": {
+	"Macro_60": {
 		"scope": "ansl",
 		"prefix": ":setJunoNormal",
 		"body": [":setJunoNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_60": {
+	"Macro_61": {
 		"scope": "ansl",
 		"prefix": ":setJunoSurprise",
 		"body": [":setJunoSurprise()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_61": {
+	"Macro_62": {
 		"scope": "ansl",
 		"prefix": ":setJunoThinking",
 		"body": [":setJunoThinking()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_62": {
+	"Macro_63": {
 		"scope": "ansl",
 		"prefix": ":setJunoBow",
 		"body": [":setJunoBow()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_63": {
+	"Macro_64": {
 		"scope": "ansl",
 		"prefix": ":setJunoEyeNormal",
 		"body": [":setJunoEyeNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_64": {
+	"Macro_65": {
 		"scope": "ansl",
 		"prefix": ":setJunoEyeSerious",
 		"body": [":setJunoEyeSerious()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_65": {
+	"Macro_66": {
 		"scope": "ansl",
 		"prefix": ":setJunoEyeSurprise",
 		"body": [":setJunoEyeSurprise()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_66": {
+	"Macro_67": {
 		"scope": "ansl",
 		"prefix": ":removeHealth",
 		"body": [":removeHealth(Amount)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_67": {
+	"Macro_68": {
 		"scope": "ansl",
 		"prefix": ":regenHealth",
 		"body": [":regenHealth(Amount)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_68": {
+	"Macro_69": {
 		"scope": "ansl",
 		"prefix": ":regenHealthToMax",
 		"body": [":regenHealthToMax()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_69": {
+	"Macro_70": {
 		"scope": "ansl",
 		"prefix": ":playJudgeHammerAnimationOnly",
 		"body": [":playJudgeHammerAnimationOnly()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_70": {
+	"Macro_71": {
 		"scope": "ansl",
 		"prefix": ":playJudgeHammerAnimation",
 		"body": [":playJudgeHammerAnimation(NextJudgeBody;NextCam)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_71": {
+	"Macro_72": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToLobby",
 		"body": [":setCourtroomCamToLobby()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_72": {
+	"Macro_73": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToAll",
 		"body": [":setCourtroomCamToAll()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_73": {
+	"Macro_74": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToHammer",
 		"body": [":setCourtroomCamToHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_74": {
+	"Macro_75": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToJudge",
 		"body": [":setCourtroomCamToJudge()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_75": {
+	"Macro_76": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToDefenseImmediate",
 		"body": [":setCourtroomCamToDefenseImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_76": {
+	"Macro_77": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToDefense",
 		"body": [":setCourtroomCamToDefense(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_77": {
+	"Macro_78": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToProsecutorImmediate",
 		"body": [":setCourtroomCamToProsecutorImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_78": {
+	"Macro_79": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToProsecutor",
 		"body": [":setCourtroomCamToProsecutor(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_79": {
+	"Macro_80": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessImmediate",
 		"body": [":setCourtroomCamToWitnessImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_80": {
+	"Macro_81": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitness",
 		"body": [":setCourtroomCamToWitness(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_81": {
+	"Macro_82": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessLeftImmediate",
 		"body": [":setCourtroomCamToWitnessLeftImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_82": {
+	"Macro_83": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessLeft",
 		"body": [":setCourtroomCamToWitnessLeft(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_83": {
+	"Macro_84": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessRightImmediate",
 		"body": [":setCourtroomCamToWitnessRightImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_84": {
+	"Macro_85": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessRight",
 		"body": [":setCourtroomCamToWitnessRight(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_85": {
+	"Macro_86": {
 		"scope": "ansl",
 		"prefix": ":DebugMacro",
 		"body": [":DebugMacro(Name)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_86": {
+	"Macro_87": {
 		"scope": "ansl",
 		"prefix": ":DebugMacro2",
 		"body": [":DebugMacro2()"],

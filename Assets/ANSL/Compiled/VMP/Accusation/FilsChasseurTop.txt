@@ -1,40 +1,40 @@
-#CF00AC15F5987377A9C6C505FA8505CD-8D103ABC3C0B157D3F6A342F02C946F9
-270Choice_HelpChasseur1nullnullnullChoice_HelpFils15nullnullnullChoice_StaySilent27nullnullnull
-35Char_LoupGarounullScene_End_HelpChasseur_1
-35Char_LoupGarounullScene_End_HelpChasseur_2
-35Char_LoupGarounullScene_End_HelpChasseur_3
-40512AttackedSame1 == 0 || AttackedSame2 == 0 || AttackedSame1 == AttackedSame2
-66Fils00.5true
-66Humain10.5false
-35Char_HumainnullScene_End_HelpChasseur_4
-66Humain00.5true
-66Chasseur10.5false
-35Char_ChasseurnullScene_End_HelpChasseur_5
-4213
-4213
-103AttackedSame1=2
-4234
-103AttackedSame1=1
-35Char_LoupGarounullScene_End_HelpFils1_1
-35Char_LoupGarounullScene_End_HelpFils1_2
-35Char_LoupGarounullScene_End_HelpFils1_3
-35Char_LoupGarounullScene_End_HelpFils1_4
-402123AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
-44/VMP/Endings/Centrist
-4225
-44/VMP/Endings/ChasseurDead
-4225
-59
-4234
-66Fils00.5true
-66Humain10.5false
-35Char_HumainnullScene_End_StaySilent_Top_1
-66Humain00.5true
-66Chasseur10.5false
-35Char_ChasseurnullScene_End_StaySilent_Top_2
-4234
-403537AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
-44/VMP/Endings/Centrist
-4239
-44/VMP/Endings/FilsHumainDead
-4239
+#CF00AC15F5987377A9C6C505FA8505CD-3808802B8FD62756E93CBEE04725A2AF
+280Choice_HelpChasseur1nullnullnullChoice_HelpFils15nullnullnullChoice_StaySilent27nullnullnull
+36Char_LoupGarounullScene_End_HelpChasseur_1
+36Char_LoupGarounullScene_End_HelpChasseur_2
+36Char_LoupGarounullScene_End_HelpChasseur_3
+41512AttackedSame1 == 0 || AttackedSame2 == 0 || AttackedSame1 == AttackedSame2
+67Fils00.5true
+67Humain10.5false
+36Char_HumainnullScene_End_HelpChasseur_4
+67Humain00.5true
+67Chasseur10.5false
+36Char_ChasseurnullScene_End_HelpChasseur_5
+4313
+4313
+104AttackedSame1=2
+4334
+104AttackedSame1=1
+36Char_LoupGarounullScene_End_HelpFils1_1
+36Char_LoupGarounullScene_End_HelpFils1_2
+36Char_LoupGarounullScene_End_HelpFils1_3
+36Char_LoupGarounullScene_End_HelpFils1_4
+412123AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
+45/VMP/Endings/Centrist
+4325
+45/VMP/Endings/ChasseurDead
+4325
+60
+4334
+67Fils00.5true
+67Humain10.5false
+36Char_HumainnullScene_End_StaySilent_Top_1
+67Humain00.5true
+67Chasseur10.5false
+36Char_ChasseurnullScene_End_StaySilent_Top_2
+4334
+413537AttackedSame1 != 0 && AttackedSame2 != 0 && AttackedSame1 != AttackedSame2
+45/VMP/Endings/Centrist
+4339
+45/VMP/Endings/FilsHumainDead
+4339

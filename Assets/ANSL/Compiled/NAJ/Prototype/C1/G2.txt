@@ -1,27 +1,27 @@
-#4DAD94BC11FD47788A2087FD4988356C-8D103ABC3C0B157D3F6A342F02C946F9
-270Prototype_Q2_ThingsMissing1nullnullnullPrototype_Q2_Asleep4nullnullnullPrototype_Q2_WholeExchange15nullnullnull
-44H
-59
-4226
-64JudgeCam
+#4DAD94BC11FD47788A2087FD4988356C-3808802B8FD62756E93CBEE04725A2AF
+280Prototype_Q2_ThingsMissing1nullnullnullPrototype_Q2_Asleep4nullnullnullPrototype_Q2_WholeExchange15nullnullnull
+45H
+60
+4326
 65JudgeCam
-35Prototype_JudgeJudgePrototype_Q1_Asleep_1
-64DefenseCam
+66JudgeCam
+36Prototype_JudgeJudgePrototype_Q1_Asleep_1
 65DefenseCam
-35Prototype_RannnullPrototype_Q1_Asleep_2
-64JudgeCam
+66DefenseCam
+36Prototype_RannnullPrototype_Q1_Asleep_2
 65JudgeCam
-44G2
-59
-4226
-64WitnessCam
+66JudgeCam
+45G2
+60
+4326
 65WitnessCam
-35Prototype_GeraldGeraldPrototype_Q1_WholeExchange_1
-64DefenseCam0.5false
-65DefenseCam0.5true
-35Prototype_RannnullPrototype_Q1_WholeExchange_2
-64JudgeCam
+66WitnessCam
+36Prototype_GeraldGeraldPrototype_Q1_WholeExchange_1
+65DefenseCam0.5false
+66DefenseCam0.5true
+36Prototype_RannnullPrototype_Q1_WholeExchange_2
 65JudgeCam
-44G2
-59
-4226
+66JudgeCam
+45G2
+60
+4326

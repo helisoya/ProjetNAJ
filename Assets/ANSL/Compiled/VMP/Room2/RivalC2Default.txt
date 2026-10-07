@@ -1,15 +1,15 @@
-#6961E2A5EAD29B65C750262A945406D2-8D103ABC3C0B157D3F6A342F02C946F9
-4013RivalReactionToDrinkQuest == 2
-44RivalGetInfosFromFils
-4214
-40411SecretRival == 1 && ConfrontedRivalSecret == 0
-35nullnullTalk_Rival_Confirm_Concealer_1
-270Choice_Yes6nullnullnullChoice_No8nullnullnull
-44RivalConfront
-4210
-44RivalC2DefaultDialog
-4210
-4213
-44RivalC2DefaultDialog
-4213
-4214
+#6961E2A5EAD29B65C750262A945406D2-3808802B8FD62756E93CBEE04725A2AF
+4113RivalReactionToDrinkQuest == 2
+45RivalGetInfosFromFils
+4314
+41411SecretRival == 1 && ConfrontedRivalSecret == 0
+36nullnullTalk_Rival_Confirm_Concealer_1
+280Choice_Yes6nullnullnullChoice_No8nullnullnull
+45RivalConfront
+4310
+45RivalC2DefaultDialog
+4310
+4313
+45RivalC2DefaultDialog
+4313
+4314

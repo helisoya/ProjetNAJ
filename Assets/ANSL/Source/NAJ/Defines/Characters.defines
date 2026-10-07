@@ -90,6 +90,10 @@ Define setGeraldBrushHair(Type)
 setCharacterBody(Gerald{Type};BrushHair)
 EndDefine
 
+Define setGeraldPunchBar(Type)
+setCharacterBody(Gerald{Type};PunchBar)
+EndDefine
+
 Define setGeraldTapHead(Type)
 setCharacterBody(Gerald{Type};TapHead)
 EndDefine

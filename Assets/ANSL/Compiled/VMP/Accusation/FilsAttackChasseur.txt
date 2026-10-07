@@ -1,41 +1,41 @@
-#94292481FFEBD484C1DE769FDDE02376-8D103ABC3C0B157D3F6A342F02C946F9
-66Chasseur00.5true
-66Rival00.5true
-66Fils10.5false
-35Char_FilsnullScene_End_FilsChasseur3_1
-35Char_FilsnullScene_End_FilsChasseur3_2
-35Char_FilsnullScene_End_FilsChasseur3_3
-40721ValueFils >= 3
-35nullnullScene_End_Confirm_HelpFils_1
-270Choice_HelpFils9nullnullnullChoice_StaySilent19nullnullnull
-35Char_FilsnullScene_End_HelpFils2_1
-35Char_FilsnullScene_End_HelpFils2_2
-35Char_FilsnullScene_End_HelpFils2_3
-35Char_FilsnullScene_End_HelpFils2_4
-35Char_FilsnullScene_End_HelpFils2_5
-35Char_FilsnullScene_End_HelpFils2_6
-103ValueChasseur-3
-44/VMP/Endings/ChasseurDead
-59
-4220
-4220
-4222
-4222
-66Fils00.5true
-66Chasseur10.5false
-35Char_ChasseurnullScene_End_HunterHuman1_1
-35Char_ChasseurnullScene_End_HunterHuman1_2
-35Char_ChasseurnullScene_End_HunterHuman1_3
-35Char_ChasseurnullScene_End_HunterHuman1_4
-402938ValueFils <= 0
-66Chasseur00.5true
-66Fils10.5false
-35Char_FilsnullScene_End_HunterHuman_Ennemy_1
-35Char_FilsnullScene_End_HunterHuman_Ennemy_2
-35Char_FilsnullScene_End_Lose_1
-35Char_FilsnullScene_End_Lose_2
-35Char_FilsnullScene_End_Lose_3
-44/VMP/Endings/PlayerHatedByFils
-4240
-44/VMP/Endings/FilsHumainDead
-4240
+#94292481FFEBD484C1DE769FDDE02376-3808802B8FD62756E93CBEE04725A2AF
+67Chasseur00.5true
+67Rival00.5true
+67Fils10.5false
+36Char_FilsnullScene_End_FilsChasseur3_1
+36Char_FilsnullScene_End_FilsChasseur3_2
+36Char_FilsnullScene_End_FilsChasseur3_3
+41721ValueFils >= 3
+36nullnullScene_End_Confirm_HelpFils_1
+280Choice_HelpFils9nullnullnullChoice_StaySilent19nullnullnull
+36Char_FilsnullScene_End_HelpFils2_1
+36Char_FilsnullScene_End_HelpFils2_2
+36Char_FilsnullScene_End_HelpFils2_3
+36Char_FilsnullScene_End_HelpFils2_4
+36Char_FilsnullScene_End_HelpFils2_5
+36Char_FilsnullScene_End_HelpFils2_6
+104ValueChasseur-3
+45/VMP/Endings/ChasseurDead
+60
+4320
+4320
+4322
+4322
+67Fils00.5true
+67Chasseur10.5false
+36Char_ChasseurnullScene_End_HunterHuman1_1
+36Char_ChasseurnullScene_End_HunterHuman1_2
+36Char_ChasseurnullScene_End_HunterHuman1_3
+36Char_ChasseurnullScene_End_HunterHuman1_4
+412938ValueFils <= 0
+67Chasseur00.5true
+67Fils10.5false
+36Char_FilsnullScene_End_HunterHuman_Ennemy_1
+36Char_FilsnullScene_End_HunterHuman_Ennemy_2
+36Char_FilsnullScene_End_Lose_1
+36Char_FilsnullScene_End_Lose_2
+36Char_FilsnullScene_End_Lose_3
+45/VMP/Endings/PlayerHatedByFils
+4340
+45/VMP/Endings/FilsHumainDead
+4340

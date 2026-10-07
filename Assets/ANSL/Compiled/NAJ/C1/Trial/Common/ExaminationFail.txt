@@ -1,59 +1,59 @@
-#CAC769FF7DB0EA8A00FD4A893575E0C9-8D103ABC3C0B157D3F6A342F02C946F9
-97false
-67RannCoatHandsOnDesk0.1
-69RannCoatNormal
-73RannCoatNeutral
-51Objectiontrue
-21true
-181truetrue
-65DefenseCam0.25false
-64DefenseCam0.25true
-35Char_RannRannCoatC1_Trial_Fail_1
-69JudgeNormal
-73JudgeNormal
-64JudgeCam
+#CAC769FF7DB0EA8A00FD4A893575E0C9-3808802B8FD62756E93CBEE04725A2AF
+98false
+68RannCoatHandsOnDesk0.1
+70RannCoatNormal
+74RannCoatNeutral
+52Objectiontrue
+22true
+191truetrue
+66DefenseCam0.25false
+65DefenseCam0.25true
+36Char_RannRannCoatC1_Trial_Fail_1
+70JudgeNormal
+74JudgeNormal
 65JudgeCam
-69RannCoatNormal
-73RannCoatOops
-67RannCoatStress0.1
-35Char_JudgeJudgeC1_Trial_Fail_2
-64DefenseCam
+66JudgeCam
+70RannCoatNormal
+74RannCoatOops
+68RannCoatStress0.1
+36Char_JudgeJudgeC1_Trial_Fail_2
 65DefenseCam
-35Char_RannRannCoatC1_Trial_Fail_3
-35Char_RannRannCoatC1_Trial_Fail_4
-69JudgeAngry
-73JudgeAngry
-64JudgeCam
+66DefenseCam
+36Char_RannRannCoatC1_Trial_Fail_3
+36Char_RannRannCoatC1_Trial_Fail_4
+70JudgeAngry
+74JudgeAngry
 65JudgeCam
-67RannCoatAngry0.1
-69RannCoatNormal
-73RannCoatNeutral
-35Char_JudgeJudgeC1_Trial_Fail_5
-67JudgeReadyStrike0.1
-35Char_JudgeJudgeC1_Trial_Fail_6
-600.10.25truetrue
-103LifePoints-1
-403537LifePoints < 0
-103LifePoints=0
-4238
-4238
-180falsefalse
+66JudgeCam
+68RannCoatAngry0.1
+70RannCoatNormal
+74RannCoatNeutral
+36Char_JudgeJudgeC1_Trial_Fail_5
+68JudgeReadyStrike0.1
+36Char_JudgeJudgeC1_Trial_Fail_6
+610.10.25truetrue
+104LifePoints-1
+413537LifePoints < 0
+104LifePoints=0
+4338
+4338
+190falsefalse
 12falsetrue
-64DefenseCam
 65DefenseCam
-35nullnullC1_Trial_Fail_7
-35nullnullC1_Trial_Fail_8
-97false
-21false
-404749LifePoints <= 0
-44Death
-4258
-371true
+66DefenseCam
+36nullnullC1_Trial_Fail_7
+36nullnullC1_Trial_Fail_8
+98false
+22false
+414749LifePoints <= 0
+45Death
+4358
+381true
+66WitnessCam
 65WitnessCam
-64WitnessCam
-69JudgeNormal
-73JudgeNormal
-67JudgeNormal0.1
-67RannCoatNormal0.1
-370false
-4258
+70JudgeNormal
+74JudgeNormal
+68JudgeNormal0.1
+68RannCoatNormal0.1
+380false
+4358

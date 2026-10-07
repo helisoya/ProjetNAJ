@@ -114,7 +114,7 @@ ask(Profile;Profile/C1_Gerald)
 	dialog(null;null;C1_Trial1_I_108)
 	dialog(null;null;C1_Trial1_I_109)
 
-	load(Testimony7)
+	load(Testimony6)
 
 wrong
 	showLifeBarUI(true)

@@ -515,7 +515,7 @@ C1_Trial_Testimony5_Press1_2 = True, but it was you who gave it to me.
 C1_Trial_Testimony5_Press1_3 = You even used it for a time.
 C1_Trial_Testimony5_Press1_4 = Well… At least at first.
 C1_Trial_Testimony5_Press1_5 = I stopped using it a month ago and gave it to you.
-C1_Trial_Testimony5_Press1_6 = Yes, yes. But the facts remain that you had easy access to it
+C1_Trial_Testimony5_Press1_6 = Yes, yes. But the facts remain that you had easy access to it.
 C1_Trial_Testimony5_Press1_7 = Guh…
 
 C1_Trial_Testimony5_Press2_1 = I didn’t do it !
@@ -733,3 +733,240 @@ C1_Trial1_I_106 = Fine !
 C1_Trial1_I_107 = …
 C1_Trial1_I_108 = <color=#72B6E8>He’s been silent for a long time.
 C1_Trial1_I_109 = <color=#72B6E8>I wonder what’s going on…
+
+# ---------------------------------------------------------
+# -------------------- Testimony 6 ------------------------
+# ---------------------------------------------------------
+
+C1_Trial_Testimony6_Start_1 = <color=green>The captain and me</color>
+C1_Trial_Testimony6_Start_2 = Look, the captain and I, we go way back.
+C1_Trial_Testimony6_Start_3 = He once helped me out of a precarious situation.
+C1_Trial_Testimony6_Start_4 = I decided to pay him back by joining his crew.
+C1_Trial_Testimony6_Start_5 = He has been my captain ever since.
+C1_Trial_Testimony6_Start_6 = So… You joined the crew voluntarily ?
+C1_Trial_Testimony6_Start_7 = Yep.
+C1_Trial_Testimony6_Start_8 = The old wolf helped me, so I figured I could help him too.
+C1_Trial_Testimony6_Start_9 = And before you ask, yes, he was a rough captain.
+C1_Trial_Testimony6_Start_10 = But let me tell you, he was like that with everyone.
+C1_Trial_Testimony6_Start_11 = And of course, nobody actually hated him because of that.
+C1_Trial_Testimony6_Start_12 = I understand.
+C1_Trial_Testimony6_Start_13 = Well, it’s your turn, Miss Retyr.
+C1_Trial_Testimony6_Start_14 = <color=#72B6E8>That slimy-</color>
+C1_Trial_Testimony6_Start_15 = <color=#72B6E8>This is different from what he told me during the trip.</color>
+C1_Trial_Testimony6_Start_16 = <color=#72B6E8>He was forced to join the crew. It wasn’t voluntary.</color>
+C1_Trial_Testimony6_Start_17 = <color=#72B6E8>Alright, at least I know he has a motive.</color>
+C1_Trial_Testimony6_Start_18 = <color=#72B6E8>Let’s break his defence. This is the end.</color>
+
+C1_Trial_Testimony6_Testimony_0 = <color=red>The captain and me</color>
+C1_Trial_Testimony6_Testimony_1 = <color=green>Look, the captain and I, we go way back.</color>
+C1_Trial_Testimony6_Testimony_2 = <color=green>He once helped me out of a precarious situation.</color>
+C1_Trial_Testimony6_Testimony_3 = <color=green>It was just a simple monetary problem. It was resolved a long time ago.</color>
+C1_Trial_Testimony6_Testimony_4 = <color=green>I decided to pay him back by joining his crew.</color>
+C1_Trial_Testimony6_Testimony_5 = <color=green>He has been my captain ever since.</color>
+
+C1_Trial_Testimony6_Press1_1 = How far back ?
+C1_Trial_Testimony6_Press1_2 = Erm… about what ? Five to seven years ?
+C1_Trial_Testimony6_Press1_3 = I told you the story. You remember, right ?
+C1_Trial_Testimony6_Press1_4 = <color=#72B6E8>Yeah, I remember. That’s the problem.</color>
+C1_Trial_Testimony6_Press1_5 = What happened between the two of you ?
+
+C1_Trial_Testimony6_Press2_1 = What kind of precarious situation ?
+C1_Trial_Testimony6_Press2_2 = Oh, you know that. I told you all about it.
+C1_Trial_Testimony6_Press2_3 = I didn’t hear about it.
+C1_Trial_Testimony6_Press2_4 = It seems I forgot; silly me.
+C1_Trial_Testimony6_Press2_5 = Guh…
+C1_Trial_Testimony6_Press2_6 = Alright, alright.
+C1_Trial_Testimony6_Press2_7 = I had money problems, and he just happened to help me out.
+C1_Trial_Testimony6_Press2_8 = There were no strings attached. The old wolf decided to just give it to me.
+C1_Trial_Testimony6_Press2_9 = I don’t know why. Sometimes he’s just… weirdly generous.
+C1_Trial_Testimony6_Press2_10 = I guess that’s what happens when you become a rich captain.
+C1_Trial_Testimony6_Press2_11 = Please add this to your testimony.
+
+C1_Trial_Testimony6_Press3_1 = And it was really with no strings attached ?
+C1_Trial_Testimony6_Press3_2 = Yep.
+C1_Trial_Testimony6_Press3_3 = That’s rather strange. Very few people would do this for people they don’t know.
+C1_Trial_Testimony6_Press3_4 = In fact, the local bank tried to rob me the other day with a ridiculous loan.
+C1_Trial_Testimony6_Press3_5 = I couldn’t believe 278% interest loans existed !
+C1_Trial_Testimony6_Press3_6 = What kind of bank do you go to ?
+C1_Trial_Testimony6_Press3_7 = Anyway, I don’t know why he did this.
+C1_Trial_Testimony6_Press3_8 = Maybe he felt like it that day.
+C1_Trial_Testimony6_Press3_9 = So what happened next ?
+
+C1_Trial_Testimony6_Press4_1 = Was it the only way to repay him ?
+C1_Trial_Testimony6_Press4_2 = Of course not.
+C1_Trial_Testimony6_Press4_3 = I could have paid him back with goods, for instance.
+C1_Trial_Testimony6_Press4_4 = But I was out of a job at the time, so I felt, “Why not ?”.
+C1_Trial_Testimony6_Press4_5 = I too, sometimes do odd jobs for friends without being asked.
+C1_Trial_Testimony6_Press4_6 = Why, last week, I went to pick apples for my nephew.
+C1_Trial_Testimony6_Press4_7 = He was rather surprised when I arrived with my basket full of delicious apples.
+C1_Trial_Testimony6_Press4_8 = I’m sure he was.
+C1_Trial_Testimony6_Press4_9 = Anyway, please continue.
+
+C1_Trial_Testimony6_Press5_1 = Did you ever wonder about quitting ?
+C1_Trial_Testimony6_Press5_2 = … No.
+C1_Trial_Testimony6_Press5_3 = Life was good on the “Magnificient”. 
+C1_Trial_Testimony6_Press5_4 = The pay was also quite generous, so…
+C1_Trial_Testimony6_Press5_5 = Why would I quit ?
+C1_Trial_Testimony6_Press5_6 = <color=#72B6E8>I could use a lot of words to describe life on the ship, but good isn’t one of them.</color>
+
+C1_Trial_Testimony6_Loop_1 = <color=#72B6E8>I know for a fact that he must have had a motive for killing the captain.</color>
+C1_Trial_Testimony6_Loop_2 = <color=#72B6E8>He is lying about his time in Voitin, before joining the crew.</color>
+C1_Trial_Testimony6_Loop_3 = <color=#72B6E8>I should press more on that.</color>
+
+C1_Trial1_J_1 = You keep claiming that there were no strings attached.
+C1_Trial1_J_2 = But that’s not the truth, is it ?
+C1_Trial1_J_3 = You mean he is lying ?
+C1_Trial1_J_4 = Yes.
+C1_Trial1_J_5 = Do you remember the documents found on the ship’s bridge ?
+C1_Trial1_J_6 = Ah, yes. The debt papers ?
+C1_Trial1_J_7 = We didn’t know who owed money to the captain.
+C1_Trial1_J_8 = But really, it’s quite simple.
+C1_Trial1_J_9 = Your Honour may even be able to find out who is referenced.
+C1_Trial1_J_10 = Really ? Let’s see…
+C1_Trial1_J_11 = … G. M.
+C1_Trial1_J_12 = …
+C1_Trial1_J_13 = G-Gerald Marin ?!
+C1_Trial1_J_14 = Yes. He owed a lot of money to the captain.
+C1_Trial1_J_15 = It turns out the money the captain gave him seven years ago had strings attached after all.
+C1_Trial1_J_16 = Hmm… The captain probably told him to work for him for X years, or else…
+C1_Trial1_J_17 = Yes. His job wasn’t very pleasant on the ship.
+C1_Trial1_J_18 = The Captain probably thought hiring him like that would ensure he would stay for a very long time.
+C1_Trial1_J_19 = He wouldn’t have to pay him much either, since he was owed a large amount of money.
+C1_Trial1_J_20 = In short, Gerald was an economic slave.
+C1_Trial1_J_21 = …Shut… up…
+C1_Trial1_J_22 = In your mind, killing the Captain would be the end of your debt.
+C1_Trial1_J_23 = It would mean… freedom.
+C1_Trial1_J_24 = Guh…
+C1_Trial1_J_25 = Witness !
+C1_Trial1_J_26 = Do you confess ? Did you kill Captain Sartt ?
+C1_Trial1_J_27 = At this point, you have basically nothing going your way.
+C1_Trial1_J_28 = You have a solid motive, and we know that you obstructed the proceedings with your lies.
+C1_Trial1_J_29 = Guh…
+C1_Trial1_J_30 = Grr…
+C1_Trial1_J_31 = “Work for me”, he said.
+C1_Trial1_J_32 = “Do a few years, it’ll be alright.”
+C1_Trial1_J_33 = All I wanted to do was feed my siblings.
+C1_Trial1_J_34 = I had no choice. I had to accept.
+C1_Trial1_J_35 = But it was all a lie.
+C1_Trial1_J_36 = He gave me the worst tasks and barely paid me.
+C1_Trial1_J_37 = By his account, I owed him at least 30 years of work.
+C1_Trial1_J_38 = So you decided to kill him after the crash ?
+C1_Trial1_J_39 = After the crash, I went to the bridge.
+C1_Trial1_J_40 = He was still alive, and I helped him out of the ship.
+C1_Trial1_J_41 = The explosives went off right after we got out.
+C1_Trial1_J_42 = Then, he started yelling at me.
+C1_Trial1_J_43 = ‘Told me I owed him 50 years now. ‘That it was all my fault.
+C1_Trial1_J_44 = I couldn’t bear the thought, and I stabbed him without thinking.
+C1_Trial1_J_45 = That was when Juno saw you.
+C1_Trial1_J_46 = The girl startled me. I ran off.
+C1_Trial1_J_47 = I realised my coat was bloody, so I hid it on the ship.
+C1_Trial1_J_48 = Then, I waited for an opportunity and faked the message.
+C1_Trial1_J_49 = All I had to do then was play dead until someone found me.
+C1_Trial1_J_50 = Well, that was unexpected, that’s for sure.
+C1_Trial1_J_51 = Gerald… How could you ?
+C1_Trial1_J_52 = I thought we were friends…
+C1_Trial1_J_53 = …
+C1_Trial1_J_54 = In this world, it’s you or the others.
+C1_Trial1_J_55 = I did what I had to do to survive.
+C1_Trial1_J_56 = …
+C1_Trial1_J_57 = <color=#72B6E8>Am I satisfied with this confession ?</color>
+
+Choice_SomethingIsAmiss = Something is amiss.
+
+C1_Trial1_J_FullStory_1 = Something’s still bothering me.
+C1_Trial1_J_FullStory_2 = Are you really telling the whole truth ?
+C1_Trial1_J_FullStory_3 = …
+C1_Trial1_J_FullStory_4 = Miss Retyr, is there something wrong with his confession ?
+C1_Trial1_J_FullStory_5 = Given the circumstances, his sentence will be the same anyway.
+C1_Trial1_J_FullStory_6 = Murder is murder, after all.
+C1_Trial1_J_FullStory_7 = <color=#72B6E8>Hmm… I still feel like he’s hiding something.</color>
+C1_Trial1_J_FullStory_8 = <color=#72B6E8>Something that still wasn’t explained.</color>
+
+C1_Trial1_J_FullStory_9 = I find it hard to believe that you never once cleaned the knife.
+C1_Trial1_J_FullStory_10 = It’s as if…
+C1_Trial1_J_FullStory_11 = I planned to pin his death on you from the start ?
+C1_Trial1_J_FullStory_12 = Yeah, I did.
+C1_Trial1_J_FullStory_13 = I wanted him gone for years.
+C1_Trial1_J_FullStory_14 = When you gave me the knife, it clicked.
+C1_Trial1_J_FullStory_15 = I knew I could kill him and put the blame on you.
+C1_Trial1_J_FullStory_16 = I just had to place a fake message and kill him with your knife.
+C1_Trial1_J_FullStory_17 = And to be extra sure, I knew I could use your book against you.
+C1_Trial1_J_FullStory_18 = But I never knew that my plan would, in fact, incriminate me instead.
+C1_Trial1_J_FullStory_19 = You… I can’t believe this.
+C1_Trial1_J_FullStory_20 = Believe what you want to survive. It’s what matters in the end.
+
+C1_Trial1_J_FullStory_Fail_1 = … Heh.
+C1_Trial1_J_FullStory_Fail_2 = In the end, you are still just a flower girl, aren’t you ?
+C1_Trial1_J_FullStory_Fail_3 = Courthouses aren’t for you, Rann; you can’t win everything.
+C1_Trial1_J_FullStory_Fail_4 = <color=#72B6E8>I guess this wasn’t it.</color>
+
+C1_Trial1_J_58 = Alright.
+C1_Trial1_J_59 = We’ll hear his case at a later date.
+C1_Trial1_J_60 = I am now ready for my verdict.
+C1_Trial1_J_61 = I declare Miss Rann Retyr…
+C1_Trial1_J_62 = Congratulations, Miss.
+C1_Trial1_J_63 = I must say, I have never seen such a vigorous defence in a long, long time.
+C1_Trial1_J_64 = But please, do try to stay away from dangerous situations next time.
+C1_Trial1_J_65 = <color=#72B6E8>I did it…</color>
+C1_Trial1_J_66 = <color=#72B6E8>I really did !</color>
+C1_Trial1_J_67 = <color=#72B6E8>But…</color>
+C1_Trial1_J_68 = <color=#72B6E8>It does feel like a hollow victory…</color>
+C1_Trial1_J_69 = <color=#72B6E8>Also…</color>
+C1_Trial1_J_70 = Sheriff.
+C1_Trial1_J_71 = What ?
+C1_Trial1_J_72 = Why did you hide the knife from us ?
+C1_Trial1_J_73 = It was obvious from my fingerprints that I was innocent.
+C1_Trial1_J_74 = That’s true.
+C1_Trial1_J_75 = I find it odd that you would try to conceal it.
+C1_Trial1_J_76 = Like your “friend” said, I did what I had to do
+C1_Trial1_J_77 = What ?!
+C1_Trial1_J_78 = Then… you knew I was innocent from the start !
+C1_Trial1_J_79 = Sheriff… Surely, you jest. Right ?
+C1_Trial1_J_80 = Radical times call for radical actions.
+C1_Trial1_J_81 = I had my goals, and you are a witch, a heretic.
+C1_Trial1_J_82 = Sheriff ! This is-
+C1_Trial1_J_83 = What ? What are you going to do ?
+C1_Trial1_J_84 = As soon as I exit this place, I’ll be out of your feeble reach.
+C1_Trial1_J_85 = Never forget that I’m the Sheriff in town.
+C1_Trial1_J_86 = Your Honour.
+C1_Trial1_J_87 = …
+C1_Trial1_J_88 = <color=#72B6E8>Why didn’t the judge say anything ?</color>
+C1_Trial1_J_89 = <color=#72B6E8>He basically admitted to having lied the entire time !</color>
+C1_Trial1_J_90 = Well, I guess this means that this is the end of this session.
+C1_Trial1_J_91 = I’ll take my leave. Good day to you, Miss Retyr.
+C1_Trial1_J_92 = … As a word of advice, stay clear of the police for a few days.
+C1_Trial1_J_93 = You… will understand soon that they hold power around here.
+C1_Trial1_J_94 = Seems like it…
+C1_Trial1_J_95 = Oh ! And if you ever feel like it, you can always visit my lodge.
+C1_Trial1_J_96 = I live on the outskirts of the city. You can come to chat anytime.
+C1_Trial1_J_97 = I’m pretty bored these days; I’d love to have a tea-time partner.
+C1_Trial1_J_98 = I, erm… Yes. I’ll think about it.
+
+C1_Trial1_J_99 = <color=#72B6E8>Here I am, free.</color>
+C1_Trial1_J_100 = <color=#72B6E8>Still, I feel somewhat empty…</color>
+C1_Trial1_J_101 = <color=#72B6E8>Being betrayed by a friend doesn’t feel good.</color>
+C1_Trial1_J_102 = Rann ! Congratulations !
+C1_Trial1_J_103 = Ah, thanks.
+C1_Trial1_J_104 = I can walk free now, but…
+C1_Trial1_J_105 = You’ve got nowhere to go, right ?
+C1_Trial1_J_106 = Yeah. It’s a strange new world, and I lost my ticket back to Vasia in the crash…
+C1_Trial1_J_107 = Who knows when or if I’ll ever be able to go back.
+C1_Trial1_J_108 = So, it seems I’ll have to live here for a while.
+C1_Trial1_J_109 = Yeah, so… actually…
+C1_Trial1_J_110 = Do you want to live with me ?
+C1_Trial1_J_111 = I don’t have much, and I have to do odd jobs to survive…
+C1_Trial1_J_112 = But I can still accommodate you.
+C1_Trial1_J_113 = I owe you at least this much for all I did today.
+C1_Trial1_J_114 = Ha ha… to be frank…
+C1_Trial1_J_115 = Why not ? That sounds good.
+C1_Trial1_J_116 = And since I’ll be living with you, I’ll help with your work.
+C1_Trial1_J_117 = Is that so ? I’m honoured.
+C1_Trial1_J_118 = You’ll see, counting turtles is fun !
+C1_Trial1_J_119 = Huh ?
+C1_Trial1_J_120 = <color=#72B6E8>And thus ended my first little escapade in “Nova Kalia”.</color>
+C1_Trial1_J_121 = <color=#72B6E8>I’m not sure what will happen next, but…</color>
+C1_Trial1_J_122 = <color=#72B6E8>I guess I’ll wait and see what the future has in store for me.</color>
+C1_Trial1_J_123 = <color=#72B6E8>Although, I’m not reassured to see what the sheriff can get away with…</color>
+C1_Trial1_J_124 = <color=#72B6E8>Withholding evidence is one thing, but actively trying to get an innocent declared guilty is…</color>
+C1_Trial1_J_125 = <color=#72B6E8>Well. I have all the time in the world to think about that.</color>
+C1_Trial1_J_126 = <color=#72B6E8>I have turtles to count in the meantime…</color>

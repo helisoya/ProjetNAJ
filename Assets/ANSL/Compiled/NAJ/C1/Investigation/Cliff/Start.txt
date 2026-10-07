@@ -1,49 +1,49 @@
-#8B08F8D940DBB571B596F8B78E115616-8D103ABC3C0B157D3F6A342F02C946F9
-88Location_C1_Stranded
-61C1/Clifftrue
-640-2-3
-65-70280
-390false
-24
-1052
-35Char_RannnullC1_Investigation_Start_1
-35Char_RannnullC1_Investigation_Start_2
-97false
-65152802true
-35Char_RannnullC1_Investigation_Start_3
-97false
-65152102false
-6401-42true
-35nullnullC1_Investigation_Start_4
-35nullnullC1_Investigation_Start_5
-35nullnullC1_Investigation_Start_6
-35nullnullC1_Investigation_Start_7
-35Char_RannnullC1_Investigation_Start_8
-35nullnullC1_Investigation_Start_9
-35nullnullC1_Investigation_Start_10
-35nullnullC1_Investigation_Start_11
-35Char_RannnullC1_Investigation_Start_12
-35Char_RannnullC1_Investigation_Start_13
-35Char_RannnullC1_Investigation_Start_14
-97false
-6510-502true
-35nullnullC1_Investigation_Start_15
-97false
-650-7002false
-64default2true
-35Char_RannnullC1_Investigation_Start_16
-35Char_RannnullC1_Investigation_Start_17
-35Char_RannnullC1_Investigation_Start_18
-35Char_RannnullC1_Investigation_Start_19
-35Char_RannnullC1_Investigation_Start_20
-97false
-6503002true
-35nullnullC1_Investigation_Start_21
-35nullnullC1_Investigation_Start_22
-35nullnullC1_Investigation_Start_23
-35nullnullC1_Investigation_Start_24
-97false
-650002true
+#8B08F8D940DBB571B596F8B78E115616-3808802B8FD62756E93CBEE04725A2AF
+89Location_C1_Stranded
+62C1/Clifftrue
+650-2-3
+66-70280
+400false
+25
+1062
+36Char_RannnullC1_Investigation_Start_1
+36Char_RannnullC1_Investigation_Start_2
+98false
+66152802true
+36Char_RannnullC1_Investigation_Start_3
+98false
+66152102false
+6501-42true
+36nullnullC1_Investigation_Start_4
+36nullnullC1_Investigation_Start_5
+36nullnullC1_Investigation_Start_6
+36nullnullC1_Investigation_Start_7
+36Char_RannnullC1_Investigation_Start_8
+36nullnullC1_Investigation_Start_9
+36nullnullC1_Investigation_Start_10
+36nullnullC1_Investigation_Start_11
+36Char_RannnullC1_Investigation_Start_12
+36Char_RannnullC1_Investigation_Start_13
+36Char_RannnullC1_Investigation_Start_14
+98false
+6610-502true
+36nullnullC1_Investigation_Start_15
+98false
+660-7002false
+65default2true
+36Char_RannnullC1_Investigation_Start_16
+36Char_RannnullC1_Investigation_Start_17
+36Char_RannnullC1_Investigation_Start_18
+36Char_RannnullC1_Investigation_Start_19
+36Char_RannnullC1_Investigation_Start_20
+98false
+6603002true
+36nullnullC1_Investigation_Start_21
+36nullnullC1_Investigation_Start_22
+36nullnullC1_Investigation_Start_23
+36nullnullC1_Investigation_Start_24
+98false
+660002true
 0C1_Injury
 0C1_Coat
-44Interaction
+45Interaction

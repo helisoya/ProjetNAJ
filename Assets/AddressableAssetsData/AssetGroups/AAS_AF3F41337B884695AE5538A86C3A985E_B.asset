@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: AAS_AF3F41337B884695AE5538A86C3A985E_B
   m_GUID: fc73d0a16f7691945b4e892882993eb9
   m_SerializeEntries:
+  - m_GUID: 06ab1f209fa26344ba0179b2ff4bb56f
+    m_Address: ANSL/NAJ/C1/Trial/B/Testimony6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0715f7e9caf95b9448463df19e9f5e72
     m_Address: ANSL/NAJ/C1/Trial/B/Question2End
     m_ReadOnly: 0
@@ -53,6 +59,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e4d863294749a944bb34732ed3cf3e7
     m_Address: ANSL/NAJ/C1/Trial/B/Testimony4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a592fe5fd2ef7ea40971ba57c6731104
+    m_Address: ANSL/NAJ/C1/Trial/B/Testimony6End
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts

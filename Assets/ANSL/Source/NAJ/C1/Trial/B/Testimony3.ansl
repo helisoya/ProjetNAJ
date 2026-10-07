@@ -282,6 +282,7 @@ loop
 	dialog(null;null;C1_Trial_Testimony3_Loop_2)
 	dialog(null;null;C1_Trial_Testimony3_Loop_3)
 	dialog(null;null;C1_Trial_Testimony3_Loop_4)
+	showDialogWindow(false)
 
 	fadeBg(1;true)
 	:setRannNormal(Coat)

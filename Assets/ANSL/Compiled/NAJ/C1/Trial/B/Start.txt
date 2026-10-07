@@ -1,318 +1,318 @@
-#C4E08F0CC6946204A3476F4AA5717BC7-8D103ABC3C0B157D3F6A342F02C946F9
-87c1_commonc1_trial_B
-88Location_C1_TrialPart2
-24
-69RobertNormal
-73RobertNormal
-67RobertNormal0.1
-390false
-69JudgeNormal
-73JudgeNormal
-97false
-64HammerCam
+#C4E08F0CC6946204A3476F4AA5717BC7-3808802B8FD62756E93CBEE04725A2AF
+88c1_commonc1_trial_B
+89Location_C1_TrialPart2
+25
+70RobertNormal
+74RobertNormal
+68RobertNormal0.1
+400false
+70JudgeNormal
+74JudgeNormal
+98false
 65HammerCam
-67JudgeStrike
-1051
-67JudgeNormal
+66HammerCam
+68JudgeStrike
+1061
+68JudgeNormal
+66JudgeCam
 65JudgeCam
-64JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_1
-35Char_JudgeJudgeC1_Trial1_E_2
+36Char_JudgeJudgeC1_Trial1_E_1
+36Char_JudgeJudgeC1_Trial1_E_2
+66ProsecutionCam
 65ProsecutionCam
-64ProsecutionCam
-35Char_RobertRobertC1_Trial1_E_3
-35Char_RobertRobertC1_Trial1_E_4
-35Char_RobertRobertC1_Trial1_E_5
-64JudgeCam
+36Char_RobertRobertC1_Trial1_E_3
+36Char_RobertRobertC1_Trial1_E_4
+36Char_RobertRobertC1_Trial1_E_5
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_6
-97false
-371true
-22NovaKaliaSoldierfalseWitnessSpot
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_6
+98false
+381true
+23NovaKaliaSoldierfalseWitnessSpot
+66WitnessCam
 65WitnessCam
-64WitnessCam
-370false
-1052
-65ProsecutionCam0.25false
-64ProsecutionCam0.25true
-35Char_RobertRobertC1_Trial1_E_7
-97false
-65WitnessCam0.25false
-64WitnessCam0.25true
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_8
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_9
-64JudgeCam
+380false
+1062
+66ProsecutionCam0.25false
+65ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_E_7
+98false
+66WitnessCam0.25false
+65WitnessCam0.25true
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_8
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_9
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_10
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_10
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_11
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_12
-69JudgeThinking
-73JudgeNormal
-64JudgeCam
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_11
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_12
+70JudgeThinking
+74JudgeNormal
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_13
-69JudgeNormal
-73JudgeNormal
-35Char_JudgeJudgeC1_Trial1_E_14
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_13
+70JudgeNormal
+74JudgeNormal
+36Char_JudgeJudgeC1_Trial1_E_14
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_15
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_16
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_17
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_18
-97false
-69RobertThinking
-73RobertNormal
-65ProsecutionCam0.25false
-64ProsecutionCam0.25true
-35Char_RobertRobertC1_Trial1_E_19
-64JudgeCam
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_15
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_16
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_17
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_18
+98false
+70RobertThinking
+74RobertNormal
+66ProsecutionCam0.25false
+65ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_E_19
 65JudgeCam
-69RobertNormal
-73RobertNormal
-19Evidence/C1_DeathMessageRight
-35Char_JudgeJudgeC1_Trial1_E_20
-600.10.25truetrue
-69JudgeSurprise
-73JudgeNormal
-67JudgeDamageToNormal
-35Char_JudgeJudgeC1_Trial1_E_21
-35Char_JudgeJudgeC1_Trial1_E_22
+66JudgeCam
+70RobertNormal
+74RobertNormal
+20Evidence/C1_DeathMessageRight
+36Char_JudgeJudgeC1_Trial1_E_20
+610.10.25truetrue
+70JudgeSurprise
+74JudgeNormal
+68JudgeDamageToNormal
+36Char_JudgeJudgeC1_Trial1_E_21
+36Char_JudgeJudgeC1_Trial1_E_22
 11
-600.10.25truetrue
-64DefenseCam
+610.10.25truetrue
 65DefenseCam
-67RannCoatDamageToAngry
-69RannCoatSurprise
-73RannCoatSurprise
-35Char_RannRannCoatC1_Trial1_E_23
-35Char_RannRannCoatC1_Trial1_E_24
-35Char_RannRannCoatC1_Trial1_E_25
-64JudgeCam
+66DefenseCam
+68RannCoatDamageToAngry
+70RannCoatSurprise
+74RannCoatSurprise
+36Char_RannRannCoatC1_Trial1_E_23
+36Char_RannRannCoatC1_Trial1_E_24
+36Char_RannRannCoatC1_Trial1_E_25
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_26
-69RannCoatNormal
-73RannCoatNeutral
-64DefenseCam
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_26
+70RannCoatNormal
+74RannCoatNeutral
 65DefenseCam
-67JudgeHoldingHammer0.1
-35nullnullC1_Trial1_E_27
-35nullnullC1_Trial1_E_28
-35nullnullC1_Trial1_E_29
-35nullnullC1_Trial1_E_30
-35nullnullC1_Trial1_E_31
-69JudgeNormal
-73JudgeNormal
-64JudgeCam
+66DefenseCam
+68JudgeHoldingHammer0.1
+36nullnullC1_Trial1_E_27
+36nullnullC1_Trial1_E_28
+36nullnullC1_Trial1_E_29
+36nullnullC1_Trial1_E_30
+36nullnullC1_Trial1_E_31
+70JudgeNormal
+74JudgeNormal
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_32
-19Evidence/C1_DeathMessageFull
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_32
+20Evidence/C1_DeathMessageFull
 0C1_DeathMessage
-35nullnullC1_Trial_Evidence_DeathMessage_1
+36nullnullC1_Trial_Evidence_DeathMessage_1
 11
-35Char_JudgeJudgeC1_Trial1_E_33
+36Char_JudgeJudgeC1_Trial1_E_33
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_34
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_35
-97false
-69RobertAngry
-73RobertAngry
-67RobertOnPouch0.1
-65ProsecutionCam0.25false
-64ProsecutionCam0.25true
-35Char_RobertRobertC1_Trial1_E_36
-97false
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_34
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_35
+98false
+70RobertAngry
+74RobertAngry
+68RobertOnPouch0.1
+66ProsecutionCam0.25false
+65ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_E_36
+98false
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_37
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_38
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_39
-97false
-69RobertNormal
-73RobertNormal
-67RobertNormal0.1
-65ProsecutionCam0.25false
-64ProsecutionCam0.25true
-19Evidence/C1_DebtReportRight
-35Char_RobertRobertC1_Trial1_E_41
-64JudgeCam
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_37
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_38
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_39
+98false
+70RobertNormal
+74RobertNormal
+68RobertNormal0.1
+66ProsecutionCam0.25false
+65ProsecutionCam0.25true
+20Evidence/C1_DebtReportRight
+36Char_RobertRobertC1_Trial1_E_41
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_42
-600.10.25truetrue
-69JudgeSurprise
-73JudgeNormal
-67JudgeDamageToHoldingHammer
-35Char_JudgeJudgeC1_Trial1_E_43
-35Char_JudgeJudgeC1_Trial1_E_44
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_42
+610.10.25truetrue
+70JudgeSurprise
+74JudgeNormal
+68JudgeDamageToHoldingHammer
+36Char_JudgeJudgeC1_Trial1_E_43
+36Char_JudgeJudgeC1_Trial1_E_44
 11
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_45
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_46
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_47
-69JudgeThinking
-73JudgeNormal
-64JudgeCam
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_45
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_46
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_47
+70JudgeThinking
+74JudgeNormal
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_48
-19Evidence/C1_DebtReportFull
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_48
+20Evidence/C1_DebtReportFull
 0C1_DebtReport
-35nullnullC1_Trial_Evidence_DebtPapers_1
+36nullnullC1_Trial_Evidence_DebtPapers_1
 11
+66ProsecutionCam
 65ProsecutionCam
-64ProsecutionCam
-35Char_RobertRobertC1_Trial1_E_49
-97false
-65WitnessCam0.25false
-64WitnessCam0.25true
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_50
-97false
-69RobertAngry
-73RobertAngry
-67RobertOnPouch0.1
-65ProsecutionCam0.25false
-64ProsecutionCam0.25true
-35Char_RobertRobertC1_Trial1_E_51
-97false
-65WitnessCam0.25false
-64WitnessCam0.25true
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_52
-97false
-67RobertNormal0.1
-69RobertNormal
-73RobertNormal
-65ProsecutionCam0.25false
-64ProsecutionCam0.25true
-35Char_RobertRobertC1_Trial1_E_53
-35Char_RobertRobertC1_Trial1_E_54
-69JudgeSurprise
-73JudgeNormal
-67JudgeNormal0.1
-64JudgeCam
+36Char_RobertRobertC1_Trial1_E_49
+98false
+66WitnessCam0.25false
+65WitnessCam0.25true
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_50
+98false
+70RobertAngry
+74RobertAngry
+68RobertOnPouch0.1
+66ProsecutionCam0.25false
+65ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_E_51
+98false
+66WitnessCam0.25false
+65WitnessCam0.25true
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_52
+98false
+68RobertNormal0.1
+70RobertNormal
+74RobertNormal
+66ProsecutionCam0.25false
+65ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_E_53
+36Char_RobertRobertC1_Trial1_E_54
+70JudgeSurprise
+74JudgeNormal
+68JudgeNormal0.1
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_55
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_55
+66ProsecutionCam
 65ProsecutionCam
-64ProsecutionCam
-35Char_RobertRobertC1_Trial1_E_56
-35Char_RobertRobertC1_Trial1_E_57
-64JudgeCam
+36Char_RobertRobertC1_Trial1_E_56
+36Char_RobertRobertC1_Trial1_E_57
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_58
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_58
+66ProsecutionCam
 65ProsecutionCam
-64ProsecutionCam
-35Char_RobertRobertC1_Trial1_E_59
-35Char_RobertRobertC1_Trial1_E_60
-35Char_RobertRobertC1_Trial1_E_61
-67RannCoatNormal0.1
-69JudgeNormal
-73JudgeNormal
-64JudgeCam
+36Char_RobertRobertC1_Trial1_E_59
+36Char_RobertRobertC1_Trial1_E_60
+36Char_RobertRobertC1_Trial1_E_61
+68RannCoatNormal0.1
+70JudgeNormal
+74JudgeNormal
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_62
-64DefenseCam
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_62
 65DefenseCam
-35nullnullC1_Trial1_E_63
-35nullnullC1_Trial1_E_64
-97false
-65WitnessCam0.25false
-64WitnessCam0.25true
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_65
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_66
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_67
-97false
-65DefenseCam0.25false
-64DefenseCam0.25true
-35Char_RannRannCoatC1_Trial1_E_68
-97false
-65WitnessCam0.25false
-64WitnessCam0.25true
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_69
-69JudgeSurprise
-73JudgeNormal
-64JudgeCam
+66DefenseCam
+36nullnullC1_Trial1_E_63
+36nullnullC1_Trial1_E_64
+98false
+66WitnessCam0.25false
+65WitnessCam0.25true
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_65
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_66
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_67
+98false
+66DefenseCam0.25false
+65DefenseCam0.25true
+36Char_RannRannCoatC1_Trial1_E_68
+98false
+66WitnessCam0.25false
+65WitnessCam0.25true
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_69
+70JudgeSurprise
+74JudgeNormal
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_70
-35Char_JudgeJudgeC1_Trial1_E_71
-35Char_JudgeJudgeC1_Trial1_E_72
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_70
+36Char_JudgeJudgeC1_Trial1_E_71
+36Char_JudgeJudgeC1_Trial1_E_72
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_73
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_74
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_75
-69JudgeThinking
-73JudgeNormal
-64JudgeCam
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_73
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_74
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_75
+70JudgeThinking
+74JudgeNormal
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_76
-69JudgeNormal
-73JudgeNormal
-35Char_JudgeJudgeC1_Trial1_E_77
-35Char_JudgeJudgeC1_Trial1_E_78
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_76
+70JudgeNormal
+74JudgeNormal
+36Char_JudgeJudgeC1_Trial1_E_77
+36Char_JudgeJudgeC1_Trial1_E_78
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_79
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_80
-97false
-69RannCoatNormal
-73RannCoatNeutral
-67RannCoatHandsOnDesk0.1
-65DefenseCam0.25false
-64DefenseCam0.25true
-35Char_RannRannCoatC1_Trial1_E_81
-35Char_RannRannCoatC1_Trial1_E_82
-97false
-371true
-74NovaKaliaSoldierWitnessLeftSpot
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_79
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_80
+98false
+70RannCoatNormal
+74RannCoatNeutral
+68RannCoatHandsOnDesk0.1
+66DefenseCam0.25false
+65DefenseCam0.25true
+36Char_RannRannCoatC1_Trial1_E_81
+36Char_RannRannCoatC1_Trial1_E_82
+98false
+381true
 75NovaKaliaSoldierWitnessLeftSpot
-22GeraldNoCoatfalseWitnessSpot
+76NovaKaliaSoldierWitnessLeftSpot
+23GeraldNoCoatfalseWitnessSpot
+66WitnessCam
 65WitnessCam
-64WitnessCam
-370false
-1052
-64JudgeCam
+380false
+1062
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_83
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_83
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_GeraldGeraldNoCoatC1_Trial1_E_84
-64DefenseCam
+36Char_GeraldGeraldNoCoatC1_Trial1_E_84
 65DefenseCam
-600.10.25truetrue
-67RannCoatDamageToAngry
-69RannCoatSurprise
-73RannCoatSurprise
-35Char_RannRannCoatC1_Trial1_E_85
-97false
-69GeraldNoCoatWink
-73GeraldNoCoatNormal
-65WitnessCam0.25false
-64WitnessCam0.25true
-35Char_GeraldGeraldNoCoatC1_Trial1_E_86
-64DefenseCam
+66DefenseCam
+610.10.25truetrue
+68RannCoatDamageToAngry
+70RannCoatSurprise
+74RannCoatSurprise
+36Char_RannRannCoatC1_Trial1_E_85
+98false
+70GeraldNoCoatWink
+74GeraldNoCoatNormal
+66WitnessCam0.25false
+65WitnessCam0.25true
+36Char_GeraldGeraldNoCoatC1_Trial1_E_86
 65DefenseCam
-35nullnullC1_Trial1_E_87
-35nullnullC1_Trial1_E_88
-35nullnullC1_Trial1_E_89
-69GeraldNoCoatNormal
-73GeraldNoCoatNormal
-65WitnessLeftCam0.25false
-64WitnessLeftCam0.25true
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_90
-35Char_PolicemanNovaKaliaSoldierC1_Trial1_E_91
-69JudgeSurprise
-73JudgeNormal
-64JudgeCam
+66DefenseCam
+36nullnullC1_Trial1_E_87
+36nullnullC1_Trial1_E_88
+36nullnullC1_Trial1_E_89
+70GeraldNoCoatNormal
+74GeraldNoCoatNormal
+66WitnessLeftCam0.25false
+65WitnessLeftCam0.25true
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_90
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_91
+70JudgeSurprise
+74JudgeNormal
 65JudgeCam
-35Char_JudgeJudgeC1_Trial1_E_92
-69JudgeNormal
-73JudgeNormal
-35Char_JudgeJudgeC1_Trial1_E_93
-35Char_JudgeJudgeC1_Trial1_E_94
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_E_92
+70JudgeNormal
+74JudgeNormal
+36Char_JudgeJudgeC1_Trial1_E_93
+36Char_JudgeJudgeC1_Trial1_E_94
+66WitnessCam
 65WitnessCam
-64WitnessCam
-35Char_GeraldGeraldNoCoatC1_Trial1_E_95
-35Char_GeraldGeraldNoCoatC1_Trial1_E_96
-44Testimony3
+36Char_GeraldGeraldNoCoatC1_Trial1_E_95
+36Char_GeraldGeraldNoCoatC1_Trial1_E_96
+45Testimony3
