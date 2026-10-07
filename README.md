@@ -21,3 +21,5 @@ To control components and data containers during gameplay, you can use a custom 
 You can also add / remove new "Functions" (e.g. SetPlayerName, If, Switch, SetBackground) by creating new "ANSLFunction" classes and registering them in the systems.
 "ANSLFunction" have a default compiling scheme that can be overwritten if the function is more complex and span multiple lines (e.g. If).
 .ansl files are compiled to a .txt file readable by Unity. This file will then be interpreted during gameplay.
+
+I talk about ANF in more details in this devlog : https://helisoya.itch.io/traveling-to-woolokii/devlog/1683462/devlog-4-anf-the-power-of-scripting
