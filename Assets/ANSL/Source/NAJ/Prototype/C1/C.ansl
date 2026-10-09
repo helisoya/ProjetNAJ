@@ -38,7 +38,7 @@ clearExaminationData()
 examination
 
 part 1
-dialog(Prototype_Juno;Juno;Prototype_E2_1;false;true)
+dialog(Prototype_Juno;Juno;Prototype_E2_1;false;noInput)
 press 1
 setCameraPosition(DefenseCam;0.5;false)
 setCameraRotation(DefenseCam;0.5;true)
@@ -54,7 +54,7 @@ setCameraRotation(WitnessCam)
 fadeFg(0;false)
 
 part 2
-dialog(Prototype_Juno;Juno;Prototype_E2_2;false;true)
+dialog(Prototype_Juno;Juno;Prototype_E2_2;false;noInput)
 press 2
 setCameraPosition(DefenseCam;0.5;false)
 setCameraRotation(DefenseCam;0.5;true)

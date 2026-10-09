@@ -15,7 +15,7 @@ examination
 
 part 1
 	# Look, the captain and I, we go way back.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_1;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -41,7 +41,7 @@ press 1
 
 part 2
 	# He once helped me out of a precarious situation.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_2;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -86,7 +86,7 @@ press 2
 
 part 3 present Evidence/C1_DebtReport
 	# It was just a simple monetary problem. It was resolved a long time ago.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_3;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -123,7 +123,7 @@ press 3
 
 part 4
 	# I decided to pay him back by joining his crew.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_4;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_4;false;noInput)
 press 4
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -156,7 +156,7 @@ press 4
 
 part 5
 	# He has been my captain ever since.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_5;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_5;false;noInput)
 press 5
 	showDialogWindow(false)
 	playUIAnimation(Press;true)

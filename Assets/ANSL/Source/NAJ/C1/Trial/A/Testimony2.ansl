@@ -73,7 +73,7 @@ examination
 
 part 1
 	# I was quite far away, so I couldn’t see much.
-	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_1;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -101,7 +101,7 @@ press 1
 
 part 2
 	# They had their back turned, and I couldn’t see their face.
-	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_2;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -130,7 +130,7 @@ press 2
 
 part 3
 	# But I know for a fact they were wearing a coat.
-	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_3;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -178,7 +178,7 @@ press 3
 
 part 5
 	# I learned after the events that it was the crew’s uniform.
-	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_5;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_5;false;noInput)
 press 5
 	showDialogWindow(false)
 	playUIAnimation(Press;true)

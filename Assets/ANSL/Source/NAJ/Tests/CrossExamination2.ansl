@@ -1,21 +1,21 @@
 examination
 part 1
-dialog(null;null;Test_Examination_18;false;true)
+dialog(null;null;Test_Examination_18;false;noInput)
 press 1
 dialog(null;null;Test_Examination_19)
 
 part 2
-dialog(null;null;Test_Examination_20;false;true)
+dialog(null;null;Test_Examination_20;false;noInput)
 press 2
 dialog(null;null;Test_Examination_21)
 
 part 3
-dialog(null;null;Test_Examination_22;false;true)
+dialog(null;null;Test_Examination_22;false;noInput)
 press 3
 dialog(null;null;Test_Examination_23)
 
 part 4 present Profile/TestProfile5
-dialog(null;null;Test_Examination_24;false;true)
+dialog(null;null;Test_Examination_24;false;noInput)
 press 4
 dialog(null;null;Test_Examination_25)
 

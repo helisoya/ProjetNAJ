@@ -46,12 +46,12 @@ dialog(null;null;Test_Examination_1)
 
 examination
 part 1 press
-dialog(null;null;Test_Examination_2;false;true)
+dialog(null;null;Test_Examination_2;false;noInput)
 press 1
 dialog(null;null;Test_Examination_3)
 
 part 2 press
-dialog(null;null;Test_Examination_4;false;true)
+dialog(null;null;Test_Examination_4;false;noInput)
 press 2
 dialog(null;null;Test_Examination_5)
 
@@ -69,12 +69,12 @@ clearExaminationData()
 
 examination
 part 1
-dialog(null;null;Test_Examination_10;false;true)
+dialog(null;null;Test_Examination_10;false;noInput)
 press 1
 dialog(null;null;Test_Examination_11)
 
 part 2 present Evidence/TestEvidence2
-dialog(null;null;Test_Examination_12;false;true)
+dialog(null;null;Test_Examination_12;false;noInput)
 press 2
 dialog(null;null;Test_Examination_13)
 
@@ -92,17 +92,17 @@ clearExaminationData()
 
 examination
 part 1
-dialog(null;null;Test_Examination_18;false;true)
+dialog(null;null;Test_Examination_18;false;noInput)
 press 1
 dialog(null;null;Test_Examination_19)
 
 part 2
-dialog(null;null;Test_Examination_20;false;true)
+dialog(null;null;Test_Examination_20;false;noInput)
 press 2
 dialog(null;null;Test_Examination_21)
 
 part 3
-dialog(null;null;Test_Examination_22;false;true)
+dialog(null;null;Test_Examination_22;false;noInput)
 press 3
 dialog(null;null;Test_Examination_23)
 setExaminationPart(4)

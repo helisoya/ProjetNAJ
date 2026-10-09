@@ -36,7 +36,7 @@ clearExaminationData()
 examination
 
 part 1
-dialog(Prototype_Gerald;Gerald;Prototype_E5_1;false;true)
+dialog(Prototype_Gerald;Gerald;Prototype_E5_1;false;noInput)
 press 1
 setCameraPosition(DefenseCam;0.5;false)
 setCameraRotation(DefenseCam;0.5;true)
@@ -52,7 +52,7 @@ setCameraRotation(WitnessCam)
 fadeFg(0;false)
 
 part 2 present Evidence/C1_Knife
-dialog(Prototype_Gerald;Gerald;Prototype_E5_2;false;true)
+dialog(Prototype_Gerald;Gerald;Prototype_E5_2;false;noInput)
 press 2
 setCameraPosition(DefenseCam;0.5;false)
 setCameraRotation(DefenseCam;0.5;true)
@@ -122,7 +122,7 @@ fadeFg(0;false)
 examination
 
 part 1
-dialog(Prototype_Gerald;Gerald;Prototype_E5_1;false;true)
+dialog(Prototype_Gerald;Gerald;Prototype_E5_1;false;noInput)
 press 1
 setCameraPosition(DefenseCam;0.5;false)
 setCameraRotation(DefenseCam;0.5;true)
@@ -138,7 +138,7 @@ setCameraRotation(WitnessCam)
 fadeFg(0;false)
 
 part 2
-dialog(Prototype_Gerald;Gerald;Prototype_E5_2;false;true)
+dialog(Prototype_Gerald;Gerald;Prototype_E5_2;false;noInput)
 press 2
 setCameraPosition(DefenseCam;0.5;false)
 setCameraRotation(DefenseCam;0.5;true)
@@ -155,7 +155,7 @@ fadeFg(0;false)
 
 
 part 3 present Evidence/C1_Herbarium Profile/C1_Gerald
-dialog(Prototype_Gerald;Gerald;Prototype_E5_3;false;true)
+dialog(Prototype_Gerald;Gerald;Prototype_E5_3;false;noInput)
 press 3
 setCameraPosition(DefenseCam;0.5;false)
 setCameraRotation(DefenseCam;0.5;true)

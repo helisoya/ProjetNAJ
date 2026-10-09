@@ -17,28 +17,52 @@ namespace NAJ.GUI
     /// </summary>
     public class CaseSelectionMenu : GUIComponent
     {
+        public enum SelectionMode
+        {
+            Case,
+            EntryPoint,
+            Confirm
+        }
+
+
+        [Header("Data")]
+        [SerializeField] private bool entrypointSelectionByDefault = false;
+        [SerializeField] private CaseInfo[] casesInfo;
+
         [Header("Case Selection")]
+        [SerializeField] private CanvasGroup caseSelectionRoot;
         [SerializeField] private LocalizedText caseNameText;
         [SerializeField] private CaseSelectionArrow leftArrow;
         [SerializeField] private CaseSelectionArrow rightArrow;
         [SerializeField] private RectTransform caseImagesRoot;
         [SerializeField] private Image caseImagePrefab;
-        [SerializeField] private CaseInfo[] casesInfo;
+
+        [Header("Entry Points Selection")]
+        [SerializeField] private CanvasGroup entrypointsPopupRoot;
+        [SerializeField] private RectTransform entrypointsRoot;
+        [SerializeField] private RectTransform entrypointsMask;
+        [SerializeField] private CaseSelectionEntryPointButton entrypointButtonPrefab;
+        [SerializeField] private RectTransform entrypointPopupCancelButton;
+
 
         [Header("Confirm Popup")]
+        [SerializeField] private LocalizedText entryPointNameText;
         [SerializeField] private RectTransform confirmPopupRoot;
         [SerializeField] private RectTransform confirmPopupCancelButton;
         [SerializeField] private RectTransform confirmPopupAcceptButton;
 
         private uint maxCaseIdx;
         private int currentCaseIdx;
-        private float currentButtonInputSide = 0;
+        private int entrypointIdx;
+        private Vector2Int currentButtonInputSide = Vector2Int.zero;
         private float cooldownToNextButtonIncrement = 0;
         private AudioManager audioManager;
         private float cursorMoveCooldown = 0.25f;
 
+        private CaseSelectionEntryPointButton[] entrypointButtons;
         private bool onConfirmButton;
-        private bool inPopup;
+        private SelectionMode selectionMode;
+        private string currentEntrypoint;
 
         public override void OnInitialize()
         {
@@ -59,15 +83,17 @@ namespace NAJ.GUI
 
         public override void OnUpdate()
         {
-            if (currentButtonInputSide != 0)
+            if (currentButtonInputSide.x != 0 || currentButtonInputSide.y != 0)
             {
                 cooldownToNextButtonIncrement -= Time.deltaTime;
                 if (cooldownToNextButtonIncrement <= 0)
                 {
-                    if (inPopup && currentButtonInputSide != 0)
+                    if (selectionMode == SelectionMode.Confirm && currentButtonInputSide.x != 0)
                         ChangePopupButton(!onConfirmButton);
-                    else if (!inPopup && currentButtonInputSide != 0)
-                        IncrementCaseWithButton(currentButtonInputSide < 0 ? true : false);
+                    else if (selectionMode == SelectionMode.Case && currentButtonInputSide.x != 0)
+                        IncrementCaseWithButton(currentButtonInputSide.x < 0 ? true : false);
+                    else if (selectionMode == SelectionMode.EntryPoint && currentButtonInputSide.y != 0)
+                        IncrementEntryPointWithButton(currentButtonInputSide.y < 0 ? true : false);
                     cooldownToNextButtonIncrement = cursorMoveCooldown;
                 }
             }
@@ -88,15 +114,17 @@ namespace NAJ.GUI
 
             caseImagesRoot.anchoredPosition = new Vector2(0, caseImagesRoot.anchoredPosition.y);
 
-            currentButtonInputSide = 0;
+            currentButtonInputSide = Vector2Int.zero;
             cooldownToNextButtonIncrement = 0;
+
+            selectionMode = SelectionMode.Case;
 
             SetCurrentCase(0, false);
         }
 
         public override void OnDisabled()
         {
-            if (inPopup)
+            if (selectionMode == SelectionMode.Confirm)
                 CloseConfirmPopup();
         }
 
@@ -127,7 +155,7 @@ namespace NAJ.GUI
             caseNameText.SetNewKey(casesInfo[index].nameKey);
             caseImagesRoot.DOAnchorPosX(-index * caseImagePrefab.GetComponent<RectTransform>().sizeDelta.x, 0.5f).SetEase(Ease.OutQuad);
 
-            if (inPopup)
+            if (selectionMode == SelectionMode.Confirm)
                 CloseConfirmPopup();
         }
 
@@ -135,10 +163,22 @@ namespace NAJ.GUI
         {
             if (isEnabled && !isPaused && context.ReadValueAsButton())
             {
-                if (inPopup)
+                if (selectionMode == SelectionMode.Confirm)
                     ConfirmCurrentPopupButton();
-                else
-                    OpenConfirmPopup();
+                else if (selectionMode == SelectionMode.Case)
+                    SelectCurrentCase();
+                else if (selectionMode == SelectionMode.EntryPoint)
+                {
+                    if (onConfirmButton)
+                    {
+                        OpenConfirmPopup(ref casesInfo[currentCaseIdx].entrypoints[entrypointIdx]);
+                    }
+                    else
+                    {
+                        CloseEntryPointPopup();
+                    }
+                }
+
             }
         }
 
@@ -146,15 +186,15 @@ namespace NAJ.GUI
         {
             if (isEnabled && !isPaused && context.ReadValueAsButton())
             {
-                if (inPopup)
-                    CloseConfirmPopup();
-                else
-                {
-                    if (audioManager != null)
-                        audioManager.PlayUICursorCancelSFX();
+                if (audioManager != null)
+                    audioManager.PlayUICursorCancelSFX();
 
+                if (selectionMode == SelectionMode.Confirm)
+                    CloseConfirmPopup();
+                else if (selectionMode == SelectionMode.EntryPoint)
+                    CloseEntryPointPopup();
+                else
                     TriggerDelayedClosing();
-                }
             }
         }
 
@@ -169,22 +209,38 @@ namespace NAJ.GUI
                 if (Mathf.Abs(value.x) >= 0.9f)
                 {
                     noMovement = false;
-                    if (currentButtonInputSide == 0)
+                    if (currentButtonInputSide.x == 0)
                     {
                         cooldownToNextButtonIncrement = cursorMoveCooldown;
-                        currentButtonInputSide = value.x < 0 ? 1 : -1;
+                        currentButtonInputSide.x = value.x < 0 ? 1 : -1;
 
-                        if (inPopup)
+                        if (selectionMode == SelectionMode.Confirm)
                             ChangePopupButton(!onConfirmButton);
-                        else if (currentButtonInputSide != 0)
-                            IncrementCaseWithButton(currentButtonInputSide < 0 ? true : false);
+                        else if (selectionMode == SelectionMode.EntryPoint)
+                            ChangeEntryPointButton(!onConfirmButton);
+                        else if (selectionMode == SelectionMode.Case && currentButtonInputSide.x != 0)
+                            IncrementCaseWithButton(currentButtonInputSide.x < 0 ? true : false);
+                    }
+                }
+
+                if (Mathf.Abs(value.y) >= 0.9f)
+                {
+                    noMovement = false;
+                    if (currentButtonInputSide.y == 0)
+                    {
+                        cooldownToNextButtonIncrement = cursorMoveCooldown;
+                        currentButtonInputSide.y = value.y < 0 ? 1 : -1;
+
+                        if (selectionMode == SelectionMode.EntryPoint && currentButtonInputSide.y != 0)
+                            IncrementEntryPointWithButton(currentButtonInputSide.y < 0 ? true : false);
                     }
                 }
 
                 if (noMovement)
                 {
                     cooldownToNextButtonIncrement = 0.0f;
-                    currentButtonInputSide = 0;
+                    currentButtonInputSide.x = 0;
+                    currentButtonInputSide.y = 0;
                 }
             }
         }
@@ -201,13 +257,137 @@ namespace NAJ.GUI
         }
 
         /// <summary>
+        /// Increments the current entry point button with visual buttons
+        /// </summary>
+        public void IncrementEntryPointWithButton(bool isLeft)
+        {
+            if (isLeft && entrypointIdx > 0)
+                SetCurrentEntryPoint(entrypointIdx - 1);
+            else if (!isLeft && entrypointIdx < casesInfo[currentCaseIdx].entrypoints.Length - 1)
+                SetCurrentEntryPoint(entrypointIdx + 1);
+        }
+
+        /// <summary>
+		/// Selects the current case and asks for further user inputs
+		/// </summary>
+        public void SelectCurrentCase()
+        {
+            if ((!entrypointSelectionByDefault && currentCaseIdx == maxCaseIdx) || casesInfo[currentCaseIdx].entrypoints.Length == 0)
+            {
+                OpenConfirmPopup(ref casesInfo[currentCaseIdx].defaultEntrypoint);
+            }
+            else
+            {
+                OpenEntryPointPopup(ref casesInfo[currentCaseIdx]);
+            }
+        }
+
+        public void SelectEntryPoint(int idx)
+        {
+            SetCurrentEntryPoint(idx, true, true);
+            OpenConfirmPopup(ref casesInfo[currentCaseIdx].entrypoints[idx]);
+        }
+
+        public void SetCurrentEntryPoint(int idx, bool moveRoot = true, bool canPlaySFX = true)
+        {
+            if (audioManager != null && canPlaySFX)
+                audioManager.PlayUICursorMoveSFX();
+
+            if (!onConfirmButton)
+            {
+                entrypointIdx = idx;
+                ChangeEntryPointButton(true);
+            }
+            else if (entrypointIdx != idx)
+            {
+                entrypointButtons[idx].Highlight();
+                entrypointButtons[entrypointIdx].UnHighlight();
+
+                float positionY = (entrypointButtonPrefab.GetComponent<RectTransform>().sizeDelta.y + 5) * idx;
+
+                if (moveRoot && entrypointsRoot.sizeDelta.y > entrypointsMask.sizeDelta.y)
+                    entrypointsRoot.anchoredPosition = new Vector2(entrypointsRoot.anchoredPosition.x, positionY);
+
+                entrypointIdx = idx;
+            }
+
+            if (selectionMode == SelectionMode.Confirm)
+                CloseConfirmPopup();
+        }
+
+        /// <summary>
+		/// Opens the entry point selection popup
+		/// </summary>
+		/// <param name="caseInfo">The case's infos</param>
+        public void OpenEntryPointPopup(ref CaseInfo caseInfo)
+        {
+            caseSelectionRoot.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
+            caseSelectionRoot.blocksRaycasts = false;
+
+            foreach (Transform child in entrypointsRoot)
+                Destroy(child.gameObject);
+
+            entrypointButtons = new CaseSelectionEntryPointButton[caseInfo.entrypoints.Length];
+
+            for (int i = 0; i < caseInfo.entrypoints.Length; i++)
+            {
+                entrypointButtons[i] = Instantiate(entrypointButtonPrefab, entrypointsRoot);
+                entrypointButtons[i].Initialize(i, caseInfo.entrypoints[i].nameKey, this);
+            }
+
+            entrypointsPopupRoot.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
+            entrypointsPopupRoot.blocksRaycasts = true;
+
+            currentButtonInputSide = Vector2Int.zero;
+            cooldownToNextButtonIncrement = 0;
+            selectionMode = SelectionMode.EntryPoint;
+
+            onConfirmButton = true;
+            entrypointIdx = 0;
+
+            entrypointButtons[0].Highlight();
+            entrypointPopupCancelButton.DOComplete();
+            entrypointPopupCancelButton.localScale = Vector3.one;
+            entrypointPopupCancelButton.GetComponent<Image>().color = Color.white;
+
+            entrypointsRoot.anchoredPosition = new Vector2(entrypointsRoot.anchoredPosition.x, 0);
+        }
+
+        /// <summary>
+		/// Closes the entry point selection popup
+		/// </summary>
+        public void CloseEntryPointPopup()
+        {
+            currentButtonInputSide = Vector2Int.zero;
+            cooldownToNextButtonIncrement = 0;
+
+            entrypointsPopupRoot.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
+            entrypointsPopupRoot.blocksRaycasts = false;
+
+            caseSelectionRoot.blocksRaycasts = true;
+            caseSelectionRoot.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
+            selectionMode = SelectionMode.Case;
+        }
+
+        /// <summary>
         /// Opens the confirm popup
         /// </summary>
-        public void OpenConfirmPopup()
+        public void OpenConfirmPopup(ref CaseEntryPoint entryPoint)
         {
-            currentButtonInputSide = 0;
+            if ((!entrypointSelectionByDefault && currentCaseIdx == maxCaseIdx) ||
+                casesInfo[currentCaseIdx].entrypoints.Length == 0)
+            {
+                caseSelectionRoot.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
+                caseSelectionRoot.blocksRaycasts = false;
+            }
+
+
+            currentButtonInputSide = Vector2Int.zero;
             cooldownToNextButtonIncrement = 0;
-            inPopup = true;
+            selectionMode = SelectionMode.Confirm;
+
+            entryPointNameText.SetNewKey(entryPoint.nameKey);
+            currentEntrypoint = entryPoint.entryPoint;
 
             onConfirmButton = true;
             ChangePopupButton(false);
@@ -223,12 +403,23 @@ namespace NAJ.GUI
         /// </summary>
         public void CloseConfirmPopup()
         {
-            inPopup = false;
-
-            currentButtonInputSide = 0;
+            currentButtonInputSide = Vector2Int.zero;
             cooldownToNextButtonIncrement = 0;
 
             confirmPopupRoot.DOScale(Vector3.zero, 0.75f).SetEase(Ease.InBack);
+
+            if ((!entrypointSelectionByDefault && currentCaseIdx == maxCaseIdx) ||
+                casesInfo[currentCaseIdx].entrypoints.Length == 0)
+            {
+                caseSelectionRoot.blocksRaycasts = true;
+                caseSelectionRoot.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
+                selectionMode = SelectionMode.Case;
+            }
+            else
+            {
+                onConfirmButton = true;
+                selectionMode = SelectionMode.EntryPoint;
+            }
         }
 
         /// <summary>
@@ -246,7 +437,7 @@ namespace NAJ.GUI
                     playerVariableContainer.SetPlayerName("Rann");
 
                 if (PersistentDataManager.instance.GetGlobalData().GetComponent(out LoadStateContainer loadStateContainer))
-                    loadStateContainer.SetToLoadScript(casesInfo[currentCaseIdx].entrypoint);
+                    loadStateContainer.SetToLoadScript(currentEntrypoint);
 
                 manager.ChangeScene(PersistentDataManager.instance.GetANFSettings().gameScene);
             }
@@ -263,7 +454,6 @@ namespace NAJ.GUI
         /// Changes the currently selected popup button
         /// </summary>
         /// <param name="onConfirmButton">True if the user is on the confirm button</param>
-        /// <param name="force">True if no check should be applied</param>
         public void ChangePopupButton(bool onConfirmButton)
         {
             if (onConfirmButton != this.onConfirmButton)
@@ -287,6 +477,43 @@ namespace NAJ.GUI
                     1.0f), 0.5f).SetEase(Ease.OutQuad);
             }
         }
+
+        /// <summary>
+        /// Changes the currently selected entry point button (entry point or cancel)
+        /// </summary>
+        /// <param name="onConfirmButton">True if the user is on the entry point button</param>
+        public void ChangeEntryPointButton(bool onConfirmButton)
+        {
+            if (onConfirmButton != this.onConfirmButton)
+            {
+                if (audioManager != null)
+                    audioManager.PlayUICursorMoveSFX();
+
+                this.onConfirmButton = onConfirmButton;
+
+                if (onConfirmButton)
+                {
+                    entrypointPopupCancelButton.DOScale(Vector3.one * 1.0f, 0.5f).SetEase(Ease.OutBounce);
+                    entrypointPopupCancelButton.GetComponent<Image>().DOColor(Color.white * new Vector4(
+                    1.0f,
+                    1.0f,
+                    1.0f,
+                    1.0f), 0.5f).SetEase(Ease.OutQuad);
+                    entrypointButtons[entrypointIdx].Highlight();
+                }
+                else
+                {
+                    entrypointPopupCancelButton.DOScale(Vector3.one * 1.2f, 0.5f).SetEase(Ease.OutBounce);
+                    entrypointPopupCancelButton.GetComponent<Image>().DOColor(Color.white * new Vector4(
+                    0.9f,
+                    1.0f,
+                    0.9f,
+                    1.0f), 0.5f).SetEase(Ease.OutQuad);
+                    entrypointButtons[entrypointIdx].UnHighlight();
+                }
+            }
+        }
+
 
         public override void OnRegisterInputs()
         {
@@ -336,7 +563,18 @@ namespace NAJ.GUI
     {
         public string nameKey;
         public Sprite image;
-        public string entrypoint;
+        public CaseEntryPoint[] entrypoints;
+        public CaseEntryPoint defaultEntrypoint;
+    }
+
+    /// <summary>
+	/// Represents an entrypoint to a case
+	/// </summary>
+    [System.Serializable]
+    public struct CaseEntryPoint
+    {
+        public string nameKey;
+        public string entryPoint;
     }
 }
 

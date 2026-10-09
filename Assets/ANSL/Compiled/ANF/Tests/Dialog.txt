@@ -1,4 +1,4 @@
-#FDED58EFF397E51762B3D6D453441512-3808802B8FD62756E93CBEE04725A2AF
+#53AEC4D16267796977087C10310CEFA7-3808802B8FD62756E93CBEE04725A2AF
 89TestDialog
 88test
 36Test_CharacternullTest_Dialog_1
@@ -6,6 +6,7 @@
 36{MC}nullTest_Dialog_3
 36{MC}nullTest_Dialog_4true
 1060.1
-36nullnullTest_Dialog_5falsetrue
+36nullnullTest_Dialog_5falsenoEndInput
 1060.5
-36nullnullTest_Dialog_6truefalsetrue
+36nullnullTest_Dialog_6truenormal
+98false

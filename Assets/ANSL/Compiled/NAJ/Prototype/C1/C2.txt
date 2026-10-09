@@ -1,8 +1,8 @@
-#F0786A27F5D8A1D2F971429D474CB5A9-3808802B8FD62756E93CBEE04725A2AF
+#2C0E6ECF38E8E8277245399AAF5DB627-3808802B8FD62756E93CBEE04725A2AF
 98211False217False336False
 181
 21true
-36Prototype_JunoJunoPrototype_E2_1falsetrue
+36Prototype_JunoJunoPrototype_E2_1falsenoInput
 101False56582117
 65DefenseCam0.5false
 66DefenseCam0.5true
@@ -18,7 +18,7 @@
 430
 182
 21true
-36Prototype_JunoJunoPrototype_E2_2falsetrue
+36Prototype_JunoJunoPrototype_E2_2falsenoInput
 102False216582136
 65DefenseCam0.5false
 66DefenseCam0.5true
@@ -37,7 +37,7 @@
 430
 183
 21true
-36Prototype_JunoJunoPrototype_E2_3falsetrue
+36Prototype_JunoJunoPrototype_E2_3falsenoInput
 103False4065821751Evidence/C1_Coat
 65DefenseCam0.5false
 66DefenseCam0.5true

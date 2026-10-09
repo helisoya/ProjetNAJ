@@ -17,14 +17,12 @@ namespace ANF.ANSL
         functionAutoComplete: new string[] {
             "dialog(SpeakerId;CharacterId;DialogId)",
             "dialog(SpeakerId;CharacterId;DialogId;Additive)",
-            "dialog(SpeakerId;CharacterId;DialogId;Additive;NoEndUserInput)",
-            "dialog(SpeakerId;CharacterId;DialogId;Additive;NoEndUserInput;CloseAfterwards)",
+            "dialog(SpeakerId;CharacterId;DialogId;Additive;Type)"
         },
-        functionDesc: "Shows a dialog")]
+        functionDesc: "Shows a dialog (Type is normal, noEndInput or noInput)")]
     public class DialogFunction : ANSLFunction
     {
         private DialogUI dialogUI;
-        private bool closeAfterwards;
         private string characterId;
         private AudioManager audioManager;
 
@@ -41,9 +39,7 @@ namespace ANF.ANSL
                 new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.STRING, FunctionParameterType.STRING},
                 new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.STRING, FunctionParameterType.STRING, FunctionParameterType.BOOL},
                 new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.STRING, FunctionParameterType.STRING, FunctionParameterType.BOOL,
-                    FunctionParameterType.BOOL},
-                new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.STRING, FunctionParameterType.STRING, FunctionParameterType.BOOL,
-                    FunctionParameterType.BOOL, FunctionParameterType.BOOL},
+                    FunctionParameterType.STRING },
             };
         }
 
@@ -52,10 +48,10 @@ namespace ANF.ANSL
             currentAutoplayTimer = -1;
             autoPlayEnabled = false;
             skipModeEnabled = false;
+            bool noInputs = false;
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
 
             inputDetected = false;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnDialogSkip;
             if (parameters.GetParameter(0, out string speakerId) &&
                 parameters.GetParameter(1, out characterId) &&
                 parameters.GetParameter(2, out string dialogId) &&
@@ -64,26 +60,49 @@ namespace ANF.ANSL
                 if (PersistentDataManager.instance.GetPlayerData().GetComponent(out HistoryContainer historyContainer))
                     historyContainer.AddDialog(dialogId, speakerId);
 
-                dialogUI.GetSkipButton().onClick.AddListener(OnDialogSkip);
                 bool additive;
-                bool noEndUserInput;
+                bool noEndUserInput = false;
                 if (!parameters.GetParameter(3, out additive))
                     additive = false;
-                if (!parameters.GetParameter(4, out noEndUserInput))
+                if (parameters.GetParameter(4, out string type))
+                {
+                    type = type.ToLower();
+                    if (type.Equals("normal"))
+                    {
+                        noInputs = false;
+                        noEndUserInput = false;
+                    }
+                    else if (type.Equals("noendinput"))
+                    {
+                        noInputs = false;
+                        noEndUserInput = true;
+                    }
+                    else if (type.Equals("noinput"))
+                    {
+                        noInputs = true;
+                        noEndUserInput = false;
+                    }
+                }
+                else
+                {
                     noEndUserInput = false;
-                if (!parameters.GetParameter(5, out closeAfterwards))
-                    closeAfterwards = false;
+                }
 
                 waitingForEndInput = !noEndUserInput;
 
-                dialogUI.StartDialog(speakerId, dialogId, additive);
+                if (!noInputs)
+                {
+                    dialogUI.GetSkipButton().onClick.AddListener(OnDialogSkip);
+                    PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnDialogSkip;
+                }
+
+                dialogUI.StartDialog(speakerId, dialogId, characterId, additive);
                 dialogUI.SetEnabled(true);
 
-                if (characterId != null &&
-                    manager.GetWorld().GetComponent(out Scene.CharacterManager characterManager))
+                if (noInputs)
                 {
-                    if (characterManager.GetSceneObject(characterId, out Scene.Character character))
-                        character.SetIsTalking(true);
+                    EndProcess();
+                    return;
                 }
             }
             else
@@ -144,9 +163,8 @@ namespace ANF.ANSL
                 {
                     dialogUI.GetSkipButton().onClick.RemoveListener(OnDialogSkip);
                     dialogUI.HideContinueIcon();
+                    PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnDialogSkip;
 
-                    if (closeAfterwards)
-                        dialogUI.SetEnabled(false);
                     EndProcess();
                 }
             }
@@ -164,7 +182,6 @@ namespace ANF.ANSL
         {
             dialogUI = null;
             audioManager = null;
-            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnDialogSkip;
         }
 
         private void OnDialogSkip()
@@ -200,7 +217,6 @@ namespace ANF.ANSL
         protected override void OnSave(JSON json)
         {
             json.Add("waitingForEndInput", waitingForEndInput);
-            json.Add("closeAfterwards", closeAfterwards);
             json.Add("characterId", characterId);
         }
 
@@ -210,8 +226,7 @@ namespace ANF.ANSL
 
             if (json.ContainsKey("waitingForEndInput"))
                 waitingForEndInput = json.GetBool("waitingForEndInput");
-            if (json.ContainsKey("closeAfterwards"))
-                closeAfterwards = json.GetBool("closeAfterwards");
+
             if (json.ContainsKey("characterId"))
                 characterId = json.GetString("characterId");
         }

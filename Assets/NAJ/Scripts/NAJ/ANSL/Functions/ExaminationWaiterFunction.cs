@@ -39,6 +39,7 @@ namespace NAJ.ANSL
         private ExaminationUI examinationUI;
         private InventoryUI inventoryUI;
         private AudioManager audioManager;
+        private DialogUI dialogUI;
 
         public override FunctionParameterType[][] GetParametersTemplates()
         {
@@ -89,6 +90,11 @@ namespace NAJ.ANSL
 
                 if (manager.GetGUIManager().GetComponent(out InputReminderUI inputReminderUI))
                     inputReminderUI.SetReminderEnabled("press", true);
+
+                if (manager.GetGUIManager().GetComponent(out dialogUI))
+                {
+                    dialogUI.GetSkipButton().onClick.AddListener(OnGoRight);
+                }
             }
             else
             {
@@ -169,6 +175,9 @@ namespace NAJ.ANSL
             if (audioManager == null)
                 PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
 
+            if (dialogUI == null)
+                manager.GetGUIManager().GetComponent(out dialogUI);
+
             if (!examinationUI && !manager.GetGUIManager().GetComponent(out examinationUI))
             {
                 EndProcess();
@@ -191,7 +200,24 @@ namespace NAJ.ANSL
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPress;
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
+
+                if (dialogUI)
+                {
+                    dialogUI.GetSkipButton().onClick.AddListener(OnGoRight);
+                }
             }
+
+            if (dialogUI && dialogUI.showingDialog &&
+                (detectedPress || detectedChangePart || detectedGoingLeft || detectedGoingRight))
+            {
+                detectedPress = false;
+                detectedChangePart = false;
+                detectedGoingLeft = false;
+                detectedGoingRight = false;
+                dialogUI.ToggleCanSkip();
+                return;
+            }
+
 
             if (detectedPress)
             {
@@ -283,12 +309,18 @@ namespace NAJ.ANSL
                 examinationUI.onPressPart.RemoveListener(OnPress);
             }
 
+            if (dialogUI)
+            {
+                dialogUI.GetSkipButton().onClick.RemoveListener(OnGoRight);
+            }
+
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed -= OnPress;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnNext;
 
             examinationUI = null;
             inventoryUI = null;
+            dialogUI = null;
 
             detectedGoingLeft = false;
             detectedGoingRight = false;

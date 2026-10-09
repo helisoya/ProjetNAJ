@@ -19,6 +19,14 @@ Location_C1_Stranded = I - Stranded
 Location_C1_TrialPart1 = I - Trial (1rst)
 Location_C1_TrialPart2 = I - Trial (2nd)
 
+EntryPoint_FromStart = From the start
+EntryPoint_C1_Intro = Introduction
+EntryPoint_C1_Stranded = Stranded
+EntryPoint_C1_TrialA = Trial (1rst)
+EntryPoint_C1_TrialB = Trial (2nd)
+
+Cases_C1 = A travel gone wrong
+
 UIAnimation_Testimony = Testimony
 UIAnimation_Rebuttal = Rebuttal
 UIAnimation_Guilty = Guilty

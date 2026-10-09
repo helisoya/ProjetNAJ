@@ -101,7 +101,7 @@ examination
 
 part 1 press
 	# I was half awake, so it’s hard to remember exactly what happened.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_1;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -155,7 +155,7 @@ press 1
 
 part 2 press
 	# I distinctly remember a woman’s voice, as well as the captain’s.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_2;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -187,7 +187,7 @@ press 2
 
 part 3 press
 	# The woman yelled for a long period of time.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_3;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -216,7 +216,7 @@ press 3
 
 part 4 press
 	# After which, I heard the captain scream as he was stabbed to death.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_4;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Testimony_4;false;noInput)
 press 4
 	showDialogWindow(false)
 	playUIAnimation(Press;true)

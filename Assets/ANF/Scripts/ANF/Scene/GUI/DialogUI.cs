@@ -32,6 +32,7 @@ namespace ANF.GUI
         private List<string> textIds = new List<string>();
         private List<DialogSegment> textSegments;
         private string currentSpeakerID;
+        private string currentCharacterId;
         private bool canSkip;
         private int revealIndex;
         private int currentSegmentIdx;
@@ -90,14 +91,16 @@ namespace ANF.GUI
         /// </summary>
         /// <param name="speakerID">The speaker's ID. null to hide the speaker text</param>
         /// <param name="dialogID">The dialog's ID</param>
+        /// <param name="characterId">The talking Character's ID</param>
         /// <param name="additive">True if the text is additive</param>
         /// <param name="secondsBetweenCharacters">The number of seconds between characters</param>
-        public void StartDialog(string speakerID, string dialogID, bool additive = false, float secondsBetweenCharacters = 0.05f)
+        public void StartDialog(string speakerID, string dialogID, string characterId = null, bool additive = false, float secondsBetweenCharacters = 0.05f)
         {
             continueIcon.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
             canSkip = false;
             showingDialog = true;
             currentWaitTime = 0;
+            currentCharacterId = characterId;
             this.secondsBetweenCharacters = secondsBetweenCharacters;
             this.defaultSecondsBetweenCharacters = secondsBetweenCharacters;
             currentSpeakerID = speakerID;
@@ -116,6 +119,13 @@ namespace ANF.GUI
                 textIds.Add(dialogID);
 
                 RegenerateDialogFromStack(false);
+            }
+
+            if (characterId != null &&
+                manager.GetWorld().GetComponent(out Scene.CharacterManager characterManager))
+            {
+                if (characterManager.GetSceneObject(characterId, out Scene.Character character))
+                    character.SetIsTalking(true);
             }
         }
 
@@ -230,6 +240,14 @@ namespace ANF.GUI
                     showingDialog = false;
                     canSkip = false;
                     continueIcon.DOFade(1, 0.5f).SetEase(Ease.OutQuad);
+
+                    if (currentCharacterId != null &&
+                        manager.GetWorld().GetComponent(out Scene.CharacterManager characterManager))
+                    {
+                        if (characterManager.GetSceneObject(currentCharacterId, out Scene.Character character))
+                            character.SetIsTalking(false);
+                    }
+                    currentCharacterId = null;
                 }
                 else if (stillCharactersToReveal)
                 {
@@ -287,6 +305,9 @@ namespace ANF.GUI
             json.Add("textIds", textIds);
             if (currentSpeakerID != null)
                 json.Add("currentSpeakerID", currentSpeakerID);
+
+            if (currentCharacterId != null)
+                json.Add("currentCharacterId", currentCharacterId);
         }
 
         public override bool OnLoad(JSON json)
@@ -311,6 +332,21 @@ namespace ANF.GUI
             else
             {
                 currentSpeakerID = null;
+            }
+
+            if (json.ContainsKey("currentCharacterId"))
+            {
+                currentCharacterId = json.GetString("currentCharacterId");
+                if (currentCharacterId != null &&
+                    manager.GetWorld().GetComponent(out Scene.CharacterManager characterManager))
+                {
+                    if (characterManager.GetSceneObject(currentCharacterId, out Scene.Character character))
+                        character.SetIsTalking(true);
+                }
+            }
+            else
+            {
+                currentCharacterId = null;
             }
 
             speakerRoot.SetActive(currentSpeakerID != null);

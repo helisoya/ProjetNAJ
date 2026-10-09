@@ -129,6 +129,7 @@ CaseSelectionMenu_Select = Select
 CaseSelectionMenu_Confirm = Start this case ?
 CaseSelectionMenu_Yes = Yes
 CaseSelectionMenu_No = No
+CaseSelectionMenu_Cancel = Cancel
 
 InputReminder_Inventory = Inventory
 InputReminder_Back = Back

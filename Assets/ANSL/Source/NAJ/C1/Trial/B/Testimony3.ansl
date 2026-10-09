@@ -101,7 +101,7 @@ examination
 
 part 1
 	# That night, I was tending to the ship’s plants.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_1;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -140,7 +140,7 @@ press 1
 
 part 2
 	# Before I knew it, we crashed.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_2;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -170,7 +170,7 @@ press 2
 
 part 3
 	# Luckily, I wasn’t hurt. So, I went to the bridge.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_3;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -192,7 +192,7 @@ press 3
 
 part 4
 	# It was then that the explosives went off and knocked me out.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_4;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_4;false;noInput)
 press 4
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -230,7 +230,7 @@ press 4
 
 part 5 present Evidence/C1_AutopsyReport
 	# It’s a shame I didn’t see who stabbed the Captain’s lung.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_5;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Testimony_5;false;noInput)
 press 5
 	showDialogWindow(false)
 	playUIAnimation(Press;true)

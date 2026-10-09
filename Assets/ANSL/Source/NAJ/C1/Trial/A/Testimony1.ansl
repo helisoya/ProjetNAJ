@@ -23,7 +23,7 @@ examination
 
 # I was out foraging for mushrooms in the forest that day.
 part 1
-	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_1;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_1;false;noInput)
 press 1
 	:setRannReadingBook(Coat)
 	:setRannEyeNormal(Coat)
@@ -71,7 +71,7 @@ press 1
 	
 # Well, not quite. I heard an explosion the night before, and wanted to investigate.
 part 2
-	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_2;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_2;false;noInput)
 press 2
 
 	showDialogWindow(false)
@@ -104,7 +104,7 @@ press 2
 
 # I stumbled upon the shipwreck. That’s when I saw it !
 part 3
-	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_3;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_3;false;noInput)
 press 3
 
 	showDialogWindow(false)
@@ -137,7 +137,7 @@ press 3
 
 # A person stabbed the old captain to death !
 part 4
-	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_4;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_4;false;noInput)
 press 4
 
 	:setRannHandsOnDesk(Coat)
@@ -174,7 +174,7 @@ press 4
 
 # I screamed and the killer ran away.
 part 5 present Evidence/C1_Injury
-	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_5;false;true)
+	dialog(Char_Juno;Juno;C1_Trial_Testimony1_Testimony_5;false;noInput)
 press 5
 
 	showDialogWindow(false)

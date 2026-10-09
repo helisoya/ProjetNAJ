@@ -25,7 +25,7 @@ examination
 
 part 1
 	# The murder weapon is actually Ronne’s knife.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_1;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -62,7 +62,7 @@ press 1
 
 part 2
 	# I didn’t want to acknowledge it, but I have to.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_2;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -97,7 +97,7 @@ press 2
 
 part 3
 	# Her fingerprints are on it, right ? This proves she did it.
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_3;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
@@ -126,7 +126,7 @@ press 3
 
 part 4 present Evidence/C1_Herbarium
 	# Besides, let’s not forget the dying message : <color=red>“Ronne”
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_4;false;true)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_4;false;noInput)
 press 4
 	showDialogWindow(false)
 	playUIAnimation(Press;true)
