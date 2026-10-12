@@ -1,7 +1,8 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/Beach)
+setBackground(C1/Beach;true)
+setSkybox(Day)
 
 if(C1_FirstTimeCount == 0)
 	load(FirstTime)

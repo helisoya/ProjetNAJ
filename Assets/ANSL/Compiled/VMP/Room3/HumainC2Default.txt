@@ -1,4 +1,4 @@
-#5B00CFA8140BE469F00FD02C2188FAD8-3808802B8FD62756E93CBEE04725A2AF
+#5B00CFA8140BE469F00FD02C2188FAD8-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 41131ValueHumain >= 1 || ValueFils >= 1
 41228ConfrontedHumainSecret == 1
 36Char_HumainnullTalk_Humain_Friend_1
@@ -15,16 +15,16 @@
 36Char_HumainnullTalk_Humain_Friend_Nice_6
 36Char_LoupGarounullTalk_Humain_Friend_Nice_7
 36nullnullTalk_Humain_Friend_Nice_8
-104ValueHumain+2
+105ValueHumain+2
 4327
-68HumainSad
+69HumainSad
 36Char_LoupGarounullTalk_Humain_Friend_Bad_1
 36Char_LoupGarounullTalk_Humain_Friend_Bad_2
 36Char_HumainnullTalk_Humain_Friend_Bad_3
 36Char_HumainnullTalk_Humain_Friend_Bad_4
 36nullnullTalk_Humain_Friend_Bad_5
-104ValueHumain-1
-104ValueFils-1
+105ValueHumain-1
+105ValueFils-1
 4327
 4330
 45HumainC2DefaultDialog

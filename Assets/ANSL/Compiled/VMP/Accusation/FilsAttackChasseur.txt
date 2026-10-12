@@ -1,7 +1,7 @@
-#94292481FFEBD484C1DE769FDDE02376-3808802B8FD62756E93CBEE04725A2AF
-67Chasseur00.5true
-67Rival00.5true
-67Fils10.5false
+#94292481FFEBD484C1DE769FDDE02376-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+68Chasseur00.5true
+68Rival00.5true
+68Fils10.5false
 36Char_FilsnullScene_End_FilsChasseur3_1
 36Char_FilsnullScene_End_FilsChasseur3_2
 36Char_FilsnullScene_End_FilsChasseur3_3
@@ -14,22 +14,22 @@
 36Char_FilsnullScene_End_HelpFils2_4
 36Char_FilsnullScene_End_HelpFils2_5
 36Char_FilsnullScene_End_HelpFils2_6
-104ValueChasseur-3
+105ValueChasseur-3
 45/VMP/Endings/ChasseurDead
 60
 4320
 4320
 4322
 4322
-67Fils00.5true
-67Chasseur10.5false
+68Fils00.5true
+68Chasseur10.5false
 36Char_ChasseurnullScene_End_HunterHuman1_1
 36Char_ChasseurnullScene_End_HunterHuman1_2
 36Char_ChasseurnullScene_End_HunterHuman1_3
 36Char_ChasseurnullScene_End_HunterHuman1_4
 412938ValueFils <= 0
-67Chasseur00.5true
-67Fils10.5false
+68Chasseur00.5true
+68Fils10.5false
 36Char_FilsnullScene_End_HunterHuman_Ennemy_1
 36Char_FilsnullScene_End_HunterHuman_Ennemy_2
 36Char_FilsnullScene_End_Lose_1

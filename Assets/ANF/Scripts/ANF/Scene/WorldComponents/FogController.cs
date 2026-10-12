@@ -10,18 +10,21 @@ namespace ANF.Scene
     /// Handles the fog system
     /// </summary>
     [System.Serializable]
-    public class FogController : WorldComponent
+    public class SceneRenderController : WorldComponent
     {
         [Header("Infos")]
         [SerializeField] private bool defaultFogEnabled = false;
         [SerializeField] private Color defaultFogColor = Color.white;
         [SerializeField] private float defaultFogDensity = 0.05f;
+        [SerializeField] private float defaultAmbientIntensity = 1.0f;
 
         private bool currentEnabled;
         private Color currentColor;
         private float currentDensity;
+        private float currentAmbientIntensity;
         private LerpInstanceColor lerpColor;
         private LerpInstanceFloat lerpDensity;
+        private LerpInstanceFloat lerpAmbientIntensity;
         private bool skipModeEnabled;
 
         public bool LerpingColor
@@ -40,6 +43,14 @@ namespace ANF.Scene
             }
         }
 
+        public bool LerpingAmbientIntensity
+        {
+            get
+            {
+                return lerpAmbientIntensity != null && lerpAmbientIntensity.lerping;
+            }
+        }
+
         public void OnSkipModeToggle(bool enabled)
         {
             skipModeEnabled = enabled;
@@ -47,15 +58,18 @@ namespace ANF.Scene
                 lerpDensity.ChangeDuration(0.1f);
             if (lerpColor != null && lerpColor.lerping)
                 lerpColor.ChangeDuration(0.1f);
+            if (lerpAmbientIntensity != null && lerpAmbientIntensity.lerping)
+                lerpAmbientIntensity.ChangeDuration(0.1f);
         }
 
         public override WorldComponent CloneComponent()
         {
-            return new FogController()
+            return new SceneRenderController()
             {
                 defaultFogColor = defaultFogColor,
                 defaultFogDensity = defaultFogDensity,
                 defaultFogEnabled = defaultFogEnabled,
+                defaultAmbientIntensity = defaultAmbientIntensity
             };
         }
 
@@ -64,6 +78,7 @@ namespace ANF.Scene
             SetFogEnabled(defaultFogEnabled);
             SetFogColor(defaultFogColor);
             SetFogDensity(defaultFogDensity);
+            SetAmbientIntensity(defaultAmbientIntensity);
         }
 
         /// <summary>
@@ -92,6 +107,12 @@ namespace ANF.Scene
             {
                 currentDensity = lerpDensity.Update();
                 RenderSettings.fogDensity = currentDensity;
+            }
+
+            if (lerpAmbientIntensity != null && lerpAmbientIntensity.lerping)
+            {
+                defaultAmbientIntensity = lerpAmbientIntensity.Update();
+                RenderSettings.ambientIntensity = defaultAmbientIntensity;
             }
         }
 
@@ -145,6 +166,31 @@ namespace ANF.Scene
             }
         }
 
+        /// <summary>
+        /// Sets the ambient lighting intensity. Can be immediate or over time
+        /// </summary>
+        /// <param name="intensity">The new intensity</param>
+        /// <param name="immediate">True if the change must be immediate</param>
+        /// <param name="duration">The lerp's duration if not immediate</param>
+        public void SetAmbientIntensity(float intensity, bool immediate = true, float duration = 1.0f)
+        {
+            if (immediate)
+            {
+                currentAmbientIntensity = intensity;
+                RenderSettings.ambientIntensity = currentAmbientIntensity;
+
+                if (lerpAmbientIntensity != null)
+                    lerpAmbientIntensity.StopLerp();
+            }
+            else
+            {
+                if (lerpAmbientIntensity == null)
+                    lerpAmbientIntensity = new LerpInstanceFloat();
+
+                lerpAmbientIntensity.StartLerp(currentAmbientIntensity, intensity, skipModeEnabled ? 0.1f : duration);
+            }
+        }
+
         public override void OnDisabled()
         {
 
@@ -172,6 +218,12 @@ namespace ANF.Scene
                 RenderSettings.fogDensity = currentDensity;
             }
 
+            if (json.ContainsKey("currentAmbientIntensity"))
+            {
+                currentAmbientIntensity = json.GetFloat("currentAmbientIntensity");
+                RenderSettings.ambientIntensity = currentAmbientIntensity;
+            }
+
             if (json.ContainsKey("lerpColor"))
             {
                 if (lerpColor == null)
@@ -188,6 +240,14 @@ namespace ANF.Scene
                 lerpDensity.Load(json.GetJSON("lerpDensity"));
             }
 
+            if (json.ContainsKey("lerpAmbientIntensity"))
+            {
+                if (lerpAmbientIntensity == null)
+                    lerpAmbientIntensity = new LerpInstanceFloat();
+
+                lerpAmbientIntensity.Load(json.GetJSON("lerpAmbientIntensity"));
+            }
+
             return true;
         }
 
@@ -196,6 +256,7 @@ namespace ANF.Scene
             json.Add("currentEnabled", currentEnabled);
             json.Add("currentColor", currentColor);
             json.Add("currentDensity", currentDensity);
+            json.Add("currentAmbientIntensity", currentAmbientIntensity);
 
             if (lerpColor != null)
             {
@@ -209,6 +270,13 @@ namespace ANF.Scene
                 JSON jsonLerp = new JSON();
                 lerpDensity.Save(jsonLerp);
                 json.Add("lerpDensity", jsonLerp);
+            }
+
+            if (lerpAmbientIntensity != null)
+            {
+                JSON jsonLerp = new JSON();
+                lerpAmbientIntensity.Save(jsonLerp);
+                json.Add("lerpAmbientIntensity", jsonLerp);
             }
         }
 

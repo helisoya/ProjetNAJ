@@ -51,6 +51,11 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scenes
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce47155cfe4acde48abb6276b21a576a
+    m_Address: Backgrounds/C1/Waterfall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: de8334ff6d39e5b4fa42f421ab5f5d3e
     m_Address: Backgrounds/C1/Beach
     m_ReadOnly: 0

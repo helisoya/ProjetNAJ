@@ -1,7 +1,8 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/DeadEnd)
+setBackground(C1/DeadEnd;true)
+setSkybox(Day)
 
 if(C1_AxeProgress == 2)
 setStaticPosition(Axe;0;0;-50)

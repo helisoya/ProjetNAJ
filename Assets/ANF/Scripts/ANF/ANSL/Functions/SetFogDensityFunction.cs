@@ -19,7 +19,7 @@ namespace ANF.ANSL
     public class SetFogDensityFunction : ANSLFunction
     {
         private bool waitingForObject = false;
-        private FogController fogController;
+        private SceneRenderController fogController;
 
         public override FunctionParameterType[][] GetParametersTemplates()
         {

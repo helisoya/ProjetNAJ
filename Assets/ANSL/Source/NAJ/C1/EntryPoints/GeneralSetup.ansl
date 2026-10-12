@@ -28,6 +28,9 @@ createUserVariable(C1_AxeProgress;0)
 createUserVariable(C1_InteractedHead;0)
 createUserVariable(C1_InteractedKnife;0)
 
+createUserVariable(C1_SecretElk;0)
+# 0 -> Not done
+# 1 -> Done
 
 createUserVariable(LifePoints;3)
 createUserVariable(MaxLifePoints;3)

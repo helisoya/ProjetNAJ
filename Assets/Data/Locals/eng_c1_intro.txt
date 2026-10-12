@@ -352,6 +352,28 @@ C1_River_Tree_After_2 = … How do I do it, actually ?
 C1_River_Tree_After_3 = <color=#72B6E8>After a few minutes, I manage to cut enough of the trees to create a safe path forward.</color>
 C1_River_Tree_After_4 = <color=#72B6E8>It’s about time too; I feel light-headed…</color>
 
+C1_SecretCave_NoAxe_1 = What’s this door doing in a cave like this ?
+C1_SecretCave_NoAxe_2 = Wait… It doesn’t even have a doorknob.
+C1_SecretCave_NoAxe_3 = What is this ? A barricade ?
+C1_SecretCave_NoAxe_4 = Maybe if I had an axe, I could see what’s on the other side.
+
+C1_SecretCave_Axe_1 = Alright, I can try breaking this barricade now.
+C1_SecretCave_Axe_2 = …
+C1_SecretCave_Axe_3 = After a few tries, I manage to break open the sealed room.
+C1_SecretCave_Axe_4 = I wonder what’s in here.
+C1_SecretCave_Axe_5 = But…
+C1_SecretCave_Axe_6 = A-An animal ?!
+C1_SecretCave_Axe_7 = They ran off…
+C1_SecretCave_Axe_8 = What was this elk doing here ?
+C1_SecretCave_Axe_9 = I inspect the dark room that lies in front of me.
+C1_SecretCave_Axe_10 = … I can’t see much in the darkness, but it seems mostly empty.
+C1_SecretCave_Axe_11 = What a waste of time…
+C1_SecretCave_Axe_12 = I guess I’ll have to be happy with the fact I freed that animal.
+
+C1_SecretCave_After_1 = I still don’t understand why an elk was stuck in here…
+C1_SecretCave_After_2 = Meh. They probably got curious and locked themself while exploring.
+C1_SecretCave_After_3 = … Not that there is much to see. This room is empty.
+
 C1_Investigation_End_1 = Oh ? There it is !
 C1_Investigation_End_2 = <color=#72B6E8>The once mighty vessel I travelled on for three months…</color>
 C1_Investigation_End_3 = <color=#72B6E8>We won’t be setting sail again anytime soon, I’m afraid.</color>

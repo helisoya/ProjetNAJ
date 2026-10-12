@@ -1,12 +1,12 @@
-#5C8FB8C831E416416BC14340007E646C-3808802B8FD62756E93CBEE04725A2AF
+#5C8FB8C831E416416BC14340007E646C-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 4113TalkedFils == 1 && CycleCount == 0
 36nullnullTalk_Character_Done_1
 4366
-67Fils00.5true
-75FilsFront
+68Fils00.5true
 76FilsFront
-67Fils10.5false
-101CycleCount8054
+77FilsFront
+68Fils10.5false
+102CycleCount8054
 36nullnullChoice_InteractCharacter
 280Choice_Talk10nullnullnullChoice_Search42nullnullnullChoice_Nothing52nullnullnull
 411113TalkedFils == 1
@@ -38,12 +38,12 @@
 4337
 4339
 4339
-104TalkedFils=1
+105TalkedFils=1
 4341
 4353
 414349SearchCounter > 0
-104SearchCounter-1
-104SecretFils=1
+105SearchCounter-1
+105SecretFils=1
 36nullnullSteal_Fils_1
 36nullnullSteal_Fils_2
 45/VMP/Common/PrintSearchCounter
@@ -57,13 +57,13 @@
 36Char_LoupGarounullTalk_Fils_Presentation_2
 36nullnullTalk_Fils_Presentation_3
 36Char_FilsnullTalk_Fils_Presentation_4
-104TalkedFils=1
+105TalkedFils=1
 4360
-67Fils00.5true
-75FilsFilsSpot
+68Fils00.5true
 76FilsFilsSpot
-68FilsNormal
-67Fils10.5false
+77FilsFilsSpot
+69FilsNormal
+68Fils10.5false
 4366
 45/VMP/Common/CycleCheck
 45Interaction

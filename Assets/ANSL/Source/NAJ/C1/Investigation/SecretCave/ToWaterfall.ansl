@@ -1,0 +1,5 @@
+fadeFg(1;true)
+
+setAmbientIntensity(1)
+
+load(../Waterfall/Arrival)

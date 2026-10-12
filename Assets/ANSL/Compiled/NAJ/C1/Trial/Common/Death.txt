@@ -1,22 +1,22 @@
-#30ABD3702862340BEBB7D95C87B3A75F-3808802B8FD62756E93CBEE04725A2AF
+#30ABD3702862340BEBB7D95C87B3A75F-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 29
-98false
-65HammerCam
+99false
 66HammerCam
-68JudgeStrike
-1061
-68JudgeOnShell
+67HammerCam
+69JudgeStrike
+1071
+69JudgeOnShell
+67JudgeCam
 66JudgeCam
-65JudgeCam
 36Char_JudgeJudgeC1_Trial_Death_1
 36Char_JudgeJudgeC1_Trial_Death_2
 36Char_JudgeJudgeC1_Trial_Death_3
-98false
-70RannCoatNormal
-74RannCoatSad
-68RannCoatAngry0.1
+99false
+71RannCoatNormal
+75RannCoatSad
+69RannCoatAngry0.1
 52Guiltytrue
-65DefenseCam
 66DefenseCam
+67DefenseCam
 36Char_RannRannCoatC1_Trial_Death_4
 27NAJMainMenu

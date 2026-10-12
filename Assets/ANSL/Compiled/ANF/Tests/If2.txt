@@ -1,15 +1,15 @@
-#A2FA316B252C0E55F220AF37DF9F2199-3808802B8FD62756E93CBEE04725A2AF
-89TestIf Alt
+#A2FA316B252C0E55F220AF37DF9F2199-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+90TestIf Alt
 4125random == 0 && random < 1
 46LogSetting to 5
-104random=5
+105random=5
 436
 436
 4179random != 5
 46ErrorShould be at 5
 4312
 46LogIs at 5, removing 1
-104random-1
+105random-1
 4312
 411315random == 4
 46LogIs at 4

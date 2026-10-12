@@ -1,7 +1,8 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/RiverPath)
+setBackground(C1/RiverPath;true)
+setSkybox(Day)
 
 fadeFg(0;false)
 

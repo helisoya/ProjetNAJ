@@ -1,0 +1,4 @@
+setInteractionScript(Exit;ToWaterfall)
+setInteractionScript(Door;Door)
+
+interaction()

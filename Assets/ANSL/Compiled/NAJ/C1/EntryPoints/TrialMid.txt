@@ -1,8 +1,8 @@
-#1165D3E9977ED249C272384BE028A9D8-3808802B8FD62756E93CBEE04725A2AF
-801
+#1165D3E9977ED249C272384BE028A9D8-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+811
 45GeneralSetup
-88c1_commonc1_trial_B
-89Location_C1_TrialPart2
+89c1_commonc1_trial_B
+90Location_C1_TrialPart2
 0C1_Herbarium
 0C1_Injury
 0C1_Coat
@@ -14,12 +14,12 @@
 1C1_Sherif
 1C1_Judge
 1C1_Juno
-62Common/Courtroom
+63Common/Courtroom
 23JudgefalseJudgeSpot
 23RobertfalseProsecutorSpot
 23RannCoatfalseDefenseSpot
 23JunotrueLobbySpot
-68JudgeTurtleInShell
-65AllCam
+69JudgeTurtleInShell
 66AllCam
+67AllCam
 45../Trial/B/Start

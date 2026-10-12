@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 218b1663ee1047147b91640b5fb989b8
+    m_Address: ANSL/NAJ/C1/Investigation/Beach/ToWaterfall
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 223932f23c68e9048ad63478db56c4fd
     m_Address: ANSL/NAJ/C1/Investigation/Beach/Interaction
     m_ReadOnly: 0

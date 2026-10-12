@@ -1,7 +1,8 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/CrashSite)
+setBackground(C1/CrashSite;true)
+setSkybox(Day)
 
 fadeFg(0;false)
 

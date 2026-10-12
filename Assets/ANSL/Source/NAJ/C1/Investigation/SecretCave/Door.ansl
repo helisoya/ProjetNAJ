@@ -1,0 +1,74 @@
+fadeFg(1;true)
+
+setAmbientIntensity(0.4)
+setCameraPosition(1.6;-2;31)
+setStaticHidden(Light;true)
+
+fadeFg(0;false)
+
+if(C1_SecretElk == 1)
+	# Secret done
+	dialog(Char_Rann;null;C1_SecretCave_After_1)
+	dialog(Char_Rann;null;C1_SecretCave_After_2)
+	dialog(Char_Rann;null;C1_SecretCave_After_3)
+else 
+	if(C1_AxeProgress <= 1)
+		# Axe not found
+		dialog(Char_Rann;null;C1_SecretCave_NoAxe_1)
+		dialog(Char_Rann;null;C1_SecretCave_NoAxe_2)
+		dialog(Char_Rann;null;C1_SecretCave_NoAxe_3)
+		dialog(Char_Rann;null;C1_SecretCave_NoAxe_4)
+	else
+		# Axe found
+		dialog(Char_Rann;null;C1_SecretCave_Axe_1)
+
+		fadeBg(1;false)
+		dialog(null;null;C1_SecretCave_Axe_2)
+		dialog(null;null;C1_SecretCave_Axe_3)
+		dialog(null;null;C1_SecretCave_Axe_4)
+		dialog(null;null;C1_SecretCave_Axe_5)
+
+		removeStatic(Door)
+		setStaticHidden(DoorPiece;false)
+
+		fadeBg(0;false)
+		screenshake(0.1;0.2)
+
+		dialog(Char_Rann;null;C1_SecretCave_Axe_6)
+		showDialogWindow(false)
+
+		setCharacterBody(Elk;LookBehind)
+		wait(3)
+
+		setBg(1)
+		removeCharacter(Elk)
+
+		wait(1)
+
+		fadeBg(0;false)
+
+		dialog(Char_Rann;null;C1_SecretCave_Axe_7)
+		dialog(Char_Rann;null;C1_SecretCave_Axe_8)
+
+		dialog(null;null;C1_SecretCave_Axe_9)
+		dialog(null;null;C1_SecretCave_Axe_10)
+
+		dialog(Char_Rann;null;C1_SecretCave_Axe_11)
+		dialog(Char_Rann;null;C1_SecretCave_Axe_12)
+
+		variable(C1_SecretElk;=;1)
+
+	endif
+endif
+
+showDialogWindow(false)
+
+fadeFg(1;true)
+
+setAmbientIntensity(0.5)
+setCameraPosition(default)
+setStaticHidden(Light;false)
+
+fadeFg(0;false)
+
+load(Interaction)

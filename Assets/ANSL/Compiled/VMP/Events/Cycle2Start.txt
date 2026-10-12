@@ -1,36 +1,36 @@
-#8636B78A7AADE33ADA787EE0CEB41AD1-3808802B8FD62756E93CBEE04725A2AF
+#8636B78A7AADE33ADA787EE0CEB41AD1-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 401true
 56
-62Room1
+63Room1
 23BarontrueFront
 23RivalfalseFront
 23BoristrueFront
-68RivalAngry
-68BaronAngry
+69RivalAngry
+69BaronAngry
 400false
 36Char_RivalnullScene_NoTime_1
 36Char_RivalnullScene_NoTime_2
 36Char_RivalnullScene_NoTime_3
-67Rival00.5true
+68Rival00.5true
 58Rival
-67Baron10.5false
+68Baron10.5false
 36Char_BaronnullScene_NoTime_4
 36Char_BaronnullScene_NoTime_5
 36Char_BaronnullScene_NoTime_6
-67Baron00.5true
-75BaronBaronSpot
+68Baron00.5true
 76BaronBaronSpot
-68BaronNormal
-67Baron10.5false
-104CycleCount=2
-104LookCounter=1
-104SearchCounter=2
-104TalkedBaron=0
-104TalkedChasseur=0
-104TalkedFils=0
-104TalkedHumain=0
-104TalkedRival=0
-89Location_VMP_Cycle2
+77BaronBaronSpot
+69BaronNormal
+68Baron10.5false
+105CycleCount=2
+105LookCounter=1
+105SearchCounter=2
+105TalkedBaron=0
+105TalkedChasseur=0
+105TalkedFils=0
+105TalkedHumain=0
+105TalkedRival=0
+90Location_VMP_Cycle2
 25
 45../Common/PrintLookCounter
 45../Common/PrintSearchCounter

@@ -1,63 +1,63 @@
-#549B11839C4F5CE38019D0CD5052E4A1-3808802B8FD62756E93CBEE04725A2AF
-65JudgeCam
+#549B11839C4F5CE38019D0CD5052E4A1-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 66JudgeCam
-68RannCoatNormal0.1
-70RannCoatNormal
-74RannCoatNeutral
-70JunoNormal
-74JunoNormal
-70JudgeNormal
-74JudgeNormal
+67JudgeCam
+69RannCoatNormal0.1
+71RannCoatNormal
+75RannCoatNeutral
+71JunoNormal
+75JunoNormal
+71JudgeNormal
+75JudgeNormal
 36Char_JudgeJudgeC1_Trial_C_59
 36Char_JudgeJudgeC1_Trial_C_60
 380.75false
 282Choice_Question1_Juno13nullC1_Choice_JunoC1_ChoiceChoice_Question1_Sheriff67nullC1_Choice_RobertC1_ChoiceChoice_Question1_Suicide89nullC1_Choice_SuicideC1_ChoiceChoice_Question1_Sailor110nullC1_Choice_SailorC1_ChoiceChoice_Question1_Animal113nullC1_Choice_AnimalC1_Choice
 380false
-65DefenseCam
 66DefenseCam
+67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Juno_1
-98true
-70JunoSurprise
-74JunoSurprise
-66WitnessCam0.25false
-65WitnessCam0.25true
+99true
+71JunoSurprise
+75JunoSurprise
+67WitnessCam0.25false
+66WitnessCam0.25true
 36Char_JunoJunoC1_Trial_Question1_Juno_2
-98true
-66ProsecutionCam0.25false
-65ProsecutionCam0.25true
+99true
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial_Question1_Juno_3
 36Char_RobertRobertC1_Trial_Question1_Juno_4
 36Char_RobertRobertC1_Trial_Question1_Juno_5
 36Char_RobertRobertC1_Trial_Question1_Juno_6
 36Char_RobertRobertC1_Trial_Question1_Juno_7
-98true
-68RannCoatStress0.1
-70RannCoatNormal
-74RannCoatOops
-66DefenseCam0.25false
-65DefenseCam0.25true
+99true
+69RannCoatStress0.1
+71RannCoatNormal
+75RannCoatOops
+67DefenseCam0.25false
+66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial_Question1_Juno_8
 36Char_RannRannCoatC1_Trial_Question1_Juno_9
-98true
+99true
 22true
 191truetrue
-70JudgeAngry
-74JudgeAngry
-65JudgeCam
+71JudgeAngry
+75JudgeAngry
 66JudgeCam
+67JudgeCam
 36Char_JudgeJudgeC1_Trial_Question1_Juno_10
 36Char_JudgeJudgeC1_Trial_Question1_Juno_11
 36Char_JudgeJudgeC1_Trial_Question1_Juno_12
 610.10.25truetrue
-104LifePoints-1
+105LifePoints-1
 415254LifePoints < 0
-104LifePoints=0
+105LifePoints=0
 4355
 4355
 190falsefalse
 12falsetrue
-65DefenseCam
 66DefenseCam
+67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Juno_13
 22false
 416264LifePoints == 0
@@ -67,45 +67,45 @@
 4366
 43140
 380false
-65DefenseCam
 66DefenseCam
+67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Sheriff_1
 36Char_RannRannCoatC1_Trial_Question1_Sheriff_2
-65JudgeCam
 66JudgeCam
+67JudgeCam
 36Char_JudgeJudgeC1_Trial_Question1_Sheriff_3
 36Char_JudgeJudgeC1_Trial_Question1_Sheriff_4
 36Char_JudgeJudgeC1_Trial_Question1_Sheriff_5
 36Char_JudgeJudgeC1_Trial_Question1_Sheriff_6
-68RannCoatStress0.1
-70RannCoatNormal
-74RannCoatOops
+69RannCoatStress0.1
+71RannCoatNormal
+75RannCoatOops
+67ProsecutionCam
 66ProsecutionCam
-65ProsecutionCam
 36Char_RobertRobertC1_Trial_Question1_Sheriff_7
-65DefenseCam
 66DefenseCam
+67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Sheriff_8
 45Question1
 43140
 380false
-65DefenseCam
 66DefenseCam
+67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Suicide_1
-98false
-66ProsecutionCam0.25false
-65ProsecutionCam0.25true
+99false
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial_Question1_Suicide_2
 36Char_RobertRobertC1_Trial_Question1_Suicide_3
-98false
-68RannCoatStress0.1
-70RannCoatNormal
-74RannCoatOops
-66DefenseCam0.25false
-65DefenseCam0.25true
+99false
+69RannCoatStress0.1
+71RannCoatNormal
+75RannCoatOops
+67DefenseCam0.25false
+66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial_Question1_Suicide_4
-65JudgeCam
 66JudgeCam
+67JudgeCam
 36Char_JudgeJudgeC1_Trial_Question1_Suicide_5
 45Question1
 43140
@@ -113,29 +113,29 @@
 45Intermission
 43140
 380false
-65DefenseCam
 66DefenseCam
+67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Animal_1
-98false
-66ProsecutionCam0.25false
-65ProsecutionCam0.25true
+99false
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial_Question1_Animal_2
 36Char_RobertRobertC1_Trial_Question1_Animal_3
 36Char_RobertRobertC1_Trial_Question1_Animal_4
-98false
-68RannCoatStress0.1
-70RannCoatNormal
-74RannCoatOops
-66DefenseCam0.25false
-65DefenseCam0.25true
+99false
+69RannCoatStress0.1
+71RannCoatNormal
+75RannCoatOops
+67DefenseCam0.25false
+66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial_Question1_Animal_5
-65JudgeCam
 66JudgeCam
+67JudgeCam
 36Char_JudgeJudgeC1_Trial_Question1_Animal_6
 36Char_JudgeJudgeC1_Trial_Question1_Animal_7
 36Char_JudgeJudgeC1_Trial_Question1_Animal_8
+67ProsecutionCam
 66ProsecutionCam
-65ProsecutionCam
 36Char_RobertRobertC1_Trial_Question1_Animal_9
 45Question1
 43140

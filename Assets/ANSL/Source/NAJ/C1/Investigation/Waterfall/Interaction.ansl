@@ -1,0 +1,5 @@
+setInteractionScript(Exit;ToCliff)
+setInteractionScript(Bridge;ToBeach)
+setInteractionScript(SecretCave;ToSecretCave)
+
+interaction()

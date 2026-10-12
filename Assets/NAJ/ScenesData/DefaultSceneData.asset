@@ -33,7 +33,7 @@ MonoBehaviour:
       rid: 3436799734139322441
   - id: 
     data:
-      rid: 8808018719549423719
+      rid: 992773521691115627
   - id: 
     data:
       rid: 6627816634044907602
@@ -100,6 +100,15 @@ MonoBehaviour:
         - id: Flashback
           volume: {fileID: 11400000, guid: 6f5f35a470b87cc4f97274a77b44f12e, type: 2}
           defaultValue: 0
+    - rid: 992773521691115627
+      type: {class: SceneRenderController, ns: ANF.Scene, asm: Assembly-CSharp}
+      data:
+        canBeSaved: 1
+        enabledByDefault: 1
+        defaultFogEnabled: 0
+        defaultFogColor: {r: 1, g: 1, b: 1, a: 1}
+        defaultFogDensity: 0.05
+        defaultAmbientIntensity: 1
     - rid: 3436799676236169289
       type: {class: ANSLManager, ns: ANF.ANSL, asm: Assembly-CSharp}
       data:
@@ -170,11 +179,3 @@ MonoBehaviour:
       data:
         canBeSaved: 0
         enabledByDefault: 1
-    - rid: 8808018719549423719
-      type: {class: FogController, ns: ANF.Scene, asm: Assembly-CSharp}
-      data:
-        canBeSaved: 1
-        enabledByDefault: 1
-        defaultFogEnabled: 0
-        defaultFogColor: {r: 1, g: 1, b: 1, a: 1}
-        defaultFogDensity: 0.05

@@ -19,7 +19,7 @@ namespace ANF.ANSL
     public class SetFogColorFunction : ANSLFunction
     {
         private bool waitingForObject = false;
-        private FogController fogController;
+        private SceneRenderController fogController;
 
         public override FunctionParameterType[][] GetParametersTemplates()
         {

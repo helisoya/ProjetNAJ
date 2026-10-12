@@ -1,12 +1,12 @@
-#A412DD310E04D83CF892B617EFCDD901-3808802B8FD62756E93CBEE04725A2AF
-62C1/Boat
-90Day
-92WaterStormtrue
-91Fog0.25
-83true
-820.004
-81#B1D7FB
-641
+#A412DD310E04D83CF892B617EFCDD901-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+63C1/Boat
+91Day
+93WaterStormtrue
+92Fog0.25
+84true
+830.004
+82#B1D7FB
+651
 400false
 25
 36nullnullC1_Intro_A_1
@@ -16,9 +16,9 @@
 36nullnullC1_Intro_A_5
 36nullnullC1_Intro_A_6
 36nullnullC1_Intro_A_7
-98false
+99false
 380false
-1061
+1071
 36nullnullC1_Intro_A_8
 36nullnullC1_Intro_A_9
 36nullnullC1_Intro_A_10
@@ -28,7 +28,7 @@
 36Char_UnknownnullC1_Intro_A_14
 36nullnullC1_Intro_A_15
 23SartttrueFront
-67Sartt11false
+68Sartt11false
 36Char_RannnullC1_Intro_A_16
 36Char_UnknownSarttC1_Intro_A_17
 1C1_Sartt
@@ -45,34 +45,34 @@
 36Char_SarttSarttC1_Intro_A_28
 36Char_RannnullC1_Intro_A_29
 36Char_RannnullC1_Intro_A_30
-68SarttForward0.1
-70SarttNormal
+69SarttForward0.1
+71SarttNormal
 36Char_SarttSarttC1_Intro_A_31
 36Char_SarttSarttC1_Intro_A_32
 36Char_SarttSarttC1_Intro_A_33
 36Char_SarttSarttC1_Intro_A_34
 36Char_RannnullC1_Intro_A_35
-68SarttNormal0.1
-70SarttNormal
+69SarttNormal0.1
+71SarttNormal
 36Char_SarttSarttC1_Intro_A_36
 36Char_RannnullC1_Intro_A_37
 36Char_SailornullC1_Intro_A_38
-68SarttHandRaised0.1
-70SarttNormal
+69SarttHandRaised0.1
+71SarttNormal
 36Char_SarttSarttC1_Intro_A_39
 36Char_SarttSarttC1_Intro_A_40
-98false
+99false
 381true
-65-39.41-20.6
-660-108.30
+66-39.41-20.6
+670-108.30
+77SarttSpeechSpot
 76SarttSpeechSpot
-75SarttSpeechSpot
 380false
 36Char_SarttSarttC1_Intro_A_41
 36Char_SarttSarttC1_Intro_A_42
 36Char_SarttSarttC1_Intro_A_43
 36Char_SarttSarttC1_Intro_A_44
-98false
+99false
 381true
 59Sailors
 59Kalia
@@ -81,13 +81,13 @@
 36nullnullC1_Intro_A_46
 36nullnullC1_Intro_A_47
 36nullnullC1_Intro_A_48
-65-80.21-37.6
-660-1330
+66-80.21-37.6
+670-1330
 23GeraldCoatfalsePensiveSpot
 380false
 36Char_UnknownnullC1_Intro_A_49
 36Char_RannnullC1_Intro_A_50
-660-222.801.0true
+670-222.801.0true
 36nullnullC1_Intro_A_51
 36Char_RannnullC1_Intro_A_52
 36Char_RannnullC1_Intro_A_53
@@ -96,7 +96,7 @@
 36Char_UnknownGeraldCoatC1_Intro_A_56
 36Char_UnknownGeraldCoatC1_Intro_A_57
 36Char_UnknownGeraldCoatC1_Intro_A_58
-68GeraldCoatBrushHair
+69GeraldCoatBrushHair
 36Char_GeraldGeraldCoatC1_Intro_A_59
 36Char_GeraldGeraldCoatC1_Intro_A_60
 36Char_RannnullC1_Intro_A_61
@@ -118,11 +118,11 @@
 36nullnullC1_Intro_A_77
 36Char_RannnullC1_Intro_A_78
 36Char_RannnullC1_Intro_A_79
-70GeraldCoatSurprise
-74GeraldCoatSerious
+71GeraldCoatSurprise
+75GeraldCoatSerious
 36Char_GeraldGeraldCoatC1_Intro_A_80
-70GeraldCoatNormal
-74GeraldCoatSerious
+71GeraldCoatNormal
+75GeraldCoatSerious
 36Char_GeraldGeraldCoatC1_Intro_A_81
 36Char_RannnullC1_Intro_A_82
 36Char_RannnullC1_Intro_A_83
@@ -134,14 +134,14 @@
 36Char_RannnullC1_Intro_A_89
 36Char_RannnullC1_Intro_A_90
 36Char_RannnullC1_Intro_A_91
-70GeraldCoatWink
-74GeraldCoatNormal
+71GeraldCoatWink
+75GeraldCoatNormal
 36Char_GeraldGeraldCoatC1_Intro_A_92
 36Char_GeraldGeraldCoatC1_Intro_A_93
 36Char_GeraldGeraldCoatC1_Intro_A_94
 36Char_RannnullC1_Intro_A_95
-70GeraldCoatNormal
-74GeraldCoatNormal
+71GeraldCoatNormal
+75GeraldCoatNormal
 36Char_GeraldGeraldCoatC1_Intro_A_96
 36Char_GeraldGeraldCoatC1_Intro_A_97
 36Char_RannnullC1_Intro_A_98
@@ -157,8 +157,8 @@
 36Char_GeraldGeraldCoatC1_Intro_A_108
 36Char_RannnullC1_Intro_A_109
 36Char_RannnullC1_Intro_A_110
-70GeraldCoatNormal
-74GeraldCoatSerious
+71GeraldCoatNormal
+75GeraldCoatSerious
 36Char_GeraldGeraldCoatC1_Intro_A_111
 36Char_GeraldGeraldCoatC1_Intro_A_112
 36Char_GeraldGeraldCoatC1_Intro_A_113
@@ -175,27 +175,27 @@
 36Char_GeraldGeraldCoatC1_Intro_A_124
 36Char_RannnullC1_Intro_A_125
 36Char_RannnullC1_Intro_A_126
-70GeraldCoatSurprise
-74GeraldCoatSerious
-68GeraldCoatSurprise0.1
+71GeraldCoatSurprise
+75GeraldCoatSerious
+69GeraldCoatSurprise0.1
 36Char_GeraldGeraldCoatC1_Intro_A_127
 36Char_GeraldGeraldCoatC1_Intro_A_128
 36Char_RannnullC1_Intro_A_129
-70GeraldCoatNormal
-74GeraldCoatNormal
-68GeraldCoatNormal0.1
+71GeraldCoatNormal
+75GeraldCoatNormal
+69GeraldCoatNormal0.1
 36Char_GeraldGeraldCoatC1_Intro_A_130
 36Char_RannnullC1_Intro_A_131
 36Char_RannnullC1_Intro_A_132
 36Char_RannnullC1_Intro_A_133
-68GeraldCoatThinking0.1
-70GeraldCoatNormal
-74GeraldCoatSerious
+69GeraldCoatThinking0.1
+71GeraldCoatNormal
+75GeraldCoatSerious
 36Char_GeraldGeraldCoatC1_Intro_A_134
 36Char_GeraldGeraldCoatC1_Intro_A_135
 36Char_GeraldGeraldCoatC1_Intro_A_136
 36Char_RannnullC1_Intro_A_137
-98false
+99false
 381true
 1C1_Gerald
 36nullnullC1_Intro_A_138

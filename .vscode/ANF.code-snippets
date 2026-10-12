@@ -273,25 +273,19 @@
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": ["dialog(SpeakerId;CharacterId;DialogId)"],
-		"description": "Shows a dialog"
+		"description": "Shows a dialog (Type is normal, noEndInput or noInput)"
 	},
 	"36_1": {
 		"scope": "ansl",
 		"prefix": "dialog",
 		"body": ["dialog(SpeakerId;CharacterId;DialogId;Additive)"],
-		"description": "Shows a dialog"
+		"description": "Shows a dialog (Type is normal, noEndInput or noInput)"
 	},
 	"36_2": {
 		"scope": "ansl",
 		"prefix": "dialog",
-		"body": ["dialog(SpeakerId;CharacterId;DialogId;Additive;NoEndUserInput)"],
-		"description": "Shows a dialog"
-	},
-	"36_3": {
-		"scope": "ansl",
-		"prefix": "dialog",
-		"body": ["dialog(SpeakerId;CharacterId;DialogId;Additive;NoEndUserInput;CloseAfterwards)"],
-		"description": "Shows a dialog"
+		"body": ["dialog(SpeakerId;CharacterId;DialogId;Additive;Type)"],
+		"description": "Shows a dialog (Type is normal, noEndInput or noInput)"
 	},
 	"37_0": {
 		"scope": "ansl",
@@ -511,521 +505,533 @@
 	},
 	"62_0": {
 		"scope": "ansl",
+		"prefix": "setAmbientIntensity",
+		"body": ["setAmbientIntensity(Intensity)"],
+		"description": "Changes the ambient lighting's intensity"
+	},
+	"62_1": {
+		"scope": "ansl",
+		"prefix": "setAmbientIntensity",
+		"body": ["setAmbientIntensity(Intensity;Duration;WaitForEnd)"],
+		"description": "Changes the ambient lighting's intensity"
+	},
+	"63_0": {
+		"scope": "ansl",
 		"prefix": "setBackground",
 		"body": ["setBackground(Background)"],
 		"description": "Changes the current background. Background can be null"
 	},
-	"62_1": {
+	"63_1": {
 		"scope": "ansl",
 		"prefix": "setBackground",
 		"body": ["setBackground(Background;UseDefaultData)"],
 		"description": "Changes the current background. Background can be null"
 	},
-	"63_0": {
+	"64_0": {
 		"scope": "ansl",
 		"prefix": "setBgColor",
 		"body": ["setBgColor(R;G;B;A)"],
 		"description": "Changes the color of the background fade immediately"
 	},
-	"64_0": {
+	"65_0": {
 		"scope": "ansl",
 		"prefix": "setBg",
 		"body": ["setBg(Alpha)"],
 		"description": "Sets the Background's alpha to a specific value"
 	},
-	"65_0": {
+	"66_0": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(X;Y;Z)"],
 		"description": "Moves the camera"
 	},
-	"65_1": {
+	"66_1": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Moves the camera"
 	},
-	"65_2": {
+	"66_2": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(Marker)"],
 		"description": "Moves the camera"
 	},
-	"65_3": {
+	"66_3": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(Marker;Duration;WaitForEnd)"],
 		"description": "Moves the camera"
 	},
-	"65_4": {
+	"66_4": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(default)"],
 		"description": "Moves the camera"
 	},
-	"65_5": {
+	"66_5": {
 		"scope": "ansl",
 		"prefix": "setCameraPosition",
 		"body": ["setCameraPosition(default;Duration;WaitForEnd)"],
 		"description": "Moves the camera"
 	},
-	"66_0": {
+	"67_0": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(X;Y;Z)"],
 		"description": "Rotates the camera"
 	},
-	"66_1": {
+	"67_1": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Rotates the camera"
 	},
-	"66_2": {
+	"67_2": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(Marker)"],
 		"description": "Rotates the camera"
 	},
-	"66_3": {
+	"67_3": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(Marker;Duration;WaitForEnd)"],
 		"description": "Rotates the camera"
 	},
-	"66_4": {
+	"67_4": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(default)"],
 		"description": "Rotates the camera"
 	},
-	"66_5": {
+	"67_5": {
 		"scope": "ansl",
 		"prefix": "setCameraRotation",
 		"body": ["setCameraRotation(default;Duration;WaitForEnd)"],
 		"description": "Rotates the camera"
 	},
-	"67_0": {
+	"68_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterAlpha",
 		"body": ["setCharacterAlpha(Name;Alpha)"],
 		"description": "Fades a character"
 	},
-	"67_1": {
+	"68_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterAlpha",
 		"body": ["setCharacterAlpha(Name;Alpha;Duration;WaitForEnd)"],
 		"description": "Fades a character"
 	},
-	"68_0": {
+	"69_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterBody",
 		"body": ["setCharacterBody(Name;Body)"],
 		"description": "Changes a character's body animation"
 	},
-	"68_1": {
+	"69_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterBody",
 		"body": ["setCharacterBody(Name;Body;TransitionDuration)"],
 		"description": "Changes a character's body animation"
 	},
-	"69_0": {
+	"70_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterBool",
 		"body": ["setCharacterBool(Name;ParameterName;Value)"],
 		"description": "Sets a character's animator bool"
 	},
-	"70_0": {
+	"71_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterEye",
 		"body": ["setCharacterEye(Name;Eye)"],
 		"description": "Changes a character's eye animation"
 	},
-	"70_1": {
+	"71_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterEye",
 		"body": ["setCharacterEye(Name;Eye;TransitionDuration)"],
 		"description": "Changes a character's eye animation"
 	},
-	"71_0": {
+	"72_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterFloat",
 		"body": ["setCharacterFloat(Name;ParameterName;Value)"],
 		"description": "Sets a character's animator float"
 	},
-	"71_1": {
+	"72_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterFloat",
 		"body": ["setCharacterFloat(Name;ParameterName;Value;TransitionDuration;WaitForEnd)"],
 		"description": "Sets a character's animator float"
 	},
-	"72_0": {
+	"73_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterHidden",
 		"body": ["setCharacterHidden(Name;Hidden)"],
 		"description": "Sets if a character is hidden or not"
 	},
-	"73_0": {
+	"74_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterInt",
 		"body": ["setCharacterInt(Name;ParameterName;Value)"],
 		"description": "Sets a character's animator int"
 	},
-	"74_0": {
+	"75_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterMouth",
 		"body": ["setCharacterMouth(Name;Mouth)"],
 		"description": "Changes a character's mouth animation"
 	},
-	"74_1": {
+	"75_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterMouth",
 		"body": ["setCharacterMouth(Name;Mouth;TransitionDuration)"],
 		"description": "Changes a character's mouth animation"
 	},
-	"75_0": {
+	"76_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;X;Y;Z)"],
 		"description": "Moves a character"
 	},
-	"75_1": {
+	"76_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Moves a character"
 	},
-	"75_2": {
+	"76_2": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;Marker)"],
 		"description": "Moves a character"
 	},
-	"75_3": {
+	"76_3": {
 		"scope": "ansl",
 		"prefix": "setCharacterPosition",
 		"body": ["setCharacterPosition(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Moves a character"
 	},
-	"76_0": {
+	"77_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;X;Y;Z)"],
 		"description": "Rotates a character"
 	},
-	"76_1": {
+	"77_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Rotates a character"
 	},
-	"76_2": {
+	"77_2": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;Marker)"],
 		"description": "Rotates a character"
 	},
-	"76_3": {
+	"77_3": {
 		"scope": "ansl",
 		"prefix": "setCharacterRotation",
 		"body": ["setCharacterRotation(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Rotates a character"
 	},
-	"77_0": {
+	"78_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;X;Y;Z)"],
 		"description": "Scales a Character"
 	},
-	"77_1": {
+	"78_1": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Scales a Character"
 	},
-	"77_2": {
+	"78_2": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;Scale)"],
 		"description": "Scales a Character"
 	},
-	"77_3": {
+	"78_3": {
 		"scope": "ansl",
 		"prefix": "setCharacterScale",
 		"body": ["setCharacterScale(Name;Scale;Duration;WaitForEnd)"],
 		"description": "Scales a Character"
 	},
-	"78_0": {
+	"79_0": {
 		"scope": "ansl",
 		"prefix": "setCharacterTrigger",
 		"body": ["setCharacterTrigger(Name;Trigger)"],
 		"description": "Sets a character's animator trigger"
 	},
-	"79_0": {
+	"80_0": {
 		"scope": "ansl",
 		"prefix": "setFgColor",
 		"body": ["setFgColor(R;G;B;A)"],
 		"description": "Changes the color of the foreground fade immediately"
 	},
-	"80_0": {
+	"81_0": {
 		"scope": "ansl",
 		"prefix": "setFg",
 		"body": ["setFg(Alpha)"],
 		"description": "Sets the Foreground's alpha to a specific value"
 	},
-	"81_0": {
+	"82_0": {
 		"scope": "ansl",
 		"prefix": "setFogColor",
 		"body": ["setFogColor(Color)"],
 		"description": "Changes the fog's color (#RRGGBB format)"
 	},
-	"81_1": {
+	"82_1": {
 		"scope": "ansl",
 		"prefix": "setFogColor",
 		"body": ["setFogColor(Color;Duration;WaitForEnd)"],
 		"description": "Changes the fog's color (#RRGGBB format)"
 	},
-	"82_0": {
+	"83_0": {
 		"scope": "ansl",
 		"prefix": "setFogDensity",
 		"body": ["setFogDensity(Density)"],
 		"description": "Changes the fog's density"
 	},
-	"82_1": {
+	"83_1": {
 		"scope": "ansl",
 		"prefix": "setFogDensity",
 		"body": ["setFogDensity(Density;Duration;WaitForEnd)"],
 		"description": "Changes the fog's density"
 	},
-	"83_0": {
+	"84_0": {
 		"scope": "ansl",
 		"prefix": "setFogEnabled",
 		"body": ["setFogEnabled(Enabled)"],
 		"description": "Changes if the fog is visible or not"
 	},
-	"84_0": {
+	"85_0": {
 		"scope": "ansl",
 		"prefix": "setGamepadVibration",
 		"body": ["setGamepadVibration(Both)"],
 		"description": "Sets the gamepad's vibration"
 	},
-	"84_1": {
+	"85_1": {
 		"scope": "ansl",
 		"prefix": "setGamepadVibration",
 		"body": ["setGamepadVibration(Left;Right)"],
 		"description": "Sets the gamepad's vibration"
 	},
-	"85_0": {
+	"86_0": {
 		"scope": "ansl",
 		"prefix": "setInteractionHidden",
 		"body": ["setInteractionHidden(Id;Hidden)"],
 		"description": "Changes if interactable object is hidden or not"
 	},
-	"86_0": {
+	"87_0": {
 		"scope": "ansl",
 		"prefix": "setInteractionScript",
 		"body": ["setInteractionScript(Id;Script)"],
 		"description": "Changes an interactable object's linked script"
 	},
-	"87_0": {
+	"88_0": {
 		"scope": "ansl",
 		"prefix": "setLightDirection",
 		"body": ["setLightDirection(X;Y;Z)"],
 		"description": "Changes the current background's light direction"
 	},
-	"88_0": {
+	"89_0": {
 		"scope": "ansl",
 		"prefix": "setLocals",
 		"body": ["setLocals(Locals)"],
 		"description": "Shows/Hides the dialog window"
 	},
-	"89_0": {
+	"90_0": {
 		"scope": "ansl",
 		"prefix": "setLocation",
 		"body": ["setLocation(Location)"],
 		"description": "Changes the location (visible on the save slot's info)"
 	},
-	"90_0": {
+	"91_0": {
 		"scope": "ansl",
 		"prefix": "setSkybox",
 		"body": ["setSkybox(Skybox)"],
 		"description": "Changes the current background's skybox"
 	},
-	"90_1": {
+	"91_1": {
 		"scope": "ansl",
 		"prefix": "setSkybox",
 		"body": ["setSkybox(Skybox;Duration;WaitForEnd)"],
 		"description": "Changes the current background's skybox"
 	},
-	"91_0": {
+	"92_0": {
 		"scope": "ansl",
 		"prefix": "setStaticAlpha",
 		"body": ["setStaticAlpha(Name;Alpha)"],
 		"description": "Fades a static object"
 	},
-	"91_1": {
+	"92_1": {
 		"scope": "ansl",
 		"prefix": "setStaticAlpha",
 		"body": ["setStaticAlpha(Name;Alpha;Duration;WaitForEnd)"],
 		"description": "Fades a static object"
 	},
-	"92_0": {
+	"93_0": {
 		"scope": "ansl",
 		"prefix": "setStaticHidden",
 		"body": ["setStaticHidden(Name;Hidden)"],
 		"description": "Sets if a static object is hidden or not"
 	},
-	"93_0": {
+	"94_0": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;X;Y;Z)"],
 		"description": "Moves a static object"
 	},
-	"93_1": {
+	"94_1": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Moves a static object"
 	},
-	"93_2": {
+	"94_2": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;Marker)"],
 		"description": "Moves a static object"
 	},
-	"93_3": {
+	"94_3": {
 		"scope": "ansl",
 		"prefix": "setStaticPosition",
 		"body": ["setStaticPosition(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Moves a static object"
 	},
-	"94_0": {
+	"95_0": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;X;Y;Z)"],
 		"description": "Rotates a static object"
 	},
-	"94_1": {
+	"95_1": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Rotates a static object"
 	},
-	"94_2": {
+	"95_2": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;Marker)"],
 		"description": "Rotates a static object"
 	},
-	"94_3": {
+	"95_3": {
 		"scope": "ansl",
 		"prefix": "setStaticRotation",
 		"body": ["setStaticRotation(Name;Marker;Duration;WaitForEnd)"],
 		"description": "Rotates a static object"
 	},
-	"95_0": {
+	"96_0": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;X;Y;Z)"],
 		"description": "Scales a static object"
 	},
-	"95_1": {
+	"96_1": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;X;Y;Z;Duration;WaitForEnd)"],
 		"description": "Scales a static object"
 	},
-	"95_2": {
+	"96_2": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;Scale)"],
 		"description": "Scales a static object"
 	},
-	"95_3": {
+	"96_3": {
 		"scope": "ansl",
 		"prefix": "setStaticScale",
 		"body": ["setStaticScale(Name;Scale;Duration;WaitForEnd)"],
 		"description": "Scales a static object"
 	},
-	"96_0": {
+	"97_0": {
 		"scope": "ansl",
 		"prefix": "setVolumeWeight",
 		"body": ["setVolumeWeight(Name;Weight)"],
 		"description": "Sets a post process volume's weight"
 	},
-	"96_1": {
+	"97_1": {
 		"scope": "ansl",
 		"prefix": "setVolumeWeight",
 		"body": ["setVolumeWeight(Name;Weight;Duration;WaitForEnd)"],
 		"description": "Sets a post process volume's weight"
 	},
-	"97_0": {
+	"98_0": {
 		"scope": "ansl",
 		"prefix": "setWeatherEffect",
 		"body": ["setWeatherEffect(WeatherEffect)"],
 		"description": "Changes the current background's weather effect"
 	},
-	"98_0": {
+	"99_0": {
 		"scope": "ansl",
 		"prefix": "showDialogWindow",
 		"body": ["showDialogWindow(Shown)"],
 		"description": "Shows/Hides the dialog window"
 	},
-	"99_0": {
+	"100_0": {
 		"scope": "ansl",
 		"prefix": "showInputReminder",
 		"body": ["showInputReminder(Id;Enabled)"],
 		"description": "Shows/Hides an input reminder"
 	},
-	"100_0": {
+	"101_0": {
 		"scope": "ansl",
 		"prefix": "stopContext",
 		"body": ["stopContext(Id)"],
 		"description": "Stops an ANSL Context"
 	},
-	"101_0": {
+	"102_0": {
 		"scope": "ansl",
 		"prefix": "switch",
 		"body": ["switch(Variable)\n\tcase default:\n\n\tcase 0:\n\nendswitch"],
 		"description": "Checks a single variables. You can use 'case default:' to check when none of the checks are valid"
 	},
-	"102_0": {
+	"103_0": {
 		"scope": "ansl",
 		"prefix": "unloadBundle",
 		"body": ["unloadBundle(Bundle;DataType)"],
 		"description": "Unloads a bundle from memory (AudioClip / TextAsset / Sprite / Texture2D / GameObject)"
 	},
-	"103_0": {
+	"104_0": {
 		"scope": "ansl",
 		"prefix": "unlockLog",
 		"body": ["unlockLog(Log;ShowPopup)"],
 		"description": "Unlocks a log"
 	},
-	"104_0": {
+	"105_0": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Value)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"104_1": {
+	"105_1": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Variable)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"104_2": {
+	"105_2": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;default)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"105_0": {
+	"106_0": {
 		"scope": "ansl",
 		"prefix": "waitForContextEnd",
 		"body": ["waitForContextEnd(contextId)"],
 		"description": "Waits for the end of a context"
 	},
-	"106_0": {
+	"107_0": {
 		"scope": "ansl",
 		"prefix": "wait",
 		"body": ["wait(Seconds)"],

@@ -1,7 +1,8 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/Cliff)
+setBackground(C1/Cliff;true)
+setSkybox(Day)
 
 fadeFg(0;false)
 

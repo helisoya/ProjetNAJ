@@ -27,7 +27,7 @@ namespace ANF.ANSL
 
         protected override void OnStartProcess()
         {
-            if (manager.GetWorld().GetComponent(out FogController fogController) &&
+            if (manager.GetWorld().GetComponent(out SceneRenderController fogController) &&
                 parameters.GetParameter(0, out bool enabled))
             {
                 fogController.SetFogEnabled(enabled);

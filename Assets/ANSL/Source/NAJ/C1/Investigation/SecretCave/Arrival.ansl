@@ -1,0 +1,17 @@
+clearStack()
+setFg(1)
+
+setBackground(C1/SecretCave;true)
+setSkybox(Day)
+setAmbientIntensity(0.5)
+
+if(C1_SecretElk == 0)
+	setStaticHidden(DoorPiece;true)
+else
+	removeStatic(Door)
+	removeCharacter(Elk)
+endif
+
+fadeFg(0;false)
+
+load(Interaction)

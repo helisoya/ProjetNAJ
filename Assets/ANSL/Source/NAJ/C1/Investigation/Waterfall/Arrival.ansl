@@ -1,0 +1,9 @@
+clearStack()
+setFg(1)
+
+setBackground(C1/Waterfall;true)
+setSkybox(Day)
+
+fadeFg(0;false)
+
+load(Interaction)

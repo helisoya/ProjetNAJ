@@ -1,5 +1,5 @@
 setInteractionHidden(Exit;true)
-setInteractionScript(Right;ToCliff)
+setInteractionScript(Right;ToWaterfall)
 setInteractionScript(Forward;ToForestStart)
 
 interaction()
