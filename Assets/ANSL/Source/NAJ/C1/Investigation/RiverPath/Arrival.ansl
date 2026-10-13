@@ -6,7 +6,7 @@ setSkybox(Day)
 
 fadeFg(0;false)
 
-if(C1_FirstTimeCount == 2)
+if(C1_FirstTimeCount == 3)
 	load(FirstTime)
 else
 	fadeFg(0;false)

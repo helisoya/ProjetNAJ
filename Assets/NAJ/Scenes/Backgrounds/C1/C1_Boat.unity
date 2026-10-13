@@ -7289,7 +7289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers: []
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!1 &109619181
 GameObject:
   m_ObjectHideFlags: 0
@@ -7340,7 +7340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers:
   - {fileID: 109619185}
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!33 &109619184
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -38596,7 +38596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers: []
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!33 &410525550
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -68339,7 +68339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers: []
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!33 &961603875
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -75742,7 +75742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers:
   - {fileID: 1127036386}
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!1 &1130229648
 GameObject:
   m_ObjectHideFlags: 0
@@ -75845,7 +75845,7 @@ MonoBehaviour:
   - {fileID: 2067663640}
   - {fileID: 705680605}
   - {fileID: 1863096366}
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!23 &1130229650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86348,6 +86348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Exit
   icon: {fileID: 2800000, guid: 3e613bb1c0c4b354badb8deec68c7ac8, type: 3}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 1515668598}
 --- !u!65 &1515668598
@@ -127688,7 +127689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
   renderers:
   - {fileID: 2180163695774461182}
-  linkedInteraction: {fileID: 0}
+  linkedInteractions: []
 --- !u!95 &2174772296065616282
 Animator:
   serializedVersion: 7

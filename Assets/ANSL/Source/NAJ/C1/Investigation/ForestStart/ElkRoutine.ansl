@@ -1,0 +1,4 @@
+setCharacterBody(Elk;Walk)
+setCharacterPosition(Elk;-48.26;-2.11;51.88)
+setCharacterPosition(Elk;-63.43;-2.11;40.63;0.75;true)
+removeCharacter(Elk)

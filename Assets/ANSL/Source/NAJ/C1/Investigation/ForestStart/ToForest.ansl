@@ -1,3 +1,5 @@
 fadeFg(1;true)
 
+waitForContextEnd(1)
+
 load(../Forest/Arrival)

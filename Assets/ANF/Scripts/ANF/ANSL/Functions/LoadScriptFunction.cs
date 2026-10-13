@@ -9,7 +9,7 @@ namespace ANF.ANSL
     [ANSLFunctionAttribute(
 
         functionBody: "load",
-        functionAutoComplete: new string[] { "load(Script)", "load(Script;StartIndex)" },
+        functionAutoComplete: new string[] { "load(Script)", "load(Script;StartIndex)", "load(Script;StartIndex;ContextId)" },
         functionDesc: "Loads a new ANSL script")]
     public class LoadScriptFunction : ANSLFunction
     {
@@ -17,7 +17,8 @@ namespace ANF.ANSL
         {
             return new FunctionParameterType[][] {
                 new FunctionParameterType[]{FunctionParameterType.STRING},
-                new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.UINT}
+                new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.UINT},
+                new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.UINT, FunctionParameterType.UINT}
             };
         }
 
@@ -33,9 +34,22 @@ namespace ANF.ANSL
                 {
                     uint startLine;
                     if (parameters.GetTemplateId() == 0)
-                        context.LoadScript(resolvedScript, 0);
-                    else if (parameters.GetTemplateId() == 1 &&
-                    parameters.GetParameter(1, out startLine))
+                        startLine = 0;
+                    else if (!parameters.GetParameter(1, out startLine))
+                        startLine = 0;
+
+                    if (parameters.GetTemplateId() == 2 &&
+                        parameters.GetParameter(2, out uint id) &&
+                        manager.GetWorld().GetComponent(out ANSLManager anslManager))
+                    {
+                        ANSLContext context = anslManager.GetContext(id);
+                        if (context != null)
+                        {
+                            context.LoadScript(resolvedScript, startLine);
+                        }
+                    }
+
+                    else
                         context.LoadScript(resolvedScript, startLine);
                 }
             }

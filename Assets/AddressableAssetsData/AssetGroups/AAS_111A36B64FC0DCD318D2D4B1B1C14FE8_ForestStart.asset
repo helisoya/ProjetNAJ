@@ -33,6 +33,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da08190a64b373542a2756c592d13739
+    m_Address: ANSL/NAJ/C1/Investigation/ForestStart/ElkRoutine
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f9b3fa9168923a5478679fb78afb4457
     m_Address: ANSL/NAJ/C1/Investigation/ForestStart/ToBeach
     m_ReadOnly: 0

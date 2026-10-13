@@ -6,4 +6,12 @@ setSkybox(Day)
 
 fadeFg(0;false)
 
+if(C1_FirstTimeCount == 1)
+	variable(C1_FirstTimeCount;=;2)
+	load(ElkRoutine;0;1)
+else
+	removeCharacter(Elk)
+endif
+
+fadeFg(0;false)
 load(Interaction)

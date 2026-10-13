@@ -1,4 +1,4 @@
-variable(C1_FirstTimeCount;=;3)
+variable(C1_FirstTimeCount;=;4)
 
 dialog(Char_Rann;null;C1_River_Arrival_1)
 dialog(Char_Rann;null;C1_River_Arrival_2)

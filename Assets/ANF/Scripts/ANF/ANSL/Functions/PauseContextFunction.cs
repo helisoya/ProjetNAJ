@@ -4,9 +4,9 @@ namespace ANF.ANSL
     /// The Pause Context function can be used to pause an ANSL Context
     /// </summary>
     [ANSLFunctionAttribute(
-        
+
         functionBody: "pauseContext",
-        functionAutoComplete: new string[] { "pauseContext(Id)" },
+        functionAutoComplete: new string[] { "pauseContext(Id;Paused)" },
         functionDesc: "Pauses an ANSL Context")]
     public class PauseContextFunction : ANSLFunction
     {

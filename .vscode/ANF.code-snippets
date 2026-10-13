@@ -365,6 +365,12 @@
 		"body": ["load(Script;StartIndex)"],
 		"description": "Loads a new ANSL script"
 	},
+	"45_2": {
+		"scope": "ansl",
+		"prefix": "load",
+		"body": ["load(Script;StartIndex;ContextId)"],
+		"description": "Loads a new ANSL script"
+	},
 	"46_0": {
 		"scope": "ansl",
 		"prefix": "log",
@@ -380,7 +386,7 @@
 	"48_0": {
 		"scope": "ansl",
 		"prefix": "pauseContext",
-		"body": ["pauseContext(Id)"],
+		"body": ["pauseContext(Id;Paused)"],
 		"description": "Pauses an ANSL Context"
 	},
 	"49_0": {
