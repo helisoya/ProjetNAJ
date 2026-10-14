@@ -47,6 +47,7 @@ choice(Arc)
 		dialog(Char_Judge;Judge;C1_Trial_Question1_Juno_11)
 		dialog(Char_Judge;Judge;C1_Trial_Question1_Juno_12)
 
+		playSFX(LoseLife)
 		screenshake(0.1;0.25;true;true)
 		:removeHealth(1)
 		setLifeBarUIPreviewRange(0;false;false)

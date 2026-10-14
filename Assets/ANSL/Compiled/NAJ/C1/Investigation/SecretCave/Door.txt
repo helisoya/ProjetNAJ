@@ -1,4 +1,4 @@
-#45205D0DE6229F9D7616DE208D05738E-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#5DFF6BD31E784B9F4159A3AD8290DF4F-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 401true
 620.4
 661.6-231
@@ -8,13 +8,13 @@
 36Char_RannnullC1_SecretCave_After_1
 36Char_RannnullC1_SecretCave_After_2
 36Char_RannnullC1_SecretCave_After_3
-4343
+4345
 411116C1_AxeProgress <= 1
 36Char_RannnullC1_SecretCave_NoAxe_1
 36Char_RannnullC1_SecretCave_NoAxe_2
 36Char_RannnullC1_SecretCave_NoAxe_3
 36Char_RannnullC1_SecretCave_NoAxe_4
-4342
+4344
 36Char_RannnullC1_SecretCave_Axe_1
 381false
 36nullnullC1_SecretCave_Axe_2
@@ -30,8 +30,10 @@
 69ElkLookBehind
 1073
 651
+49SpookyCaveEmpty
+51Elk
 58Elk
-1071
+1072
 380false
 36Char_RannnullC1_SecretCave_Axe_7
 36Char_RannnullC1_SecretCave_Axe_8
@@ -40,8 +42,8 @@
 36Char_RannnullC1_SecretCave_Axe_11
 36Char_RannnullC1_SecretCave_Axe_12
 105C1_SecretElk=1
-4342
-4343
+4344
+4345
 99false
 401true
 620.5

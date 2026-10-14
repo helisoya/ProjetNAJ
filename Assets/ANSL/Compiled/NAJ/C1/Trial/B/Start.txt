@@ -1,4 +1,4 @@
-#C4E08F0CC6946204A3476F4AA5717BC7-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#204B7D60C55269D1D5F3518987D769D8-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 89c1_commonc1_trial_B
 90Location_C1_TrialPart2
 25
@@ -12,7 +12,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -74,12 +76,14 @@
 75RobertNormal
 20Evidence/C1_DeathMessageRight
 36Char_JudgeJudgeC1_Trial1_E_20
+51Damage
 610.10.25truetrue
 71JudgeSurprise
 75JudgeNormal
 69JudgeDamageToNormal
 36Char_JudgeJudgeC1_Trial1_E_21
 36Char_JudgeJudgeC1_Trial1_E_22
+51Damage
 11
 610.10.25truetrue
 66DefenseCam
@@ -108,6 +112,7 @@
 66JudgeCam
 67JudgeCam
 36Char_JudgeJudgeC1_Trial1_E_32
+51EvidenceInfo
 20Evidence/C1_DeathMessageFull
 0C1_DeathMessage
 36nullnullC1_Trial_Evidence_DeathMessage_1
@@ -141,6 +146,7 @@
 66JudgeCam
 67JudgeCam
 36Char_JudgeJudgeC1_Trial1_E_42
+51Damage
 610.10.25truetrue
 71JudgeSurprise
 75JudgeNormal
@@ -158,6 +164,7 @@
 66JudgeCam
 67JudgeCam
 36Char_JudgeJudgeC1_Trial1_E_48
+51EvidenceInfo
 20Evidence/C1_DebtReportFull
 0C1_DebtReport
 36nullnullC1_Trial_Evidence_DebtPapers_1
@@ -280,6 +287,7 @@
 36Char_GeraldGeraldNoCoatC1_Trial1_E_84
 66DefenseCam
 67DefenseCam
+51Damage
 610.10.25truetrue
 69RannCoatDamageToAngry
 71RannCoatSurprise

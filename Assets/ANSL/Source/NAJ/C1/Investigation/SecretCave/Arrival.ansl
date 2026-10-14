@@ -7,9 +7,12 @@ setAmbientIntensity(0.5)
 
 if(C1_SecretElk == 0)
 	setStaticHidden(DoorPiece;true)
+	playAmbient(Wind)
+	playAmbient(SpookyCave)
 else
 	removeStatic(Door)
 	removeCharacter(Elk)
+	playAmbient(SpookyCaveEmpty)
 endif
 
 fadeFg(0;false)

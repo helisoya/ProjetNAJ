@@ -1,0 +1,31 @@
+# UIAnimations defines
+
+Define playTestimonyAnimation()
+playSFX(Testimony)
+playUIAnimation(Testimony;true)
+EndDefine
+
+Define playRebuttalAnimation()
+playSFX(Rebuttal)
+playUIAnimation(Rebuttal;true)
+EndDefine
+
+Define playGuiltyAnimation()
+playSFX(Guilty)
+playUIAnimation(Guilty;true)
+EndDefine
+
+Define playNotGuiltyAnimation()
+playSFX(NotGuilty)
+playUIAnimation(NotGuilty;true)
+EndDefine
+
+Define playPressAnimation()
+playSFX(Press)
+playUIAnimation(Press;true)
+EndDefine
+
+Define playObjectionAnimation()
+playSFX(Objection)
+playUIAnimation(Objection;true)
+EndDefine

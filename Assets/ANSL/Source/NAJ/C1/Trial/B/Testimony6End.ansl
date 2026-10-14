@@ -18,7 +18,7 @@ part 1
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony6_Press1_1)
@@ -44,7 +44,7 @@ part 2
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony6_Press2_1)
@@ -62,6 +62,7 @@ press 2
 	:setCourtroomCamToDefenseImmediate()
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony6_Press2_4)
 	
+	playSFX(Damage)
 	screenshake(0.1;0.2)
 	:setCourtroomCamToWitnessImmediate()
 	:setRannEyeNeutral(Coat)
@@ -89,7 +90,7 @@ part 3 present Evidence/C1_DebtReport
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony6_Press3_1)
@@ -126,7 +127,7 @@ part 4
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_4;false;noInput)
 press 4
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony6_Press4_1)
@@ -159,7 +160,7 @@ part 5
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony6_Testimony_5;false;noInput)
 press 5
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony6_Press5_1)
@@ -201,7 +202,7 @@ fail
 endexamination
 
 showDialogWindow(false)
-playUIAnimation(Objection;true)
+:playObjectionAnimation()
 
 :setCourtroomCamToDefense(true)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_1)
@@ -231,6 +232,7 @@ dialog(Char_Judge;Judge;C1_Trial1_J_10)
 dialog(Char_Judge;Judge;C1_Trial1_J_11)
 dialog(Char_Judge;Judge;C1_Trial1_J_12)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 :setJudgeDamageToNormal()
 :setJudgeEyeSurprise()
@@ -255,6 +257,7 @@ dialog(Char_Rann;RannCoat;C1_Trial1_J_18)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_19)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_20)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 :setCourtroomCamToWitnessImmediate()
 :setRannHandsOnDesk(Coat)
@@ -264,22 +267,26 @@ dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_21)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_22)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_23)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 :setCourtroomCamToWitnessImmediate()
 dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_24)
 
 :setJudgeEyeAngry()
 :setCourtroomCamToJudge()
+playSFX(Damage)
 screenshake(0.1;0.2)
 dialog(Char_Judge;Judge;C1_Trial1_J_25)
 dialog(Char_Judge;Judge;C1_Trial1_J_26)
 dialog(Char_Judge;Judge;C1_Trial1_J_27)
 dialog(Char_Judge;Judge;C1_Trial1_J_28)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 :setCourtroomCamToWitnessImmediate()
 dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_29)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_30)
 showDialogWindow(false)
@@ -298,6 +305,7 @@ wait(1.5)
 
 :setGeraldPunchBar(NoCoat)
 wait(0.6)
+playSFX(Damage)
 screenshake(0.1;0.2)
 
 wait(1.5)
@@ -445,7 +453,7 @@ dialog(Char_Judge;Judge;C1_Trial1_J_60)
 dialog(Char_Judge;Judge;C1_Trial1_J_61)
 showDialogWindow(false)
 
-playUIAnimation(NotGuilty;true)
+:playNotGuiltyAnimation()
 
 dialog(Char_Judge;Judge;C1_Trial1_J_62)
 dialog(Char_Judge;Judge;C1_Trial1_J_63)
@@ -481,6 +489,7 @@ dialog(Char_Judge;Judge;C1_Trial1_J_75)
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial1_J_76)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 :setCourtroomCamToDefenseImmediate()
 dialog(Char_Rann;RannCoat;C1_Trial1_J_77)
@@ -585,6 +594,7 @@ dialog(Char_Rann;null;C1_Trial1_J_116)
 dialog(Char_Juno;Juno;C1_Trial1_J_117)
 dialog(Char_Juno;Juno;C1_Trial1_J_118)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 dialog(Char_Rann;null;C1_Trial1_J_119)
 showDialogWindow(false)

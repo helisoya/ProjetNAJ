@@ -661,7 +661,11 @@ namespace ANF.Scene
             if (updateComponent && asyncWaitForNextFrames != -42)
             {
                 asyncWaitForNextFrames = -42;
-                EndBackgroundLoading();
+
+                if (loadingBackground)
+                    EndBackgroundLoading();
+                else if (unloadingBackground)
+                    EndBackgroundUnloading();
             }
 
 

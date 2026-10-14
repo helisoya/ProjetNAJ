@@ -1,8 +1,9 @@
-#CAC769FF7DB0EA8A00FD4A893575E0C9-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#3DCC622E19C987F6EDBAD2134CE9BB3A-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 99false
 69RannCoatHandsOnDesk0.1
 71RannCoatNormal
 75RannCoatNeutral
+51Objection
 52Objectiontrue
 22true
 191truetrue
@@ -31,12 +32,13 @@
 36Char_JudgeJudgeC1_Trial_Fail_5
 69JudgeReadyStrike0.1
 36Char_JudgeJudgeC1_Trial_Fail_6
+51LoseLife
 610.10.25truetrue
 105LifePoints-1
-413537LifePoints < 0
+413739LifePoints < 0
 105LifePoints=0
-4338
-4338
+4340
+4340
 190falsefalse
 12falsetrue
 66DefenseCam
@@ -45,9 +47,9 @@
 36nullnullC1_Trial_Fail_8
 99false
 22false
-414749LifePoints <= 0
+414951LifePoints <= 0
 45Death
-4358
+4360
 381true
 67WitnessCam
 66WitnessCam
@@ -56,4 +58,4 @@
 69JudgeNormal0.1
 69RannCoatNormal0.1
 380false
-4358
+4360

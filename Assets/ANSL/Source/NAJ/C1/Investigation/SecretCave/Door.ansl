@@ -41,9 +41,11 @@ else
 		wait(3)
 
 		setBg(1)
+		playAmbient(SpookyCaveEmpty)
+		playSFX(Elk)
 		removeCharacter(Elk)
 
-		wait(1)
+		wait(2)
 
 		fadeBg(0;false)
 

@@ -3,6 +3,7 @@ setFg(1)
 
 setBackground(C1/RiverPath;true)
 setSkybox(Day)
+playAmbient(ForestRiver)
 
 fadeFg(0;false)
 

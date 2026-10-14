@@ -1,4 +1,4 @@
-#2CE867603FF33D8FC5304565F558448D-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#0492FF993165D1041BF7AC17843A273F-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 29
 99false
 381true
@@ -18,12 +18,13 @@
 75JudgeNormal
 380false
 184
-9195120False261False399False4130False
+9199120False262False3101False4133False
 181
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Testimony_1falsenoInput
-101False241911952061
+101False241951992062
 99false
+51Press
 52Presstrue
 69RannCoatAngry0.1
 67DefenseCam0.25false
@@ -63,8 +64,9 @@
 182
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Testimony_2falsenoInput
-102False651911952099
+102False6619519920101
 99false
+51Press
 52Presstrue
 71RannCoatNormal
 75RannCoatSad
@@ -101,8 +103,9 @@
 183
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Testimony_3falsenoInput
-103False10319119561130
+103False10519519962133
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -132,8 +135,9 @@
 184
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Testimony_4falsenoInput
-104False13419119599170Evidence/C1_Herbarium
+104False137195199101174Evidence/C1_Herbarium
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -168,10 +172,10 @@
 75RannCoatNeutral
 1070.15
 380false
-43170
+43174
 181
 21false
-3195
+3199
 99false
 69RannCoatThinking0.1
 381true
@@ -195,6 +199,7 @@
 45../Common/ExaminationFail
 4319
 99false
+51Objection
 52Objectiontrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -209,6 +214,7 @@
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial1_I_4
 36Char_RannRannCoatC1_Trial1_I_5
+51Damage
 610.10.2
 71GeraldNoCoatSurprise
 75GeraldNoCoatSerious
@@ -246,6 +252,7 @@
 36Char_JudgeJudgeC1_Trial1_I_15
 36Char_JudgeJudgeC1_Trial1_I_16
 36Char_JudgeJudgeC1_Trial1_I_17
+51Damage
 610.10.2
 71JudgeSurprise
 75JudgeNormal
@@ -371,7 +378,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam

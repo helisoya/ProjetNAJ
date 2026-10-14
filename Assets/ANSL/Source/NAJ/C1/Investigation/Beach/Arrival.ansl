@@ -3,6 +3,7 @@ setFg(1)
 
 setBackground(C1/Beach;true)
 setSkybox(Day)
+playAmbient(SeaCalm)
 
 if(C1_FirstTimeCount == 0)
 	load(FirstTime)

@@ -3,6 +3,7 @@ setFg(1)
 
 setBackground(C1/Cliff;true)
 setSkybox(Day)
+playAmbient(Wind)
 
 fadeFg(0;false)
 

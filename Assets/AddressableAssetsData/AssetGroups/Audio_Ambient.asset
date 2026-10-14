@@ -14,7 +14,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Audio_Ambient
   m_GUID: 32c74439b906453459f63c998d7c76d5
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 043acdc734db1fe4091534373abb7883
+    m_Address: Audio/Ambient/SeaInside
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15a7252c38070474bbdcced0955f2b23
+    m_Address: Audio/Ambient/SpookyCaveEmpty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18d88d6d14b15a446937d7f676aa2c8c
+    m_Address: Audio/Ambient/ForestRiver
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1cde2b8ce5f7f5f488dbaadfd5e7a93d
+    m_Address: Audio/Ambient/SeaCalm
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f76798c059f73a48bf0c3b60b48b19c
+    m_Address: Audio/Ambient/SpookyCave
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 51e4d812a14968c4995626888788a5a9
+    m_Address: Audio/Ambient/Waterfall
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c314238564a79d247b5208a4393f894c
+    m_Address: Audio/Ambient/Forest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cca4309f12fa41b43a06e8fb1f0a3096
+    m_Address: Audio/Ambient/SeaStorm
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2979b96271ff64449260f3babb71233
+    m_Address: Audio/Ambient/Wind
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
   m_SchemaSet:

@@ -12,7 +12,7 @@ fadeBg(1;true)
 
 fadeBg(0;false)
 
-playUIAnimation(Testimony;true)
+:playTestimonyAnimation()
 
 dialog(null;null;C1_Trial_Testimony2_Start_1)
 
@@ -63,7 +63,7 @@ fadeBg(1;true)
 
 fadeBg(0;false)
 
-playUIAnimation(Rebuttal;true)
+:playRebuttalAnimation()
 
 dialog(null;null;C1_Trial_Testimony2_Testimony_0)
 
@@ -76,7 +76,7 @@ part 1
 	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press1_1)
@@ -104,7 +104,7 @@ part 2
 	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setRannHandsOnDesk(Coat)
 	:setCourtroomCamToDefense(true)
@@ -133,7 +133,7 @@ part 3
 	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press3_1)
@@ -181,7 +181,7 @@ part 5
 	dialog(Char_Juno;Juno;C1_Trial_Testimony2_Testimony_5;false;noInput)
 press 5
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony2_Press5_1)

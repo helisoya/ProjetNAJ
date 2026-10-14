@@ -1,4 +1,4 @@
-#3DB7D0012D935499ECC767971DC358ED-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#7E06ABAD3A51D406DF26F2F166F2C933-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 99false
 6649.26189-9.196307-46.78981
 672.958-182.5780.0
@@ -7,6 +7,7 @@
 69GeraldCoatUseKnife
 71GeraldCoatNormal
 75GeraldCoatSerious
+49SeaInside
 380false
 1070.5
 36RannnullC1_Intro_B_1
@@ -136,6 +137,7 @@
 67000
 94Seagull-2065
 92Fog0.70
+49SeaCalm
 36nullnullC1_Intro_B_92
 99false
 380false
@@ -145,9 +147,10 @@
 36nullnullC1_Intro_B_94
 99false
 67-30001true
-94Seagull20651false
-67-157001true
+51BirdFly
+94Seagull20651true
 59Seagull
+67-157001true
 36Char_RannnullC1_Intro_B_95
 36nullnullC1_Intro_B_96
 36nullnullC1_Intro_B_97
@@ -162,6 +165,7 @@
 36nullnullC1_Intro_B_104
 36nullnullC1_Intro_B_105
 36nullnullC1_Intro_B_106
+49SeaStorm
 98Rain
 36Char_RannnullC1_Intro_B_107
 36nullnullC1_Intro_B_108
@@ -171,10 +175,12 @@
 36Char_RannnullC1_Intro_B_112
 36Char_RannnullC1_Intro_B_113
 99false
+51ShipDamage
 610.50.25
 660-5-70.5false
 67-807000.5true
 610.250.2
+51Fall
 36nullnullC1_Intro_B_114
 36nullnullC1_Intro_B_115
 99false
@@ -196,12 +202,15 @@
 94Rocks-100-5203false
 1071.5
 610.250.5
+51ShipDamage
 36nullnullC1_Intro_B_125
 36Char_SarttnullC1_Intro_B_126
 36nullnullC1_Intro_B_127
 99false
 610.50.5
 811
+51ShipCrash
+49null
 84false
-1072
+10710
 45../Investigation/Cliff/Start

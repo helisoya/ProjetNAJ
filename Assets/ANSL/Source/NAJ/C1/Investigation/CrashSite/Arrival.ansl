@@ -3,6 +3,7 @@ setFg(1)
 
 setBackground(C1/CrashSite;true)
 setSkybox(Day)
+playAmbient(Wind)
 
 fadeFg(0;false)
 
@@ -50,6 +51,8 @@ showDialogWindow(false)
 setCameraRotation(0;-6;0;3;false)
 setCameraPosition(-27;1;50;3;true)
 
+screenshake(0.1;0.2)
+playSFX(Damage)
 dialog(Char_Rann;null;C1_Investigation_End_16)
 showDialogWindow(false)
 

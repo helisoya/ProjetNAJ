@@ -13,7 +13,7 @@ fadeBg(1;true)
 
 fadeBg(0;false)
 
-playUIAnimation(Rebuttal;true)
+:playRebuttalAnimation()
 
 dialog(null;null;C1_Trial_Testimony1_Testimony_0)
 
@@ -28,7 +28,7 @@ press 1
 	:setRannReadingBook(Coat)
 	:setRannEyeNormal(Coat)
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony1_Press1_1)
@@ -75,7 +75,7 @@ part 2
 press 2
 
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony1_Press2_1)
@@ -108,7 +108,7 @@ part 3
 press 3
 
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony1_Press3_1)
@@ -143,7 +143,7 @@ press 4
 	:setRannHandsOnDesk(Coat)
 	:setRannEyeSad(Coat)
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony1_Press4_1)
@@ -178,7 +178,7 @@ part 5 present Evidence/C1_Injury
 press 5
 
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony1_Press5_1)
@@ -230,7 +230,7 @@ fail
 endexamination
 
 showDialogWindow(false)
-playUIAnimation(Objection;true)
+:playObjectionAnimation()
 
 # B - After Testimony 1
 

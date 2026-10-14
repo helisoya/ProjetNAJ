@@ -1,4 +1,4 @@
-#605C6FE51F3431C51D60EE991D49A5CA-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#238D2F49E118B44A78661D4616448202-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial1_H_1
@@ -62,7 +62,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -189,6 +191,7 @@
 67ProsecutionCam
 66ProsecutionCam
 36Char_RobertRobertC1_Trial1_H_68
+51Damage
 71JudgeAngry
 75JudgeAngry
 66JudgeCam
@@ -247,7 +250,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam

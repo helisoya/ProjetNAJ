@@ -35,6 +35,7 @@ setCameraRotation(ProsecutionCam)
 dialog(Prototype_Sherif;Sherif;Prototype_B_5)
 dialog(Prototype_Sherif;Sherif;Prototype_B_6)
 
+playSFX(EvidenceInfo)
 addEvidence(C1_AutopsyReport)
 showEvidenceInfo(Evidence/C1_AutopsyReport;Full)
 dialog(null;null;Prototype_B_7)

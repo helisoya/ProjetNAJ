@@ -1,4 +1,4 @@
-#0E719DCCD4B8671B4348704C4BE8CC95-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#7D9C2EA72CA88E4672382014D195D099-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 99false
 381true
 67WitnessCam
@@ -10,18 +10,20 @@
 71RannCoatNormal
 75RannCoatNeutral
 380false
+51Rebuttal
 52Rebuttaltrue
 36nullnullC1_Trial_Testimony1_Testimony_0
 4
-9233115False269False3101False4134False5173False
+9239116False271False3104False4138False5178False
 181
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_1falsenoInput
-101False192292331569
+101False202352391671
 69RannCoatReadingBook
 71RannCoatNormal
 75RannCoatNormal
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -67,12 +69,13 @@
 66WitnessCam
 380false
 182
-4314
+4315
 182
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_2falsenoInput
-102False7322923315101
+102False7523523916104
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -99,12 +102,13 @@
 381true
 380false
 183
-4314
+4315
 183
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_3falsenoInput
-103False10522923369134
+103False10823523971138
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -132,15 +136,16 @@
 66WitnessCam
 380false
 184
-4314
+4315
 184
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_4falsenoInput
-104False138229233101173
+104False142235239104178
 69RannCoatHandsOnDesk0.1
 71RannCoatNormal
 75RannCoatSad
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -171,12 +176,13 @@
 66WitnessCam
 380false
 185
-4314
+4315
 185
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_5falsenoInput
-105False177229233134209Evidence/C1_Injury
+105False182235239138215Evidence/C1_Injury
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -207,10 +213,10 @@
 66WitnessCam
 69RannCoatNormal0.1
 380false
-43209
+43215
 181
 21false
-3233
+3239
 99false
 69RannCoatThinking0.1
 381true
@@ -227,12 +233,13 @@
 67WitnessCam
 66WitnessCam
 380false
-4314
+4315
 181
 21false
 45../Common/ExaminationFail
-4314
+4315
 99false
+51Objection
 52Objectiontrue
 25
 69RannCoatHandsOnDesk0.1

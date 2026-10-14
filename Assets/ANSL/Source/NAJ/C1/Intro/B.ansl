@@ -8,6 +8,8 @@ setCharacterRotation(GeraldCoat;HideoutSpot)
 :setGeraldUseKnife(Coat)
 :setGeraldEyeSerious(Coat)
 
+playAmbient(SeaInside)
+
 fadeBg(0;false)
 
 wait(0.5)
@@ -175,6 +177,7 @@ setCameraPosition(0;1;-5)
 setCameraRotation(0;0;0)
 setStaticPosition(Seagull;-20;6;5)
 setStaticAlpha(Fog;0.70)
+playAmbient(SeaCalm)
 
 dialog(null;null;C1_Intro_B_92)
 showDialogWindow(false)
@@ -191,11 +194,10 @@ showDialogWindow(false)
 
 # See seagull
 setCameraRotation(-30;0;0;1;true)
-setStaticPosition(Seagull;20;6;5;1;false)
-
-setCameraRotation(-15;70;0;1;true)
-
+playSFX(BirdFly)
+setStaticPosition(Seagull;20;6;5;1;true)
 removeStatic(Seagull)
+setCameraRotation(-15;70;0;1;true)
 
 dialog(Char_Rann;null;C1_Intro_B_95)
 dialog(null;null;C1_Intro_B_96)
@@ -216,6 +218,9 @@ dialog(null;null;C1_Intro_B_105)
 dialog(null;null;C1_Intro_B_106)
 
 # Rain
+
+playAmbient(SeaStorm)
+
 setWeatherEffect(Rain)
 dialog(Char_Rann;null;C1_Intro_B_107)
 dialog(null;null;C1_Intro_B_108)
@@ -227,10 +232,12 @@ dialog(Char_Rann;null;C1_Intro_B_113)
 showDialogWindow(false)
 
 # Fall
+playSFX(ShipDamage)
 screenshake(0.5;0.25)
 setCameraPosition(0;-5;-7;0.5;false)
 setCameraRotation(-80;70;0;0.5;true)
 screenshake(0.25;0.2)
+playSFX(Fall)
 
 dialog(null;null;C1_Intro_B_114)
 dialog(null;null;C1_Intro_B_115)
@@ -265,6 +272,7 @@ setStaticPosition(Rocks;-100;-5;20;3;false)
 
 wait(1.5)
 screenshake(0.25;0.5)
+playSFX(ShipDamage)
 
 dialog(null;null;C1_Intro_B_125)
 dialog(Char_Sartt;null;C1_Intro_B_126)
@@ -274,8 +282,10 @@ screenshake(0.5;0.5)
 
 # Transition to Investigation
 setFg(1)
+playSFX(ShipCrash)
+playAmbient(null)
 
 setFogEnabled(false)
 
-wait(2)
+wait(10)
 load(../Investigation/Cliff/Start)

@@ -22,6 +22,78 @@ MonoBehaviour:
     - Audio
     - Common_SFX
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27e564462d092194794c7689c8adc697
+    m_Address: Audio/SFX/ShipCrash
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27f6351397da749418f71acc90a6eba4
+    m_Address: Audio/SFX/ShipDamage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2fb937d8f5a9f8c4f8c1d81a63d67e44
+    m_Address: Audio/SFX/Gavel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49065c399266fa04ca4a623484090698
+    m_Address: Audio/SFX/Owl
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c0b25f63e817b9469c59720bad5bfb8
+    m_Address: Audio/SFX/Rebuttal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74f30d81b6cb41d40b5ff1368ad88881
+    m_Address: Audio/SFX/EvidenceInfo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76a5f113cd043734b82c4ee1d280d26e
+    m_Address: Audio/SFX/Guilty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79b36e60438b2e348a0439c1795c0019
+    m_Address: Audio/SFX/Press
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87214e719fddc6b4ab3d07cc65f90a7a
+    m_Address: Audio/SFX/RevolverCock
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bfb58dac16048a42a08d4c12b50a430
+    m_Address: Audio/SFX/Objection
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 915a6526bf405fa44abf9b9f328a3028
+    m_Address: Audio/SFX/Elk
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 955a6cbfb7ee83b4d9d922ad65371c03
+    m_Address: Audio/SFX/BirdFly
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9b41215d2eb99ba45bda51ff847464fe
     m_Address: Audio/SFX/CursorCancel
     m_ReadOnly: 0
@@ -29,12 +101,54 @@ MonoBehaviour:
     - Audio
     - Common_SFX
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b35f9c217608eef4b900d0624d6801a1
+    m_Address: Audio/SFX/LoseLife
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7733e37102cf2b4a954e76509fba385
+    m_Address: Audio/SFX/DoorSlam
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c00914110990da04c9d312d1066eee4c
+    m_Address: Audio/SFX/Testimony
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2b687d25f016a047b99310493517330
+    m_Address: Audio/SFX/Fall
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d20d3f2f2f53d564f8dc351bd13d8196
+    m_Address: Audio/SFX/ShipHorn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e3c699f82808e484997204ecd1f0ec41
     m_Address: Audio/SFX/CursorConfirm
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
     - Common_SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e73ef4bf82c30084c8c21a0e0cb341cd
+    m_Address: Audio/SFX/Damage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe18b66dea479b9499874a2d9c2c1500
+    m_Address: Audio/SFX/NotGuilty
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}

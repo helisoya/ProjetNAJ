@@ -1,4 +1,4 @@
-#C93EE52409F659DEDDE4FEA171D120A0-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#EEE008F162C1479A37409FC05A50E93F-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 29
 66DefenseCam
 67DefenseCam
@@ -155,6 +155,7 @@
 36Char_RannnullC1_Trial1_D_73
 69JunoNormal0.1
 36Char_JunoJunoC1_Trial1_D_74
+51DoorSlam
 610.20.5truetrue
 36Char_RobertRobertC1_Trial1_D_75
 69JunoSurprise0.1
@@ -176,6 +177,7 @@
 36Char_RobertRobertC1_Trial1_D_82
 36Char_RobertRobertC1_Trial1_D_83
 36Char_RannnullC1_Trial1_D_84
+51Damage
 610.20.2truetrue
 69RobertOnPouch0.1
 36Char_RobertRobertC1_Trial1_D_85
@@ -196,6 +198,7 @@
 36Char_RobertRobertC1_Trial1_D_99
 99false
 68Robert01true
+51DoorSlam
 610.20.5truetrue
 71RobertNormal
 75RobertNormal

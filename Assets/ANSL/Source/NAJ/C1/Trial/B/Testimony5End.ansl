@@ -28,7 +28,7 @@ part 1
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_1;false;noInput)
 press 1
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setRannAngry(Coat)
 	:setCourtroomCamToDefense(true)
@@ -65,7 +65,7 @@ part 2
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_2;false;noInput)
 press 2
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setRannEyeSad(Coat)
 	:setRannAngry(Coat)
@@ -100,7 +100,7 @@ part 3
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_3;false;noInput)
 press 3
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_After_1)
@@ -129,7 +129,7 @@ part 4 present Evidence/C1_Herbarium
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Testimony_4;false;noInput)
 press 4
 	showDialogWindow(false)
-	playUIAnimation(Press;true)
+	:playPressAnimation()
 	
 	:setCourtroomCamToDefense(true)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press4_1)
@@ -188,7 +188,7 @@ fail
 endexamination
 
 showDialogWindow(false)
-playUIAnimation(Objection;true)
+:playObjectionAnimation()
 
 :setCourtroomCamToDefense(true)
 dialog(Char_Rann;RannCoat;C1_Trial1_I_1)
@@ -203,6 +203,7 @@ showDialogWindow(false)
 dialog(Char_Rann;RannCoat;C1_Trial1_I_4)
 dialog(Char_Rann;RannCoat;C1_Trial1_I_5)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 :setGeraldEyeSurprise(NoCoat)
 :setGeraldSurprise(NoCoat)
@@ -238,6 +239,7 @@ dialog(Char_Judge;Judge;C1_Trial1_I_15)
 dialog(Char_Judge;Judge;C1_Trial1_I_16)
 dialog(Char_Judge;Judge;C1_Trial1_I_17)
 
+playSFX(Damage)
 screenshake(0.1;0.2)
 :setJudgeEyeSurprise()
 :setJudgeThrowBookAway()

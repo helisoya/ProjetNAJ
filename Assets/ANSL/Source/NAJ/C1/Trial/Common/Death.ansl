@@ -9,7 +9,7 @@
 
 	:setRannEyeSad(Coat)
 	:setRannAngry(Coat)
-	playUIAnimation(Guilty;true)
+	:playGuiltyAnimation()
 
 	:setCourtroomCamToDefenseImmediate()
 	dialog(Char_Rann;RannCoat;C1_Trial_Death_4)

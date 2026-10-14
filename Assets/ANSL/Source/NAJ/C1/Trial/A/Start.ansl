@@ -114,6 +114,7 @@ dialog(Char_Robert;Robert;C1_Trial_A_40)
 
 addEvidence(C1_AutopsyReport)
 
+playSFX(EvidenceInfo)
 showEvidenceInfo(Evidence/C1_AutopsyReport;Full)
 dialog(null;null;C1_Trial_Evidence_AutopsyReport_1)
 hideEvidenceInfo()

@@ -1,6 +1,7 @@
 setLocation(Location_C1_Stranded)
 
 setBackground(C1/Cliff;true)
+playAmbient(Wind)
 
 # On Ground
 setCameraPosition(0;-2;-3)

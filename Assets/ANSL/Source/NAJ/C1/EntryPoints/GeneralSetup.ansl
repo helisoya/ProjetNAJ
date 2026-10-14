@@ -18,8 +18,7 @@ createUserVariable(C1_FirstTimeCount;0)
 # 1 : Went to beach
 # 2 : Went to forest start
 # 3 : Went to forest
-# 4 : Wen to forest
-# 5 : Went to river path
+# 4 : Went to river path
 
 createUserVariable(C1_AxeProgress;0)
 # Axe Progress

@@ -1,4 +1,4 @@
-#7008AA79D312D4594E03C96FB00E4400-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#036F9CA4F969C6A44A807417BCDA3A04-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 89c1_commonc1_trial_A
 90Location_C1_TrialPart1
 651
@@ -24,7 +24,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -114,6 +116,7 @@
 36Char_RobertRobertC1_Trial_A_39
 36Char_RobertRobertC1_Trial_A_40
 0C1_AutopsyReport
+51EvidenceInfo
 20Evidence/C1_AutopsyReportFull
 36nullnullC1_Trial_Evidence_AutopsyReport_1
 11
@@ -198,7 +201,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam

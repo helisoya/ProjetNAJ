@@ -171,6 +171,7 @@ dialog(Char_Judge;Judge;C1_Trial1_H_67)
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial1_H_68)
 
+playSFX(Damage)
 :setJudgeEyeAngry()
 :setCourtroomCamToJudge()
 screenshake(0.1;0.2)

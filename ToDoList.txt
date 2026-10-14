@@ -51,17 +51,30 @@ ANF
 Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V
 - Regler Dialog / Inputs lors des contre intérogatoires (dialog sans attente)         V
+- Screenshake UI deconne (peut être avec le skip)
 
-Ajouts ?
+
+To Release
 - Revoir / Aggrandir la partie investigation                                          V
 - Easter Eggs ? (Zone secrete dans l'investigation ?)                                 1
 - Animaux dans la partie investigation                                                V
-- Revoir les visuels dans l'intro 
 - Menu principal
 - Icones Preuves / Portraits / Case (Menu Principal)
 - Selection d'Entry Points                                                            V
 - Trad Française
+- Revoir modèles
+	- Rann
+	- ???
+- Revoir décors
+	- Courthouse (fenetre)
+	- Intro (bateau, rue principale de Kalia)
+- Revoir menus
+	- Menu quêtes ? (Le virer / Au moins l'expliquer)
 - Inté son
+	- SFX                                                                             OK?
+	- Ambient                                                                         OK?
+	- BGM
+	- Son menus
 
 
 

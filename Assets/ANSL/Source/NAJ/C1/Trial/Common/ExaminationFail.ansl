@@ -1,7 +1,7 @@
 showDialogWindow(false)
 :setRannHandsOnDesk(Coat)
 :setRannEyeNeutral(Coat)
-playUIAnimation(Objection;true)
+:playObjectionAnimation()
 
 showLifeBarUI(true)
 setLifeBarUIPreviewRange(1;true;true)
@@ -28,6 +28,7 @@ dialog(Char_Judge;Judge;C1_Trial_Fail_5)
 :setJudgeReadyStrike()
 dialog(Char_Judge;Judge;C1_Trial_Fail_6)
 
+playSFX(LoseLife)
 screenshake(0.1;0.25;true;true)
 :removeHealth(1)
 setLifeBarUIPreviewRange(0;false;false)

@@ -2,17 +2,21 @@ switch(C1_AxeProgress)
 case 0:
 	# Before being able to retreive it
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_1)
+	playSFX(Owl)
 	dialog(null;null;C1_DeadEnd_Owl_Before_2)
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_3)
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_4)
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_5)
+	playSFX(Owl)
 	dialog(null;null;C1_DeadEnd_Owl_Before_6)
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_Before_7)
 case 1:
 	# After being able to retreive it
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_1)
+	playSFX(Owl)
 	dialog(null;null;C1_DeadEnd_Owl_After_2)
 	dialog(null;null;C1_DeadEnd_Owl_After_3)
+	playSFX(BirdFly)
 	setCharacterBody(Owl;FlyOffScreen)
 	wait(2)
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_4)

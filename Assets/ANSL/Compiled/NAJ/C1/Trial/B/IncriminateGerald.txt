@@ -1,4 +1,4 @@
-#F6A2714D05202ACB879D67E272029874-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#1D5607B43000DD35725EDF4D4D4A080C-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 66DefenseCam
 67DefenseCam
 69RobertNormal0.1
@@ -8,7 +8,7 @@
 75JudgeNormal
 36nullnullC1_Trial1_I_62
 36Char_RannRannCoatC1_Trial1_I_63
-2Profile10126Profile/C1_Gerald
+2Profile10131Profile/C1_Gerald
 36nullnullC1_Trial1_I_64
 36Char_RannRannCoatC1_Trial1_I_65
 99false
@@ -42,6 +42,7 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial1_I_78
 36Char_RannRannCoatC1_Trial1_I_79
+51Damage
 610.10.2
 69GeraldNoCoatSurprise0.1
 71GeraldNoCoatSurprise
@@ -54,6 +55,7 @@
 36Char_RannRannCoatC1_Trial1_I_81
 36Char_RannRannCoatC1_Trial1_I_82
 36Char_RannRannCoatC1_Trial1_I_83
+51Damage
 610.10.2
 67WitnessCam
 66WitnessCam
@@ -75,6 +77,7 @@
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_GeraldGeraldNoCoatC1_Trial1_I_91
+51Damage
 610.10.2
 36Char_GeraldGeraldNoCoatC1_Trial1_I_92
 36Char_GeraldGeraldNoCoatC1_Trial1_I_93
@@ -84,7 +87,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -124,7 +129,7 @@
 36nullnullC1_Trial1_I_108
 36nullnullC1_Trial1_I_109
 45Testimony6
-43165
+43171
 22true
 191truetrue
 36Char_RannRannCoatC1_Trial1_I_Fail_1
@@ -139,19 +144,20 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial1_I_Fail_3
 36Char_RannRannCoatC1_Trial1_I_Fail_4true
+51LoseLife
 610.10.25truetrue
 105LifePoints-1
-41143145LifePoints < 0
+41149151LifePoints < 0
 105LifePoints=0
-43146
-43146
+43152
+43152
 190falsefalse
 12falsetrue
 36Char_RannRannCoatC1_Trial1_I_Fail_5
 22false
-41151153LifePoints <= 0
+41157159LifePoints <= 0
 45Death
-43164
+43170
 71JudgeAngry
 75JudgeAngry
 66JudgeCam
@@ -162,5 +168,5 @@
 36Char_JudgeJudgeC1_Trial1_I_Fail_6
 36Char_JudgeJudgeC1_Trial1_I_Fail_7
 45IncriminateGerald
-43164
-43165
+43170
+43171

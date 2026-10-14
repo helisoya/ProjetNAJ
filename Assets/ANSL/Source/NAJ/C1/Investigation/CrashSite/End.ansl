@@ -6,6 +6,7 @@ showDialogWindow(false)
 
 # White Man Screamer
 
+playSFX(RevolverCock)
 setCameraPosition(-26;1;57.5;0.25;false)
 setCameraRotation(-5;128;0;0.25;true)
 
@@ -32,6 +33,8 @@ dialog(Char_Unknown;Robert;C1_Investigation_End_33)
 
 showDialogWindow(false)
 fadeBg(1;true)
+
+playAmbient(null)
 
 dialog(null;null;C1_Investigation_End_34)
 dialog(null;null;C1_Investigation_End_35)

@@ -116,6 +116,13 @@ namespace ANF.Persistent
             if (json.ContainsKey("ambientVolume"))
                 ambientVolume = json.GetFloat("ambientVolume");
 
+            if (mixer)
+            {
+                mixer.SetFloat("BGM", musicVolume);
+                mixer.SetFloat("SFX", sfxVolume);
+                mixer.SetFloat("Ambient", ambientVolume);
+                mixer.SetFloat("Voice", voiceVolume);
+            }
             return true;
         }
 
@@ -148,7 +155,7 @@ namespace ANF.Persistent
                 source.clip = clip;
                 source.outputAudioMixerGroup = mixer.FindMatchingGroups("Ambient")[0];
 
-                musics.Add(new DefaultAudioSong(source, ambientName, baseVolume));
+                ambients.Add(new DefaultAudioSong(source, ambientName, baseVolume));
             }
         }
 

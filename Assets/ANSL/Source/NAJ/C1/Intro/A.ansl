@@ -23,6 +23,8 @@ dialog(null;null;C1_Intro_A_6)
 dialog(null;null;C1_Intro_A_7)
 showDialogWindow(false)
 
+playAmbient(SeaCalm)
+
 fadeBg(0;false)
 
 wait(1)
@@ -102,6 +104,8 @@ dialog(Char_Sartt;Sartt;C1_Intro_A_44)
 showDialogWindow(false)
 
 fadeBg(1;true)
+
+playSFX(ShipHorn)
 
 removeStatic(Sailors)
 removeStatic(Kalia)

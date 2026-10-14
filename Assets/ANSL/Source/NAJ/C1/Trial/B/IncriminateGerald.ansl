@@ -40,6 +40,7 @@ ask(Profile;Profile/C1_Gerald)
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_78)
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_79)
 
+	playSFX(Damage)
 	screenshake(0.1;0.2)
 	:setGeraldSurprise(NoCoat)
 	:setGeraldEyeSurprise(NoCoat)
@@ -50,7 +51,8 @@ ask(Profile;Profile/C1_Gerald)
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_81)
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_82)
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_83)
-
+	
+	playSFX(Damage)
 	screenshake(0.1;0.2)
 	:setCourtroomCamToWitnessImmediate()
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_84)
@@ -73,6 +75,7 @@ ask(Profile;Profile/C1_Gerald)
 	:setCourtroomCamToWitness(true)
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_91)
 
+	playSFX(Damage)
 	screenshake(0.1;0.2)
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_92)
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_I_93)
@@ -132,6 +135,7 @@ wrong
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_3)
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_4;true)
 
+	playSFX(LoseLife)
 	screenshake(0.1;0.25;true;true)
 	:removeHealth(1)
 	setLifeBarUIPreviewRange(0;false;false)

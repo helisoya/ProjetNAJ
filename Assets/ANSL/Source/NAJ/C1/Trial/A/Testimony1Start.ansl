@@ -12,7 +12,7 @@ fadeBg(1;true)
 
 fadeBg(0;false)
 
-playUIAnimation(Testimony;true)
+:playTestimonyAnimation()
 
 dialog(null;null;C1_Trial_Testimony1_Start_1)
 

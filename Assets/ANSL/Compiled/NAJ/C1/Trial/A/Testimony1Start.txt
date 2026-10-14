@@ -1,4 +1,4 @@
-#5EE0DB17651410CE813EA8E244C385A7-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#F13F1789701F860F72C2BEFAC8BBA721-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 99false
 381true
 67WitnessCam
@@ -7,6 +7,7 @@
 75JunoSerious
 69RobertNormal0.1
 380false
+51Testimony
 52Testimonytrue
 36nullnullC1_Trial_Testimony1_Start_1
 36Char_JunoJunoC1_Trial_Testimony1_Start_2
@@ -53,7 +54,7 @@
 66JudgeCam
 67JudgeCam
 36Char_JudgeJudgeC1_Trial_Testimony1_Start_18
-280Choice_Yes55nullnullnullChoice_No76nullnullnull
+280Choice_Yes56nullnullnullChoice_No77nullnullnull
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony1_Tutorial_1
@@ -74,14 +75,14 @@
 69RannCoatThinking0.1
 36nullnullC1_Trial_Testimony1_Tutorial_9
 36nullnullC1_Trial_Testimony1_Tutorial_10
-4383
+4384
 69RannCoatNormal0.1
 71RannCoatNormal
 75RannCoatNeutral
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony1_NoTutorial_1
-4383
+4384
 66JudgeCam
 67JudgeCam
 69RannCoatNormal0.1

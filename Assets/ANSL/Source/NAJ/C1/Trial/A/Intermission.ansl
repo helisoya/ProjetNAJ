@@ -173,6 +173,7 @@ dialog(Char_Rann;null;C1_Trial1_D_73)
 :setJunoNormal()
 dialog(Char_Juno;Juno;C1_Trial1_D_74)
 
+playSFX(DoorSlam)
 screenshake(0.2;0.5;true;true)
 
 dialog(Char_Robert;Robert;C1_Trial1_D_75)
@@ -203,6 +204,7 @@ dialog(Char_Robert;Robert;C1_Trial1_D_83)
 
 dialog(Char_Rann;null;C1_Trial1_D_84)
 
+playSFX(Damage)
 screenshake(0.2;0.2;true;true)
 
 :setRobertOnPouch()
@@ -231,6 +233,7 @@ dialog(Char_Robert;Robert;C1_Trial1_D_99)
 showDialogWindow(false)
 
 setCharacterAlpha(Robert;0;1;true)
+playSFX(DoorSlam)
 screenshake(0.2;0.5;true;true)
 
 :setRobertEyeNormal()

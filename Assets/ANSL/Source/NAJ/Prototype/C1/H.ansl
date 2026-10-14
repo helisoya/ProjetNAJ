@@ -17,6 +17,7 @@ setCameraPosition(ProsecutionCam;0.5;false)
 setCameraRotation(ProsecutionCam;0.5;true)
 dialog(Prototype_Sherif;Sherif;Prototype_H_7)
 
+playSFX(EvidenceInfo)
 addEvidence(C1_Knife)
 showEvidenceInfo(Evidence/C1_Knife;Full)
 dialog(null;null;Prototype_H_8)

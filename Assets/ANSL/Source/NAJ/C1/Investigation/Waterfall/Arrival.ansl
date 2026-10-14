@@ -3,6 +3,7 @@ setFg(1)
 
 setBackground(C1/Waterfall;true)
 setSkybox(Day)
+playAmbient(Waterfall)
 
 fadeFg(0;false)
 

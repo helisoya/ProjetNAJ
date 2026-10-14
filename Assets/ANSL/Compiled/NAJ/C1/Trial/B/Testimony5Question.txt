@@ -1,11 +1,12 @@
-#9C5E46295043F1147B3E46ED70AA2FCC-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#FB10643AFF6C4A199ABE6B34A11B177A-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 69RannCoatNormal0.1
 71RannCoatNormal
 75RannCoatNeutral
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_32
-2Profile563Profile/C1_Gerald
+2Profile567Profile/C1_Gerald
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_34
 99false
+51Damage
 610.10.2
 71GeraldNoCoatSurprise
 75GeraldNoCoatSerious
@@ -25,6 +26,7 @@
 36Char_RobertRobertC1_Trial_Testimony5_Press3_38
 36Char_RobertRobertC1_Trial_Testimony5_Press3_39
 99false
+51Damage
 610.10.2
 67WitnessCam0.25false
 66WitnessCam0.25true
@@ -46,7 +48,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1071
+1070.5
+51Gavel
+1070.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -61,7 +65,7 @@
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_47
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_48
 45Testimony5End
-4378
+4382
 69RannCoatStress0.1
 71RannCoatNormal
 75RannCoatOops
@@ -76,4 +80,4 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_4
 45Testimony5Question
-4378
+4382

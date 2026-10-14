@@ -44,6 +44,7 @@ dialog(Prototype_Rann;null;Prototype_A_14)
 
 dialog(Prototype_Gerald;Gerald;Prototype_A_15)
 
+playSFX(EvidenceInfo)
 showEvidenceInfo(Evidence/C1_Herbarium;Full)
 dialog(null;null;Prototype_A_16)
 hideEvidenceInfo()
@@ -67,11 +68,13 @@ dialog(Prototype_Rann;null;Prototype_A_23)
 
 addEvidence(C1_Injury)
 
+playSFX(EvidenceInfo)
 showEvidenceInfo(Evidence/C1_Injury;Full)
 dialog(null;null;Prototype_A_24)
 hideEvidenceInfo()
 wait(0.5)
 
+playSFX(EvidenceInfo)
 addEvidence(C1_Coat)
 showEvidenceInfo(Evidence/C1_Coat;Full)
 dialog(null;null;Prototype_A_25)

@@ -1,4 +1,4 @@
-#D7BF2990A1BDE2447C51D454736270B0-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#4585C581478DD0842F35CC0B4949F348-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
 99false
 381true
 67WitnessCam
@@ -14,6 +14,7 @@
 75RannCoatNeutral
 69JudgeNormal0.1
 380false
+51Testimony
 52Testimonytrue
 36nullnullC1_Trial_Testimony6_Start_1
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony6_Start_2
@@ -65,15 +66,17 @@
 75RannCoatNeutral
 69JudgeNormal0.1
 380false
+51Rebuttal
 52Rebuttaltrue
 36nullnullC1_Trial_Testimony6_Testimony_0
 4
-9225170False297False4141False5176False
+9232172False2100False4146False5182False
 181
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony6_Testimony_1falsenoInput
-101False742212257097
+101False7622823272100
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -95,12 +98,13 @@
 66WitnessCam
 380false
 182
-4369
+4371
 182
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony6_Testimony_2falsenoInput
-102False10122122570141
+102False10422823272146
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -119,6 +123,7 @@
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony6_Press2_4
+51Damage
 610.10.2
 67WitnessCam
 66WitnessCam
@@ -139,12 +144,13 @@
 36Char_JudgeJudgeC1_Trial_Testimony6_Press2_11
 45Testimony6End
 184
-4369
+4371
 184
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony6_Testimony_4falsenoInput
-104False14522122597176
+104False150228232100182
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -174,12 +180,13 @@
 66WitnessCam
 380false
 185
-4369
+4371
 185
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony6_Testimony_5falsenoInput
-105False180221225141202
+105False186228232146209
 99false
+51Press
 52Presstrue
 67DefenseCam0.25false
 66DefenseCam0.25true
@@ -200,10 +207,10 @@
 67WitnessCam
 66WitnessCam
 380false
-43202
+43209
 181
 21false
-3225
+3232
 99false
 69RannCoatThinking0.1
 381true
@@ -219,9 +226,9 @@
 67WitnessCam
 66WitnessCam
 380false
-4369
+4371
 181
 21false
 45../Common/ExaminationFail
-4369
+4371
 46ErrorTestimony 6 Exit at wrong file
