@@ -1,5 +1,5 @@
-#3DCC622E19C987F6EDBAD2134CE9BB3A-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
-99false
+#3DCC622E19C987F6EDBAD2134CE9BB3A-75CB9F499A31589589BCFE552698D8BC
+100false
 69RannCoatHandsOnDesk0.1
 71RannCoatNormal
 75RannCoatNeutral
@@ -34,9 +34,9 @@
 36Char_JudgeJudgeC1_Trial_Fail_6
 51LoseLife
 610.10.25truetrue
-105LifePoints-1
+106LifePoints-1
 413739LifePoints < 0
-105LifePoints=0
+106LifePoints=0
 4340
 4340
 190falsefalse
@@ -45,7 +45,7 @@
 67DefenseCam
 36nullnullC1_Trial_Fail_7
 36nullnullC1_Trial_Fail_8
-99false
+100false
 22false
 414951LifePoints <= 0
 45Death

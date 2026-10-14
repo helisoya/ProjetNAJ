@@ -44,7 +44,7 @@ ANF
 - Revoir Start / ChangeScene / Load au niveau des attentes inter composants           V
 - Screenshake                                                                         V
 - Brouillard                                                                          V
-- Bip bip pour texte
+- Bip bip pour texte                                                                  V
 - Verifier Checksums pour savoir si une save est corrompu ou pas					  V
 - Revoir Callbacks / Invoke (FlowState) -> INT
 
@@ -52,6 +52,7 @@ Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V
 - Regler Dialog / Inputs lors des contre intérogatoires (dialog sans attente)         V
 - Screenshake UI deconne (peut être avec le skip)
+- Skip Toggle qui bug
 
 
 To Release

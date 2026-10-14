@@ -352,6 +352,7 @@ MonoBehaviour:
   continueButton: {fileID: 2268815960365812632}
   continueIcon: {fileID: 5956435587944166479}
   punctuationSpeedFactor: 3
+  textBlepTimer: 0.005
   references:
     version: 2
     RefIds:

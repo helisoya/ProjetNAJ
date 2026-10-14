@@ -25,9 +25,11 @@ namespace ANF.GUI
         [SerializeField] private Locals.LocalizedText dialogText;
         [SerializeField] private Button continueButton;
         [SerializeField] private CanvasGroup continueIcon;
+        private AudioManager audioManager;
 
         [Header("Infos")]
         [SerializeField] private float punctuationSpeedFactor = 3;
+        [SerializeField] private float textBlepTimer = 0.1f;
 
         private List<string> textIds = new List<string>();
         private List<DialogSegment> textSegments;
@@ -40,6 +42,7 @@ namespace ANF.GUI
 
         private float secondsBetweenCharacters;
         private float defaultSecondsBetweenCharacters;
+        private float currentTextBlepWaitTime;
 
         public bool showingDialog { get; private set; }
 
@@ -64,6 +67,7 @@ namespace ANF.GUI
 
         public override void OnStart()
         {
+            PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
         }
 
         public void OnSkipModeToggle(bool enabled)
@@ -101,6 +105,7 @@ namespace ANF.GUI
             showingDialog = true;
             currentWaitTime = 0;
             currentCharacterId = characterId;
+            currentTextBlepWaitTime = 0;
             this.secondsBetweenCharacters = secondsBetweenCharacters;
             this.defaultSecondsBetweenCharacters = secondsBetweenCharacters;
             currentSpeakerID = speakerID;
@@ -257,6 +262,20 @@ namespace ANF.GUI
                         currentWaitTime = secondsBetweenCharacters *
                             (IsPunctuation(text.textInfo.characterInfo[revealIndex - 1].character) ? punctuationSpeedFactor : 1.0f);
                         text.maxVisibleCharacters = revealIndex;
+
+                        if (audioManager != null)
+                        {
+                            if (currentTextBlepWaitTime <= 0.0f)
+                            {
+                                audioManager.PlayTextBlip();
+                                currentTextBlepWaitTime = textBlepTimer;
+                            }
+                            else
+                            {
+                                currentTextBlepWaitTime -= Time.deltaTime;
+                            }
+
+                        }
                     }
                     else
                     {
@@ -414,6 +433,8 @@ namespace ANF.GUI
 
         public override bool OnChangeScene()
         {
+            audioManager = null;
+
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
                 settings.Unregister("DialogUI_BackgroundOpacity", OnBackgroundOpacityChange);
             return true;

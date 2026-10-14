@@ -1,4 +1,4 @@
-#EEE008F162C1479A37409FC05A50E93F-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#EEE008F162C1479A37409FC05A50E93F-75CB9F499A31589589BCFE552698D8BC
 29
 66DefenseCam
 67DefenseCam
@@ -91,7 +91,7 @@
 67ProsecutionCam
 66ProsecutionCam
 36Char_RobertnullC1_Trial_D_36
-99false
+100false
 381true
 66LobbyCam
 67LobbyCam
@@ -196,7 +196,7 @@
 69RobertNormal0.1
 36Char_RobertRobertC1_Trial1_D_98
 36Char_RobertRobertC1_Trial1_D_99
-99false
+100false
 68Robert01true
 51DoorSlam
 610.20.5truetrue
@@ -205,8 +205,8 @@
 76RobertProsecutorSpot
 77RobertProsecutorSpot
 68Robert1
-1071
+1081
 36nullnullC1_Trial1_D_100
-99false
+100false
 401true
 45../B/Start

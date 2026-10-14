@@ -1,4 +1,4 @@
-#204B7D60C55269D1D5F3518987D769D8-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#204B7D60C55269D1D5F3518987D769D8-75CB9F499A31589589BCFE552698D8BC
 89c1_commonc1_trial_B
 90Location_C1_TrialPart2
 25
@@ -8,13 +8,13 @@
 400false
 71JudgeNormal
 75JudgeNormal
-99false
+100false
 66HammerCam
 67HammerCam
 69JudgeStrike
-1070.5
+1080.5
 51Gavel
-1070.5
+1080.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -28,17 +28,17 @@
 66JudgeCam
 67JudgeCam
 36Char_JudgeJudgeC1_Trial1_E_6
-99false
+100false
 381true
 23NovaKaliaSoldierfalseWitnessSpot
 67WitnessCam
 66WitnessCam
 380false
-1072
+1082
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial1_E_7
-99false
+100false
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_8
@@ -64,7 +64,7 @@
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_16
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_17
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_18
-99false
+100false
 71RobertThinking
 75RobertNormal
 67ProsecutionCam0.25false
@@ -122,20 +122,20 @@
 66WitnessCam
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_34
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_35
-99false
+100false
 71RobertAngry
 75RobertAngry
 69RobertOnPouch0.1
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial1_E_36
-99false
+100false
 67WitnessCam
 66WitnessCam
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_37
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_38
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_39
-99false
+100false
 71RobertNormal
 75RobertNormal
 69RobertNormal0.1
@@ -172,22 +172,22 @@
 67ProsecutionCam
 66ProsecutionCam
 36Char_RobertRobertC1_Trial1_E_49
-99false
+100false
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_50
-99false
+100false
 71RobertAngry
 75RobertAngry
 69RobertOnPouch0.1
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial1_E_51
-99false
+100false
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_52
-99false
+100false
 69RobertNormal0.1
 71RobertNormal
 75RobertNormal
@@ -223,17 +223,17 @@
 67DefenseCam
 36nullnullC1_Trial1_E_63
 36nullnullC1_Trial1_E_64
-99false
+100false
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_65
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_66
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_67
-99false
+100false
 67DefenseCam0.25false
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial1_E_68
-99false
+100false
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_69
@@ -262,7 +262,7 @@
 66WitnessCam
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_79
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_80
-99false
+100false
 71RannCoatNormal
 75RannCoatNeutral
 69RannCoatHandsOnDesk0.1
@@ -270,7 +270,7 @@
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial1_E_81
 36Char_RannRannCoatC1_Trial1_E_82
-99false
+100false
 381true
 76NovaKaliaSoldierWitnessLeftSpot
 77NovaKaliaSoldierWitnessLeftSpot
@@ -278,7 +278,7 @@
 67WitnessCam
 66WitnessCam
 380false
-1072
+1082
 66JudgeCam
 67JudgeCam
 36Char_JudgeJudgeC1_Trial1_E_83
@@ -293,7 +293,7 @@
 71RannCoatSurprise
 75RannCoatSurprise
 36Char_RannRannCoatC1_Trial1_E_85
-99false
+100false
 71GeraldNoCoatWink
 75GeraldNoCoatNormal
 67WitnessCam0.25false

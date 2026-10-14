@@ -64,6 +64,7 @@ namespace ANF.Scene
             {
                 audioManager.PlayAmbient(string.IsNullOrEmpty(ambient) ? null : ambient, 1);
                 audioManager.PlayMusic(string.IsNullOrEmpty(music) ? null : music, 1);
+                audioManager.SetTextBlipToDefault();
             }
 
             if (manager.GetWorld().GetComponent(out backgroundManager))

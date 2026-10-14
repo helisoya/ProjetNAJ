@@ -16,6 +16,7 @@ namespace ANF.Persistent
         [SerializeField] private float ambientVolume;
         [SerializeField] private float voiceVolume;
         [SerializeField] private float musicVolume;
+        [SerializeField] private string textblip = "TextBlip";
 
 
         [Header("Infos")]
@@ -27,12 +28,14 @@ namespace ANF.Persistent
         private List<DefaultAudioSong> ambients;
 
         private AudioSource sfxSource;
+        private AudioSource textBlipSource;
         private AudioSource voiceSource;
 
         private float defaultMusicVolume;
         private float defaultSFXVolume;
         private float defaultAmbientVolume;
         private float defaultVoiceVolume;
+        private string defaultTextBlip;
 
         private PlayerAudioData playerAudioData;
         private ResourceManager resourceManager;
@@ -47,6 +50,7 @@ namespace ANF.Persistent
                 musicVolume = musicVolume,
                 voiceVolume = voiceVolume,
                 ambientVolume = ambientVolume,
+                textblip = textblip
             };
         }
 
@@ -74,6 +78,7 @@ namespace ANF.Persistent
             defaultSFXVolume = sfxVolume;
             defaultAmbientVolume = ambientVolume;
             defaultVoiceVolume = voiceVolume;
+            defaultTextBlip = textblip;
 
             musics = new List<DefaultAudioSong>();
             ambients = new List<DefaultAudioSong>();
@@ -89,6 +94,11 @@ namespace ANF.Persistent
             sfxSource = audioObj.AddComponent<AudioSource>();
             sfxSource.outputAudioMixerGroup = mixer.FindMatchingGroups("SFX")[0];
             sfxSource.playOnAwake = false;
+
+            textBlipSource = audioObj.AddComponent<AudioSource>();
+            textBlipSource.outputAudioMixerGroup = mixer.FindMatchingGroups("SFX")[0];
+            textBlipSource.playOnAwake = false;
+            SetTextBlipToDefault();
 
             voiceSource = audioObj.AddComponent<AudioSource>();
             voiceSource.outputAudioMixerGroup = mixer.FindMatchingGroups("Voice")[0];
@@ -321,6 +331,40 @@ namespace ANF.Persistent
         public override float GetVoiceVolume()
         {
             return voiceVolume;
+        }
+
+        public override void SetTextBlip(string blipName)
+        {
+            if (string.IsNullOrEmpty(blipName))
+                return;
+
+            AudioClip newClip = GetCachedClip(blipName, "SFX/", 0);
+
+            if (newClip == null)
+                return;
+
+            string currentBlip = playerAudioData.GetCurrentTextBlip();
+            playerAudioData.SetCurrentTextBlip(blipName);
+
+            if (string.IsNullOrEmpty(currentBlip) || !currentBlip.Equals(blipName))
+            {
+                textBlipSource.clip = newClip;
+            }
+        }
+
+        public override void SetTextBlipToDefault()
+        {
+            SetTextBlip(defaultTextBlip);
+        }
+
+        public override void PlayTextBlip()
+        {
+            if (textBlipSource.clip)
+            {
+                textBlipSource.PlayOneShot(textBlipSource.clip);
+                //textBlipSource.Stop();
+                //textBlipSource.Play();
+            }
         }
     }
 

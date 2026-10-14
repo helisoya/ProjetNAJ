@@ -52,6 +52,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 639cc891d4d89ba4fbb3e7aafba3ef48
+    m_Address: Audio/SFX/TextBlip
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    - Common_SFX
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 74f30d81b6cb41d40b5ff1368ad88881
     m_Address: Audio/SFX/EvidenceInfo
     m_ReadOnly: 0

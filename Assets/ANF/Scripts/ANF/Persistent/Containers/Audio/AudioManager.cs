@@ -63,6 +63,17 @@ namespace ANF.Persistent
         public abstract float GetVoiceVolume();
 
         /// <summary>
+		/// Changes the current text blip's name
+		/// </summary>
+		/// <param name="blipName">The new blip's name (SFX)</param>
+        public abstract void SetTextBlip(string blipName);
+
+        /// <summary>
+		/// Reverts the text blip to its default value
+		/// </summary>
+        public abstract void SetTextBlipToDefault();
+
+        /// <summary>
 		/// Plays a sound effect
 		/// </summary>
 		/// <param name="sfxName">The SFX's name</param>
@@ -104,6 +115,11 @@ namespace ANF.Persistent
 		/// Plays an SFX for canceling something in the UI
 		/// </summary>
         public abstract void PlayUICursorCancelSFX();
+
+        /// <summary>
+		/// Plays a text blip
+		/// </summary>
+        public abstract void PlayTextBlip();
     }
 
     /// <summary>
@@ -116,6 +132,25 @@ namespace ANF.Persistent
         private float currentAmbientVolume;
         private string currentMusic;
         private float currentMusicVolume;
+        private string currentTextBlip;
+
+        /// <summary>
+		/// Changes the current text blip name
+		/// </summary>
+		/// <param name="textBlip">The new text blip</param>
+        public void SetCurrentTextBlip(string textBlip)
+        {
+            currentTextBlip = textBlip;
+        }
+
+        /// <summary>
+		/// Gets the current text blip's name
+		/// </summary>
+		/// <returns>The current text blip's name</returns>
+        public string GetCurrentTextBlip()
+        {
+            return currentTextBlip;
+        }
 
         /// <summary>
 		/// Sets the current ambient
@@ -227,6 +262,11 @@ namespace ANF.Persistent
                 audioManager.PlayMusic(json.GetString("currentMusic"), volume);
             }
 
+            if (json.ContainsKey("currentTextBlip") && audioManager != null)
+            {
+                audioManager.SetTextBlip(json.GetString("currentTextBlip"));
+            }
+
             return true;
         }
 
@@ -243,11 +283,15 @@ namespace ANF.Persistent
                 json.Add("currentMusic", currentMusic);
                 json.Add("currentMusicVolume", currentMusicVolume);
             }
+
+            if (currentTextBlip != null)
+            {
+                json.Add("currentTextBlip", currentTextBlip);
+            }
         }
 
         public void Reset()
         {
-
         }
     }
 }

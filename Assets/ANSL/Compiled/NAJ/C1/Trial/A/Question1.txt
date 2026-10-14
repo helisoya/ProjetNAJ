@@ -1,4 +1,4 @@
-#B2B7C05BB3EA82213B11E334277CF03C-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#B2B7C05BB3EA82213B11E334277CF03C-75CB9F499A31589589BCFE552698D8BC
 66JudgeCam
 67JudgeCam
 69RannCoatNormal0.1
@@ -16,13 +16,13 @@
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Juno_1
-99true
+100true
 71JunoSurprise
 75JunoSurprise
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_JunoJunoC1_Trial_Question1_Juno_2
-99true
+100true
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial_Question1_Juno_3
@@ -30,7 +30,7 @@
 36Char_RobertRobertC1_Trial_Question1_Juno_5
 36Char_RobertRobertC1_Trial_Question1_Juno_6
 36Char_RobertRobertC1_Trial_Question1_Juno_7
-99true
+100true
 69RannCoatStress0.1
 71RannCoatNormal
 75RannCoatOops
@@ -38,7 +38,7 @@
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial_Question1_Juno_8
 36Char_RannRannCoatC1_Trial_Question1_Juno_9
-99true
+100true
 22true
 191truetrue
 71JudgeAngry
@@ -50,9 +50,9 @@
 36Char_JudgeJudgeC1_Trial_Question1_Juno_12
 51LoseLife
 610.10.25truetrue
-105LifePoints-1
+106LifePoints-1
 415355LifePoints < 0
-105LifePoints=0
+106LifePoints=0
 4356
 4356
 190falsefalse
@@ -93,12 +93,12 @@
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Suicide_1
-99false
+100false
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial_Question1_Suicide_2
 36Char_RobertRobertC1_Trial_Question1_Suicide_3
-99false
+100false
 69RannCoatStress0.1
 71RannCoatNormal
 75RannCoatOops
@@ -117,13 +117,13 @@
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Animal_1
-99false
+100false
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial_Question1_Animal_2
 36Char_RobertRobertC1_Trial_Question1_Animal_3
 36Char_RobertRobertC1_Trial_Question1_Animal_4
-99false
+100false
 69RannCoatStress0.1
 71RannCoatNormal
 75RannCoatOops

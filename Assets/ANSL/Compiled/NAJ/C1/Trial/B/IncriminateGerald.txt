@@ -1,4 +1,4 @@
-#1D5607B43000DD35725EDF4D4D4A080C-DC2DF0CFB38E08D194C6EFA2EF0E7DC8
+#1D5607B43000DD35725EDF4D4D4A080C-75CB9F499A31589589BCFE552698D8BC
 66DefenseCam
 67DefenseCam
 69RobertNormal0.1
@@ -11,12 +11,12 @@
 2Profile10131Profile/C1_Gerald
 36nullnullC1_Trial1_I_64
 36Char_RannRannCoatC1_Trial1_I_65
-99false
+100false
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 36Char_RobertRobertC1_Trial1_I_66
 36Char_RobertRobertC1_Trial1_I_67
-99false
+100false
 67DefenseCam0.25false
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial1_I_68
@@ -67,13 +67,13 @@
 69GeraldNoCoatOnBar0.1
 36Char_GeraldGeraldNoCoatC1_Trial1_I_86
 36Char_GeraldGeraldNoCoatC1_Trial1_I_87
-99false
+100false
 67DefenseCam0.25false
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial1_I_88
 36Char_RannRannCoatC1_Trial1_I_89
 36Char_RannRannCoatC1_Trial1_I_90
-99false
+100false
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_GeraldGeraldNoCoatC1_Trial1_I_91
@@ -83,13 +83,13 @@
 36Char_GeraldGeraldNoCoatC1_Trial1_I_93
 71JudgeThinking
 75JudgeNormal
-99false
+100false
 66HammerCam
 67HammerCam
 69JudgeStrike
-1070.5
+1080.5
 51Gavel
-1070.5
+1080.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -133,7 +133,7 @@
 22true
 191truetrue
 36Char_RannRannCoatC1_Trial1_I_Fail_1
-99false
+100false
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
 71RannCoatNormal
@@ -146,9 +146,9 @@
 36Char_RannRannCoatC1_Trial1_I_Fail_4true
 51LoseLife
 610.10.25truetrue
-105LifePoints-1
+106LifePoints-1
 41149151LifePoints < 0
-105LifePoints=0
+106LifePoints=0
 43152
 43152
 190falsefalse
