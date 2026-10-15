@@ -17,7 +17,7 @@ namespace ANF.GUI
                 return;
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out AudioManager audioManager))
-                audioManager.PlayUICursorConfirmSFX();
+                audioManager.PlayUICursorCancelSFX();
 
             linkedComponent.SetEnabled(false);
 

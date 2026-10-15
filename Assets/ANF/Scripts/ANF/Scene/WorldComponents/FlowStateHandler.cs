@@ -77,7 +77,9 @@ namespace ANF.Scene
 
         private void OnAutoPlayInput(InputAction.CallbackContext context)
         {
-            if (!autoplayToggle || context.ReadValueAsButton())
+            bool buttonPressed = context.ReadValueAsButton();
+            if ((autoplayToggle && buttonPressed) ||
+                (!autoplayToggle && autoPlay != buttonPressed))
             {
                 if (audioManager != null)
                     audioManager.PlayUICursorConfirmSFX();
@@ -88,7 +90,9 @@ namespace ANF.Scene
 
         private void OnSkipModeInput(InputAction.CallbackContext context)
         {
-            if (!skipModeToggle || context.ReadValueAsButton())
+            bool buttonPressed = context.ReadValueAsButton();
+            if ((skipModeToggle && buttonPressed) ||
+                (!skipModeToggle && skipMode != buttonPressed))
             {
                 if (audioManager != null)
                     audioManager.PlayUICursorConfirmSFX();

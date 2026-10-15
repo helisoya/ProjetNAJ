@@ -15,8 +15,15 @@ MonoBehaviour:
   m_GroupName: Audio_SFX
   m_GUID: 2c4874bcbd8c5134ba11cb9864c7eb9b
   m_SerializeEntries:
-  - m_GUID: 0eeb692381ddc9246897ca8ed683ebd6
-    m_Address: Audio/SFX/CursorSelect
+  - m_GUID: 16cde19c88530c74da44617d4c6ced19
+    m_Address: Audio/SFX/CursorMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    - Common_SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18cf671c799813a47902114732acd142
+    m_Address: Audio/SFX/CursorConfirm
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -101,8 +108,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9b41215d2eb99ba45bda51ff847464fe
-    m_Address: Audio/SFX/CursorCancel
+  - m_GUID: 99c7d43c036c2e54b98dd4747d9e232d
+    m_Address: Audio/SFX/CursorError
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -132,14 +139,21 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce275fa5f382f0a4c974fe223a6aaf3c
+    m_Address: Audio/SFX/CursorCancel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    - Common_SFX
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d20d3f2f2f53d564f8dc351bd13d8196
     m_Address: Audio/SFX/ShipHorn
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e3c699f82808e484997204ecd1f0ec41
-    m_Address: Audio/SFX/CursorConfirm
+  - m_GUID: d3149043a2f56f043a577b9e3cdf62dd
+    m_Address: Audio/SFX/CursorSelect
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio

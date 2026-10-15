@@ -12,6 +12,8 @@ namespace ANF.Scene
     [System.Serializable]
     public class MainCameraController : WorldComponent
     {
+        private readonly int SCREENSHAKE_TWEENING_ID = -4242;
+
         [Header("Infos")]
         [SerializeField] private Vector3 startPosition = new Vector3(0, 0, -10);
         [SerializeField] private Vector3 startRotation = new Vector3(0, 0, 0);
@@ -69,8 +71,11 @@ namespace ANF.Scene
                     if (manager.GetGUIManager().GetComponent(component, out GUIComponent guiComponent))
                     {
                         RectTransform rectTransform = guiComponent.GetComponent<RectTransform>();
+                        DOTween.Kill(rectTransform, SCREENSHAKE_TWEENING_ID, true);
                         Vector2 lastAnchoredPosition = rectTransform.anchoredPosition;
-                        rectTransform.DOShakeAnchorPos(duration, strength * shakeWorldToUIRation).OnComplete(() => { rectTransform.anchoredPosition = lastAnchoredPosition; });
+                        rectTransform.DOShakeAnchorPos(duration, strength * shakeWorldToUIRation)
+                            .OnComplete(() => { rectTransform.anchoredPosition = lastAnchoredPosition; })
+                            .SetId(SCREENSHAKE_TWEENING_ID);
                     }
                 }
             }

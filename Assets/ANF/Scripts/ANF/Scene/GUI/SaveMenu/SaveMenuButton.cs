@@ -91,7 +91,7 @@ namespace ANF.GUI
             else
             {
                 if (audioManager != null)
-                    audioManager.PlayUICursorCancelSFX();
+                    audioManager.PlaySFX("CursorError", 1.0f);
                 root.DOShakeRotation(0.5f, new Vector3(0, 0, 10f)).SetEase(Ease.InOutElastic).OnComplete(() =>
                 {
                     root.DORotate(Vector3.zero, 0.1f).SetEase(Ease.OutQuad);

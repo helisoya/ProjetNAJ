@@ -1,3 +1,4 @@
+using ANF.Persistent;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -73,10 +74,32 @@ namespace ANF.GUI
             root.DOScale(Vector2.one * 0.8f, 0.5f).SetEase(Ease.OutQuad);
         }
 
+        public void ErrorAnimation()
+        {
+            Color startColor = label.GetText().color;
+
+            root.DOShakeScale(0.5f, 0.1f).SetEase(Ease.InOutElastic).OnComplete(() =>
+                {
+                    root.DOScale(1.0f, 0.1f).SetEase(Ease.OutQuad);
+                });
+
+            label.GetText().DOColor(Color.red, 0.25f).SetEase(Ease.Flash).onComplete += () =>
+            {
+                label.GetText().DOColor(startColor, 0.25f).SetEase(Ease.Flash);
+            };
+        }
+
         public void OnPointerDown(PointerEventData eventData)
         {
             if (eventData.button == PointerEventData.InputButton.Left && isUnlocked)
                 logsMenuUI.ShowLog(data);
+            else if (!isUnlocked)
+            {
+                if (PersistentDataManager.instance.GetGlobalData().GetComponent(out AudioManager audioManager))
+                    audioManager.PlaySFX("CursorError", 1.0f);
+                ErrorAnimation();
+            }
+
         }
 
         public void OnPointerEnter(PointerEventData eventData)

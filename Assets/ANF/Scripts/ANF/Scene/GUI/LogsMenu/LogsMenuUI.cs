@@ -144,6 +144,11 @@ namespace ANF.GUI
             {
                 if (buttons[currentButtonIdx].IsUnlocked())
                     ShowLog(buttons[currentButtonIdx].GetData());
+                else
+                {
+                    audioManager.PlaySFX("CursorError", 1.0f);
+                    buttons[currentButtonIdx].ErrorAnimation();
+                }
             }
         }
 

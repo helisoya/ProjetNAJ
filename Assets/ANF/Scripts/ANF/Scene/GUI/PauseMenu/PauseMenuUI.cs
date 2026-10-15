@@ -163,7 +163,7 @@ namespace ANF.GUI
                     if (isEnabled)
                         audioManager.PlayUICursorCancelSFX();
                     else
-                        audioManager.PlayUICursorConfirmSFX();
+                        audioManager.PlaySFX("CursorMenu", 1.0f);
                 }
                 SetEnabled(!isEnabled);
             }

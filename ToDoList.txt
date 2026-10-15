@@ -47,12 +47,13 @@ ANF
 - Bip bip pour texte                                                                  V
 - Verifier Checksums pour savoir si une save est corrompu ou pas					  V
 - Revoir Callbacks / Invoke (FlowState) -> INT
+- Système de save plus robuste (Au niveau des PersistantData ?)
 
 Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V
 - Regler Dialog / Inputs lors des contre intérogatoires (dialog sans attente)         V
-- Screenshake UI deconne (peut être avec le skip)
-- Skip Toggle qui bug
+- Screenshake UI deconne (peut être avec le skip)                                     V
+- Skip Toggle qui bug                                                                 V
 
 
 To Release
@@ -63,6 +64,7 @@ To Release
 - Icones Preuves / Portraits / Case (Menu Principal)
 - Selection d'Entry Points                                                            V
 - Trad Française
+- Opti UI (mettre les trucs dès le départ, masquer quand pas visible)
 - Revoir modèles
 	- Rann
 	- ???
@@ -70,12 +72,12 @@ To Release
 	- Courthouse (fenetre)
 	- Intro (bateau, rue principale de Kalia)
 - Revoir menus
-	- Menu quêtes ? (Le virer / Au moins l'expliquer)
+	- Menu quêtes / logs ? (Les virer / Au moins les expliquer)
 - Inté son
 	- SFX                                                                             OK?
 	- Ambient                                                                         OK?
 	- BGM
-	- Son menus
+	- Son menus                                                                       OK mais faire attention aux playoneshots trop nombreux
 
 
 

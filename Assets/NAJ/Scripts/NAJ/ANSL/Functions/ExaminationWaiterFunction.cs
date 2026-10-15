@@ -110,7 +110,7 @@ namespace NAJ.ANSL
             if (!detectedGoingRight)
             {
                 if (audioManager != null)
-                    audioManager.PlayUICursorConfirmSFX();
+                    audioManager.PlayUICursorMoveSFX();
 
                 detectedGoingLeft = true;
             }
@@ -122,7 +122,7 @@ namespace NAJ.ANSL
             if (!detectedGoingLeft)
             {
                 if (audioManager != null)
-                    audioManager.PlayUICursorConfirmSFX();
+                    audioManager.PlayUICursorMoveSFX();
 
                 detectedGoingRight = true;
             }
