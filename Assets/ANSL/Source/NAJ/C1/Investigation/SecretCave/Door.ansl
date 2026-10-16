@@ -59,6 +59,7 @@ else
 		dialog(Char_Rann;null;C1_SecretCave_Axe_12)
 
 		variable(C1_SecretElk;=;1)
+		unlockAchievement(ACHIEVEMENT_C1_SECRETELK)
 
 	endif
 endif

@@ -1,4 +1,4 @@
-#062B09DA34996AA6B871D17FC970D6BB-75CB9F499A31589589BCFE552698D8BC
+#062B09DA34996AA6B871D17FC970D6BB-8B2D142FF7EBD22669C2A913A0F2939F
 36nullnullTalk_Chasseur_Confirm_Lie_1
 280Choice_Yes2nullnullnullChoice_RevealHisSecret13FilsWeirdQuest==4nullnullChoice_NotNow23nullnullnull
 36Char_LoupGarounullTalk_Chasseur_Ours_1
@@ -9,8 +9,8 @@
 36Char_LoupGarounullTalk_Chasseur_Ours_6
 69ChasseurNormal
 36Char_ChasseurnullTalk_Chasseur_Ours_7
-106LieToChasseurQuest=2
-106ValueFils+3
+107LieToChasseurQuest=2
+107ValueFils+3
 4329
 36Char_LoupGarounullTalk_Chasseur_Fils_1
 36Char_ChasseurnullTalk_Chasseur_Fils_2
@@ -18,9 +18,9 @@
 36Char_LoupGarounullTalk_Chasseur_Fils_4
 69ChasseurNormal
 36Char_ChasseurnullTalk_Chasseur_Fils_5
-106LieToChasseurQuest=3
-106ValueFils-3
-106ValueChasseur+2
+107LieToChasseurQuest=3
+107ValueFils-3
+107ValueChasseur+2
 4329
 103CycleCount28124226
 45ChasseurC1Default

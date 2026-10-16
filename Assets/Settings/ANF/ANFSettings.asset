@@ -40,6 +40,9 @@ MonoBehaviour:
   - id: 
     data:
       rid: 8808018580948385883
+  - id: 
+    data:
+      rid: 992773608557510784
   registeredGlobalDataContainers:
   - id: 
     data:
@@ -67,6 +70,10 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 992773608557510784
+      type: {class: ANFSteamworkContainer, ns: ANF.Persistent, asm: Assembly-CSharp}
+      data:
+        appid: 5458970
     - rid: 1438066020397613127
       type: {class: PlayerVariableContainer, ns: ANF.Persistent, asm: Assembly-CSharp}
       data:
@@ -485,17 +492,20 @@ MonoBehaviour:
         - typeName: ANF.ANSL.UnloadBundleFunction
           id: 104
           enabled: 1
-        - typeName: ANF.ANSL.UnlockLogFunction
+        - typeName: ANF.ANSL.UnlockAchievementFunction
           id: 105
           enabled: 1
-        - typeName: ANF.ANSL.VariableFunction
+        - typeName: ANF.ANSL.UnlockLogFunction
           id: 106
           enabled: 1
-        - typeName: ANF.ANSL.waitForContextEndFunction
+        - typeName: ANF.ANSL.VariableFunction
           id: 107
           enabled: 1
-        - typeName: ANF.ANSL.WaitFunction
+        - typeName: ANF.ANSL.waitForContextEndFunction
           id: 108
+          enabled: 1
+        - typeName: ANF.ANSL.WaitFunction
+          id: 109
           enabled: 1
     - rid: 5904633997122076775
       type: {class: CaseCompletionContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}

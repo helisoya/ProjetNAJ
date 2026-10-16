@@ -610,5 +610,6 @@ dialog(null;null;C1_Trial1_J_125)
 dialog(null;null;C1_Trial1_J_126)
 
 setCaseCompletion(1)
+unlockAchievement(ACHIEVEMENT_C1_DONE)
 
 changeScene(NAJMainMenu)

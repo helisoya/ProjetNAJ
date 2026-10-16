@@ -36,13 +36,16 @@ MonoBehaviour:
       rid: 992773521691115627
   - id: 
     data:
+      rid: 992773290572120155
+  - id: 
+    data:
       rid: 6627816634044907602
   - id: 
     data:
-      rid: 3436799676236169291
+      rid: 992773617444978778
   - id: 
     data:
-      rid: 992773290572120155
+      rid: 3436799676236169291
   registeredGUIComponents:
   - id: fadeBg
     data: {fileID: 1331905330795673416, guid: 0ad70345a8ff7dd468003a14eec462be, type: 3}
@@ -109,6 +112,12 @@ MonoBehaviour:
         defaultFogColor: {r: 1, g: 1, b: 1, a: 1}
         defaultFogDensity: 0.05
         defaultAmbientIntensity: 1
+    - rid: 992773617444978778
+      type: {class: SteamworkReaction, ns: ANF.Scene, asm: Assembly-CSharp}
+      data:
+        canBeSaved: 0
+        enabledByDefault: 1
+        overlayOpenReaction: 1
     - rid: 3436799676236169289
       type: {class: ANSLManager, ns: ANF.ANSL, asm: Assembly-CSharp}
       data:

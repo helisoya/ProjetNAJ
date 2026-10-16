@@ -1,4 +1,4 @@
-#29AAD0D92D6DD3052282C460155FFC7D-75CB9F499A31589589BCFE552698D8BC
+#29AAD0D92D6DD3052282C460155FFC7D-8B2D142FF7EBD22669C2A913A0F2939F
 401true
 56
 63Room1
@@ -60,14 +60,14 @@
 58Humain
 58Chasseur
 58Rival
-106CycleCount=1
-106LookCounter=3
-106SearchCounter=1
-106TalkedBaron=0
-106TalkedChasseur=0
-106TalkedFils=0
-106TalkedHumain=0
-106TalkedRival=0
+107CycleCount=1
+107LookCounter=3
+107SearchCounter=1
+107TalkedBaron=0
+107TalkedChasseur=0
+107TalkedFils=0
+107TalkedHumain=0
+107TalkedRival=0
 90Location_VMP_Cycle1
 25
 45../Common/PrintLookCounter

@@ -1,4 +1,4 @@
-#FD2D1FD0D6D6FEC1F2E6BB491D228E80-75CB9F499A31589589BCFE552698D8BC
+#FD2D1FD0D6D6FEC1F2E6BB491D228E80-8B2D142FF7EBD22669C2A913A0F2939F
 4113TalkedRival == 1 && CycleCount == 0
 36nullnullTalk_Character_Done_1
 4356
@@ -28,12 +28,12 @@
 4327
 4329
 4329
-106TalkedRival=1
+107TalkedRival=1
 4331
 4343
 413339SearchCounter > 0
-106SearchCounter-1
-106SecretRival=1
+107SearchCounter-1
+107SecretRival=1
 36nullnullSteal_Rival_1
 36nullnullSteal_Rival_2
 45/VMP/Common/PrintSearchCounter
@@ -47,7 +47,7 @@
 36Char_LoupGarounullTalk_Rival_Presentation_2
 36Char_RivalnullTalk_Rival_Presentation_3
 36nullnullTalk_Rival_Presentation_4
-106TalkedRival=1
+107TalkedRival=1
 4350
 68Rival00.5true
 76RivalRivalSpot
