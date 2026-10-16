@@ -27,9 +27,7 @@ namespace ANF.ANSL
 
         protected override void OnStartProcess()
         {
-            string savePath = Utils.FileManager.savPath + PersistentDataManager.instance.GetANFSettings().saveFolder + "autosave.json";
-            SaveUtils.SavePlayerData(PersistentDataManager.instance.GetPlayerData(), manager, SceneManager.GetActiveScene().name, savePath);
-
+            PersistentDataManager.instance.GetANFSaveSystem().Save(manager, "autosave");
             EndProcess();
         }
 

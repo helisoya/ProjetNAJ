@@ -17,6 +17,7 @@ namespace ANF.Persistent
         [SerializeField] private ANFInput anfInput;
         [SerializeField] private ContainerManager playerData;
         [SerializeField] private ContainerManager globalData;
+        private ANFSaveSystem saveSystem;
 
         void Awake()
         {
@@ -51,6 +52,8 @@ namespace ANF.Persistent
             globalData = new ContainerManager(anfSettings.registeredGlobalDataContainers);
             playerData.Initialize(anfSettings);
             globalData.Initialize(anfSettings);
+            saveSystem = new ANFSaveSystem();
+            saveSystem.Initialize(anfSettings);
 
             string globalDataSaveFile = FileManager.savPath + anfSettings.saveFolder + "global.json";
             if (SaveUtils.FileExists(globalDataSaveFile))
@@ -68,6 +71,15 @@ namespace ANF.Persistent
         public ANFInput GetANFInput()
         {
             return anfInput;
+        }
+
+        /// <summary>
+		/// Gets the ANF Save system
+		/// </summary>
+		/// <returns>The save system</returns>
+        public ANFSaveSystem GetANFSaveSystem()
+        {
+            return saveSystem;
         }
 
         /// <summary>

@@ -52,16 +52,14 @@ namespace ANF.Scene
 
                 if (container.loadingASaveFile)
                 {
-                    SaveUtils.LoadPlayerData(PersistentDataManager.instance.GetPlayerData(), manager, container.GetSaveFileToLoad());
+                    PersistentDataManager.instance.GetANFSaveSystem().Load(manager, container.GetSaveFileToLoad());
                 }
                 else
                 {
 #if UNITY_EDITOR
                     if (autoLoadSaveFile)
                     {
-                        string savePath = Utils.FileManager.savPath + PersistentDataManager.instance.GetANFSettings().saveFolder
-                            + saveFileToAutoLoad + ".json";
-                        SaveUtils.LoadPlayerData(PersistentDataManager.instance.GetPlayerData(), manager, savePath);
+                        PersistentDataManager.instance.GetANFSaveSystem().Load(manager, saveFileToAutoLoad);
                         return;
                     }
                     else if (startInDebugMode)

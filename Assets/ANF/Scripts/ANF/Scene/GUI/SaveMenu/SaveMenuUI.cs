@@ -101,88 +101,30 @@ namespace ANF.GUI
         /// <summary>
 		/// Generates a save button
 		/// </summary>
-		/// <param name="settings">The ANF settings</param>
-		/// <param name="saveName">The save's name</param>
-		/// <param name="saveIcon">The save's icon</param>
+		/// <param name="slot">The linked slot</param>
         /// <param name="id">The slot's id</param>
         /// <param name="interactable">True if interactable</param>
         /// <returns>The generated button</returns>
-        private SaveMenuButton GenerateSaveButton(ANFSettings settings, string saveName, string saveIcon, int id, bool interactable)
+        private SaveMenuButton GenerateSaveButton(ANFSaveSystem.SaveSlot slot, int id, bool interactable)
         {
-            string savePath = SaveUtils.GetSavePath(saveName, settings.saveFolder);
-
-            bool saveFileExists = SaveUtils.FileExists(savePath);
-            JSON saveFile = SaveUtils.LoadJSON(savePath);
+            JSON saveFile = SaveUtils.LoadJSON(slot.fullPath);
             string label = slotInfo.GetLabel(saveFile);
             Sprite bgSprite = slotInfo.GetBackground(saveFile);
-            bool saveIsCorrupted = false;
 
-            if (interactable && ((!saveFileExists && !inSaveMode) || (inSaveMode && id == 0))) // No manual save to autosave and no load to empty stuff
+            if (interactable && ((!slot.existsOnDisk && !inSaveMode) || (inSaveMode && slot.isAutosave))) // No manual save to autosave and no load to empty stuff
                 interactable = false;
-
-            if (saveFileExists)
-            {
-                // Check if savefile is corrupted
-                try
-                {
-                    if (PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
-                    {
-                        JSON json = SaveUtils.LoadJSON(savePath);
-
-                        JArray array = json.GetJSON("worldData").GetJSON("world").GetJSON("ANF.ANSL.ANSLManager").GetJArray("contexts");
-                        for (int i = 0; i < array.Length; i++)
-                        {
-                            if (array.GetJSON(i).GetBool("currentFileHasChecksum"))
-                            {
-                                string path = array.GetJSON(i).GetString("currentFilePath");
-
-                                if (!array.GetJSON(i).ContainsKey("currentChecksum"))
-                                {
-                                    saveIsCorrupted = true;
-                                    break;
-                                }
-
-                                string checksum = array.GetJSON(i).GetString("currentChecksum");
-
-                                TextAsset asset = resourceManager.GetResource<TextAsset>(path);
-
-                                if (asset)
-                                {
-                                    List<string> lines = FileManager.ReadTextAsset(asset);
-                                    if (lines.Count > 0 && lines[0].StartsWith("#") &&
-                                        !lines[0].Equals(checksum))
-                                        saveIsCorrupted = true;
-
-                                    asset = null;
-                                    resourceManager.ReleaseResource<TextAsset>(path);
-                                }
-
-                                if (saveIsCorrupted)
-                                    break;
-
-                            }
-                        }
-
-                        json = null;
-                    }
-                }
-                catch
-                {
-                    // Could not check checksums for some reason
-                }
-            }
 
             SaveMenuButton button = Instantiate(buttonPrefab, buttonsRoot);
             button.Initialize(id, this,
             new SaveMenuButtonData()
             {
                 interactable = interactable,
-                saveFileExists = saveFileExists,
-                saveFileIcon = saveIcon,
-                saveFileName = savePath,
+                saveFileExists = slot.existsOnDisk,
+                saveFileIcon = slot.slotName.ToUpper().Substring(0, 1),
+                saveFileName = slot.slotName,
                 label = label,
                 bgSprite = bgSprite,
-                saveIsCorrupted = saveIsCorrupted,
+                saveIsCorrupted = slot.isCorrupted,
             });
 
             return button;
@@ -196,12 +138,12 @@ namespace ANF.GUI
             foreach (Transform child in buttonsRoot)
                 Destroy(child.gameObject);
 
-            buttons = new SaveMenuButton[settings.saveSlotsAmount + 1];
-            buttons[0] = GenerateSaveButton(settings, "autosave", "A", 0, true);
+            ANFSaveSystem.SaveSlot[] slots = PersistentDataManager.instance.GetANFSaveSystem().GetSlots();
+            buttons = new SaveMenuButton[slots.Length];
 
-            for (int i = 0; i < settings.saveSlotsAmount; i++)
+            for (int i = 0; i < slots.Length; i++)
             {
-                buttons[i + 1] = GenerateSaveButton(settings, i.ToString(), i.ToString(), i + 1, true);
+                buttons[i] = GenerateSaveButton(slots[i], i, true);
             }
 
             currentButtonInputSide.x = 0;
@@ -384,9 +326,9 @@ namespace ANF.GUI
                 // Save / Load
                 if (inSaveMode)
                 {
-                    SaveUtils.SavePlayerData(PersistentDataManager.instance.GetPlayerData(), manager, SceneManager.GetActiveScene().name, currentPopupData.saveFileName);
+                    PersistentDataManager.instance.GetANFSaveSystem().Save(manager, currentPopupData.saveFileName);
 
-                    JSON newFile = SaveUtils.LoadJSON(currentPopupData.saveFileName);
+                    JSON newFile = SaveUtils.LoadJSON(SaveUtils.GetSavePath(currentPopupData.saveFileName, PersistentDataManager.instance.GetANFSettings().saveFolder));
                     string newLabel = slotInfo.GetLabel(newFile);
                     Sprite newSprite = slotInfo.GetBackground(newFile);
 
