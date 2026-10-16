@@ -1,5 +1,6 @@
 using ANF.Scene;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -15,6 +16,25 @@ namespace ANF.GUI
         [SerializeField] protected RectTransform root;
         [SerializeField] protected GameObject resetRoot;
         [SerializeField] protected Button resetButton;
+        protected List<Selectable> selectables = new List<Selectable>();
+
+        /// <summary>
+		/// Adds a new selectable to the owned selectables
+		/// </summary>
+		/// <param name="selectable">The selectable</param>
+        public void AddSelectable(Selectable selectable)
+        {
+            selectables.Add(selectable);
+        }
+
+        /// <summary>
+		/// Gets the owned selectables
+		/// </summary>
+		/// <returns>The owned selectables</returns>
+        public List<Selectable> GetSelectables()
+        {
+            return selectables;
+        }
 
         /// <summary>
         /// Sets the tab's label
@@ -26,10 +46,10 @@ namespace ANF.GUI
         }
 
 
-       /// <summary>
-       /// Gets the tab's root
-       /// </summary>
-       /// <returns>The tab's root</returns>
+        /// <summary>
+        /// Gets the tab's root
+        /// </summary>
+        /// <returns>The tab's root</returns>
         public RectTransform GetRoot()
         {
             return root;

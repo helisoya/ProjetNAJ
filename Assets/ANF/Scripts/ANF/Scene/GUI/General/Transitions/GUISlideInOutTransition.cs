@@ -34,10 +34,12 @@ namespace ANF.GUI
             if (hideWhenOut)
                 root.SetActive(true);
 
+            DOTween.Kill(panel, TWEENING_ID);
+
             if (immediate)
                 panel.anchoredPosition = desiredAnchoredPosition;
             else
-                panel.DOAnchorPos(desiredAnchoredPosition, transitionDuration).SetEase(inEase);
+                panel.DOAnchorPos(desiredAnchoredPosition, transitionDuration).SetEase(inEase).SetId(TWEENING_ID);
         }
 
         public override void TransitionOut(bool immediate = false)
@@ -45,6 +47,7 @@ namespace ANF.GUI
             Vector2 outPos = desiredAnchoredPosition;
             Vector2 halfSize = panel.sizeDelta / 2.0f;
 
+            DOTween.Kill(panel, TWEENING_ID);
 
             if (slideFrom == SlideFrom.Left)
                 outPos.x = -halfSize.x;
@@ -64,6 +67,7 @@ namespace ANF.GUI
             }
             else
                 panel.DOAnchorPos(outPos, transitionDuration).SetEase(outEase)
+                .SetId(TWEENING_ID)
                 .OnComplete(() => { if (hideWhenOut) root.SetActive(false); });
         }
     }

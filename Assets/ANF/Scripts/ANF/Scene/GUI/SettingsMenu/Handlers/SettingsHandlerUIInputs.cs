@@ -28,7 +28,7 @@ namespace ANF.GUI
             while (tabsEnumerator.MoveNext())
             {
                 UIInputBindingTab tab = (UIInputBindingTab)tabsEnumerator.Current;
-                RectTransform tabRoot = menu.GetTab(tab.tabName);
+                SettingsTabUI tabRoot = menu.GetTab(tab.tabName);
 
                 var bindingEnumerator = tab.bindings.GetEnumerator();
                 while (bindingEnumerator.MoveNext())

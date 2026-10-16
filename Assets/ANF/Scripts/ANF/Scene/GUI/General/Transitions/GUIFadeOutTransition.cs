@@ -26,15 +26,19 @@ namespace ANF.GUI
             if (hideWhenOut)
                 root.SetActive(true);
 
+            DOTween.Kill(canvasGroup, TWEENING_ID);
+
             if (immediate)
                 canvasGroup.alpha = 1.0f;
             else
-                canvasGroup.DOFade(1.0f, transitionDuration).SetEase(inEase);
+                canvasGroup.DOFade(1.0f, transitionDuration).SetEase(inEase).SetId(TWEENING_ID);
         }
 
         public override void TransitionOut(bool immediate = false)
         {
             canvasGroup.blocksRaycasts = blockRaycastsIfInactive;
+
+            DOTween.Kill(canvasGroup, TWEENING_ID);
 
             if (immediate)
             {
@@ -45,6 +49,7 @@ namespace ANF.GUI
             }
             else
                 canvasGroup.DOFade(0.0f, transitionDuration).SetEase(outEase)
+                .SetId(TWEENING_ID)
                 .OnComplete(() => { if (hideWhenOut) root.SetActive(false); });
         }
     }

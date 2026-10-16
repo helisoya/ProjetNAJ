@@ -15,6 +15,8 @@ namespace ANF.GUI
         [SerializeField] protected bool hideWhenOut = true;
         [SerializeField] protected float transitionDuration = 0.5f;
 
+        protected const int TWEENING_ID = -4343;
+
 
         /// <summary>
         /// On start callback. Use it to setup the transition

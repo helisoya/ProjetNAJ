@@ -12,7 +12,7 @@ namespace ANF.GUI
     /// <summary>
     /// Represents the text tab in the settings
     /// </summary>
-    [System.Serializable] 
+    [System.Serializable]
     public class SettingsHandlerUIText : SettingsHandlerUI
     {
         [SerializeField]
@@ -37,7 +37,7 @@ namespace ANF.GUI
 
         public override void PopulateTab()
         {
-            RectTransform textMenu = menu.GetTab("SettingsMenu_Text");
+            SettingsTabUI textMenu = menu.GetTab("SettingsMenu_Text");
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out Locals.Locals locals))
             {

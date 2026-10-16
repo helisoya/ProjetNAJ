@@ -58,6 +58,33 @@ namespace ANF.GUI
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
+            objects.Clear();
+            tabs.Clear();
+
+            foreach (Transform child in tabsRoot)
+                Destroy(child.gameObject);
+
+            for (int i = 0; i < handlers.Length; i++)
+            {
+                handlers[i].Initialize(this, manager);
+
+                foreach (SettingsTabUI tab in tabs.Values)
+                    tab.Rebuild();
+
+                LayoutRebuilder.ForceRebuildLayoutImmediate(tabsRoot.GetComponent<RectTransform>());
+            }
+
+            foreach (SettingsTabUI tab in tabs.Values)
+            {
+                foreach (Selectable selectable in tab.GetSelectables())
+                    objects.Add(selectable);
+
+                if (tab.GetResetButton())
+                    objects.Add(tab.GetResetButton());
+            }
+
+            RegenerateObjectsNavigation();
         }
 
         public override void OnUpdate()
@@ -96,27 +123,7 @@ namespace ANF.GUI
         public override void OnEnabled()
         {
             rebinding = false;
-            objects.Clear();
-
             selectFirstObject = true;
-            tabs.Clear();
-
-            foreach (Transform child in tabsRoot)
-                Destroy(child.gameObject);
-
-            for (int i = 0; i < handlers.Length; i++)
-            {
-                handlers[i].Initialize(this, manager);
-
-                foreach (SettingsTabUI tab in tabs.Values)
-                    tab.Rebuild();
-
-                LayoutRebuilder.ForceRebuildLayoutImmediate(tabsRoot.GetComponent<RectTransform>());
-            }
-
-            objects.Sort((Selectable s1, Selectable s2) => { return s2.transform.position.y.CompareTo(s1.transform.position.y); });
-
-            RegenerateObjectsNavigation();
 
             scrollbar.value = 1;
         }
@@ -295,16 +302,16 @@ namespace ANF.GUI
         /// Gets or create a tab from the settings
         /// </summary>
         /// <param name="tabKey">The tab's key</param>
-        /// <returns>The tab's content root</returns>
-        public RectTransform GetTab(string tabKey)
+        /// <returns>The tab</returns>
+        public SettingsTabUI GetTab(string tabKey)
         {
             if (tabs.TryGetValue(tabKey, out SettingsTabUI tab))
-                return tab.GetRoot();
+                return tab;
 
             SettingsTabUI instance = Instantiate(tabPrefab, tabsRoot);
             instance.SetLabelKey(tabKey);
             tabs.Add(tabKey, instance);
-            return instance.GetRoot();
+            return instance;
         }
 
         /// <summary>
@@ -317,8 +324,6 @@ namespace ANF.GUI
             if (tabs.TryGetValue(tabKey, out SettingsTabUI tab))
             {
                 tab.RegisterResetAction(action);
-                if (!objects.Contains(tab.GetResetButton()))
-                    objects.Add(tab.GetResetButton());
             }
         }
 
@@ -326,66 +331,66 @@ namespace ANF.GUI
         /// Creates a new toggle in the settings menu
         /// </summary>
         /// <param name="labelKey">The toggle's label</param>
-        /// <param name="root">The toggle's root</param>
+        /// <param name="tab">The toggle's tab</param>
         /// <returns>The toggle</returns>
-        public Toggle CreateToggle(string labelKey, RectTransform root)
+        public Toggle CreateToggle(string labelKey, SettingsTabUI tab)
         {
-            return CreateEntryInstance(labelKey, root, prefabToggleToggle);
+            return CreateEntryInstance(labelKey, tab, prefabToggleToggle);
         }
 
         /// <summary>
         /// Creates a new slider in the settings menu
         /// </summary>
         /// <param name="labelKey">The slider's label</param>
-        /// <param name="root">The slider's root</param>
+        /// <param name="tab">The slider's tab</param>
         /// <returns>The slider</returns>
-        public Slider CreateSlider(string labelKey, RectTransform root)
+        public Slider CreateSlider(string labelKey, SettingsTabUI tab)
         {
-            return CreateEntryInstance(labelKey, root, prefabToggleSlider);
+            return CreateEntryInstance(labelKey, tab, prefabToggleSlider);
         }
 
         /// <summary>
         /// Creates a new color picker in the settings menu
         /// </summary>
         /// <param name="labelKey">The color picker's label</param>
-        /// <param name="root">The color picker's root</param>
+        /// <param name="tab">The color picker's tab</param>
         /// <returns>The color picker</returns>
-        public Button CreateColorPicker(string labelKey, RectTransform root)
+        public Button CreateColorPicker(string labelKey, SettingsTabUI tab)
         {
-            return CreateEntryInstance(labelKey, root, prefabToggleColorPicker);
+            return CreateEntryInstance(labelKey, tab, prefabToggleColorPicker);
         }
 
         /// <summary>
         /// Creates a new input binder in the settings menu
         /// </summary>
         /// <param name="labelKey">The input binder's label</param>
-        /// <param name="root">The input binder's root</param>
+        /// <param name="tab">The input binder's tab</param>
         /// <returns>The input binder</returns>
-        public Button CreateInputBinder(string labelKey, RectTransform root)
+        public Button CreateInputBinder(string labelKey, SettingsTabUI tab)
         {
-            return CreateEntryInstance(labelKey, root, prefabToggleInputBinder);
+            return CreateEntryInstance(labelKey, tab, prefabToggleInputBinder);
         }
 
         /// <summary>
         /// Creates a new button in the settings menu
         /// </summary>
         /// <param name="labelKey">The button's label</param>
-        /// <param name="root">The button's root</param>
+        /// <param name="tab">The button's tab</param>
         /// <returns>The button</returns>
-        public Button CreateButton(string labelKey, RectTransform root)
+        public Button CreateButton(string labelKey, SettingsTabUI tab)
         {
-            return CreateEntryInstance(labelKey, root, prefabToggleButton);
+            return CreateEntryInstance(labelKey, tab, prefabToggleButton);
         }
 
         /// <summary>
         /// Creates a new dropdown in the settings menu
         /// </summary>
         /// <param name="labelKey">The dropdown's label</param>
-        /// <param name="root">The dropdown's root</param>
+        /// <param name="tab">The dropdown's tab</param>
         /// <returns>The dropdown</returns>
-        public TMP_Dropdown CreateDropdown(string labelKey, RectTransform root)
+        public TMP_Dropdown CreateDropdown(string labelKey, SettingsTabUI tab)
         {
-            return CreateEntryInstance(labelKey, root, prefabToggleDropdown);
+            return CreateEntryInstance(labelKey, tab, prefabToggleDropdown);
         }
 
         /// <summary>
@@ -393,16 +398,15 @@ namespace ANF.GUI
         /// </summary>
         /// <typeparam name="T">The item type</typeparam>
         /// <param name="labelKey">The label's key</param>
-        /// <param name="root">The root</param>
+        /// <param name="tab">The item's tab</param>
         /// <param name="prefab">The prefab</param>
         /// <returns>The item created</returns>
-        private T CreateEntryInstance<T>(string labelKey, RectTransform root, SettingsEntryUI<T> prefab) where T : Selectable
+        private T CreateEntryInstance<T>(string labelKey, SettingsTabUI tab, SettingsEntryUI<T> prefab) where T : Selectable
         {
-            SettingsEntryUI<T> instance = Instantiate(prefab, root);
+            SettingsEntryUI<T> instance = Instantiate(prefab, tab.GetRoot());
             instance.SetLabel(labelKey);
 
-            objects.Add(instance.GetItem());
-
+            tab.AddSelectable(instance.GetItem());
 
             return instance.GetItem();
         }

@@ -22,16 +22,20 @@ namespace ANF.GUI
             if (hideWhenOut)
                 root.SetActive(true);
 
+            DOTween.Kill(panel, TWEENING_ID);
+
             if (immediate)
             {
                 panel.localScale = Vector3.one;
             }
             else
-                panel.DOScale(1.0f, transitionDuration).SetEase(inEase);
+                panel.DOScale(1.0f, transitionDuration).SetEase(inEase).SetId(TWEENING_ID);
         }
 
         public override void TransitionOut(bool immediate = false)
         {
+            DOTween.Kill(panel, TWEENING_ID);
+
             if (immediate)
             {
                 panel.localScale = Vector3.zero;
@@ -40,6 +44,7 @@ namespace ANF.GUI
             }
             else
                 panel.DOScale(0.0f, transitionDuration).SetEase(outEase)
+                .SetId(TWEENING_ID)
                 .OnComplete(() => { if (hideWhenOut) root.SetActive(false); });
         }
     }

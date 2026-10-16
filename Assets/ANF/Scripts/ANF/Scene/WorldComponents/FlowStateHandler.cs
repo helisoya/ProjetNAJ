@@ -78,8 +78,9 @@ namespace ANF.Scene
         private void OnAutoPlayInput(InputAction.CallbackContext context)
         {
             bool buttonPressed = context.ReadValueAsButton();
-            if ((autoplayToggle && buttonPressed) ||
-                (!autoplayToggle && autoPlay != buttonPressed))
+            if (!isPaused &&
+                ((autoplayToggle && buttonPressed) ||
+                (!autoplayToggle && autoPlay != buttonPressed)))
             {
                 if (audioManager != null)
                     audioManager.PlayUICursorConfirmSFX();
@@ -91,8 +92,9 @@ namespace ANF.Scene
         private void OnSkipModeInput(InputAction.CallbackContext context)
         {
             bool buttonPressed = context.ReadValueAsButton();
-            if ((skipModeToggle && buttonPressed) ||
-                (!skipModeToggle && skipMode != buttonPressed))
+            if (!isPaused &&
+                ((skipModeToggle && buttonPressed) ||
+                (!skipModeToggle && skipMode != buttonPressed)))
             {
                 if (audioManager != null)
                     audioManager.PlayUICursorConfirmSFX();
@@ -146,7 +148,11 @@ namespace ANF.Scene
 
         public override void OnPaused()
         {
+            if (!autoplayToggle && autoPlay)
+                ToggleAutoPlay();
 
+            if (!skipModeToggle && skipMode)
+                ToggleSkipMode();
         }
 
         public override void OnUnPaused()

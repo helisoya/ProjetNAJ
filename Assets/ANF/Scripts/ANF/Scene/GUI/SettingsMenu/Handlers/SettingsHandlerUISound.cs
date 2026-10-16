@@ -20,7 +20,7 @@ namespace ANF.GUI
 
         public override void PopulateTab()
         {
-            RectTransform soundMenu = menu.GetTab("SettingsMenu_Sound");
+            SettingsTabUI soundMenu = menu.GetTab("SettingsMenu_Sound");
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out Persistent.AudioManager audioManager))
             {

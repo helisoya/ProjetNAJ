@@ -23,7 +23,7 @@ namespace ANF.GUI
         {
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out ScreenSettingsContainer screenSettings))
             {
-                RectTransform graphicsMenu = menu.GetTab("SettingsMenu_Graphics");
+                SettingsTabUI graphicsMenu = menu.GetTab("SettingsMenu_Graphics");
 
                 {
                     fullscreenToggle = menu.CreateToggle("SettingsMenu_Graphics_Fullscreen", graphicsMenu);

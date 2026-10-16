@@ -29,7 +29,7 @@ namespace ANF.GUI
                 {
                     SettingsContainer.SettingsObjectData data = settings.GetValues()[key];
                     string tabKey = data.drawParameters.tabKey;
-                    RectTransform tab = menu.GetTab(tabKey);
+                    SettingsTabUI tab = menu.GetTab(tabKey);
 
                     if (!selectables.ContainsKey(tabKey))
                         selectables.Add(tabKey, new List<KeyValuePair<string, Selectable>>());

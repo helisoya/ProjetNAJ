@@ -55,6 +55,17 @@ namespace ANF.GUI
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
                 cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+
+            foreach (Transform child in buttonsRoot)
+                Destroy(child.gameObject);
+
+            ANFSaveSystem.SaveSlot[] slots = PersistentDataManager.instance.GetANFSaveSystem().GetSlots();
+            buttons = new SaveMenuButton[slots.Length];
+
+            for (int i = 0; i < slots.Length; i++)
+            {
+                buttons[i] = GenerateSaveButton(slots[i], i, true);
+            }
         }
 
         private void OnCursorCooldownChange(object value)
@@ -132,23 +143,15 @@ namespace ANF.GUI
 
         public override void OnEnabled()
         {
-            ANFSettings settings = PersistentDataManager.instance.GetANFSettings();
             titleText.SetNewKey(inSaveMode ? "SaveMenu_Title_Save" : "SaveMenu_Title_Load");
-
-            foreach (Transform child in buttonsRoot)
-                Destroy(child.gameObject);
-
-            ANFSaveSystem.SaveSlot[] slots = PersistentDataManager.instance.GetANFSaveSystem().GetSlots();
-            buttons = new SaveMenuButton[slots.Length];
-
-            for (int i = 0; i < slots.Length; i++)
-            {
-                buttons[i] = GenerateSaveButton(slots[i], i, true);
-            }
 
             currentButtonInputSide.x = 0;
             currentButtonInputSide.y = 0;
             cooldownToNextButtonIncrement = 0;
+
+            buttons[currentButtonIdx].OnExit();
+
+            currentButtonIdx = 0;
 
             buttons[currentButtonIdx].OnEnter();
         }
