@@ -10,6 +10,9 @@ namespace ANF.GUI
     /// </summary>
     public abstract class GUIInOutTransition
     {
+        [Header("Base")]
+        [SerializeField] protected GameObject root;
+        [SerializeField] protected bool hideWhenOut = true;
         [SerializeField] protected float transitionDuration = 0.5f;
 
 

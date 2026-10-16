@@ -9,6 +9,7 @@ namespace ANF.GUI
     [System.Serializable]
     public class GUIFadeInOutTransition : GUIInOutTransition
     {
+        [Header("Fade")]
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private bool blockRaycastsIfInactive = false;
         [SerializeField] private Ease inEase = Ease.OutQuad;
@@ -22,6 +23,9 @@ namespace ANF.GUI
         {
             canvasGroup.blocksRaycasts = true;
 
+            if (hideWhenOut)
+                root.SetActive(true);
+
             if (immediate)
                 canvasGroup.alpha = 1.0f;
             else
@@ -33,9 +37,15 @@ namespace ANF.GUI
             canvasGroup.blocksRaycasts = blockRaycastsIfInactive;
 
             if (immediate)
+            {
                 canvasGroup.alpha = 0.0f;
+
+                if (hideWhenOut)
+                    root.SetActive(false);
+            }
             else
-                canvasGroup.DOFade(0.0f, transitionDuration).SetEase(outEase);
+                canvasGroup.DOFade(0.0f, transitionDuration).SetEase(outEase)
+                .OnComplete(() => { if (hideWhenOut) root.SetActive(false); });
         }
     }
 }

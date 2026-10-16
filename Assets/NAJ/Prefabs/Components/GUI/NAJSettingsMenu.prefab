@@ -993,7 +993,6 @@ MonoBehaviour:
   canBeSaved: 0
   enabledByDefault: 0
   root: {fileID: 2457853883499296667}
-  hideRootWhenClosed: 0
   lockComponents: []
   enabledTransition:
     rid: 5904634178622980249
@@ -1076,6 +1075,8 @@ MonoBehaviour:
     - rid: 5904634178622980249
       type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
+        root: {fileID: 2457853883499296667}
+        hideWhenOut: 1
         transitionDuration: 0.5
         panel: {fileID: 7017756470742556747}
         slideFrom: 1

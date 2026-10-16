@@ -47,7 +47,7 @@ ANF
 - Bip bip pour texte                                                                  V
 - Verifier Checksums pour savoir si une save est corrompu ou pas					  V
 - Revoir Callbacks / Invoke (FlowState) -> INT
-- Système de save plus robuste (Au niveau des PersistantData ?)
+- Système de save plus robuste (Au niveau des PersistantData ?)                       V
 
 Bugs
 - (Le softlock démoniaque au dernier intérogatoire)                                   V
@@ -73,6 +73,7 @@ To Release
 	- Intro (bateau, rue principale de Kalia)
 - Revoir menus
 	- Menu quêtes / logs ? (Les virer / Au moins les expliquer)
+	- Switch Souris / Clavier marche pas bien des fois (Settings)
 - Inté son
 	- SFX                                                                             OK?
 	- Ambient                                                                         OK?

@@ -17,7 +17,6 @@ namespace ANF.GUI
         [SerializeField] protected bool canBeSaved = true;
         [SerializeField] protected bool enabledByDefault = true;
         [SerializeField] protected GameObject root;
-        [SerializeField] protected bool hideRootWhenClosed = true;
         [Tooltip("A component may be opened only if all its lock components are closed. For instance, the load menu cannot be opened if the map menu is open")]
         [SerializeField] protected string[] lockComponents;
         [SerializeReference, SubclassSelector] protected GUIInOutTransition enabledTransition;
@@ -51,8 +50,6 @@ namespace ANF.GUI
             if (pausedTransition != null)
                 pausedTransition.OnStart();
 
-            root.SetActive(!hideRootWhenClosed);
-
             if (enabledByDefault)
                 SetEnabled(true);
         }
@@ -68,7 +65,6 @@ namespace ANF.GUI
             {
                 isPaused = false;
                 isEnabled = enabled;
-                root.SetActive(!hideRootWhenClosed || isEnabled);
 
                 if (isEnabled)
                 {

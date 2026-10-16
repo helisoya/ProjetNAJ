@@ -19,8 +19,13 @@ namespace ANF.GUI
 
         public override void TransitionIn(bool immediate = false)
         {
+            if (hideWhenOut)
+                root.SetActive(true);
+
             if (immediate)
+            {
                 panel.localScale = Vector3.one;
+            }
             else
                 panel.DOScale(1.0f, transitionDuration).SetEase(inEase);
         }
@@ -28,9 +33,14 @@ namespace ANF.GUI
         public override void TransitionOut(bool immediate = false)
         {
             if (immediate)
+            {
                 panel.localScale = Vector3.zero;
+                if (hideWhenOut)
+                    root.SetActive(false);
+            }
             else
-                panel.DOScale(0.0f, transitionDuration).SetEase(outEase);
+                panel.DOScale(0.0f, transitionDuration).SetEase(outEase)
+                .OnComplete(() => { if (hideWhenOut) root.SetActive(false); });
         }
     }
 }

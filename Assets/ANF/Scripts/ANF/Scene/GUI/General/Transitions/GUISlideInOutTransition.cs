@@ -31,6 +31,9 @@ namespace ANF.GUI
 
         public override void TransitionIn(bool immediate = false)
         {
+            if (hideWhenOut)
+                root.SetActive(true);
+
             if (immediate)
                 panel.anchoredPosition = desiredAnchoredPosition;
             else
@@ -53,9 +56,15 @@ namespace ANF.GUI
                 outPos.y = halfSize.y;
 
             if (immediate)
+            {
                 panel.anchoredPosition = outPos;
+
+                if (hideWhenOut)
+                    root.SetActive(false);
+            }
             else
-                panel.DOAnchorPos(outPos, transitionDuration).SetEase(outEase);
+                panel.DOAnchorPos(outPos, transitionDuration).SetEase(outEase)
+                .OnComplete(() => { if (hideWhenOut) root.SetActive(false); });
         }
     }
 }

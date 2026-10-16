@@ -826,13 +826,11 @@ MonoBehaviour:
   canBeSaved: 1
   enabledByDefault: 1
   root: {fileID: 6742950944155935923}
-  hideRootWhenClosed: 0
   lockComponents: []
   enabledTransition:
     rid: 5904634178622980235
   pausedTransition:
     rid: 5904634178622980234
-  canvasGroup: {fileID: 7164552812805553542}
   leftRoot: {fileID: 4160499344197282400}
   leftImage: {fileID: 5757825583708090771}
   rightRoot: {fileID: 5087079004384117007}
@@ -847,6 +845,8 @@ MonoBehaviour:
     - rid: 5904634178622980234
       type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
+        root: {fileID: 6742950944155935923}
+        hideWhenOut: 1
         transitionDuration: 0.5
         canvasGroup: {fileID: 7164552812805553542}
         blockRaycastsIfInactive: 0
@@ -855,6 +855,8 @@ MonoBehaviour:
     - rid: 5904634178622980235
       type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
+        root: {fileID: 6742950944155935923}
+        hideWhenOut: 1
         transitionDuration: 0.5
         canvasGroup: {fileID: 7164552812805553542}
         blockRaycastsIfInactive: 0

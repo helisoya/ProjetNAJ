@@ -337,7 +337,6 @@ MonoBehaviour:
   canBeSaved: 1
   enabledByDefault: 0
   root: {fileID: 5010621968908180720}
-  hideRootWhenClosed: 0
   lockComponents: []
   enabledTransition:
     rid: 5904634178622980198
@@ -352,12 +351,15 @@ MonoBehaviour:
   continueButton: {fileID: 2268815960365812632}
   continueIcon: {fileID: 5956435587944166479}
   punctuationSpeedFactor: 3
+  textBlepTimer: 0.1
   references:
     version: 2
     RefIds:
     - rid: 5904634178622980198
       type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
+        root: {fileID: 5010621968908180720}
+        hideWhenOut: 1
         transitionDuration: 0.5
         canvasGroup: {fileID: 4755947927630345497}
         blockRaycastsIfInactive: 0
@@ -366,6 +368,8 @@ MonoBehaviour:
     - rid: 5904634178622980199
       type: {class: GUIFadeInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
+        root: {fileID: 5010621968908180720}
+        hideWhenOut: 1
         transitionDuration: 0.5
         canvasGroup: {fileID: 4755947927630345497}
         blockRaycastsIfInactive: 0

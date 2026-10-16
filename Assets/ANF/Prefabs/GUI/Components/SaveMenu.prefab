@@ -638,7 +638,6 @@ MonoBehaviour:
   canBeSaved: 0
   enabledByDefault: 0
   root: {fileID: 3469216011183769263}
-  hideRootWhenClosed: 0
   lockComponents: []
   enabledTransition:
     rid: 5904634178622980206
@@ -667,6 +666,8 @@ MonoBehaviour:
     - rid: 5904634178622980206
       type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}
       data:
+        root: {fileID: 3469216011183769263}
+        hideWhenOut: 1
         transitionDuration: 0.5
         panel: {fileID: 4114956463710642354}
         slideFrom: 1
@@ -1561,6 +1562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2984480843876574483}
     m_Modifications:
+    - target: {fileID: 1246051555838654627, guid: f5431055d342b374e98657c9c73f096d, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2858853016614975038, guid: f5431055d342b374e98657c9c73f096d, type: 3}
       propertyPath: m_Name
       value: SlotButton
