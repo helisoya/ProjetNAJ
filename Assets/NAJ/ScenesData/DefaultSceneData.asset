@@ -74,10 +74,6 @@ MonoBehaviour:
   - id: 
     data: {fileID: 4813586622291847291, guid: 8a14932e69b5f3c43a8cb0d00682f253, type: 3}
   - id: 
-    data: {fileID: 8635427533893588802, guid: 2d222088f1bc45841b0d2e567fb9e320, type: 3}
-  - id: 
-    data: {fileID: 1991131649640259627, guid: 7df1e050de8c718409d4605bb62ee2ad, type: 3}
-  - id: 
     data: {fileID: 5462081781506776728, guid: edc56737f42790e40819bcb973af9e17, type: 3}
   - id: 
     data: {fileID: 6123419753822969047, guid: 8c0175ffba14bb8469c0e488a0977164, type: 3}

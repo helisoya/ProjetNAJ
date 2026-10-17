@@ -91,6 +91,8 @@ namespace CaribouProd.General
             .Insert(7.5f, caribouRoot.DOPunchScale(new Vector3(-0.05f, -0.05f, -0.1f), 0.5f, 1))
             .Insert(7.5f, logoRoot.DORotate(new Vector3(0, 0, -2.5f), 0.5f).SetEase(Ease.OutBounce))
             .InsertCallback(7.5f, () => { Play2DSound(caribouSound); })
+            .Insert(8.5f, caribouRoot.DOPunchScale(new Vector3(-0.04f, -0.04f, -0.1f), 0.5f, 1))
+            .Insert(9.5f, caribouRoot.DOPunchScale(new Vector3(-0.03f, -0.03f, -0.1f), 0.5f, 1))
             .Insert(12.0f, canvasGroup.DOFade(1, 0.5f).SetEase(Ease.OutQuad))
             .OnComplete(() => { EndSplashScreen(); });
 

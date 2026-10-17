@@ -43,51 +43,53 @@ namespace ANF.Persistent
 
         protected override T TryLoadResource<T>(string path)
         {
-            try
-            {
-                AsyncOperationHandle<T> op = Addressables.LoadAssetAsync<T>(path);
-                T obj = op.WaitForCompletion();
+            var locations = Addressables.LoadResourceLocationsAsync(path).WaitForCompletion();
 
-                if (op.Status == AsyncOperationStatus.Failed || obj == null)
-                    return obj;
-
-#if UNITY_EDITOR
-                Debug.Log($"Loaded Resource : {path}");
-#endif
-                loadedResources.Add(path, new ResourceData(op, 1, false));
-
-                return obj;
-            }
-            catch
+            if (locations == null || locations.Count == 0)
             {
                 return default;
             }
+
+            AsyncOperationHandle<T> op = Addressables.LoadAssetAsync<T>(path);
+            T obj = op.WaitForCompletion();
+
+            if (op.Status == AsyncOperationStatus.Failed || obj == null)
+                return obj;
+
+#if UNITY_EDITOR
+            Debug.Log($"Loaded Resource : {path}");
+#endif
+            loadedResources.Add(path, new ResourceData(op, 1, false));
+
+            return obj;
         }
 
         protected override void TryLoadResourceAsync<T>(string path, System.Action<object> resultCallback)
         {
-            try
-            {
-                AsyncOperationHandle<T> op = Addressables.LoadAssetAsync<T>(path);
-                op.Completed += (resOp) =>
-                {
-                    loadedResources[path].isLoading = false;
+            var locations = Addressables.LoadResourceLocationsAsync(path).WaitForCompletion();
 
-                    foreach (System.Action<object> action in loadedResources[path].actions)
-                    {
-                        action.Invoke(resOp.Result);
-                    }
-                };
+            if (locations == null || locations.Count == 0)
+            {
+                resultCallback.Invoke(null);
+                return;
+            }
+
+            AsyncOperationHandle<T> op = Addressables.LoadAssetAsync<T>(path);
+            op.Completed += (resOp) =>
+            {
+                loadedResources[path].isLoading = false;
+
+                foreach (System.Action<object> action in loadedResources[path].actions)
+                {
+                    action.Invoke(resOp.Result);
+                }
+            };
 
 #if UNITY_EDITOR
-                Debug.Log($"Loading Resource Async : {path}");
+            Debug.Log($"Loading Resource Async : {path}");
 #endif
-                loadedResources.Add(path, new ResourceData(op, 1, true));
-                loadedResources[path].actions.Add(resultCallback);
-            }
-            catch
-            {
-            }
+            loadedResources.Add(path, new ResourceData(op, 1, true));
+            loadedResources[path].actions.Add(resultCallback);
         }
 
         protected override void TryReleaseResource<T>(string path)
@@ -127,7 +129,9 @@ namespace ANF.Persistent
 
                 foreach (IResourceLocation location in bundle)
                 {
+#if UNITY_EDITOR
                     Debug.Log($"Loading bundle item : {location.PrimaryKey}");
+#endif
 
                     switch (bundleType)
                     {
@@ -164,7 +168,9 @@ namespace ANF.Persistent
 
                 foreach (IResourceLocation location in bundle)
                 {
+#if UNITY_EDITOR
                     Debug.Log($"Unloading bundle item : {location.PrimaryKey}");
+#endif
                     switch (bundleType)
                     {
                         case BundleType.AudioClip:

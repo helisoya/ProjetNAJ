@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 8589963936372850101}
   - component: {fileID: 4893906188555742882}
   m_Layer: 5
-  m_Name: NAJPauseMenu
+  m_Name: NAJC1PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -222,8 +222,6 @@ MonoBehaviour:
   - rid: 3493723950410629207
   - rid: 1438066124900532298
   - rid: 1438066124900532299
-  - rid: 3493723787287330930
-  - rid: 3493723926694199367
   - rid: 1438066124900532300
   - rid: 1438066124900532297
   buttonPrefab: {fileID: 8145366409012032469, guid: 5df2f3a4ab496e341b857de7a20b921d, type: 3}
@@ -252,16 +250,6 @@ MonoBehaviour:
       data:
         iconSprite: {fileID: -258718329, guid: 454ac537d39c71c42819f7faf396c469, type: 3}
         labelKey: PauseMenu_Options
-    - rid: 3493723787287330930
-      type: {class: PauseMenuButtonDataQuest, ns: ANF.GUI, asm: Assembly-CSharp}
-      data:
-        iconSprite: {fileID: 937975036, guid: 454ac537d39c71c42819f7faf396c469, type: 3}
-        labelKey: PauseMenu_Quests
-    - rid: 3493723926694199367
-      type: {class: PauseMenuButtonDataLogs, ns: ANF.GUI, asm: Assembly-CSharp}
-      data:
-        iconSprite: {fileID: 2028330327, guid: 454ac537d39c71c42819f7faf396c469, type: 3}
-        labelKey: PauseMenu_Logs
     - rid: 3493723950410629207
       type: {class: PauseMenuButtonDataHistory, ns: ANF.GUI, asm: Assembly-CSharp}
       data:

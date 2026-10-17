@@ -47,7 +47,7 @@ MonoBehaviour:
     - line: '|   cursorHotspot: {x: 0, y: 0}'
     - line: '|   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b:
         0.1254902, a: 1}'
-    - line: '|   m_ShowUnitySplashScreen: 0'
+    - line: '|   m_ShowUnitySplashScreen: 1'
     - line: '|   m_ShowUnitySplashLogo: 1'
     - line: '|   m_SplashScreenOverlayOpacity: 1'
     - line: '|   m_SplashScreenAnimation: 1'
@@ -61,7 +61,7 @@ MonoBehaviour:
     - line: '|     serializedVersion: 2'
     - line: '|     x: 0'
     - line: '|     y: 0'
-    - line: '|     width: 1'
+    - line: '|     width: 0.99999994'
     - line: '|     height: 1'
     - line: '|   m_SplashScreenBackgroundPortraitUvs:'
     - line: '|     serializedVersion: 2'
@@ -838,7 +838,8 @@ MonoBehaviour:
     - line: '|   ps4IncludedModules: []'
     - line: '|   ps4attribVROutputEnabled: 0'
     - line: '|   monoEnv: '
-    - line: '|   splashScreenBackgroundSourceLandscape: {instanceID: 0}'
+    - line: '|   splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid:
+        f85a63b9458d1e948838da0a1d1c8370, type: 3}'
     - line: '|   splashScreenBackgroundSourcePortrait: {instanceID: 0}'
     - line: '|   blurSplashScreenBackground: 1'
     - line: '|   spritePackerPolicy: '

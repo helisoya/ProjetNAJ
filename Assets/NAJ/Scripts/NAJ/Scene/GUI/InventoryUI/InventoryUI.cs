@@ -62,6 +62,8 @@ namespace NAJ.GUI
             Max = 1
         }
 
+        private const int TWEENING_ID = -4444;
+
 
         [Header("Background")]
         [SerializeField] private string[] guiToPauseOnEnable;
@@ -122,6 +124,7 @@ namespace NAJ.GUI
         private ResourceManager resourceManager;
         private bool skipFirstSelectSFX = false;
         private float cursorMoveCooldown = 0.25f;
+        private int updateSelectorAfterXFrames;
 
         public override void OnInitialize()
         {
@@ -165,6 +168,18 @@ namespace NAJ.GUI
                 {
                     IncrementButtonWithInput();
                     cooldownToNextButtonIncrement = cursorMoveCooldown;
+                }
+            }
+
+            if (updateSelectorAfterXFrames > 0)
+            {
+                updateSelectorAfterXFrames--;
+
+                if (updateSelectorAfterXFrames == 0)
+                {
+                    Vector2 selectorPos = tabSelectorViewer.anchoredPosition;
+                    selectorPos.x = tabSelectors[(int)currentTabType].GetComponent<RectTransform>().anchoredPosition.x;
+                    tabSelectorViewer.anchoredPosition = selectorPos;
                 }
             }
         }
@@ -244,7 +259,10 @@ namespace NAJ.GUI
         {
             if (PersistentDataManager.instance.GetPlayerData().GetComponent(out NAJCaseInventoryContainer container))
             {
+                DOTween.Kill(canvasGroup, TWEENING_ID, false);
+
                 skipFirstSelectSFX = true;
+                updateSelectorAfterXFrames = 3;
 
                 manager.GetWorld().SetPausedAll(true);
                 gui.SetComponentsPaused(guiToPauseOnEnable, true);
@@ -265,10 +283,6 @@ namespace NAJ.GUI
                 }
 
                 scrollRect.content = tabRoots[(int)currentTabType];
-
-                Vector2 selectorPos = tabSelectorViewer.anchoredPosition;
-                selectorPos.x = tabSelectors[(int)currentTabType].GetComponent<RectTransform>().anchoredPosition.x;
-                tabSelectorViewer.anchoredPosition = selectorPos;
 
                 inCheckMode = false;
                 checkGroup.alpha = 0.0f;
@@ -329,6 +343,34 @@ namespace NAJ.GUI
             }
         }
 
+        /// <summary>
+		/// Clears all resources from the menu
+		/// </summary>
+        private void ClearAllResources()
+        {
+            itemIcon.sprite = null;
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                for (int j = 0; j < buttons[i].Length; j++)
+                {
+                    InventoryUIButtonData data = buttons[i][j].GetData();
+                    if (data == null)
+                        continue;
+
+                    data.icon = null;
+                    buttons[i][j].Destroy();
+                    if (resourceManager != null)
+                    {
+                        if (data.type == InventoryTabType.Evidence)
+                            allEvidence[data.id].UnloadIcon(resourceManager);
+                        else if (data.type == InventoryTabType.Profile)
+                            allProfiles[data.id].UnloadIcon(resourceManager);
+                    }
+
+                }
+            }
+        }
+
         public override void OnDisabled()
         {
             manager.GetWorld().SetPausedAll(false);
@@ -338,27 +380,10 @@ namespace NAJ.GUI
             {
                 inputReminder.SetRemindersState(cachedPreviousReminders);
             }
-            canvasGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad).OnComplete(() =>
-            {
-                itemIcon.sprite = null;
-                for (int i = 0; i < buttons.Length; i++)
-                {
-                    for (int j = 0; j < buttons[i].Length; j++)
-                    {
-                        InventoryUIButtonData data = buttons[i][j].GetData();
-                        data.icon = null;
-                        buttons[i][j].Destroy();
-                        if (resourceManager != null)
-                        {
-                            if (data.type == InventoryTabType.Evidence)
-                                allEvidence[data.id].UnloadIcon(resourceManager);
-                            else if (data.type == InventoryTabType.Profile)
-                                allProfiles[data.id].UnloadIcon(resourceManager);
-                        }
 
-                    }
-                }
-            });
+            canvasGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad)
+            .SetId(TWEENING_ID)
+            .OnKill(ClearAllResources);
             canvasGroup.blocksRaycasts = false;
         }
 
