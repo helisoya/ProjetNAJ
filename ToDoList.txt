@@ -65,21 +65,22 @@ To Release
 - Selection d'Entry Points                                                            V
 - Trad Française
 - Opti UI (mettre les trucs dès le départ, masquer quand pas visible)                 V
-- Revoir modèles
+- Revoir modèles                                                                      -
 	- Tous (au niveau des trous)                                                      Ok?
-- Revoir décors
+- Revoir décors                                                                       -
 	- Courthouse (fenetre)                                                            V
 	- Intro (bateau, rue principale de Kalia)
-- Revoir menus
+	- Buissons?
+- Revoir menus                                                                        -
 	- Menu quêtes / logs ? (Les virer / Au moins les expliquer)                       Retiré
 	- Switch Souris / Clavier marche pas bien des fois (Settings)                     Fixé?
-- Inté son
+- Inté son                                                                            -
 	- SFX                                                                             OK?
 	- Ambient                                                                         OK?
 	- BGM
 	- Son menus                                                                       OK mais faire attention aux playoneshots trop nombreux
 	- Mixage
-- Inté steam
+- Inté steam                                                                          -
 	- Steam Cloud ?
 	- Succès                                                                          Ajouter plus ? (sinon OK)
 
