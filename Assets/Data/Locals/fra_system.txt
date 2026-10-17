@@ -12,6 +12,7 @@ PauseMenu_Options = Options
 PauseMenu_MainMenu = Ecran Titre
 PauseMenu_NewGame = Nouvelle Partie
 PauseMenu_Quit = Quitter
+PauseMenu_Credits = Crédits
 
 SaveMenu_Title_Save = Sélectionnez un slot ou sauvegarder
 SaveMenu_Title_Load = Sélectionnez un slot à charger
@@ -116,6 +117,8 @@ NewGameMenu_Title = Nouvelle partie
 NewGameMenu_Desc = Entrez votre nom
 NewGameMenu_Confirm = Confirmer
 
+CreditsMenu_Title = Crédits
+
 GeneralMenu_Unknown = ???
 GeneralMenu_Back = Retour
 
@@ -141,3 +144,5 @@ SettingsMenu_Inputs_Inventory = Inventaire
 SettingsMenu_Inputs_SwitchLeft = Basculer Gauche(Menu)
 SettingsMenu_Inputs_SwitchRight = Basculer Droite(Menu)
 SettingsMenu_Inputs_InventoryPresent = Présenter Preuve/Presser
+
+CreditsMenu_NAJCredits = <b>Programmation</b><br>  Julien Oudot<br><br><b>Narration</b><br>  Julien Oudot<br><br><b>Visuels</b><br>  Julien Oudot<br><br><b>Son</b><br>  Julien Oudot<br>  Marvin le tiègr<br><br><b>Remerciements</b><br>  Felihi<br>  Madlaine<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter

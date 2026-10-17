@@ -1427,8 +1427,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17d84690e04978f4ab8eb947fb6df31d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 27ce8efc9cb83f240971039fda7d202c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Common_Backgrounds
   m_GUID: aa613e1f0879e2647b3b2b9b2dd0a2bb
   m_SerializeEntries:
+  - m_GUID: 33be528c6a3ccff478c644aa00161789
+    m_Address: Backgrounds/Common/MainMenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scenes
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 59ec354680a55614e82361023a74ea51
     m_Address: Backgrounds/Common/Courtroom
     m_ReadOnly: 0

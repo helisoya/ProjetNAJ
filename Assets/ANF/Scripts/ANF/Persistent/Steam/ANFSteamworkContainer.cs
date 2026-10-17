@@ -1,5 +1,7 @@
 using Leguar.TotalJSON;
 using UnityEngine;
+using AYellowpaper.SerializedCollections;
+
 
 #if !DISABLESTEAMWORKS
 using Steamworks;
@@ -10,7 +12,11 @@ namespace ANF.Persistent
     [System.Serializable]
     public class ANFSteamworkContainer : DataContainer
     {
+        [Header("Base")]
         [SerializeField] private uint appid;
+
+        [Header("Debug")]
+        [SerializeField] private bool debugResetAllAchievementsOnStart = false;
         public bool overlayOn { get; private set; }
 
 #if !DISABLESTEAMWORKS
@@ -22,7 +28,8 @@ namespace ANF.Persistent
         {
             return new ANFSteamworkContainer()
             {
-                appid = appid
+                appid = appid,
+                debugResetAllAchievementsOnStart = debugResetAllAchievementsOnStart
             };
         }
 
@@ -39,6 +46,15 @@ namespace ANF.Persistent
             {
                 // Setup steamwork
                 m_GameOverlayActivated = Callback<GameOverlayActivated_t>.Create(OnGameOverlayActivated);
+
+                if (debugResetAllAchievementsOnStart)
+                {
+                    uint max = SteamUserStats.GetNumAchievements();
+                    for (uint i = 0; i < max; i++)
+                        SteamUserStats.ClearAchievement(SteamUserStats.GetAchievementName(i));
+
+                    SteamUserStats.StoreStats();
+                }
             }
 #endif
         }

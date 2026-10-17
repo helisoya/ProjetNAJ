@@ -506,5 +506,48 @@ namespace ANF.GUI
             return bgSavefileExists;
         }
     }
+
+    /// <summary>
+    /// The label is the location and the background is different depending on if the savefile exists
+    /// </summary>
+    [System.Serializable]
+    public class SaveMenuSlotLocationOnlyInfo : SaveMenuSlotInfo
+    {
+        [SerializeField] private Sprite bgSavefileExists;
+        [SerializeField] private Sprite bgSavefileDontExist;
+
+        public override string GetLabel(JSON saveFile)
+        {
+            if (saveFile != null)
+            {
+                try
+                {
+                    Locals.Locals locals;
+                    PersistentDataManager.instance.GetGlobalData().GetComponent<Locals.Locals>(out locals);
+
+                    string result = "";
+                    JSON playerVariableJson = saveFile.GetJSON("playerData").GetJSON(typeof(PlayerVariableContainer).FullName);
+
+                    if (playerVariableJson.ContainsKey("location"))
+                        result += locals == null ? playerVariableJson.GetString("location") :
+                            locals.GetLocal(playerVariableJson.GetString("location"));
+
+                    return result;
+                }
+                catch
+                {
+                }
+            }
+
+            return "";
+        }
+
+        public override Sprite GetBackground(JSON saveFile)
+        {
+            if (saveFile == null)
+                return bgSavefileDontExist;
+            return bgSavefileExists;
+        }
+    }
 }
 

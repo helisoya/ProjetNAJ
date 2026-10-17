@@ -117,8 +117,11 @@ namespace ANF.Persistent
             json = null;
 
             slots[slotIndex] = slot;
+
+#if UNITY_EDITOR
             Debug.Log($"Slot {slotIndex} : [Name: {slot.slotName}, Path: {slot.fullPath}," +
                 $"OnDisk: {slot.existsOnDisk}, Autosave: {slot.isAutosave}, Corrupted: {slot.isCorrupted}]");
+#endif
         }
 
         /// <summary>

@@ -109,7 +109,8 @@ namespace NAJ.GUI
 
             for (int i = 0; i <= maxCaseIdx && i < casesInfo.Length; i++)
             {
-                Instantiate(caseImagePrefab, caseImagesRoot).sprite = casesInfo[i].image;
+                Instantiate(caseImagePrefab, caseImagesRoot).sprite =
+                    i == maxCaseIdx ? casesInfo[i].imageNotDone : casesInfo[i].imageDone;
             }
 
             caseImagesRoot.anchoredPosition = new Vector2(0, caseImagesRoot.anchoredPosition.y);
@@ -562,7 +563,8 @@ namespace NAJ.GUI
     public struct CaseInfo
     {
         public string nameKey;
-        public Sprite image;
+        public Sprite imageDone;
+        public Sprite imageNotDone;
         public CaseEntryPoint[] entrypoints;
         public CaseEntryPoint defaultEntrypoint;
     }

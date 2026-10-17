@@ -102,5 +102,11 @@ namespace ANF.Editor
                 AssetDatabase.Refresh();
             }
         }
+
+        [MenuItem("ANF/Game View ScreenShot")]
+        private static void TakeFullScreenShot()
+        {
+            ScreenCapture.CaptureScreenshot("screenshot.png");
+        }
     }
 }

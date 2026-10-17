@@ -287,6 +287,7 @@ MonoBehaviour:
   - rid: 5904633997122076785
   - rid: 1438066124900532299
   - rid: 1438066124900532300
+  - rid: 992773629967597649
   - rid: 3493724107434098823
   buttonPrefab: {fileID: 8145366409012032469, guid: 5df2f3a4ab496e341b857de7a20b921d, type: 3}
   references:
@@ -294,6 +295,11 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 992773629967597649
+      type: {class: PauseMenuButtonDataCredits, ns: ANF.GUI, asm: Assembly-CSharp}
+      data:
+        iconSprite: {fileID: 2028330327, guid: 454ac537d39c71c42819f7faf396c469, type: 3}
+        labelKey: PauseMenu_Credits
     - rid: 1438066124900532299
       type: {class: PauseMenuButtonDataLoad, ns: ANF.GUI, asm: Assembly-CSharp}
       data:

@@ -74,6 +74,14 @@ MonoBehaviour:
       type: {class: ANFSteamworkContainer, ns: ANF.Persistent, asm: Assembly-CSharp}
       data:
         appid: 5458970
+        changeLanguageToSteamLanguage: 1
+        steamToANFLanguages:
+          _serializedList:
+          - Key: english
+            Value: eng
+          - Key: french
+            Value: fra
+        debugResetAllAchievementsOnStart: 0
     - rid: 1438066020397613127
       type: {class: PlayerVariableContainer, ns: ANF.Persistent, asm: Assembly-CSharp}
       data:

@@ -241,6 +241,21 @@ namespace ANF.GUI
     }
 
     /// <summary>
+    /// Subclass for the credits button
+    /// </summary>
+    [System.Serializable]
+    public class PauseMenuButtonDataCredits : PauseMenuButtonData
+    {
+        public override void OnClick(PauseMenuUI pauseMenu, ANFManager manager)
+        {
+            if (manager.GetGUIManager().GetComponent<CreditsMenuUI>(out CreditsMenuUI creditsMenuUI))
+            {
+                pauseMenu.ChangeSubMenu(creditsMenuUI);
+            }
+        }
+    }
+
+    /// <summary>
     /// Subclass for the Main Menu button
     /// </summary>
     [System.Serializable]

@@ -28,7 +28,9 @@ MonoBehaviour:
   - id: 
     data: {fileID: 4866723388494020783, guid: b7809b1dcef6c9849bdd1921d76beb85, type: 3}
   - id: 
-    data: {fileID: 4813586622291847291, guid: 8059e479ea9479f479ea903f59b46f8f, type: 3}
+    data: {fileID: 8260801151352469230, guid: e3ed60509bf2cc74e904a54e7b72b642, type: 3}
+  - id: 
+    data: {fileID: 4813586622291847291, guid: 8a14932e69b5f3c43a8cb0d00682f253, type: 3}
   - id: 
     data: {fileID: 6123419753822969047, guid: 8c0175ffba14bb8469c0e488a0977164, type: 3}
   - id: fadeAll
@@ -68,9 +70,9 @@ MonoBehaviour:
       data:
         canBeSaved: 1
         enabledByDefault: 1
-        defaultBackground: C1/Beach
+        defaultBackground: Common/MainMenu
         defaultWeather: 
         defaultSkybox: Day
         music: 
         ambient: 
-        backgroundType: 1
+        backgroundType: 0
