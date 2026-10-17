@@ -1,0 +1,418 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Shared
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Shared
+  m_GUID: ce3fa8d56d593774d8080be5b10fdb3a
+  m_SerializeEntries:
+  - m_GUID: 019e1d8763a43d74c804ddf79b558fe8
+    m_Address: Assets/ANF/Sprites/World/Snow.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0406db5a14f94604a8c57ccfbc9f3b46
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Particles/ParticlesUnlit.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0627adbcca3d249458917abcc091e22b
+    m_Address: Assets/NAJ/Materials/Ground/Rock2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07a9d92a2148b5047832af262673ba03
+    m_Address: Assets/NAJ/Textures/Ground/Wood2_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b6abbf18326a95428009b428a9f68f3
+    m_Address: Assets/NAJ/Textures/Ground/Rock2_Mask.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e6e9def98e226642a88ea4e7359c568
+    m_Address: Assets/NAJ/Materials/Ground/Wood2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1127222fb57aeab44ac40c982b2ff9de
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/Hidden.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 116ab29bbec391346b6dfe012c893081
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/EatRestingHammer.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1183810a2b5576b47bde553bd96a880d
+    m_Address: Assets/NAJ/Textures/Ground/Wood1_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e7bc5cbf2b7bfa469fdcea860cc9bd0
+    m_Address: Assets/NAJ/Materials/Foliage/Wood1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27e415df315e82b4880b34b29e28baae
+    m_Address: Assets/NAJ/Materials/Ground/Planks6.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2aac77b8e41a7d7439003506e52cb23e
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/InShell.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2beb11f4c1c230c48a82e98103bc6a6a
+    m_Address: Assets/NAJ/Textures/Characters/JudgeTurtle.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d7a5c06dca4896489b5f6a9d48c7d01
+    m_Address: Assets/NAJ/Plugins/Uber Stylized Water/Textures/Noise 2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3125c9e143f434f43a5ded750efa4951
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/Normal.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35091283bbcf6634d86306535716579a
+    m_Address: Assets/NAJ/Materials/Ground/Black.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36e335017ad71d54fbb10842863188ae
+    m_Address: Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/FallbackShader.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 387a3a1afaef0a04ebc9462a8716edcf
+    m_Address: Assets/NAJ/Textures/Ground/Wood1_Mask.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4017eb4d52c6dea4990c34935048cb9c
+    m_Address: Assets/NAJ/Materials/Characters/C1/CaptainSartt.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49d3e2862a628e142b9f77d7fcf34c39
+    m_Address: Assets/NAJ/Textures/Ground/Wood2_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56a4535f08c140f40bfdbace0bb671f5
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/NormalReverse.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57096ddb09de959428aa1a0ad0fb48c2
+    m_Address: Assets/NAJ/Plugins/Uber Stylized Water/Textures/Caustic 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5bc401fceedaea747a98548f8e58bc3c
+    m_Address: Assets/NAJ/Plugins/Uber Stylized Water/Textures/Foam2.psd
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61cf8b91d960bee468b88972b74fb7e5
+    m_Address: Assets/NAJ/Plugins/Uber Stylized Water/Textures/Noise 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 631d8d59c0282b94c9c4159abc354710
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/JudgeTurtle.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 650dd9526735d5b46b79224bc6e94025
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Unlit.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 681afee22bb84d44ab4d84b08a4bf6d8
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/ReverseToRight.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d2c2a76c71f92f4a8eaf3fdab4da899
+    m_Address: Assets/NAJ/Textures/Ground/Metal3_Mask.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ff1f3178b19b6849b378daa492b486c
+    m_Address: Assets/ANF/Materials/World/SpriteLit.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75594e1133b518f4ea71bfdfa881347d
+    m_Address: Assets/NAJ/Animations/Animals/Owl/Owl.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d5dc76db610e9342925094acd213356
+    m_Address: Assets/NAJ/Textures/Ground/Metal3_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fdfb11927816df4ea1f00669d50c76e
+    m_Address: Assets/NAJ/Textures/Ground/Carpet1_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8097978abb0800149a7a110f04640a53
+    m_Address: Assets/NAJ/Plugins/Uber Stylized Water/Shader/UberStylizedWater.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8516d7a69675844a7a0b7095af7c46af
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Particles/ParticlesSimpleLit.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 852a1c967d76e7a41b08fa58906973ae
+    m_Address: Assets/NAJ/Animations/Animals/Owl/Body/Land.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85fad7eff6213db4d8b071df8a3e3f1f
+    m_Address: Assets/NAJ/Materials/Foliage/Tree3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8609f608012089c418ba124f6a9045a9
+    m_Address: Assets/NAJ/Textures/Ground/Metal3_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86e1ec19b62513f49815761d10ef217e
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/RightToNormal.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 933532a4fcc9baf4fa0491de14d08ed7
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 957a26785922a7e4daa9d79733984ad7
+    m_Address: Assets/NAJ/Sprites/Characters/CaptainSartt.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95fb08551b7fb5945a0b4037776ce672
+    m_Address: Assets/ANF/Shaders/AlphaLit.shadergraph
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9925cc12311c63b4891763b311bc32ce
+    m_Address: Assets/NAJ/Materials/Ground/Alpha/Carpet1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ac0ee5873674c74393ced96d6b6b06f
+    m_Address: Assets/NAJ/Materials/Ground/Wall1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9daebf817fb22cf42bc8e3691e53ac1f
+    m_Address: Assets/NAJ/Models/Characters/C1/CaptainSartt.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ee6a8c527654e947bbb67fe5f454b5a
+    m_Address: Assets/NAJ/Textures/Ground/Wood2_Mask.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a33e0f88e44b4d040926a7769e69619a
+    m_Address: Assets/ANF/Materials/World/DefaultVoxelAlpha.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a38a8515ca6dfd74daa48044f9112a58
+    m_Address: Assets/NAJ/Textures/Characters/CaptainSartt.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aabfa3de6e1c5cc4a902cdb61ce91f64
+    m_Address: Assets/NAJ/Textures/Ground/Planks6_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b10765fca5818d343bc550523460b385
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/OnJudgeHead.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b2b6b977382b29c4dbfa494e606f40b5
+    m_Address: Assets/NAJ/Models/Props/Knife.obj
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4fde0358ee46434490d7f378928fb1e
+    m_Address: Assets/NAJ/Textures/Ground/Planks6_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b952ebe7b06451d4db9bf66e08f59c38
+    m_Address: Assets/NAJ/Materials/Characters/C1/JudgeTurtle.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bad43fdb6420d5d4aaef29c1a58bed0c
+    m_Address: Assets/NAJ/Textures/Ground/Wall1_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bba69728914326e488e1655bfd96fb7f
+    m_Address: Assets/NAJ/Textures/Ground/Carpet1_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfdf28ed5fdfd294fb6f6fda27098a5c
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/InShellReverse.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0bf5dd1478da964cbc4c03a521142ad
+    m_Address: Assets/NAJ/Textures/Ground/Planks6_Mask.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c34d27df2fceb84419a1e134d9253f66
+    m_Address: Assets/ANF/Materials/World/DebugInteractableColor.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c54995de2fd003145a3bdc35bd44d96f
+    m_Address: Assets/ANF/Materials/World/DefaultVoxelAlphaVertexColor.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5640053234e0144b9266ec5ddab921b
+    m_Address: Assets/NAJ/Models/Backgrounds/Foliage/Tree1.obj
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c64cda1a3d4cc53408dab517b2b6941f
+    m_Address: Assets/NAJ/Textures/Ground/Wood1_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c75d25c1b00d16f4080f9eea8ab4bdc8
+    m_Address: Assets/NAJ/Models/Characters/C1/JudgeTurtle.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca99f511b500e3746a12f2786408de42
+    m_Address: Assets/NAJ/Textures/Ground/Rock2_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce8673581c7a16a4c9e84c61fdf839b6
+    m_Address: Assets/NAJ/Scenes/Backgrounds/C1/LightSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d08721809e11fd544b70835481e8a6ff
+    m_Address: Assets/ANF/Materials/World/Snow.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d12bcb7875f63ac4a8e9162a3de4ebba
+    m_Address: Assets/NAJ/Animations/Animals/Owl/Body/FlyOffScreen.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1e62a9f6f588be4ca7062081c488aa8
+    m_Address: Assets/NAJ/Materials/Ground/Water3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d70aa0383c4126c46bb2d74b2461b8e7
+    m_Address: Assets/NAJ/Models/Animals/Owl.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da6693ef5d20c96478bd9fb45e3dc6b6
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/LeftToReverse.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de070beec3f01f14c828f5b5abc133f5
+    m_Address: Assets/ANF/Shaders/FlagShader.shadergraph
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e06584664f871054a84b9448db9ef5ed
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/AttackRestingHammer.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1543041992432046a1ec8f98b06a02c
+    m_Address: Assets/NAJ/Materials/Ground/Metal3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e54692e48508c304ca1fdc544a2efdd3
+    m_Address: Assets/NAJ/Plugins/Uber Stylized Water/Textures/Normal 2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6e9a19c3678ded42a3bc431ebef7dbd
+    m_Address: Packages/com.unity.render-pipelines.universal/Shaders/Utils/FallbackError.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e79ddae80ec32154c938972977767ed5
+    m_Address: Assets/ANF/Textures/World/DefaultVoxel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb6abe8f85fbbc246be67c44e1874c1d
+    m_Address: Assets/NAJ/Textures/Foliage/Tree3_Normal.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f165319c2c5a3a0428b0ee3e3bee80e2
+    m_Address: Assets/NAJ/Animations/Characters/JudgeTurtle/Body/NormalToLeft.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd79ebcdf1034714a891ec79e926a0be
+    m_Address: Assets/NAJ/Textures/Ground/Wall1_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fdacbd8361a48824899483a1409c3a65
+    m_Address: Assets/NAJ/Textures/Foliage/Tree3_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe08807e17988f2479d9e143274cef4a
+    m_Address: Assets/NAJ/Textures/Ground/Rock2_Albedo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 3c6120241aa620044bf6fdd75997b86e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b3903132fe8120344881a3e17ad8df81, type: 2}
+    - {fileID: 11400000, guid: eb8f8a0f598e55040a2476f1dcd8181d, type: 2}
