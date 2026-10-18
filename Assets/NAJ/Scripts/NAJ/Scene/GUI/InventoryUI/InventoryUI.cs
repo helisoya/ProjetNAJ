@@ -135,12 +135,13 @@ namespace NAJ.GUI
             int tabAmount = (int)InventoryTabType.Max + 1;
             currentButtonsIdx = new int[tabAmount];
             buttons = new InventoryUIButton[tabAmount][];
+
+            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
         }
 
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
-            PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Inventory").performed += OnInventoryInput;
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
@@ -351,22 +352,31 @@ namespace NAJ.GUI
             itemIcon.sprite = null;
             for (int i = 0; i < buttons.Length; i++)
             {
+                if (buttons[i] == null)
+                    continue;
+
                 for (int j = 0; j < buttons[i].Length; j++)
                 {
+                    if (buttons[i][j] == null)
+                        continue;
+
                     InventoryUIButtonData data = buttons[i][j].GetData();
                     if (data == null)
                         continue;
 
-                    data.icon = null;
-                    buttons[i][j].Destroy();
-                    if (resourceManager != null)
+                    if (data.icon)
                     {
-                        if (data.type == InventoryTabType.Evidence)
-                            allEvidence[data.id].UnloadIcon(resourceManager);
-                        else if (data.type == InventoryTabType.Profile)
-                            allProfiles[data.id].UnloadIcon(resourceManager);
+                        data.icon = null;
+                        if (resourceManager != null)
+                        {
+                            if (data.type == InventoryTabType.Evidence)
+                                allEvidence[data.id].UnloadIcon(resourceManager);
+                            else if (data.type == InventoryTabType.Profile)
+                                allProfiles[data.id].UnloadIcon(resourceManager);
+                        }
                     }
 
+                    buttons[i][j].Destroy();
                 }
             }
         }
@@ -809,6 +819,8 @@ namespace NAJ.GUI
                 OnUnRegisterInputs();
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Inventory").performed -= OnInventoryInput;
             canvasGroup.DOComplete(true);
+
+            ClearAllResources();
 
             resourceManager = null;
             audioManager = null;

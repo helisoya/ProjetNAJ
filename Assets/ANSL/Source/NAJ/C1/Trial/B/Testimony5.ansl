@@ -16,6 +16,8 @@ fadeBg(1;true)
 
 :setRobertNormal()
 
+wait(0.6)
+
 fadeBg(0;false)
 
 :playTestimonyAnimation()
@@ -272,7 +274,7 @@ press 3
 				showLifeBarUI(false)
 
 				if(LifePoints <= 0)
-					load(Death)
+					load(../Common/Death)
 				endif
 			
 			endask

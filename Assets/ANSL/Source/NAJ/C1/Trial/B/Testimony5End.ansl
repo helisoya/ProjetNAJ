@@ -16,6 +16,8 @@ fadeBg(1;true)
 :setJudgeNormal()
 :setJudgeEyeNormal()
 
+wait(0.6)
+
 fadeBg(0;false)
 
 setExaminationPart(4)
@@ -321,7 +323,7 @@ showDialogWindow(false)
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial1_I_46)
 
-:setCourtroomCamToProsecutorImmediate()
+:setCourtroomCamToDefenseImmediate()
 dialog(Char_Rann;RannCoat;C1_Trial1_I_47)
 
 :setRobertEyeThinking()

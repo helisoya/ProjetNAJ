@@ -173,7 +173,7 @@ Material:
     - _Metallic: 0
     - _Move_SurfFoam: 0
     - _Normal_DistanceStrength: 0.1
-    - _Normal_Pan: 1.5
+    - _Normal_Pan: 5
     - _Normal_Scale: 1
     - _Normal_Strength: 0.39
     - _OcclusionStrength: 1

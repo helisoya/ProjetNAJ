@@ -98,12 +98,43 @@ Review
 	- Brouillard intro cassé                                                        V
 	- Vitesse dialogue dans les options                                             V
 	- Clignement d'yeux trop rapide                                                 V
-	- Mouvements d'eau avec le bato                                                 A revoir
+	- Mouvements d'eau avec le bato                                                 Ok?
 	- Loop eau foireuse
 	- Secret Cave pas trouvé                                                        V
+	- Remplacer eau menu principal / cliff / waterfall (elle bouge, oupsi)          v
+	- Valeur par defaut settings a l'air cassé (vitesse dialog)                     V
+	- Autosave pas déclenché                                                        V
+	- Tiling kayous cassé                                                           Pb lightmaps, revérifier autres scenes
+	- Mouvements au crash site
+	- Pas de capitaine au crash site: (                                             V
+	- 1er Coup de marteau mauvais placement camera                                  V
+	- Preuve obtenu -> Ajouter un fade Bg                                           V
+	- Vitesse par défaut plus rapide pour le texte                                  V
+	- Intro procès damage sans sfx                                                  V
+	- Inventaire scale mal (dépasse le dialogue)                                    Volontaire mais foireux
+	- 1er témoignage "A cause de ça" en rouge                                       V
+	- 2ème témoignage "c'est possible" attribué au juge > sheriff                   V
+	- fov camera pas bon ? (Cam Juge correspond pas totalement)                     FOV bon, cam Juge est juste pété, a revoir
+	- Barre de vie trop grosse                                                      v
+	- SUCCES : Accuser Juno à tout les moments possible
+	- Duel Intermission Juge Sheriff a des lines non attribués                      V
+	- Trou bras droit soldat
+	- typo preuve papiers de detes                                                  V
+	- Papiers secrets anim juge trop tard, on la voit se finir                      Ok?
+	- Avant intro Gerald, Rann parle sur du texte pensé                             V
+	- 3ème témoingnage loop </color<                                                V
+	- Anim damage de Rann cassé
+	- SUCCES : Accuser le Juge comme coupable
+	- Main gauche Gerald (au moins No coat) cassé
+	- Temoignage 5 : Anim gerald se reset trop tôt (début phase 1/2)                V
+	- Revoir les infos preuves en général                                           Ok?
+	- Après présentation herbier, cam ne switch pas sur Rann "As you recall, ..."   V
+	- Présenter fausse preuve / mourir avant témoignage 6 softlock                  V
+	- Chargement de save, icones inventaire cassé (peut être choix aussi)           V
+	- It took you this long to realise pas en bleu                                  V
+	- SUCCES : Trouver le secret de Gerald
+	- Pb chargement background / scene ?                                            A reproduire, jsp pas ce qui a déclenché ça (new game > main menu > trial A > ecran noir)
 	
-
-
 
 
 Musiques :

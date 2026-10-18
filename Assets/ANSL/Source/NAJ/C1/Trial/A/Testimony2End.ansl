@@ -125,7 +125,7 @@ press 4
 	showDialogWindow(false)
 
 	:setCourtroomCamToProsecutor(true)
-	dialog(Char_Judge;Judge;C1_Trial_Testimony2_Press4_4)
+	dialog(Char_Robert;Robert;C1_Trial_Testimony2_Press4_4)
 	showDialogWindow(false)
 
 	:setCourtroomCamToDefense(true)
@@ -220,8 +220,8 @@ dialog(Char_Rann;RannCoat;C1_Trial_C_9)
 
 :setJudgeEyeThinking()
 :setCourtroomCamToJudge()
-dialog(null;null;C1_Trial_C_10)
-dialog(null;null;C1_Trial_C_11)
+dialog(Char_Judge;null;C1_Trial_C_10)
+dialog(Char_Judge;null;C1_Trial_C_11)
 
 :setRannHandsOnDesk(Coat)
 :setJudgeEyeSurprise()
@@ -311,7 +311,7 @@ dialog(Char_Judge;Judge;C1_Trial_C_47)
 :setJudgeEyeNormal()
 :setRobertEyeThinking()
 :setCourtroomCamToProsecutorImmediate()
-dialog(null;null;C1_Trial_C_48)
+dialog(Char_Robert;Robert;C1_Trial_C_48)
 
 :setRannNormal(Coat)
 :setRobertEyeNormal()

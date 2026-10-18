@@ -146,7 +146,7 @@ wrong
 	showLifeBarUI(false)
 
 	if(LifePoints <= 0)
-		load(Death)
+		load(../Common/Death)
 	else
 		:setJudgeEyeAngry()
 		:setCourtroomCamToJudge()

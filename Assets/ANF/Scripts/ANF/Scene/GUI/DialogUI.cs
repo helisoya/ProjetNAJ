@@ -72,12 +72,13 @@ namespace ANF.GUI
             if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
             {
                 OnBackgroundOpacityChange(settings.Register("DialogUI_BackgroundOpacity", SettingsContainer.SettingsDataType.Float, OnBackgroundOpacityChange));
-                OnDialogSpeedChange(settings.Register("DialogUI_SpeedModifier", SettingsContainer.SettingsDataType.Float, OnDialogSpeedChange));
 
                 if (settings.GetValues().TryGetValue("DialogUI_SpeedModifier", out SettingsContainer.SettingsObjectData data))
                 {
                     dialogSpeedMinMaxValues = new Vector2(data.drawParameters.sliderMinValue, data.drawParameters.sliderMaxValue);
                 }
+
+                OnDialogSpeedChange(settings.Register("DialogUI_SpeedModifier", SettingsContainer.SettingsDataType.Float, OnDialogSpeedChange));
             }
         }
 
@@ -115,7 +116,7 @@ namespace ANF.GUI
         /// <param name="characterId">The talking Character's ID</param>
         /// <param name="additive">True if the text is additive</param>
         /// <param name="secondsBetweenCharacters">The number of seconds between characters</param>
-        public void StartDialog(string speakerID, string dialogID, string characterId = null, bool additive = false, float secondsBetweenCharacters = 0.05f)
+        public void StartDialog(string speakerID, string dialogID, string characterId = null, bool additive = false, float secondsBetweenCharacters = 0.04f)
         {
             continueIcon.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
             canSkip = false;

@@ -26,13 +26,13 @@ Evidence_C1_Injury_Name = Leg Injury
 Evidence_C1_Injury_Desc = I am injured and cannot run.
 
 Evidence_C1_Knife_Name = Knife
-Evidence_C1_Knife_Desc = Murder Weapon. Bears my prints on the blade, and unknown ones on the handle.
+Evidence_C1_Knife_Desc = The murder Weapon. Bears my prints on the blade, and unknown ones on the handle.
 
 Evidence_C1_AutopsyReport_Name = Autopsy Report
 Evidence_C1_AutopsyReport_Desc = Cause of death : Direct hit to the heart.
 
 Evidence_C1_DebtReport_Name = Debt Report
-Evidence_C1_DebtReport_Desc = Says that someone named "G.M." in heavily indebted to the captain.
+Evidence_C1_DebtReport_Desc = Says that someone named "G.M." is heavily indebted to the captain.
 
 Evidence_C1_DeathMessage_Name = Death Message
 Evidence_C1_DeathMessage_Desc = "Ronne" written in the captain's blood.
@@ -60,10 +60,10 @@ Profile_C1_Juno_Desc = The witness of this case. She saw Captain Sartt die.
 # -------------------- Fail - Death -----------------------
 # ---------------------------------------------------------
 
-C1_Trial_Fail_1 = This definitely proves this witness wrong !
-C1_Trial_Fail_2 = How so ?
+C1_Trial_Fail_1 = This definitely proves this witness wrong!
+C1_Trial_Fail_2 = How so?
 C1_Trial_Fail_3 = Oh, erm…
-C1_Trial_Fail_4 = … Well… Why don’t we find out… together ?
+C1_Trial_Fail_4 = … Well… Why don’t we find out… together?
 C1_Trial_Fail_5 = Miss Retyr, this isn’t how it works.
 C1_Trial_Fail_6 = I’ll have to penalise you for this.
 C1_Trial_Fail_7 = <color=#72B6E8>Oh… I have to be careful.</color>
@@ -72,4 +72,4 @@ C1_Trial_Fail_8 = <color=#72B6E8>It seems throwing evidence around is not going 
 C1_Trial_Death_1 = Alright, this is enough.
 C1_Trial_Death_2 = Miss Retyr, I gave you a chance. But it seems you decided to waste it.
 C1_Trial_Death_3 = I will now give my verdict without delay.
-C1_Trial_Death_4 = Nooooooo !
+C1_Trial_Death_4 = Nooooooo!

@@ -152,9 +152,13 @@ namespace ANF.GUI
             ANFSaveSystem.SaveSlot[] slots = PersistentDataManager.instance.GetANFSaveSystem().GetSlots();
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].SetInteractable(
-                    (slots[i].existsOnDisk && !inSaveMode) || (inSaveMode && !slots[i].isAutosave)
-                );
+                JSON saveFile = SaveUtils.LoadJSON(slots[i].fullPath);
+                string label = slotInfo.GetLabel(saveFile);
+                Sprite bgSprite = slotInfo.GetBackground(saveFile);
+                bool interactable = (slots[i].existsOnDisk && !inSaveMode) || (inSaveMode && !slots[i].isAutosave);
+
+                buttons[i].SetInteractable(interactable);
+                buttons[i].UpdateInfos(label, bgSprite, slots[i].isCorrupted);
             }
 
             buttons[currentButtonIdx].OnExit();

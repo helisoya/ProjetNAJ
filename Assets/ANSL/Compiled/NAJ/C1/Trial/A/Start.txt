@@ -1,4 +1,4 @@
-#036F9CA4F969C6A44A807417BCDA3A04-8B2D142FF7EBD22669C2A913A0F2939F
+#7D1FA2F7F30D956ED07651E5B2322A54-8B2D142FF7EBD22669C2A913A0F2939F
 89c1_commonc1_trial_A
 90Location_C1_TrialPart1
 651
@@ -117,9 +117,11 @@
 36Char_RobertRobertC1_Trial_A_40
 0C1_AutopsyReport
 51EvidenceInfo
+380.75false
 20Evidence/C1_AutopsyReportFull
 36nullnullC1_Trial_Evidence_AutopsyReport_1
 11
+380.0false
 71JudgeThinking
 75JudgeNormal
 66JudgeCam
@@ -169,6 +171,8 @@
 66JudgeCam
 67JudgeCam
 69JudgeDamageToNormal
+610.10.2
+51Damage
 36Char_JudgeJudgeC1_Trial_A_55
 67ProsecutionCam
 66ProsecutionCam
