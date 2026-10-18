@@ -115,7 +115,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _1st_Wave_Height: 0.01
+    - _1st_Wave_Height: 0.0001
     - _1st_Wave_Length: 3
     - _1st_Wave_Sharpness: 0.3
     - _1st_Wave_Speed: 0.5
@@ -156,7 +156,7 @@ Material:
     - _ENABLEWAVE: 0
     - _ENABLE_UNDERWATERLAYER: 0
     - _Enable_Intersection: 0
-    - _Enable_SurfaceFoam: 0
+    - _Enable_SurfaceFoam: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -171,6 +171,7 @@ Material:
     - _InterSec_Width: 0.5
     - _Invert_SurfFoam: 0
     - _Metallic: 0
+    - _Move_SurfFoam: 0
     - _Normal_DistanceStrength: 0.1
     - _Normal_Pan: 1.5
     - _Normal_Scale: 1
@@ -208,9 +209,10 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _SurfFoam_AlphaBlend: 0
-    - _SurfFoam_Edge: 0.1
+    - _SurfFoam_Edge: 0.176
     - _SurfFoam_EdgeSmooth: 0.2
     - _SurfFoam_Scale: 3
+    - _SurfFoam_Speed: 0.1
     - _Surface: 0
     - _SurfaceDistortion_Scale: 1
     - _SurfaceDistortion_Strength: 0.1
@@ -241,9 +243,9 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Specular_Color: {r: 1, g: 1, b: 1, a: 1}
     - _SurfFoam_Color: {r: 1, g: 1, b: 1, a: 1}
-    - _SurfFoam_Pan: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _SurfFoam_Pan: {r: -5, g: 0, b: 0, a: 0}
     - _SurfFoam_Tile: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _SurfaceDistortion_Pan: {r: 1, g: 1, b: 0, a: 0}
+    - _SurfaceDistortion_Pan: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Underwater_Color: {r: 0, g: 0, b: 0, a: 0.49019608}
     - _Wave_Top_Color: {r: 0.3265147, g: 0.4455961, b: 0.45660365, a: 0}
   m_BuildTextureStacks: []

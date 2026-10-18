@@ -32,6 +32,7 @@ InteractionMode_HighlightColor Color #37afbf SettingsMenu_Game SettingsMenu_Game
 InteractionMode_SelectedColor Color #57bf45 SettingsMenu_Game SettingsMenu_Game_InteractionMode_SelectionColor
 
 DialogUI_BackgroundOpacity Float 1 SettingsMenu_Game SettingsMenu_Game_DialogUI_BackgroundOpacity (0.1,1)
+DialogUI_SpeedModifier Float 1.25 SettingsMenu_Game SettingsMenu_Game_DialogUI_SpeedModifier (0.25,2.0)
 
 ANSLManager_AutoplayTimer Float 4 SettingsMenu_Game SettingsMenu_Game_ANSLManager_AutoplayTimer (0.1,10)
 

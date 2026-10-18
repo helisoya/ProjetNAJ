@@ -23,6 +23,8 @@ dialog(null;null;C1_Intro_A_6)
 dialog(null;null;C1_Intro_A_7)
 showDialogWindow(false)
 
+wait(2)
+
 playAmbient(SeaCalm)
 
 fadeBg(0;false)
@@ -94,6 +96,8 @@ setCameraRotation(0;-108.3;0)
 setCharacterRotation(Sartt;SpeechSpot)
 setCharacterPosition(Sartt;SpeechSpot)
 
+wait(2)
+
 fadeBg(0;false)
 
 # Captain Speech
@@ -110,6 +114,8 @@ playSFX(ShipHorn)
 removeStatic(Sailors)
 removeStatic(Kalia)
 removeCharacter(Sartt)
+
+wait(2)
 
 # Dialog "We be going"
 dialog(null;null;C1_Intro_A_45)

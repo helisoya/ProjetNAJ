@@ -30,6 +30,9 @@ namespace ANF.GUI
         [Header("Infos")]
         [SerializeField] private float punctuationSpeedFactor = 3;
         [SerializeField] private float textBlepTimer = 0.1f;
+        private float dialogSpeedModifier = 1.0f; // < 1 : Faster
+                                                  // > 1 : Slower
+        private Vector2 dialogSpeedMinMaxValues = new Vector2(0.0f, 1.0f);
 
         private List<string> textIds = new List<string>();
         private List<DialogSegment> textSegments;
@@ -60,14 +63,22 @@ namespace ANF.GUI
             speakerText.SetCanReload(true, false);
             dialogText.SetLocalizationEnabled(false, false);
             dialogText.SetCanReload(false, false);
-
-            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
-                OnBackgroundOpacityChange(settings.Register("DialogUI_BackgroundOpacity", SettingsContainer.SettingsDataType.Float, OnBackgroundOpacityChange));
         }
 
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+            {
+                OnBackgroundOpacityChange(settings.Register("DialogUI_BackgroundOpacity", SettingsContainer.SettingsDataType.Float, OnBackgroundOpacityChange));
+                OnDialogSpeedChange(settings.Register("DialogUI_SpeedModifier", SettingsContainer.SettingsDataType.Float, OnDialogSpeedChange));
+
+                if (settings.GetValues().TryGetValue("DialogUI_SpeedModifier", out SettingsContainer.SettingsObjectData data))
+                {
+                    dialogSpeedMinMaxValues = new Vector2(data.drawParameters.sliderMinValue, data.drawParameters.sliderMaxValue);
+                }
+            }
         }
 
         public void OnSkipModeToggle(bool enabled)
@@ -80,6 +91,12 @@ namespace ANF.GUI
             float opacity = (float)obj;
             foreach (Image background in dialogBackgrounds)
                 background.color = new Color(background.color.r, background.color.g, background.color.b, opacity);
+        }
+
+        private void OnDialogSpeedChange(object obj)
+        {
+            float speed = (float)obj;
+            dialogSpeedModifier = dialogSpeedMinMaxValues.x + dialogSpeedMinMaxValues.y - speed;
         }
 
         /// <summary>
@@ -260,7 +277,8 @@ namespace ANF.GUI
                     {
                         revealIndex++;
                         currentWaitTime = secondsBetweenCharacters *
-                            (IsPunctuation(text.textInfo.characterInfo[revealIndex - 1].character) ? punctuationSpeedFactor : 1.0f);
+                            (IsPunctuation(text.textInfo.characterInfo[revealIndex - 1].character) ? punctuationSpeedFactor : 1.0f)
+                            * dialogSpeedModifier;
                         text.maxVisibleCharacters = revealIndex;
 
                         if (audioManager != null)

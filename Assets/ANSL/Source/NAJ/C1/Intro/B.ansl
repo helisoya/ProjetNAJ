@@ -12,7 +12,7 @@ playAmbient(SeaInside)
 
 fadeBg(0;false)
 
-wait(0.5)
+wait(2.0)
 
 # Hideout Talk
 dialog(Rann;null;C1_Intro_B_1)

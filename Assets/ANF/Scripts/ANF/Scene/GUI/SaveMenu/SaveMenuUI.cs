@@ -149,6 +149,14 @@ namespace ANF.GUI
             currentButtonInputSide.y = 0;
             cooldownToNextButtonIncrement = 0;
 
+            ANFSaveSystem.SaveSlot[] slots = PersistentDataManager.instance.GetANFSaveSystem().GetSlots();
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].SetInteractable(
+                    (slots[i].existsOnDisk && !inSaveMode) || (inSaveMode && !slots[i].isAutosave)
+                );
+            }
+
             buttons[currentButtonIdx].OnExit();
 
             currentButtonIdx = 0;

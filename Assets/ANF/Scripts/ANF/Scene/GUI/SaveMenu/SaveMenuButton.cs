@@ -46,6 +46,18 @@ namespace ANF.GUI
             }
         }
 
+        /// <summary>
+		/// Changes if the button is interactable or not
+		/// </summary>
+		/// <param name="interactable">True if interactable</param>
+        public void SetInteractable(bool interactable)
+        {
+            if (data != null)
+            {
+                data.interactable = interactable;
+            }
+        }
+
 
         /// <summary>
         /// Updates the button's infos

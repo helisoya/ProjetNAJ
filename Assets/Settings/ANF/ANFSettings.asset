@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bfc7de97ad5247b9061be4feb35ce, type: 3}
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
-  startingScript: /NAJ/C1/EntryPoints/TrialStart
+  startingScript: /NAJ/C1/EntryPoints/Intro
   mainMenuScene: NAJMainMenu
   gameScene: NAJGame
   saveFolder: Saves/
@@ -74,13 +74,6 @@ MonoBehaviour:
       type: {class: ANFSteamworkContainer, ns: ANF.Persistent, asm: Assembly-CSharp}
       data:
         appid: 5458970
-        changeLanguageToSteamLanguage: 1
-        steamToANFLanguages:
-          _serializedList:
-          - Key: english
-            Value: eng
-          - Key: french
-            Value: fra
         debugResetAllAchievementsOnStart: 0
     - rid: 1438066020397613127
       type: {class: PlayerVariableContainer, ns: ANF.Persistent, asm: Assembly-CSharp}

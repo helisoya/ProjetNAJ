@@ -97,6 +97,7 @@ SettingsMenu_Game_BackgroundManager_Foliage = Végétation
 SettingsMenu_Game_BackgroundManager_TerrainQuality = Qualité du terrain
 
 SettingsMenu_Game_DialogUI_BackgroundOpacity = Opacité boite dialogue
+SettingsMenu_Game_DialogUI_SpeedModifier = Vitesse dialogue
 
 SettingsMenu_Game_ANSLManager_AutoplayTimer = Pause (mode automatique)
 

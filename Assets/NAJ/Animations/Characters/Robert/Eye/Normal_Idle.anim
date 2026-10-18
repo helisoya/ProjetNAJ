@@ -30,7 +30,7 @@ AnimationClip:
       value: {fileID: -138432884, guid: aa26591e0572ea54dbeafd234552e5a1, type: 3}
     - time: 0.5833333
       value: {fileID: -274413865, guid: aa26591e0572ea54dbeafd234552e5a1, type: 3}
-    - time: 4
+    - time: 10.05
       value: {fileID: -274413865, guid: aa26591e0572ea54dbeafd234552e5a1, type: 3}
     attribute: m_Sprite
     path: Model/Armature/Root/Spine1/Spine2/Spin3/Spine4/Neck/Head/Head_end/Eye
@@ -84,7 +84,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4.016667
+    m_StopTime: 10.066667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

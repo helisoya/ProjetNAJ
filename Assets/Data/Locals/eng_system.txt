@@ -98,6 +98,7 @@ SettingsMenu_Game_BackgroundManager_Foliage = Foliage
 SettingsMenu_Game_BackgroundManager_TerrainQuality = Terrain Quality
 
 SettingsMenu_Game_DialogUI_BackgroundOpacity = Dialog box opacity
+SettingsMenu_Game_DialogUI_SpeedModifier = Dialog Speed
 
 SettingsMenu_Game_ANSLManager_AutoplayTimer = Autoplay timer
 

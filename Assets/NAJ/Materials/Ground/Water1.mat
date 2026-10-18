@@ -156,7 +156,7 @@ Material:
     - _ENABLEWAVE: 0
     - _ENABLE_UNDERWATERLAYER: 0
     - _Enable_Intersection: 0
-    - _Enable_SurfaceFoam: 0
+    - _Enable_SurfaceFoam: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -209,8 +209,8 @@ Material:
     - _SrcBlendAlpha: 1
     - _SurfFoam_AlphaBlend: 0
     - _SurfFoam_Edge: 0.1
-    - _SurfFoam_EdgeSmooth: 0.2
-    - _SurfFoam_Scale: 3
+    - _SurfFoam_EdgeSmooth: 0.635
+    - _SurfFoam_Scale: 5
     - _Surface: 0
     - _SurfaceDistortion_Scale: 1
     - _SurfaceDistortion_Strength: 0.1

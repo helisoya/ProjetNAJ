@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: C1_Backgrounds
   m_GUID: 5d6c84e3303f4e94992e7ff2629cf84c
   m_SerializeEntries:
+  - m_GUID: 1a61a0e9d8d7a7546b0cd8f5ebad1417
+    m_Address: Backgrounds/C1/SecretCave
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 50ec3a3d40b34c54f977550a8d8cfb01
     m_Address: Backgrounds/C1/Forest
     m_ReadOnly: 0

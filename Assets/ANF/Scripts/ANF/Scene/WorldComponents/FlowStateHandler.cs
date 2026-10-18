@@ -106,14 +106,14 @@ namespace ANF.Scene
         private void OnAutoPlayToggleChange(object value)
         {
             autoplayToggle = (bool)value;
-            if (autoplayToggle)
+            if (autoPlay)
                 ToggleAutoPlay();
         }
 
         private void OnSkipModeToggleChange(object value)
         {
             skipModeToggle = (bool)value;
-            if (skipModeToggle)
+            if (skipMode)
                 ToggleSkipMode();
         }
 

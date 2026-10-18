@@ -15,11 +15,6 @@ MonoBehaviour:
   m_GroupName: Demo1_Backgrounds
   m_GUID: bbc5c4b3a89f9734a85f58239045bf04
   m_SerializeEntries:
-  - m_GUID: 1a61a0e9d8d7a7546b0cd8f5ebad1417
-    m_Address: Backgrounds/C1/SecretCave
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6eda7c23923102d4d934fc39ee6a9f86
     m_Address: Backgrounds/Prototype/Courtroom
     m_ReadOnly: 0
