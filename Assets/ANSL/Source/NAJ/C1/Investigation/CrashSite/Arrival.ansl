@@ -68,5 +68,4 @@ showDialogWindow(false)
 setCameraRotation(39;-40;0;1;false)
 setCameraPosition(-29;-0.5;62;1;true)
 
-
 load(Interaction)

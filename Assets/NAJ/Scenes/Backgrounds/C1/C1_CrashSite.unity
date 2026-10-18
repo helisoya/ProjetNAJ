@@ -49709,6 +49709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8145956306202091320}
+  - component: {fileID: 8145956306202091321}
   m_Layer: 0
   m_Name: Sartt
   m_TagString: Untagged
@@ -51487,7 +51488,7 @@ MonoBehaviour:
   backgroundStaticObjects:
     _serializedList:
     - Key: Sartt
-      Value: {fileID: 0}
+      Value: {fileID: 8145956306202091321}
 --- !u!4 &7777529732813029204
 Transform:
   m_ObjectHideFlags: 0
@@ -51670,6 +51671,29 @@ Transform:
   - {fileID: 4608591611657159216}
   m_Father: {fileID: 3168500641099172320}
   m_LocalEulerAnglesHint: {x: -88.671, y: 90, z: 0}
+--- !u!114 &8145956306202091321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490099772959120357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c29f68644af7a4dabbb8e3cd644b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.StaticObject
+  renderers:
+  - {fileID: 3806097755308768748}
+  - {fileID: 2675611627486544373}
+  - {fileID: 18909998533019662}
+  - {fileID: 331328354008553493}
+  - {fileID: 5580280753698044741}
+  - {fileID: 6201183707595001028}
+  - {fileID: 4477132402219904941}
+  linkedInteractions:
+  - {fileID: 5081738147592847064}
+  - {fileID: 1914833728}
 --- !u!4 &8176823339202913691
 Transform:
   m_ObjectHideFlags: 0
