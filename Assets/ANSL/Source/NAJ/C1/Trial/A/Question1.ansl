@@ -17,6 +17,8 @@ choice(Arc)
 		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Juno_1)
 		showDialogWindow(true)
 
+		variable(C1_AttackedJuno;=;1)
+
 		:setJunoEyeSurprise()
 		:setCourtroomCamToWitness(true)
 		dialog(Char_Juno;Juno;C1_Trial_Question1_Juno_2)

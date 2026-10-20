@@ -572,6 +572,18 @@ C1_Trial_Testimony5_Press3_IncriminateFail_2 = …
 C1_Trial_Testimony5_Press3_IncriminateFail_3 = …
 C1_Trial_Testimony5_Press3_IncriminateFail_4 = Ha ha… Let me try again…
 
+C1_Trial_Testimony5_Press3_IncriminateJuno_1 = Juno must be our mysterious person, right ?
+C1_Trial_Testimony5_Press3_IncriminateJuno_2 = …
+C1_Trial_Testimony5_Press3_IncriminateJuno_3 = And when did she ever get her hands on this knife ?
+C1_Trial_Testimony5_Press3_IncriminateJuno_4 = Ah, erm…
+C1_Trial_Testimony5_Press3_IncriminateJuno_5 = When she… killed the captain ?
+C1_Trial_Testimony5_Press3_IncriminateJuno_6 = Miss Retyr, we’ve had this talk before.
+C1_Trial_Testimony5_Press3_IncriminateJuno_7 = Miss Dr’hma cannot be the culprit. It makes no sense that she came into possession of this knife.
+C1_Trial_Testimony5_Press3_IncriminateJuno_8 = Ah, ah…
+C1_Trial_Testimony5_Press3_IncriminateJuno_9 = I’m going to penalise you again.
+C1_Trial_Testimony5_Press3_IncriminateJuno_10 = I can’t believe you would attack this poor girl.
+C1_Trial_Testimony5_Press3_IncriminateJuno_11 = I’m sorry… I’ll try again…
+
 C1_Trial_Testimony5_Press3_34 = Well, they must be Gerald’s… right?
 C1_Trial_Testimony5_Press3_35 = What are you saying?!
 C1_Trial_Testimony5_Press3_36 = … I never did notice he had gloves.
@@ -686,6 +698,27 @@ C1_Trial1_I_Fail_4 = Can I try again?
 C1_Trial1_I_Fail_5 = I wasn’t sure I could…
 C1_Trial1_I_Fail_6 = … Miss Retyr, be careful.
 C1_Trial1_I_Fail_7 = Your very life depends on this. You should know better than to incriminate innocents.
+
+C1_Trial1_I_Juno_1 = I’m sure Miss Dr’hma did this!
+C1_Trial1_I_Juno_2 = If Gerald and I are innocent, she must be the true culprit…
+C1_Trial1_I_Juno_3 = …Right?
+C1_Trial1_I_Juno_4 = …
+C1_Trial1_I_Juno_5 = You sure like to incriminate her, eh?
+C1_Trial1_I_Juno_6 = I believe we already told you she is innocent.
+C1_Trial1_I_Juno_7 = …
+C1_Trial1_I_Juno_8 = Miss Retyr, I am deeply disappointed in you.
+C1_Trial1_I_Juno_9 = Even after penalising you, you still insist on attacking this poor girl.
+C1_Trial1_I_Juno_10 = As you can see, Your Honour, she is misleading this court.
+C1_Trial1_I_Juno_11 = You should end this farce right now.
+C1_Trial1_I_Juno_12 = We have lost enough of our time already.
+C1_Trial1_I_Juno_13 = Alright, I agree with the Sheriff.
+C1_Trial1_I_Juno_14 = It seems evident now that all of this was just lies upon lies.
+C1_Trial1_I_Juno_15 = You even dare to use the witness’s faulty memories against them.
+C1_Trial1_I_Juno_16 = No! I…
+C1_Trial1_I_Juno_17 = Enough. I will now reiterate my sentence.
+C1_Trial1_I_Juno_18 = This is my final say on the matter.
+C1_Trial1_I_Juno_19 = Sheriff, she’s all yours. We’ll proceed with the execution soon.
+C1_Trial1_I_Juno_20 = Nooooo!
 
 C1_Trial1_I_64 = <color=#72B6E8>I can do it… I can!</color>
 C1_Trial1_I_65 = I think Gerald is highly suspicious in that regard.

@@ -397,7 +397,9 @@ choice(List)
 		dialog(null;null;C1_Trial1_J_FullStory_7)
 		dialog(null;null;C1_Trial1_J_FullStory_8)
 
-		ask(Evidence;Evidence/C1_Knife)
+		ask(Evidence)
+
+		case Evidence/C1_Knife:
 			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_9)
 			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_10)
 			showDialogWindow(false)
@@ -421,7 +423,7 @@ choice(List)
 			:setCourtroomCamToWitness(true)
 			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_20)
 
-		wrong
+		case default:
 			:setGeraldEyeNormal(NoCoat)
 			:setCourtroomCamToWitnessImmediate()
 			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Fail_1)

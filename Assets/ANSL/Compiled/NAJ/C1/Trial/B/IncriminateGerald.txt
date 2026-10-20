@@ -1,4 +1,4 @@
-#2EBF69E8D91A00D0D07C2CC07FD5EAC3-8B2D142FF7EBD22669C2A913A0F2939F
+#F6A96472A6A163FB8736153ECC549A1A-8B2D142FF7EBD22669C2A913A0F2939F
 66DefenseCam
 67DefenseCam
 69RobertNormal0.1
@@ -8,7 +8,7 @@
 75JudgeNormal
 36nullnullC1_Trial1_I_62
 36Char_RannRannCoatC1_Trial1_I_63
-2Profile10131Profile/C1_Gerald
+2Profile198Profile/C1_Gerald10Profile/C1_Juno131default196
 36nullnullC1_Trial1_I_64
 36Char_RannRannCoatC1_Trial1_I_65
 100false
@@ -129,44 +129,71 @@
 36nullnullC1_Trial1_I_108
 36nullnullC1_Trial1_I_109
 45Testimony6
-43171
-22true
-191truetrue
-36Char_RannRannCoatC1_Trial1_I_Fail_1
-100false
-67ProsecutionCam0.25false
-66ProsecutionCam0.25true
-71RannCoatNormal
-75RannCoatOops
-69RannCoatStress0.1
-36Char_RobertRobertC1_Trial1_I_Fail_2
-66DefenseCam
-67DefenseCam
-36Char_RannRannCoatC1_Trial1_I_Fail_3
-36Char_RannRannCoatC1_Trial1_I_Fail_4true
-51LoseLife
-610.10.25truetrue
-107LifePoints-1
-41149151LifePoints < 0
-107LifePoints=0
-43152
-43152
-190falsefalse
-12falsetrue
-36Char_RannRannCoatC1_Trial1_I_Fail_5
-22false
-41157159LifePoints <= 0
-45../Common/Death
-43170
-71JudgeAngry
-75JudgeAngry
+43198
+41132134C1_AttackedJuno != 1
+45IncriminateGeraldFail
+43195
+36Char_RannRannCoatC1_Trial1_I_Juno_1
+36Char_RannRannCoatC1_Trial1_I_Juno_2
+36Char_RannRannCoatC1_Trial1_I_Juno_3
+71RobertThinking
+75RobertNormal
+67ProsecutionCam
+66ProsecutionCam
+36Char_RobertnullC1_Trial1_I_Juno_4
+71RobertNormal
+75RobertNormal
+36Char_RobertRobertC1_Trial1_I_Juno_5
+36Char_RobertRobertC1_Trial1_I_Juno_6
+71JudgeThinking
+75JudgeNormal
 66JudgeCam
 67JudgeCam
-69RannCoatHandsOnDesk0.1
-71RannCoatNormal
-75RannCoatNeutral
-36Char_JudgeJudgeC1_Trial1_I_Fail_6
-36Char_JudgeJudgeC1_Trial1_I_Fail_7
-45IncriminateGerald
-43170
-43171
+36Char_JudgenullC1_Trial1_I_Juno_7
+71JudgeAngry
+75JudgeAngry
+36Char_JudgeJudgeC1_Trial1_I_Juno_8
+36Char_JudgeJudgeC1_Trial1_I_Juno_9
+71RobertThinking
+75RobertNormal
+67ProsecutionCam
+66ProsecutionCam
+36Char_RobertRobertC1_Trial1_I_Juno_10
+36Char_RobertRobertC1_Trial1_I_Juno_11
+36Char_RobertRobertC1_Trial1_I_Juno_12
+69RannCoatAngry0.1
+100false
+66HammerCam
+67HammerCam
+69JudgeStrike
+1090.5
+51Gavel
+1090.5
+69JudgeNormal
+67JudgeCam
+66JudgeCam
+36Char_JudgeJudgeC1_Trial1_I_Juno_13
+36Char_JudgeJudgeC1_Trial1_I_Juno_14
+36Char_JudgeJudgeC1_Trial1_I_Juno_15
+66DefenseCam
+67DefenseCam
+36Char_RannRannCoatC1_Trial1_I_Juno_16
+66JudgeCam
+67JudgeCam
+36Char_JudgeJudgeC1_Trial1_I_Juno_17
+100false
+51Guilty
+52Guiltytrue
+36Char_JudgeJudgeC1_Trial1_I_Juno_18
+36Char_JudgeJudgeC1_Trial1_I_Juno_19
+66DefenseCam
+67DefenseCam
+36Char_RannRannCoatC1_Trial1_I_Juno_20
+105ACHIEVEMENT_C1_JUNO
+401true
+1092
+27NAJMainMenu
+43195
+43198
+45IncriminateGeraldFail
+43198

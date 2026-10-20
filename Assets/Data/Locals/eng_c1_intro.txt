@@ -357,6 +357,9 @@ C1_SecretCave_NoAxe_2 = Wait… It doesn’t even have a doorknob.
 C1_SecretCave_NoAxe_3 = What is this? A barricade?
 C1_SecretCave_NoAxe_4 = Maybe if I had an axe, I could see what’s on the other side.
 
+C1_SecretCave_Axe_Alt_1 = What a strange door. I wonder what’s behind it.
+C1_SecretCave_Axe_Alt_2 = …There is no doorknob. I’ll need to break it open with the axe.
+
 C1_SecretCave_Axe_1 = Alright, I can try breaking this barricade now.
 C1_SecretCave_Axe_2 = …
 C1_SecretCave_Axe_3 = After a few tries, I manage to break open the sealed room.

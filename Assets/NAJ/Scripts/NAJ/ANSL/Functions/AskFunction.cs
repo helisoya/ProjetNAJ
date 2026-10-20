@@ -7,6 +7,7 @@ using ANF.Utils;
 using NAJ.GUI;
 using JetBrains.Annotations;
 using System.Diagnostics;
+using System;
 
 namespace NAJ.ANSL
 {
@@ -17,7 +18,7 @@ namespace NAJ.ANSL
 
         functionBody: "ask",
         functionAutoComplete: new string[] {
-            "ask(Type;CorrectAnwser)\\n\\nwrong\\n\\nendask"
+            "ask(Type)\\n\\ncase Item:\\n\\nendask"
         },
         functionDesc: "Asks for a specific evidence. Multiple anwsers possible. Type can be Evidence,Profile or Any")]
     public class AskFunction : ANSLFunction
@@ -25,15 +26,13 @@ namespace NAJ.ANSL
         private bool waitingForItem = false;
         private InventoryUI.InventoryMode previousMode = InventoryUI.InventoryMode.ViewOnly;
         private InventoryUI inventoryUI;
-        private uint goodIdx;
-        private uint badIdx;
         private string[] anwsers;
+        private uint afterIdx;
 
         public override FunctionParameterType[][] GetParametersTemplates()
         {
             return new FunctionParameterType[][] {
-                new FunctionParameterType[]{FunctionParameterType.STRING,
-                    FunctionParameterType.UINT, FunctionParameterType.UINT, FunctionParameterType.LISTSTRING }
+                new FunctionParameterType[]{FunctionParameterType.STRING, FunctionParameterType.UINT, FunctionParameterType.LISTSTRING }
             };
         }
 
@@ -41,17 +40,17 @@ namespace NAJ.ANSL
         {
             compiledLines = new List<string>();
 
-            string content = ExtractParenthesisContent(cleanedLine).Replace(" ", "");
+            string[] split = cleanedLine.Split(new char[] { '(', ')' }, System.StringSplitOptions.RemoveEmptyEntries);
 
-            if (content == null)
+            if (split.Length != 2 && split.Length != 3)
             {
-                // No if content
+                // Missing parts
                 errors.Add(new ANSLUtils.ANSLError()
                 {
                     type = ANSLUtils.ANSLErrorType.ERROR,
                     filePath = compiler.GetSourceFilepath(),
                     line = compiler.GetCurrentLineCounter(),
-                    errorMessage = $"No ask content detected : {cleanedLine}."
+                    errorMessage = $"Bad number of parenthesis : {cleanedLine}."
                 });
                 return false;
             }
@@ -69,26 +68,15 @@ namespace NAJ.ANSL
                 return false;
             }
 
-            string[] contentSplit = content.Split(ANSLUtils.SOURCE_DELIMITER);
+            string type = split[1];
 
-            if (contentSplit.Length < 2)
-            {
-                // Not Enough
-                errors.Add(new ANSLUtils.ANSLError()
-                {
-                    type = ANSLUtils.ANSLErrorType.ERROR,
-                    filePath = compiler.GetSourceFilepath(),
-                    line = compiler.GetCurrentLineCounter(),
-                    errorMessage = $"Missing parameters in ask content : {cleanedLine}."
-                });
-                return false;
-            }
-
-            List<string> compiledTrue = new List<string>();
-            List<string> compiledFalse = new List<string>();
-            bool compilingTrues = true;
-            bool canContinue = true;
+            List<string> currentCompiledPart = null;
             bool foundEnd = false;
+            List<string[]> items = new List<string[]>();
+            List<List<string>> compiledParts = new List<List<string>>();
+
+            bool canContinue = true;
+
             compiler.CheckNextLine();
             string currentNextLine = compiler.GetCurrentLineClean();
 
@@ -101,74 +89,116 @@ namespace NAJ.ANSL
                     continue;
                 }
 
-                if (currentNextLine.Equals("wrong"))
-                {
-                    if (!compilingTrues)
-                    {
-                        // Already compiling else
-                        errors.Add(new ANSLUtils.ANSLError()
-                        {
-                            type = ANSLUtils.ANSLErrorType.ERROR,
-                            filePath = compiler.GetSourceFilepath(),
-                            line = compiler.GetCurrentLineCounter(),
-                            errorMessage = $"Two wrong detected : {currentNextLine}."
-                        });
-                        return false;
-                    }
-
-                    if (currentNextLine.Length != "wrong".Length)
-                    {
-                        // Already compiling else
-                        errors.Add(new ANSLUtils.ANSLError()
-                        {
-                            type = ANSLUtils.ANSLErrorType.ERROR,
-                            filePath = compiler.GetSourceFilepath(),
-                            line = compiler.GetCurrentLineCounter(),
-                            errorMessage = $"Unexpected token after the wrong : {currentNextLine}."
-                        });
-                        return false;
-                    }
-
-                    compilingTrues = false;
-                }
-                else if (currentNextLine.Equals("endask"))
+                if (currentNextLine.Equals("endask"))
                 {
                     if (currentNextLine.Length != "endask".Length)
                     {
-                        // Already compiling else
                         errors.Add(new ANSLUtils.ANSLError()
                         {
                             type = ANSLUtils.ANSLErrorType.ERROR,
                             filePath = compiler.GetSourceFilepath(),
                             line = compiler.GetCurrentLineCounter(),
-                            errorMessage = $"Unexpected token after the endask : {currentNextLine}."
+                            errorMessage = $"Unknown token after the endask : {currentNextLine}."
                         });
                         return false;
                     }
 
                     foundEnd = true;
                     canContinue = false;
+
+                    if (currentCompiledPart != null)
+                    {
+                        compiledParts.Add(currentCompiledPart);
+                        currentCompiledPart = null;
+                    }
+                }
+                else if (currentNextLine.StartsWith("case"))
+                {
+                    if (currentNextLine.StartsWith("case ") && currentNextLine.EndsWith(":"))
+                    {
+                        string token = currentNextLine.Substring(5, currentNextLine.Length - 6);
+                        if (token.Contains(' ') || token.Contains('\t') || string.IsNullOrEmpty(token))
+                        {
+                            errors.Add(new ANSLUtils.ANSLError()
+                            {
+                                type = ANSLUtils.ANSLErrorType.ERROR,
+                                filePath = compiler.GetSourceFilepath(),
+                                line = compiler.GetCurrentLineCounter(),
+                                errorMessage = $"Invalid items : {currentNextLine}."
+                            });
+                            return false;
+                        }
+
+                        if (currentCompiledPart != null)
+                        {
+                            compiledParts.Add(currentCompiledPart);
+                            currentCompiledPart = null;
+                        }
+
+                        string[] splitItems = token.Split(';');
+
+                        currentCompiledPart = new List<string>();
+
+                        foreach (string item in splitItems)
+                        {
+                            foreach (string[] itemData in items)
+                            {
+                                foreach (string individualItem in itemData)
+                                {
+                                    if (item.Equals(individualItem))
+                                    {
+                                        errors.Add(new ANSLUtils.ANSLError()
+                                        {
+                                            type = ANSLUtils.ANSLErrorType.ERROR,
+                                            filePath = compiler.GetSourceFilepath(),
+                                            line = compiler.GetCurrentLineCounter(),
+                                            errorMessage = $"Item already used in ask : {currentNextLine}."
+                                        });
+                                        return false;
+                                    }
+                                }
+                            }
+                        }
+
+                        items.Add(splitItems);
+                    }
+                    else
+                    {
+                        errors.Add(new ANSLUtils.ANSLError()
+                        {
+                            type = ANSLUtils.ANSLErrorType.ERROR,
+                            filePath = compiler.GetSourceFilepath(),
+                            line = compiler.GetCurrentLineCounter(),
+                            errorMessage = $"Bad case creation : {currentNextLine}."
+                        });
+                        return false;
+                    }
                 }
                 else
                 {
-                    int outputLineForFunction;
-                    if (compilingTrues)
-                        outputLineForFunction = outputLine + compiledTrue.Count + 1;
-                    else
-                        outputLineForFunction = outputLine + compiledTrue.Count + 1 + compiledFalse.Count + 1;
+                    if (compiledParts == null)
+                    {
+                        errors.Add(new ANSLUtils.ANSLError()
+                        {
+                            type = ANSLUtils.ANSLErrorType.ERROR,
+                            filePath = compiler.GetSourceFilepath(),
+                            line = compiler.GetCurrentLineCounter(),
+                            errorMessage = $"Function linked to no case : {currentNextLine}."
+                        });
+                        return false;
+                    }
+
+                    int outputLineForFunction = outputLine;
+                    foreach (List<string> part in compiledParts)
+                        outputLineForFunction += part.Count + 1;
+                    outputLineForFunction += currentCompiledPart.Count + 1;
 
                     // Potential function
                     if (compiler.CompileLine(currentNextLine, out List<string> compiled, outputLineForFunction))
-                    {
-                        if (compilingTrues)
-                            compiledTrue.AddRange(compiled);
-                        else
-                            compiledFalse.AddRange(compiled);
-                    }
+                        currentCompiledPart.AddRange(compiled);
+
                     else
-                    {
                         return false;
-                    }
                 }
 
                 if (canContinue)
@@ -190,22 +220,28 @@ namespace NAJ.ANSL
                 return false;
             }
 
-            int startTrue = outputLine + 1;
-            int startFalse = startTrue + compiledTrue.Count + 1;
-            int endIndex = startFalse + compiledFalse.Count + 1;
 
-            string type = contentSplit[0];
-            string anwsers = "";
-            for (int i = 1; i < contentSplit.Length; i++)
-                anwsers += $"{ANSLUtils.COMPILED_DELIMITER}{contentSplit[i]}";
+            int startIdx = outputLine + 1;
+            List<int> starts = new List<int>();
+            for (int i = 0; i < compiledParts.Count; i++)
+            {
+                starts.Add(startIdx);
+                startIdx += compiledParts[i].Count + 1;
+            }
 
             uint jumpToFunctionId = compiler.GetRegisteredFunctionId<JumpToFunction>();
 
-            compiledLines.Add($"{id}{ANSLUtils.COMPILED_DELIMITER}{type}{ANSLUtils.COMPILED_DELIMITER}{startTrue}{ANSLUtils.COMPILED_DELIMITER}{startFalse}{anwsers}");
-            compiledLines.AddRange(compiledTrue);
-            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{endIndex}");
-            compiledLines.AddRange(compiledFalse);
-            compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{endIndex}");
+            string compiledSwitchLine = $"{id}{ANSLUtils.COMPILED_DELIMITER}{type}{ANSLUtils.COMPILED_DELIMITER}{startIdx}";
+            for (int i = 0; i < compiledParts.Count; i++)
+            {
+                foreach (string item in items[i])
+                    compiledSwitchLine += $"{ANSLUtils.COMPILED_DELIMITER}{item}{ANSLUtils.COMPILED_DELIMITER}{starts[i]}";
+
+                compiledLines.AddRange(compiledParts[i]);
+                compiledLines.Add($"{jumpToFunctionId}{ANSLUtils.COMPILED_DELIMITER}{startIdx}");
+            }
+
+            compiledLines.Insert(0, compiledSwitchLine);
 
             return true;
         }
@@ -214,9 +250,8 @@ namespace NAJ.ANSL
         {
             waitingForItem = true;
             if (parameters.GetParameter(0, out string type) &&
-                parameters.GetParameter(1, out goodIdx) &&
-                parameters.GetParameter(2, out badIdx) &&
-                parameters.GetParameter(3, out anwsers) &&
+                parameters.GetParameter(1, out afterIdx) &&
+                parameters.GetParameter(2, out anwsers) &&
                 manager.GetGUIManager().GetComponent(out inventoryUI))
             {
                 previousMode = inventoryUI.currentMode;
@@ -259,22 +294,35 @@ namespace NAJ.ANSL
                     waitingForItem = false;
 
                     string selectedItem = inventoryUI.selectedItem;
+                    uint defaultIndex = 0;
+                    uint foundIdx = 0;
+                    bool foundDefault = false;
                     bool found = false;
 
-                    foreach (string anwser in anwsers)
+                    int anwserCount = anwsers.Length / 2;
+
+                    for (int i = 0; i < anwserCount; i++)
                     {
-                        if (anwser.Equals(selectedItem))
+                        if (anwsers[i * 2].Equals(selectedItem))
                         {
+                            uint.TryParse(anwsers[i * 2 + 1], out foundIdx);
                             found = true;
                             break;
+                        }
+                        else if (anwsers[i * 2].Equals("default"))
+                        {
+                            uint.TryParse(anwsers[i * 2 + 1], out defaultIndex);
+                            foundDefault = true;
                         }
                     }
 
                     EndProcess();
                     if (found)
-                        context.SetLineCounter(goodIdx);
+                        context.SetLineCounter(foundIdx);
+                    else if (foundDefault)
+                        context.SetLineCounter(defaultIndex);
                     else
-                        context.SetLineCounter(badIdx);
+                        context.SetLineCounter(afterIdx);
                 }
             }
             else
@@ -294,8 +342,7 @@ namespace NAJ.ANSL
             {
                 json.Add("waitingForItem", waitingForItem);
                 json.Add("previousMode", (int)previousMode);
-                json.Add("goodIdx", goodIdx);
-                json.Add("badIdx", badIdx);
+                json.Add("afterIdx", afterIdx);
                 json.Add("anwsers", anwsers);
             }
         }
@@ -306,53 +353,10 @@ namespace NAJ.ANSL
                 waitingForItem = json.GetBool("waitingForItem");
             if (json.ContainsKey("previousMode"))
                 previousMode = (InventoryUI.InventoryMode)json.GetInt("previousMode");
-            if (json.ContainsKey("goodIdx"))
-                goodIdx = json.GetJNumber("goodIdx").AsUInt();
-            if (json.ContainsKey("badIdx"))
-                badIdx = json.GetJNumber("badIdx").AsUInt();
+            if (json.ContainsKey("afterIdx"))
+                afterIdx = json.GetJNumber("afterIdx").AsUInt();
             if (json.ContainsKey("anwsers"))
                 anwsers = json.GetJArray("anwsers").AsStringArray();
-        }
-
-
-
-
-        /// <summary>
-        /// Extracts the string inside the first encountered set of ()
-        /// </summary>
-        /// <param name="fullString">The string</param>
-        /// <returns>The extracted string. Null if nothing was found</returns>
-        protected string ExtractParenthesisContent(string fullString)
-        {
-            int startIdx = -1;
-            int endIdx = -1;
-            int parenthesisToClose = 0;
-            for (int i = 0; i < fullString.Length; i++)
-            {
-                if (fullString[i] == '(')
-                {
-                    if (parenthesisToClose == 0)
-                        startIdx = i + 1;
-
-                    parenthesisToClose++;
-                }
-                if (fullString[i] == ')')
-                {
-                    parenthesisToClose--;
-
-                    if (parenthesisToClose == 0)
-                    {
-                        endIdx = i - 1;
-
-                        if (startIdx < endIdx && startIdx != -1 && endIdx != -1 && endIdx < fullString.Length)
-                        {
-                            return fullString.Substring(startIdx, endIdx - startIdx + 1);
-                        }
-                    }
-                }
-            }
-
-            return null;
         }
     }
 }

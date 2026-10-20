@@ -1,0 +1,40 @@
+#B7BDBEBF15B6F814C47B4BEF93B6C574-8B2D142FF7EBD22669C2A913A0F2939F
+22true
+191truetrue
+36Char_RannRannCoatC1_Trial1_I_Fail_1
+100false
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
+71RannCoatNormal
+75RannCoatOops
+69RannCoatStress0.1
+36Char_RobertRobertC1_Trial1_I_Fail_2
+66DefenseCam
+67DefenseCam
+36Char_RannRannCoatC1_Trial1_I_Fail_3
+36Char_RannRannCoatC1_Trial1_I_Fail_4true
+51LoseLife
+610.10.25truetrue
+107LifePoints-1
+411820LifePoints < 0
+107LifePoints=0
+4321
+4321
+190falsefalse
+12falsetrue
+36Char_RannRannCoatC1_Trial1_I_Fail_5
+22false
+412628LifePoints <= 0
+45../Common/Death
+4339
+71JudgeAngry
+75JudgeAngry
+66JudgeCam
+67JudgeCam
+69RannCoatHandsOnDesk0.1
+71RannCoatNormal
+75RannCoatNeutral
+36Char_JudgeJudgeC1_Trial1_I_Fail_6
+36Char_JudgeJudgeC1_Trial1_I_Fail_7
+45IncriminateGerald
+4339

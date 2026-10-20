@@ -1,4 +1,4 @@
-#B2B7C05BB3EA82213B11E334277CF03C-8B2D142FF7EBD22669C2A913A0F2939F
+#37146517F3425DC693E2BB4305510691-8B2D142FF7EBD22669C2A913A0F2939F
 66JudgeCam
 67JudgeCam
 69RannCoatNormal0.1
@@ -11,12 +11,13 @@
 36Char_JudgeJudgeC1_Trial_C_59
 36Char_JudgeJudgeC1_Trial_C_60
 380.75false
-282Choice_Question1_Juno13nullC1_Choice_JunoC1_ChoiceChoice_Question1_Sheriff68nullC1_Choice_RobertC1_ChoiceChoice_Question1_Suicide90nullC1_Choice_SuicideC1_ChoiceChoice_Question1_Sailor111nullC1_Choice_SailorC1_ChoiceChoice_Question1_Animal114nullC1_Choice_AnimalC1_Choice
+282Choice_Question1_Juno13nullC1_Choice_JunoC1_ChoiceChoice_Question1_Sheriff69nullC1_Choice_RobertC1_ChoiceChoice_Question1_Suicide91nullC1_Choice_SuicideC1_ChoiceChoice_Question1_Sailor112nullC1_Choice_SailorC1_ChoiceChoice_Question1_Animal115nullC1_Choice_AnimalC1_Choice
 380false
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Juno_1
 100true
+107C1_AttackedJuno=1
 71JunoSurprise
 75JunoSurprise
 67WitnessCam0.25false
@@ -51,22 +52,22 @@
 51LoseLife
 610.10.25truetrue
 107LifePoints-1
-415355LifePoints < 0
+415456LifePoints < 0
 107LifePoints=0
-4356
-4356
+4357
+4357
 190falsefalse
 12falsetrue
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Juno_13
 22false
-416365LifePoints == 0
+416466LifePoints == 0
 45../Common/Death
-4367
+4368
 45Question1
-4367
-43141
+4368
+43142
 380false
 66DefenseCam
 67DefenseCam
@@ -88,7 +89,7 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Sheriff_8
 45Question1
-43141
+43142
 380false
 66DefenseCam
 67DefenseCam
@@ -109,10 +110,10 @@
 67JudgeCam
 36Char_JudgeJudgeC1_Trial_Question1_Suicide_5
 45Question1
-43141
+43142
 380false
 45Intermission
-43141
+43142
 380false
 66DefenseCam
 67DefenseCam
@@ -139,4 +140,4 @@
 66ProsecutionCam
 36Char_RobertRobertC1_Trial_Question1_Animal_9
 45Question1
-43141
+43142

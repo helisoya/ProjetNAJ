@@ -6,7 +6,7 @@ setStaticHidden(Light;true)
 
 fadeFg(0;false)
 
-if(C1_SecretElk == 1)
+if(C1_SecretElk == 2)
 	# Secret done
 	dialog(Char_Rann;null;C1_SecretCave_After_1)
 	dialog(Char_Rann;null;C1_SecretCave_After_2)
@@ -18,9 +18,16 @@ else
 		dialog(Char_Rann;null;C1_SecretCave_NoAxe_2)
 		dialog(Char_Rann;null;C1_SecretCave_NoAxe_3)
 		dialog(Char_Rann;null;C1_SecretCave_NoAxe_4)
+		variable(C1_SecretElk;=;1)
 	else
 		# Axe found
-		dialog(Char_Rann;null;C1_SecretCave_Axe_1)
+
+		if(C1_SecretElk == 1)
+			dialog(Char_Rann;null;C1_SecretCave_Axe_1)
+		else
+			dialog(Char_Rann;null;C1_SecretCave_Axe_Alt_1)
+			dialog(Char_Rann;null;C1_SecretCave_Axe_Alt_2)
+		endif
 
 		fadeBg(1;false)
 		dialog(null;null;C1_SecretCave_Axe_2)
@@ -58,7 +65,7 @@ else
 		dialog(Char_Rann;null;C1_SecretCave_Axe_11)
 		dialog(Char_Rann;null;C1_SecretCave_Axe_12)
 
-		variable(C1_SecretElk;=;1)
+		variable(C1_SecretElk;=;2)
 		unlockAchievement(ACHIEVEMENT_C1_SECRETELK)
 
 	endif

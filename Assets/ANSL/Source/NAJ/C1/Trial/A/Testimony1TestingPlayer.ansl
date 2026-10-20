@@ -7,10 +7,11 @@ clearStack()
 :setCourtroomCamToJudge()
 dialog(Char_Judge;Judge;C1_Trial_Testimony1_TestingPlayer_2)
 
-ask(Any;Profile/C1_Judge)
+ask(Any)
+case Profile/C1_Judge:
 	dialog(Char_Judge;Judge;C1_Trial_Testimony1_TestingPlayer_3)
 	load(Testimony1)
-wrong
+case default:
 	:setRannEyeOops(Coat)
 	:setRannStress(Coat)
 	:setJudgeEyeThinking()

@@ -1,0 +1,37 @@
+showLifeBarUI(true)
+setLifeBarUIPreviewRange(1;true;true)
+
+dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_1)
+showDialogWindow(false)
+
+:setCourtroomCamToProsecutor(true)
+:setRannEyeOops(Coat)
+:setRannStress(Coat)
+dialog(Char_Robert;Robert;C1_Trial1_I_Fail_2)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_3)
+dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_4;true)
+
+playSFX(LoseLife)
+screenshake(0.1;0.25;true;true)
+:removeHealth(1)
+setLifeBarUIPreviewRange(0;false;false)
+refreshLifeBarUI(false;true)
+
+dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_5)
+
+showLifeBarUI(false)
+
+if(LifePoints <= 0)
+	load(../Common/Death)
+else
+	:setJudgeEyeAngry()
+	:setCourtroomCamToJudge()
+	:setRannHandsOnDesk(Coat)
+	:setRannEyeNeutral(Coat)
+	dialog(Char_Judge;Judge;C1_Trial1_I_Fail_6)
+	dialog(Char_Judge;Judge;C1_Trial1_I_Fail_7)
+
+	load(IncriminateGerald)
+endif

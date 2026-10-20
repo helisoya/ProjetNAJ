@@ -243,4 +243,6 @@ dialog(Char_Juno;Juno;C1_Trial_A_78)
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial_A_79)
 
+addProfile(C1_Juno)
+
 load(Testimony1Start)

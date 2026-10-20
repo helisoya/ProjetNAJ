@@ -1,9 +1,9 @@
-#FB10643AFF6C4A199ABE6B34A11B177A-8B2D142FF7EBD22669C2A913A0F2939F
+#0BFCD4D9983333183B3B2C2B14138957-8B2D142FF7EBD22669C2A913A0F2939F
 69RannCoatNormal0.1
 71RannCoatNormal
 75RannCoatNeutral
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_32
-2Profile567Profile/C1_Gerald
+2Profile137Profile/C1_Gerald5Profile/C1_Juno67default122
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_34
 100false
 51Damage
@@ -65,7 +65,62 @@
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_47
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_48
 45Testimony5End
-4382
+43137
+36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_1
+100false
+71RobertThinking
+75RobertNormal
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
+36Char_RobertnullC1_Trial_Testimony5_Press3_IncriminateJuno_2
+71RobertNormal
+75RobertNormal
+36Char_RobertRobertC1_Trial_Testimony5_Press3_IncriminateJuno_3
+100false
+69RannCoatStress0.1
+71RannCoatNormal
+75RannCoatOops
+67DefenseCam0.25false
+66DefenseCam0.25true
+36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_4
+36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_5
+22true
+191truetrue
+71JudgeAngry
+75JudgeAngry
+66JudgeCam
+67JudgeCam
+36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_6
+36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_7
+66DefenseCam
+67DefenseCam
+36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_8
+66JudgeCam
+67JudgeCam
+36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_9
+51LoseLife
+610.10.25truetrue
+107LifePoints-1
+41103105LifePoints < 0
+107LifePoints=0
+43106
+43106
+190falsefalse
+12falsetrue
+36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_10
+22false
+107C1_AttackedJuno=1
+41112114LifePoints <= 0
+45../Common/Death
+43121
+71JudgeNormal
+75JudgeNormal
+66DefenseCam
+67DefenseCam
+36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_11
+45Testimony5Question
+43121
+43137
 69RannCoatStress0.1
 71RannCoatNormal
 75RannCoatOops
@@ -80,4 +135,4 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_4
 45Testimony5Question
-4382
+43137

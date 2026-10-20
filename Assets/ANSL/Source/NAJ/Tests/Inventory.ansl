@@ -47,30 +47,34 @@ addProfile(TestProfile9)
 dialog(null;null;Test_Inventory_3)
 
 dialog(null;null;Test_Inventory_4)
-ask(Any;Profile/TestProfile3)
+ask(Any)
+case Profile/TestProfile3:
 dialog(null;null;OK)
-wrong
+case default:
 dialog(null;null;BAD)
 endask
 
 dialog(null;null;Test_Inventory_5)
-ask(Any;Profile/TestProfile5;Evidence/TestEvidence2)
+ask(Any)
+case Profile/TestProfile5;Evidence/TestEvidence2:
 dialog(null;null;OK)
-wrong
+case default:
 dialog(null;null;BAD)
 endask
 
 dialog(null;null;Test_Inventory_6)
-ask(Evidence;Evidence/TestEvidence8)
+ask(Evidence)
+case Evidence/TestEvidence8:
 dialog(null;null;OK)
-wrong
+case default:
 dialog(null;null;BAD)
 endask
 
 dialog(null;null;Test_Inventory_7)
-ask(Profile;Profile/TestProfile7)
+ask(Profile)
+case Profile/TestProfile7:
 dialog(null;null;OK)
-wrong
+case default:
 dialog(null;null;BAD)
 endask
 

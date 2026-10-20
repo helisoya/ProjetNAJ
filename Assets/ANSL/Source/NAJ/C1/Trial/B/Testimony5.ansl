@@ -198,7 +198,9 @@ press 3
 			dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_12)
 			dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_13)
 
-			ask(Any;Evidence/C1_Knife)
+			ask(Any)
+
+			case Evidence/C1_Knife:
 				:setRannReadingBook(Coat)
 				:setJudgeEyeSurprise()
 				dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_14)
@@ -241,7 +243,7 @@ press 3
 				dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_31)
 				load(Testimony5Question)
 
-			wrong
+			case default:
 				# Got it wrong
 				showLifeBarUI(true)
 				setLifeBarUIPreviewRange(1;true;true)

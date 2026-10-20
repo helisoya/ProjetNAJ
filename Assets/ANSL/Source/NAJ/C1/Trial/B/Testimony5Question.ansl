@@ -3,7 +3,9 @@
 
 dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_32)
 
-ask(Profile;Profile/C1_Gerald)
+ask(Profile)
+
+case Profile/C1_Gerald:
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_34)
 	showDialogWindow(false)
 
@@ -57,7 +59,61 @@ ask(Profile;Profile/C1_Gerald)
 
 	load(Testimony5End)
 
-wrong
+case Profile/C1_Juno:
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateJuno_1)
+	showDialogWindow(false)
+
+	:setRobertEyeThinking()
+	:setCourtroomCamToProsecutor(true)
+	dialog(Char_Robert;null;C1_Trial_Testimony5_Press3_IncriminateJuno_2)
+	
+	:setRobertEyeNormal()
+	dialog(Char_Robert;Robert;C1_Trial_Testimony5_Press3_IncriminateJuno_3)
+	showDialogWindow(false)
+
+	:setRannStress(Coat)
+	:setRannEyeOops(Coat)
+	:setCourtroomCamToDefense(true)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateJuno_4)
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateJuno_5)
+
+
+	showLifeBarUI(true)
+	setLifeBarUIPreviewRange(1;true;true)
+
+	:setJudgeEyeAngry()
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_6)
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_7)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateJuno_8)
+
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_9)
+
+	playSFX(LoseLife)
+	screenshake(0.1;0.25;true;true)
+	:removeHealth(1)
+	setLifeBarUIPreviewRange(0;false;false)
+	refreshLifeBarUI(false;true)
+
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_10)
+
+	showLifeBarUI(false)
+	variable(C1_AttackedJuno;=;1)
+
+	if(LifePoints <= 0)
+		load(../Common/Death)
+	else
+		:setJudgeEyeNormal()
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateJuno_11)
+
+		load(Testimony5Question)
+	endif
+
+case default:
 	:setRannStress(Coat)
 	:setRannEyeOops(Coat)
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateFail_1)

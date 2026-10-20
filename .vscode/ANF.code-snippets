@@ -14,7 +14,7 @@
 	"2_0": {
 		"scope": "ansl",
 		"prefix": "ask",
-		"body": ["ask(Type;CorrectAnwser)\n\nwrong\n\nendask"],
+		"body": ["ask(Type)\n\ncase Item:\n\nendask"],
 		"description": "Asks for a specific evidence. Multiple anwsers possible. Type can be Evidence,Profile or Any"
 	},
 	"4_0": {
@@ -961,83 +961,101 @@
 	},
 	"97_0": {
 		"scope": "ansl",
+		"prefix": "setTextBlip",
+		"body": ["setTextBlip(Name)"],
+		"description": "Changes the current text blip"
+	},
+	"97_1": {
+		"scope": "ansl",
+		"prefix": "setTextBlip",
+		"body": ["setTextBlip(default)"],
+		"description": "Changes the current text blip"
+	},
+	"98_0": {
+		"scope": "ansl",
 		"prefix": "setVolumeWeight",
 		"body": ["setVolumeWeight(Name;Weight)"],
 		"description": "Sets a post process volume's weight"
 	},
-	"97_1": {
+	"98_1": {
 		"scope": "ansl",
 		"prefix": "setVolumeWeight",
 		"body": ["setVolumeWeight(Name;Weight;Duration;WaitForEnd)"],
 		"description": "Sets a post process volume's weight"
 	},
-	"98_0": {
+	"99_0": {
 		"scope": "ansl",
 		"prefix": "setWeatherEffect",
 		"body": ["setWeatherEffect(WeatherEffect)"],
 		"description": "Changes the current background's weather effect"
 	},
-	"99_0": {
+	"100_0": {
 		"scope": "ansl",
 		"prefix": "showDialogWindow",
 		"body": ["showDialogWindow(Shown)"],
 		"description": "Shows/Hides the dialog window"
 	},
-	"100_0": {
+	"101_0": {
 		"scope": "ansl",
 		"prefix": "showInputReminder",
 		"body": ["showInputReminder(Id;Enabled)"],
 		"description": "Shows/Hides an input reminder"
 	},
-	"101_0": {
+	"102_0": {
 		"scope": "ansl",
 		"prefix": "stopContext",
 		"body": ["stopContext(Id)"],
 		"description": "Stops an ANSL Context"
 	},
-	"102_0": {
+	"103_0": {
 		"scope": "ansl",
 		"prefix": "switch",
 		"body": ["switch(Variable)\n\tcase default:\n\n\tcase 0:\n\nendswitch"],
 		"description": "Checks a single variables. You can use 'case default:' to check when none of the checks are valid"
 	},
-	"103_0": {
+	"104_0": {
 		"scope": "ansl",
 		"prefix": "unloadBundle",
 		"body": ["unloadBundle(Bundle;DataType)"],
 		"description": "Unloads a bundle from memory (AudioClip / TextAsset / Sprite / Texture2D / GameObject)"
 	},
-	"104_0": {
+	"105_0": {
+		"scope": "ansl",
+		"prefix": "unlockAchievement",
+		"body": ["unlockAchievement(Id)"],
+		"description": "Unlocks a steam achievement"
+	},
+	"106_0": {
 		"scope": "ansl",
 		"prefix": "unlockLog",
 		"body": ["unlockLog(Log;ShowPopup)"],
 		"description": "Unlocks a log"
 	},
-	"105_0": {
+	"107_0": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Value)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"105_1": {
+	"107_1": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Variable)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"105_2": {
+	"107_2": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;default)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"106_0": {
+	"108_0": {
 		"scope": "ansl",
 		"prefix": "waitForContextEnd",
 		"body": ["waitForContextEnd(contextId)"],
 		"description": "Waits for the end of a context"
 	},
-	"107_0": {
+	"109_0": {
 		"scope": "ansl",
 		"prefix": "wait",
 		"body": ["wait(Seconds)"],
@@ -1561,11 +1579,47 @@
 	},
 	"Macro_86": {
 		"scope": "ansl",
+		"prefix": ":playTestimonyAnimation",
+		"body": [":playTestimonyAnimation()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_87": {
+		"scope": "ansl",
+		"prefix": ":playRebuttalAnimation",
+		"body": [":playRebuttalAnimation()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_88": {
+		"scope": "ansl",
+		"prefix": ":playGuiltyAnimation",
+		"body": [":playGuiltyAnimation()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_89": {
+		"scope": "ansl",
+		"prefix": ":playNotGuiltyAnimation",
+		"body": [":playNotGuiltyAnimation()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_90": {
+		"scope": "ansl",
+		"prefix": ":playPressAnimation",
+		"body": [":playPressAnimation()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_91": {
+		"scope": "ansl",
+		"prefix": ":playObjectionAnimation",
+		"body": [":playObjectionAnimation()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_92": {
+		"scope": "ansl",
 		"prefix": ":DebugMacro",
 		"body": [":DebugMacro(Name)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_87": {
+	"Macro_93": {
 		"scope": "ansl",
 		"prefix": ":DebugMacro2",
 		"body": [":DebugMacro2()"],

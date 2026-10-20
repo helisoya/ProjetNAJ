@@ -6,7 +6,8 @@
 dialog(null;null;C1_Trial1_I_62)
 dialog(Char_Rann;RannCoat;C1_Trial1_I_63)
 
-ask(Profile;Profile/C1_Gerald)
+ask(Profile)
+case Profile/C1_Gerald:
 	dialog(null;null;C1_Trial1_I_64)
 	dialog(Char_Rann;RannCoat;C1_Trial1_I_65)
 	showDialogWindow(false)
@@ -119,42 +120,66 @@ ask(Profile;Profile/C1_Gerald)
 
 	load(Testimony6)
 
-wrong
-	showLifeBarUI(true)
-	setLifeBarUIPreviewRange(1;true;true)
+case Profile/C1_Juno:
 
-	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_1)
-	showDialogWindow(false)
-
-	:setCourtroomCamToProsecutor(true)
-	:setRannEyeOops(Coat)
-	:setRannStress(Coat)
-	dialog(Char_Robert;Robert;C1_Trial1_I_Fail_2)
-
-	:setCourtroomCamToDefenseImmediate()
-	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_3)
-	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_4;true)
-
-	playSFX(LoseLife)
-	screenshake(0.1;0.25;true;true)
-	:removeHealth(1)
-	setLifeBarUIPreviewRange(0;false;false)
-	refreshLifeBarUI(false;true)
-
-	dialog(Char_Rann;RannCoat;C1_Trial1_I_Fail_5)
-
-	showLifeBarUI(false)
-
-	if(LifePoints <= 0)
-		load(../Common/Death)
+	if(C1_AttackedJuno != 1)
+		load(IncriminateGeraldFail)
 	else
-		:setJudgeEyeAngry()
-		:setCourtroomCamToJudge()
-		:setRannHandsOnDesk(Coat)
-		:setRannEyeNeutral(Coat)
-		dialog(Char_Judge;Judge;C1_Trial1_I_Fail_6)
-		dialog(Char_Judge;Judge;C1_Trial1_I_Fail_7)
+		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_1)
+		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_2)
+		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_3)
+		
+		:setRobertEyeThinking()
+		:setCourtroomCamToProsecutorImmediate()
+		dialog(Char_Robert;null;C1_Trial1_I_Juno_4)
 
-		load(IncriminateGerald)
+		:setRobertEyeNormal()
+		dialog(Char_Robert;Robert;C1_Trial1_I_Juno_5)
+		dialog(Char_Robert;Robert;C1_Trial1_I_Juno_6)
+
+		:setJudgeEyeThinking()
+		:setCourtroomCamToJudge()
+		dialog(Char_Judge;null;C1_Trial1_I_Juno_7)
+
+		:setJudgeEyeAngry()
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_8)
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_9)
+
+		:setRobertEyeThinking()
+		:setCourtroomCamToProsecutorImmediate()
+		dialog(Char_Robert;Robert;C1_Trial1_I_Juno_10)
+		dialog(Char_Robert;Robert;C1_Trial1_I_Juno_11)
+		dialog(Char_Robert;Robert;C1_Trial1_I_Juno_12)
+
+		:setRannAngry(Coat)
+		:playJudgeHammerAnimation(Normal;JudgeCam)
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_13)
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_14)
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_15)
+
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_16)
+
+		:setCourtroomCamToJudge()
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_17)
+		showDialogWindow(false)
+
+		playSFX(Guilty)
+		playUIAnimation(Guilty;true)
+
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_18)
+		dialog(Char_Judge;Judge;C1_Trial1_I_Juno_19)
+
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_20)
+
+		unlockAchievement(ACHIEVEMENT_C1_JUNO)
+
+		fadeFg(1;true)
+		wait(2)
+		changeScene(NAJMainMenu)
 	endif
+
+case default:
+	load(IncriminateGeraldFail)
 endask
