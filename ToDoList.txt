@@ -81,7 +81,7 @@ To Release
 	- Son menus                                                                       OK mais faire attention aux playoneshots trop nombreux
 	- Mixage
 - Inté steam                                                                          -
-	- Steam Cloud ?
+	- Steam Cloud                                                                     Ok?
 	- Succès                                                                          Ajouter plus ? (sinon OK)
 
 Review
@@ -104,7 +104,7 @@ Review
 	- Remplacer eau menu principal / cliff / waterfall (elle bouge, oupsi)          v
 	- Valeur par defaut settings a l'air cassé (vitesse dialog)                     V
 	- Autosave pas déclenché                                                        V
-	- Tiling kayous cassé                                                           Pb lightmaps, revérifier autres scenes
+	- Tiling kayous cassé                                                           Ok?
 	- Mouvements au crash site
 	- Pas de capitaine au crash site: (                                             V
 	- 1er Coup de marteau mauvais placement camera                                  V
@@ -115,17 +115,17 @@ Review
 	- 1er témoignage "A cause de ça" en rouge                                       V
 	- 2ème témoignage "c'est possible" attribué au juge > sheriff                   V
 	- fov camera pas bon ? (Cam Juge correspond pas totalement)                     FOV bon, cam Juge est juste pété, a revoir
-	- Barre de vie trop grosse                                                      v
+	- Barre de vie trop grosse                                                      V
 	- SUCCES : Accuser Juno à tout les moments possible
 	- Duel Intermission Juge Sheriff a des lines non attribués                      V
-	- Trou bras droit soldat
+	- Trou bras droit soldat                                                        V
 	- typo preuve papiers de detes                                                  V
 	- Papiers secrets anim juge trop tard, on la voit se finir                      Ok?
 	- Avant intro Gerald, Rann parle sur du texte pensé                             V
 	- 3ème témoingnage loop </color<                                                V
-	- Anim damage de Rann cassé
+	- Anim Damage/Angry de Rann cassé                                               V
 	- SUCCES : Accuser le Juge comme coupable
-	- Main gauche Gerald (au moins No coat) cassé
+	- Main gauche Gerald (au moins No coat) cassé                                   V
 	- Temoignage 5 : Anim gerald se reset trop tôt (début phase 1/2)                V
 	- Revoir les infos preuves en général                                           Ok?
 	- Après présentation herbier, cam ne switch pas sur Rann "As you recall, ..."   V
