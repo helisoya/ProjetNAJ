@@ -40,3 +40,24 @@ Location_VMP_Intro = Introduction
 Location_VMP_Cycle1 = Cycle 1
 Location_VMP_Cycle2 = Cycle 2
 Location_VMP_Accusation = Accusations
+
+# ---------------------------------------------------------
+# ----------------------- Playtests -----------------------
+# ---------------------------------------------------------
+
+PlayTest2_Name = Playtest
+PlayTest2_PointClick = Point & Click Only
+PlayTest2_All = Entire Game
+
+Playtest_Start_1 = <color=green>Thank you for testing this game ! Green messages will appear from time to time to tell you to anwser to the google form.</color>
+Playtest_EndIntro_1 = <color=green>You may now anwser the "Introduction" part of the google form.</color>
+Playtest_StartPointClick_1 = <color=green>You are about to start the point & click phase. If you can, please record this phase up until the end message.</color>
+Playtest_StartPointClick_2 = <color=green>If you can't, that's okay. Just tell me in the google form.</color>
+
+Playtest_EndPointClick_1 = <color=green>You may now end the recording.
+Playtest_EndPointClick_2 = <color=green>You may now anwser the "Point & Click" part of the google form.</color>
+Playtest_EndPointClick_3 = <color=green>You may anwser the rest of the google form.</color>
+
+Playtest_EndTrialA_1 = <color=green>You may now anwser the "Trial Part 1" part of the google form.</color>
+
+Playtest_EndTrialB_1 = <color=green>You may now anwser the rest of the google form.</color>

@@ -9,4 +9,6 @@ addProfile(C1_Rann)
 addProfile(C1_Sartt)
 addProfile(C1_Gerald)
 
+createUserVariable(PlayTest_All;0)
+
 load(../Investigation/Cliff/Start)

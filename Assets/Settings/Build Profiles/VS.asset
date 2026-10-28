@@ -20,7 +20,7 @@ MonoBehaviour:
     rid: 5904633838106312704
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/NAJ/Plugins/SplashScreen/Scenes/SplashScreen.unity
   - m_enabled: 1
     m_path: Assets/NAJ/Scenes/NAJMainMenu.unity

@@ -135,6 +135,8 @@ Review
 	- SUCCES : Trouver le secret de Gerald
 	- Pb chargement background / scene ?                                              A reproduire, jsp pas ce qui a déclenché ça (new game > main menu > trial A > ecran noir)
 	- Message de Game Over Custom (A la fin on sait qui est le tueur, pas au début)
+	- Manque SFX selection de case
+	- Change scene ne lock rien en place
 
 Musiques :
 - Theme/Menu principal

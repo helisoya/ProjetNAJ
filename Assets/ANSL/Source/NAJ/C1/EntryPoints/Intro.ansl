@@ -7,4 +7,6 @@ setLocation(Location_C1_Intro)
 addEvidence(C1_Herbarium)
 addProfile(C1_Rann)
 
+createUserVariable(PlayTest_All;1)
+
 load(../Intro/A)

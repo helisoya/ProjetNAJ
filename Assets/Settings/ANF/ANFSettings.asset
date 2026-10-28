@@ -40,9 +40,6 @@ MonoBehaviour:
   - id: 
     data:
       rid: 8808018580948385883
-  - id: 
-    data:
-      rid: 992773608557510784
   registeredGlobalDataContainers:
   - id: 
     data:
@@ -70,11 +67,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 992773608557510784
-      type: {class: ANFSteamworkContainer, ns: ANF.Persistent, asm: Assembly-CSharp}
-      data:
-        appid: 5458970
-        debugResetAllAchievementsOnStart: 0
     - rid: 1438066020397613127
       type: {class: PlayerVariableContainer, ns: ANF.Persistent, asm: Assembly-CSharp}
       data:
@@ -89,7 +81,6 @@ MonoBehaviour:
         staticData:
           languages:
           - eng
-          - fra
           fonts:
           - {fileID: 11400000, guid: 7d934e7fb84582a4d872923bcd7be0ef, type: 2}
           - {fileID: 11400000, guid: 298bcc652e05faa46afa7781747b710b, type: 2}

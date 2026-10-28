@@ -13,6 +13,9 @@ fadeFg(0;false)
 
 autosave()
 
+
+dialog(null;null;Playtest_Start_1)
+
 # Cell Dialog
 dialog(null;null;C1_Intro_A_1)
 dialog(null;null;C1_Intro_A_2)

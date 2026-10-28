@@ -7,6 +7,15 @@ playAmbient(Wind)
 setCameraPosition(0;-2;-3)
 setCameraRotation(-70;28;0)
 
+setBg(1)
+setFg(0)
+
+dialog(null;null;Playtest_StartPointClick_1)
+dialog(null;null;Playtest_StartPointClick_2)
+showDialogWindow(false)
+
+setBg(0)
+setFg(1)
 fadeFg(0;false)
 
 autosave()

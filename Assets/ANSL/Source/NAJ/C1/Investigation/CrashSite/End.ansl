@@ -36,6 +36,17 @@ fadeBg(1;true)
 
 playAmbient(null)
 
+dialog(null;null;Playtest_EndPointClick_1)
+
+if(PlayTest_All == 0)
+	dialog(null;null;Playtest_EndPointClick_3)
+	changeScene(NAJMainMenu)
+	return()
+endif
+
+dialog(null;null;Playtest_EndPointClick_2)
+
+
 dialog(null;null;C1_Investigation_End_34)
 dialog(null;null;C1_Investigation_End_35)
 dialog(null;null;C1_Investigation_End_36)

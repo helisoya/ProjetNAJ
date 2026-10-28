@@ -224,20 +224,16 @@ MonoBehaviour:
     rid: 5904634178622980232
   pausedTransition:
     rid: -2
-  entrypointSelectionByDefault: 0
+  entrypointSelectionByDefault: 1
   casesInfo:
-  - nameKey: Cases_C1
-    imageDone: {fileID: 21300000, guid: 2bb401ef2c5a32741a7d2084fc3b221b, type: 3}
-    imageNotDone: {fileID: 21300000, guid: 9a3859080cb78f84294eb996a85b4995, type: 3}
+  - nameKey: PlayTest2_Name
+    imageDone: {fileID: -6519596714882233200, guid: 9614aeffbaec45e459c176fc1b5a67bb, type: 3}
+    imageNotDone: {fileID: -6519596714882233200, guid: 9614aeffbaec45e459c176fc1b5a67bb, type: 3}
     entrypoints:
-    - nameKey: EntryPoint_C1_Intro
-      entryPoint: /NAJ/C1/EntryPoints/Intro
-    - nameKey: EntryPoint_C1_Stranded
+    - nameKey: PlayTest2_PointClick
       entryPoint: /NAJ/C1/EntryPoints/Investigation
-    - nameKey: EntryPoint_C1_TrialA
-      entryPoint: /NAJ/C1/EntryPoints/TrialStart
-    - nameKey: EntryPoint_C1_TrialB
-      entryPoint: /NAJ/C1/EntryPoints/TrialMid
+    - nameKey: PlayTest2_All
+      entryPoint: /NAJ/C1/EntryPoints/Intro
     defaultEntrypoint:
       nameKey: EntryPoint_FromStart
       entryPoint: /NAJ/C1/EntryPoints/Intro

@@ -288,4 +288,7 @@ playAmbient(null)
 setFogEnabled(false)
 
 wait(10)
+
+dialog(null;null;Playtest_EndIntro_1)
+
 load(../Investigation/Cliff/Start)

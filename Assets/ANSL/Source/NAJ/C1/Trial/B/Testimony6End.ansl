@@ -565,6 +565,11 @@ setCharacterAlpha(Juno;0)
 setCharacterPosition(Juno;LobbySpot)
 setCharacterRotation(Juno;LobbySpot)
 
+dialog(null;null;Playtest_EndTrialB_1)
+changeScene(NAJMainMenu)
+return()
+
+
 fadeBg(0;false)
 
 dialog(null;null;C1_Trial1_J_99)

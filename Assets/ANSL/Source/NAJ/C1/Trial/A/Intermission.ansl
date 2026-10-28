@@ -93,6 +93,8 @@ fadeBg(1;true)
 
 :setCourtroomCamToLobby()
 
+dialog(null;null;Playtest_EndTrialA_1)
+
 fadeBg(0;false)
 
 dialog(null;null;C1_Trial1_D_37)
