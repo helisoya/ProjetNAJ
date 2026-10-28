@@ -85,72 +85,73 @@ To Release
 	- Succès                                                                          Ajouter plus ? (sinon OK)
 
 Review
-	- Rework Splash Screen (Ne pas oublier Unity d'ailleur)                          Ok?
-	- Mode Interaction Icones Exit bas trop haut                                     V
-	- Bug Inventaire marqueur ? (a reproduire)                                       V
-	- Opti taille bundles                                                            A revérifier en test
-	- Temps chargement plus long en build (faire des async avec certaines res)       Pas Maintenant
-	- Mettre un texte si on trouve la porte secrète après la hache                  V
-	- Modifier ask pour avoir des réponses custom par preuves fausse                V
-	- Intro / Bato Fondu trop rapide, faire une petite pause                        V
-	- Icones (Au moins herbarium pas posé dans la spritesheet)                      V
-	- Impossible de save                                                            V
-	- Brouillard intro cassé                                                        V
-	- Vitesse dialogue dans les options                                             V
-	- Clignement d'yeux trop rapide                                                 V
-	- Mouvements d'eau avec le bato                                                 Ok?
+	- Rework Splash Screen (Ne pas oublier Unity d'ailleur)                           Ok?
+	- Mode Interaction Icones Exit bas trop haut                                      V
+	- Bug Inventaire marqueur ? (a reproduire)                                        V
+	- Opti taille bundles                                                             A revérifier en test
+	- Temps chargement plus long en build (faire des async avec certaines res)        Pas Maintenant
+	- Mettre un texte si on trouve la porte secrète après la hache                    V
+	- Modifier ask pour avoir des réponses custom par preuves fausse                  V
+	- Intro / Bato Fondu trop rapide, faire une petite pause                          V
+	- Icones (Au moins herbarium pas posé dans la spritesheet)                        V
+	- Impossible de save                                                              V
+	- Brouillard intro cassé                                                          V
+	- Vitesse dialogue dans les options                                               V
+	- Clignement d'yeux trop rapide                                                   V
+	- Mouvements d'eau avec le bato                                                   V
 	- Loop eau foireuse
-	- Secret Cave pas trouvé                                                        V
-	- Remplacer eau menu principal / cliff / waterfall (elle bouge, oupsi)          v
-	- Valeur par defaut settings a l'air cassé (vitesse dialog)                     V
-	- Autosave pas déclenché                                                        V
-	- Tiling kayous cassé                                                           Ok?
+	- Secret Cave pas trouvé                                                          V
+	- Remplacer eau menu principal / cliff / waterfall (elle bouge, oupsi)            v
+	- Valeur par defaut settings a l'air cassé (vitesse dialog)                       V
+	- Autosave pas déclenché                                                          V
+	- Tiling kayous cassé                                                             V
 	- Mouvements au crash site
-	- Pas de capitaine au crash site: (                                             V
-	- 1er Coup de marteau mauvais placement camera                                  V
-	- Preuve obtenu -> Ajouter un fade Bg                                           V
-	- Vitesse par défaut plus rapide pour le texte                                  V
-	- Intro procès damage sans sfx                                                  V
-	- Inventaire scale mal (dépasse le dialogue)                                    Volontaire mais foireux
-	- 1er témoignage "A cause de ça" en rouge                                       V
-	- 2ème témoignage "c'est possible" attribué au juge > sheriff                   V
-	- fov camera pas bon ? (Cam Juge correspond pas totalement)                     FOV bon, cam Juge est juste pété, a revoir
-	- Barre de vie trop grosse                                                      V
-	- SUCCES : Accuser Juno à tout les moments possible                             V
-	- Duel Intermission Juge Sheriff a des lines non attribués                      V
-	- Trou bras droit soldat                                                        V
-	- typo preuve papiers de detes                                                  V
-	- Papiers secrets anim juge trop tard, on la voit se finir                      Ok?
-	- Avant intro Gerald, Rann parle sur du texte pensé                             V
-	- 3ème témoingnage loop </color<                                                V
-	- Anim Damage/Angry de Rann cassé                                               V
+	- Pas de capitaine au crash site: (                                               V
+	- 1er Coup de marteau mauvais placement camera                                    V
+	- Preuve obtenu -> Ajouter un fade Bg                                             V
+	- Vitesse par défaut plus rapide pour le texte                                    V
+	- Intro procès damage sans sfx                                                    V
+	- Inventaire scale mal (dépasse le dialogue)                                      Volontaire mais foireux
+	- 1er témoignage "A cause de ça" en rouge                                         V
+	- 2ème témoignage "c'est possible" attribué au juge > sheriff                     V
+	- fov camera pas bon ? (Cam Juge correspond pas totalement)                       FOV bon, cam Juge est juste pété, a revoir
+	- Barre de vie trop grosse                                                        V
+	- SUCCES : Accuser Juno à tout les moments possible                               V
+	- Duel Intermission Juge Sheriff a des lines non attribués                        V
+	- Trou bras droit soldat                                                          V
+	- typo preuve papiers de detes                                                    V
+	- Papiers secrets anim juge trop tard, on la voit se finir                        Ok?
+	- Avant intro Gerald, Rann parle sur du texte pensé                               V
+	- 3ème témoingnage loop </color<                                                  V
+	- Anim Damage/Angry de Rann cassé                                                 V
 	- SUCCES : Accuser le Juge comme coupable
-	- Main gauche Gerald (au moins No coat) cassé                                   V
-	- Temoignage 5 : Anim gerald se reset trop tôt (début phase 1/2)                V
-	- Revoir les infos preuves en général                                           Ok?
-	- Après présentation herbier, cam ne switch pas sur Rann "As you recall, ..."   V
-	- Présenter fausse preuve / mourir avant témoignage 6 softlock                  V
-	- Chargement de save, icones inventaire cassé (peut être choix aussi)           V
-	- It took you this long to realise pas en bleu                                  V
+	- Main gauche Gerald (au moins No coat) cassé                                     V
+	- Temoignage 5 : Anim gerald se reset trop tôt (début phase 1/2)                  V
+	- Revoir les infos preuves en général                                             Ok?
+	- Après présentation herbier, cam ne switch pas sur Rann "As you recall, ..."     V
+	- Présenter fausse preuve / mourir avant témoignage 6 softlock                    V
+	- Chargement de save, icones inventaire cassé (peut être choix aussi)             V
+	- It took you this long to realise pas en bleu                                    V
 	- SUCCES : Trouver le secret de Gerald
-	- Pb chargement background / scene ?                                            A reproduire, jsp pas ce qui a déclenché ça (new game > main menu > trial A > ecran noir)
-
+	- Pb chargement background / scene ?                                              A reproduire, jsp pas ce qui a déclenché ça (new game > main menu > trial A > ecran noir)
+	- Message de Game Over Custom (A la fin on sait qui est le tueur, pas au début)
 
 Musiques :
 - Theme/Menu principal
-- Intro - Voyage
+- Intro - Voyage                                                                      Strings de la musique de LJDN
 - Intro - Tension (Quand crash et tempete)
-- (Gerald)
-- (Sherif)
-- (Juno)
-- Tribunal - Intermission
-- Tribunal - Intro
-- Examination - Lent
-- Examination - Rapide
-- (Examination - Fin)
-- Examination - Preuve
-- Examination - Poursuite
-- Examination - Vérité
+- (Gerald)                                                                            Non
+- (Sherif)                                                                            Pas pour ce chapitre ?
+- (Juno)                                                                              ?
+- Tribunal - Intermission                                                             Test
+- Tribunal - Intro                                                                    Non?
+- Examination - Lent                                                                  Test
+- Examination - Rapide                                                                Test
+- (Examination - Fin)                                                                 Non?
+- Tension                                                                             Test
+- Examination - Preuve                                                             
+- Examination - Poursuite                                               
+- Examination - Vérité                                                                Test
 - Victoire
 
 () = Nice to have

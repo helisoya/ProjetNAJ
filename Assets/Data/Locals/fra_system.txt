@@ -16,6 +16,7 @@ PauseMenu_Credits = Crédits
 
 SaveMenu_Title_Save = Sélectionnez un slot ou sauvegarder
 SaveMenu_Title_Load = Sélectionnez un slot à charger
+SaveMenu_CorruptedSave = Sauvegarde corrompue
 
 SaveMenu_Popup_Title = Utiliser ce slot ?
 SaveMenu_Popup_Confirm = Confirmer
@@ -127,11 +128,12 @@ GeneralMenu_Back = Retour
 # -------------------------- NAJ Menus -----------------------------------
 # ------------------------------------------------------------------------
 
-CaseSelectionMenu_Title = Sélection de l'affaire
+CaseSelectionMenu_Title = Sélection du chapitre
 CaseSelectionMenu_Select = Choisir
-CaseSelectionMenu_Confirm = Commençer cette affaire ?
+CaseSelectionMenu_Confirm = Commençer ce chapitre ?
 CaseSelectionMenu_Yes = Oui
 CaseSelectionMenu_No = Non
+CaseSelectionMenu_Cancel = Annuler
 
 InputReminder_Inventory = Inventaire
 InputReminder_Back = Retour

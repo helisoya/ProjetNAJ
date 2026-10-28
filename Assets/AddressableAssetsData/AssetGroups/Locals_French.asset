@@ -21,8 +21,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locals
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27ccc5af02bbb384a8cd148423780e1b
+    m_Address: Locals/fra_c1_common
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locals
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7da13133aeec9924587be5bd34c77a63
     m_Address: Locals/fra_test
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locals
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85c22fe2061c33b458112757e365993d
+    m_Address: Locals/fra_c1_trial_A
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locals
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 998d6f9f723fda9438f5873296dd2bdf
+    m_Address: Locals/fra_c1_intro
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Locals
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e661382b3cf2701478eeca67ec551575
+    m_Address: Locals/fra_c1_trial_B
     m_ReadOnly: 0
     m_SerializedLabels:
     - Locals

@@ -6,3 +6,35 @@ Choice_Generic = Qu'allez vous faire ?
 
 Choice_Yes = Oui
 Choice_No = Non
+
+
+# ------------------------------------------------------------------------
+# ---------------------------- NAJ ---------------------------------------
+# ------------------------------------------------------------------------
+
+Location_C1_Intro = I - Intro
+Location_C1_Stranded = I - Echouée
+Location_C1_TrialPart1 = I - Procès (1er)
+Location_C1_TrialPart2 = I - Procès (2ème)
+
+EntryPoint_FromStart = Du début
+EntryPoint_C1_Intro = Introduction
+EntryPoint_C1_Stranded = Echouée
+EntryPoint_C1_TrialA = Procès (1er)
+EntryPoint_C1_TrialB = Procès (2ème)
+
+Cases_C1 = Un voyage en lambeaux
+
+UIAnimation_Testimony = Témoignage
+UIAnimation_Rebuttal = Réfutation
+UIAnimation_Guilty = Coupable
+UIAnimation_NotGuilty = Innocent
+
+# ------------------------------------------------------------------------
+# ---------------------------- VMP ---------------------------------------
+# ------------------------------------------------------------------------
+
+Location_VMP_Intro = Introduction
+Location_VMP_Cycle1 = Cycle 1
+Location_VMP_Cycle2 = Cycle 2
+Location_VMP_Accusation = Accusations

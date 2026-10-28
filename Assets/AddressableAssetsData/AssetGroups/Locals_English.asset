@@ -54,12 +54,14 @@ MonoBehaviour:
   - m_GUID: 9113be1f658641b46a42dd28f5c764d2
     m_Address: Locals/eng_c1_trial_A
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Locals
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 914ae01e71f069d4c865dc91eb84de1a
     m_Address: Locals/eng_c1_trial_B
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Locals
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 954d445e0816d13419698114364f6328
     m_Address: Locals/eng_c1_intro

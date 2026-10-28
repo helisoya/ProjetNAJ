@@ -128,9 +128,9 @@ GeneralMenu_Back = Back
 # -------------------------- NAJ Menus -----------------------------------
 # ------------------------------------------------------------------------
 
-CaseSelectionMenu_Title = Case Selection
+CaseSelectionMenu_Title = Chapter Selection
 CaseSelectionMenu_Select = Select
-CaseSelectionMenu_Confirm = Start this case ?
+CaseSelectionMenu_Confirm = Start this chapter ?
 CaseSelectionMenu_Yes = Yes
 CaseSelectionMenu_No = No
 CaseSelectionMenu_Cancel = Cancel
@@ -147,7 +147,5 @@ SettingsMenu_Inputs_Inventory = Inventory
 SettingsMenu_Inputs_SwitchLeft = Switch Left (Menu)
 SettingsMenu_Inputs_SwitchRight = Switch Right (Menu)
 SettingsMenu_Inputs_InventoryPresent = Present Evidence/Press
-
-
 
 CreditsMenu_NAJCredits = <b>Programming</b><br>  Julien Oudot<br><br><b>Narration</b><br>  Julien Oudot<br><br><b>Visuals</b><br>  Julien Oudot<br><br><b>Sound</b><br>  Julien Oudot<br>  Marvin le tiègr<br><br><b>Special thanks</b><br>  Felihi<br>  Madlaine<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter
