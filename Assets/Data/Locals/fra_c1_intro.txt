@@ -2,277 +2,277 @@
 # -------------------- Intro ------------------------------
 # ---------------------------------------------------------
 
-C1_Intro_A_1 = <color=#72B6E8>You know…</color>
-C1_Intro_A_2 = <color=#72B6E8>Who could have predicted this misfortune?</color>
-C1_Intro_A_3 = <color=#72B6E8>… Not me, at least.</color>
-C1_Intro_A_4 = <color=#72B6E8>I let myself fall onto the cell’s makeshift bed. The hay is uncomfortable.</color>
-C1_Intro_A_5 = <color=#72B6E8>Closing my eyes, I futilely hope to forget about all this.</color>
-C1_Intro_A_6 = <color=#72B6E8>But… I can’t seem to get my mind off today’s events.</color>
-C1_Intro_A_7 = <color=#72B6E8>When did it all go so wrong?</color>
+C1_Intro_A_1 = <color=#72B6E8>Tu sais…</color>
+C1_Intro_A_2 = <color=#72B6E8>Qui aurait pu prédire une tel mésaventure ?</color>
+C1_Intro_A_3 = <color=#72B6E8>… Pas moi, en tout cas.</color>
+C1_Intro_A_4 = <color=#72B6E8>Je me laisse tomber sur le lit de la cellule. Le foin est inconfortable.</color>
+C1_Intro_A_5 = <color=#72B6E8>Je ferme les yeux, espérant vainement oublier tout ça.</color>
+C1_Intro_A_6 = <color=#72B6E8>Mais… je n'arrive pas à chasser les événements d’aujourd’hui de mon esprit.</color>
+C1_Intro_A_7 = <color=#72B6E8>À quel moment tout a basculé ?</color>
 
-C1_Intro_A_8 = <color=#72B6E8>Phew! That’s dealt with…</color>
-C1_Intro_A_9 = <color=#72B6E8>Guh… And here I was, thinking I wouldn’t have to do manual work…</color>
-C1_Intro_A_10 = <color=#72B6E8>I look around. The sailors are finishing loading our supplies for the journey.</color>
-C1_Intro_A_11 = <color=#72B6E8>It seems a little excessive to me, but hey.</color>
-C1_Intro_A_12 = <color=#72B6E8>I’m no sailor. I have no idea how much we actually need.</color>
-C1_Intro_A_13 = <color=#72B6E8>…Still, I wonder how long we are planning to travel.</color>
+C1_Intro_A_8 = <color=#72B6E8>Ah ! J'y suis enfin arrivée…</color>
+C1_Intro_A_9 = <color=#72B6E8>… Et moi qui pensais échapper aux travaux manuels…</color>
+C1_Intro_A_10 = <color=#72B6E8>Je jette un coup d’œil autour de moi. Les matelots sont en train de terminer de charger les vivres pour le voyage.</color>
+C1_Intro_A_11 = <color=#72B6E8>Ça me semble un peu excessif, mais bon.</color>
+C1_Intro_A_12 = <color=#72B6E8>Je ne suis pas matelot. Je ne sais pas de quoi nous avons besoin.</color>
+C1_Intro_A_13 = <color=#72B6E8… Je me demande combien de temps va durer ce voyage.></color>
 
-C1_Intro_A_14 = Retyr. Slacking off already?
-C1_Intro_A_15 = <color=#72B6E8>I turn around. I’d recognize that voice anywhere.</color>
-C1_Intro_A_16 = I’d rather go by Rann, sir. Using my surname feels a bit weird.
-C1_Intro_A_17 = Well, get used to it. This is how we sailors work.
-C1_Intro_A_18 = And while we’re on this topic. It’s <b>Captain</b> Sartt to you.
-C1_Intro_A_19 = Y- Yes, Captain!
-C1_Intro_A_20 = I’ll keep that in mind.
-C1_Intro_A_21 = <color=#72B6E8>I still prefer Rann… ‘Guess that was to be expected…</color>
-C1_Intro_A_22 = <color=#72B6E8>It’s a good thing Sis didn’t come to see me off. She would have ripped his arms off.</color>
-C1_Intro_A_23 = <color=#72B6E8>… Or at least tried to. I don’t think she has the strength to take on this old wolf.</color>
-C1_Intro_A_24 = What are you looking at?
-C1_Intro_A_25 = Oh, erm! Nothing, really…
-C1_Intro_A_26 = I was just… erm… pondering what to do…
-C1_Intro_A_27 = I’m not exactly used to this kind of environment.
-C1_Intro_A_28 = Grr… Why did I even bother to hire you?
-C1_Intro_A_29 = Oh, well… You said you needed a scholar that could identify plants.
-C1_Intro_A_30 = And I happen to know a lot about them.
-C1_Intro_A_31 = Watch your mouth, girl. Don’t forget it was I who took you from your miserable flower shop.
-C1_Intro_A_32 = The only reason I chose you was because the Academy of Science closed down due to the protests.
-C1_Intro_A_33 = Damn Merchant… Why did he have to enter politics now, of all times?
-C1_Intro_A_34 = I could have gotten one of the brightest minds of the Eastern coast, and what did I get instead?
+C1_Intro_A_14 = Retyr. Déjà en train de flâner ?
+C1_Intro_A_15 = <color=#72B6E8>Je me retourne. Je reconnaîtrais cette voix entre mille.</color>
+C1_Intro_A_16 = Je préférere Rann, monsieur. Utiliser mon nom de famille sonne un peu bizarre.
+C1_Intro_A_17 = Eh bien, il va falloir t’y habituer. C’est comme ça dans la marine.
+C1_Intro_A_18 = Et tant qu’on y est… pour toi, c’est <b>Capitaine</b> Sartt.
+C1_Intro_A_19 = O- Oui, Capitaine !
+C1_Intro_A_20 = Je m’en souviendrai.
+C1_Intro_A_21 = <color=#72B6E8>Je préfère tout de même Rann… Enfin, il fallait s’y attendre…</color>
+C1_Intro_A_22 = <color=#72B6E8>Heureusement que ma sœur n’est pas venue me dire au revoir. Elle lui aurait arraché un bras.</color>
+C1_Intro_A_23 = <color=#72B6E8>… Ou du moins, elle aurait essayé. Je ne pense pas qu’elle puisse faire fâce à ce vieux loup.</color>
+C1_Intro_A_24 = Tu regardes quoi, là ?
+C1_Intro_A_25 = Oh, euh ! Rien, du tout…
+C1_Intro_A_26 = Je… euh… je réfléchissais à ce que je devais faire…
+C1_Intro_A_27 = C'est ma première fois dans ce genre d’environnement.
+C1_Intro_A_28 = Grr… Pourquoi est-ce que je me suis embêté à t’engager ?
+C1_Intro_A_29 = Eh bien… vous aviez dit avoir besoin d’une botaniste capable d’identifier les plantes.
+C1_Intro_A_30 = Et il se trouve que je connais très bien ces dernières.
+C1_Intro_A_31 = Surveille ton langage, gamine. N’oublie pas que c’est moi qui t’ai sortie de ta misérable boutique de fleurs.
+C1_Intro_A_32 = Si je t’ai choisie, c’est uniquement parce que l’Académie des sciences a fermé ses portes à cause des manifestations.
+C1_Intro_A_33 = Foutu marchand… Pourquoi se lancer en politique à ce moment ?
+C1_Intro_A_34 = J’aurais pu recruter l’un des esprits les plus brillants de la côte Est, et qu’est-ce que j'ai à la place ?
 C1_Intro_A_35 = …
-C1_Intro_A_36 = I sure hope you at least know how to find Long Legs. Or else, we are done for.
-C1_Intro_A_37 = …I understand. I’ll make sure not to disappoint you, Captain.
-C1_Intro_A_38 = We have finished loading, Captain!
-C1_Intro_A_39 = Good! Then it is time.
-C1_Intro_A_40 = Assemble the men on the deck!
+C1_Intro_A_36 = J'espère que tu sais au moins trouver des Longues-Pâtes…
+C1_Intro_A_37 = …Je comprends. Je ne vous décevrai pas, Capitaine.
+C1_Intro_A_38 = On vient de finir de charger, Capitaine !
+C1_Intro_A_39 = Bien ! L'heure est arrivée.
+C1_Intro_A_40 = Tous les hommes sur le pont !
 
-C1_Intro_A_41 = Men! It is time for us to begin our journey.
-C1_Intro_A_42 = I pray to Kalibu that you said goodbye to your families. We are going to be away for a long time.
-C1_Intro_A_43 = But fear not, for our goal is most pure : The Legendary Refuge of the Conclave.
-C1_Intro_A_44 = We’ll locate this most holy land, and take it as our own. Our new Kalia outside of Kalia.
-C1_Intro_A_45 = <color=#72B6E8>The sailors cheered. We left the port of Kalia soon after.</color>
-C1_Intro_A_46 = <color=#72B6E8>I looked at the city in the distance, as it became smaller and smaller.</color>
-C1_Intro_A_47 = <color=#72B6E8>At some point, it disappeared into the horizon.</color>
-C1_Intro_A_48 = <color=#72B6E8>I guess I’m really doing this, huh?</color>
+C1_Intro_A_41 = Matelots ! L’heure est venue d’entamer notre périple.
+C1_Intro_A_42 = Je prie Kalibu pour que vous ayez fait vos adieux à vos familles. Nous ne reviendrons pas avant longtemps.
+C1_Intro_A_43 = Mais n'ayez crainte, car notre objectif est des plus nobles : le Refuge légendaire du Conclave.
+C1_Intro_A_44 = Nous localiserons cette terre sacrée et nous nous l’approprierons. Notre nouvelle Kalia en dehors de Kalia.
+C1_Intro_A_45 = <color=#72B6E8>Les matelots poussèrent des cris de joie. Peu de temps après, le bateau quitta le port.</color>
+C1_Intro_A_46 = <color=#72B6E8>Moi, je regarde la ville au loin depuis l'arrière du bateau.</color>
+C1_Intro_A_47 = <color=#72B6E8>Au bout d'un moment, elle a fini par disparaître à l’horizon.</color>
+C1_Intro_A_48 = <color=#72B6E8>Je me lance vraiment dans quelque chose, hein ?</color>
 
-C1_Intro_A_49 = Feeling remorse? It’s a bit late for that, I’m afraid.
-C1_Intro_A_50 = Huh?
-C1_Intro_A_51 = <color=#72B6E8>I turn around to find one of the sailors beside me.</color>
-C1_Intro_A_52 = Oh. Erm… No. I’m just not used to being at sea and all.
-C1_Intro_A_53 = This all feels so foreign to me.
-C1_Intro_A_54 = Ah, this is your first time?
-C1_Intro_A_55 = Don’t worry. I was like that the first time too. 
-C1_Intro_A_56 = Give it a few months. 
-C1_Intro_A_57 = Soon, you’ll call the “Magnificent” your new home.
-C1_Intro_A_58 = Oh. Where are my manners? 
-C1_Intro_A_59 = I’m Gerald Marin. I carry crates for a living.
-C1_Intro_A_60 = And you are…?
-C1_Intro_A_61 = Ah. I’m Rann.
-C1_Intro_A_62 = I was hired as a botanist.
-C1_Intro_A_63 = Ah, it was you then…
-C1_Intro_A_64 = I stumbled upon your herbarium while loading our stuff.
-C1_Intro_A_65 = Your name, <color=red>“Ronne”</color>, was on it. I wondered who was the unlucky one.
-C1_Intro_A_66 = <color=#72B6E8>It’s <color=red>Rann</color>, not Ronne…</color>
-C1_Intro_A_67 = <color=#72B6E8>I started it when I was six and couldn’t even write my own name.</color>
-C1_Intro_A_68 = <color=#72B6E8>I’m embarrassed about this, but sadly I can’t fix it without making a new one…</color>
-C1_Intro_A_69 = <color=#72B6E8>Wait… Hold on… He saw my book?!</color>
-C1_Intro_A_70 = H-Huh?!
-C1_Intro_A_71 = Ah, erm… No offense, of course.
-C1_Intro_A_72 = It’s just that your role here will be quite limited.
-C1_Intro_A_73 = I heard you’ll only be of use if we ever find land.
-C1_Intro_A_74 = The Captain said something about finding a reliable source of food or whatnot.
-C1_Intro_A_75 = …I see…
-C1_Intro_A_76 = <color=#72B6E8>He… didn’t notice?</color>
-C1_Intro_A_77 = <color=#72B6E8>I should play dumb for now…</color>
-C1_Intro_A_78 = Ha ha… I’m okay with that kind of arrangement. 
-C1_Intro_A_79 = The pay is more than worth it anyway.
-C1_Intro_A_80 = You got p- … That’s nice…
-C1_Intro_A_81 = But still, it’ll be a long time before you’ll ever get to use that money.
-C1_Intro_A_82 = It doesn’t matter. It isn’t intended for me.
-C1_Intro_A_83 = A pay like that can help feed my sisters for about a few months.
-C1_Intro_A_84 = Hell, maybe a full year if they are careful with spending.
-C1_Intro_A_85 = That’s way, way more than what I could earn from the flower shop.
-C1_Intro_A_86 = A most selfless act.
-C1_Intro_A_87 = But, aren’t you afraid that we might never come back?
-C1_Intro_A_88 = At any time… a sea serpent might come and kill us.
-C1_Intro_A_89 = I, erm…
-C1_Intro_A_90 = Hey, sea serpents don’t live here, right?
-C1_Intro_A_91 = Now that I think about it, grandma told me stories about fishermen being eaten…
-C1_Intro_A_92 = Heh heh. Just kidding. They live way down south.
-C1_Intro_A_93 = Besides, with our ship? I doubt they’ll even want to stay in the vicinity.
-C1_Intro_A_94 = Metal isn’t very tasty, and propellants scare them.
-C1_Intro_A_95 = Phew…
-C1_Intro_A_96 = But more seriously, I meant more about the previous expeditions.
-C1_Intro_A_97 = Did anyone tell you about them?
-C1_Intro_A_98 = … No.
-C1_Intro_A_99 = Oh well. I can’t blame you. It was never well-documented anyway.
-C1_Intro_A_100 = Back what? 50 years ago or so? Another expedition like this one departed from Kalia.
-C1_Intro_A_101 = They had the same goal in mind : The Legendary Refuge of the Conclave.
-C1_Intro_A_102 = Of course, we never heard back.
-C1_Intro_A_103 = Every decade or so, another expedition is mounted and departs.
-C1_Intro_A_104 = Ours is the what, fourth one or something?
-C1_Intro_A_105 = I get the idea. We might end up dead on a rock somewhere.
-C1_Intro_A_106 = Well, maybe.
-C1_Intro_A_107 = Or maybe they all landed somewhere and never came back, you know?
-C1_Intro_A_108 = Maybe they actually found their “holy” land.
-C1_Intro_A_109 = Yeah. I guess that’s a possibility.
-C1_Intro_A_110 = But still, you’d think they would have contacted us if they did.
-C1_Intro_A_111 = …  True.
-C1_Intro_A_112 = Well. I guess only time will tell.
-C1_Intro_A_113 = At the very least, the Captain is a real pro. He knows the sea like the back of his hand.
-C1_Intro_A_114 = I’ve heard that he traveled the seas his whole life. ‘Even fought in wars, apparently.
-C1_Intro_A_115 = Sounds like a rough life.
-C1_Intro_A_116 = Heh. A rough life for a rough man.
-C1_Intro_A_117 = Don’t take it personally if he yells at you. He’s like that with everyone.
-C1_Intro_A_118 = I figured that much…
-C1_Intro_A_119 = Well. Thanks for talking with me, Gerald. It did reassure me a little.
-C1_Intro_A_120 = Although… please… keep my herbarium a secret.
-C1_Intro_A_121 = Huh? Oh, sure.
-C1_Intro_A_122 = I’m sorry for looking through your things. 
-C1_Intro_A_123 = I fell while carrying your stuff and got curious. 
-C1_Intro_A_124 = I had never seen a book like that before. It’s really pretty.
-C1_Intro_A_125 = It’s fine.
-C1_Intro_A_126 = It’s just that some people are really conservative when it comes to those.
-C1_Intro_A_127 = What, herbariums?
-C1_Intro_A_128 = Come on, that’s ridiculous.
+C1_Intro_A_49 = Des remords ? J'ai bien peur que ça soit un peu tard pour ça.
+C1_Intro_A_50 = Hein ?
+C1_Intro_A_51 = <color=#72B6E8>Je me retourne et découvre l’un des matelots à mes côtés.</color>
+C1_Intro_A_52 = Oh. Euh… Non. C’est juste que je n’ai pas l’habitude d’être en mer.
+C1_Intro_A_53 = Tout cela m’est encore inconnu.
+C1_Intro_A_54 = Ah, c'est ta première fois ?
+C1_Intro_A_55 = Ne stresse pas. J’étais pareil la première fois.
+C1_Intro_A_56 = Donne-y quelques mois.
+C1_Intro_A_57 = Bientôt, le "Magnifique" sera ta nouvelle maison.
+C1_Intro_A_58 = Oh. Où sont mes manières ?
+C1_Intro_A_59 = Je suis Gerald Marin. Mon gagne-pain, c'est de porter des caisses.
+C1_Intro_A_60 = Et toi ?
+C1_Intro_A_61 = Ah. Je m’appelle Rann.
+C1_Intro_A_62 = J'ai été engagé en tant que botaniste.
+C1_Intro_A_63 = Ah, c'était toi…
+C1_Intro_A_64 = Je suis tombé sur ton herbier en montant les affaires.
+C1_Intro_A_65 = Ton nom, <color=red>"Ronne"</color>, était écrit dessus. Je me demandait qui était le malchanceux.
+C1_Intro_A_66 = <color=#72B6E8>C’est <color=red>"Rann"</color>, pas "Ronne"…</color>
+C1_Intro_A_67 = <color=#72B6E8>Je l’ai commencé quand j’avais six ans. Je ne savais même pas écrire mon propre nom.</color>
+C1_Intro_A_68 = <color=#72B6E8>Ça m’embarrasse un peu, mais bon, je ne peux pas corriger ça sans en refaire un nouveau…</color>
+C1_Intro_A_69 = <color=#72B6E8>Attends… Il a vu mon herbier ?!</color>
+C1_Intro_A_70 = H-Hein ?!
+C1_Intro_A_71 = Ah, euh… Sans vouloir t'offenser, bien sur. 
+C1_Intro_A_72 = C'est juste que ton rôle ici sera limité.
+C1_Intro_A_73 = Il paraît que tu ne seras utile que si l'on finit par trouver terre ferme.
+C1_Intro_A_74 = Le capitaine parlait de trouver une source de nourriture fiable, il me semble.
+C1_Intro_A_75 = …Je vois…
+C1_Intro_A_76 = <color=#72B6E8>Il… n’a pas remarqué ?</color>
+C1_Intro_A_77 = <color=#72B6E8>Je ferais mieux de feindre l’ignorance, pour l’instant…</color>
+C1_Intro_A_78 = Ah ah… Cet arrangement me convient.
+C1_Intro_A_79 = La paie en vaut largement la peine.
+C1_Intro_A_80 = Tu es… pa- Je vois…
+C1_Intro_A_81 = Enfin, tu ne pourras pas utiliser cet argent avant longtemps.
+C1_Intro_A_82 = Ça n’a pas d’importance. Ce n’est pas pour moi.
+C1_Intro_A_83 = Une telle somme permettra à mes sœurs de survivre pendant quelques mois.
+C1_Intro_A_84 = Voire une année entière, si elles font attention à leurs dépenses.
+C1_Intro_A_85 = C’est largement plus que ce que je gagne à la boutique de fleurs.
+C1_Intro_A_86 = Je comprends. C'est une bonne chose.
+C1_Intro_A_87 = Mais… tu n’as pas peur qu’on ne revienne jamais ?
+C1_Intro_A_88 = À tout moment… un serpent de mer pourrait surgir et tous nous tuer.
+C1_Intro_A_89 = Je… euh…
+C1_Intro_A_90 = Les serpents de mer ne vivent pas ici, si ?
+C1_Intro_A_91 = Maintenant que j’y pense, ma grand-mère me racontait des histoires de pêcheurs qui s’étaient fait dévorer…
+C1_Intro_A_92 = …
+C1_Intro_A_93 = Hé hé. Je plaisante. Ils vivent loin, dans le sud du continent.
+C1_Intro_A_94 = Et puis, je doute qu'ils aient envie de s'attaquer à notre navire.
+C1_Intro_A_95 = Le métal n'est pas très appétissant, et les propulseurs leur font peur.
+C1_Intro_A_96 = Ouf…
+C1_Intro_A_97 = Plus sérieusement, je parlais plutôt des expéditions précédentes.
+C1_Intro_A_98 = Quelqu’un t’en a parlé ?
+C1_Intro_A_99 = … Non.
+C1_Intro_A_100 = Hmm. Je ne peux pas t’en vouloir. Ca n’a jamais été très bien documenté.
+C1_Intro_A_101 = Il y a… quoi, cinquante ans ? Une autre expédition, similaire à la nôtre, est partie de Kalia.
+C1_Intro_A_102 = Ils avaient le même objectif : le Refuge légendaire du Conclave.
+C1_Intro_A_103 = Évidemment, on n’a jamais eu de nouvelles.
+C1_Intro_A_104 = Environ toutes les décennies, une nouvelle expédition est organisée.
+C1_Intro_A_105 = La nôtre, c’est la… quatrième, je crois ?
+C1_Intro_A_106 = Je comprends. On risque de finir échoués sur un rocher quelque part.
+C1_Intro_A_107 = Peut-être.
+C1_Intro_A_108 = Ou… ils ont peut-être trouvé terre ferme et n'ont jamais fait demi-tour.
+C1_Intro_A_109 = Peut-être qu’ils ont vraiment trouvé leur terre "sacrée".
+C1_Intro_A_110 = C'est une possibilité, je suppose.
+C1_Intro_A_111 = Mais, tout de même, ils auraient essayé de contacter le continent dans ce cas.
+C1_Intro_A_112 = … C’est vrai.
+C1_Intro_A_113 = Enfin, seul le temps nous le dira.
+C1_Intro_A_114 = Au moins, le capitaine est un vrai pro. Il connaît très bien la mer.
+C1_Intro_A_115 = Il paraît qu’il a passé toute sa vie à sillonner les mers. Il a même été corsaire, si j'en crois les rumeurs.
+C1_Intro_A_116 = Ça a l’air d’être une vie difficile.
+C1_Intro_A_117 = Ah. Une vie difficile pour un homme difficile.
+C1_Intro_A_118 = Ne le prends pas personnellement s'il te crie dessus. Il le fait avec tout le monde.
+C1_Intro_A_119 = J'avais l'impression que c'était le cas…
+C1_Intro_A_120 = Enfin. Merci d'avoir discuté avec moi, Gerald. Je suis un peu plus rassurée.
+C1_Intro_A_121 = Cela dit… s’il te plaît… garde pour toi le fait que j'ai un herbier.
+C1_Intro_A_122 = Hein ? Oh, bien sûr.
+C1_Intro_A_123 = Désolé d’avoir fouillé dans tes affaires.
+C1_Intro_A_124 = Je suis tombé les portant et… la curiosité a pris le dessus.
+C1_Intro_A_125 = Je n’avais jamais vu un livre pareil. Il est vraiment magnifique.
+C1_Intro_A_126 = Ce n’est rien. C’est juste que certaines personnes sont très conservatrices à ce sujet.
+C1_Intro_A_127 = Quoi, les herbiers ?
+C1_Intro_A_128 = Allons, c’est ridicule.
 C1_Intro_A_129 = …
-C1_Intro_A_130 = … Okay, okay. I get it. I won’t talk.
-C1_Intro_A_131 = … By the way…
-C1_Intro_A_132 = Do you perhaps know if I could get a room to set up my plants?
-C1_Intro_A_133 = I really want to try to grow some while we travel.
-C1_Intro_A_134 = Hmm… The Captain will surely object to this.
-C1_Intro_A_135 = Although… I know of one place you could use. One that even he doesn’t know about.
-C1_Intro_A_136 = It’ll take time to clean the place, but you can set up shop there.
-C1_Intro_A_137 = Thanks, that would be great.
-C1_Intro_A_138 = <color=green>Two months later.</color>
+C1_Intro_A_130 = … D’accord, d’accord. J’ai compris. Je ne dirai plus rien.
+C1_Intro_A_131 = … Au fait…
+C1_Intro_A_132 = Sais-tu s’il existerait une pièce où je pourrais installer mes plantes ?
+C1_Intro_A_133 = J’aimerais vraiment essayer d’en faire pousser pendant le voyage.
+C1_Intro_A_134 = Hmm… Le capitaine va sûrement refuser.
+C1_Intro_A_135 = Ceci étant dit… je connais un endroit que tu pourrais utiliser. Un lieu dont même lui ignore l’existence.
+C1_Intro_A_136 = Il faudra un peu de temps pour le nettoyer, mais tu pourras t’y installer.
+C1_Intro_A_137 = Merci, tu m'aides beaucoup.
+C1_Intro_A_138 = <color=green>Deux mois plus tard.</color>
 
-C1_Intro_B_1 = Watch out. You are damaging it.
-C1_Intro_B_2 = Oh, sorry.
-C1_Intro_B_3 = <color=#72B6E8>I grab his knife’s blade with my hand.</color>
-C1_Intro_B_4 = Hey, be careful. You’ll get cut.
-C1_Intro_B_5 = It’s fine, don’t worry.
-C1_Intro_B_6 = Look, you need to cut here, not here.
-C1_Intro_B_7 = Herbariums are about showing the diversity of plants, not how you massacred them.
-C1_Intro_B_8 = Right, sorry.
-C1_Intro_B_9 = <color=#72B6E8>Gerald starts working on the plant again. This time, he doesn’t make mistakes.</color>
-C1_Intro_B_10 = Thanks for lending me this knife, by the way.
-C1_Intro_B_11 = Don’t worry. And you can keep it. Think of it as a gift.
-C1_Intro_B_12 = Thanks.
-C1_Intro_B_13 = So… Where do you come from?
-C1_Intro_B_14 = I’m pretty sure you aren’t a Suori.
-C1_Intro_B_15 = H- How did you know?
-C1_Intro_B_16 = … And here I was, thinking I was blending in nicely.
-C1_Intro_B_17 = Heh heh. That’s a secret.
-C1_Intro_B_18 = So… tell me.
-C1_Intro_B_19 = Alright. I’m from Voitin.
-C1_Intro_B_20 = Voitin? That’s pretty far away.
-C1_Intro_B_21 = How did you end up in Kalia?
-C1_Intro_B_22 = I worked for a trading company in Voitin for a long time. 
-C1_Intro_B_23 = ‘Hard tasks and next to no pay.
-C1_Intro_B_24 = At some point, I got in trouble because I stole from work to help feed my siblings. 
-C1_Intro_B_25 = It was just a crate of apples, but the company cracked down hard on me.
-C1_Intro_B_26 = They threatened to send me to prison if I didn’t pay up.
-C1_Intro_B_27 = One day, Captain Sartt came and told me that he would shield me and my family from them.
-C1_Intro_B_28 = All I had to do was join his crew and sail the Eastern sea.
-C1_Intro_B_29 = So I did, and well… That’s pretty much it.
-C1_Intro_B_30 = I can relate. 
-C1_Intro_B_31 = Was it hard to integrate?
-C1_Intro_B_32 = Folks like me aren’t common in the Northern regions of Vasia.
-C1_Intro_B_33 = Most people in Kalia don’t even know Voitin exists.
-C1_Intro_B_34 = So yeah. It was pretty hard at first to integrate with the others.
-C1_Intro_B_35 = If you take the ship’s crew, for instance, they pretty much expect me to be a good Suori like all the others.
-C1_Intro_B_36 = …I must say, you have weird customs. Especially that whole Kalibu business.
-C1_Intro_B_37 = Ah, yes.
-C1_Intro_B_38 = Suori culture is… weirdly intertwined with its religion. People get confused all the time.
-C1_Intro_B_39 = Depending on where you are, people can get very zealous. It can be weird sometimes.
-C1_Intro_B_40 = … So how did you know I wasn’t a Suori?
-C1_Intro_B_41 = Was it because I fell asleep during the Captain’s sermons?
-C1_Intro_B_42 = Or… Maybe I’m not wearing that weird cloak some of you have…
-C1_Intro_B_43 = Ah, no. Nothing like that.
-C1_Intro_B_44 = <color=#72B6E8>Do people still wear those anyway?</color>
-C1_Intro_B_45 = Actually, it was the herbarium that tipped me off.
-C1_Intro_B_46 = Your secret little book?
-C1_Intro_B_47 = Yes. Most Suoris consider it black magic.
-C1_Intro_B_48 = Huh?
-C1_Intro_B_49 = I don’t know the details. It has something to do with one of our evil gods or something.
-C1_Intro_B_50 = … So are you, what, a witch?
-C1_Intro_B_51 = Please. Of course not.
-C1_Intro_B_52 = But yeah, most people look at me wrong when they realize I have one.
-C1_Intro_B_53 = And I didn’t know about that. That’s how you knew.
-C1_Intro_B_54 = … Your lot is pretty weird.
-C1_Intro_B_55 = …I just hope this religious frenzy won’t bring us trouble.
-C1_Intro_B_56 = People get all high and mighty about the conclave, but what about it?
-C1_Intro_B_57 = They’ve been gone for centuries. Who cares about them…
-C1_Intro_B_58 = I get you. This whole “conclave” business is a bit sketchy to me.
-C1_Intro_B_59 = Although, it’s easier for me to say.
-C1_Intro_B_60 = Which reminds me, why did this ship specifically go on the expedition?
-C1_Intro_B_61 = Hmm?
-C1_Intro_B_62 = I mean, all of you are part of the same shipping company, right?
-C1_Intro_B_63 = Why did the Captain bring his only ship and his entire crew with him on this expedition?
-C1_Intro_B_64 = Doesn’t this mean this is the end of the company?
+C1_Intro_B_1 = Attention, tu est en train de l’abîmer.
+C1_Intro_B_2 = Oh, désolé. 
+C1_Intro_B_3 = <color=#72B6E8>Je saisis la lame de son couteau.</color>
+C1_Intro_B_4 = Hé, fais attention ! Tu vas te couper.
+C1_Intro_B_5 = Ca va, ne t'en fais pas.
+C1_Intro_B_6 = Regarde, il faut couper ici, pas là.
+C1_Intro_B_7 = Le but d’un herbier, c’est de montrer la diversité des plantes, pas de montrer comment tu les as massacrées.
+C1_Intro_B_8 = Je vois… désolé.
+C1_Intro_B_9 = <color=#72B6E8>Gerald se remet au travail sur la plante. Cette fois, il ne commet pas d'erreur.</color>
+C1_Intro_B_10 = Merci de m’avoir prêté ce couteau, d'ailleurs.
+C1_Intro_B_11 = Pas de problème. En fait,  je t'en fais cadeau.
+C1_Intro_B_12 = Merci.
+C1_Intro_B_13 = Alors… d’où viens-tu ?
+C1_Intro_B_14 = Je suis presque sûr que tu n’es pas un Suori.
+C1_Intro_B_15 = C- comment tu as deviné ?
+C1_Intro_B_16 = … Et moi qui pensais passer inaperçu.
+C1_Intro_B_17 = Hé hé. C’est un secret.
+C1_Intro_B_18 = Alors… dis-moi.
+C1_Intro_B_19 = Très bien. Je viens de Voitin.
+C1_Intro_B_20 = Voitin ? C’est assez loin, ça.
+C1_Intro_B_21 = Comment as-tu fini à Kalia ?
+C1_Intro_B_22 = J’ai travaillé longtemps pour des transporteurs à Voitin.
+C1_Intro_B_23 = C'était des tâches pénibles pour un salaire quasi inexistant. 
+C1_Intro_B_24 = À un moment donné, j'ai eu des ennuis parce que j'avais volé de la nourriture pour mes frères et sœurs.
+C1_Intro_B_25 = Ce n'était qu'une caisse de pommes, mais l'entreprise voulait ma peau.
+C1_Intro_B_26 = Ils ont menacé de m'envoyer en prison si je ne remboursais pas.
+C1_Intro_B_27 = Un jour, le capitaine Sartt est arrivé et m'a dit qu'il nous protégerait, ma famille et moi.
+C1_Intro_B_28 = Tout ce que j'avais à faire, c'était rejoindre son équipage et naviguer sur la mer de l'Est.
+C1_Intro_B_29 = C'est ce que j'ai fait, et c'est à peu près tout.
+C1_Intro_B_30 = Je comprends tes ennuis.
+C1_Intro_B_31 = C'était difficile de t'intégrer ?
+C1_Intro_B_32 = Les gens comme moi, on n'en croise pas souvent dans les régions du nord de Vasia.
+C1_Intro_B_33 = La plupart des habitants de Kalia ignorent même l'existence de Voitin.
+C1_Intro_B_34 = Donc oui, c'était difficile, surtout au début, de m'intégrer.
+C1_Intro_B_35 = L'équipage, par exemple, s'attend à ce que je sois un "bon Suori" comme les autres.
+C1_Intro_B_36 = … Je dois dire, vous avez des coutumes bien étranges. Surtout cette histoire de "Kalibu".
+C1_Intro_B_37 = Ah, oui.
+C1_Intro_B_38 = La culture Suori est étrangement liée à sa religion.
+C1_Intro_B_39 = Selon la région, les gens peuvent être aussi très zélés. C'est parfois assez déroutant.
+C1_Intro_B_40 = … Alors, comment savais-tu que je n'étais pas Suori ?
+C1_Intro_B_41 = C'était à cause de la fois ou je me suis endormi pendant un sermon du capitaine ?
+C1_Intro_B_42 = Ou… peut-être parce que je ne porte pas cette cape bizarre…
+C1_Intro_B_43 = Ah, non. Rien de tout ça.
+C1_Intro_B_44 = <color=#72B6E8>Plus personne porte ça, si ?</color>
+C1_Intro_B_45 = En fait, c'est l'herbier qui m'a mis la puce à l'oreille.
+C1_Intro_B_46 = Ton petit livre secret ?
+C1_Intro_B_47 = Oui. La plupart des Suoris considèrent ça comme de la magie noire.
+C1_Intro_B_48 = Hein ?
+C1_Intro_B_49 = Je ne me souviens pas des détails. Ça a un rapport avec un cerf, je crois ?
+C1_Intro_B_50 = … Alors, tu es… une sorcière ?
+C1_Intro_B_51 = Oh, s'il te plait. Bien sûr que non.
+C1_Intro_B_52 = Mais la plupart des gens me regardent d'un mauvais œil quand ils découvrent que j'en possède un.
+C1_Intro_B_53 = Et j'ignorais tout ça. C’est comme ça que tu l’as su.
+C1_Intro_B_54 = … ​​Votre peuple est plutôt bizarre.
+C1_Intro_B_55 = … J’espère juste que ce zèle ne nous attirera pas d’ennuis.
+C1_Intro_B_56 = Certains parlent pendant des heures du conclave, mais quel importance ?
+C1_Intro_B_57 = Ça fait des siècles qu’ils ont disparu. Ils n'ont plus d'importance.
+C1_Intro_B_58 = Je suis du même avis. Toute cette histoire me semble louche.
+C1_Intro_B_59 = Enfin… C'est plus simple à dire pour moi.
+C1_Intro_B_60 = D'ailleurs, en parlant de ça. Pourquoi ce navire spécifiquement participe à l'expédition ?
+C1_Intro_B_61 = Hein ?
+C1_Intro_B_62 = Je veux dire, vous faites tous partie de la même entreprise de transport, non ?
+C1_Intro_B_63 = Pourquoi le capitaine a-t-il emmené son unique navire et tout son équipage dans cette expédition ?
+C1_Intro_B_64 = Ca veut dire que c'est la fin de l'entreprise, non ?
 C1_Intro_B_65 = …
-C1_Intro_B_66 = Actually, I have no clue.
-C1_Intro_B_67 = I wasn’t there when he announced the news.
-C1_Intro_B_68 = Maybe the old wolf knows his time is up and wants to die finding heaven or something.
-C1_Intro_B_69 = As for the company : The Captain IS the company. It will die when he does.
-C1_Intro_B_70 = He didn’t nominate a successor. ‘Said he didn’t trust any of us.
-C1_Intro_B_71 = But… Couldn’t you just stay in Kalia and find a new job?
-C1_Intro_B_72 = … No.
-C1_Intro_B_73 = None of us can.
-C1_Intro_B_74 = Huh?
+C1_Intro_B_66 = En fait, je ne sais pas.
+C1_Intro_B_67 = Je n'étais pas présent lors de l'annonce.
+C1_Intro_B_68 = Peut-être que ce vieux loup sait que son heure est venue, et qu'il veut mourir noblement. 
+C1_Intro_B_69 = Quant à l'entreprise… le capitaine EST l'entreprise. Elle disparaîtra avec lui.
+C1_Intro_B_70 = Il n'a pas voulu désigner de successeur. Selon lui, il ne faisait confiance à personne.
+C1_Intro_B_71 = Mais… pourquoi ne pas simplement rester à Kalia et chercher un autre travail ?
+C1_Intro_B_72 = … Non.
+C1_Intro_B_73 = Personne ne peut.
+C1_Intro_B_74 = Hein ?
 C1_Intro_B_75 = …
-C1_Intro_B_76 = Sorry for asking.
-C1_Intro_B_77 = It’s fine. 
-C1_Intro_B_78 = It’s just… having him as your boss can be hard sometimes.
-C1_Intro_B_79 = Do you regret leaving Voitin?
+C1_Intro_B_76 = Désolé d'avoir posé la question.
+C1_Intro_B_77 = Ne t'en fait pas.
+C1_Intro_B_78 = C’est juste que… l’avoir comme patron, ce n’est pas toujours facile. 
+C1_Intro_B_79 = Tu regrettes d'être parti de Voitin ?
 C1_Intro_B_80 = …
-C1_Intro_B_81 = A little.
-C1_Intro_B_82 = I had no choice but to leave my family behind.
-C1_Intro_B_83 = But… I can’t come back anymore.
-C1_Intro_B_84 = If I did, I would get in trouble with the company again.
-C1_Intro_B_85 = Or worse, my siblings might get caught in the crossfire.
-C1_Intro_B_86 = … I see.
-C1_Intro_B_87 = Sorry for bringing that up.
-C1_Intro_B_88 = Don’t worry about it.
-C1_Intro_B_89 = That’s all in the past now.
-C1_Intro_B_90 = … Let’s continue tending to these plants, alright?
-C1_Intro_B_91 = R-Right!
+C1_Intro_B_81 = Un peu.
+C1_Intro_B_82 = Je n'ai pas eu d'autre choix que de laisser ma famille derrière moi.
+C1_Intro_B_83 = Mais… je ne peux pas revenir en arrière non plus.
+C1_Intro_B_84 = Si je retourne à Voitin, j'aurais des ennuis avec mes anciens employeurs.
+C1_Intro_B_85 = Pire encore, ma famille pourrait finir dans la tourmente.
+C1_Intro_B_86 = … Je vois.
+C1_Intro_B_87 = Désolé d’avoir abordé le sujet.
+C1_Intro_B_88 = Pas de problème.
+C1_Intro_B_89 = C'est du passé maintenant.
+C1_Intro_B_90 = … Continuons de nous occuper de ces plantes, d’accord ?
+C1_Intro_B_91 = O-Oui !
 
-C1_Intro_B_92 = <color=green>One month later.</color>
-C1_Intro_B_93 = <color=#72B6E8>Still no land…</color>
-C1_Intro_B_94 = <color=#72B6E8>I wonder how my sisters are doing.</color>
-C1_Intro_B_95 = A seagull?
-C1_Intro_B_96 = <color=#72B6E8>I can’t see land anywhere. But… Are we close?</color>
-C1_Intro_B_97 = <color=#72B6E8>Maybe the fabled land actually exists.</color>
-C1_Intro_B_98 = <color=#72B6E8>…Not that it really interests me or anything.</color>
-C1_Intro_B_99 = <color=#72B6E8>Religion was never my thing anyway.</color>
-C1_Intro_B_100 = <color=#72B6E8>But… If it makes them happy and I get money, whatever.</color>
-C1_Intro_B_101 = Captain! Seagulls!
-C1_Intro_B_102 = I see them! Don’t press me.
-C1_Intro_B_103 = But where are they coming from? I can’t see anything in this mist.
-C1_Intro_B_104 = <color=#72B6E8>You know… I’m happy we are going to land soon.</color>
-C1_Intro_B_105 = <color=#72B6E8>I’m not really taking the sea very well.</color>
-C1_Intro_B_106 = <color=#72B6E8>Gerald was a huge help, but I decided I’ll never go near a boat ever again after this.</color>
-C1_Intro_B_107 = Huh? It’s raining?
-C1_Intro_B_108 = <color=#72B6E8>I watch as the sky turns darker and darker.</color>
-C1_Intro_B_109 = <color=#72B6E8>Rain starts pouring down from the sky.</color>
-C1_Intro_B_110 = <color=#72B6E8>A storm is coming.</color>
-C1_Intro_B_111 = Now of all times?
-C1_Intro_B_112 = Good thing I put on my coat.
-C1_Intro_B_113 = But it’s not safe to stay outside. I should head back to-
-C1_Intro_B_114 = <color=#72B6E8>A massive wave hits the side of the ship and I fall on the ground.</color>
-C1_Intro_B_115 = <color=#72B6E8>I hit my head rather hard. It’s hard to get back up.</color>
-C1_Intro_B_116 = Ugh…
-C1_Intro_B_117 = What is going on? Who’s manning this ship?
-C1_Intro_B_118 = Sam was thrown overboard, Captain!
-C1_Intro_B_119 = ‘Nobody’s manning the vessel!
-C1_Intro_B_120 = Idiots! Why did I let him take the helm?
-C1_Intro_B_121 = I’ll get us out of here.
-C1_Intro_B_122 = <color=#72B6E8>I start walking towards the deck’s entrance.</color>
-C1_Intro_B_123 = <color=#72B6E8>It’s dangerous to stay here during the storm.</color>
-C1_Intro_B_124 = <color=#72B6E8>The captain will handle things from here… I hope so.</color>
-C1_Intro_B_125 = <color=#72B6E8>Wa- Wait, what?</color>
-C1_Intro_B_126 = Damn it! Brace for impact!
-C1_Intro_B_127 = <color=#72B6E8>Wait, wait! I’m not-</color>
+C1_Intro_B_92 = <color=green>Un mois plus tard.</color>
+C1_Intro_B_93 = <color=#72B6E8>Toujours aucune terre en vue…</color>
+C1_Intro_B_94 = <color=#72B6E8>Je me demande comment vont mes sœurs.</color>
+C1_Intro_B_95 = Une mouette ?
+C1_Intro_B_96 = <color=#72B6E8>Je ne vois aucune terre nulle part. On est si proche du but ?</color>
+C1_Intro_B_97 = <color=#72B6E8>Peut-être que cette terre légendaire existe vraiment.</color>
+C1_Intro_B_98 = <color=#72B6E8>…Enfin, pas que ça m’intéresse particulièrement.</color>
+C1_Intro_B_99 = <color=#72B6E8>La religion n’a jamais été mon truc, de toute façon.</color>
+C1_Intro_B_100 = <color=#72B6E8>Mais bon… si ça leur fait plaisir et que je touche ma récompense…</color>
+C1_Intro_B_101 = Capitaine ! Des mouettes !
+C1_Intro_B_102 = Je les vois ! Ne me presse pas.
+C1_Intro_B_103 = Mais d’où est-ce qu'elles viennent ? On ne voit rien dans ce brouillard.
+C1_Intro_B_104 = <color=#72B6E8>Je suis contente qu’on arrive bientôt à terre.</color>
+C1_Intro_B_105 = <color=#72B6E8>J'ai appris de la pire façon que j'ai le mal de mer.</color>
+C1_Intro_B_106 = <color=#72B6E8>Gerald m’a été d’une aide précieuse, mais une chose est sûre : je ne remettrai plus jamais les pieds sur un bateau.</color>
+C1_Intro_B_107 = Hein ? Il pleut ?
+C1_Intro_B_108 = <color=#72B6E8>Je regarde le ciel s’assombrir de plus en plus.</color>
+C1_Intro_B_109 = <color=#72B6E8>Une pluie torrentielle se met à tomber.</color>
+C1_Intro_B_110 = <color=#72B6E8>Une tempête approche.</color>
+C1_Intro_B_111 = Il fallait qu'il pleuvent maintenant ?
+C1_Intro_B_112 = Heureusement que j’ai mis mon manteau.
+C1_Intro_B_113 = Mais ce n’est pas prudent de rester dehors. Je devrais retour-
+C1_Intro_B_114 = <color=#72B6E8>Une vague gigantesque frappe le navire et je m’écroule par terre.</color>
+C1_Intro_B_115 = <color=#72B6E8>Je me suis cogné la tête assez violemment. J’ai du mal à me relever.</color>
+C1_Intro_B_116 = Argh…
+C1_Intro_B_117 = Que se passe-t-il ? Qui dirige ce navire ?
+C1_Intro_B_118 = Sam est passé par-dessus bord, Capitaine !
+C1_Intro_B_119 = Personne ne tient la barre !
+C1_Intro_B_120 = Idiots ! Pourquoi ais-je fais confiance à cet andouille ?
+C1_Intro_B_121 = Je vais nous sortir de là.
+C1_Intro_B_122 = <color=#72B6E8>Je me dirige vers l’entrée du pont.</color>
+C1_Intro_B_123 = <color=#72B6E8>C’est dangereux de rester ici pendant la tempête.</color>
+C1_Intro_B_124 = <color=#72B6E8>Le capitaine va prendre les choses en main… enfin, je l’espère.</color>
+C1_Intro_B_125 = <color=#72B6E8>Attends… quoi ?</color>
+C1_Intro_B_126 = Bon sang ! Préparez-vous au choc !
+C1_Intro_B_127 = <color=#72B6E8>Mais, mais ! Je ne suis p-</color>
 
 # ---------------------------------------------------------
 # -------------------- Investigation ----------------------
@@ -280,152 +280,152 @@ C1_Intro_B_127 = <color=#72B6E8>Wait, wait! I’m not-</color>
 
 C1_Investigation_Start_1 = …
 C1_Investigation_Start_2 = …
-C1_Investigation_Start_3 = Ow, ow, ow…
-C1_Investigation_Start_4 = <color=#72B6E8>I get up painfully. I must have broken something.</color>
-C1_Investigation_Start_5 = <color=#72B6E8>… Where… Where am I?</color>
-C1_Investigation_Start_6 = <color=#72B6E8>I remember that the ship hit land, but that’s about it.</color>
-C1_Investigation_Start_7 = <color=#72B6E8>I guess I must have been ejected from the ship during the crash.</color>
-C1_Investigation_Start_8 = Ow…
-C1_Investigation_Start_9 = <color=#72B6E8>I look at my left leg. It is badly injured.</color>
-C1_Investigation_Start_10 = <color=#72B6E8>It’s not bleeding, thankfully. But I’m not in shape for a jog.</color>
-C1_Investigation_Start_11 = <color=#72B6E8>My coat is also drenched and torn apart. It won’t protect me from anything.</color>
-C1_Investigation_Start_12 = I should find help. Actually…
-C1_Investigation_Start_13 = Where is the ship? I couldn’t have been ejected that far, right?
-C1_Investigation_Start_14 = I’m sure someone there will be able to help me.
-C1_Investigation_Start_15 = <color=#72B6E8>I look around.</color>
-C1_Investigation_Start_16 = Wha-
-C1_Investigation_Start_17 = How did the ship get stuck here?
-C1_Investigation_Start_18 = We must have hit the ground rather hard.
-C1_Investigation_Start_19 = … No matter. I should find my way there.
-C1_Investigation_Start_20 = I won’t be able to climb with my injury. It’s way too risky.
-C1_Investigation_Start_21 = <color=#72B6E8>Hmm… Maybe I can follow this trail. It may loop back around.</color>
-C1_Investigation_Start_22 = <color=#72B6E8>It seems man-made. I wonder who made it.</color>
-C1_Investigation_Start_23 = <color=#72B6E8>I can interact with the scenery using the mouse or the keyboard. Any <color=red>icon</color> will indicate a point of interest.</color>
-C1_Investigation_Start_24 = <color=#72B6E8>Usually, I can also move backwards by interacting with the <color=red>bottom</color> of the screen.</color>
+C1_Investigation_Start_3 = Aïe, aïe, aïe…
+C1_Investigation_Start_4 = <color=#72B6E8>Je me relève péniblement. J’ai dû me casser quelque chose.</color>
+C1_Investigation_Start_5 = <color=#72B6E8>… Où… Où suis-je ?</color>
+C1_Investigation_Start_6 = <color=#72B6E8>Je me souviens que le navire a heurté la terre ferme, mais c’est à peu près tout.</color>
+C1_Investigation_Start_7 = <color=#72B6E8>J’imagine que j’ai été éjectée du vaisseau lors du crash.</color>
+C1_Investigation_Start_8 = Aïe…
+C1_Investigation_Start_9 = <color=#72B6E8>Je regarde ma jambe gauche. Elle a l'air cassée.</color>
+C1_Investigation_Start_10 = <color=#72B6E8>Heureusement, elle ne saigne pas. Mais je ne suis pas en état d'aller courir.</color>
+C1_Investigation_Start_11 = <color=#72B6E8>Mon manteau est également trempé et déchiré. Il ne me protégera plus de rien.</color>
+C1_Investigation_Start_12 = Je devrais trouver de l’aide. En fait…
+C1_Investigation_Start_13 = Où est le navire ? Je n’ai pas pu être éjecté si loin, si ?
+C1_Investigation_Start_14 = Quelqu’un pourra sûrement m’y aider.
+C1_Investigation_Start_15 = <color=#72B6E8>Je regarde autour de moi.</color>
+C1_Investigation_Start_16 = Qu-
+C1_Investigation_Start_17 = Comment le navire s'est coincé ici ?
+C1_Investigation_Start_18 = On a dû percuter la rive assez violemment.
+C1_Investigation_Start_19 = … Peu importe. Je devrais le rejoindre.
+C1_Investigation_Start_20 = Avec ma blessure, je ne peux pas grimper. C’est beaucoup trop risqué.
+C1_Investigation_Start_21 = <color=#72B6E8>Hmm… Peut-être que je peux suivre ce sentier. Il fait peut-être une boucle.</color>
+C1_Investigation_Start_22 = <color=#72B6E8>On dirait qu’il a été tracé par quelqu’un. Je me demande bien par qui.</color>
+C1_Investigation_Start_23 = <color=#72B6E8>Je peux interagir avec le décor à l’aide de la souris ou du clavier. Toute <color=red>icône</color> indique un point d’intérêt.</color>
+C1_Investigation_Start_24 = <color=#72B6E8>En général, je peux aussi revenir en arrière en interagissant avec le <color=red>bas</color> de l’écran.</color>
 
-C1_Cliff_Water_1 = Where in Vasia have we landed?
+C1_Cliff_Water_1 = Où avons-nous encore atterri ? Est-ce même encore Vasia ?
 
-C1_Cliff_Boat_1 = To think we would end up wrecking our ship on an island…
-C1_Cliff_Boat_2 = I sure hope there are survivors.
+C1_Cliff_Boat_1 = Et dire qu’on a fini par faire naufrage sur une île déserte…
+C1_Cliff_Boat_2 = J’espère qu’il y a des survivants.
 
-C1_Beach_Arrival_1 = I wandered pretty far from the ship.
-C1_Beach_Arrival_2 = I hope this isn’t a long loop.
+C1_Beach_Arrival_1 = Je me suis pas mal éloigné du navire.
+C1_Beach_Arrival_2 = J’espère que ce sentier fait réellement une boucle.
 
-C1_Forest_Arrival_1 = The path splits here…
-C1_Forest_Arrival_2 = Maybe there is something that can help me find my way?
+C1_Forest_Arrival_1 = Le chemin se sépare en deux…
+C1_Forest_Arrival_2 = Peut-être que quelque chose pourrait m’aider à m’orienter ?
 
-C1_Forest_Flag_1 = This… This is a part of the ship.
-C1_Forest_Flag_2 = I remember us having a flag like that. I heard it was to let people know who we are.
-C1_Forest_Flag_3 = So… I should go right, then.
-C1_Forest_Flag_4 = Makes sense. At least I think so. I get disoriented pretty fast.
-C1_Forest_Flag_5 = … This doesn’t bode well though, if this managed to land this far from the ship.
+C1_Forest_Flag_1 = C'est… c’est un morceau du navire.
+C1_Forest_Flag_2 = Je me souviens qu’on avait un drapeau comme celui-ci. Il paraît que ça servait à nous identifier.
+C1_Forest_Flag_3 = Donc… je devrais aller à droite.
+C1_Forest_Flag_4 = Ça semble logique. Enfin, je crois. J'ai un mauvais sens de l’orientation.
+C1_Forest_Flag_5 = … Ça ne présage rien de bon, si ce débris a pu atterrir aussi loin du navire.
 
-C1_DeadEnd_Owl_Before_1 = … Do you own this axe?
-C1_DeadEnd_Owl_Before_2 = Hooo! Hooo!
-C1_DeadEnd_Owl_Before_3 = Okay, okay. Whatever you say, Mister Lumberjack.
-C1_DeadEnd_Owl_Before_4 = … People probably live on this island.
-C1_DeadEnd_Owl_Before_5 = The trail, the axe… The sailors couldn’t have made all this in such a short period of time.
-C1_DeadEnd_Owl_Before_6 = Hooo! Hooo!
-C1_DeadEnd_Owl_Before_7 = S-Sorry! The axe is definitely yours.
+C1_DeadEnd_Owl_Before_1 = Cette hache est à toi ?
+C1_DeadEnd_Owl_Before_2 = Hooo ! Hooo !
+C1_DeadEnd_Owl_Before_3 = D’accord, d’accord. Comme tu veux, Monsieur le bûcheron.
+C1_DeadEnd_Owl_Before_4 = … Des gens doivent vivrent ici.
+C1_DeadEnd_Owl_Before_5 = Le sentier, la hache… Les matelots n’auraient jamais pu faire tout ça en si peu de temps.
+C1_DeadEnd_Owl_Before_6 = Hooo ! Hooo !
+C1_DeadEnd_Owl_Before_7 = P-Pardon ! La hache est bien à toi.
 
-C1_DeadEnd_Owl_After_1 = I’m sorry, little owl, I need that axe.
-C1_DeadEnd_Owl_After_2 = Hoo?
-C1_DeadEnd_Owl_After_3 = Hooo!
-C1_DeadEnd_Owl_After_4 = … They fled.
-C1_DeadEnd_Owl_After_5 = I guess the axe is mine now. Although, I don’t know who owns it.
-C1_DeadEnd_Owl_After_6 = … Holding a weapon feels weird.
-C1_DeadEnd_Owl_After_7 = It reminds me of those self-defence classes we had at school.
-C1_DeadEnd_Owl_After_8 = I managed to be defeated by the training mannequin…
-C1_DeadEnd_Owl_After_9 = Oh well. I might be able to carve a path through those trees now.
+C1_DeadEnd_Owl_After_1 = Désolé, petit hibou, mais j’ai besoin de cette hache.
+C1_DeadEnd_Owl_After_2 = Hoo ?
+C1_DeadEnd_Owl_After_3 = Hooo !
+C1_DeadEnd_Owl_After_4 = … Il s’est envolé.
+C1_DeadEnd_Owl_After_5 = J’imagine que la hache est à moi, maintenant. Même si je ne sais pas à qui elle appartenait.
+C1_DeadEnd_Owl_After_6 = … Tenir une arme est étrange.
+C1_DeadEnd_Owl_After_7 = Ça me rappelle les cours d’autodéfense qu’on avait à l’école.
+C1_DeadEnd_Owl_After_8 = J’avais réussi à me faire battre par le mannequin d’entraînement…
+C1_DeadEnd_Owl_After_9 = Enfin. Peut-être que je pourrai me frayer un chemin à travers ces arbres, maintenant.
 
-C1_River_Arrival_1 = There is more and more debris here.
-C1_River_Arrival_2 = I must be getting close.
-C1_River_Arrival_3 = Although… I’m not that reassured to see this much wreckage.
-C1_River_Arrival_4 = We must have hit land rather hard.
+C1_River_Arrival_1 = Il y a de plus en plus de débris.
+C1_River_Arrival_2 = Je dois être proche.
+C1_River_Arrival_3 = Cela dit… voir autant de débris ne me rassure pas.
+C1_River_Arrival_4 = On a dû percuter la rive assez violemment.
 
-C1_River_Tree_Before_1 = … I can’t move past these trees. 
-C1_River_Tree_Before_2 = Plus, I can’t climb over them because of my injury.
-C1_River_Tree_Before_3 = Maybe I can find something to cut them down a little bit.
+C1_River_Tree_Before_1 = … Je ne peux pas passer au-delà de ces arbres.
+C1_River_Tree_Before_2 = Je ne peux pas les enjamber non plus à cause de ma blessure.
+C1_River_Tree_Before_3 = Peut-être que je peux trouver quelque chose pour me frayer un passage.
 
-C1_River_Tree_After_1 = Alright, let’s try to cut these trees.
-C1_River_Tree_After_2 = … How do I do it, actually?
-C1_River_Tree_After_3 = <color=#72B6E8>After a few minutes, I manage to cut enough of the trees to create a safe path forward.</color>
-C1_River_Tree_After_4 = <color=#72B6E8>It’s about time too; I feel light-headed…</color>
+C1_River_Tree_After_1 = Bon, essayons de couper un peu ces arbres.
+C1_River_Tree_After_2 = … Comment je m’y prends, au juste ?
+C1_River_Tree_After_3 = <color=#72B6E8>Après quelques minutes, je parviens à couper suffisamment des arbres pour me frayer un passage.</color>
+C1_River_Tree_After_4 = <color=#72B6E8>Il était temps. Je commence à avoir la tête qui tourne…</color>
 
-C1_SecretCave_NoAxe_1 = What’s this door doing in a cave like this?
-C1_SecretCave_NoAxe_2 = Wait… It doesn’t even have a doorknob.
-C1_SecretCave_NoAxe_3 = What is this? A barricade?
-C1_SecretCave_NoAxe_4 = Maybe if I had an axe, I could see what’s on the other side.
+C1_SecretCave_NoAxe_1 = Que fait cette porte dans une grotte ?
+C1_SecretCave_NoAxe_2 = Attends… Il n’y a même pas de poignée.
+C1_SecretCave_NoAxe_3 = Qu’est-ce que c’est ? Une barricade ?
+C1_SecretCave_NoAxe_4 = Si j’avais une hache, je pourrais peut-être voir ce qu’il y a de l’autre côté.
 
-C1_SecretCave_Axe_Alt_1 = What a strange door. I wonder what’s behind it.
-C1_SecretCave_Axe_Alt_2 = …There is no doorknob. I’ll need to break it open with the axe.
+C1_SecretCave_Axe_Alt_1 = Quelle étrange porte. Je me demande ce qui se cache derrière.
+C1_SecretCave_Axe_Alt_2 = … Il n’y a pas de poignée. Il va la défoncer avec la hache.
 
-C1_SecretCave_Axe_1 = Alright, I can try breaking this barricade now.
+C1_SecretCave_Axe_1 = Bon, je peux essayer de briser cette détruire maintenant.
 C1_SecretCave_Axe_2 = …
-C1_SecretCave_Axe_3 = After a few tries, I manage to break open the sealed room.
-C1_SecretCave_Axe_4 = I wonder what’s in here.
-C1_SecretCave_Axe_5 = But…
-C1_SecretCave_Axe_6 = A-An animal?!
-C1_SecretCave_Axe_7 = They ran off…
-C1_SecretCave_Axe_8 = What was this elk doing here?
-C1_SecretCave_Axe_9 = I inspect the dark room that lies in front of me.
-C1_SecretCave_Axe_10 = … I can’t see much in the darkness, but it seems mostly empty.
-C1_SecretCave_Axe_11 = What a waste of time…
-C1_SecretCave_Axe_12 = I guess I’ll have to be happy with the fact I freed that animal.
+C1_SecretCave_Axe_3 = Après quelques tentatives, je parviens à ouvrir la pièce condamnée.
+C1_SecretCave_Axe_4 = Je me demande ce qu’il y a là-dedans.
+C1_SecretCave_Axe_5 = Mais…
+C1_SecretCave_Axe_6 = U-un animal ?!
+C1_SecretCave_Axe_7 = Il s’est enfui…
+C1_SecretCave_Axe_8 = Que faisait ce cerf à l'intérieur ?
+C1_SecretCave_Axe_9 = J’examine la pièce sombre qui se dresse devant moi.
+C1_SecretCave_Axe_10 = … On n’y voit pas grand-chose, mais elle a l’air vide.
+C1_SecretCave_Axe_11 = Quelle perte de temps…
+C1_SecretCave_Axe_12 = Je suppose que libérer ce cerf était un bon lot de consolation.
 
-C1_SecretCave_After_1 = I still don’t understand why an elk was stuck in here…
-C1_SecretCave_After_2 = Meh. They probably got curious and locked themself while exploring.
-C1_SecretCave_After_3 = … Not that there is much to see. This room is empty.
+C1_SecretCave_After_1 = Je ne comprends toujours pas comment un cerf a pu se retrouver coincé ici…
+C1_SecretCave_After_2 = Il a sans doute été pris de curiosité et s’est retrouvé enfermé en explorant les lieux.
+C1_SecretCave_After_3 = … Pas qu’il y ait grand-chose à voir. La pièce est vide.
 
-C1_Investigation_End_1 = Oh? There it is!
-C1_Investigation_End_2 = <color=#72B6E8>The once mighty vessel I travelled on for three months…</color>
-C1_Investigation_End_3 = <color=#72B6E8>We won’t be setting sail again anytime soon, I’m afraid.</color>
-C1_Investigation_End_4 = Um… Hello? Anyone?
-C1_Investigation_End_5 = <color=#72B6E8>I look around. It seems the place is deserted.</color>
-C1_Investigation_End_6 = <color=#72B6E8>How could it be? Surely the sailors didn’t get thrown overboard, too.</color>
-C1_Investigation_End_7 = <color=#72B6E8>I look at the ship…</color>
-C1_Investigation_End_8 = Wait…
-C1_Investigation_End_9 = That’s… a pretty big hole, no?
-C1_Investigation_End_10 = Did the crash do that? I’m not sure it could have produced such precise damage.
-C1_Investigation_End_11 = <color=#72B6E8>I look around some more. I wonder if there are any survivors.</color>
-C1_Investigation_End_12 = <color=#72B6E8>Suddenly, I notice someone. Maybe it's the Captain.</color>
-C1_Investigation_End_13 = <color=#72B6E8>He’s on the ground, possibly unconscious.</color>
-C1_Investigation_End_14 = Sir? Captain?
-C1_Investigation_End_15 = <color=#72B6E8>I make my way to him. I hope he’s alright.</color>
-C1_Investigation_End_16 = Huh?!
-C1_Investigation_End_17 = <color=#72B6E8>What is going on?! Did he- Did he get killed?</color>
-C1_Investigation_End_18 = <color=#72B6E8>I should check on him.</color>
+C1_Investigation_End_1 = Oh ? Le voilà !
+C1_Investigation_End_2 = <color=#72B6E8>Le navire, autrefois majestueux, à bord duquel j’ai voyagé pendant trois mois…</color>
+C1_Investigation_End_3 = <color=#72B6E8>J’ai bien peur qu’il ne reprenne pas la mer de sitôt.</color>
+C1_Investigation_End_4 = Euh… Bojour ? Il y a quelqu’un ?
+C1_Investigation_End_5 = <color=#72B6E8>Je regarde autour de moi. L’endroit semble désert.</color>
+C1_Investigation_End_6 = <color=#72B6E8>Comment est-ce possible ? Les matelots n’ont tout de même pas été, eux aussi, projetés par-dessus bord.</color>
+C1_Investigation_End_7 = <color=#72B6E8>J’observe le navire…</color>
+C1_Investigation_End_8 = Attends…
+C1_Investigation_End_9 = C’est… un gros trou, non ?
+C1_Investigation_End_10 = Est-ce le résultat du naufrage ? Je ne suis pas certaine qu’un tel choc puisse causer des dégâts aussi précis.
+C1_Investigation_End_11 = <color=#72B6E8>Je continue de scanner l'endroit. Je me demande s’il y a des survivants.</color>
+C1_Investigation_End_12 = <color=#72B6E8>Soudain, j’aperçois quelqu’un. C'est peut-être le capitaine.</color>
+C1_Investigation_End_13 = <color=#72B6E8>Il est étendu au sol, probablement inconscient.</color>
+C1_Investigation_End_14 = Monsieur ? Capitaine ?
+C1_Investigation_End_15 = <color=#72B6E8>Je m’approche de lui. J’espère qu’il va bien.</color>
+C1_Investigation_End_16 = Hein ?!
+C1_Investigation_End_17 = <color=#72B6E8>Qu'est-ce que ?! Il… Il a été tué ?</color>
+C1_Investigation_End_18 = <color=#72B6E8>Je devrais vérifier son état.</color>
 
-C1_Investigation_End_Head_1 = <color=#72B6E8>I check for a pulse. Please be alive…</color>
-C1_Investigation_End_Head_2 = <color=#72B6E8>… No… Dead.</color>
-C1_Investigation_End_Head_3 = <color=#72B6E8>How did this happen?</color>
+C1_Investigation_End_Head_1 = <color=#72B6E8>Je cherche son pouls. S’il te plaît, sois en vie…</color>
+C1_Investigation_End_Head_2 = <color=#72B6E8>… Non… Il est mort.</color>
+C1_Investigation_End_Head_3 = <color=#72B6E8>Comment est-ce arrivé ?</color>
 
-C1_Investigation_End_Knife_1 = <color=#72B6E8>Who was responsible for this?</color>
-C1_Investigation_End_Knife_2 = <color=#72B6E8>Or… was it an accident?</color>
+C1_Investigation_End_Knife_1 = <color=#72B6E8>Qui est responsable de ça ?</color>
+C1_Investigation_End_Knife_2 = <color=#72B6E8>Est-ce que c'était un accident ?</color>
 
-C1_Investigation_End_19 = <color=#72B6E8>Calm down, Rann. There must be a perfectly logical explanation for this.</color>
-C1_Investigation_End_20 = Don’t move! Hands in the air, criminal.
-C1_Investigation_End_21 = Huh?
-C1_Investigation_End_22 = <color=#72B6E8>I do as asked.</color>
-C1_Investigation_End_23 = S- Sir! This is terrible, the captain…
-C1_Investigation_End_24 = Dead. By your hands.
-C1_Investigation_End_25 = W- What?!
-C1_Investigation_End_26 = No! I swear! He was already like that when I arrived.
-C1_Investigation_End_27 = Don’t give me that. I heard what happened from that girl.
-C1_Investigation_End_28 = Besides, you still have the murder weapon in your hands.
-C1_Investigation_End_29 = Put that axe on the ground. Slowly.
-C1_Investigation_End_30 = Y-Yes!
-C1_Investigation_End_31 = <color=#72B6E8>I do as asked. Who is this man?!</color>
-C1_Investigation_End_32 = Now start walking. You’re in a lot of trouble, Miss.
-C1_Investigation_End_33 = Criminals like you should perish in jail.
-C1_Investigation_End_34 = <color=#72B6E8>And that’s how I got arrested for murder.</color>
-C1_Investigation_End_35 = <color=#72B6E8>As I suspected, the island we crashed into was settled.</color>
-C1_Investigation_End_36 = <color=#72B6E8>People took notice when our monstrosity of a boat made its entrance.</color>
-C1_Investigation_End_37 = <color=#72B6E8>I fainted shortly after being arrested. The pain in my leg combined with all the stress was too much for me to handle.</color>
-C1_Investigation_End_38 = <color=#72B6E8>I heard my trial is set for tomorrow. I don’t think I’ll even get to see a lawyer.</color>
-C1_Investigation_End_39 = <color=#72B6E8>What is this place anyway? It feels… weirdly familiar.</color>
-C1_Investigation_End_40 = <color=#72B6E8>Not that I ever came here before, no. But, I don’t know…</color>
-C1_Investigation_End_41 = <color=#72B6E8>The policeman who arrested me spoke my language, as does everyone here apparently.</color>
-C1_Investigation_End_42 = <color=#72B6E8>Maybe… maybe they really did find their land…</color>
-C1_Investigation_End_43 = <color=#72B6E8>Well… it doesn’t matter right now.</color>
-C1_Investigation_End_44 = <color=#72B6E8>I should deal with that whole murder thing first. Then I’ll have all the time in the world to figure out where exactly I am.</color>
+C1_Investigation_End_19 = <color=#72B6E8>Calme-toi, Rann. Il doit avoir une explication parfaitement logique à tout ça.</color>
+C1_Investigation_End_20 = Ne bouge pas ! Les mains en l’air, criminelle.
+C1_Investigation_End_21 = Hein ?
+C1_Investigation_End_22 = <color=#72B6E8>J'obéis sans réflechir.</color>
+C1_Investigation_End_23 = M- Monsieur ! C’est terrible, le capitaine…
+C1_Investigation_End_24 = Mort. Tu es la coupable.
+C1_Investigation_End_25 = Q- Quoi ?!
+C1_Investigation_End_26 = Non ! Je vous le jure ! Il était déjà comme ça quand je suis arrivée.
+C1_Investigation_End_27 = Pas besoin de mentir. La fille m’a raconté ce qui s’est passé.
+C1_Investigation_End_28 = Et puis, tu as encore l’arme du crime entre les mains.
+C1_Investigation_End_29 = Pose cette hache par terre. Lentement.
+C1_Investigation_End_30 = O-Oui !
+C1_Investigation_End_31 = <color=#72B6E8>J'obéis une fois de plus. Qui est cet homme ?!</color>
+C1_Investigation_End_32 = Maintenant, marche. Tu es dans de beaux draps, mademoiselle.
+C1_Investigation_End_33 = Les criminelles comme toi devraient décrépir en prison.
+C1_Investigation_End_34 = <color=#72B6E8>Et c’est ainsi que j’ai été arrêtée pour meurtre.</color>
+C1_Investigation_End_35 = <color=#72B6E8>Comme je m’en doutais, l’île sur laquelle nous nous sommes écrasés était habitée.</color>
+C1_Investigation_End_36 = <color=#72B6E8>Les habitants ont remarqué notre monstrueux navire rapidement.</color>
+C1_Investigation_End_37 = <color=#72B6E8>J’ai perdu connaissance peu après mon arrestation. La douleur à ma jambe, ajoutée à tout ce stress, était devenue insupportable.</color>
+C1_Investigation_End_38 = <color=#72B6E8>Il paraît que mon procès aura lieu demain. Je ne pense même pas avoir droit à un avocat.</color>
+C1_Investigation_End_39 = <color=#72B6E8>Quel est cet endroit ? Il me semble… étrangement familier.</color>
+C1_Investigation_End_40 = <color=#72B6E8>Je ne suis jamais venue ici auparavant, non. Mais…</color>
+C1_Investigation_End_41 = <color=#72B6E8>Le policier qui m’a arrêté parlait ma langue, tout comme tout le monde ici.</color>
+C1_Investigation_End_42 = <color=#72B6E8>Peut-être… peut-être ont-ils vraiment trouvé leur terre légendaire…</color>
+C1_Investigation_End_43 = <color=#72B6E8>Enfin… peu importe, pour le moment.</color>
+C1_Investigation_End_44 = <color=#72B6E8>Je devrais d’abord m’occuper de cette histoire de meurtre. J’aurai tout le temps du monde pour découvrir où je me trouve par la suite.</color>

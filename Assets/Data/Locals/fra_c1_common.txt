@@ -17,22 +17,22 @@ Char_Unknown = ???
 # ---------------------------------------------------------
 
 Evidence_C1_Herbarium_Name = Herbier
-Evidence_C1_Herbarium_Desc = Le résultat de mon hobby. J'ai mal écrit mon nom en "Ronne" sur la couverture.
+Evidence_C1_Herbarium_Desc = Le résultat de mon hobby. J'ai écrit "Ronne" avec une faute d'orthographe sur la couverture.
 
 Evidence_C1_Coat_Name = Veste
 Evidence_C1_Coat_Desc = Ma veste. Elle est déchirée et trempée à cause du crash.
 
 Evidence_C1_Injury_Name = Blessure à la jambe
-Evidence_C1_Injury_Desc = Je suis blessé et ne peux pas courrir.
+Evidence_C1_Injury_Desc = Je suis blessé et ne peux pas courir.
 
 Evidence_C1_Knife_Name = Couteau
-Evidence_C1_Knife_Desc = L'arme du crime. Porte mes empreintes sur la lame, et des empreintes inconnus sur le manche.
+Evidence_C1_Knife_Desc = L'arme du crime. Porte mes empreintes sur la lame, et des empreintes inconnues sur le manche.
 
 Evidence_C1_AutopsyReport_Name = Rapport d'autopsie
-Evidence_C1_AutopsyReport_Desc = Cause de la mort : Coup direct au coeur.
+Evidence_C1_AutopsyReport_Desc = Cause de la mort : coup direct au cœur.
 
-Evidence_C1_DebtReport_Name = Rapport de dête
-Evidence_C1_DebtReport_Desc = Stipule qu'un certain "G.M." est fortement endeté auprès du capitaine.
+Evidence_C1_DebtReport_Name = Rapport de dette
+Evidence_C1_DebtReport_Desc = Stipule qu'un certain "G.M." est fortement endetté auprès du capitaine.
 
 Evidence_C1_DeathMessage_Name = Message
 Evidence_C1_DeathMessage_Desc = "Ronne" est écrit avec le sang du capitaine.
@@ -41,7 +41,7 @@ Profile_C1_Rann_Name = Rann Retyr
 Profile_C1_Rann_Desc = Moi. J'ai été engagé en tant que botaniste par le capitaine Sartt.
 
 Profile_C1_Sartt_Name = Capitaine Sartt
-Profile_C1_Sartt_Desc = Le Capitaine du "Magnifique". Est détesté par la plupart de l'équipage.
+Profile_C1_Sartt_Desc = Le capitaine du "Magnifique". Est détesté par la plupart de l'équipage.
 
 Profile_C1_Gerald_Name = Gerald Marin
 Profile_C1_Gerald_Desc = Un matelot du "Magnigique" et mon ami. Il sait à propos de mon herbier.
@@ -50,26 +50,26 @@ Profile_C1_Judge_Name = Juge
 Profile_C1_Judge_Desc = Le juge assigné à cette affaire. Je ne connais pas son nom.
 
 Profile_C1_Sherif_Name = Shérif Robert
-Profile_C1_Sherif_Desc = Apparement, il est le plus haut gradé dans la police. C'est lui qui m'a arrêté.
+Profile_C1_Sherif_Desc = Apparemment, il est le plus haut gradé dans la police. C'est lui qui m'a arrêté.
 
 Profile_C1_Juno_Name = Juno Dr'hma
-Profile_C1_Juno_Desc = La témoin de cette affaire. Elle a vu le Capitaine mourrir.
+Profile_C1_Juno_Desc = La témoin de cette affaire. Elle a vu le capitaine mourir.
 
 
 # ---------------------------------------------------------
 # -------------------- Fail - Death -----------------------
 # ---------------------------------------------------------
 
-C1_Trial_Fail_1 = Ceci prouve que ce témon a tord !
+C1_Trial_Fail_1 = Ceci prouve que ce témoin a tort !
 C1_Trial_Fail_2 = Comment ça ?
 C1_Trial_Fail_3 = Oh, euh…
-C1_Trial_Fail_4 = … Et bien… Pourquoi ne pas le découvrir… ensemble ?
+C1_Trial_Fail_4 = … Eh bien… Pourquoi ne pas le découvrir… ensemble ?
 C1_Trial_Fail_5 = Mademoiselle Retyr, ce n'est pas comme ça que nous procédons.
 C1_Trial_Fail_6 = Je vais devoir vous pénaliser pour ça.
 C1_Trial_Fail_7 = <color=#72B6E8>Oh… Je vais devoir faire attention.</color>
 C1_Trial_Fail_8 = <color=#72B6E8>Jeter des preuves à sa figure n'a pas l'air de faire effet.</color>
 
-C1_Trial_Death_1 = Assez. J'en ai suffisement ettendu.
+C1_Trial_Death_1 = Assez. J'en ai suffisamment entendu.
 C1_Trial_Death_2 = Mademoiselle Retyr, je vous avais laissé parler. Il me semble cependant que c'était une erreur.
 C1_Trial_Death_3 = Je vais maintenant donner mon verdict sans délai.
-C1_Trial_Death_4 = Nooooooon!
+C1_Trial_Death_4 = Nooooooon !
