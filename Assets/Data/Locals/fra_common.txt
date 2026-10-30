@@ -2,7 +2,7 @@
 # ---------------------------- Choices -----------------------------------
 # ------------------------------------------------------------------------
 
-Choice_Generic = Qu'allez vous faire ?
+Choice_Generic = Qu'allez-vous faire ?
 
 Choice_Yes = Oui
 Choice_No = Non
@@ -13,15 +13,15 @@ Choice_No = Non
 # ------------------------------------------------------------------------
 
 Location_C1_Intro = I - Intro
-Location_C1_Stranded = I - Echouée
+Location_C1_Stranded = I - Échouée
 Location_C1_TrialPart1 = I - Procès (1er)
-Location_C1_TrialPart2 = I - Procès (2ème)
+Location_C1_TrialPart2 = I - Procès (2e)
 
 EntryPoint_FromStart = Du début
 EntryPoint_C1_Intro = Introduction
-EntryPoint_C1_Stranded = Echouée
+EntryPoint_C1_Stranded = Échouée
 EntryPoint_C1_TrialA = Procès (1er)
-EntryPoint_C1_TrialB = Procès (2ème)
+EntryPoint_C1_TrialB = Procès (2e)
 
 Cases_C1 = Un voyage en lambeaux
 

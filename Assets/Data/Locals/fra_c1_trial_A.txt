@@ -4,7 +4,7 @@
 
 # <color=#72B6E8>
 
-C1_Trial_Evidence_AutopsyReport_1 = <color=#72B6E8>Rapport d'autopsie ajouté dans l'inventaire.</color>
+C1_Trial_Evidence_AutopsyReport_1 = <color=#72B6E8>Rapport d'autopsie ajouté à l'inventaire.</color>
 
 C1_Trial_A_1 = <color=#72B6E8>Le lendemain, j’ai été transféré au tribunal local.</color>
 C1_Trial_A_2 = <color=#72B6E8>Quand j’ai demandé si je pouvais voir un avocat, ils ont ri.</color>
@@ -17,7 +17,7 @@ C1_Trial_A_8 = Vous avez insisté pour que l’audience se tienne à huis clos, 
 C1_Trial_A_9 = Je crains de ne pas avoir eu suffisamment de temps pour préparer quoi que ce soit.
 C1_Trial_A_10 = En réalité, je ne sais même pas qui est la victime.
 C1_Trial_A_11 = Je vous présente mes excuses pour la précipitation entourant cette affaire, Votre Honneur.
-C1_Trial_A_12 = Il y avait… des considérations… politique, et nous avons estimé qu’une résolution rapide serait préférable.
+C1_Trial_A_12 = Il y avait… des considérations… politiques, et nous avons estimé qu’une résolution rapide serait préférable.
 C1_Trial_A_13 = <color=#72B6E8>C’est… c’est lui qui m’a arrêté !</color>
 C1_Trial_A_14 = <color=#72B6E8>Un shérif, hein ?</color>
 C1_Trial_A_15 = <color=#72B6E8>Ça fait sens. Après tout, c’est lui qui m’a arrêté.</color>
@@ -92,8 +92,8 @@ C1_Trial_A_79 = … Très bien. Raconte-nous maintenant ce que tu as vu hier.
 
 C1_Trial_Testimony1_Start_1 = <color=green>Ce que j’ai vu</color>
 C1_Trial_Testimony1_Start_2 = Ce jour-là, je cherchais des champignons dans la forêt.
-C1_Trial_Testimony1_Start_3 = Enfin. J’avais entendu une explosion la veille et je voulais voir ce qui s’était passé.
-C1_Trial_Testimony1_Start_4 = Je suis arrivé à l’épave. Et c’est là que je l’ai vu !
+C1_Trial_Testimony1_Start_3 = Enfin, j’avais entendu une explosion la veille et je voulais voir ce qui s’était passé.
+C1_Trial_Testimony1_Start_4 = Je suis arrivée à l’épave. Et c’est là que je l’ai vu !
 C1_Trial_Testimony1_Start_5 = Quelqu’un a poignardé à mort le vieux capitaine !
 C1_Trial_Testimony1_Start_6 = J’ai crié, et le meurtrier a pris la fuite.
 C1_Trial_Testimony1_Start_7 = Assister à un meurtre… cela a dû être une épreuve difficile.
@@ -103,7 +103,7 @@ C1_Trial_Testimony1_Start_10 = J’étais un peu éloignée. Mais, avec du recul
 C1_Trial_Testimony1_Start_11 = Le shérif m’a dit qu’elle était la seule personne que j’aurais pu voir à ce moment-là. 
 C1_Trial_Testimony1_Start_12 = Comme vous pouvez le constater, ce témoignage est tout à fait décisif.
 C1_Trial_Testimony1_Start_13 = En effet.
-C1_Trial_Testimony1_Start_14 = Ceci étant dit, la défense, et en l’occurrence, l’accusé, a la possibilité de réfuter le témoin.
+C1_Trial_Testimony1_Start_14 = Ceci étant dit, la défense, et en l’occurrence l’accusé, a la possibilité de réfuter le témoin.
 C1_Trial_Testimony1_Start_15 = Je vous demande pardon ?
 C1_Trial_Testimony1_Start_16 = Ah, vous ne connaissez pas les procédures ?
 C1_Trial_Testimony1_Start_17 = Je suis vendeuse de fleurs de profession…
@@ -139,18 +139,18 @@ C1_Trial_Testimony1_Press1_1 = Quel genre de champignons, au juste ?
 C1_Trial_Testimony1_Press1_2 = Euh ? Oh… Surtout des morilles.
 C1_Trial_Testimony1_Press1_3 = Je vois… je vois…
 C1_Trial_Testimony1_Press1_4 = <color=#72B6E8>Je devrais noter ça pour plus tard. Il faudra que j’y goûte…</color>
-C1_Trial_Testimony1_Press1_5 = Et comment les préfére-tu ? Cuites ? Accompagnées de riz ?
+C1_Trial_Testimony1_Press1_5 = Et comment les préféres-tu ? Cuites ? Accompagnées de riz ?
 C1_Trial_Testimony1_Press1_6 = Euh…
 C1_Trial_Testimony1_Press1_7 = Je vous demande pardon, Mlle Retyr, mais nous sommes dans un tribunal, pas dans un club de cuisine.
 C1_Trial_Testimony1_Press1_8 = Vous aurez tout le loisir de goûter à nos spécialités locales une fois le procès terminé.
 C1_Trial_Testimony1_Press1_9 = Ah, oups. Désolée…
 C1_Trial_Testimony1_Press1_10 = C’était la seule raison derrière ta sortie ?
 
-C1_Trial_Testimony1_Press2_1 = À quelle distance du lieu du naufrage habite-tu ?
+C1_Trial_Testimony1_Press2_1 = À quelle distance du lieu du naufrage habites-tu ?
 C1_Trial_Testimony1_Press2_2 = Oh, à quelques kilomètres.
 C1_Trial_Testimony1_Press2_3 = Le naufrage a eu lieu sur la côte ouest de l’île, et j’habite sur la côte est.
 C1_Trial_Testimony1_Press2_4 = L’explosion a dû être particulièrement forte.
-C1_Trial_Testimony1_Press2_5 = D’après les rapports que nous avons reçus, il semble qu'elle a été entendu jusqu'à l'Ouest de Suorius.
+C1_Trial_Testimony1_Press2_5 = D’après les rapports que nous avons reçus, il semble qu'elle ait été entendue jusqu'à l'Ouest de Suorius.
 C1_Trial_Testimony1_Press2_6 = Oui. C’était une explosion très violente.
 C1_Trial_Testimony1_Press2_7 = Donc…
 
@@ -174,11 +174,11 @@ C1_Trial_Testimony1_Press4_8 = <color=#72B6E8>On dirait qu’elle ne pense que c
 
 C1_Trial_Testimony1_Press5_1 = As-tu vu dans quelle direction il est parti ?
 C1_Trial_Testimony1_Press5_2 = Ou peut-être as-tu songé à le suivre ?
-C1_Trial_Testimony1_Press5_3 = Non… Il a disparu de mon champ de vision, et j’ai décidé de m’enfuir.
+C1_Trial_Testimony1_Press5_3 = Non… Il a disparu de mon champ de vision et j’ai décidé de m’enfuir.
 C1_Trial_Testimony1_Press5_4 = Je ne vous en veux pas. Être témoin d’un crime… ce n’est jamais une expérience agréable.
 C1_Trial_Testimony1_Press5_5 = Moi aussi, j’ai vu mon lot de choses horribles…
 C1_Trial_Testimony1_Press5_6 = <color=#72B6E8>C’est intéressant…</color>
-C1_Trial_Testimony1_Press5_7 = <color=#72B6E8>Il est impossible je sois le meurtrier.</color>
+C1_Trial_Testimony1_Press5_7 = <color=#72B6E8>Il est impossible que je sois le meurtrier.</color>
 C1_Trial_Testimony1_Press5_8 = <color=#72B6E8>À cause de… <color=red>ça</color>.</color>
 C1_Trial_Testimony1_Press5_9 = <color=#72B6E8>Je devrais la <color=red>présenter</color> dès que j’en aurai l’occasion.</color>
 
@@ -191,7 +191,7 @@ C1_Trial_B_1 = A-Attendez !
 C1_Trial_B_2 = Il y a un problème avec ce témoignage ?
 C1_Trial_B_3 = Oui !
 C1_Trial_B_4 = Je n’aurais pas pu m’enfuir comme elle l’a décrit.
-C1_Trial_B_5 = Ah ? Mais pourtant je suis certaine que le tueur a fuis quand j'ai crié.
+C1_Trial_B_5 = Ah ? Mais pourtant, je suis certaine que le tueur a fui quand j'ai crié.
 C1_Trial_B_6 = C'est parce que je ne suis pas cette personne.
 C1_Trial_B_7 = Comme vous pouvez le constater, ma jambe est cassée.
 C1_Trial_B_8 = Je n’aurais pas été capable de m’enfuir, et encore moins de tuer quelqu’un.
@@ -219,13 +219,13 @@ C1_Trial_B_29 = Je suis certain que tu comptais t'en servir pour te débarrasser
 C1_Trial_B_30 = Je…
 C1_Trial_B_31 = Voilà qui est bien déroutant.
 C1_Trial_B_32 = Il est possible que vous mentiez sur votre blessure.
-C1_Trial_B_33 = Cependant, je vais vous accorder le bénéfice du doute pour l’instant
+C1_Trial_B_33 = Cependant, je vais vous accorder le bénéfice du doute pour l’instant.
 C1_Trial_B_34 = Témoin.
 C1_Trial_B_35 = Oui ?
 C1_Trial_B_36 = Je suis désolé de vous demander cela, mais pourriez-vous témoigner à nouveau ?
 C1_Trial_B_37 = J’aimerais en savoir plus sur la personne que vous avez vue.
 C1_Trial_B_38 = Y avait-il quelque chose de particulier avec cette personne ?
-C1_Trial_B_39 = Je… je peux essayer.
+C1_Trial_B_39 = Je… Je peux essayer.
 
 # ---------------------------------------------------------
 # -------------------- Testimony 2 ------------------------
@@ -236,8 +236,8 @@ C1_Trial_Testimony2_Start_2 = J’étais assez loin et n’ai pas pu voir grand-
 C1_Trial_Testimony2_Start_3 = Je ne voyais que le dos du tueur, et pas son visage.
 C1_Trial_Testimony2_Start_4 = Mais je sais qu'il portait un manteau.
 C1_Trial_Testimony2_Start_5 = J'ai appris après les faits que c'était l'uniforme de l'équipage.
-C1_Trial_Testimony2_Start_6 = Hmm… Pas grand-chose…
-C1_Trial_Testimony2_Start_7 = Eh bien… qu’en pensez-vous, shérif ?
+C1_Trial_Testimony2_Start_6 = Hmm… Pas-grand-chose…
+C1_Trial_Testimony2_Start_7 = Eh bien… Qu’en pensez-vous, shérif ?
 C1_Trial_Testimony2_Start_8 = Mon avis reste inchangé.
 C1_Trial_Testimony2_Start_9 = Mlle Retyr a tué le capitaine, puis a simulé sa blessure.
 C1_Trial_Testimony2_Start_10 = À mon sens, ce témoignage est inutile.
@@ -258,18 +258,18 @@ C1_Trial_Testimony2_Press1_1 = De quelle distance parle-t-on, au juste ?
 C1_Trial_Testimony2_Press1_2 = Quelques dizaines de mètres ?
 C1_Trial_Testimony2_Press1_3 = J’étais assez proche pour distinguer son apparence et ses vêtements.
 C1_Trial_Testimony2_Press1_4 = <color=#72B6E8>Hmm… Elle n’a probablement pas pu bien voir son visage.</color>
-C1_Trial_Testimony2_Press1_5 = Et qu'est ce que tu as pu voir, au final ?
+C1_Trial_Testimony2_Press1_5 = Et qu'est-ce que tu as pu voir, au final ?
 
 C1_Trial_Testimony2_Press2_1 = Tu n’as même pas pu distinguer ses cheveux ?
 C1_Trial_Testimony2_Press2_2 = Même un détail aussi anodin que la couleur des cheveux serait d’une aide précieuse.
-C1_Trial_Testimony2_Press2_3 = Euh… eh bien… je n’ai pas pu voir, désolée…
+C1_Trial_Testimony2_Press2_3 = Euh… Eh bien… Je n’ai pas pu voir, désolée…
 C1_Trial_Testimony2_Press2_4 = J’étais trop loin pour le distinguer.
-C1_Trial_Testimony2_Press2_5 = Et puis, le soleil me gênait un peu.
+C1_Trial_Testimony2_Press2_5 = Et puis le soleil me gênait un peu.
 C1_Trial_Testimony2_Press2_6 = <color=#72B6E8>Hmm… En d’autres termes, elle aurait pu voir n’importe qui.</color>
 
 C1_Trial_Testimony2_Press3_1 = Un manteau ?
 C1_Trial_Testimony2_Press3_2 = Oui, comme celui que portent les soldats.
-C1_Trial_Testimony2_Press3_3 = Mais il était d’une couleur plus vive que le leur.
+C1_Trial_Testimony2_Press3_3 = Mais, il était d’une couleur plus vive que le leur.
 C1_Trial_Testimony2_Press3_4 = <color=#72B6E8>C’est l’uniforme de l’équipage. Tout le monde en portait un, moi y compris.</color>
 C1_Trial_Testimony2_Press3_5 = <color=#72B6E8>En vérité, c’est utile…</color>
 C1_Trial_Testimony2_Press3_6 = Y avait-il quelque chose de particulier avec ce manteau ?
@@ -286,7 +286,7 @@ C1_Trial_Testimony2_Press4_2 = Oui, j'en suis sûr. J’ai vu des éclaboussures
 C1_Trial_Testimony2_Press4_3 = Quant aux taches étranges, j’imagine que la personne se trouvait près de l’explosion ?
 C1_Trial_Testimony2_Press4_4 = C’est possible.
 C1_Trial_Testimony2_Press4_5 = Je vois…
-C1_Trial_Testimony2_Press4_6 = On peux continuer.
+C1_Trial_Testimony2_Press4_6 = On peut continuer.
 
 C1_Trial_Testimony2_Press5_1 = Le capitaine en portait-il un au moment où tu l’as vu mourir ?
 C1_Trial_Testimony2_Press5_2 = Oui.
@@ -294,7 +294,7 @@ C1_Trial_Testimony2_Press5_3 = Il est mort avec son manteau sur le dos.
 C1_Trial_Testimony2_Press5_4 = <color=#72B6E8>Eh bien, le coupable n’a pas volé le manteau du capitaine…</color>
 C1_Trial_Testimony2_Press5_5 = <color=#72B6E8>Cela veut dire que le manteau que portait le meurtrier était le sien.</color>
 
-C1_Trial_Testimony2_Loop_1 = <color=#72B6E8>Pas grand-chose à se mettre sous la dent, cette fois-ci…</color>
+C1_Trial_Testimony2_Loop_1 = <color=#72B6E8>Pas-grand-chose à se mettre sous la dent, cette fois-ci…</color>
 C1_Trial_Testimony2_Loop_2 = <color=#72B6E8>Il faut pourtant que je trouve quelque chose. Je n’ai pas d'autre solution.</color>
 
 C1_Trial_C_1 = Je le répète : il m’est impossible d’être le meurtrier.
@@ -303,7 +303,7 @@ C1_Trial_C_3 = Le manteau du meurtrier était ensanglanté et brûlé, pas vrai 
 C1_Trial_C_4 = Oui, c’est ce que notre ami vient de nous dire.
 C1_Trial_C_5 = Eh bien, regardez encore une fois mon manteau.
 C1_Trial_C_6 = Voyons voir…
-C1_Trial_C_7 = Il est… tout humide et en lambeaux.
+C1_Trial_C_7 = Il est… Tout humide et en lambeaux.
 C1_Trial_C_8 = Comment l'avez-vous mis dans cet état ?
 C1_Trial_C_9 = Ne manque-t-il pas quelque chose ?
 C1_Trial_C_10 = …
@@ -313,7 +313,7 @@ C1_Trial_C_13 = Elles sont absentes parce que ce n’est pas moi que Juno a vu.
 C1_Trial_C_14 = Lors du naufrage, j’ai été frappé par des vagues violentes.
 C1_Trial_C_15 = J’ai ensuite été projeté par-dessus bord, et mon manteau s’est déchiré durant ma chute.
 C1_Trial_C_16 = En somme, cela prouve que je n’ai pas tué le capitaine !
-C1_Trial_C_17 = C-ça se tient.
+C1_Trial_C_17 = Ç-ça se tient.
 C1_Trial_C_18 = Encore une fois, qui peut confirmer ça ?
 C1_Trial_C_19 = Tu ne cesses de clamer ton innocence, et que tu es juste blessée.
 C1_Trial_C_20 = Laisse-moi te donner ma petite théorie.
@@ -321,14 +321,14 @@ C1_Trial_C_21 = Tu as survécu au naufrage et, pour une raison ou une autre, tu 
 C1_Trial_C_22 = Mlle Dr’hma t'as aperçu et a poussé un cri.
 C1_Trial_C_23 = Prise de panique, tu as pris la fuite.
 C1_Trial_C_24 = Ensuite, tu as jeté ton manteau à la mer pour t'en débarrasser.
-C1_Trial_C_25 = Cependant, tu es tombé et cela a resulté en ta blessure.
+C1_Trial_C_25 = Cependant, tu es tombé et cela a résulté en ta blessure.
 C1_Trial_C_26 = Après quoi, tu es revenu en titubant vers l’épave, où je t'ai arrêté.
 C1_Trial_C_27 = C’est faux !
 C1_Trial_C_28 = Bah ! Où t'es-tu réveillé déjà ?
 C1_Trial_C_29 = … Sur une falaise, près du navire.
-C1_Trial_C_30 = Héhé. Tu vois ? Ça fait sens, n’est-ce pas ?
+C1_Trial_C_30 = Hé hé. Tu vois ? Ça fait sens, n’est-ce pas ?
 C1_Trial_C_31 = Quant à la hache, j’imagine que tu l'as prise au cas où il fallait faire taire notre témoin.
-C1_Trial_C_32 = Hmm… Ou alors tu voulais démembrer le corp du capitaine pour le cacher dans le navire ?
+C1_Trial_C_32 = Hmm… Ou alors tu voulais démembrer le corps du capitaine pour le cacher dans le navire ?
 C1_Trial_C_33 = C'est ridicule !
 C1_Trial_C_34 = C'est toi contre moi. Et devine quoi ? C'est moi le shérif, ici.
 C1_Trial_C_35 = <color=#72B6E8>Grr… Quelle arrogance !</color>
@@ -336,9 +336,9 @@ C1_Trial_C_36 = Très bien, je vais donner mon avis sur la question.
 C1_Trial_C_37 = Il est vrai qu’aucun élément ne prouve que l’accusé ne ment pas.
 C1_Trial_C_38 = Hé !
 C1_Trial_C_39 = Cependant !
-C1_Trial_C_40 = C’est la deuxième fois que nous avons ce peit débat.
+C1_Trial_C_40 = C’est la deuxième fois que nous avons ce petit débat.
 C1_Trial_C_41 = Si je ne peux pas affirmer avec certitude que Mlle Retyr dit la vérité…
-C1_Trial_C_42 = …je ne peux pas non plus affirmer qu’elle est coupable.
+C1_Trial_C_42 = …Je ne peux pas non plus affirmer qu’elle est coupable.
 C1_Trial_C_43 = Mais…
 C1_Trial_C_44 = Shérif. N’oubliez pas que j’ai horreur des enquêtes bâclées.
 C1_Trial_C_45 = Je comprends vos motivations pour vouloir en finir rapidement. Mais là, ça va trop loin.
@@ -361,14 +361,14 @@ C1_Trial_C_60 = Qui a tué le capitaine ?
 Choice_Question1_Juno = Juno
 Choice_Question1_Sheriff = Le shérif
 Choice_Question1_Suicide = C'est un suicide
-Choice_Question1_Animal = Un Animal
+Choice_Question1_Animal = Un animal
 Choice_Question1_Sailor = Un matelot
 
-C1_Trial_Question1_Juno_1 = Eh bien… peut-être que Juno ment et que c’est elle qui l’a tué ?
+C1_Trial_Question1_Juno_1 = Eh bien… Peut-être que Juno ment et que c’est elle qui l’a tué ?
 C1_Trial_Question1_Juno_2 = Hein ?! C'est faux !
 C1_Trial_Question1_Juno_3 = Bah ! C’est impossible.
 C1_Trial_Question1_Juno_4 = N’oublies pas qu’elle ne connaissait pas le capitaine. Pourquoi l’aurait-elle tué ?
-C1_Trial_Question1_Juno_5 = Et puis, pourquoi aurait-elle signalé le crime ?
+C1_Trial_Question1_Juno_5 = Et puis pourquoi aurait-elle signalé le crime ?
 C1_Trial_Question1_Juno_6 = Si elle était vraiment coupable, il lui suffisait de prendre la fuite.
 C1_Trial_Question1_Juno_7 = Il est fort probable que nous n’aurions jamais que c'était elle.
 C1_Trial_Question1_Juno_8 = Ah, euh…
@@ -380,27 +380,27 @@ C1_Trial_Question1_Juno_13 = Désolée…
 
 C1_Trial_Question1_Sheriff_1 = C’est forcément le shérif !
 C1_Trial_Question1_Sheriff_2 = Je veux dire, il passe son temps à prétendre que c’est moi la coupable.
-C1_Trial_Question1_Sheriff_3 = Mlle Retyr… Je sais que notre shérif est parfois un peu… virulent.
+C1_Trial_Question1_Sheriff_3 = Mlle Retyr… Je sais que notre shérif est parfois un peu… Virulent.
 C1_Trial_Question1_Sheriff_4 = Mais ce n’est pas un meurtrier, croyez-moi.
 C1_Trial_Question1_Sheriff_5 = Quant à son insistance, n’oubliez pas qu’il représente l’accusation ici.
 C1_Trial_Question1_Sheriff_6 = Son rôle <i>est</i> d’obtenir une condamnation. 
 C1_Trial_Question1_Sheriff_7 = Ne t'en fais pas, la navigatrice. Je ne le prends pas mal.
 C1_Trial_Question1_Sheriff_8 = Euh…
 
-C1_Trial_Question1_Suicide_1 = Peut-être… s’est-il suicidé ?
+C1_Trial_Question1_Suicide_1 = Peut-être… S’est-il suicidé ?
 C1_Trial_Question1_Suicide_2 = C’est peu probable, étant donné la façon dont il a été poignardé.
-C1_Trial_Question1_Suicide_3 = Et puis, comment explique-tu la silhouette mystérieuse qu’a aperçue Mlle Dr’hma ?
+C1_Trial_Question1_Suicide_3 = Et puis comment expliques-tu la silhouette mystérieuse qu’a aperçue Mlle Dr’hma ?
 C1_Trial_Question1_Suicide_4 = Ah, euh…
 C1_Trial_Question1_Suicide_5 = Mlle Retyr, vous feriez bien de réfléchir un peu avant de répondre à mes questions.
 
 C1_Trial_Question1_Animal_1 = Peut-être qu’un animal l’a tué ?
 C1_Trial_Question1_Animal_2 = Attends un instant.
-C1_Trial_Question1_Animal_3 = Tu veux dire que Mlle Dr’hma as confondu un animal avec un être humain ?
+C1_Trial_Question1_Animal_3 = Tu veux dire que Mlle Dr’hma a confondu un animal avec un être humain ?
 C1_Trial_Question1_Animal_4 = Sans parler du fait que le capitaine a été poignardé, et non dévoré…
 C1_Trial_Question1_Animal_5 = Ah…
 C1_Trial_Question1_Animal_6 = Je veux dire, il y a bien des animaux exotiques sur l’île, mais quand même…
 C1_Trial_Question1_Animal_7 = La seule créature qui pourrait, à la rigueur, passer pour un humain, c’est un Raelk.
-C1_Trial_Question1_Animal_8 = Et, pour autant que je sache, ils ne vivent même pas sur cette île.
+C1_Trial_Question1_Animal_8 = Et pour autant que je sache, ils ne vivent même pas sur cette île.
 C1_Trial_Question1_Animal_9 = En résumé : ce n’est pas un animal.
 
 C1_Trial_D_1 = Eh bien, il est fort probable que le coupable soit un membre de l’équipage.
@@ -408,12 +408,12 @@ C1_Trial_D_2 = Après tout, Juno a vu le meurtrier porter l’uniforme de l’é
 C1_Trial_D_3 = Et, à en juger par les traces de brûlures, il a survécu à l’explosion.
 C1_Trial_D_4 = Vous voulez dire qu’une autre personne a survécu au crash, puis a tué le capitaine ?
 C1_Trial_D_5 = Oui. Reste à savoir pourquoi cette personne aurait tué le capitaine.
-C1_Trial_D_6 = Elle surement a pris la fuite pour se cacher après avoir été vu par Juno.
+C1_Trial_D_6 = Elle sûrement a pris la fuite pour se cacher après avoir été vu par Juno.
 C1_Trial_D_7 = Il est même possible qu’elle se cache encore près de l’épave.
 C1_Trial_D_8 = Hmm…
 C1_Trial_D_9 = Shérif, n’avez-vous pas fouillé le navire ?
 C1_Trial_D_10 = Non. Nous nous sommes repliés immédiatement après avoir découvert la présence d’explosifs à bord.
-C1_Trial_D_11 = Cela dit… nous avons mis en place un périmètre de sécurité autour de l’épave.
+C1_Trial_D_11 = Cela dit… Nous avons mis en place un périmètre de sécurité autour de l’épave.
 C1_Trial_D_12 = Nous sommes certains que personne n’a quitté les environs du navire.
 C1_Trial_D_13 = Alors… il y a une chance !
 C1_Trial_D_14 = Peut-être que le meurtrier est toujours caché à bord !
@@ -441,10 +441,10 @@ C1_Trial_D_35 = Shérif, nous reprendrons l’audience une fois que vos hommes a
 C1_Trial_D_36 = Comme vous voudrez.
 
 C1_Trial1_D_37 = <color=#72B6E8>Ouf…</color>
-C1_Trial1_D_38 = <color=#72B6E8>J’… j’ai réussi !</color>
+C1_Trial1_D_38 = <color=#72B6E8>J’… J’ai réussi !</color>
 C1_Trial1_D_39 = <color=#72B6E8>Bientôt, je serai peut-être innocenté de ce terrible meurtre.</color>
 C1_Trial1_D_40 = <color=#72B6E8>Mais cela soulève une nouvelle question : qui a fait ça ?</color>
-C1_Trial1_D_41 = <color=#72B6E8>Quelqu’un a-t-il vraiment survécu au crash et a tuer le capitaine ?</color>
+C1_Trial1_D_41 = <color=#72B6E8>Quelqu’un a-t-il vraiment survécu au crash et a tué le capitaine ?</color>
 C1_Trial1_D_42 = <color=#72B6E8>Et si c’est le cas, pourquoi ?</color>
 C1_Trial1_D_43 = Euh… Bonjour.
 C1_Trial1_D_44 = Ah. Juno, c’est bien ça ?
@@ -453,7 +453,7 @@ C1_Trial1_D_46 = Appelle-moi Rann, je t'en prie.
 C1_Trial1_D_47 = Oh, très bien.
 C1_Trial1_D_48 = Alors, euh… C’est la première fois que tu mets les pieds dans un tribunal ?
 C1_Trial1_D_49 = O-Oui…
-C1_Trial1_D_50 = Je… je voulais te présenter mes excuses.
+C1_Trial1_D_50 = Je… Je voulais te présenter mes excuses.
 C1_Trial1_D_51 = J’ai affirmé à tort devant le juge que tu avais tué cet homme.
 C1_Trial1_D_52 = Oh, ne t'en fais pas pour ça.
 C1_Trial1_D_53 = Tu as fait ce que tu devais faire.
@@ -467,7 +467,7 @@ C1_Trial1_D_60 = …
 C1_Trial1_D_61 = Enfin, on peut spéculer autant qu’on veut, mais on ne saura rien tant que la police n’aura pas terminé ses recherches.
 C1_Trial1_D_62 = J’espère vraiment qu’ils trouveront quelque chose pour t'innocenter.
 C1_Trial1_D_63 = Ouais…
-C1_Trial1_D_64 = Au fait… où sommes-nous ?
+C1_Trial1_D_64 = Au fait… Où sommes-nous ?
 C1_Trial1_D_65 = Je ne connais toujours pas le nom de la ville où nous nous trouvons. Elle me semble étrangement familière.
 C1_Trial1_D_66 = Ah, c’est vrai. C’est tout à fait normal que tu ne le saches pas.
 C1_Trial1_D_67 = Nous sommes actuellement au palais de justice de la ville de Suorius.
@@ -477,7 +477,7 @@ C1_Trial1_D_70 = <color=#72B6E8>C’est ici que les précédentes expéditions o
 C1_Trial1_D_71 = <color=#72B6E8>Est-ce pour cela que le juge a fait référence à "Nova Kalia" ?</color>
 C1_Trial1_D_72 = <color=#72B6E8>J’ai tellement de questions…</color>
 C1_Trial1_D_73 = Et toi… Tu ne ressembles pas aux autres. Es-tu une Suori ?
-C1_Trial1_D_74 = Oh, non. Je viens du… clan… Taliakii. Nous vivions ici bien avant l’arrivée des Surii…
+C1_Trial1_D_74 = Oh, non. Je viens du… Clan… Taliakii. Nous vivions ici bien avant l’arrivée des Surii…
 C1_Trial1_D_75 = Dehors.
 C1_Trial1_D_76 = Hein ?
 C1_Trial1_D_77 = <color=#72B6E8>Le shérif, qui a fait irruption dans la pièce, entraîne maintenant Juno vers la sortie.</color>
@@ -495,12 +495,12 @@ C1_Trial1_D_88 = Évidemment. J’ai passé TOUTES tes affaires au peigne fin.
 C1_Trial1_D_89 = Sartt n’aurait jamais engagé une sorcière, c’est impossible.
 C1_Trial1_D_90 = Alors, je repose la question.
 C1_Trial1_D_91 = Comment es-tu montée à bord de ce navire ? Et qu’as-tu fait du botaniste ?
-C1_Trial1_D_92 = J-Hein ?
+C1_Trial1_D_92 = Je- Hein ?
 C1_Trial1_D_93 = J’ai été engagée en tant que botaniste, c’est tout.
 C1_Trial1_D_94 = Il y avait des manifestations chez nous, et il n’a pas réussi à contacter les botanistes "officiels".
 C1_Trial1_D_95 = C’est… C’est impossible !
 C1_Trial1_D_96 = Pourquoi une telle obsession à ce sujet ?
 C1_Trial1_D_97 = Ça ne vous regarde pas, si ?
 C1_Trial1_D_98 = … Tch…
-C1_Trial1_D_99 = Le procès va bientôt reprendre. Retourne à votre banc, accusée. 
+C1_Trial1_D_99 = Le procès va bientôt reprendre. Retourne à votre banc, accusé. 
 C1_Trial1_D_100 = <color=#72B6E8>… Et c’est pourquoi je garde toujours mon herbier secret.</color>

@@ -26,7 +26,7 @@ Evidence_C1_Injury_Name = Blessure à la jambe
 Evidence_C1_Injury_Desc = Je suis blessé et ne peux pas courir.
 
 Evidence_C1_Knife_Name = Couteau
-Evidence_C1_Knife_Desc = L'arme du crime. Porte mes empreintes sur la lame, et des empreintes inconnues sur le manche.
+Evidence_C1_Knife_Desc = L'arme du crime. Porte mes empreintes sur la lame et des empreintes inconnues sur le manche.
 
 Evidence_C1_AutopsyReport_Name = Rapport d'autopsie
 Evidence_C1_AutopsyReport_Desc = Cause de la mort : coup direct au cœur.
@@ -44,7 +44,7 @@ Profile_C1_Sartt_Name = Capitaine Sartt
 Profile_C1_Sartt_Desc = Le capitaine du "Magnifique". Est détesté par la plupart de l'équipage.
 
 Profile_C1_Gerald_Name = Gerald Marin
-Profile_C1_Gerald_Desc = Un matelot du "Magnigique" et mon ami. Il sait à propos de mon herbier.
+Profile_C1_Gerald_Desc = Un matelot du "Magnigique" et mon ami. Il est au courant pour mon herbier.
 
 Profile_C1_Judge_Name = Juge
 Profile_C1_Judge_Desc = Le juge assigné à cette affaire. Je ne connais pas son nom.

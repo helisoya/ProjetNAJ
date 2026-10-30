@@ -5,7 +5,7 @@
 # <color=#72B6E8>
 
 C1_Trial_Evidence_DeathMessage_1 = <color=#72B6E8>Message ajouté à l'inventaire.</color>
-C1_Trial_Evidence_DebtPapers_1 = <color=#72B6E8>Rapport de dette ajoutés à l'inventaire.</color>
+C1_Trial_Evidence_DebtPapers_1 = <color=#72B6E8>Rapport de dette ajouté à l'inventaire.</color>
 C1_Trial_Evidence_Knife_1 = <color=#72B6E8>Couteau ajouté à l'inventaire.</color>
 
 
@@ -13,13 +13,13 @@ C1_Trial1_E_1 = Très bien, reprenons ce procès.
 C1_Trial1_E_2 = Shérif, j'espère que vous avez trouvé quelque chose ?
 C1_Trial1_E_3 = Oui. Mes hommes ont terminé leurs recherches.
 C1_Trial1_E_4 = Je n’ai pas eu le temps d'analyser leurs trouvailles.
-C1_Trial1_E_5 = Au lieu de cela, mon subordonné élaborera lui-même.
+C1_Trial1_E_5 = Au lieu de cela, mon subordonné élaborera par lui-même.
 C1_Trial1_E_6 = Bien. Écoutons-le.
 C1_Trial1_E_7 = Bon. Accouche, mon gars.
-C1_Trial1_E_8 = Oui Monsieur!
+C1_Trial1_E_8 = Oui, Monsieur!
 C1_Trial1_E_9 = Nous avons exploré l’épave et inspecté la quasi-totalité de cette dernière.
 C1_Trial1_E_10 = Quasi-totalité ?
-C1_Trial1_E_11 = Monsieur! Certaines pièces étaient remplies d'explosifs et de munitions inactifs.
+C1_Trial1_E_11 = Monsieur ! Certaines pièces étaient remplies d'explosifs et de munitions inactifs.
 C1_Trial1_E_12 = Nous avons décidé de les sceller pour le moment.
 C1_Trial1_E_13 = Je vois. La sécurité avant tout.
 C1_Trial1_E_14 = Qu’avez-vous fini par trouver ?
@@ -42,25 +42,25 @@ C1_Trial1_E_30 = <color=#72B6E8>Ou peut-être qu'il était caché derrière le r
 C1_Trial1_E_31 = <color=#72B6E8>J'ai été arrêtée assez rapidement. J'aurais pu le rater facilement…</color>
 C1_Trial1_E_32 = C’est une preuve assez accablante, il faut l'avouer.
 C1_Trial1_E_33 = Avez-vous trouvé autre chose ?
-C1_Trial1_E_34 = Monsieur! Notre première tache a été de visiter la cabine du capitaine.
+C1_Trial1_E_34 = Monsieur ! Notre première tâche a été de visiter la cabine du capitaine.
 C1_Trial1_E_35 = Nous avons obtenu de nombreux documents que vous pouvez lire.
 C1_Trial1_E_36 = Est-ce que le vieux Jimm les a parcourus ?
-C1_Trial1_E_37 = Oh oui. Il les a séparé en deux piles.
+C1_Trial1_E_37 = Oh oui. Il les a séparés en deux piles.
 C1_Trial1_E_38 = Les premiers ont l'air d'être des rapports financiers.
 C1_Trial1_E_39 = Malheureusement, la plupart d’entre eux sont endommagés. Celui-ci est le seul qui puisse être lu entièrement.
 C1_Trial1_E_40 = Hmm…
 C1_Trial1_E_41 = Apparemment, quelqu’un lui devait beaucoup d’argent.
 C1_Trial1_E_42 = Laisse-moi voir…
-C1_Trial1_E_43 = Par Kalibu! C’est une grosse somme.
+C1_Trial1_E_43 = Par Kalibu ! C’est une grosse somme.
 C1_Trial1_E_44 = Comment peut-on devoir autant d’argent ? Il faudrait des années pour rembourser une telle dette !
 C1_Trial1_E_45 = Nous ne savons pas qui était endetté.
 C1_Trial1_E_46 = Jimm a essayé de trouver le journal de bord du navire pour chercher les noms des matelots.
 C1_Trial1_E_47 = Mais il ne l’a pas trouvé. Il pense qu'il a été détruit dans l'accident.
 C1_Trial1_E_48 = Hmm… Dommage.
 C1_Trial1_E_49 = Et la deuxième pile ?
-C1_Trial1_E_50 = Il semble qu'il s'agisse de correspondances. Je ne les ai pas lus, mais je-
-C1_Trial1_E_51 = Donne-les moi !
-C1_Trial1_E_52 = Hein? Oh oui.
+C1_Trial1_E_50 = Il semble qu'il s'agisse de correspondances. Je ne les ai pas lues, mais je-
+C1_Trial1_E_51 = Donne-les-moi !
+C1_Trial1_E_52 = Hein ? Oh oui.
 C1_Trial1_E_53 = …
 C1_Trial1_E_54 = …
 C1_Trial1_E_55 = Shérif ?
@@ -72,11 +72,11 @@ C1_Trial1_E_60 = De toute façon, il me faudrait des jours pour les trier.
 C1_Trial1_E_61 = Je doute que nous ayons le temps aujourd’hui.
 C1_Trial1_E_62 = Très bien, très bien.
 C1_Trial1_E_63 = <color=#72B6E8>Qu'y a-t-il dans ces lettres ? Il semble étrangement intéressé par ça.</color>
-C1_Trial1_E_64 = <color=#72B6E8>Est-il un fan secret de lire les lettres de gens ?</color>
-C1_Trial1_E_65 = Euh… je vais finir mon rapport alors…
+C1_Trial1_E_64 = <color=#72B6E8>Est-il un fan secret de lire les lettres des gens ?</color>
+C1_Trial1_E_65 = Euh… je vais finir mon rapport, alors…
 C1_Trial1_E_66 = Nous avons fouillé le navire à la recherche de survivants.
 C1_Trial1_E_67 = En majeure partie, nous avons échoué.
-C1_Trial1_E_68 = En majoure partie ?
+C1_Trial1_E_68 = En majeure partie ?
 C1_Trial1_E_69 = Nous avons trouvé un marin assommé sur le pont. Il est toujours en vie.
 C1_Trial1_E_70 = Un autre survivant ?
 C1_Trial1_E_71 = A-t-il également vu le meurtre avoir lieu ?
@@ -94,7 +94,7 @@ C1_Trial1_E_82 = <color=#72B6E8>Sinon, je suis fichu.</color>
 C1_Trial1_E_83 = Alors, vous êtes l'autre survivant du crash ?
 C1_Trial1_E_84 = Ouais. Je m’appelle Gerald Marin.
 C1_Trial1_E_85 = G-Gerald ?!
-C1_Trial1_E_86 = Oh,  salut. Quel plaisir de te revoir.
+C1_Trial1_E_86 = Oh, salut. Quel plaisir de te revoir.
 C1_Trial1_E_87 = <color=#72B6E8>Attends. C'est lui le tueur ?!</color>
 C1_Trial1_E_88 = <color=#72B6E8>Ce n'est pas possible !</color>
 C1_Trial1_E_89 = <color=#72B6E8>Rah… Est-ce que je me suis trompé ?</color>
@@ -104,15 +104,15 @@ C1_Trial1_E_92 = Je-je vois.
 C1_Trial1_E_93 = M. Marin, pourriez-vous nous raconter ce qui s'est passé le jour de l'accident ?
 C1_Trial1_E_94 = Que faisiez-vous et comment avez-vous fini inconscient ?
 C1_Trial1_E_95 = Bien sûr. Je peux faire ça.
-C1_Trial1_E_96 = Mais je n’ai pas grand chose à dire. Ne vous attendez à rien.
+C1_Trial1_E_96 = Mais je n’ai pas grand-chose à dire. Ne vous attendez à rien.
 
 
 
 C1_Trial_Testimony3_Start_1 = <color=green>Le crash</color>
 C1_Trial_Testimony3_Start_2 = Cette nuit-là, je m’occupais des plantes du navire.
-C1_Trial_Testimony3_Start_3 = Avant que je m'en rende compte, nous nous sommes écrasés.
-C1_Trial_Testimony3_Start_4 = Heureusement, je n'ai pas été blessé. Je suis allé ensuite au pont.
-C1_Trial_Testimony3_Start_5 = C’est à ce moment là que les explosifs m’ont assommé.
+C1_Trial_Testimony3_Start_3 = Avant que je ne m'en rende compte, nous nous sommes écrasés.
+C1_Trial_Testimony3_Start_4 = Heureusement, je n'ai pas été blessé. Je suis allé ensuite sur le pont.
+C1_Trial_Testimony3_Start_5 = C’est à ce moment-là que les explosifs m’ont assommé.
 C1_Trial_Testimony3_Start_6 = C’est dommage que je n’aie pas vu qui a poignardé le poumon du capitaine.
 C1_Trial_Testimony3_Start_7 = Donc vous n'avez rien vu au final ? 
 C1_Trial_Testimony3_Start_8 = Ouais.
@@ -126,7 +126,7 @@ C1_Trial_Testimony3_Start_15 = Il n’aurait pas pu tuer le capitaine.
 C1_Trial_Testimony3_Start_16 = Ce qui, bien sûr, laisse Mlle Retyr comme seule suspecte.
 C1_Trial_Testimony3_Start_17 = Et c’est sans parler du message que nous avons trouvé.
 C1_Trial_Testimony3_Start_18 = De toute façon, je n’aurais eu aucune raison de tuer le vieux loup.
-C1_Trial_Testimony3_Start_19 = … Dire que toi, de toutes les personnes, puisse commettre un tel crime…
+C1_Trial_Testimony3_Start_19 = … Dire que toi, de toutes les personnes, puisses commettre un tel crime…
 C1_Trial_Testimony3_Start_20 = Hmm… je vois.
 C1_Trial_Testimony3_Start_21 = Mlle Retyr, vous pouvez continuer.
 C1_Trial_Testimony3_Start_22 = <color=#72B6E8>Que se passe-t-il ?</color>
@@ -139,14 +139,14 @@ C1_Trial_Testimony3_Start_26 = <color=#72B6E8>… Je suppose qu'il n'y a qu'une 
 C1_Trial_Testimony3_Testimony_0 = <color=red>Le crash</color>
 C1_Trial_Testimony3_Testimony_1 = <color=green>Cette nuit-là, je m’occupais des plantes du navire.</color>
 C1_Trial_Testimony3_Testimony_2 = <color=green>Avant que je m'en rende compte, nous nous sommes écrasés.</color>
-C1_Trial_Testimony3_Testimony_3 = <color=green>Heureusement, je n'ai pas été blessé. Je suis allé ensuite au pont.</color>
-C1_Trial_Testimony3_Testimony_4 = <color=green>C’est à ce moment là que les explosifs m’ont assommé.</color>
+C1_Trial_Testimony3_Testimony_3 = <color=green>Heureusement, je n'ai pas été blessé. Je suis allé ensuite sur le pont.</color>
+C1_Trial_Testimony3_Testimony_4 = <color=green>C’est à ce moment-là que les explosifs m’ont assommé.</color>
 C1_Trial_Testimony3_Testimony_5 = <color=green>C’est dommage que je n’aie pas vu qui a poignardé le poumon du capitaine.</color>
 
 C1_Trial_Testimony3_Press1_1 = Tu veux dire, les plantes dont nous nous occupions ensemble ?
 C1_Trial_Testimony3_Press1_2 = Ouais, c'était mon tour ce soir-là.
 C1_Trial_Testimony3_Press1_3 = J'ai bien peur qu'elles soient mortes dans l'accident.
-C1_Trial_Testimony3_Press1_4 = Ah, c'est… pas très grâve.
+C1_Trial_Testimony3_Press1_4 = Ah, c'est… pas très grave.
 C1_Trial_Testimony3_Press1_5 = Je suis juste contente que tu ailles bien.
 C1_Trial_Testimony3_Press1_6 = Ah, les plantes…
 C1_Trial_Testimony3_Press1_7 = J'aime aussi arroser mes fleurs. C'est tellement… relaxant.
@@ -179,40 +179,40 @@ C1_Trial_Testimony3_Press4_10 = C'est vrai. Mais ce n'est qu'un fantasme mainten
 
 C1_Trial_Testimony3_Press5_1 = Donc tu n'as pas vu le tueur du tout ?
 C1_Trial_Testimony3_Press5_2 = Non, j'étais inconscient à ce moment-là.
-C1_Trial_Testimony3_Press5_3 = …Dire que quelqu'un allait poignarder le vieux loup…
+C1_Trial_Testimony3_Press5_3 = … Dire que quelqu'un allait poignarder le vieux loup…
 C1_Trial_Testimony3_Press5_4 = Et si aucun tiers n'a tué le capitaine, tu restes notre principale suspecte, Mlle Retyr.
 C1_Trial_Testimony3_Press5_5 = Je suis innocente !
 C1_Trial_Testimony3_Press5_6 = Mais quel choix avons-nous ?
 C1_Trial_Testimony3_Press5_7 = Personne n’est en vie. C'est juste toi et moi.
 C1_Trial_Testimony3_Press5_8 = … Je n'arrive pas à croire que tu aies fait ça.
-C1_Trial_Testimony3_Press5_9 = Je- Non…
+C1_Trial_Testimony3_Press5_9 = Je… Non…
 C1_Trial_Testimony3_Press5_10 = <color=#72B6E8>J'ai vraiment besoin de trouver quelque chose, rapidement.</color>
 
 C1_Trial_Testimony3_Loop_1 = <color=#72B6E8>Je devrais être heureux que Gérald ait survécu, mais…</color>
 C1_Trial_Testimony3_Loop_2 = <color=#72B6E8>Soit le véritable tueur s'est enfui quelque part que nous n'avons pas encore cherché…</color>
-C1_Trial_Testimony3_Loop_3 = <color=#72B6E8… soit c'est lui le vrai tueur.</color>
+C1_Trial_Testimony3_Loop_3 = <color=#72B6E8>… soit c'est lui le vrai tueur.</color>
 C1_Trial_Testimony3_Loop_4 = <color=#72B6E8>Non. Le Gérald que je connais ne le ferait jamais…</color>
 
 C1_Trial1_F_1 = Gerald, c'est bizarre.
-C1_Trial1_F_2 = Quoi ? J'était inconscient. Je n'ai rien vu.
+C1_Trial1_F_2 = Quoi ? J'étais inconscient. Je n'ai rien vu.
 C1_Trial1_F_3 = Pourtant, malgré ça…
 C1_Trial1_F_4 = Tu sais quand même que le capitaine est mort d'un coup de couteau.
 C1_Trial1_F_5 = Même si… Tu pensais qu'il avait été touché au poumon plutôt qu'au cœur.
 C1_Trial1_F_6 = C'est étrange. La police nous a dit que tu n'avais pas eu les détails.
 C1_Trial1_F_7 = Comment savais-tu pour le couteau ?
-C1_Trial1_F_8 = Et comment en êtes-tu arrivé à penser que ses poumons étaient touchés ?
+C1_Trial1_F_8 = Et comment en es-tu arrivé à penser que ses poumons étaient touchés ?
 C1_Trial1_F_9 = Euh…
 C1_Trial1_F_10 = Eh bien, tu sais…
 C1_Trial1_F_11 = Peut-être que Jimm lui en a parlé.
 C1_Trial1_F_12 = Non, j'étais avec lui pendant l'interrogatoire.
 C1_Trial1_F_13 = Nous n’avons même pas mentionné les coups de couteau.
-C1_Trial1_F_14 = Etais-tu vraiment inconscient pendant tout ce temps ?
-C1_Trial1_F_15 = Ha ha, tu vois…
+C1_Trial1_F_14 = Étais-tu vraiment inconscient pendant tout ce temps ?
+C1_Trial1_F_15 = Ha, ha, tu vois…
 C1_Trial1_F_16 = Il semble que…
 C1_Trial1_F_17 = Euh…
 C1_Trial1_F_18 = Témoin. Comment saviez-vous que le cœur du capitaine était touché ?
 C1_Trial1_F_19 = Euh…
-C1_Trial1_F_20 = Ah ! Oui bien sûr.
+C1_Trial1_F_20 = Ah ! Oui, bien sûr.
 C1_Trial1_F_21 = Vous vous souvenez de quelque chose ?
 C1_Trial1_F_22 = Ouais. En fait, j'ai dû être à moitié éveillé à un moment donné.
 C1_Trial1_F_23 = Je me souviens avoir entendu les derniers instants du capitaine.
@@ -223,7 +223,7 @@ C1_Trial1_F_27 = Bien sûr.
 C1_Trial1_F_28 = Je vais essayer de faire de mon mieux.
 C1_Trial1_F_29 = …
 C1_Trial1_F_30 = <color=#72B6E8>Peut-être qu'il y a un autre survivant après tout.</color>
-C1_Trial1_F_31 = <color=#72B6E8>Je suis contente. J'aurais été dévasté c'était lui le tueur.</color>
+C1_Trial1_F_31 = <color=#72B6E8>Je suis contente. J'aurais été dévastée c'était lui le tueur.</color>
 
 # ---------------------------------------------------------
 # -------------------- Testimony 4 ------------------------
@@ -236,17 +236,17 @@ C1_Trial_Testimony4_Start_3 = Je me souviens très bien de la voix d’une femme
 C1_Trial_Testimony4_Start_4 = La femme a crié pendant un long moment.
 C1_Trial_Testimony4_Start_5 = Après quoi, j’ai entendu le capitaine crier alors qu’il était poignardé à mort.
 C1_Trial_Testimony4_Start_6 = Par Kalibu! Vous êtes sûr ?
-C1_Trial_Testimony4_Start_7 = Ouais. Enfin,pour la plupart en tout cas.
+C1_Trial_Testimony4_Start_7 = Ouais. Enfin, pour la plupart en tout cas.
 C1_Trial_Testimony4_Start_8 = Mais... j'étais la seule femme à bord !
 C1_Trial_Testimony4_Start_9 = C'est une preuve assez accablante !
 C1_Trial_Testimony4_Start_10 = Avec ça et le message, sa culpabilité est claire comme eau de roche.
 C1_Trial_Testimony4_Start_11 = …
-C1_Trial_Testimony4_Start_12 = Ca semble être le cas.
+C1_Trial_Testimony4_Start_12 = Ça semble être le cas.
 C1_Trial_Testimony4_Start_13 = <color=#72B6E8>Pourquoi ?</color>
 C1_Trial_Testimony4_Start_14 = <color=#72B6E8>Avions-nous eu une autre femme à bord ?</color>
-C1_Trial_Testimony4_Start_15 = <color=#72B6E8>… Non… Ca ne me dit rien.</color>
+C1_Trial_Testimony4_Start_15 = <color=#72B6E8>… Non… Ça ne me dit rien.</color>
 C1_Trial_Testimony4_Start_16 = <color=#72B6E8>Guh… Que se passe-t-il ?</color>
-C1_Trial_Testimony4_Start_17 = <color=#72B6E8>Gerald pourrait-il mentir ? Ou est-ce que je me trompe complètement sur tout ?</color>
+C1_Trial_Testimony4_Start_17 = <color=#72B6E8>Gerald pourrait-il mentir ? Où est-ce que je me trompe complètement sur tout ?</color>
 C1_Trial_Testimony4_Start_18 = Mlle Retyr, vous pouvez continuer.
 C1_Trial_Testimony4_Start_19 = Je dois cependant vous rappeler qu'en lumière des preuves nouvellement découvertes, il s'agit d'une simple formalité.
 C1_Trial_Testimony4_Start_20 = À ce stade, je peux mettre fin au procès à tout moment.
@@ -281,7 +281,7 @@ C1_Trial_Testimony4_Press2_5 = …Non. J'étais la seule.
 C1_Trial_Testimony4_Press2_6 = Ouais. Très peu de femmes matelots à Kalia de nos jours…
 
 C1_Trial_Testimony4_Press3_1 = Pourquoi a-t-elle crié ?
-C1_Trial_Testimony4_Press3_2 = Je ne me souviens pas de grand chose.
+C1_Trial_Testimony4_Press3_2 = Je ne me souviens pas de grand-chose.
 C1_Trial_Testimony4_Press3_3 = Mais je me souviens qu’elle disait ne rien devoir au capitaine.
 C1_Trial_Testimony4_Press3_4 = Une question de dette, peut-être ? Mais je ne sais pas quel genre de dette.
 C1_Trial_Testimony4_Press3_5 = Hmm…
@@ -292,7 +292,7 @@ C1_Trial_Testimony4_Press4_1 = As-tu entendu autre chose après le cri du capita
 C1_Trial_Testimony4_Press4_2 = Non, rien. C'était silencieux.
 C1_Trial_Testimony4_Press4_3 = Je me souviens cependant de ses derniers souffles.
 C1_Trial_Testimony4_Press4_4 = C’est à cause de ça que j’ai cru qu’il avait été poignardé aux poumons.
-C1_Trial_Testimony4_Press4_5 = Ensuite… je pense que la personne s'est enfuie.
+C1_Trial_Testimony4_Press4_5 = Ensuite… Je pense que la personne s'est enfuie.
 
 C1_Trial_Testimony4_Loop_1 = <color=#72B6E8>Tout ce témoignage… ne peut pas être.</color>
 C1_Trial_Testimony4_Loop_2 = <color=#72B6E8>J'étais la seule femme à bord. Qui a-t-il vraiment entendu ?</color>
@@ -317,12 +317,12 @@ C1_Trial1_G_15 = Oh oh !
 C1_Trial1_G_16 = Cela faisait si longtemps que je n'avais pas utilisé ma guillotine.
 C1_Trial1_G_17 = H-Hein ?!
 C1_Trial1_G_18 = Très bien, je déclare l'accusé…
-C1_Trial1_G_19 = Vous serez rapidement exécuté dans la le jardin. Je installer le matériel.
+C1_Trial1_G_19 = Vous serez rapidement exécuté dans le jardin. Je vais installer le matériel.
 C1_Trial1_G_20 = Shérif, s'il vous plaît. Amenez-la là-bas.
 C1_Trial1_G_21 = Bien sûr, Votre Honneur.
 C1_Trial1_G_22 = A-Attendez une seconde, s'il vous plaît !
 C1_Trial1_G_23 = Hein ?
-C1_Trial1_G_24 = Vous-Vous êtes la témoin de toute à l'heure, non ?
+C1_Trial1_G_24 = Vous… Vous êtes la témoin de toute à l'heure, non ?
 C1_Trial1_G_25 = Mes excuses. J'avais oublié que vous étiez toujours là.
 C1_Trial1_G_26 = Vouliez-vous assister à l'exécution avec nous ?
 C1_Trial1_G_27 = N-Non ! Je voulais faire objection !
@@ -330,8 +330,8 @@ C1_Trial1_G_28 = Qu'est-ce que tu racontes ?
 C1_Trial1_G_29 = Seule la défense peut faire objection durant un procès.
 C1_Trial1_G_30 = Votre rôle ici est terminé. Tu peux partir.
 C1_Trial1_G_31 = M-Mais ! Le témoignage de cet homme ne fait aucun sens !
-C1_Trial1_G_32 = Hein?
-C1_Trial1_G_33 = Hé, hé, hé. Qu'est-ce que tu dis?
+C1_Trial1_G_32 = Hein ?
+C1_Trial1_G_33 = Hé, hé, hé. Qu'est-ce que tu dis ?
 C1_Trial1_G_34 = Je sais que j'ai été assommé par cette explosion, mais quand même…
 C1_Trial1_G_35 = Je ne les ai pas entendus parler quand j'y étais.
 C1_Trial1_G_36 = Comment as-tu entendu quelque chose que je n'ai pas pu entendre ?
@@ -350,10 +350,10 @@ C1_Trial1_G_48 = Je défends simplement ce somptueux tribunal.
 C1_Trial1_G_49 = <color=#72B6E8>Pauvre Juno, elle essayait seulement d'aider…</color>
 C1_Trial1_G_50 = <color=#72B6E8>… Attends. Attends une seconde.</color>
 C1_Trial1_G_51 = <color=#72B6E8>Elle a raison. Quelque chose ne va pas dans le témoignage de Gerald.</color>
-C1_Trial1_G_52 = <color=#72B6E8>Qu'est ce qu'elle avait dit dans son témoignage ?</color>
+C1_Trial1_G_52 = <color=#72B6E8>Qu'est-ce qu'elle avait dit dans son témoignage ?</color>
 
 C1_Trial1_G_53 = Ce jour-là, je cherchais des champignons dans la forêt.
-C1_Trial1_G_54 = Je suis arrivé à l’épave. Et c’est là que je l’ai vu !
+C1_Trial1_G_54 = Je suis arrivée à l’épave. Et c’est là que je l’ai vu !
 C1_Trial1_G_55 = Quelqu’un a poignardé à mort le vieux capitaine !
 C1_Trial1_G_56 = J’ai crié, et le meurtrier a pris la fuite.
 
@@ -362,7 +362,7 @@ C1_Trial1_G_58 = <color=#72B6E8>Son témoignage est incompatible avec le sien.</
 C1_Trial1_G_59 = Votre Honneur !
 C1_Trial1_G_60 = Ah ! Mlle Retyr, vous m'avez fait peur.
 C1_Trial1_G_61 = Quelque chose ne va pas ? Nous allons bientôt commencer votre exécution.
-C1_Trial1_G_62 = Moi aussi je dois m'y opposer ! Le témoignage du témoin est incohérent !
+C1_Trial1_G_62 = Moi auss, je dois m'y opposer ! Le témoignage du témoin est incohérent !
 C1_Trial1_G_63 = Bah ! Le verdict a déjà été rendu. Vous arrivez trop tard.
 C1_Trial1_G_64 = Hmm… Continuez.
 C1_Trial1_G_65 = Quoi ?
@@ -385,13 +385,13 @@ C1_Trial1_Question2_Asleep_7 = <color=#72B6E8>Vite ! Je dois trouver quelque ch
 
 C1_Trial1_Question2_DidntSeeJuno_1 = Je trouve suspect qu’il n’ait pas vu Juno.
 C1_Trial1_Question2_DidntSeeJuno_2 = Je ne vois pas quelle différence ça ferait.
-C1_Trial1_Question2_DidntSeeJuno_3 = Et puis, n’oublie pas qu’il était à moitié éveillé tout le temps.
+C1_Trial1_Question2_DidntSeeJuno_3 = Et puis n’oublie pas qu’il était à moitié éveillé tout le temps.
 C1_Trial1_Question2_DidntSeeJuno_4 = Je ne suis pas sûr qu’il aurait pu se lever et regarder la forêt environnante.
 C1_Trial1_Question2_DidntSeeJuno_5 = Ah, oui…
 C1_Trial1_Question2_DidntSeeJuno_6 = <color=#72B6E8>Vite ! Je dois trouver quelque chose.</color>
 
 C1_Trial1_H_1 = Le cri qu’il prétend avoir entendu contredit le témoignage de Juno.
-C1_Trial1_H_2 = Vraiment?
+C1_Trial1_H_2 = Vraiment ?
 C1_Trial1_H_3 = Oui, vous vous souvenez de ce qu'elle nous a dit ?
 C1_Trial1_H_4 = Hmm, oui. Elle nous a dit qu'elle avait crié quand elle avait vu les coups de couteau et...
 C1_Trial1_H_5 = Attendez une seconde…
@@ -426,17 +426,17 @@ C1_Trial1_H_33 = Si votre mémoire est défaillante, à qui pouvons-nous faire c
 C1_Trial1_H_34 = Pour l’instant, la seule chose qui prouve que Mlle Retyr est coupable est votre témoignage ainsi que le message de la victime.
 C1_Trial1_H_35 = …
 C1_Trial1_H_36 = Le message ?
-C1_Trial1_H_37 = …C'est ça!
+C1_Trial1_H_37 = … C'est ça !
 C1_Trial1_H_38 = Vous venez de vous rappeler de quelque chose ?
 C1_Trial1_H_39 = Votre problème est que vous n’avez aucune preuve décisive que Ronne l’a fait, c'est ça ?
 C1_Trial1_H_40 = Je pense que je peux prouver qu'elle est coupable.
-C1_Trial1_H_41 = V- Vou pouvez ?
+C1_Trial1_H_41 = V- Vous pouvez ?
 C1_Trial1_H_42 = Hein ?!
 C1_Trial1_H_43 = Je pense que ça sera suffisant.
 C1_Trial1_H_44 = M. Marin va être reconduit à l'hôpital.
 C1_Trial1_H_45 = Il est clair que sa mémoire est défaillante.
 C1_Trial1_H_46 = Le stresser davantage entraînerait un témoignage encore plus erroné.
-C1_Trial1_H_47 = Ne dit pas ça !
+C1_Trial1_H_47 = Ne dis pas ça !
 C1_Trial1_H_48 = Je peux prouver que Ronne l'a fait sans me souvenir de ce qui s'est passé lors de l'accident.
 C1_Trial1_H_49 = …
 C1_Trial1_H_50 = C'est ridicule.
@@ -451,24 +451,24 @@ C1_Trial1_H_58 = Je n’ai donc pas besoin de me souvenir de ce qui s’est pass
 C1_Trial1_H_59 = Hé, Votre Honneur ?
 C1_Trial1_H_60 = Hmm ?
 C1_Trial1_H_61 = L'arme du crime. Le couteau. Je peux le voir ?
-C1_Trial1_H_62 = Hein? Oh, bien sûr.
-C1_Trial1_H_63 = … Attendez. Où est-il? Je ne le trouve pas dans les preuves.
+C1_Trial1_H_62 = Hein ? Oh, bien sûr.
+C1_Trial1_H_63 = … Attendez. Où est-il ? Je ne le trouve pas dans les preuves.
 C1_Trial1_H_64 = Maintenant que j'y pense…
 C1_Trial1_H_65 = Le shérif ne l'a jamais montré.
 C1_Trial1_H_66 = …
-C1_Trial1_H_67 = Shérif. Êtes-vous en possession du couteau?
+C1_Trial1_H_67 = Shérif. Êtes-vous en possession du couteau ?
 C1_Trial1_H_68 = Et si c'est le cas ?
 C1_Trial1_H_69 = !
-C1_Trial1_H_70 = Dîtes-moi que vous ne vous y remettez pas.
+C1_Trial1_H_70 = Dites-moi que vous ne vous y remettez pas.
 C1_Trial1_H_71 = Shérif, je jure devant Kalibu-
-C1_Trial1_H_72 = Je n’ai pas montré le couteau car il ne nous disait rien d’intéressant.
+C1_Trial1_H_72 = Je n’ai pas montré le couteau, car il ne nous disait rien d’intéressant.
 C1_Trial1_H_73 = Je ne vois pas pourquoi je devrais le présenter maintenant.
 C1_Trial1_H_74 = Shérif. Je ne me répéterai pas.
 C1_Trial1_H_75 = Montrez-nous le couteau.
 C1_Trial1_H_76 = …
 C1_Trial1_H_77 = …
 C1_Trial1_H_78 = … Tu fais une erreur, marin d'eau douce.
-C1_Trial1_H_79 = Voila le couteau.
+C1_Trial1_H_79 = Voilà le couteau.
 C1_Trial1_H_80 = Je n'aime pas votre ton, shérif.
 C1_Trial1_H_81 = … Vous pouvez l'examiner, Monsieur Marin.
 C1_Trial1_H_82 = <color=#72B6E8>Que se passe-t-il ?</color>
@@ -490,7 +490,7 @@ C1_Trial1_H_92 = <color=#72B6E8>Gerald… Pourquoi ?</color>
 C1_Trial_Testimony5_Start_1 = <color=green>Ma déduction</color>
 C1_Trial_Testimony5_Start_2 = L’arme du crime est en réalité le couteau de Ronne.
 C1_Trial_Testimony5_Start_3 = Je ne voulais pas le reconnaître, mais je dois le faire.
-C1_Trial_Testimony5_Start_4 = Ses empreintes sont dessus, non ? Ca prouve qu'elle l'a fait.
+C1_Trial_Testimony5_Start_4 = Ses empreintes sont dessus, non ? Ça prouve qu'elle l'a fait.
 C1_Trial_Testimony5_Start_5 = L'arme du crime est son couteau ?
 C1_Trial_Testimony5_Start_6 = Hmm… C'est logique, oui.
 C1_Trial_Testimony5_Start_7 = Avons-nous vraiment trouvé ses empreintes sur le couteau ?
@@ -506,7 +506,7 @@ C1_Trial_Testimony5_Start_15 = <color=#72B6E8>C'est comme si... le shérif ne vo
 C1_Trial_Testimony5_Testimony_0 = <color=red>Ma déduction</color>
 C1_Trial_Testimony5_Testimony_1 = <color=green>L’arme du crime est en réalité le couteau de Ronne.</color>
 C1_Trial_Testimony5_Testimony_2 = <color=green>Je ne voulais pas le reconnaître, mais je dois le faire.</color>
-C1_Trial_Testimony5_Testimony_3 = <color=green>Ses empreintes sont dessus, non ? Ca prouve qu'elle l'a fait.</color>
+C1_Trial_Testimony5_Testimony_3 = <color=green>Ses empreintes sont dessus, non ? Ça prouve qu'elle l'a fait.</color>
 C1_Trial_Testimony5_Testimony_4 = <color=green>D'ailleurs, n'oublions pas le message qui a été trouvé : <color=red>"Ronne"</color>.</color>
 
 C1_Trial_Testimony5_Press1_1 = Hé, c'était le tien aussi !
@@ -518,7 +518,7 @@ C1_Trial_Testimony5_Press1_6 = Oui, oui. Mais le fait reste que tu y avais accè
 C1_Trial_Testimony5_Press1_7 = Euh…
 
 C1_Trial_Testimony5_Press2_1 = Je suis innocente !
-C1_Trial_Testimony5_Press2_2 = Crois-moi, j'aimerai que tu ais raison.
+C1_Trial_Testimony5_Press2_2 = Crois-moi, j'aimerais que tu aies raison.
 C1_Trial_Testimony5_Press2_3 = Mais soyons réalistes. Tu peux le prouver ?
 C1_Trial_Testimony5_Press2_4 = Peux-tu prouver que tu es innocente ?
 C1_Trial_Testimony5_Press2_5 = Bah… Je le suis, mais…
@@ -542,7 +542,7 @@ C1_Trial_Testimony5_Press3_12 = Oh ? C'est intéressant, ça…
 C1_Trial_Testimony5_Press3_13 = Qu’est-ce qui prouve que les empreintes n’ont aucun rapport avec l’affaire ?
 
 C1_Trial_Testimony5_Press3_Fail_1 = Ceci prouve que les empreintes n’ont aucun rapport avec notre affaire.
-C1_Trial_Testimony5_Press3_Fail_2 = …Vraiment ?
+C1_Trial_Testimony5_Press3_Fail_2 = … Vraiment ?
 C1_Trial_Testimony5_Press3_Fail_3 = Euh…
 C1_Trial_Testimony5_Press3_Fail_4 = Je peux réessayer ?
 C1_Trial_Testimony5_Press3_Fail_5 = … Faites attention à ce que vous dites, mademoiselle.
@@ -552,17 +552,17 @@ C1_Trial_Testimony5_Press3_15 = Oui. Le shérif ne l’a pas dit à voix haute, 
 C1_Trial_Testimony5_Press3_16 = Laissez-moi vous lire le rapport.
 C1_Trial_Testimony5_Press3_17 = "Les empreintes de Rann Retyr ont été trouvées sur la lame du couteau."
 C1_Trial_Testimony5_Press3_19 = "Des empreintes inconnues ont été trouvées sur le manche du couteau."
-C1_Trial_Testimony5_Press3_20 = La lame ? Mais-!
+C1_Trial_Testimony5_Press3_20 = La lame ? Mais !
 C1_Trial_Testimony5_Press3_21 = …
 C1_Trial_Testimony5_Press3_22 = Oui, c'est difficile de tuer quelqu'un en tenant un couteau par la lame.
 C1_Trial_Testimony5_Press3_23 = Non seulement ça, mais je me serai aussi coupé.
-C1_Trial_Testimony5_Press3_24 = -Et comme vous pouvez le voir : je ne suis pas blessée.
+C1_Trial_Testimony5_Press3_24 = Et comme vous pouvez le voir : je ne suis pas blessée.
 C1_Trial_Testimony5_Press3_25 = Mais alors… Comment vos empreintes se sont-elles retrouvées sur la lame ?
 C1_Trial_Testimony5_Press3_26 = Lors du voyage, j'ai aidé Gerald à s'occuper des plantes du navire.
 C1_Trial_Testimony5_Press3_27 = Il avait du mal, alors je l'ai aidé en saisissant la lame.
 C1_Trial_Testimony5_Press3_28 = Il semblerait que personne n'ait pris la peine de nettoyer le couteau depuis.
 C1_Trial_Testimony5_Press3_29 = Ça... Ça change tout !
-C1_Trial_Testimony5_Press3_30 = Et les empreintes inconnues sur le manche ? A qui appartiennent-elles ?
+C1_Trial_Testimony5_Press3_30 = Et les empreintes inconnues sur le manche ? À qui appartiennent-elles ?
 C1_Trial_Testimony5_Press3_31 = Le rapport ne le dit pas.
 C1_Trial_Testimony5_Press3_32 = Mais si les empreintes datent de cette époque, alors elles doivent appartenir à… 
 
@@ -602,7 +602,7 @@ C1_Trial_Testimony5_Press3_48 = Je peux encore prouver qu'elle l'a fait.
 C1_Trial_Testimony5_Press3_After_1 = Tu manipulais souvent le couteau ?
 C1_Trial_Testimony5_Press3_After_2 = Chaque fois, je m'occupais des plantes.
 C1_Trial_Testimony5_Press3_After_3 = J'utilisais aussi toujours des gants…
-C1_Trial_Testimony5_Press3_After_4 = Tu sais, pour protéger mes mains… tout ça.
+C1_Trial_Testimony5_Press3_After_4 = Tu sais, pour protéger mes mains… Tout ça.
 C1_Trial_Testimony5_Press3_After_5 = Oui, tu ne les quittais jamais, hein ?
 C1_Trial_Testimony5_Press3_After_6 = Les gants font partie de mon style.
 
@@ -626,19 +626,19 @@ C1_Trial_Testimony5_Loop_3 = <color=#72B6E8>Un message qui apparaît de nulle pa
 C1_Trial_Testimony5_Loop_4 = <color=#72B6E8>Un couteau que je n'ai pas utilisé depuis des semaines.</color>
 C1_Trial_Testimony5_Loop_5 = <color=#72B6E8>Que se passe-t-il ?</color>
 
-C1_Trial1_I_1 = A propos de ce message, je trouve une chose étrange.
+C1_Trial1_I_1 = À propos de ce message, je trouve une chose étrange.
 C1_Trial1_I_2 = Quoi ? Ton prénom est écrit juste ici.
 C1_Trial1_I_3 = Regarde : <color=red>“Ronne”</color>.
 C1_Trial1_I_4 = C’est mon problème.
-C1_Trial1_I_5 = Il n’y a ni "e"  ni "o" dans mon prénom.
+C1_Trial1_I_5 = Il n’y a ni "e" ni "o" dans mon prénom.
 C1_Trial1_I_6 = Hein ?!
 C1_Trial1_I_7 = Eh bien, le capitaine a peut-être mal orthographié ton nom.
 C1_Trial1_I_8 = Tu vois, même moi, j'ai écrit ton nom comme "Ran" dans nos archives.
 C1_Trial1_I_9 = S'il vous plaît, corrigez ça…
 C1_Trial1_I_10 = Mais… vous prouvez mon problème.
-C1_Trial1_I_11 = Les gens l’épelent mal, mais il est généralement orthographié en « Ran » et pas « Ronne ».
+C1_Trial1_I_11 = Les gens l’épellent mal, mais il est généralement orthographié en « Ran » et pas « Ronne ».
 C1_Trial1_I_12 = En fait, le seul endroit où l’on peut trouver mon nom écrit ainsi est…
-C1_Trial1_I_13 = …Dans ce petit livre.
+C1_Trial1_I_13 = … Dans ce petit livre.
 C1_Trial1_I_14 = Oh, quel joli petit livre.
 C1_Trial1_I_15 = Hmm… C'est vrai, <color=red>"Ronne"</color> est bien écrit sur la couverture.
 C1_Trial1_I_16 = … Attendez une seconde…
@@ -650,11 +650,11 @@ C1_Trial1_I_21 = Je ne fais rien d’illégal, je le jure !
 C1_Trial1_I_22 = Puisse Kalibu protéger mon âme de la cervitude de cette… cette… chose.
 C1_Trial1_I_23 = Vous pouvez le reprendre, par pitié.
 C1_Trial1_I_24 = Je vous avais prévenu qu'elle était une meurtrière.
-C1_Trial1_I_25 = On ne peux pas faire confiance à une sorcière.
+C1_Trial1_I_25 = On ne peut pas faire confiance à une sorcière.
 C1_Trial1_I_26 = Je suis sûr que tous ces discours sur le fait d’être botaniste étaient un mensonge.
 C1_Trial1_I_27 = Elle a tué et remplacé le vrai botaniste du navire.
 C1_Trial1_I_28 = Vous pensez ? A-t-elle tué deux personnes ce jour-là ?
-C1_Trial1_I_29 = Ou même avant le crash. Bon sang, elle a peut être déjà tué une douzaine de matelots.
+C1_Trial1_I_29 = Ou même avant le crash. Bon sang, elle a peut-être déjà tué une douzaine de matelots.
 C1_Trial1_I_30 = Ha, ha. C'est une drôle d'histoire, mon bon lutin.
 C1_Trial1_I_31 = Il a tort ? Elle n'a pas tué de matelots ?
 C1_Trial1_I_32 = Non. Elle aurait été retrouvée facilement si elle l'avait fait.
@@ -666,9 +666,9 @@ C1_Trial1_I_37 = Ha, ha… C'est ça.
 C1_Trial1_I_38 = Donc, comme je le disais avant cette tangente.
 C1_Trial1_I_39 = Ce livre est le seul exemple que je connaisse où mon prénom est orthographié en <color=red>"Ronne"</color>.
 C1_Trial1_I_40 = J’ai mal orthographié mon propre prénom lorsque je l’ai commencé et je ne l'ai jamais corrigé.
-C1_Trial1_I_41 = Ca ne veut rien dire. Le capitaine aurait lui aussi pu voir la couverture de l'herbier.
+C1_Trial1_I_41 = Ça ne veut rien dire. Le capitaine aurait lui aussi pu voir la couverture de l'herbier.
 C1_Trial1_I_42 = J'ai bien peur que ce ne soit pas possible.
-C1_Trial1_I_43 = Je garde mon livre plutôt secret. Personne, à part Gerald, était au courant.
+C1_Trial1_I_43 = Je garde mon livre plutôt secret. Personne, à part Gerald, n'était au courant.
 C1_Trial1_I_44 = C’est un gros tabou chez nous, pas vrai ?
 C1_Trial1_I_45 = Je doute que le capitaine m’aurait engagé s’il avait su que j’en avais un.
 C1_Trial1_I_46 = … Et ton argument est ?
@@ -686,7 +686,7 @@ C1_Trial1_I_57 = Kh…
 C1_Trial1_I_58 = Si je comprends bien…
 C1_Trial1_I_59 = Vous prétendez que le véritable coupable a écrit ce message pour vous incriminer ?
 C1_Trial1_I_60 = Puis-je demander qui est cette personne mystère ?
-C1_Trial1_I_61 = À ce stade du procès, je pense que nous avons recensé tous les individus lié à cette affaire.
+C1_Trial1_I_61 = À ce stade du procès, je pense que nous avons recensé tous les individus liés à cette affaire.
 C1_Trial1_I_62 = <color=#72B6E8>Bon, je peux le faire.</color>
 C1_Trial1_I_63 = Le vrai coupable est…
 
@@ -720,9 +720,9 @@ C1_Trial1_I_Juno_19 = Shérif, elle est à vous. Nous procéderons bientôt à l
 C1_Trial1_I_Juno_20 = Nooon !
 
 
-C1_Trial1_I_64 = <color=#72B6E8>Je peux le faire… je peux le faire !</color>
+C1_Trial1_I_64 = <color=#72B6E8>Je peux le faire… Je peux le faire !</color>
 C1_Trial1_I_65 = Je pense que Gerald est très étrange à cet égard.
-C1_Trial1_I_66 = Comme je l'ai déjà dit. Il n’est pas fiable à cause de sa mémoire défectueuse.
+C1_Trial1_I_66 = Comme je l'ai déjà dit. Il n’est pas fiable, à cause de sa mémoire défectueuse.
 C1_Trial1_I_67 = Tu ne peux pas l'accuser de meurtre pour ça.
 C1_Trial1_I_68 = Je ne parle pas de ses récits fantastiques.
 C1_Trial1_I_69 = Je parle du fait qu'il soit la seule personne pouvant être le coupable.
@@ -735,36 +735,36 @@ C1_Trial1_I_75 = Même si c’est vrai que c’était le mien avant…
 C1_Trial1_I_76 = Mais !
 C1_Trial1_I_77 = Ses empreintes n’étaient pas sur le couteau.
 C1_Trial1_I_78 = N'oubliez pas qu'il porte tout le temps des gants.
-C1_Trial1_I_79 = Il est possible qu’il les portait à ce moment là.
+C1_Trial1_I_79 = Il est possible qu’il les portait à ce moment-là.
 C1_Trial1_I_80 = Hé, hé !
 C1_Trial1_I_81 = Au fait, Gérald. Où est ton manteau ?
-C1_Trial1_I_82 = Je ne peux  pas m’empêcher de remarquer que tu ne l'as pas.
+C1_Trial1_I_82 = Je ne peux pas m’empêcher de remarquer que tu ne l'as pas.
 C1_Trial1_I_83 = Peut-être était-il taché de sang ?
 C1_Trial1_I_84 = N-Non !
 C1_Trial1_I_85 = … Je l'ai perdu.
 C1_Trial1_I_86 = Et puis !
-C1_Trial1_I_87 = Pourquoi tu insinue que je suis le meurtrier ?!
-C1_Trial1_I_88 = Crois-moi, j'aimerai que tu ais raison.
+C1_Trial1_I_87 = Pourquoi tu insinues que je suis le meurtrier ?!
+C1_Trial1_I_88 = Crois-moi, j'aimerais que tu aies raison.
 C1_Trial1_I_89 = Mais soyons réalistes. Peux-tu prouver ton innocence ?
-C1_Trial1_I_90 = Tu es la seul personne qui aurais pu faire ça.
+C1_Trial1_I_90 = Tu es la seule personne qui aurait pu faire ça.
 C1_Trial1_I_91 = C'est absurde !
 C1_Trial1_I_92 = Pourquoi j'aurais tué le capitaine ?!
-C1_Trial1_I_93 = Je suis sympa, moi. Je ne ferait de mal à personne !
+C1_Trial1_I_93 = Je suis sympa, moi. Je ne ferais de mal à personne !
 C1_Trial1_I_94 = Personnellement, j'ai de plus en plus de mal à y croire.
 C1_Trial1_I_95 = Quand il s’agissait simplement de votre témoignage erroné, c'était tolérable.
-C1_Trial1_I_96 = Mais maintenant, il est possible que vous êtes en réalité le meurtrier.
+C1_Trial1_I_96 = Mais maintenant, il est possible que vous soyez en réalité le meurtrier.
 C1_Trial1_I_97 = </color=#72B6E8>Il lui a fallu autant de temps pour s'en rendre compte ?</color>
 C1_Trial1_I_98 = Monsieur Marin.
 C1_Trial1_I_99 = Parlez-nous de votre relation avec le capitaine Sartt.
 C1_Trial1_I_100 = Je veux savoir si vous avez un motif solide pour le tuer.
-C1_Trial1_I_101 = Vous devez comprendre que nous avons raisons à croire que vous avez essayé de tromper ce tribunal.
+C1_Trial1_I_101 = Vous devez comprendre que nous avons raison à croire que vous avez essayé de tromper ce tribunal.
 C1_Trial1_I_102 = <color=#72B6E8>Et il a réussi à le faire…</color>
 C1_Trial1_I_103 = <color=#72B6E8>Je n'arrive pas à y croire ! Il a essayé de me faire porter le chapeau.</color>
 C1_Trial1_I_104 = <color=#72B6E8>C'est... C'est... Grr !</color>
 C1_Trial1_I_105 = Euh…
 C1_Trial1_I_106 = Bon, très bien !
 C1_Trial1_I_107 = …
-C1_Trial1_I_108 = <color=#72B6E8>Ca fait longtemps qu'il ne parle plus.</color>
+C1_Trial1_I_108 = <color=#72B6E8>Ça fait longtemps qu'il ne parle plus.</color>
 C1_Trial1_I_109 = <color=#72B6E8>Je me demande ce qui se passe…</color>
 
 # ---------------------------------------------------------
@@ -772,7 +772,7 @@ C1_Trial1_I_109 = <color=#72B6E8>Je me demande ce qui se passe…</color>
 # ---------------------------------------------------------
 
 C1_Trial_Testimony6_Start_1 = <color=green>Le capitaine et moi</color>
-C1_Trial_Testimony6_Start_2 = Écoutez, le capitaine et moi, on se connait depuis longtemps.
+C1_Trial_Testimony6_Start_2 = Écoutez, le capitaine et moi, on se connaît depuis longtemps.
 C1_Trial_Testimony6_Start_3 = Une fois, il m'a aidé à sortir d'une situation précaire.
 C1_Trial_Testimony6_Start_4 = J'ai décidé de le remercier en rejoignant son équipage.
 C1_Trial_Testimony6_Start_5 = Depuis, il a toujours été mon capitaine.
@@ -787,18 +787,18 @@ C1_Trial_Testimony6_Start_13 = Eh bien, c'est votre tour, Mlle Retyr.
 C1_Trial_Testimony6_Start_14 = <color=#72B6E8>Ce petit-</color>
 C1_Trial_Testimony6_Start_15 = <color=#72B6E8>C'est différent de ce qu'il m'a dit pendant le voyage.</color>
 C1_Trial_Testimony6_Start_16 = <color=#72B6E8>Il avait été forcé de rejoindre l'équipage. Ce n’était pas volontaire.</color>
-C1_Trial_Testimony6_Start_17 = <color=#72B6E8>Bon, au moins je sais qu'il a un mobile.</color>
+C1_Trial_Testimony6_Start_17 = <color=#72B6E8>Bon, au moins, je sais qu'il a un mobile.</color>
 C1_Trial_Testimony6_Start_18 = <color=#72B6E8>Brisons sa défense. C'est la fin.</color>
 
 C1_Trial_Testimony6_Testimony_0 = <color=red>Le capitaine et moi</color>
-C1_Trial_Testimony6_Testimony_1 = <color=green>Écoutez, le capitaine et moi, on se connait depuis longtemps.</color>
+C1_Trial_Testimony6_Testimony_1 = <color=green>Écoutez, le capitaine et moi, on se connaît depuis longtemps.</color>
 C1_Trial_Testimony6_Testimony_2 = <color=green>Une fois, il m'a aidé à sortir d'une situation précaire.</color>
-C1_Trial_Testimony6_Testimony_3 = <color=green>C'était un simple problème monétaire. Ca a été résolu il y a longtemps.</color>
+C1_Trial_Testimony6_Testimony_3 = <color=green>C'était un simple problème monétaire. Ça a été résolu il y a longtemps.</color>
 C1_Trial_Testimony6_Testimony_4 = <color=green>J'ai décidé de le remercier en rejoignant son équipage.</color>
 C1_Trial_Testimony6_Testimony_5 = <color=green>Depuis, il a toujours été mon capitaine.</color>
 
 C1_Trial_Testimony6_Press1_1 = Vous vous connaissez depuis combien de temps ?
-C1_Trial_Testimony6_Press1_2 = Euh… environ, quoi ? Cinq à sept ans ?
+C1_Trial_Testimony6_Press1_2 = Euh… Environ, quoi ? Cinq à sept ans ?
 C1_Trial_Testimony6_Press1_3 = Je t'avais raconté l'histoire. Tu t'en souviens, non ?
 C1_Trial_Testimony6_Press1_4 = <color=#72B6E8>Oui, je m'en souviens. C'est bien le problème.</color>
 C1_Trial_Testimony6_Press1_5 = Qu'est-ce qui s'est passé entre vous deux ?
@@ -806,11 +806,11 @@ C1_Trial_Testimony6_Press1_5 = Qu'est-ce qui s'est passé entre vous deux ?
 C1_Trial_Testimony6_Press2_1 = Une situation précaire ?
 C1_Trial_Testimony6_Press2_2 = Oh, tu sais. Je t'en avais parlé.
 C1_Trial_Testimony6_Press2_3 = Pas à moi.
-C1_Trial_Testimony6_Press2_4 = Il semblerait que j'ai oublié, oups.
+C1_Trial_Testimony6_Press2_4 = Il semblerait que j'aie oublié, oups.
 C1_Trial_Testimony6_Press2_5 = Euh…
 C1_Trial_Testimony6_Press2_6 = Très bien, très bien.
 C1_Trial_Testimony6_Press2_7 = J'avais des problèmes d'argent et il m'a aidé.
-C1_Trial_Testimony6_Press2_8 = Il n'y avait aucune conditions. Le vieux loup m'a juste donné de l'argent.
+C1_Trial_Testimony6_Press2_8 = Il n'y avait aucune condition. Le vieux loup m'a juste donné de l'argent.
 C1_Trial_Testimony6_Press2_9 = Je ne sais pas pourquoi. Parfois, il est juste… étrangement généreux.
 C1_Trial_Testimony6_Press2_10 = Je suppose que c’est ce qui arrive quand on devient un riche capitaine.
 C1_Trial_Testimony6_Press2_11 = Veuillez ajouter ceci à votre témoignage.
@@ -829,11 +829,11 @@ C1_Trial_Testimony6_Press4_1 = C'était le seul moyen de le rembourser ?
 C1_Trial_Testimony6_Press4_2 = Bien sûr que non.
 C1_Trial_Testimony6_Press4_3 = J'aurais pu le rembourser avec des marchandises, par exemple.
 C1_Trial_Testimony6_Press4_4 = Mais j’étais sans emploi à ce moment-là, alors je me suis dit : "Pourquoi pas ?"".
-C1_Trial_Testimony6_Press4_5 = Moi aussi, je fais parfois des petits boulots pour des amis sans qu'on me le demande.
+C1_Trial_Testimony6_Press4_5 = Moi aussi, je fais parfois des petits boulots pour des amis sans qu'on ne me le demande.
 C1_Trial_Testimony6_Press4_6 = La semaine dernière, je suis allé cueillir des pommes pour mon neveu.
 C1_Trial_Testimony6_Press4_7 = Il était surpris lorsque je suis arrivé avec mon panier rempli de délicieuses pommes.
 C1_Trial_Testimony6_Press4_8 = J'en suis sûr.
-C1_Trial_Testimony6_Press4_9 = Mais continue, s'il te plait.
+C1_Trial_Testimony6_Press4_9 = Mais continue, s'il te plaît.
 
 C1_Trial_Testimony6_Press5_1 = As-tu déjà pensé à quitter ton emploi ?
 C1_Trial_Testimony6_Press5_2 = … Non.
@@ -842,7 +842,7 @@ C1_Trial_Testimony6_Press5_4 = Le salaire était également assez généreux, do
 C1_Trial_Testimony6_Press5_5 = Pourquoi s'arrêter ?
 C1_Trial_Testimony6_Press5_6 = <color=#72B6E8>Je pourrais utiliser beaucoup de mots pour décrire la vie sur le navire, mais belle n'en fait pas partie.</color>
 
-C1_Trial_Testimony6_Loop_1 = <color=#72B6E8>e sais qu'il doit avoir un motif pour tuer le capitaine.</color>
+C1_Trial_Testimony6_Loop_1 = <color=#72B6E8>Je sais qu'il doit avoir un motif pour tuer le capitaine.</color>
 C1_Trial_Testimony6_Loop_2 = <color=#72B6E8>Il ment sur sa vie à Voitin, avant de rejoindre l'équipage.</color>
 C1_Trial_Testimony6_Loop_3 = <color=#72B6E8>Je devrais insister davantage là-dessus.</color>
 
@@ -855,18 +855,18 @@ C1_Trial1_J_6 = Ah, oui. Les papiers de dette ?
 C1_Trial1_J_7 = Nous ne savions pas qui devait de l’argent au capitaine.
 C1_Trial1_J_8 = Mais en réalité, c’est assez simple.
 C1_Trial1_J_9 = Votre Honneur pourra peut-être même découvrir qui est référencé.
-C1_Trial1_J_10 = Vraiment? Voyons…
-C1_Trial1_J_11 = … G.M.
+C1_Trial1_J_10 = Vraiment ? Voyons voir…
+C1_Trial1_J_11 = … G. M.
 C1_Trial1_J_12 = …
 C1_Trial1_J_13 = G-Gerald Marin ?!
 C1_Trial1_J_14 = Oui. Il devait beaucoup d'argent au capitaine.
-C1_Trial1_J_15 = Il s’avère que l’argent que le capitaine lui a donné il y a sept ans était après tout sous conditions.
+C1_Trial1_J_15 = Il s’avère que l’argent que le capitaine lui a donné il y a sept ans était, après tout, sous conditions.
 C1_Trial1_J_16 = Hmm… Le capitaine lui a probablement dit de travailler pour lui pendant X années, sinon…
 C1_Trial1_J_17 = Oui. Son travail n’était pas très agréable sur le navire.
 C1_Trial1_J_18 = Le capitaine pensait probablement qu'en l'engageant ainsi, il resterait très longtemps.
 C1_Trial1_J_19 = Il n’aurait pas non plus besoin de beaucoup le payer, puisqu’il lui devait une grosse somme d’argent.
 C1_Trial1_J_20 = Bref, Gérald était un esclave économique.
-C1_Trial1_J_21 = …Tais-toi… tais-toi…
+C1_Trial1_J_21 = … Tais-toi… Tais-toi…
 C1_Trial1_J_22 = Dans ton esprit, tuer le capitaine signifierait la fin de ta dette.
 C1_Trial1_J_23 = Cela signifierait… la liberté.
 C1_Trial1_J_24 = Euh…
@@ -879,7 +879,7 @@ C1_Trial1_J_30 = Grr…
 C1_Trial1_J_31 = "Travaille pour moi", dit-il.
 C1_Trial1_J_32 = "Fais quelques années, tout ira bien."
 C1_Trial1_J_33 = Tout ce que je voulais, c'était nourrir mes frères et sœurs.
-C1_Trial1_J_34 = Je n'avais pas le choix. J'était obligé d'accepter.
+C1_Trial1_J_34 = Je n'avais pas le choix. J'étais obligé d'accepter.
 C1_Trial1_J_35 = Mais tout cela n’était qu’un mensonge.
 C1_Trial1_J_36 = Il m'a confié les pires tâches et ne me payait quasiment pas.
 C1_Trial1_J_37 = Selon lui, je lui devais au moins 30 ans de travail.
@@ -887,7 +887,7 @@ C1_Trial1_J_38 = Donc tu as décidé de le tuer après l'accident ?
 C1_Trial1_J_39 = Après l'accident, je suis allé au pont.
 C1_Trial1_J_40 = Il était encore en vie et je l'ai aidé à sortir du navire.
 C1_Trial1_J_41 = L'explosion est arrivée juste après notre sortie.
-C1_Trial1_J_42 = A ce moment là, il a commençé à me crier dessus.
+C1_Trial1_J_42 = À ce moment-là, il a commencé à me crier dessus.
 C1_Trial1_J_43 = Il m'a dit que je lui devais 50 ans maintenant. Que c'était entièrement de ma faute.
 C1_Trial1_J_44 = Je ne pouvais pas supporter cette pensée et je l’ai poignardé sans réfléchir.
 C1_Trial1_J_45 = C'est à ce moment-là que Juno t'a vu.
@@ -909,11 +909,11 @@ Choice_SomethingIsAmiss = Quelque chose ne va pas
 C1_Trial1_J_FullStory_1 = Quelque chose me chiffonne encore.
 C1_Trial1_J_FullStory_2 = Dis-tu vraiment toute la vérité ?
 C1_Trial1_J_FullStory_3 = …
-C1_Trial1_J_FullStory_4 = mlle Retyr, y a-t-il vraiment quelque chose qui ne va pas dans ses aveux ?
+C1_Trial1_J_FullStory_4 = Mlle Retyr, y a-t-il vraiment quelque chose qui ne va pas dans ses aveux ?
 C1_Trial1_J_FullStory_5 = Compte tenu des circonstances, sa peine sera la même de toute façon.
 C1_Trial1_J_FullStory_6 = Un meurtre reste un meurtre.
 C1_Trial1_J_FullStory_7 = <color=#72B6E8>Hmm… J'ai l'impression qu'il cache quelque chose.</color>
-C1_Trial1_J_FullStory_8 = <color=#72B6E8>Quelque chose qui n'a encore été expliqué.</color>
+C1_Trial1_J_FullStory_8 = <color=#72B6E8>Quelque chose qui n'a pas encore été expliqué.</color>
 
 C1_Trial1_J_FullStory_9 = J'ai du mal à croire que tu n'as jamais nettoyé le couteau.
 C1_Trial1_J_FullStory_10 = C'est comme si…
@@ -922,15 +922,15 @@ C1_Trial1_J_FullStory_12 = Oui, c'est le cas.
 C1_Trial1_J_FullStory_13 = Je voulais sa mort depuis des années.
 C1_Trial1_J_FullStory_14 = Quand tu m'as donné le couteau, j'ai eu une révélation.
 C1_Trial1_J_FullStory_15 = Je savais que je pouvais le tuer et t'accuser.
-C1_Trial1_J_FullStory_16 = J'avais juste à écrire un faux message et le tuer avec ton couteau.
+C1_Trial1_J_FullStory_16 = J'avais juste à écrire un faux message et à le tuer avec ton couteau.
 C1_Trial1_J_FullStory_17 = Et pour rajouter une couche, je savais que je pouvais utiliser ton herbier contre toi.
 C1_Trial1_J_FullStory_18 = Mais… je ne pensais pas que mon plan m’incriminerait en final.
-C1_Trial1_J_FullStory_19 = Tu… je n'arrive pas ç y croire.
+C1_Trial1_J_FullStory_19 = Tu… Je n'arrive pas à y croire.
 C1_Trial1_J_FullStory_20 = Crois ce que vous veux pour survivre. C’est ce qui compte.
 
 C1_Trial1_J_FullStory_Fail_1 = … Hé.
 C1_Trial1_J_FullStory_Fail_2 = Au fond, tu n'es qu'une vendeuse de fleurs, pas vrai ?
-C1_Trial1_J_FullStory_Fail_3 = Les tribunaux ne sont pas pour toi, Rann. On ne peux pas gagner à tout.
+C1_Trial1_J_FullStory_Fail_3 = Les tribunaux ne sont pas pour toi, Rann. On ne peut pas gagner tout le temps.
 C1_Trial1_J_FullStory_Fail_4 = <color=#72B6E8>Je suppose que ce n'était pas ça.</color>
 
 C1_Trial1_J_58 = Très bien.
@@ -946,25 +946,25 @@ C1_Trial1_J_67 = <color=#72B6E8>Mais…</color>
 C1_Trial1_J_68 = <color=#72B6E8>Cette victoire me semble bien creuse…</color>
 C1_Trial1_J_69 = <color=#72B6E8>Aussi…</color>
 C1_Trial1_J_70 = Shérif.
-C1_Trial1_J_71 = Quoi?
+C1_Trial1_J_71 = Quoi ?
 C1_Trial1_J_72 = Pourquoi cacher le couteau ?
 C1_Trial1_J_73 = Il était évident avec mes empreintes que j'étais innocente.
 C1_Trial1_J_74 = C'est vrai.
-C1_Trial1_J_75 = Je trouve cela étrange que vous avez essayié de le cacher.
+C1_Trial1_J_75 = Je trouve ça étrange que vous avez essayé de le cacher.
 C1_Trial1_J_76 = Comme ton "ami" l'a dit, j'ai fait ce que j'avais à faire.
 C1_Trial1_J_77 = Quoi ?!
 C1_Trial1_J_78 = Mais alors… Vous saviez que j'étais innocente depuis le début !
 C1_Trial1_J_79 = Shérif… Vous plaisantez, sûrement ?
 C1_Trial1_J_80 = Les temps radicaux appellent des actions radicales.
 C1_Trial1_J_81 = J'avais mes objectifs, et tu es une sorcière, une hérétique.
-C1_Trial1_J_82 = Shérif! C'es-
+C1_Trial1_J_82 = Shérif ! C'es-
 C1_Trial1_J_83 = Quoi ? Qu'allez-vous faire ?
 C1_Trial1_J_84 = Une fois dehors, vous n'aurez aucun moyen de m'atteindre.
 C1_Trial1_J_85 = N'oubliez pas que je suis le shérif en ville.
 C1_Trial1_J_86 = Votre Honneur.
 C1_Trial1_J_87 = …
 C1_Trial1_J_88 = <color=#72B6E8>Pourquoi le juge n'a-t-il rien dit ?</color>
-C1_Trial1_J_89 = <color=#72B6E8>Il a essentiellement admis avoir menti pendant tous ce temps !</color>
+C1_Trial1_J_89 = <color=#72B6E8>Il a essentiellement admis avoir menti pendant tout ce temps !</color>
 C1_Trial1_J_90 = Eh bien, je suppose que cela signifie que c'est la fin de cette audience.
 C1_Trial1_J_91 = Je vais prendre congé. Bonne journée, Mlle Retyr.
 C1_Trial1_J_92 = … Un conseil, éloignez-vous de la police pendant quelques jours.
@@ -978,19 +978,19 @@ C1_Trial1_J_98 = Je, euh… Oui. Je vais y réfléchir.
 C1_Trial1_J_99 = <color=#72B6E8>Me voici, libre.</color>
 C1_Trial1_J_100 = <color=#72B6E8>Pourtant, je me sens un peu vide…</color>
 C1_Trial1_J_101 = <color=#72B6E8>Être trahi par un ami ne fait pas du bien.</color>
-C1_Trial1_J_102 = Rann! Félicitations!
+C1_Trial1_J_102 = Rann ! Félicitations !
 C1_Trial1_J_103 = Ah, merci.
 C1_Trial1_J_104 = Je peux marcher librement maintenant, mais…
 C1_Trial1_J_105 = Tu as nulle part où aller, pas vrai ?
 C1_Trial1_J_106 = Oui. Je suis dans un nouveau monde étrange, et mon billet de retour vers Vasia a disparu…
-C1_Trial1_J_107 = Qui sait quand et si je pourrai un jour retourner chez moi.
+C1_Trial1_J_107 = Qui sait quand, et si je pourrai un jour retourner chez moi.
 C1_Trial1_J_108 = Il semblerait donc que je vais devoir vivre ici pendant un moment.
 C1_Trial1_J_109 = Oui, alors… en fait…
 C1_Trial1_J_110 = Veux-tu vivre avec moi ?
 C1_Trial1_J_111 = Je n’ai pas grand-chose et je dois faire des petits boulots pour survivre…
 C1_Trial1_J_112 = Mais je peux toujours t'accueillir.
 C1_Trial1_J_113 = Je te dois au moins ça pour tout ce que j'ai fait aujourd'hui.
-C1_Trial1_J_114 = Ha ha… pour être franche…
+C1_Trial1_J_114 = Ha ha… Pour être franche…
 C1_Trial1_J_115 = Pourquoi pas ? Ça a l'air sympa.
 C1_Trial1_J_116 = Et puisque je vivrai avec toi, je t’aiderai dans ton travail.
 C1_Trial1_J_117 = Vraiment ? Je suis honoré.
@@ -1000,6 +1000,6 @@ C1_Trial1_J_120 = <color=#72B6E8>Et c'est ainsi que s'est terminée ma première
 C1_Trial1_J_121 = <color=#72B6E8>Je ne suis pas sûr de ce qui va se passer par la suite, mais…</color>
 C1_Trial1_J_122 = <color=#72B6E8>Je suppose que je vais attendre de voir ce que l'avenir me réserve.</color>
 C1_Trial1_J_123 = <color=#72B6E8>Mais, je ne suis pas rassurée de voir ce que le shérif peut faire en toute impunité…</color>
-C1_Trial1_J_124 = <color=#72B6E8>Retenir des preuves est une chose, mais essayer activement de faire déclarer coupable un innocent c'est…</color>
+C1_Trial1_J_124 = <color=#72B6E8>Retenir des preuves est une chose, mais essayer activement de faire déclarer coupable un innocent, c'est…</color>
 C1_Trial1_J_125 = <color=#72B6E8>Eh bien. J'ai tout le temps du monde pour y penser.</color>
-C1_Trial1_J_126 = <color=#72B6E8>En attendant, j'ai des tortues à compter …</color>
+C1_Trial1_J_126 = <color=#72B6E8>En attendant, j'ai des tortues à compter…</color>

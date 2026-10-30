@@ -9,16 +9,16 @@ PauseMenu_Load = Charger
 PauseMenu_Quests = Quêtes
 PauseMenu_Logs = Journal
 PauseMenu_Options = Options
-PauseMenu_MainMenu = Ecran Titre
-PauseMenu_NewGame = Nouvelle Partie
+PauseMenu_MainMenu = Écran-titre
+PauseMenu_NewGame = Nouvelle partie
 PauseMenu_Quit = Quitter
 PauseMenu_Credits = Crédits
 
-SaveMenu_Title_Save = Sélectionnez un slot ou sauvegarder
-SaveMenu_Title_Load = Sélectionnez un slot à charger
+SaveMenu_Title_Save = Sélectionnez un emplacement de sauvegarde
+SaveMenu_Title_Load = Sélectionnez un emplacement  à charger
 SaveMenu_CorruptedSave = Sauvegarde corrompue
 
-SaveMenu_Popup_Title = Utiliser ce slot ?
+SaveMenu_Popup_Title = Utiliser cet emplacement ?
 SaveMenu_Popup_Confirm = Confirmer
 SaveMenu_Popup_Cancel = Annuler
 
@@ -31,7 +31,7 @@ LogsMenu_Popup = Nouvelle entrée
 HistoryMenu_Title = Historique
 
 InputReminder_Autoplay = Mode auto
-InputReminder_SkipMode = Avance Rapide
+InputReminder_SkipMode = Avance rapide
 InputReminder_PauseMenu = Pause
 
 SettingsMenu_Title = Options
@@ -41,11 +41,11 @@ SettingsMenu_Common_Combo_Low = Bas
 SettingsMenu_Common_Combo_Medium = Moyen
 SettingsMenu_Common_Combo_High = Haut
 
-SettingsMenu_Graphics = Ecran
+SettingsMenu_Graphics = Écran
 SettingsMenu_Graphics_Fullscreen = Plein écran
 SettingsMenu_Graphics_Resolution = Résolution
 SettingsMenu_Graphics_VSync = VSync
-SettingsMenu_Graphics_AntiAliasing = AntiAliasing
+SettingsMenu_Graphics_AntiAliasing = Anti-aliasing
 SettingsMenu_Graphics_Shadows = Qualité des ombres
 
 SettingsMenu_Sound = Son
@@ -77,35 +77,35 @@ SettingsMenu_Text_Sizes_5 = 26
 
 SettingsMenu_Keyboard = Contrôles clavier
 SettingsMenu_Gamepad = Contrôles manette
-SettingsMenu_Rebinding = Entrez touche pour : {0}
+SettingsMenu_Rebinding = Entrez une touche pour : {0}
 
-SettingsMenu_Inputs_Autoplay = Mode Automatique
-SettingsMenu_Inputs_SkipMode = Avance Rapide
+SettingsMenu_Inputs_Autoplay = Mode automatique
+SettingsMenu_Inputs_SkipMode = Avance rapide
 SettingsMenu_Inputs_PauseMenu = Pause
 
 SettingsMenu_Game = Jeu
 
-SettingsMenu_Game_InteractionMode_HighlightType = Surbrillance intéraction
+SettingsMenu_Game_InteractionMode_HighlightType = Surbrillance (interaction)
 SettingsMenu_Game_InteractionMode_HighlightType_None = Aucune
 SettingsMenu_Game_InteractionMode_HighlightType_Selected = Sélectionné uniquement
 SettingsMenu_Game_InteractionMode_HighlightType_All = Tout
-SettingsMenu_Game_InteractionMode_HighlightStrength = Force surbrillance intéraction
-SettingsMenu_Game_InteractionMode_HighlightColor = Couleur surbrillance base
-SettingsMenu_Game_InteractionMode_SelectionColor = Couleur surbrillance sélectionné
+SettingsMenu_Game_InteractionMode_HighlightStrength = Force surbrillance
+SettingsMenu_Game_InteractionMode_HighlightColor = Couleur surbrillance (base)
+SettingsMenu_Game_InteractionMode_SelectionColor = Couleur surbrillance (sélectionné)
 
 SettingsMenu_Game_BackgroundManager_Weather = Effets météo
 SettingsMenu_Game_BackgroundManager_Foliage = Végétation
 SettingsMenu_Game_BackgroundManager_TerrainQuality = Qualité du terrain
 
-SettingsMenu_Game_DialogUI_BackgroundOpacity = Opacité boite dialogue
+SettingsMenu_Game_DialogUI_BackgroundOpacity = Opacité boite de dialogue
 SettingsMenu_Game_DialogUI_SpeedModifier = Vitesse dialogue
 
 SettingsMenu_Game_ANSLManager_AutoplayTimer = Pause (mode automatique)
 
 SettingsMenu_Game_FlowStateHandler_ToggleAutoplay = Toggle (Mode automatique)
-SettingsMenu_Game_FlowStateHandler_ToggleSkipMode = Toggle (Avance Rapide)
+SettingsMenu_Game_FlowStateHandler_ToggleSkipMode = Toggle (Avance rapide)
 
-SettingsMenu_Game_GeneralMenu_CursorCooldown = Vitesse Curseur
+SettingsMenu_Game_GeneralMenu_CursorCooldown = Vitesse curseur
 
 SettingsMenu_ColorPicker_H = H
 SettingsMenu_ColorPicker_S = S
@@ -130,22 +130,22 @@ GeneralMenu_Back = Retour
 
 CaseSelectionMenu_Title = Sélection du chapitre
 CaseSelectionMenu_Select = Choisir
-CaseSelectionMenu_Confirm = Commençer ce chapitre ?
+CaseSelectionMenu_Confirm = Commencer ce chapitre ?
 CaseSelectionMenu_Yes = Oui
 CaseSelectionMenu_No = Non
 CaseSelectionMenu_Cancel = Annuler
 
 InputReminder_Inventory = Inventaire
 InputReminder_Back = Retour
-InputReminder_Profiles = Profiles
+InputReminder_Profiles = Profils
 InputReminder_Evidence = Preuves
 InputReminder_Check = Examiner
 InputReminder_Present = Présenter
 InputReminder_Press = Presser
 
 SettingsMenu_Inputs_Inventory = Inventaire
-SettingsMenu_Inputs_SwitchLeft = Basculer Gauche(Menu)
-SettingsMenu_Inputs_SwitchRight = Basculer Droite(Menu)
-SettingsMenu_Inputs_InventoryPresent = Présenter Preuve/Presser
+SettingsMenu_Inputs_SwitchLeft = Basculer gauche (Menu)
+SettingsMenu_Inputs_SwitchRight = Basculer droite (Menu)
+SettingsMenu_Inputs_InventoryPresent = Présenter preuve/presser
 
 CreditsMenu_NAJCredits = <b>Programmation</b><br>  Julien Oudot<br><br><b>Narration</b><br>  Julien Oudot<br><br><b>Visuels</b><br>  Julien Oudot<br><br><b>Son</b><br>  Julien Oudot<br>  Marvin le tiègr<br><br><b>Remerciements</b><br>  Felihi<br>  Madlaine<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter
