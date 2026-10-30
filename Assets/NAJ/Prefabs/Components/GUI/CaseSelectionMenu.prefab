@@ -2308,7 +2308,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 4866723388494020783}
           m_TargetAssemblyTypeName: NAJ.GUI.CaseSelectionMenu, Assembly-CSharp
-          m_MethodName: CloseEntryPointPopup
+          m_MethodName: EventCloseEntryPointPopup
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

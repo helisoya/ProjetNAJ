@@ -176,11 +176,23 @@ namespace NAJ.GUI
                     }
                     else
                     {
+                        if (audioManager != null)
+                            audioManager.PlayUICursorCancelSFX();
                         CloseEntryPointPopup();
                     }
                 }
 
             }
+        }
+
+        /// <summary>
+		/// Mouse Event for closing the entry point popup
+		/// </summary>
+        public void EventCloseEntryPointPopup()
+        {
+            if (audioManager != null)
+                audioManager.PlayUICursorCancelSFX();
+            CloseEntryPointPopup();
         }
 
         private void OnPauseInput(InputAction.CallbackContext context)
@@ -322,6 +334,9 @@ namespace NAJ.GUI
 		/// <param name="caseInfo">The case's infos</param>
         public void OpenEntryPointPopup(ref CaseInfo caseInfo)
         {
+            if (audioManager != null)
+                audioManager.PlayUICursorConfirmSFX();
+
             caseSelectionRoot.DOFade(0, 0.5f).SetEase(Ease.OutQuad);
             caseSelectionRoot.blocksRaycasts = false;
 
@@ -375,6 +390,9 @@ namespace NAJ.GUI
         /// </summary>
         public void OpenConfirmPopup(ref CaseEntryPoint entryPoint)
         {
+            if (audioManager != null)
+                audioManager.PlayUICursorConfirmSFX();
+
             if ((!entrypointSelectionByDefault && currentCaseIdx == maxCaseIdx) ||
                 casesInfo[currentCaseIdx].entrypoints.Length == 0)
             {

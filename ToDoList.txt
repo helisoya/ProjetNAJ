@@ -70,22 +70,22 @@ To Release
 - Revoir décors                                                                       -
 	- Courthouse (fenetre)                                                            V
 	- Intro (bateau, rue principale de Kalia)
-	- Buissons?
+	- Buissons?                                                                       Rend Pas bien
 - Revoir menus                                                                        -
 	- Menu quêtes / logs ? (Les virer / Au moins les expliquer)                       Retiré
 	- Switch Souris / Clavier marche pas bien des fois (Settings)                     Fixé?
 - Inté son                                                                            -
-	- SFX                                                                             OK?
-	- Ambient                                                                         OK?
+	- SFX                                                                             Marvin
+	- Ambient                                                                         Marvin
 	- BGM
-	- Son menus                                                                       OK mais faire attention aux playoneshots trop nombreux
+	- Son menus                                                                       Marvin et faire attention aux playoneshots trop nombreux
 	- Mixage
 - Inté steam                                                                          -
 	- Steam Cloud                                                                     Ok?
 	- Succès                                                                          Ajouter plus ? (sinon OK)
 
 Review
-	- Rework Splash Screen (Ne pas oublier Unity d'ailleur)                           Ok?
+	- Rework Splash Screen (Ne pas oublier Unity d'ailleur)                           V
 	- Mode Interaction Icones Exit bas trop haut                                      V
 	- Bug Inventaire marqueur ? (a reproduire)                                        V
 	- Opti taille bundles                                                             A revérifier en test
@@ -99,7 +99,7 @@ Review
 	- Vitesse dialogue dans les options                                               V
 	- Clignement d'yeux trop rapide                                                   V
 	- Mouvements d'eau avec le bato                                                   V
-	- Loop eau foireuse
+	- Loop eau foireuse                                                               Marvin
 	- Secret Cave pas trouvé                                                          V
 	- Remplacer eau menu principal / cliff / waterfall (elle bouge, oupsi)            v
 	- Valeur par defaut settings a l'air cassé (vitesse dialog)                       V
@@ -173,14 +173,7 @@ Les plugins (Eau, Dotween, ...)
 
 Road Map
 
-09/09 : Dev Log 1 (Raisons du projet)
-16/09 : Dev Log 2 (Lore général, grand max jusqu'au début du jeu)
-23/09 : Dev Log 3 (Gameplay Chapitre 1)
-30/09 : Dev Log 4 (ANSL)
-07/10 : Dev Log 5 (Graphismes Voxel)
-14/10 : Dev Log 6 (Environements)
-28/10 : Dev Log 7 (??? / Harold / Plus de Lore / Access)
-04/10 : Release ?
+13/11 : Release
 
 
 
