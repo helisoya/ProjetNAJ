@@ -44,6 +44,7 @@ namespace ANF.Scene
 
         [Header("GUI Icon")]
         [SerializeField] private RawImage prefabIcon;
+        [SerializeField] private Texture2D defaultIcon;
         private RawImage currentIcon;
 
         private AudioManager audioManager;
@@ -72,6 +73,7 @@ namespace ANF.Scene
 
 #endif
 
+        private readonly Vector2 HiddenIconPosition = new Vector2(-50, -50);
 
         public override WorldComponent CloneComponent()
         {
@@ -84,7 +86,8 @@ namespace ANF.Scene
                 selectedColor = selectedColor,
                 interactablesMask = interactablesMask,
                 guiComponentsToDisable = guiComponentsToDisable,
-                prefabIcon = prefabIcon
+                prefabIcon = prefabIcon,
+                defaultIcon = defaultIcon
             };
         }
 
@@ -148,27 +151,52 @@ namespace ANF.Scene
         }
 
         /// <summary>
-        /// Updates the interactable icon for a specific object
-        /// </summary>
-        /// <param name="obj">The object</param>
-        private void UpdateIconFor(InteractableObject obj)
+		/// Updates the icon's position
+		/// </summary>
+		/// <param name="currentObject">The current object</param>
+        private void UpdateIconPosition(InteractableObject currentObject)
         {
             if (currentIcon)
             {
-                currentIcon.texture = obj.GetIcon();
+                Vector2 screenPoint = HiddenIconPosition;
 
-                if (RectTransformUtility.ScreenPointToLocalPointInRectangle(manager.GetGUIManager().GetRoot(),
-                    Camera.main.WorldToScreenPoint(obj.GetApproximateVisualPosition()),
-                    null, out Vector2 canvasPos))
+                if (currentObject && keyboardMode)
                 {
-                    currentIcon.GetComponent<RectTransform>().anchoredPosition = canvasPos;
+                    // To Object Position
+                    if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(manager.GetGUIManager().GetRoot(),
+                        Camera.main.WorldToScreenPoint(currentObject.GetApproximateVisualPosition()),
+                        null, out screenPoint))
+                    {
+                        screenPoint = HiddenIconPosition;
+                    }
                 }
-                else
+                else if (!keyboardMode)
                 {
-                    currentIcon.GetComponent<RectTransform>().anchoredPosition = new Vector2(-50, -50);
+                    // To Mouse Position
+                    if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(manager.GetGUIManager().GetRoot(),
+                        mousePosition,
+                        null, out screenPoint))
+                    {
+                        screenPoint = HiddenIconPosition;
+                    }
                 }
+
+                currentIcon.GetComponent<RectTransform>().anchoredPosition = screenPoint;
             }
         }
+
+        /// <summary>
+		/// Updates the icon's texture
+		/// </summary>
+		/// <param name="currentObject">The current object</param>
+        private void UpdateIconTexture(InteractableObject currentObject)
+        {
+            if (currentIcon)
+            {
+                currentIcon.texture = currentObject ? currentObject.GetIcon() : defaultIcon;
+            }
+        }
+
 
         /// <summary>
 		/// Generates a sorted list of non hidden interactable objects
@@ -210,6 +238,12 @@ namespace ANF.Scene
 
                 inInteractionMode = true;
                 currentIndex = 0;
+                int cursorObject = FindCursorObject();
+
+                if (!keyboardMode && cursorObject != -1)
+                {
+                    currentIndex = cursorObject;
+                }
 
                 foreach (InteractableObject obj in currentInteractionObjects)
                 {
@@ -229,9 +263,21 @@ namespace ANF.Scene
                 }
 
                 Physics.SyncTransforms(); // To force colliders to world (could be temp set to local instead)
-                UpdateIconFor(currentInteractionObjects[currentIndex]);
+                if (keyboardMode)
+                {
+                    UpdateIconPosition(currentInteractionObjects[currentIndex]);
+                    UpdateIconTexture(currentInteractionObjects[currentIndex]);
+                }
+                else
+                {
+                    UpdateIconPosition(null);
+                    UpdateIconTexture(cursorObject != -1 ? currentInteractionObjects[currentIndex] : null);
+                }
                 if (currentIcon != null)
-                    currentIcon.gameObject.SetActive(keyboardMode);
+                    currentIcon.gameObject.SetActive(true);
+
+                Cursor.visible = false;
+
                 OnRegisterInputs();
             }
             else
@@ -254,7 +300,7 @@ namespace ANF.Scene
             if (audioManager != null)
                 audioManager.PlayUICursorConfirmSFX();
 
-            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            Cursor.visible = true;
 
             inInteractionMode = false;
             selectedScript = currentInteractionObjects[index].GetNextScript();
@@ -302,7 +348,13 @@ namespace ANF.Scene
                     if (highlightType != HighlightType.None)
                         currentInteractionObjects[currentIndex].SetHighlightColor(selectedColor);
 
-                    UpdateIconFor(currentInteractionObjects[currentIndex]);
+                    UpdateIconTexture(currentInteractionObjects[currentIndex]);
+                    if (keyboardMode)
+                        UpdateIconPosition(currentInteractionObjects[currentIndex]);
+                }
+                else
+                {
+                    UpdateIconTexture(null);
                 }
             }
         }
@@ -396,6 +448,35 @@ namespace ANF.Scene
             cursorMoveCooldown = (float)value;
         }
 
+        /// <summary>
+		/// Finds the current object under the cursor
+		/// </summary>
+		/// <returns>The current object's id</returns>
+        private int FindCursorObject()
+        {
+            RaycastHit hit;
+            InteractableObject current = null;
+
+            if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(Camera.main.ScreenPointToRay(mousePosition), out hit, 500, interactablesMask))
+            {
+                current = hit.transform.GetComponent<InteractableObject>();
+                if (!currentInteractionObjects.Contains(current))
+                    current = null;
+            }
+
+            if (current != null)
+            {
+                for (int i = 0; i < currentInteractionObjects.Count; i++)
+                {
+                    if (currentInteractionObjects[i] == current)
+                    {
+                        return i;
+                    }
+                }
+            }
+            return -1;
+        }
+
         public override void OnUpdate()
         {
 #if UNITY_EDITOR
@@ -442,38 +523,15 @@ namespace ANF.Scene
 
                 if (!keyboardMode)
                 {
-                    if (currentIcon)
-                        currentIcon.gameObject.SetActive(false);
+                    UpdateIconPosition(null);
 
-                    RaycastHit hit;
-                    InteractableObject current = null;
+                    int id = FindCursorObject();
+                    SelectObject(id);
 
-                    if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(Camera.main.ScreenPointToRay(mousePosition), out hit, 500, interactablesMask))
+                    if (id != -1)
                     {
-                        current = hit.transform.GetComponent<InteractableObject>();
-                        if (!currentInteractionObjects.Contains(current))
-                            current = null;
-                    }
-
-                    Cursor.SetCursor(current == null ? null : current.GetIcon(), Vector2.zero, CursorMode.Auto);
-
-                    if (current != null)
-                    {
-                        for (int i = 0; i < currentInteractionObjects.Count; i++)
-                        {
-                            if (currentInteractionObjects[i] == current)
-                            {
-                                SelectObject(i);
-
-                                if (canTryMouseClick)
-                                    ConfirmObject(i);
-                                break;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        SelectObject(-1);
+                        if (canTryMouseClick)
+                            ConfirmObject(id);
                     }
                 }
                 canTryMouseClick = false;
@@ -493,13 +551,15 @@ namespace ANF.Scene
             if (currentIcon && inInteractionMode)
                 currentIcon.gameObject.SetActive(false);
             if (inInteractionMode)
-                Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+                Cursor.visible = true;
         }
 
         public override void OnUnPaused()
         {
             if (currentIcon && inInteractionMode)
                 currentIcon.gameObject.SetActive(true);
+            if (inInteractionMode)
+                Cursor.visible = false;
         }
 
         private void OnNext(InputAction.CallbackContext context)
@@ -514,11 +574,6 @@ namespace ANF.Scene
         {
             keyboardMode = false;
             mousePosition = context.ReadValue<Vector2>();
-
-            if (isEnabled && !isPaused && inInteractionMode && currentIcon)
-            {
-                currentIcon.gameObject.SetActive(false);
-            }
         }
 
         private void OnMouseClick(InputAction.CallbackContext context)
@@ -540,9 +595,6 @@ namespace ANF.Scene
                 if (Mathf.Abs(value.x) >= 0.9f)
                 {
                     keyboardMode = true;
-                    if (currentIcon)
-                        currentIcon.gameObject.SetActive(true);
-                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
 
                     noMovement = false;
                     if (currentButtonInputSide == 0)
@@ -593,7 +645,11 @@ namespace ANF.Scene
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
 
             if (currentIcon && inInteractionMode)
+            {
                 currentIcon.gameObject.SetActive(false);
+                currentIcon.texture = null;
+            }
+
             OnUnRegisterInputs();
 
             if (PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))

@@ -284,7 +284,7 @@ C1_Investigation_Start_3 = Aïe, aïe, aïe…
 C1_Investigation_Start_4 = <color=#72B6E8>Je me relève péniblement. J’ai dû me casser quelque chose.</color>
 C1_Investigation_Start_5 = <color=#72B6E8>… Où… Où suis-je ?</color>
 C1_Investigation_Start_6 = <color=#72B6E8>Je me souviens que le navire a heurté la terre ferme, mais c’est à peu près tout.</color>
-C1_Investigation_Start_7 = <color=#72B6E8>J’imagine que j’ai été éjectée du vaisseau lors du crash.</color>
+C1_Investigation_Start_7 = <color=#72B6E8>J’imagine que j’ai été éjectée du navire lors du naufrage.</color>
 C1_Investigation_Start_8 = Aïe…
 C1_Investigation_Start_9 = <color=#72B6E8>Je regarde ma jambe gauche. Elle a l'air cassée.</color>
 C1_Investigation_Start_10 = <color=#72B6E8>Heureusement, elle ne saigne pas. Mais je ne suis pas en état d'aller courir.</color>
@@ -358,7 +358,7 @@ C1_SecretCave_NoAxe_3 = Qu’est-ce que c’est ? Une barricade ?
 C1_SecretCave_NoAxe_4 = Si j’avais une hache, je pourrais peut-être voir ce qu’il y a de l’autre côté.
 
 C1_SecretCave_Axe_Alt_1 = Quelle étrange porte. Je me demande ce qui se cache derrière.
-C1_SecretCave_Axe_Alt_2 = … Il n’y a pas de poignée. Il va la défoncer avec la hache.
+C1_SecretCave_Axe_Alt_2 = … Il n’y a pas de poignée. Il va falloir la défoncer avec la hache.
 
 C1_SecretCave_Axe_1 = Bon, je peux essayer de briser cette détruire maintenant.
 C1_SecretCave_Axe_2 = …

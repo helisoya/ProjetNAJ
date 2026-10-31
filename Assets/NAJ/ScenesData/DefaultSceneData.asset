@@ -156,6 +156,7 @@ MonoBehaviour:
         baseColor: {r: 0.34707898, g: 1.1152072, b: 1.218224, a: 0.5921569}
         selectedColor: {r: 0.688111, g: 1.4964385, b: 0.53928256, a: 0.59607846}
         prefabIcon: {fileID: 1171909878602773229, guid: 41dab6944be8e794d80b4be30237bbb3, type: 3}
+        defaultIcon: {fileID: 2800000, guid: c1073c17cb64fe5418b5ca7df5929d59, type: 3}
     - rid: 3436799780606181458
       type: {class: StaticObjectManager, ns: ANF.Scene, asm: Assembly-CSharp}
       data:

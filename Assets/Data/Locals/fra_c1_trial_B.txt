@@ -91,7 +91,7 @@ C1_Trial1_E_79 = Nous le faisons attendre dans les couloirs.
 C1_Trial1_E_80 = Je vais aller le chercher.
 C1_Trial1_E_81 = <color=#72B6E8>Ça y est. Qui que ce soit, c'est le tueur.</color>
 C1_Trial1_E_82 = <color=#72B6E8>Sinon, je suis fichu.</color>
-C1_Trial1_E_83 = Alors, vous êtes l'autre survivant du crash ?
+C1_Trial1_E_83 = Alors, vous êtes l'autre survivant du naufrage ?
 C1_Trial1_E_84 = Ouais. Je m’appelle Gerald Marin.
 C1_Trial1_E_85 = G-Gerald ?!
 C1_Trial1_E_86 = Oh, salut. Quel plaisir de te revoir.
@@ -108,7 +108,7 @@ C1_Trial1_E_96 = Mais je n’ai pas grand-chose à dire. Ne vous attendez à rie
 
 
 
-C1_Trial_Testimony3_Start_1 = <color=green>Le crash</color>
+C1_Trial_Testimony3_Start_1 = <color=green>Le naufrage</color>
 C1_Trial_Testimony3_Start_2 = Cette nuit-là, je m’occupais des plantes du navire.
 C1_Trial_Testimony3_Start_3 = Avant que je ne m'en rende compte, nous nous sommes écrasés.
 C1_Trial_Testimony3_Start_4 = Heureusement, je n'ai pas été blessé. Je suis allé ensuite sur le pont.
@@ -136,7 +136,7 @@ C1_Trial_Testimony3_Start_25 = <color=#72B6E8>Peut-être qu'il a eu le temps de 
 C1_Trial_Testimony3_Start_26 = <color=#72B6E8>… Je suppose qu'il n'y a qu'une seule façon de le savoir.</color>
 
 
-C1_Trial_Testimony3_Testimony_0 = <color=red>Le crash</color>
+C1_Trial_Testimony3_Testimony_0 = <color=red>Le naufrage</color>
 C1_Trial_Testimony3_Testimony_1 = <color=green>Cette nuit-là, je m’occupais des plantes du navire.</color>
 C1_Trial_Testimony3_Testimony_2 = <color=green>Avant que je m'en rende compte, nous nous sommes écrasés.</color>
 C1_Trial_Testimony3_Testimony_3 = <color=green>Heureusement, je n'ai pas été blessé. Je suis allé ensuite sur le pont.</color>
@@ -654,7 +654,7 @@ C1_Trial1_I_25 = On ne peut pas faire confiance à une sorcière.
 C1_Trial1_I_26 = Je suis sûr que tous ces discours sur le fait d’être botaniste étaient un mensonge.
 C1_Trial1_I_27 = Elle a tué et remplacé le vrai botaniste du navire.
 C1_Trial1_I_28 = Vous pensez ? A-t-elle tué deux personnes ce jour-là ?
-C1_Trial1_I_29 = Ou même avant le crash. Bon sang, elle a peut-être déjà tué une douzaine de matelots.
+C1_Trial1_I_29 = Ou même avant le naufrage. Bon sang, elle a peut-être déjà tué une douzaine de matelots.
 C1_Trial1_I_30 = Ha, ha. C'est une drôle d'histoire, mon bon lutin.
 C1_Trial1_I_31 = Il a tort ? Elle n'a pas tué de matelots ?
 C1_Trial1_I_32 = Non. Elle aurait été retrouvée facilement si elle l'avait fait.
