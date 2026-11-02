@@ -128,6 +128,7 @@ namespace ANF.GUI
 
         public override bool OnChangeScene()
         {
+            audioManager = null;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Pause").performed -= OnPauseInput;
             OnUnRegisterInputs();
             return true;

@@ -135,7 +135,7 @@ Review
 	- SUCCES : Trouver le secret de Gerald
 	- Pb chargement background / scene ?                                              A reproduire, jsp pas ce qui a déclenché ça (new game > main menu > trial A > ecran noir)
 	- Message de Game Over Custom (A la fin on sait qui est le tueur, pas au début)
-	- UI Leak Mémoire
+	- UI Leak Mémoire                                                                 A Revoir
 	- Shérif Leak Mémoire                                                             V
 	- History commence en haut (inactif casse des trucs)                              V
 	- Icone par défaut en intéraction ?                                               V

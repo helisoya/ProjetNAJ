@@ -325,6 +325,8 @@ namespace ANF.GUI
 
         public override bool OnChangeScene()
         {
+            audioManager = null;
+            visibleQuests = null;
             OnUnRegisterInputs();
             return true;
         }

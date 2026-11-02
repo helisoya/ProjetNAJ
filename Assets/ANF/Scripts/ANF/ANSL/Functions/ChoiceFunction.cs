@@ -402,7 +402,6 @@ namespace ANF.ANSL
 
         protected override void OnCleanup()
         {
-
         }
 
         protected override void OnSave(JSON json)

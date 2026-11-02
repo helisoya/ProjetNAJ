@@ -47,6 +47,14 @@ namespace ANF.GUI
         }
 
         /// <summary>
+		/// Clean up the button
+		/// </summary>
+        public void Cleanup()
+        {
+            audioManager = null;
+        }
+
+        /// <summary>
 		/// Changes if the button is interactable or not
 		/// </summary>
 		/// <param name="interactable">True if interactable</param>

@@ -97,6 +97,8 @@ namespace NAJ.GUI
                 (currentStatus == Status.ShowFull && fullImage.sprite != null))
                 ReleaseIcon(currentStatus, currentItem, isEvidence);
 
+            resourceManager = null;
+
             return true;
         }
 

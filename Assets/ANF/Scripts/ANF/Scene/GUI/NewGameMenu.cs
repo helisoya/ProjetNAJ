@@ -111,6 +111,7 @@ namespace ANF.GUI
 
         public override bool OnChangeScene()
         {
+            audioManager = null;
             OnUnRegisterInputs();
             return true;
         }

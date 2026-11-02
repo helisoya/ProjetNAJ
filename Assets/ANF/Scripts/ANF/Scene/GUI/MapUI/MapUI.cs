@@ -381,6 +381,10 @@ namespace ANF.GUI
         }
         public override bool OnChangeScene()
         {
+            currentMap = null;
+            audioManager = null;
+            backgroundImg.sprite = null;
+            currentMapDefs = null;
             OnUnRegisterInputs();
             return true;
         }

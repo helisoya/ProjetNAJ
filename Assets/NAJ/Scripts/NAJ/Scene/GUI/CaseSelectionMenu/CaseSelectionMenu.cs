@@ -554,6 +554,7 @@ namespace NAJ.GUI
 
         public override bool OnChangeScene()
         {
+            audioManager = null;
             OnUnRegisterInputs();
             return true;
         }

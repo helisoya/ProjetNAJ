@@ -428,6 +428,10 @@ namespace ANF.GUI
 
         public override bool OnChangeScene()
         {
+            audioManager = null;
+            if (buttons != null)
+                foreach (SaveMenuButton button in buttons)
+                    button.Cleanup();
             OnUnRegisterInputs();
             return true;
         }
