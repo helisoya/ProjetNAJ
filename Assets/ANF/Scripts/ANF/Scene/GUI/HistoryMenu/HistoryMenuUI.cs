@@ -20,6 +20,7 @@ namespace ANF.GUI
         [SerializeField] private Locals.LocalizedText prefabText;
         [SerializeField] private Scrollbar scrollbar;
         [SerializeField] private float noSpeakerSize;
+        private int repositionNextFrame;
 
         private AudioManager audioManager;
 
@@ -34,6 +35,15 @@ namespace ANF.GUI
 
         public override void OnUpdate()
         {
+            if (repositionNextFrame > 0)
+            {
+                repositionNextFrame--;
+
+                if (repositionNextFrame == 0)
+                {
+                    historyRoot.anchoredPosition = new Vector2(historyRoot.anchoredPosition.x, historyRoot.sizeDelta.y);
+                }
+            }
         }
 
 
@@ -99,8 +109,7 @@ namespace ANF.GUI
                 }
             }
 
-            historyRoot.anchoredPosition = new Vector2(historyRoot.anchoredPosition.x, historyRoot.sizeDelta.y);
-            scrollbar.value = 0;
+            repositionNextFrame = 2;
             EventSystem.current.SetSelectedGameObject(scrollbar.gameObject);
         }
 
