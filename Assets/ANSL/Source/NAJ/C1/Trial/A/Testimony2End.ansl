@@ -185,12 +185,14 @@ endexamination
 
 
 showDialogWindow(false)
+playMusic(null)
 :playObjectionAnimation()
 
 # C - After Testimony 2
 
 autosave()
 
+playMusic(Evidence)
 :setRannHandsOnDesk(Coat)
 :setCourtroomCamToDefense(true)
 dialog(Char_Rann;RannCoat;C1_Trial_C_1)
@@ -238,6 +240,7 @@ dialog(Char_Judge;Judge;C1_Trial_C_17)
 
 # HOLD IT
 
+playMusic(null)
 :setRannAngry(Coat)
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial_C_18)
@@ -337,4 +340,5 @@ dialog(null;null;C1_Trial_C_56)
 dialog(null;null;C1_Trial_C_57)
 dialog(null;null;C1_Trial_C_58)
 
+playMusic(Suspense)
 load(Question1)

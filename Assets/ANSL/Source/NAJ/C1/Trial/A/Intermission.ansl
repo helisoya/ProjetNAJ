@@ -65,6 +65,7 @@ dialog(Char_Judge;Judge;C1_Trial_D_25)
 dialog(Char_Judge;Judge;C1_Trial_D_26)
 dialog(Char_Judge;Judge;C1_Trial_D_27)
 
+playMusic(null)
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;null;C1_Trial_D_28)
 dialog(Char_Robert;Robert;C1_Trial_D_29)
@@ -92,6 +93,7 @@ fadeBg(1;true)
 # Lobby Scene
 
 :setCourtroomCamToLobby()
+playMusic(Courthouse)
 
 fadeBg(0;false)
 

@@ -75,6 +75,7 @@ fadeBg(0;false)
 :playRebuttalAnimation()
 
 dialog(null;null;C1_Trial_Testimony5_Testimony_0)
+playMusic(Testimony_Fast)
 
 clearExaminationData()
 
@@ -201,6 +202,7 @@ press 3
 			ask(Any)
 
 			case Evidence/C1_Knife:
+				playMusic(null)
 				:setRannReadingBook(Coat)
 				:setJudgeEyeSurprise()
 				dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_14)

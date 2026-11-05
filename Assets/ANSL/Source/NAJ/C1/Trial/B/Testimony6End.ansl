@@ -201,6 +201,7 @@ fail
 	load(../Common/ExaminationFail)
 endexamination
 
+playMusic(null)
 showDialogWindow(false)
 :playObjectionAnimation()
 
@@ -224,6 +225,7 @@ dialog(Char_Judge;Judge;C1_Trial1_J_6)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_7)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_8)
 dialog(Char_Rann;RannCoat;C1_Trial1_J_9)
+playMusic(Evidence)
 
 showEvidenceInfo(Evidence/C1_DebtReport;Left)
 
@@ -312,6 +314,7 @@ wait(1.5)
 
 fadeBg(1;true)
 
+playMusic(Truth)
 :setGeraldSad(NoCoat)
 :setGeraldEyeSerious(NoCoat)
 :setRannNormal(Coat)
@@ -445,6 +448,7 @@ setCharacterAlpha(GeraldNoCoat;0;2;true)
 wait(1.5)
 
 removeCharacter(GeraldNoCoat)
+playMusic(Courthouse)
 
 :setRannThinking(Coat)
 :playJudgeHammerAnimation(Normal;JudgeCam)

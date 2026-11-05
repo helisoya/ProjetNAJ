@@ -1,9 +1,9 @@
-#0BFCD4D9983333183B3B2C2B14138957-8B2D142FF7EBD22669C2A913A0F2939F
+#8522FE2ADDE365FDCC5EE468C157E74B-8B2D142FF7EBD22669C2A913A0F2939F
 69RannCoatNormal0.1
 71RannCoatNormal
 75RannCoatNeutral
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_32
-2Profile137Profile/C1_Gerald5Profile/C1_Juno67default122
+2Profile146Profile/C1_Gerald5Profile/C1_Juno67default131
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_34
 100false
 51Damage
@@ -65,7 +65,7 @@
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_47
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_48
 45Testimony5End
-43137
+43146
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_1
 100false
 71RobertThinking
@@ -90,37 +90,46 @@
 75JudgeAngry
 66JudgeCam
 67JudgeCam
+419294C1_AttackedJuno == 1
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_6
+4395
+4395
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_7
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_8
 66JudgeCam
 67JudgeCam
+41102104C1_AttackedJuno == 1
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_9
+43105
+43105
 51LoseLife
 610.10.25truetrue
 107LifePoints-1
-41103105LifePoints < 0
+41109111LifePoints < 0
 107LifePoints=0
-43106
-43106
+43112
+43112
 190falsefalse
 12falsetrue
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_10
 22false
-107C1_AttackedJuno=1
-41112114LifePoints <= 0
+41117119C1_AttackedJuno == 1
+107C1_AttackedJuno=2
+43120
+43120
+41121123LifePoints <= 0
 45../Common/Death
-43121
+43130
 71JudgeNormal
 75JudgeNormal
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_11
 45Testimony5Question
-43121
-43137
+43130
+43146
 69RannCoatStress0.1
 71RannCoatNormal
 75RannCoatOops
@@ -135,4 +144,4 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_4
 45Testimony5Question
-43137
+43146

@@ -1,5 +1,6 @@
 	# Dead, clear stack and back to main menu
 	clearStack()
+	playMusic(null)
 
 	:playJudgeHammerAnimation(OnShell;JudgeCam)
 	dialog(Char_Judge;Judge;C1_Trial_Death_1)

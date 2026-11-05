@@ -122,9 +122,10 @@ case Profile/C1_Gerald:
 
 case Profile/C1_Juno:
 
-	if(C1_AttackedJuno != 1)
+	if(C1_AttackedJuno != 2)
 		load(IncriminateGeraldFail)
 	else
+		playMusic(null)
 		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_1)
 		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_2)
 		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_3)

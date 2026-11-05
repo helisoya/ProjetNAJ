@@ -3,6 +3,7 @@
 setLocals(c1_common;c1_trial_B)
 
 setLocation(Location_C1_TrialPart2)
+playMusic(Courthouse)
 
 autosave()
 

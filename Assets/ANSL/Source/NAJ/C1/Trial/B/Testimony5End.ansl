@@ -18,6 +18,8 @@ fadeBg(1;true)
 
 wait(0.6)
 
+playMusic(Testimony_Fast)
+
 fadeBg(0;false)
 
 setExaminationPart(4)
@@ -189,6 +191,7 @@ fail
 	load(../Common/ExaminationFail)
 endexamination
 
+playMusic(null)
 showDialogWindow(false)
 :playObjectionAnimation()
 
@@ -351,6 +354,7 @@ dialog(Char_Rann;RannCoat;C1_Trial1_I_56)
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial1_I_57)
 
+playMusic(Suspense)
 :setRannHandsOnDesk(Coat)
 :setJudgeEyeNormal()
 :playJudgeHammerAnimation(Normal;JudgeCam)

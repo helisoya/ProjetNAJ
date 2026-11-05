@@ -5,7 +5,7 @@ setBackground(C1/SecretCave;true)
 setSkybox(Day)
 setAmbientIntensity(0.5)
 
-if(C1_SecretElk == 0)
+if(C1_SecretElk != 2)
 	setStaticHidden(DoorPiece;true)
 	playAmbient(Wind)
 	playAmbient(SpookyCave)

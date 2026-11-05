@@ -15,6 +15,36 @@ MonoBehaviour:
   m_GroupName: Audio_Music
   m_GUID: 692fd46265ca43f40960d6b4df0f51e2
   m_SerializeEntries:
+  - m_GUID: 4de0ab77b3ea90343b3da0448a3a56a9
+    m_Address: Audio/Music/Truth
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f3cb2226be3da945aba45c67742a2a5
+    m_Address: Audio/Music/Testimony_Slow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60e247b4489da154e9f01b53f1727220
+    m_Address: Audio/Music/Suspense
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad19006ce834c084cbf68b045dc474a7
+    m_Address: Audio/Music/Evidence
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba5d094237922044581b5bff95663428
+    m_Address: Audio/Music/Courthouse
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c9f7c59ee5c72f5479134da70fa16c82
     m_Address: Audio/Music/Test1
     m_ReadOnly: 0
@@ -23,6 +53,18 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e2dbd48a22b85a14f9efc4985e8f432a
     m_Address: Audio/Music/Test2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9a2b0e75f7a05a4085e98b7c3838807
+    m_Address: Audio/Music/KaliaPortStings
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f430f716434e1724daa335674d9900d3
+    m_Address: Audio/Music/Testimony_Fast
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio

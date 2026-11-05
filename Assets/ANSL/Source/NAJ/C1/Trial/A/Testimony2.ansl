@@ -66,6 +66,7 @@ fadeBg(0;false)
 :playRebuttalAnimation()
 
 dialog(null;null;C1_Trial_Testimony2_Testimony_0)
+playMusic(Testimony_Slow)
 
 clearExaminationData()
 

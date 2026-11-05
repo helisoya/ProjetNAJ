@@ -1,4 +1,4 @@
-#EEE008F162C1479A37409FC05A50E93F-8B2D142FF7EBD22669C2A913A0F2939F
+#44EACF17EEAF8534A0AED338242B51F5-8B2D142FF7EBD22669C2A913A0F2939F
 29
 66DefenseCam
 67DefenseCam
@@ -68,6 +68,7 @@
 36Char_JudgeJudgeC1_Trial_D_25
 36Char_JudgeJudgeC1_Trial_D_26
 36Char_JudgeJudgeC1_Trial_D_27
+50null
 67ProsecutionCam
 66ProsecutionCam
 36Char_RobertnullC1_Trial_D_28
@@ -95,6 +96,7 @@
 381true
 66LobbyCam
 67LobbyCam
+50Courthouse
 380false
 36nullnullC1_Trial1_D_37
 36nullnullC1_Trial1_D_38

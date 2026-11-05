@@ -1,4 +1,4 @@
-#F6A96472A6A163FB8736153ECC549A1A-8B2D142FF7EBD22669C2A913A0F2939F
+#9CD2C952FEEB0573D3C6CF28F42425F7-8B2D142FF7EBD22669C2A913A0F2939F
 66DefenseCam
 67DefenseCam
 69RobertNormal0.1
@@ -8,7 +8,7 @@
 75JudgeNormal
 36nullnullC1_Trial1_I_62
 36Char_RannRannCoatC1_Trial1_I_63
-2Profile198Profile/C1_Gerald10Profile/C1_Juno131default196
+2Profile199Profile/C1_Gerald10Profile/C1_Juno131default197
 36nullnullC1_Trial1_I_64
 36Char_RannRannCoatC1_Trial1_I_65
 100false
@@ -129,10 +129,11 @@
 36nullnullC1_Trial1_I_108
 36nullnullC1_Trial1_I_109
 45Testimony6
-43198
-41132134C1_AttackedJuno != 1
+43199
+41132134C1_AttackedJuno != 2
 45IncriminateGeraldFail
-43195
+43196
+50null
 36Char_RannRannCoatC1_Trial1_I_Juno_1
 36Char_RannRannCoatC1_Trial1_I_Juno_2
 36Char_RannRannCoatC1_Trial1_I_Juno_3
@@ -193,7 +194,7 @@
 401true
 1092
 27NAJMainMenu
-43195
-43198
+43196
+43199
 45IncriminateGeraldFail
-43198
+43199

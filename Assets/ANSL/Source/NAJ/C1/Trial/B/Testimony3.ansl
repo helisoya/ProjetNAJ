@@ -3,6 +3,7 @@
 
 showDialogWindow(false)
 fadeBg(1;true)
+playMusic(null)
 
 
 :setCourtroomCamToWitnessImmediate()
@@ -94,6 +95,7 @@ fadeBg(0;false)
 :playRebuttalAnimation()
 
 dialog(null;null;C1_Trial_Testimony3_Testimony_0)
+playMusic(Testimony_Slow)
 
 clearExaminationData()
 
@@ -293,6 +295,7 @@ fail
 endexamination
 
 showDialogWindow(false)
+playMusic(null)
 :playObjectionAnimation()
 
 :setCourtroomCamToDefense(true)

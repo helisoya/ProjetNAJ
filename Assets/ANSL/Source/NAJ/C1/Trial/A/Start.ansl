@@ -33,6 +33,8 @@ wait(2)
 
 :playJudgeHammerAnimation(Normal;JudgeCam)
 
+playMusic(Courthouse)
+
 dialog(Char_Judge;Judge;C1_Trial_A_6)
 dialog(Char_Judge;Judge;C1_Trial_A_7)
 dialog(Char_Judge;Judge;C1_Trial_A_8)

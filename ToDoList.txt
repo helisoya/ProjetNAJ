@@ -38,7 +38,7 @@ ANF
 - Bundles                                                                             V
 - Ressources Async                                                                    V
 - Autres Modules de ResourceManager ?
-- Vérifier fuites de mémoires
+- Vérifier fuites de mémoires                                                         UI Seulement, tout revérifier
 - Mettre à jour le Character Generator
 - Audio sauvegarde les musiques / ambiance en globale plutôt qu'en player             V
 - Revoir Start / ChangeScene / Load au niveau des attentes inter composants           V
@@ -77,7 +77,7 @@ To Release
 - Inté son                                                                            -
 	- SFX                                                                             Marvin
 	- Ambient                                                                         Marvin
-	- BGM
+	- BGM                                                                             A Tester
 	- Son menus                                                                       Marvin et faire attention aux playoneshots trop nombreux
 	- Mixage
 - Inté steam                                                                          -
@@ -139,6 +139,13 @@ Review
 	- Shérif Leak Mémoire                                                             V
 	- History commence en haut (inactif casse des trucs)                              V
 	- Icone par défaut en intéraction ?                                               V
+	- Change Scene qui wait rien du tout                                              Déjà réglé ?
+	
+	
+Retours Playtests 2 :
+	- Hache comme item d'inventaire ?
+	- Secret cassé, entrer avec la hache, quitter et revenir -> déjà ouvert           Normalement Fix, a retester
+	- Bug Succès lié à Juno, on peut l'avoir sans se tromper à la Q1                  Normalement Fix, a retester
 
 Musiques :
 - Theme/Menu principal
@@ -153,10 +160,10 @@ Musiques :
 - Examination - Rapide                                                                Test
 - (Examination - Fin)                                                                 Non?
 - Tension                                                                             Test
-- Examination - Preuve                                                             
-- Examination - Poursuite                                               
+- Examination - Preuve                                                             	  Test
+- Examination - Poursuite                                                             Non?
 - Examination - Vérité                                                                Test
-- Victoire
+- Victoire                                                                            
 
 () = Nice to have
 

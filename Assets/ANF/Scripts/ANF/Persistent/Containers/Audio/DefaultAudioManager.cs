@@ -165,7 +165,7 @@ namespace ANF.Persistent
                 source.clip = clip;
                 source.outputAudioMixerGroup = mixer.FindMatchingGroups("Ambient")[0];
 
-                ambients.Add(new DefaultAudioSong(source, ambientName, baseVolume));
+                ambients.Add(new DefaultAudioSong(this, true, source, ambientName, baseVolume));
             }
         }
 
@@ -190,7 +190,7 @@ namespace ANF.Persistent
                 source.clip = clip;
                 source.outputAudioMixerGroup = mixer.FindMatchingGroups("BGM")[0];
 
-                musics.Add(new DefaultAudioSong(source, musicName, baseVolume));
+                musics.Add(new DefaultAudioSong(this, false, source, musicName, baseVolume));
             }
         }
 
@@ -287,6 +287,21 @@ namespace ANF.Persistent
             }
 
             return clip;
+        }
+
+        /// <summary>
+		/// Releases a cached clip
+		/// </summary>
+		/// <param name="clipName">The clip's name</param>
+		/// <param name="subFolderName">The clip's subfolder</param>
+		/// <param name="cacheIndex">The clip's cache index</param>
+        public void ReleaseCachedClip(string clipName, string subFolderName, int cacheIndex)
+        {
+            if (cache[cacheIndex].ContainsKey(clipName) && resourceManager != null)
+            {
+                cache[cacheIndex].Remove(clipName);
+                resourceManager.ReleaseResource<AudioClip>($"{pathToAudioResources}{subFolderName}{clipName}");
+            }
         }
 
         public override void SetMusicVolume(float newVolume)
@@ -396,13 +411,18 @@ namespace ANF.Persistent
     /// </summary>
     public class DefaultAudioSong
     {
+        private DefaultAudioManager manager;
         private AudioSource source;
         private string linkedSong;
         private float baseVolume;
         private float transitionSpeed;
+        private bool isAmbient;
 
-        public DefaultAudioSong(AudioSource source, string linkedSong, float baseVolume, float transitionSpeed = 3f, bool playAtStart = true)
+        public DefaultAudioSong(DefaultAudioManager manager, bool isAmbient,
+            AudioSource source, string linkedSong, float baseVolume, float transitionSpeed = 3f, bool playAtStart = true)
         {
+            this.manager = manager;
+            this.isAmbient = isAmbient;
             this.source = source;
             this.linkedSong = linkedSong;
             this.baseVolume = baseVolume;
@@ -467,7 +487,13 @@ namespace ANF.Persistent
 		/// </summary>
         public void Destroy()
         {
+            source.clip = null;
             Object.Destroy(source.gameObject);
+
+            if (isAmbient)
+                manager.ReleaseCachedClip(linkedSong, "Ambient/", 2);
+            else
+                manager.ReleaseCachedClip(linkedSong, "Music/", 3);
         }
     }
 }

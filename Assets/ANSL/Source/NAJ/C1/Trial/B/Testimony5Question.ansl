@@ -83,15 +83,19 @@ case Profile/C1_Juno:
 
 	:setJudgeEyeAngry()
 	:setCourtroomCamToJudge()
-	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_6)
+	if(C1_AttackedJuno == 1)
+		dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_6)
+	endif
 	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_7)
 
 	:setCourtroomCamToDefenseImmediate()
 	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_IncriminateJuno_8)
 
 	:setCourtroomCamToJudge()
-	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_9)
-
+	if(C1_AttackedJuno == 1)
+		dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_9)
+	endif
+	
 	playSFX(LoseLife)
 	screenshake(0.1;0.25;true;true)
 	:removeHealth(1)
@@ -101,7 +105,10 @@ case Profile/C1_Juno:
 	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_IncriminateJuno_10)
 
 	showLifeBarUI(false)
-	variable(C1_AttackedJuno;=;1)
+
+	if(C1_AttackedJuno == 1)
+		variable(C1_AttackedJuno;=;2)
+	endif
 
 	if(LifePoints <= 0)
 		load(../Common/Death)

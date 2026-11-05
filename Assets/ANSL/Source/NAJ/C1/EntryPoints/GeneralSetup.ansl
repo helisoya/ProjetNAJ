@@ -36,8 +36,9 @@ createUserVariable(C1_SecretElk;0)
 
 createUserVariable(C1_AttackedJuno;0)
 # 0 -> Didn't
-# 1 -> Did at Knife
-# 2 -> Did a Herbarium
+# 1 -> Did at "Who killed the Captain"
+# 2 -> Did at Knife
+# 3 -> Did a Herbarium
 
 createUserVariable(LifePoints;3)
 createUserVariable(MaxLifePoints;3)

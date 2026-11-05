@@ -1,6 +1,7 @@
 # Testimony 1 - Juno (What I Saw) 
 # Actual Testimony
 
+playMusic(null)
 showDialogWindow(false)
 fadeBg(1;true)
 
@@ -16,6 +17,7 @@ fadeBg(0;false)
 :playRebuttalAnimation()
 
 dialog(null;null;C1_Trial_Testimony1_Testimony_0)
+playMusic(Testimony_Slow)
 
 clearExaminationData()
 
@@ -230,6 +232,7 @@ fail
 endexamination
 
 showDialogWindow(false)
+playMusic(null)
 :playObjectionAnimation()
 
 # B - After Testimony 1
@@ -260,6 +263,7 @@ showDialogWindow(false)
 dialog(Char_Rann;RannCoat;C1_Trial_B_6)
 
 showEvidenceInfo(Evidence/C1_Injury;Left)
+playMusic(Evidence)
 dialog(Char_Rann;RannCoat;C1_Trial_B_7)
 dialog(Char_Rann;RannCoat;C1_Trial_B_8)
 showDialogWindow(false)
@@ -275,6 +279,7 @@ dialog(Char_Judge;Judge;C1_Trial_B_11)
 
 # HOLD IT
 
+playMusic(null)
 :setRobertEyeThinking()
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial_B_12)

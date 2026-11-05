@@ -96,6 +96,7 @@ fadeBg(0;false)
 :playRebuttalAnimation()
 
 dialog(null;null;C1_Trial_Testimony4_Testimony_0)
+playMusic(Testimony_Fast)
 
 clearExaminationData()
 
@@ -258,6 +259,7 @@ fail
 	load(../Common/ExaminationFail)
 endexamination
 
+playMusic(null)
 :setRannAngry(Coat)
 :playJudgeHammerAnimation(HoldingHammer;JudgeCam)
 
@@ -330,6 +332,7 @@ setCharacterRotation(Juno;WitnessLeftSpot)
 
 showDialogWindow(false)
 
+playMusic(Suspense)
 :setCourtroomCamToWitnessLeft(true)
 dialog(Char_Juno;Juno;C1_Trial1_G_22)
 

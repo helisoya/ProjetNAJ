@@ -1,6 +1,7 @@
 # Testimony 1 - Juno (What I Saw) 
 # Start
 
+playMusic(null)
 showDialogWindow(false)
 fadeBg(1;true)
 

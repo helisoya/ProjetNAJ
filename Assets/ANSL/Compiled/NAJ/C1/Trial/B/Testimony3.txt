@@ -1,6 +1,7 @@
-#6DAEDC4EF07C932F40FB234FA4DD7C6A-8B2D142FF7EBD22669C2A913A0F2939F
+#C6E566DA7A53BC1CD90515C613AA96AD-8B2D142FF7EBD22669C2A913A0F2939F
 100false
 381true
+50null
 67WitnessCam
 66WitnessCam
 71GeraldNoCoatNormal
@@ -81,12 +82,13 @@
 51Rebuttal
 52Rebuttaltrue
 36nullnullC1_Trial_Testimony3_Testimony_0
+50Testimony_Slow
 4
-9292184False2128False3159False4182False5223False
+9294186False2130False3161False4184False5225False
 181
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_1falsenoInput
-101False8828829284128
+101False9029029486130
 100false
 51Press
 52Presstrue
@@ -126,11 +128,11 @@
 381true
 380false
 182
-4383
+4385
 182
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_2falsenoInput
-102False13228829284159
+102False13429029486161
 100false
 51Press
 52Presstrue
@@ -157,11 +159,11 @@
 381true
 380false
 183
-4383
+4385
 183
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_3falsenoInput
-103False163288292128182
+103False165290294130184
 100false
 51Press
 52Presstrue
@@ -180,11 +182,11 @@
 381true
 380false
 184
-4383
+4385
 184
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_4falsenoInput
-104False186288292159223
+104False188290294161225
 100false
 51Press
 52Presstrue
@@ -221,11 +223,11 @@
 381true
 380false
 185
-4383
+4385
 185
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_5falsenoInput
-105False227288292182268Evidence/C1_AutopsyReport
+105False229290294184270Evidence/C1_AutopsyReport
 100false
 51Press
 52Presstrue
@@ -266,10 +268,10 @@
 67WitnessCam
 66WitnessCam
 380false
-43268
+43270
 181
 21false
-3292
+3294
 100false
 69RannCoatThinking0.1
 381true
@@ -286,12 +288,13 @@
 67WitnessCam
 66WitnessCam
 380false
-4383
+4385
 181
 21false
 45../Common/ExaminationFail
-4383
+4385
 100false
+50null
 51Objection
 52Objectiontrue
 67DefenseCam0.25false

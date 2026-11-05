@@ -1,4 +1,5 @@
-#7D9C2EA72CA88E4672382014D195D099-8B2D142FF7EBD22669C2A913A0F2939F
+#860FCAB69C3A3AAFE693489B40AD13CD-8B2D142FF7EBD22669C2A913A0F2939F
+50null
 100false
 381true
 67WitnessCam
@@ -13,12 +14,13 @@
 51Rebuttal
 52Rebuttaltrue
 36nullnullC1_Trial_Testimony1_Testimony_0
+50Testimony_Slow
 4
-9239116False271False3104False4138False5178False
+9241118False273False3106False4140False5180False
 181
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_1falsenoInput
-101False202352391671
+101False222372411873
 69RannCoatReadingBook
 71RannCoatNormal
 75RannCoatNormal
@@ -69,11 +71,11 @@
 66WitnessCam
 380false
 182
-4315
+4317
 182
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_2falsenoInput
-102False7523523916104
+102False7723724118106
 100false
 51Press
 52Presstrue
@@ -102,11 +104,11 @@
 381true
 380false
 183
-4315
+4317
 183
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_3falsenoInput
-103False10823523971138
+103False11023724173140
 100false
 51Press
 52Presstrue
@@ -136,11 +138,11 @@
 66WitnessCam
 380false
 184
-4315
+4317
 184
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_4falsenoInput
-104False142235239104178
+104False144237241106180
 69RannCoatHandsOnDesk0.1
 71RannCoatNormal
 75RannCoatSad
@@ -176,11 +178,11 @@
 66WitnessCam
 380false
 185
-4315
+4317
 185
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_5falsenoInput
-105False182235239138215Evidence/C1_Injury
+105False184237241140217Evidence/C1_Injury
 100false
 51Press
 52Presstrue
@@ -213,10 +215,10 @@
 66WitnessCam
 69RannCoatNormal0.1
 380false
-43215
+43217
 181
 21false
-3239
+3241
 100false
 69RannCoatThinking0.1
 381true
@@ -233,12 +235,13 @@
 67WitnessCam
 66WitnessCam
 380false
-4315
+4317
 181
 21false
 45../Common/ExaminationFail
-4315
+4317
 100false
+50null
 51Objection
 52Objectiontrue
 25
@@ -267,6 +270,7 @@
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial_B_6
 20Evidence/C1_InjuryLeft
+50Evidence
 36Char_RannRannCoatC1_Trial_B_7
 36Char_RannRannCoatC1_Trial_B_8
 100false
@@ -278,6 +282,7 @@
 36Char_JudgeJudgeC1_Trial_B_10
 11
 36Char_JudgeJudgeC1_Trial_B_11
+50null
 71RobertThinking
 75RobertNormal
 67ProsecutionCam

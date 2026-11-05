@@ -1,5 +1,7 @@
 # End of question 2
 
+playMusic(null)
+
 :setCourtroomCamToDefenseImmediate()
 dialog(Char_Rann;RannCoat;C1_Trial1_H_1)
 

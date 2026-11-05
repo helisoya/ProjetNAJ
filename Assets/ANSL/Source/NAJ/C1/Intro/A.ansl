@@ -26,6 +26,7 @@ showDialogWindow(false)
 wait(2)
 
 playAmbient(SeaCalm)
+playMusic(KaliaPortStings)
 
 fadeBg(0;false)
 
@@ -110,6 +111,7 @@ showDialogWindow(false)
 fadeBg(1;true)
 
 playSFX(ShipHorn)
+playMusic(null)
 
 removeStatic(Sailors)
 removeStatic(Kalia)
