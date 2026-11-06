@@ -5814,7 +5814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Forward
   icon: {fileID: 2800000, guid: 6df575f0ceea0b54395c94f8e3136e0e, type: 3}
-  centerOffset: {x: 0, y: -15, z: 0}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 580137103}
 --- !u!65 &580137103
@@ -5904,8 +5904,8 @@ Transform:
   m_GameObject: {fileID: 580137101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2613, y: 21, z: 42.21}
-  m_LocalScale: {x: 51.79374, y: 46, z: 1}
+  m_LocalPosition: {x: 9.1545, y: 5.0612, z: 42.21}
+  m_LocalScale: {x: 16.894154, y: 14.122001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -6453,8 +6453,8 @@ Transform:
   m_GameObject: {fileID: 766609510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.7777, y: 5.8732, z: -17.5433}
-  m_LocalScale: {x: 3.2014966, y: 11.304293, z: 1.5136057}
+  m_LocalPosition: {x: 6.6798, y: 5.8732, z: -18.5082}
+  m_LocalScale: {x: 1.0054716, y: 11.304293, z: 3.443453}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}

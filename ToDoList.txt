@@ -144,8 +144,19 @@ Review
 	
 Retours Playtests 2 :
 	- Hache comme item d'inventaire ?
-	- Secret cassé, entrer avec la hache, quitter et revenir -> déjà ouvert           Normalement Fix, a retester
+	- Secret cassé, entrer avec la hache, quitter et revenir -> déjà ouvert           V
 	- Bug Succès lié à Juno, on peut l'avoir sans se tromper à la Q1                  Normalement Fix, a retester
+	- Hitbox à revoir mode intéraction                                                V
+	- Compliqué de naviguer et savoir avec quoi on intéragit                          A retester
+	- Retours Madeleine :
+		- Comment Juno est arrivée là ? La zone était pas baricadée ?
+		- Revoir Gerald qui dit mal notre nom
+		- Clareté noms propres / Lieux / ... -> Codex ?
+		- De manière générale peut être trop de noms inconnu
+		- Scroll molette / Clavier trop lent                                          V
+		- Fondus entre scenes (pas que fondu au noir)
+		- Fix Shader Pixelate
+		- Le truc qui cloche de Gerald pas trouvé, probablement le sera jamais
 
 Musiques :
 - Theme/Menu principal
@@ -174,7 +185,11 @@ Credits :
 Moi : Dev, Ecriture, Graph
 
 Marvin : Son
-Feliji, Madeleine : Tests et Retours
+
+Tests
+Feliji
+Samy D.IF
+queenmagateau
 
 Les plugins (Eau, Dotween, ...)
 

@@ -2917,8 +2917,8 @@ Transform:
   m_GameObject: {fileID: 580137101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.6432, y: 13.004, z: 14.4}
-  m_LocalScale: {x: 2.5686538, y: 3.7435088, z: 1}
+  m_LocalPosition: {x: 23.8766, y: 12.5847, z: 14.4}
+  m_LocalScale: {x: 4.1019754, y: 4.5820546, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -3763,7 +3763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Left
   icon: {fileID: 2800000, guid: 10356f4a70ade654fa2fa445de167e7a, type: 3}
-  centerOffset: {x: 0, y: -20, z: 0}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 1209789091}
 --- !u!65 &1209789091
@@ -3853,8 +3853,8 @@ Transform:
   m_GameObject: {fileID: 1209789089}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.3362, y: 26.6, z: 55.6}
-  m_LocalScale: {x: 32.980457, y: 54.9, z: 1}
+  m_LocalPosition: {x: -46.1293, y: 6.073, z: 55.6}
+  m_LocalScale: {x: 14.22205, y: 13.84578, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -9897,8 +9897,8 @@ Transform:
   m_GameObject: {fileID: 1544220863}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.5268, y: 26.6, z: 55.6}
-  m_LocalScale: {x: 30.646408, y: 54.9, z: 1}
+  m_LocalPosition: {x: 31.9358, y: 6.4281, z: 55.6}
+  m_LocalScale: {x: 16.99155, y: 14.555289, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
@@ -9995,7 +9995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Right
   icon: {fileID: 2800000, guid: 9d294c3fe7cc01f4fba33ddb8a34bc95, type: 3}
-  centerOffset: {x: 0, y: -20, z: 0}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 1544220865}
 --- !u!1001 &1582099469

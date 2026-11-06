@@ -12,6 +12,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: palette.001
+    second: {fileID: 2100000, guid: 2f477b682eb38684ca9544ca93be569d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palette.002
+    second: {fileID: 2100000, guid: 2f477b682eb38684ca9544ca93be569d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: palette.007
     second: {fileID: 2100000, guid: 2f477b682eb38684ca9544ca93be569d, type: 2}
   materials:

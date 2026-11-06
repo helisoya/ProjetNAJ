@@ -4811,7 +4811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Forward
   icon: {fileID: 2800000, guid: 6df575f0ceea0b54395c94f8e3136e0e, type: 3}
-  centerOffset: {x: 0, y: -15, z: 0}
+  centerOffset: {x: 0, y: 0, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 580137103}
 --- !u!65 &580137103
@@ -4901,8 +4901,8 @@ Transform:
   m_GameObject: {fileID: 580137101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8305, y: 22.4, z: 42.21}
-  m_LocalScale: {x: 56.93168, y: 49, z: 1}
+  m_LocalPosition: {x: -3.4808, y: 3.2157, z: 42.21}
+  m_LocalScale: {x: 11.635594, y: 10.630155, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7709857066189996482}
