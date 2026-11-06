@@ -29985,9 +29985,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Ship
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
-  centerOffset: {x: 0, y: 0, z: 0}
+  centerOffset: {x: 0, y: -4.53, z: 5.08}
   objectRenderers: []
-  interactionCollider: {fileID: 0}
+  interactionCollider: {fileID: 1294202210}
 --- !u!114 &1416115266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34286,9 +34286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Water
   icon: {fileID: 2800000, guid: 34b3ce022b8c98540ae69d05679eea3a, type: 3}
-  centerOffset: {x: 0, y: 0, z: 0}
+  centerOffset: {x: 15, y: 0, z: 0}
   objectRenderers: []
-  interactionCollider: {fileID: 0}
+  interactionCollider: {fileID: 1640147746}
 --- !u!64 &1640147746
 MeshCollider:
   m_ObjectHideFlags: 0

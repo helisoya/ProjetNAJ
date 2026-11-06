@@ -1,6 +1,7 @@
 createUserEvidence(C1_Herbarium;0;C1)
 createUserEvidence(C1_Injury;0;C1)
 createUserEvidence(C1_Coat;0;C1)
+createUserEvidence(C1_Axe;0;C1)
 createUserEvidence(C1_Knife;0;C1)
 createUserEvidence(C1_AutopsyReport;0;C1)
 createUserEvidence(C1_DebtReport;0;C1)

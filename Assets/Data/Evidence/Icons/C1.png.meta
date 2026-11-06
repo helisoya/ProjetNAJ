@@ -395,6 +395,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Evidence_C1_Axe
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1
+        width: 510
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c139df364b6ef14996f564d38db90f7
+      internalID: -1976753379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -413,6 +435,7 @@ TextureImporter:
     nameFileIdTable:
       C1_13: 1408929408
       Evidence_C1_AutopsyReport: 1774959636
+      Evidence_C1_Axe: -1976753379
       Evidence_C1_Coat: 1650931167
       Evidence_C1_DeathMessage: 2068204354
       Evidence_C1_DebtReport: -942822909
