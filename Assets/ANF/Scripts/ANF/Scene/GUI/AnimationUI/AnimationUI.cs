@@ -48,6 +48,25 @@ namespace ANF.GUI
             return true;
         }
 
+        /// <summary>
+		/// Stops a UI Animation
+		/// </summary>
+		/// <param name="animationId">An animation Id</param>
+		/// <returns>True if the operation was a success</returns>
+        public bool StopAnimation(string animationId)
+        {
+            if (resourceManager == null || !animations.ContainsKey(animationId))
+                return false;
+
+            Destroy(animations[animationId].gameObject);
+            animations.Remove(animationId);
+
+            if (resourceManager != null)
+                resourceManager.ReleaseResource<GameObject>("UIAnimations/" + animationId);
+
+            return true;
+        }
+
         public override void OnStart()
         {
             PersistentDataManager.instance.GetPlayerData().GetComponent(out resourceManager);
@@ -59,7 +78,9 @@ namespace ANF.GUI
 
             foreach (string key in animations.Keys)
             {
-                if (animations[key].GetCurrentAnimatorStateInfo(0).normalizedTime > 1 &&
+                AnimatorStateInfo stateInfo = animations[key].GetCurrentAnimatorStateInfo(0);
+                if (!stateInfo.loop &&
+                    stateInfo.normalizedTime > 1 &&
                     !animations[key].IsInTransition(0))
                     toRemove.Add(key);
             }

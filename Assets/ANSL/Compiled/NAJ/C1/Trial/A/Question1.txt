@@ -1,4 +1,4 @@
-#37146517F3425DC693E2BB4305510691-8B2D142FF7EBD22669C2A913A0F2939F
+#37146517F3425DC693E2BB4305510691-8956126B45292CBB910B7AE6D1BF3C1C
 66JudgeCam
 67JudgeCam
 69RannCoatNormal0.1
@@ -17,7 +17,7 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Juno_1
 100true
-107C1_AttackedJuno=1
+108C1_AttackedJuno=1
 71JunoSurprise
 75JunoSurprise
 67WitnessCam0.25false
@@ -51,9 +51,9 @@
 36Char_JudgeJudgeC1_Trial_Question1_Juno_12
 51LoseLife
 610.10.25truetrue
-107LifePoints-1
+108LifePoints-1
 415456LifePoints < 0
-107LifePoints=0
+108LifePoints=0
 4357
 4357
 190falsefalse

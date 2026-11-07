@@ -17,7 +17,7 @@ addProfile(C1_Sherif)
 addProfile(C1_Judge)
 addProfile(C1_Juno)
 
-setBackground(Common/Courtroom)
+:setBackgroundWithLoading(Common/Courtroom;false)
 
 addCharacter(Judge;false;JudgeSpot)
 addCharacter(Robert;false;ProsecutorSpot)

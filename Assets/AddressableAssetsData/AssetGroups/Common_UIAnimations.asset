@@ -39,6 +39,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - UIAnimations
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2ff6c9f2607b554ca9b981546107fb3
+    m_Address: UIAnimations/Loading
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UIAnimations
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ed2820425fbb4594d9706b3ce5609202
     m_Address: UIAnimations/Press
     m_ReadOnly: 0

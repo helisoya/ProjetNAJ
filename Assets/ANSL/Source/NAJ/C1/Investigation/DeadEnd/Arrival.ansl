@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/DeadEnd;true)
+:setBackgroundWithLoading(C1/DeadEnd;true)
 setSkybox(Day)
 playAmbient(Forest)
 

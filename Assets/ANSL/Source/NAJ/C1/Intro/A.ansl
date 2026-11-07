@@ -1,4 +1,4 @@
-setBackground(C1/Boat)
+:setBackgroundWithLoading(C1/Boat;false)
 setSkybox(Day)
 
 setStaticHidden(WaterStorm;true)

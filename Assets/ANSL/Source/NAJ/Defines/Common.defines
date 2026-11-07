@@ -19,3 +19,11 @@ EndDefine
 Define regenHealthToMax()
 variable(LifePoints;=;MaxLifePoints)
 EndDefine
+
+# Loading
+
+Define setBackgroundWithLoading(Background;UseDefaultData)
+playUIAnimation(Loading;false)
+setBackground({Background};{UseDefaultData})
+stopUIAnimation(Loading)
+EndDefine

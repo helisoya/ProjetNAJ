@@ -1,4 +1,4 @@
-#8522FE2ADDE365FDCC5EE468C157E74B-8B2D142FF7EBD22669C2A913A0F2939F
+#8522FE2ADDE365FDCC5EE468C157E74B-8956126B45292CBB910B7AE6D1BF3C1C
 69RannCoatNormal0.1
 71RannCoatNormal
 75RannCoatNeutral
@@ -48,9 +48,9 @@
 66HammerCam
 67HammerCam
 69JudgeStrike
-1090.5
+1100.5
 51Gavel
-1090.5
+1100.5
 69JudgeNormal
 67JudgeCam
 66JudgeCam
@@ -106,9 +106,9 @@
 43105
 51LoseLife
 610.10.25truetrue
-107LifePoints-1
+108LifePoints-1
 41109111LifePoints < 0
-107LifePoints=0
+108LifePoints=0
 43112
 43112
 190falsefalse
@@ -116,7 +116,7 @@
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_10
 22false
 41117119C1_AttackedJuno == 1
-107C1_AttackedJuno=2
+108C1_AttackedJuno=2
 43120
 43120
 41121123LifePoints <= 0

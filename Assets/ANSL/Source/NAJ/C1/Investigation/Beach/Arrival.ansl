@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/Beach;true)
+:setBackgroundWithLoading(C1/Beach;true)
 setSkybox(Day)
 playAmbient(SeaCalm)
 

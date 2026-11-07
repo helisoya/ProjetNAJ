@@ -1,4 +1,4 @@
-#D14E56EDE97DDDA3EE7769822A87619B-8B2D142FF7EBD22669C2A913A0F2939F
+#D14E56EDE97DDDA3EE7769822A87619B-8956126B45292CBB910B7AE6D1BF3C1C
 100false
 381true
 67WitnessCam
@@ -14,7 +14,7 @@
 75RannCoatNeutral
 69JudgeNormal0.1
 69RobertNormal0.1
-1090.6
+1100.6
 380false
 51Testimony
 52Testimonytrue
@@ -147,7 +147,7 @@
 75RannCoatNeutral
 67WitnessCam
 66WitnessCam
-1090.15
+1100.15
 380false
 183
 4370
@@ -264,9 +264,9 @@
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_Fail_4
 51LoseLife
 610.10.25truetrue
-107LifePoints-1
+108LifePoints-1
 41267269LifePoints < 0
-107LifePoints=0
+108LifePoints=0
 43270
 43270
 190falsefalse

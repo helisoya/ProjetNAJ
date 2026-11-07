@@ -29,7 +29,7 @@ case 1:
 
 	playSFX(EvidenceInfo)
 	fadeBg(0.75;false)
-	showEvidenceInfo(Evidence/C1_AutopsyReport;Full)
+	showEvidenceInfo(Evidence/C1_Axe;Full)
 	dialog(null;null;C1_Investigation_Evidence_Axe_1)
 	hideEvidenceInfo()
 	fadeBg(0.0;false)

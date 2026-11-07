@@ -1,4 +1,4 @@
-#1AFA8FC74D12D66A2F68B6121E0956B1-8B2D142FF7EBD22669C2A913A0F2939F
+#1AFA8FC74D12D66A2F68B6121E0956B1-8956126B45292CBB910B7AE6D1BF3C1C
 401true
 620.4
 661.6-231
@@ -14,7 +14,7 @@
 36Char_RannnullC1_SecretCave_NoAxe_2
 36Char_RannnullC1_SecretCave_NoAxe_3
 36Char_RannnullC1_SecretCave_NoAxe_4
-107C1_SecretElk=1
+108C1_SecretElk=1
 4351
 411820C1_SecretElk == 1
 36Char_RannnullC1_SecretCave_Axe_1
@@ -34,12 +34,12 @@
 36Char_RannnullC1_SecretCave_Axe_6
 100false
 69ElkLookBehind
-1093
+1103
 651
 49SpookyCaveEmpty
 51Elk
 58Elk
-1092
+1102
 380false
 36Char_RannnullC1_SecretCave_Axe_7
 36Char_RannnullC1_SecretCave_Axe_8
@@ -47,8 +47,8 @@
 36nullnullC1_SecretCave_Axe_10
 36Char_RannnullC1_SecretCave_Axe_11
 36Char_RannnullC1_SecretCave_Axe_12
-107C1_SecretElk=2
-105ACHIEVEMENT_C1_SECRETELK
+108C1_SecretElk=2
+106ACHIEVEMENT_C1_SECRETELK
 4351
 4352
 100false

@@ -18,7 +18,7 @@ showDialogWindow(false)
 
 removeAllCharacters()
 
-setBackground(Common/Courtroom)
+:setBackgroundWithLoading(Common/Courtroom;false)
 
 addCharacter(Judge;false;JudgeSpot)
 addCharacter(Robert;false;ProsecutorSpot)

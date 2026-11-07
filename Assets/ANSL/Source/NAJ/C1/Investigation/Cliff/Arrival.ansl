@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/Cliff;true)
+:setBackgroundWithLoading(C1/Cliff;true)
 setSkybox(Day)
 playAmbient(Wind)
 

@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/SecretCave;true)
+:setBackgroundWithLoading(C1/SecretCave;true)
 setSkybox(Day)
 setAmbientIntensity(0.5)
 

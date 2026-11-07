@@ -1,7 +1,7 @@
 clearStack()
 setFg(1)
 
-setBackground(C1/Waterfall;true)
+:setBackgroundWithLoading(C1/Waterfall;true)
 setSkybox(Day)
 playAmbient(Waterfall)
 
