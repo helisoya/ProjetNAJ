@@ -73,13 +73,16 @@ choice(Arc)
 		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Sheriff_2)
 		
 		:setCourtroomCamToJudge()
+		:setRannStress(Coat)
+		:setRannEyeOops(Coat)
 		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_3)
 		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_4)
 		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_5)
-		dialog(Char_Judge;Judge;C1_Trial_Question1_Sheriff_6)
 
-		:setRannStress(Coat)
-		:setRannEyeOops(Coat)
+		:setCourtroomCamToDefenseImmediate()
+		dialog(Char_Rann;RannCoat;C1_Trial_Question1_Sheriff_6)
+
+
 		:setCourtroomCamToProsecutorImmediate()
 		dialog(Char_Robert;Robert;C1_Trial_Question1_Sheriff_7)
 

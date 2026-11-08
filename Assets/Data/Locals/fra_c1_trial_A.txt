@@ -40,7 +40,7 @@ C1_Trial_A_31 = Quelle tragédie...
 C1_Trial_A_32 = Mais qu’en est-il de la victime ? De qui s’agit-il ?
 C1_Trial_A_33 = La victime est le capitaine Sartt. Il était le propriétaire du navire, nouvellement épave, baptisé le « Magnificent ».
 C1_Trial_A_34 = D’après notre rapport, c’était un capitaine Kalien très connu, qui transportait des marchandises dans la mer de l'Est.
-C1_Trial_A_35 = Il est également précisé qu’il connaissait personnellement Monsieur Landry.
+C1_Trial_A_35 = Il est également précisé qu’il connaissait personnellement Monsieur <color=red>Landry</color>.
 C1_Trial_A_36 = Landry ? Ah, je comprends mieux pourquoi vous teniez à régler cette affaire au plus vite.
 C1_Trial_A_37 = En effet. Eh bien…
 C1_Trial_A_38 = La victime a été poignardée à mort. Un seul coup en plein cœur.
@@ -68,7 +68,7 @@ C1_Trial_A_59 = Dans ce cas, comment savez-vous qu’elle l'a tué, si la hache 
 C1_Trial_A_60 = En réalité, nous savions déjà que le capitaine était mort, bien avant notre arrivée sur les lieux du crime.
 C1_Trial_A_61 = Mais comment ?
 C1_Trial_A_62 = J’y venais.
-C1_Trial_A_63 = Alors que nous approchions de l’épave, une Taliak est arrivée en courant.
+C1_Trial_A_63 = Alors que nous approchions de l’épave, une <color=red>Taliak</color> est arrivée en courant.
 C1_Trial_A_64 = C’est elle qui nous a appris la mort du capitaine. Elle a même vu la meurtrière à l’œuvre.
 C1_Trial_A_65 = Il y a un témoin oculaire ?!
 C1_Trial_A_66 = Très bien, shérif. Écoutons ce qu’elle a à dire.
@@ -81,7 +81,7 @@ C1_Trial_A_72 = J’ai vu quelqu’un tuer cet homme, alors j’ai couru cherche
 C1_Trial_A_73 = Je vois.
 C1_Trial_A_74 = Un geste tout à fait honorable.
 C1_Trial_A_75 = Dites-moi, quel est votre nom ?
-C1_Trial_A_76 = Je veillerai à ce que votre famille Taliak soit récompensée pour l’aide que vous avez apportée à Nova Kalia.
+C1_Trial_A_76 = Je veillerai à ce que votre famille Taliak soit récompensée pour l’aide que vous avez apportée à <color=red>Nova Kalia</color>.
 C1_Trial_A_77 = La récompense dépendra des ressources du ministère, mais je pense que nous pouvons trouver quelques pièces.
 C1_Trial_A_78 = Ah, euh, merci ! Je m’appelle Juno Dr’hma.
 C1_Trial_A_79 = … Très bien. Raconte-nous maintenant ce que tu as vu hier.
@@ -234,7 +234,7 @@ C1_Trial_B_39 = Je… Je peux essayer.
 C1_Trial_Testimony2_Start_1 = <color=green>Le tueur</color>
 C1_Trial_Testimony2_Start_2 = J’étais assez loin et n’ai pas pu voir grand-chose.
 C1_Trial_Testimony2_Start_3 = Je ne voyais que le dos du tueur, et pas son visage.
-C1_Trial_Testimony2_Start_4 = Mais je sais qu'il portait un manteau.
+C1_Trial_Testimony2_Start_4 = Mais je sais qu'il portait un uniforme.
 C1_Trial_Testimony2_Start_5 = J'ai appris après les faits que c'était l'uniforme de l'équipage.
 C1_Trial_Testimony2_Start_6 = Hmm… Pas-grand-chose…
 C1_Trial_Testimony2_Start_7 = Eh bien… Qu’en pensez-vous, shérif ?
@@ -250,8 +250,8 @@ C1_Trial_Testimony2_Start_15 = <color=#72B6E8>Ils finiront par me déclarer coup
 C1_Trial_Testimony2_Testimony_0 = <color=red>Le tueur</color>
 C1_Trial_Testimony2_Testimony_1 = <color=green>J’étais assez loin et n’ai pas pu voir grand-chose.</color>
 C1_Trial_Testimony2_Testimony_2 = <color=green>Je ne voyais que le dos du tueur, et pas son visage.</color>
-C1_Trial_Testimony2_Testimony_3 = <color=green>Mais je sais qu'il portait un manteau.</color>
-C1_Trial_Testimony2_Testimony_4 = <color=green>Le manteau était taché de sang et semblait brûlé par endroits.</color>
+C1_Trial_Testimony2_Testimony_3 = <color=green>Mais je sais qu'il portait un uniforme.</color>
+C1_Trial_Testimony2_Testimony_4 = <color=green>L'uniforme était taché de sang et semblait brûlé par endroits.</color>
 C1_Trial_Testimony2_Testimony_5 = <color=green>J'ai appris après les faits que c'était l'uniforme de l'équipage.</color>
 
 C1_Trial_Testimony2_Press1_1 = De quelle distance parle-t-on, au juste ?
@@ -267,14 +267,14 @@ C1_Trial_Testimony2_Press2_4 = J’étais trop loin pour le distinguer.
 C1_Trial_Testimony2_Press2_5 = Et puis le soleil me gênait un peu.
 C1_Trial_Testimony2_Press2_6 = <color=#72B6E8>Hmm… En d’autres termes, elle aurait pu voir n’importe qui.</color>
 
-C1_Trial_Testimony2_Press3_1 = Un manteau ?
-C1_Trial_Testimony2_Press3_2 = Oui, comme celui que portent les soldats.
+C1_Trial_Testimony2_Press3_1 = Un uniforme ?
+C1_Trial_Testimony2_Press3_2 = Oui, un peu comme celui que portent les soldats.
 C1_Trial_Testimony2_Press3_3 = Mais, il était d’une couleur plus vive que le leur.
 C1_Trial_Testimony2_Press3_4 = <color=#72B6E8>C’est l’uniforme de l’équipage. Tout le monde en portait un, moi y compris.</color>
 C1_Trial_Testimony2_Press3_5 = <color=#72B6E8>En vérité, c’est utile…</color>
-C1_Trial_Testimony2_Press3_6 = Y avait-il quelque chose de particulier avec ce manteau ?
+C1_Trial_Testimony2_Press3_6 = Y avait-il quelque chose de particulier avec cet uniforme ?
 C1_Trial_Testimony2_Press3_7 = Hmm…
-C1_Trial_Testimony2_Press3_8 = Ah, au moment de la mort du capitaine, j’ai vu des éclaboussures de sang sur le manteau.
+C1_Trial_Testimony2_Press3_8 = Ah, au moment de la mort du capitaine, j’ai vu des éclaboussures de sang sur l'uniforme.
 C1_Trial_Testimony2_Press3_9 = Très bien. Autre chose ?
 C1_Trial_Testimony2_Press3_10 = … Maintenant que j’y pense, il avait des taches étranges par endroits.
 C1_Trial_Testimony2_Press3_11 = Ça ressemblait à des traces de brûlure, en y réfléchissant bien.
@@ -282,7 +282,7 @@ C1_Trial_Testimony2_Press3_12 = Hmm… Peut-être dues à l’explosion ?
 C1_Trial_Testimony2_Press3_13 = C’est un élément important. Veuillez l’ajouter au témoignage.
 
 C1_Trial_Testimony2_Press4_1 = Es-tu certaine de ce que tu as vu ?
-C1_Trial_Testimony2_Press4_2 = Oui, j'en suis sûr. J’ai vu des éclaboussures de sang sur le manteau.
+C1_Trial_Testimony2_Press4_2 = Oui, j'en suis sûr. J’ai vu des éclaboussures de sang sur l'uniforme.
 C1_Trial_Testimony2_Press4_3 = Quant aux taches étranges, j’imagine que la personne se trouvait près de l’explosion ?
 C1_Trial_Testimony2_Press4_4 = C’est possible.
 C1_Trial_Testimony2_Press4_5 = Je vois…
@@ -290,18 +290,18 @@ C1_Trial_Testimony2_Press4_6 = On peut continuer.
 
 C1_Trial_Testimony2_Press5_1 = Le capitaine en portait-il un au moment où tu l’as vu mourir ?
 C1_Trial_Testimony2_Press5_2 = Oui.
-C1_Trial_Testimony2_Press5_3 = Il est mort avec son manteau sur le dos. 
-C1_Trial_Testimony2_Press5_4 = <color=#72B6E8>Eh bien, le coupable n’a pas volé le manteau du capitaine…</color>
-C1_Trial_Testimony2_Press5_5 = <color=#72B6E8>Cela veut dire que le manteau que portait le meurtrier était le sien.</color>
+C1_Trial_Testimony2_Press5_3 = Il est mort en portant son uniforme. 
+C1_Trial_Testimony2_Press5_4 = <color=#72B6E8>Donc, le coupable n’a pas volé l'uniforme du capitaine…</color>
+C1_Trial_Testimony2_Press5_5 = <color=#72B6E8>Ca veut dire que l'uniforme que portait le meurtrier était le sien.</color>
 
 C1_Trial_Testimony2_Loop_1 = <color=#72B6E8>Pas-grand-chose à se mettre sous la dent, cette fois-ci…</color>
 C1_Trial_Testimony2_Loop_2 = <color=#72B6E8>Il faut pourtant que je trouve quelque chose. Je n’ai pas d'autre solution.</color>
 
 C1_Trial_C_1 = Je le répète : il m’est impossible d’être le meurtrier.
 C1_Trial_C_2 = Et puis quoi encore ?
-C1_Trial_C_3 = Le manteau du meurtrier était ensanglanté et brûlé, pas vrai ?
+C1_Trial_C_3 = L'uniforme du meurtrier était ensanglanté et brûlé, pas vrai ?
 C1_Trial_C_4 = Oui, c’est ce que notre ami vient de nous dire.
-C1_Trial_C_5 = Eh bien, regardez encore une fois mon manteau.
+C1_Trial_C_5 = Eh bien, regardez encore une fois mon uniforme.
 C1_Trial_C_6 = Voyons voir…
 C1_Trial_C_7 = Il est… Tout humide et en lambeaux.
 C1_Trial_C_8 = Comment l'avez-vous mis dans cet état ?
@@ -311,7 +311,7 @@ C1_Trial_C_11 = …
 C1_Trial_C_12 = Attendez. Où est le sang ? Et les traces de brûlures ?
 C1_Trial_C_13 = Elles sont absentes parce que ce n’est pas moi que Juno a vu.
 C1_Trial_C_14 = Lors du naufrage, j’ai été frappé par des vagues violentes.
-C1_Trial_C_15 = J’ai ensuite été projeté par-dessus bord, et mon manteau s’est déchiré durant ma chute.
+C1_Trial_C_15 = J’ai ensuite été projeté par-dessus bord, et mon uniforme s’est déchiré durant ma chute.
 C1_Trial_C_16 = En somme, cela prouve que je n’ai pas tué le capitaine !
 C1_Trial_C_17 = Ç-ça se tient.
 C1_Trial_C_18 = Encore une fois, qui peut confirmer ça ?
@@ -320,7 +320,7 @@ C1_Trial_C_20 = Laisse-moi te donner ma petite théorie.
 C1_Trial_C_21 = Tu as survécu au naufrage et, pour une raison ou une autre, tu as tué le capitaine.
 C1_Trial_C_22 = Mlle Dr’hma t'as aperçu et a poussé un cri.
 C1_Trial_C_23 = Prise de panique, tu as pris la fuite.
-C1_Trial_C_24 = Ensuite, tu as jeté ton manteau à la mer pour t'en débarrasser.
+C1_Trial_C_24 = Ensuite, tu as jeté ton uniforme à la mer pour t'en débarrasser.
 C1_Trial_C_25 = Cependant, tu es tombé et cela a résulté en ta blessure.
 C1_Trial_C_26 = Après quoi, tu es revenu en titubant vers l’épave, où je t'ai arrêté.
 C1_Trial_C_27 = C’est faux !
@@ -352,9 +352,9 @@ C1_Trial_C_52 = Oui ?
 C1_Trial_C_53 = Vérifions votre théorie.
 C1_Trial_C_54 = Admettons que vous disiez la vérité et que Mlle Dr’hma ne vous a pas vue.
 C1_Trial_C_55 = Dites-moi : qui a tué le capitaine ?
-C1_Trial_C_56 = <color=#72B6E8>Voilà une bonne question.</color>
-C1_Trial_C_57 = <color=#72B6E8>Qui a fait ça, au juste ? Et pourquoi ?</color>
-C1_Trial_C_58 = <color=#72B6E8>Ce n’est pas moi, mais alors…</color>
+C1_Trial_C_57 = <color=#72B6E8>Qui en effet…</color>
+C1_Trial_C_58 = <color=#72B6E8>Juno a dit que c'était quelqu'un avec un uniforme.</color>
+C1_Trial_C_58 = <color=#72B6E8>Quelqu'un avec un uniforme et qui connaissait le capitaine…</color>
 C1_Trial_C_59 = J’attends votre réponse…
 C1_Trial_C_60 = Qui a tué le capitaine ?
 
@@ -379,11 +379,11 @@ C1_Trial_Question1_Juno_12 = Vous devriez avoir honte !
 C1_Trial_Question1_Juno_13 = Désolée…
 
 C1_Trial_Question1_Sheriff_1 = C’est forcément le shérif !
-C1_Trial_Question1_Sheriff_2 = Je veux dire, il passe son temps à prétendre que c’est moi la coupable.
+C1_Trial_Question1_Sheriff_2 = Je veux dire, il porte un uniforme. Juno aurait pu le voir.
 C1_Trial_Question1_Sheriff_3 = Mlle Retyr… Je sais que notre shérif est parfois un peu… Virulent.
 C1_Trial_Question1_Sheriff_4 = Mais ce n’est pas un meurtrier, croyez-moi.
-C1_Trial_Question1_Sheriff_5 = Quant à son insistance, n’oubliez pas qu’il représente l’accusation ici.
-C1_Trial_Question1_Sheriff_6 = Son rôle <i>est</i> d’obtenir une condamnation. 
+C1_Trial_Question1_Sheriff_5 = Et puis, la témoin ne nous a-t-elle pas dit que l'uniforme était différent de celui de la police ?
+C1_Trial_Question1_Sheriff_6 = Oh.
 C1_Trial_Question1_Sheriff_7 = Ne t'en fais pas, la navigatrice. Je ne le prends pas mal.
 C1_Trial_Question1_Sheriff_8 = Euh…
 
@@ -474,10 +474,10 @@ C1_Trial1_D_67 = Nous sommes actuellement au palais de justice de la ville de Su
 C1_Trial1_D_68 = Suorius. Comme… Suori ?
 C1_Trial1_D_69 = Hmm… Oui. Je crois que les Surii se désignent ainsi.
 C1_Trial1_D_70 = <color=#72B6E8>C’est ici que les précédentes expéditions ont fini ?</color>
-C1_Trial1_D_71 = <color=#72B6E8>Est-ce pour cela que le juge a fait référence à "Nova Kalia" ?</color>
+C1_Trial1_D_71 = <color=#72B6E8>Est-ce pour ça que le juge a fait référence à <color=red>"Nova Kalia"</color> ?</color>
 C1_Trial1_D_72 = <color=#72B6E8>J’ai tellement de questions…</color>
 C1_Trial1_D_73 = Et toi… Tu ne ressembles pas aux autres. Es-tu une Suori ?
-C1_Trial1_D_74 = Oh, non. Je viens du… Clan… Taliakii. Nous vivions ici bien avant l’arrivée des Surii…
+C1_Trial1_D_74 = Oh, non. Je viens du… Clan… <color=red>Taliakii</color>. Nous vivions ici bien avant l’arrivée des Surii…
 C1_Trial1_D_75 = Dehors.
 C1_Trial1_D_76 = Hein ?
 C1_Trial1_D_77 = <color=#72B6E8>Le shérif, qui a fait irruption dans la pièce, entraîne maintenant Juno vers la sortie.</color>

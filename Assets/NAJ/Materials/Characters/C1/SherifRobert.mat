@@ -155,5 +155,6 @@ Material:
     - _HighlightColor: {r: 0.5468467, g: 1.277957, b: 1.432501, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _VertexColorDivider: {r: 1, g: 0.75, b: 3, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

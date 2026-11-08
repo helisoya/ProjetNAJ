@@ -123,14 +123,15 @@ wait(2)
 dialog(null;null;C1_Intro_A_45)
 dialog(null;null;C1_Intro_A_46)
 dialog(null;null;C1_Intro_A_47)
+
+fadeBg(0;false)
+
 dialog(null;null;C1_Intro_A_48)
 
 setCameraPosition(-80.2;1;-37.6)
 setCameraRotation(0;-133;0)
 
 addCharacter(GeraldCoat;false;PensiveSpot)
-
-fadeBg(0;false)
 
 # Starteled by Gerald
 dialog(Char_Unknown;null;C1_Intro_A_49)

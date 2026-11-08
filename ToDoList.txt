@@ -148,21 +148,19 @@ Retours Playtests 2 :
 	- Bug Succès lié à Juno, on peut l'avoir sans se tromper à la Q1                  Normalement Fix, a retester
 	- Hitbox à revoir mode intéraction                                                V
 	- Compliqué de naviguer et savoir avec quoi on intéragit                          A retester
-	- Retours Madeleine :
-		- Comment Juno est arrivée là ? La zone était pas baricadée ?
-		- Revoir Gerald qui dit mal notre nom
-		- Clareté noms propres / Lieux / ... -> Codex ?
-		- De manière générale peut être trop de noms inconnu
+	- Retours Madeleine :                                                             -
+		- Comment Juno est arrivée là ? La zone était pas baricadée ?                 Pas important ?
+		- Revoir Gerald qui dit mal notre nom                                         Pas important ?
+		- Clareté noms propres / Lieux / ... -> Codex ?                               Mettre en rouge
 		- Scroll molette / Clavier trop lent                                          V
-		- Cut dans l'intro de gerald trop rapide ? (couleur de box différente)
+		- Cut dans l'intro de gerald trop rapide ? (couleur de box différente)        "Fixé"
 		- Fix Shader Pixelate                                                         V
-		- Le truc qui cloche de Gerald pas trouvé, probablement le sera jamais
-		- Revoir un truc avec la question 1 (parler du coat)
-		- Revoir timeline (inconscience de Gerald)
+		- Le truc qui cloche de Gerald pas forcément évident
+		- Revoir la question 1 (parler du coat)                                       V
+		- Revoir timeline (inconscience de Gerald)                                    V
 		- Ajouter un type étrange qui pourrait être le pseudo-coupable
-		- Revoir remarque de fin (retirer ?)
 		- Pause menu -> pas de back / ouverture rapide ?
-		- Icone temps de chargement
+		- Icone temps de chargement                                                   V
 		
 
 Musiques :

@@ -1,4 +1,4 @@
-#37146517F3425DC693E2BB4305510691-8956126B45292CBB910B7AE6D1BF3C1C
+#FD8C7D9F3CDF0F7F6051864D12EA205F-8956126B45292CBB910B7AE6D1BF3C1C
 66JudgeCam
 67JudgeCam
 69RannCoatNormal0.1
@@ -11,7 +11,7 @@
 36Char_JudgeJudgeC1_Trial_C_59
 36Char_JudgeJudgeC1_Trial_C_60
 380.75false
-282Choice_Question1_Juno13nullC1_Choice_JunoC1_ChoiceChoice_Question1_Sheriff69nullC1_Choice_RobertC1_ChoiceChoice_Question1_Suicide91nullC1_Choice_SuicideC1_ChoiceChoice_Question1_Sailor112nullC1_Choice_SailorC1_ChoiceChoice_Question1_Animal115nullC1_Choice_AnimalC1_Choice
+282Choice_Question1_Juno13nullC1_Choice_JunoC1_ChoiceChoice_Question1_Sheriff69nullC1_Choice_RobertC1_ChoiceChoice_Question1_Suicide93nullC1_Choice_SuicideC1_ChoiceChoice_Question1_Sailor114nullC1_Choice_SailorC1_ChoiceChoice_Question1_Animal117nullC1_Choice_AnimalC1_Choice
 380false
 66DefenseCam
 67DefenseCam
@@ -67,7 +67,7 @@
 4368
 45Question1
 4368
-43142
+43144
 380false
 66DefenseCam
 67DefenseCam
@@ -75,13 +75,15 @@
 36Char_RannRannCoatC1_Trial_Question1_Sheriff_2
 66JudgeCam
 67JudgeCam
-36Char_JudgeJudgeC1_Trial_Question1_Sheriff_3
-36Char_JudgeJudgeC1_Trial_Question1_Sheriff_4
-36Char_JudgeJudgeC1_Trial_Question1_Sheriff_5
-36Char_JudgeJudgeC1_Trial_Question1_Sheriff_6
 69RannCoatStress0.1
 71RannCoatNormal
 75RannCoatOops
+36Char_JudgeJudgeC1_Trial_Question1_Sheriff_3
+36Char_JudgeJudgeC1_Trial_Question1_Sheriff_4
+36Char_JudgeJudgeC1_Trial_Question1_Sheriff_5
+66DefenseCam
+67DefenseCam
+36Char_RannRannCoatC1_Trial_Question1_Sheriff_6
 67ProsecutionCam
 66ProsecutionCam
 36Char_RobertRobertC1_Trial_Question1_Sheriff_7
@@ -89,7 +91,7 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Question1_Sheriff_8
 45Question1
-43142
+43144
 380false
 66DefenseCam
 67DefenseCam
@@ -110,10 +112,10 @@
 67JudgeCam
 36Char_JudgeJudgeC1_Trial_Question1_Suicide_5
 45Question1
-43142
+43144
 380false
 45Intermission
-43142
+43144
 380false
 66DefenseCam
 67DefenseCam
@@ -140,4 +142,4 @@
 66ProsecutionCam
 36Char_RobertRobertC1_Trial_Question1_Animal_9
 45Question1
-43142
+43144
