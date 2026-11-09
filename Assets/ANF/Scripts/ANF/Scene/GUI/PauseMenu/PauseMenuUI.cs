@@ -162,9 +162,9 @@ namespace ANF.GUI
                 if (audioManager != null)
                 {
                     if (isEnabled)
-                        audioManager.PlayUICursorCancelSFX();
+                        audioManager.PlaySFX("CursorUnPause", 1.0f);
                     else
-                        audioManager.PlaySFX("CursorMenu", 1.0f);
+                        audioManager.PlaySFX("CursorPause", 1.0f);
                 }
                 SetEnabled(!isEnabled);
             }

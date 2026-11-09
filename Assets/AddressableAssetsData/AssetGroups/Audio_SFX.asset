@@ -15,8 +15,8 @@ MonoBehaviour:
   m_GroupName: Audio_SFX
   m_GUID: 2c4874bcbd8c5134ba11cb9864c7eb9b
   m_SerializeEntries:
-  - m_GUID: 16cde19c88530c74da44617d4c6ced19
-    m_Address: Audio/SFX/CursorMenu
+  - m_GUID: 02a130cc9ab79d147bcf7b90471d599d
+    m_Address: Audio/SFX/CursorUnPause
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -41,11 +41,25 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 369cc8fac6ce3894e804b8e00da8ad63
+    m_Address: Audio/SFX/TextBlipAlt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    - Common_SFX
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 49065c399266fa04ca4a623484090698
     m_Address: Audio/SFX/Owl
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52629afbd21d19c41941dcd468a0fd22
+    m_Address: Audio/SFX/CursorPause
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    - Common_SFX
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5c0b25f63e817b9469c59720bad5bfb8
     m_Address: Audio/SFX/Rebuttal

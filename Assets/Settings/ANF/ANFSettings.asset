@@ -140,7 +140,7 @@ MonoBehaviour:
         ambientVolume: -10
         voiceVolume: 0
         musicVolume: -20
-        textblip: TextBlip
+        textblip: TextBlipAlt
         bundlesToPreload:
         - Common_SFX
         pathToAudioResources: Audio/
