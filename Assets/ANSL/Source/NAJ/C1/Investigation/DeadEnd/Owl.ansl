@@ -19,6 +19,7 @@ case 1:
 	playSFX(BirdFly)
 	setCharacterBody(Owl;FlyOffScreen)
 	wait(2)
+	playAmbient(Forest)
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_4)
 	dialog(Char_Rann;null;C1_DeadEnd_Owl_After_5)
 

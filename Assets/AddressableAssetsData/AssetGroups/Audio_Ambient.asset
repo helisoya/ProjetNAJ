@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0704530256cbd3e4e92a2722d1228453
+    m_Address: Audio/Ambient/ForestRiverRight
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 15a7252c38070474bbdcced0955f2b23
     m_Address: Audio/Ambient/SpookyCaveEmpty
     m_ReadOnly: 0
@@ -47,6 +53,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 51e4d812a14968c4995626888788a5a9
     m_Address: Audio/Ambient/Waterfall
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a777b0e8400621447937019152f6cf9e
+    m_Address: Audio/Ambient/ForestOwl
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
