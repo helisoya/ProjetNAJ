@@ -282,10 +282,10 @@ screenshake(0.5;0.5)
 
 # Transition to Investigation
 setFg(1)
-playSFX(ShipCrash)
+playSFX(ShipDamage)
 playAmbient(null)
 
 setFogEnabled(false)
 
-wait(10)
+wait(7)
 load(../Investigation/Cliff/Start)
