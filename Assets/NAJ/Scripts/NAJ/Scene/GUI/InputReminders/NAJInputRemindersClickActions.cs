@@ -19,7 +19,17 @@ namespace NAJ.GUI
                 return;
 
             if (manager.GetGUIManager().GetComponent(out InventoryUI inventory))
+            {
                 inventory.TrySetEnabled(!inventory.isEnabled);
+
+                if (PersistentDataManager.instance.GetGlobalData().GetComponent(out AudioManager audioManager))
+                {
+                    if (inventory.isEnabled)
+                        audioManager.PlaySFX("CursorUnPause", 1.0f);
+                    else
+                        audioManager.PlaySFX("CursorPause", 1.0f);
+                }
+            }
         }
 
         public override void OnUp(ANFManager manager)

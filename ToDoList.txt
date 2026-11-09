@@ -69,17 +69,17 @@ To Release
 	- Tous (au niveau des trous)                                                      Ok?
 - Revoir décors                                                                       -
 	- Courthouse (fenetre)                                                            V
-	- Intro (bateau, rue principale de Kalia)
+	- Intro (bateau, rue principale de Kalia)                                         Ok?
 	- Buissons?                                                                       Rend Pas bien
 - Revoir menus                                                                        -
 	- Menu quêtes / logs ? (Les virer / Au moins les expliquer)                       Retiré
 	- Switch Souris / Clavier marche pas bien des fois (Settings)                     Fixé?
 - Inté son                                                                            -
-	- SFX                                                                             Marvin
-	- Ambient                                                                         Marvin
-	- BGM                                                                             A Tester
-	- Son menus                                                                       Marvin et faire attention aux playoneshots trop nombreux
-	- Mixage
+	- SFX                                                                             V
+	- Ambient                                                                         V
+	- BGM                                                                             V
+	- Son menus                                                                       V
+	- Mixage                                                                          A revoir
 - Inté steam                                                                          -
 	- Steam Cloud                                                                     Ok?
 	- Succès                                                                          Ajouter plus ? (sinon OK)

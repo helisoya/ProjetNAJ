@@ -541,9 +541,9 @@ namespace NAJ.GUI
                     return;
 
                 if (audioManager != null && isEnabled)
-                    audioManager.PlayUICursorCancelSFX();
+                    audioManager.PlaySFX("CursorUnPause", 1.0f);
                 if (audioManager != null && !isEnabled)
-                    audioManager.PlayUICursorConfirmSFX();
+                    audioManager.PlaySFX("CursorPause", 1.0f);
 
                 TrySetEnabled(!isEnabled);
             }
@@ -554,7 +554,7 @@ namespace NAJ.GUI
             if (isEnabled && !isPaused && context.ReadValueAsButton())
             {
                 if (audioManager != null && !inCheckMode)
-                    audioManager.PlayUICursorCancelSFX();
+                    audioManager.PlaySFX("CursorUnPause", 1.0f);
 
                 TrySetEnabled(false);
             }
