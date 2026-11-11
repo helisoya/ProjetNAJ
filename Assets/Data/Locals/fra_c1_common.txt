@@ -17,7 +17,7 @@ Char_Unknown = ???
 # ---------------------------------------------------------
 
 Evidence_C1_Herbarium_Name = Herbier
-Evidence_C1_Herbarium_Desc = Le résultat de mon hobby. J'ai écrit "Ronne" avec une faute d'orthographe sur la couverture.
+Evidence_C1_Herbarium_Desc = Le résultat de mon hobby. J'ai écrit "Ronne" avec une faute d'orthographe sur la couverture. C'est une faute d'orthographe très rare.
 
 Evidence_C1_Coat_Name = Uniforme
 Evidence_C1_Coat_Desc = Mon uniforme. Il est déchiré et trempé à cause du naufrage.
@@ -57,6 +57,9 @@ Profile_C1_Sherif_Desc = Apparemment, il est le plus haut gradé dans la police.
 
 Profile_C1_Juno_Name = Juno Dr'hma
 Profile_C1_Juno_Desc = La témoin de cette affaire. Elle a vu le capitaine mourir.
+
+Profile_C1_Herri_Name = Herri
+Profile_C1_Herri_Desc = Le cuisinier du "Magnifique". Il en était le précédent capitaine et déteste Sartt. Je ne l'ai pas encore rencontré.
 
 
 # ---------------------------------------------------------

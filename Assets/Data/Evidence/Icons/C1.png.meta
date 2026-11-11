@@ -404,7 +404,7 @@ TextureImporter:
         width: 510
         height: 510
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -413,6 +413,28 @@ TextureImporter:
       bones: []
       spriteID: 1c139df364b6ef14996f564d38db90f7
       internalID: -1976753379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profile_C1_Herri
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1
+        width: 510
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c6cffed505e6944a242e972d78d03a
+      internalID: 767760488
       vertices: []
       indices: 
       edges: []
@@ -443,6 +465,7 @@ TextureImporter:
       Evidence_C1_Injury: -1658799978
       Evidence_C1_Knife: 1762592065
       Profile_C1_Gerald: 1666420639
+      Profile_C1_Herri: 767760488
       Profile_C1_Judge: 2002876875
       Profile_C1_Juno: -1081731675
       Profile_C1_Rann: -1293167926

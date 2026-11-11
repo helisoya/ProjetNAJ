@@ -422,9 +422,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 159
+        y: 157
         width: 36
-        height: 9
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,9 +444,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 159
+        y: 157
         width: 36
-        height: 9
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,9 +466,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 74
-        y: 159
+        y: 157
         width: 36
-        height: 9
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,9 +488,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 149
+        y: 145
         width: 36
-        height: 9
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,9 +510,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 149
+        y: 145
         width: 36
-        height: 9
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -532,9 +532,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 74
-        y: 149
+        y: 145
         width: 36
-        height: 9
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -545,6 +545,72 @@ TextureImporter:
       bones: []
       spriteID: b93af9335ac1da94db9d13f9355ae36e
       internalID: -500260080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SherifRobert_Mouth_Happy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a7545cf7bccb64583ad32385656753
+      internalID: 1591430815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SherifRobert_Mouth_Happy_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 132
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76c94a6d1afff0429b71d5dc52d4345
+      internalID: 1935782293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SherifRobert_Mouth_Happy_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 132
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5804e5c789ca5479e3661b881e0dae
+      internalID: 229812354
       vertices: []
       indices: 
       edges: []
@@ -578,6 +644,9 @@ TextureImporter:
       SherifRobert_Mouth_Angry_0: -1173536374
       SherifRobert_Mouth_Angry_1: 1707723791
       SherifRobert_Mouth_Angry_2: -500260080
+      SherifRobert_Mouth_Happy_0: 1591430815
+      SherifRobert_Mouth_Happy_1: 1935782293
+      SherifRobert_Mouth_Happy_2: 229812354
       SherifRobert_Mouth_Normal_0: 310274979
       SherifRobert_Mouth_Normal_1: 1295754772
       SherifRobert_Mouth_Normal_2: -1502566396

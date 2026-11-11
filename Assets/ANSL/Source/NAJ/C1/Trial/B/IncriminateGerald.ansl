@@ -174,7 +174,10 @@ case Profile/C1_Juno:
 		:setCourtroomCamToDefenseImmediate()
 		dialog(Char_Rann;RannCoat;C1_Trial1_I_Juno_20)
 
-		unlockAchievement(ACHIEVEMENT_C1_JUNO)
+		if(C1_AttackedJunoAlt == 1)
+			# You also need to incriminate at Herri's Check to get the achievement
+			unlockAchievement(ACHIEVEMENT_C1_JUNO)
+		endif
 
 		fadeFg(1;true)
 		wait(2)

@@ -71,12 +71,12 @@ C1_Intro_A_62 = J'ai été engagée en tant que botaniste.
 C1_Intro_A_63 = Ah, c'était toi…
 C1_Intro_A_64 = Je suis tombé sur ton herbier en montant les affaires.
 C1_Intro_A_65 = Ton nom, <color=red>"Ronne"</color>, était écrit dessus. Je me demandais qui était le malchanceux.
-C1_Intro_A_66 = <color=#72B6E8>C’est <color=red>"Rann"</color>, pas "Ronne"…</color>
+C1_Intro_A_66 = C’est <color=red>"Rann"</color>, pas "Ronne"…
 C1_Intro_A_67 = <color=#72B6E8>Je l’ai commencé quand j’avais six ans. Je ne savais même pas écrire mon propre nom.</color>
 C1_Intro_A_68 = <color=#72B6E8>Ça m’embarrasse un peu, mais bon, je ne peux pas corriger ça sans en refaire un nouveau…</color>
 C1_Intro_A_69 = <color=#72B6E8>Attends… Il a vu mon herbier ?!</color>
-C1_Intro_A_70 = H-Hein ?!
-C1_Intro_A_71 = Ah, euh… Sans vouloir t'offenser, bien sûr. 
+C1_Intro_A_70 = Attends, quoi ?!
+C1_Intro_A_71 = Ah, euh… Sans vouloir t'offenser, bien sûr, Ro- Rann.
 C1_Intro_A_72 = C'est juste que ton rôle ici sera limité.
 C1_Intro_A_73 = Il paraît que tu ne seras utile que si l'on finit par trouver terre ferme.
 C1_Intro_A_74 = Le capitaine parlait de trouver une source de nourriture fiable, il me semble.
@@ -233,8 +233,13 @@ C1_Intro_B_85 = Pire encore, ma famille pourrait finir dans la tourmente.
 C1_Intro_B_86 = … Je vois.
 C1_Intro_B_87 = Désolé d’avoir abordé le sujet.
 C1_Intro_B_88 = Pas de problème.
-C1_Intro_B_89 = C'est du passé maintenant.
-C1_Intro_B_90 = … Continuons de nous occuper de ces plantes, d’accord ?
+C1_Intro_B_89 = De toute façon, je ne suis pas le pire cas à bord.
+C1_Intro_B_89b = Prends <color=red>Herri</color> par exemple. C'est l'ancien propriétaire du bateau.
+C1_Intro_B_89c = Sartt lui a acheté le bateau, ainsi que son équipage, lorsque Herri était en faillite.
+C1_Intro_B_89d = Depuis, il force Herri à être le cuisinier du navire. Au moins, il a un travail…
+C1_Intro_B_89e = C'était l'ancien capitaine ? Ça explique pourquoi il est toujours énervé…
+C1_Intro_B_89f = Je te jure… Un de ces jours, il finira par tenter de s'en prendre au vieux loup.
+C1_Intro_B_90 = … Mais assez parlé de ça. Continuons à nous occuper de ces plantes, d'accord ?
 C1_Intro_B_91 = O-Oui !
 
 C1_Intro_B_92 = <color=green>Un mois plus tard.</color>

@@ -1,4 +1,4 @@
-#65714DE7CC5B3CA3B7A01F3A117D50B9-8956126B45292CBB910B7AE6D1BF3C1C
+#D8A7ECCCC8DE1AF754527F21CDA7363C-8956126B45292CBB910B7AE6D1BF3C1C
 29
 100false
 381true
@@ -208,20 +208,21 @@
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial1_I_1
 100false
-67WitnessCam0.25false
-66WitnessCam0.25true
-36Char_GeraldGeraldNoCoatC1_Trial1_I_2
-36Char_GeraldGeraldNoCoatC1_Trial1_I_3
+71RobertNormal
+75RobertNormal
+69RobertNormal0.1
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
+69GeraldNoCoatNormal0.1
+71GeraldNoCoatNormal
+75GeraldNoCoatSerious
+36Char_RobertRobertC1_Trial1_I_2
+36Char_RobertRobertC1_Trial1_I_3
 100false
 67DefenseCam0.25false
 66DefenseCam0.25true
 36Char_RannRannCoatC1_Trial1_I_4
 36Char_RannRannCoatC1_Trial1_I_5
-51Damage
-610.10.2
-71GeraldNoCoatSurprise
-75GeraldNoCoatSerious
-69GeraldNoCoatSurprise0.1
 67WitnessCam
 66WitnessCam
 36Char_GeraldGeraldNoCoatC1_Trial1_I_6
@@ -347,11 +348,12 @@
 66DefenseCam
 67DefenseCam
 36Char_RannRannCoatC1_Trial1_I_47
+36Char_RannRannCoatC1_Trial1_I_48
 71RobertThinking
 75RobertNormal
 67ProsecutionCam
 66ProsecutionCam
-36Char_RobertRobertC1_Trial1_I_48
+36Char_RobertRobertC1_Trial1_I_48b
 71RobertNormal
 75RobertNormal
 36Char_RobertRobertC1_Trial1_I_49

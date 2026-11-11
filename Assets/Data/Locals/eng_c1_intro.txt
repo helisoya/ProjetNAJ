@@ -71,12 +71,12 @@ C1_Intro_A_62 = I was hired as a botanist.
 C1_Intro_A_63 = Ah, it was you then…
 C1_Intro_A_64 = I stumbled upon your herbarium while loading our stuff.
 C1_Intro_A_65 = Your name, <color=red>“Ronne”</color>, was on it. I wondered who was the unlucky one.
-C1_Intro_A_66 = <color=#72B6E8>It’s <color=red>Rann</color>, not Ronne…</color>
+C1_Intro_A_66 = It’s <color=red>Rann</color>, not Ronne…
 C1_Intro_A_67 = <color=#72B6E8>I started it when I was six and couldn’t even write my own name.</color>
 C1_Intro_A_68 = <color=#72B6E8>I’m embarrassed about this, but sadly I can’t fix it without making a new one…</color>
 C1_Intro_A_69 = <color=#72B6E8>Wait… Hold on… He saw my book?!</color>
-C1_Intro_A_70 = H-Huh?!
-C1_Intro_A_71 = Ah, erm… No offense, of course.
+C1_Intro_A_70 = Wait, what?!
+C1_Intro_A_71 = Ah, erm… No offense, of course, Ro- Rann.
 C1_Intro_A_72 = It’s just that your role here will be quite limited.
 C1_Intro_A_73 = I heard you’ll only be of use if we ever find land.
 C1_Intro_A_74 = The Captain said something about finding a reliable source of food or whatnot.
@@ -233,8 +233,13 @@ C1_Intro_B_85 = Or worse, my siblings might get caught in the crossfire.
 C1_Intro_B_86 = … I see.
 C1_Intro_B_87 = Sorry for bringing that up.
 C1_Intro_B_88 = Don’t worry about it.
-C1_Intro_B_89 = That’s all in the past now.
-C1_Intro_B_90 = … Let’s continue tending to these plants, alright?
+C1_Intro_B_89 = I’m not even the worst case aboard this ship.
+C1_Intro_B_89b = Take <color=red>Herri</color> for instance. He was the previous owner of this ship.
+C1_Intro_B_89c = Sartt bought the ship and the crew along with it when Herri’s company went bankrupt.
+C1_Intro_B_89d = Since then, he forced Herri to be the ship’s cook. At least he has a job I guess…
+C1_Intro_B_89e = He was the previous owner? That actually explains why he’s always so grumpy…
+C1_Intro_B_89f = I swear, one of these days he’ll try to harm the old wolf…
+C1_Intro_B_90 = … But enough of that. Let’s continue tending to these plants, alright?
 C1_Intro_B_91 = R-Right!
 
 C1_Intro_B_92 = <color=green>One month later.</color>

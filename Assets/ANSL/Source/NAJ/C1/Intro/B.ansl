@@ -161,9 +161,19 @@ dialog(Rann;null;C1_Intro_B_86)
 dialog(Rann;null;C1_Intro_B_87)
 
 :setGeraldNormal(Coat)
-:setGeraldEyeNormal(Coat)
+:setGeraldEyeSerious(Coat)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_88)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_89)
+dialog(Char_Gerald;GeraldCoat;C1_Intro_B_89b)
+dialog(Char_Gerald;GeraldCoat;C1_Intro_B_89c)
+dialog(Char_Gerald;GeraldCoat;C1_Intro_B_89d)
+
+dialog(Rann;null;C1_Intro_B_89e)
+
+dialog(Char_Gerald;GeraldCoat;C1_Intro_B_89f)
+
+addProfile(C1_Herri)
+:setGeraldEyeNormal(Coat)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_90)
 
 dialog(Rann;null;C1_Intro_B_91)

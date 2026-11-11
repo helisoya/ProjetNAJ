@@ -48,6 +48,10 @@ Define setRobertAimingGun()
 setCharacterBody(Robert;AimingGun;0.1)
 EndDefine
 
+Define setRobertInspectGun()
+setCharacterBody(Robert;InspectGun)
+EndDefine
+
 Define setRobertEyeThinking()
 setCharacterEye(Robert;Thinking)
 setCharacterMouth(Robert;Normal)
@@ -56,6 +60,11 @@ EndDefine
 Define setRobertEyeNormal()
 setCharacterEye(Robert;Normal)
 setCharacterMouth(Robert;Normal)
+EndDefine
+
+Define setRobertEyeHappy()
+setCharacterEye(Robert;Normal)
+setCharacterMouth(Robert;Happy)
 EndDefine
 
 Define setRobertEyeSuspicious()

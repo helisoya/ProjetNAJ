@@ -1,4 +1,4 @@
-#E195B8D8FEBC08915F96A4EC64021DF9-8956126B45292CBB910B7AE6D1BF3C1C
+#D77EE4A7910D83D66996E6B2AEBDE0C9-8956126B45292CBB910B7AE6D1BF3C1C
 29
 183
 100false
@@ -380,7 +380,7 @@
 66DefenseCam0.25true
 36nullnullC1_Trial1_J_56
 36nullnullC1_Trial1_J_57
-280Choice_SomethingIsAmiss382nullnullnullChoice_Yes433nullnullnull
+280Choice_SomethingIsAmiss382nullnullnullChoice_Yes464nullnullnull
 36Char_RannRannCoatC1_Trial1_J_FullStory_1
 36Char_RannRannCoatC1_Trial1_J_FullStory_2
 100false
@@ -396,30 +396,61 @@
 67DefenseCam
 36nullnullC1_Trial1_J_FullStory_7
 36nullnullC1_Trial1_J_FullStory_8
-2Evidence432Evidence/C1_Knife398default421
-36Char_RannRannCoatC1_Trial1_J_FullStory_9
-36Char_RannRannCoatC1_Trial1_J_FullStory_10
+2Evidence463Evidence/C1_Knife398Evidence/C1_DeathMessage421default452
+36Char_RannRannCoatC1_Trial1_J_FullStory_Knife_1
+36Char_RannRannCoatC1_Trial1_J_FullStory_Knife_2
 100false
 67WitnessCam0.25false
 66WitnessCam0.25true
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_11
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_12
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_13
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_14
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_15
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_16
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_17
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_18
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Knife_3
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Knife_4
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Knife_5
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Knife_6
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Knife_7
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Knife_8
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Knife_9
 100false
 69RannCoatAngry0.1
 67DefenseCam0.25false
 66DefenseCam0.25true
-36Char_RannRannCoatC1_Trial1_J_FullStory_19
+36Char_RannRannCoatC1_Trial1_J_FullStory_Knife_10
+36Char_RannRannCoatC1_Trial1_J_FullStory_Knife_11
 100false
 67WitnessCam0.25false
 66WitnessCam0.25true
-36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_20
-43432
+36Char_GeraldnullC1_Trial1_J_FullStory_Knife_12
+43463
+36Char_RannRannCoatC1_Trial1_J_FullStory_Message_1
+36Char_RannRannCoatC1_Trial1_J_FullStory_Message_2
+100false
+67WitnessCam0.25false
+66WitnessCam0.25true
+36Char_GeraldnullC1_Trial1_J_FullStory_Message_3
+36Char_GeraldGeraldNoCoatC1_Trial1_J_FullStory_Message_4
+100false
+69RannCoatAngry0.1
+67DefenseCam0.25false
+66DefenseCam0.25true
+36Char_RannRannCoatC1_Trial1_J_FullStory_Message_5
+100false
+71RobertThinking
+75RobertNormal
+69RobertNormal0.1
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_J_FullStory_Message_6
+36Char_RobertRobertC1_Trial1_J_FullStory_Message_7
+100false
+67WitnessCam0.25false
+66WitnessCam0.25true
+36Char_GeraldnullC1_Trial1_J_FullStory_Message_8
+100false
+71RobertNormal
+75RobertNormal
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_J_FullStory_Message_9
+43463
 71GeraldNoCoatNormal
 75GeraldNoCoatNormal
 67WitnessCam
@@ -430,9 +461,9 @@
 66DefenseCam
 67DefenseCam
 36nullnullC1_Trial1_J_FullStory_Fail_4
-43432
-43434
-43434
+43463
+43465
+43465
 100false
 67WitnessCam
 66WitnessCam

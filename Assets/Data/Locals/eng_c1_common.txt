@@ -17,7 +17,7 @@ Char_Unknown = ???
 # ---------------------------------------------------------
 
 Evidence_C1_Herbarium_Name = Herbarium
-Evidence_C1_Herbarium_Desc = The result of my hobby. I miswrote my name as "Ronne" on the cover.
+Evidence_C1_Herbarium_Desc = The result of my hobby. I miswrote my name as "Ronne" on the cover. It is a very rare misspell.
 
 Evidence_C1_Coat_Name = Coat
 Evidence_C1_Coat_Desc = My coat. It is torn and wet from the crash.
@@ -57,6 +57,9 @@ Profile_C1_Sherif_Desc = Apparently, he's the top police officer around here. He
 
 Profile_C1_Juno_Name = Juno Dr'hma
 Profile_C1_Juno_Desc = The witness of this case. She saw Captain Sartt die.
+
+Profile_C1_Herri_Name = Herri
+Profile_C1_Herri_Desc = The cook of the "Magnificent". He was the previous owner of the ship and hates the Captain. I have yet to meet him.
 
 
 # ---------------------------------------------------------

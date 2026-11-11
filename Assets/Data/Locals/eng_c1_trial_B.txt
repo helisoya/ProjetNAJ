@@ -28,7 +28,7 @@ C1_Trial1_E_15 = First, we made a discovery outside the ship.
 C1_Trial1_E_16 = A message was located next to the captain’s body.
 C1_Trial1_E_17 = What’s more, it was written in the victim’s blood.
 C1_Trial1_E_18 = We made a drawing of it, for simplicity.
-C1_Trial1_E_19 = Weird… I don’t remember seeing it…
+C1_Trial1_E_19 = …
 C1_Trial1_E_20 = Let me see…
 C1_Trial1_E_21 = <color=red>Ronne</color>…?
 C1_Trial1_E_22 = I-Is this the defendant’s name?!
@@ -37,9 +37,9 @@ C1_Trial1_E_24 = Wait… How did he write my name?
 C1_Trial1_E_25 = That’s not even a common misspelling. Far from it…
 C1_Trial1_E_26 = Maybe the captain didn’t know how to write it?
 C1_Trial1_E_27 = <color=#72B6E8>Maybe…</color>
-C1_Trial1_E_28 = <color=#72B6E8>But like the sheriff said, it’s weird.</color>
-C1_Trial1_E_29 = <color=#72B6E8>I don’t remember seeing it at the scene either.</color>
-C1_Trial1_E_30 = <color=#72B6E8>Or maybe it was hidden behind that rock?</color>
+C1_Trial1_E_28 = <color=#72B6E8>But it’s really weird.</color>
+C1_Trial1_E_29 = <color=#72B6E8>I don’t remember seeing it at the scene.</color>
+C1_Trial1_E_30 = <color=#72B6E8>Maybe it was hidden behind that rock?</color>
 C1_Trial1_E_31 = <color=#72B6E8>I did get arrested pretty fast. I could have missed it…</color>
 C1_Trial1_E_32 = This is pretty damning evidence, I must say.
 C1_Trial1_E_33 = Did you find anything else?
@@ -90,6 +90,9 @@ C1_Trial1_E_77 = And where is this fellow?
 C1_Trial1_E_78 = I’d like to hear him on the subject.
 C1_Trial1_E_79 = We have him waiting in the lounge.
 C1_Trial1_E_80 = I’ll go get him for you.
+C1_Trial1_E_80b = In the meantime, Chief, here’s the report on the dead sailors.
+C1_Trial1_E_80c = You’ll find in it the number of corpses we found, alongside the names of a few sailors we confirmed dead.
+C1_Trial1_E_80d = Hmm… Good job. Now go get our new friend.
 C1_Trial1_E_81 = <color=#72B6E8>This is it. Whoever this is, he must be the killer.</color>
 C1_Trial1_E_82 = <color=#72B6E8>Otherwise, I’m done for.</color>
 C1_Trial1_E_83 = So, you are the other survivor of the crash?
@@ -126,15 +129,17 @@ C1_Trial_Testimony3_Start_14 = The only other person that was alive at the time 
 C1_Trial_Testimony3_Start_15 = He couldn’t have killed the captain.
 C1_Trial_Testimony3_Start_16 = Which, of course, leaves Miss Retyr as the sole suspect.
 C1_Trial_Testimony3_Start_17 = And this is without mentioning the message we found, of course.
-C1_Trial_Testimony3_Start_18 = Besides, I wouldn’t have had a reason to kill the old wolf anyway.
-C1_Trial_Testimony3_Start_19 = … To think that you of all people would commit murder…
-C1_Trial_Testimony3_Start_20 = Hmm… I see.
-C1_Trial_Testimony3_Start_21 = Miss Retyr, you may proceed.
-C1_Trial_Testimony3_Start_22 = <color=#72B6E8>What is going on?</color>
-C1_Trial_Testimony3_Start_23 = <color=#72B6E8>There’s got to be a mistake. Maybe another survivor?</color>
-C1_Trial_Testimony3_Start_24 = <color=#72B6E8>The true culprit… Who are they?</color>
-C1_Trial_Testimony3_Start_25 = <color=#72B6E8>Maybe they had time to disappear into the forest.</color>
-C1_Trial_Testimony3_Start_26 = <color=#72B6E8>… I guess there’s only one way to find out.</color>
+C1_Trial_Testimony3_Start_18 = Wait… Rann killed the captain?!
+C1_Trial_Testimony3_Start_19 = N-No !
+C1_Trial_Testimony3_Start_20 = Besides, isn’t it possible you missed someone while inspecting the ship?
+C1_Trial_Testimony3_Start_21 = Maybe there’s another survivor.
+C1_Trial_Testimony3_Start_22 = Yet another? I suppose it is possible, but very unlikely.
+C1_Trial_Testimony3_Start_23 = Until proof to the contrary, it would be wise to consider that you two are the only survivors.
+C1_Trial_Testimony3_Start_24 = Guh…
+C1_Trial_Testimony3_Start_25 = For now, Miss Retyr, you may proceed with your rebuttal.
+C1_Trial_Testimony3_Start_26 = <color=#72B6E8>If Gerald and I are innocent, then who did it?</color>
+C1_Trial_Testimony3_Start_27 = <color=#72B6E8>Maybe the real culprit had time to disappear into the forest.</color>
+C1_Trial_Testimony3_Start_28 = <color=#72B6E8>… I guess there’s only one way to find out.</color>
 
 
 C1_Trial_Testimony3_Testimony_0 = <color=red>The crash</color>
@@ -211,7 +216,7 @@ C1_Trial1_F_14 = Were you really unconscious the whole time?
 C1_Trial1_F_15 = Ha ha, you see… 
 C1_Trial1_F_16 = It seems that… 
 C1_Trial1_F_17 = Erm…
-C1_Trial1_F_18 = Witness. How did you know that the Captain’s heart was struck?
+C1_Trial1_F_18 = Witness. How did you know that the Captain’s lung was struck?
 C1_Trial1_F_19 = Erm…
 C1_Trial1_F_20 = Ah! Yes, of course.
 C1_Trial1_F_21 = You remembered something?
@@ -233,57 +238,57 @@ C1_Trial1_F_31 = <color=#72B6E8>I’m glad. I would have been devastated if he e
 
 C1_Trial_Testimony4_Start_1 = <color=green>What I heard</color>
 C1_Trial_Testimony4_Start_2 = I was half awake, so it’s hard to remember exactly what happened.
-C1_Trial_Testimony4_Start_3 = I distinctly remember a woman’s voice, as well as the captain’s.
-C1_Trial_Testimony4_Start_4 = The woman yelled for a long period of time.
+C1_Trial_Testimony4_Start_3 = I distinctly remember someone’s voice, as well as the captain’s.
+C1_Trial_Testimony4_Start_4 = The person yelled for a long period of time.
 C1_Trial_Testimony4_Start_5 = After which, I heard the captain scream as he was stabbed to death.
 C1_Trial_Testimony4_Start_6 = By Kalibu! Are you sure about that?
 C1_Trial_Testimony4_Start_7 = Yep. Well, most of it anyway.
-C1_Trial_Testimony4_Start_8 = But- I was the only woman on board!
-C1_Trial_Testimony4_Start_9 = This is pretty damning evidence!
-C1_Trial_Testimony4_Start_10 = With that and the message, her guilt is clear as day.
+C1_Trial_Testimony4_Start_8 = Then that person must be our mysterious killer!
+C1_Trial_Testimony4_Start_9 = I think we can all agree on that.
+C1_Trial_Testimony4_Start_10 = Still, it is a shame we can’t identify who our witness did hear.
 C1_Trial_Testimony4_Start_11 = …
-C1_Trial_Testimony4_Start_12 = It seems that way.
-C1_Trial_Testimony4_Start_13 = <color=#72B6E8>Why?</color>
-C1_Trial_Testimony4_Start_14 = <color=#72B6E8>Did we have another woman on board?</color>
-C1_Trial_Testimony4_Start_15 = <color=#72B6E8>… No… I don’t remember anyone like that.</color>
-C1_Trial_Testimony4_Start_16 = <color=#72B6E8>Guh… What is going on?</color>
-C1_Trial_Testimony4_Start_17 = <color=#72B6E8>Could Gerald be lying? Or am I completely wrong about everything?</color>
+C1_Trial_Testimony4_Start_12 = And this person you heard, were they a woman, or a man ?
+C1_Trial_Testimony4_Start_13 = …Dunno. Maybe a man ? Maybe a woman…
+C1_Trial_Testimony4_Start_14 = I can’t remember…
+C1_Trial_Testimony4_Start_15 = … I see.
+C1_Trial_Testimony4_Start_16 = I rest my case that our mysterious person is the defendant.
+C1_Trial_Testimony4_Start_17 = Not so fast, Sheriff. We can’t be sure of that yet. This could be someone else.
 C1_Trial_Testimony4_Start_18 = Miss Retyr, you may proceed.
-C1_Trial_Testimony4_Start_19 = I must remind you, however, that in light of the newly found evidence, this is a simple formality.
-C1_Trial_Testimony4_Start_20 = At this point, I can end the trial at any moment.
+C1_Trial_Testimony4_Start_19 = Remember, however, that you remain for now our only suspect.
+C1_Trial_Testimony4_Start_20 = If you fail to find a suitable culprit, I’ll be forced to declare you guilty.
 C1_Trial_Testimony4_Start_21 = <color=#72B6E8>This is really bad.</color>
-C1_Trial_Testimony4_Start_22 = <color=#72B6E8>I have to find something or else the judge will declare me guilty.</color>
+C1_Trial_Testimony4_Start_22 = <color=#72B6E8>I have to figure out who he heard or else I’m done for.</color>
 
 
 C1_Trial_Testimony4_Testimony_0 = <color=red>What I heard</color>
 C1_Trial_Testimony4_Testimony_1 = <color=green>I was half awake, so it’s hard to remember exactly what happened.</color>
-C1_Trial_Testimony4_Testimony_2 = <color=green>I distinctly remember a woman’s voice, as well as the captain’s.</color>
-C1_Trial_Testimony4_Testimony_3 = <color=green>The woman yelled for a long period of time.</color>
+C1_Trial_Testimony4_Testimony_2 = <color=green>I distinctly remember someone’s voice, as well as the captain’s.</color>
+C1_Trial_Testimony4_Testimony_3 = <color=green>The person yelled for a long period of time.</color>
 C1_Trial_Testimony4_Testimony_4 = <color=green>After which, I heard the captain scream as he was stabbed to death.</color>
 
-C1_Trial_Testimony4_Press1_1 = Isn’t it possible you are recalling a dream?
-C1_Trial_Testimony4_Press1_2 = Ha ha, no.
-C1_Trial_Testimony4_Press1_3 = Sailors only dream of the sea.
-C1_Trial_Testimony4_Press1_4 = …
-C1_Trial_Testimony4_Press1_5 = Look, I can understand that you are angry.
-C1_Trial_Testimony4_Press1_6 = But I can’t lie about what I saw or heard.
-C1_Trial_Testimony4_Press1_7 = I want to know the truth too, Ronne.
-C1_Trial_Testimony4_Press1_8 = Did you really do it?
-C1_Trial_Testimony4_Press1_9 = N- No!
-C1_Trial_Testimony4_Press1_10 = A most understandable feeling.
-C1_Trial_Testimony4_Press1_11 = Ah… Manfred… Why did you have to do this…
-C1_Trial_Testimony4_Press1_12 = <color=#72B6E8>Guh…</color>
+C1_Trial_Testimony4_Press1_1 = Are you really sure you actually heard all of this?
+C1_Trial_Testimony4_Press1_2 = Pretty much.
+C1_Trial_Testimony4_Press1_3 = But don’t ask me for minor details, though.
+C1_Trial_Testimony4_Press1_4 = Since I was half-awake, I don’t remember much.
+C1_Trial_Testimony4_Press1_5 = Please, anything you remember could help clear my name.
+C1_Trial_Testimony4_Press1_6 = Look, I understand what you are going through.
+C1_Trial_Testimony4_Press1_7 = But I can’t lie about what I saw or heard.
+C1_Trial_Testimony4_Press1_8 = I want to know the truth too, Rann.
+C1_Trial_Testimony4_Press1_9 = I can’t rush things. Not now.
+C1_Trial_Testimony4_Press1_10 = Y-Yes. I’m sorry.
+C1_Trial_Testimony4_Press1_11 = Let’s continue. What do you remember?
 
-C1_Trial_Testimony4_Press2_1 = Are you sure it was a woman?
-C1_Trial_Testimony4_Press2_2 = Yep. It was clear as day.
-C1_Trial_Testimony4_Press2_3 = To be honest, she sounded a little bit like you.
-C1_Trial_Testimony4_Press2_4 = Were there any other women in the crew?
-C1_Trial_Testimony4_Press2_5 = …No. I was the only one.
-C1_Trial_Testimony4_Press2_6 = Yep. Very few women sailors around Kalia these days…
+C1_Trial_Testimony4_Press2_1 = What kind of voice?
+C1_Trial_Testimony4_Press2_2 = Hmm… Let me see…
+C1_Trial_Testimony4_Press2_3 = To be honest, I don’t really remember.
+C1_Trial_Testimony4_Press2_4 = It was… a voice? Could have been a man’s, could have been a woman’s.
+C1_Trial_Testimony4_Press2_5 = So… An androgynous voice? Like mine?
+C1_Trial_Testimony4_Press2_6 = I guess? Now that I think about it, that must be it.
+C1_Trial_Testimony4_Press2_7 = <color=#72B6E8>That doesn’t help my case at all…</color>
 
-C1_Trial_Testimony4_Press3_1 = What did she scream about?
+C1_Trial_Testimony4_Press3_1 = What did they scream about?
 C1_Trial_Testimony4_Press3_2 = I don’t remember much.
-C1_Trial_Testimony4_Press3_3 = But I do remember her saying she didn’t owe anything to the captain.
+C1_Trial_Testimony4_Press3_3 = But I do remember them saying they didn’t owe anything to the captain.
 C1_Trial_Testimony4_Press3_4 = Something about a debt perhaps? I don’t know what kind of debt though.
 C1_Trial_Testimony4_Press3_5 = Hmm…
 C1_Trial_Testimony4_Press3_6 = Debt. A solid motive for murder.
@@ -293,12 +298,74 @@ C1_Trial_Testimony4_Press4_1 = Did you hear anything else after the captain’s 
 C1_Trial_Testimony4_Press4_2 = No, nothing. It was silent.
 C1_Trial_Testimony4_Press4_3 = I remember his dying breaths though.
 C1_Trial_Testimony4_Press4_4 = That’s how I thought he was stabbed in the lungs.
-C1_Trial_Testimony4_Press4_5 = Then… I think she ran off.
+C1_Trial_Testimony4_Press4_5 = Then… I think the person ran off.
 
-C1_Trial_Testimony4_Loop_1 = <color=#72B6E8>This entire testimony… cannot be.</color>
-C1_Trial_Testimony4_Loop_2 = <color=#72B6E8>I was the only woman onboard. Who did he really hear?</color>
-C1_Trial_Testimony4_Loop_3 = <color=#72B6E8>Juno? No…</color>
-C1_Trial_Testimony4_Loop_4 = <color=#72B6E8>If I don’t figure it out soon, it’ll be the end for me.</color>
+C1_Trial_Testimony4_Loop_1 = <color=#72B6E8>This is infuriating.</color>
+C1_Trial_Testimony4_Loop_2 = <color=#72B6E8>There must be something in this testimony to help clear my name.</color>
+C1_Trial_Testimony4_Loop_3 = <color=#72B6E8>Whom did Gerald really hear? My life depends on it.</color>
+
+C1_Trial_Testimony4_Post_1 = Alright, I think that’s enough.
+C1_Trial_Testimony4_Post_2 = What did we learn about the culprit?
+C1_Trial_Testimony4_Post_3 = They have an androgynous voice… like our defendant’s…
+C1_Trial_Testimony4_Post_4 = Kh…
+C1_Trial_Testimony4_Post_5 = Wait! That doesn't mean anything!
+C1_Trial_Testimony4_Post_6 = What if Gerald heard someone else?
+C1_Trial_Testimony4_Post_7 = Besides, he could be misremembering the person’s voice!
+C1_Trial_Testimony4_Post_8 = Then who?
+C1_Trial_Testimony4_Post_9 = Who did our witness hear?
+C1_Trial_Testimony4_Post_10 = <color=#72B6E8>Who indeed?</color>
+C1_Trial_Testimony4_Post_11 = <color=#72B6E8>A sailor who would want the Captain dead.</color>
+C1_Trial_Testimony4_Post_12 = <color=#72B6E8>Do I know someone like that?</color>
+
+C1_Trial_Testimony4_Post_Fail_1 = <color=#72B6E8>No, no. Not them.</color>
+C1_Trial_Testimony4_Post_Fail_2 = <color=#72B6E8>I should focus, my life depends on it.</color>
+
+C1_Trial_Testimony4_Post_Gerald_1 = <color=#72B6E8>Gerald? No, no.</color>
+C1_Trial_Testimony4_Post_Gerald_2 = <color=#72B6E8>He wouldn’t do these sorts of things, right?</color>
+
+C1_Trial_Testimony4_Post_Juno_1 = <color=#72B6E8>Juno… Can I really trust her?</color>
+C1_Trial_Testimony4_Post_Juno_2 = <color=#72B6E8>Wait, no. She wasn’t on the ship. What am I thinking ?</color>
+
+C1_Trial_Testimony4_Post_13 = Gerald! What can you tell me about Herri, the ship’s cook?
+C1_Trial_Testimony4_Post_14 = What did his voice sound like?
+C1_Trial_Testimony4_Post_15 = I’ve never met the man, but you should know.
+C1_Trial_Testimony4_Post_16 = Herri? Wait, you don’t mean…
+C1_Trial_Testimony4_Post_17 = Witness, who are you talking about?
+C1_Trial_Testimony4_Post_18 = Herri, the cook. He hated the Captain ever since he bought the ship.
+C1_Trial_Testimony4_Post_19 = He could have killed him. He could be the culprit.
+C1_Trial_Testimony4_Post_20 = Really?!
+C1_Trial_Testimony4_Post_21 = Then there is a third survivor running around?
+C1_Trial_Testimony4_Post_22 = Sheriff, did we-
+C1_Trial_Testimony4_Post_23 = Sheriff, what are you doing?
+C1_Trial_Testimony4_Post_24 = …
+C1_Trial_Testimony4_Post_25 = Eh Eh Eh!
+C1_Trial_Testimony4_Post_26 = You really think the cook survived and killed the captain?
+C1_Trial_Testimony4_Post_27 = Let me tell you something, miss: that’s simply impossible.
+C1_Trial_Testimony4_Post_28 = What?
+C1_Trial_Testimony4_Post_29 = I have here the report my men wrote about the dead sailors.
+C1_Trial_Testimony4_Post_30 = Guess who’s counted as dead in there?
+C1_Trial_Testimony4_Post_31 = No…
+C1_Trial_Testimony4_Post_32 = Hey, who’s still alive according to that report?
+C1_Trial_Testimony4_Post_33 = Last I checked, we were 65 aboard the ship. Maybe someone else is still alive.
+C1_Trial_Testimony4_Post_34 = 65, you say? How funny…
+C1_Trial_Testimony4_Post_35 = Do you know how many corpses we found? Around 60.
+C1_Trial_Testimony4_Post_36 = And the three others?
+C1_Trial_Testimony4_Post_37 = Because of the explosion, some of the sailors… met a gruesome end.
+C1_Trial_Testimony4_Post_38 = It is very probable we missed a few ribs lying around…
+C1_Trial_Testimony4_Post_39 = And some sailors were thrown overboard before we hit land…
+C1_Trial_Testimony4_Post_40 = Then… We truly are the only survivors…
+C1_Trial_Testimony4_Post_41 = Why… Why keep this for yourself?
+C1_Trial_Testimony4_Post_42 = …
+C1_Trial_Testimony4_Post_43 = It amuses me to see you struggle.
+C1_Trial_Testimony4_Post_44 = Uh… Alright, man…
+C1_Trial_Testimony4_Post_45 = Alright, that’s enough, Sheriff. Let us all calm down.
+C1_Trial_Testimony4_Post_46 = Witness, it seems you managed to prove Miss Retyr’s culpability after all.
+C1_Trial_Testimony4_Post_47 = I entertained her idea of a third party that could have killed the captain.
+C1_Trial_Testimony4_Post_48 = However, in light of this revelation…
+C1_Trial_Testimony4_Post_49 = It becomes apparent that she is the only one who could have done it.
+C1_Trial_Testimony4_Post_50 = … Took you long enough.
+C1_Trial_Testimony4_Post_51 = I can’t believe this… Is it really true? Rann killed the captain?
+C1_Trial_Testimony4_Post_52 = No…
 
 C1_Trial1_G_1 = Alright, I’m ready to deliver my verdict.
 C1_Trial1_G_2 = <color=#72B6E8>What should I do? At this rate…</color>
@@ -340,7 +407,7 @@ C1_Trial1_G_37 = You… You saw the murder happen… too?
 C1_Trial1_G_38 = Taliak, do not harass our witness.
 C1_Trial1_G_39 = As for your conundrum, I think this is a simple misunderstanding.
 C1_Trial1_G_40 = When you arrived at the scene, they had already finished talking.
-C1_Trial1_G_41 = You only saw the Captain die, not what happened before, right?
+C1_Trial1_G_41 = You only saw the Captain get stabbed, not what happened before, right?
 C1_Trial1_G_42 = Yes… But!
 C1_Trial1_G_43 = Officer. Show her out.
 C1_Trial1_G_44 = The verdict was already decided; this is pointless.
@@ -400,7 +467,7 @@ C1_Trial1_H_6 = That’s right.
 C1_Trial1_H_7 = Gerald claims that he only heard the Captain’s scream.
 C1_Trial1_H_8 = Moreover, Juno didn’t say anything about hearing the Captain scream.
 C1_Trial1_H_9 = Bah. He could have easily mistaken her scream for the captain’s.
-C1_Trial1_H_10 = I doubt it. He was able to remember the woman’s voice after all.
+C1_Trial1_H_10 = From what he told us, I doubt it.
 C1_Trial1_H_11 = A most glaring issue, indeed.
 C1_Trial1_H_12 = Who can we trust… The Taliak? The unconscious sailor?
 C1_Trial1_H_13 = … Mr Marin, what do you have to say for yourself?
@@ -424,21 +491,21 @@ C1_Trial1_H_30 = Oh, no. We are not suspecting you.
 C1_Trial1_H_31 = You probably are simply confused from the explosion.
 C1_Trial1_H_32 = However, it is imperative that we figure out what exactly happened that day.
 C1_Trial1_H_33 = If your memory is faulty, whom can we trust?
-C1_Trial1_H_34 = For now, the only thing that proves Miss Retyr did it is your testimony and the victim’s message.
+C1_Trial1_H_34 = For now, the only thing that proves Miss Retyr did it is your testimony.
 C1_Trial1_H_35 = …
-C1_Trial1_H_36 = The message?
+C1_Trial1_H_36 = Something to prove she did it. Something to prove she didn’t.
 C1_Trial1_H_37 = …That’s it!
 C1_Trial1_H_38 = Did you remember something again?
-C1_Trial1_H_39 = Your problem is that you don’t have any decisive proof that Ronne did it, right?
-C1_Trial1_H_40 = I think I can prove that she did it.
+C1_Trial1_H_39 = Your problem is that you don’t have any decisive proof that Rann did it, right?
+C1_Trial1_H_40 = I think I know a way to check if she really did it.
 C1_Trial1_H_41 = Y- You can?
 C1_Trial1_H_42 = Huh?!
 C1_Trial1_H_43 = I think this is enough.
 C1_Trial1_H_44 = Mr Marin will be escorted back to the hospital.
 C1_Trial1_H_45 = It’s clear that his memory is faulty.
-C1_Trial1_H_46 = Stressing him further would result in more faulty testimony.
+C1_Trial1_H_46 = Stressing him further would only result in more faulty testimony.
 C1_Trial1_H_47 = Don’t give me that!
-C1_Trial1_H_48 = I can prove Ronne did it without remembering what happened during the crash.
+C1_Trial1_H_48 = I can easily check if Ro- Rann really did it or not.
 C1_Trial1_H_49 = …
 C1_Trial1_H_50 = That’s ridiculous.
 C1_Trial1_H_51 = Officer, escort him out.
@@ -451,7 +518,7 @@ C1_Trial1_H_57 = Right, I’m doing all this using deductive reasoning, not memo
 C1_Trial1_H_58 = I don’t actually need to remember what happened during the crash.
 C1_Trial1_H_59 = Hey, Your Honour?
 C1_Trial1_H_60 = Hmm?
-C1_Trial1_H_61 = The murder weapon. The knife. Could I see it?
+C1_Trial1_H_61 = The murder weapon. The knife. Could I see it ? I want to check something.
 C1_Trial1_H_62 = Huh? Oh, sure.
 C1_Trial1_H_63 = … Wait. Where is it? I can’t find it in the court record.
 C1_Trial1_H_64 = Now that I think about it…
@@ -478,8 +545,8 @@ C1_Trial1_H_84 = …
 C1_Trial1_H_85 = …
 C1_Trial1_H_86 = I knew it.
 C1_Trial1_H_87 = You Honor, I’m ready to testify again.
-C1_Trial1_H_88 = I still don’t want to believe it, but Ronne has to be the killer.
-C1_Trial1_H_89 = The few details I managed to remember will prove that she is.
+C1_Trial1_H_88 = I still don’t want to believe it, but Rann has to be the killer.
+C1_Trial1_H_89 = This knife proves it, and I can explain how.
 C1_Trial1_H_90 = My point stands. This is useless.
 C1_Trial1_H_91 = Alright, let’s hear it then.
 C1_Trial1_H_92 = <color=#72B6E8>Gerald… Why?</color>
@@ -489,7 +556,7 @@ C1_Trial1_H_92 = <color=#72B6E8>Gerald… Why?</color>
 # ---------------------------------------------------------
 
 C1_Trial_Testimony5_Start_1 = <color=green>My deduction</color>
-C1_Trial_Testimony5_Start_2 = The murder weapon is actually Ronne’s knife.
+C1_Trial_Testimony5_Start_2 = The murder weapon is actually Rann’s knife.
 C1_Trial_Testimony5_Start_3 = I didn’t want to acknowledge it, but I have to.
 C1_Trial_Testimony5_Start_4 = Her fingerprints are on it, right? This proves she did it.
 C1_Trial_Testimony5_Start_5 = The murder weapon is her knife?
@@ -505,10 +572,10 @@ C1_Trial_Testimony5_Start_14 = <color=#72B6E8>Something about it seems weird.</c
 C1_Trial_Testimony5_Start_15 = <color=#72B6E8>It’s as if… the sheriff didn’t want us to see it.</color>
 
 C1_Trial_Testimony5_Testimony_0 = <color=red>My deduction</color>
-C1_Trial_Testimony5_Testimony_1 = <color=green>The murder weapon is actually Ronne’s knife.</color>
+C1_Trial_Testimony5_Testimony_1 = <color=green>The murder weapon is actually Rann’s knife.</color>
 C1_Trial_Testimony5_Testimony_2 = <color=green>I didn’t want to acknowledge it, but I have to.</color>
 C1_Trial_Testimony5_Testimony_3 = <color=green>Her fingerprints are on it, right? This proves she did it.</color>
-C1_Trial_Testimony5_Testimony_4 = <color=green>Besides, let’s not forget the dying message : <color=red>“Ronne”</color>.</color>
+C1_Trial_Testimony5_Testimony_4 = <color=green>Besides, let’s not forget the captain's message : <color=red>“Ronne”</color>.</color>
 
 C1_Trial_Testimony5_Press1_1 = Hey, it was yours too!
 C1_Trial_Testimony5_Press1_2 = True, but it was you who gave it to me.
@@ -551,11 +618,11 @@ C1_Trial_Testimony5_Press3_Fail_5 = … Be mindful of what you say, Miss.
 C1_Trial_Testimony5_Press3_14 = The knife itself?
 C1_Trial_Testimony5_Press3_15 = Yes. The sheriff didn’t say it out loud, but the police checked the fingerprints on it.
 C1_Trial_Testimony5_Press3_16 = Let me read the report to you.
-C1_Trial_Testimony5_Press3_17 = “Rann Retyr’s fingerprints were found on the knife’s blade.”
+C1_Trial_Testimony5_Press3_17 = “Ronne Retyr’s fingerprints were found on the knife’s blade.”
 C1_Trial_Testimony5_Press3_19 = “Unknown fingerprints found on the knife’s handle.”
 C1_Trial_Testimony5_Press3_20 = The blade? But-!
 C1_Trial_Testimony5_Press3_21 = …
-C1_Trial_Testimony5_Press3_22 = Yes, it would be quite difficult to kill anyone holding a knife by the blade.
+C1_Trial_Testimony5_Press3_22 = Yes. Aside from the misspell, it would be quite difficult to kill anyone holding a knife by the blade.
 C1_Trial_Testimony5_Press3_23 = Not only that, I would also cut myself.
 C1_Trial_Testimony5_Press3_24 = -And as you can see : I’m not hurt.
 C1_Trial_Testimony5_Press3_25 = But then… How did your fingerprints end up on the blade ?
@@ -588,8 +655,8 @@ C1_Trial_Testimony5_Press3_34 = Well, they must be Gerald’s… right?
 C1_Trial_Testimony5_Press3_35 = What are you saying?!
 C1_Trial_Testimony5_Press3_36 = … I never did notice he had gloves.
 C1_Trial_Testimony5_Press3_37 = Alright, alright.
-C1_Trial_Testimony5_Press3_38 = So the knife is a red herring. So what?
-C1_Trial_Testimony5_Press3_39 = It’s possible Miss Retyr had gloves on during the murder.
+C1_Trial_Testimony5_Press3_38 = The knife is a red herring. So what?
+C1_Trial_Testimony5_Press3_39 = It’s possible Miss Retyr wore gloves during the murder.
 C1_Trial_Testimony5_Press3_40 = Wh- What?!
 C1_Trial_Testimony5_Press3_41 = Rann, how could you?
 C1_Trial_Testimony5_Press3_42 = You… You actually wanted me to be blamed for his murder?
@@ -597,8 +664,14 @@ C1_Trial_Testimony5_Press3_43 = N- No!
 C1_Trial_Testimony5_Press3_44 = Where does this leave us?
 C1_Trial_Testimony5_Press3_45 = Witness, it seems your deductive reasoning amounted to nothing conclusive in the end.
 C1_Trial_Testimony5_Press3_46 = I…
-C1_Trial_Testimony5_Press3_47 = Wait! I have something else!
-C1_Trial_Testimony5_Press3_48 = I can still prove that she did it.
+C1_Trial_Testimony5_Press3_47 = Wait. Let’s not forget we have another piece of evidence incriminating Miss Retyr.
+C1_Trial_Testimony5_Press3_48 = Really?
+C1_Trial_Testimony5_Press3_49 = The message, Your Honour. The captain wrote the name of his killer on a nearby rock.
+C1_Trial_Testimony5_Press3_50 = Uh? Really?!
+C1_Trial_Testimony5_Press3_51 = As you can see. Retyr’s name is clearly written.
+C1_Trial_Testimony5_Press3_52 = Poorly written…
+C1_Trial_Testimony5_Press3_53 = Ah, yes. I see. This also proves she did it.
+C1_Trial_Testimony5_Press3_54 = Let me amend my testimony.
 
 C1_Trial_Testimony5_Press3_After_1 = Did you handle the knife often?
 C1_Trial_Testimony5_Press3_After_2 = Every time I tended to the plants.
@@ -632,9 +705,9 @@ C1_Trial1_I_2 = What’s odd about it? Your name is written on it.
 C1_Trial1_I_3 = You can see it here : <color=red>“Ronne”</color>.
 C1_Trial1_I_4 = That’s my point.
 C1_Trial1_I_5 = There is no “e” or “o” in my name.
-C1_Trial1_I_6 = Huh?!
+C1_Trial1_I_6 = Oh, right. I made that mistake once…
 C1_Trial1_I_7 = Well, the Captain could have misspelt your name.
-C1_Trial1_I_8 = Heck, even I miswrote your name as “Ran” in our records.
+C1_Trial1_I_8 = Heck, even I miswrote your name as “Ronne” in our records.
 C1_Trial1_I_9 = Please fix this…
 C1_Trial1_I_10 = But.. you prove my point.
 C1_Trial1_I_11 = People do misspell it, but it’s usually misspelt “Ran”, not “Ronne”.
@@ -669,16 +742,17 @@ C1_Trial1_I_39 = This book is the only instance I know of my name being spelt <c
 C1_Trial1_I_40 = I misspelt my own name when I started it, and couldn’t be bothered to correct it.
 C1_Trial1_I_41 = This doesn’t mean anything. The captain must have seen your herbarium’s cover too.
 C1_Trial1_I_42 = I’m afraid that’s not possible.
-C1_Trial1_I_43 = I keep my book rather secret. No one except Gerald knew about it.
+C1_Trial1_I_43 = I keep my book rather secret. No one except Gerald and you, Sheriff, knew about it.
 C1_Trial1_I_44 = It is a rather big taboo, isn’t it?
 C1_Trial1_I_45 = I’m not sure the Captain would have hired me if he knew I had one.
 C1_Trial1_I_46 = … So your point is?
-C1_Trial1_I_47 = As you recall, sheriff. The message wasn’t there yesterday when you arrested me.
-C1_Trial1_I_48 = I could have easily missed it.
-C1_Trial1_I_49 = I was busy arresting you, y’see?
-C1_Trial1_I_50 = Maybe…
-C1_Trial1_I_51 = Or…
-C1_Trial1_I_52 = … Maybe someone wrote that message down after you arrested me.
+C1_Trial1_I_47 = It is my belief that only those who read my herbarium could misspell my name like that.
+C1_Trial1_I_48 = And if the captain didn’t see it…
+C1_Trial1_I_48b = … Then someone planted that message themselves, right?
+C1_Trial1_I_49 = Are you aware you are currently trying to incriminate me?
+C1_Trial1_I_50 = Well… I wasn’t targeting you per se.
+C1_Trial1_I_51 = But you are right.
+C1_Trial1_I_52 = I do think someone wrote that message down after you arrested me.
 C1_Trial1_I_53 = Don’t be ridiculous. My men were on the scene the whole time.
 C1_Trial1_I_54 = Were they really?
 C1_Trial1_I_55 = Didn’t you retreat soon afterwards because of the explosives?
@@ -729,7 +803,7 @@ C1_Trial1_I_69 = I’m talking about how only he could have done this.
 C1_Trial1_I_70 = Only he could have been the killer?!
 C1_Trial1_I_71 = How so?
 C1_Trial1_I_72 = Well, actually. His “deductions” actually incriminate him.
-C1_Trial1_I_73 = He’s the only person I know who writes my name <color=red>“Ronne”</color>, because of the herbarium.
+C1_Trial1_I_73 = He’s the only person I know who could write my name <color=red>“Ronne”</color> aside from the Sheriff, because of the herbarium.
 C1_Trial1_I_74 = Moreover, he was in possession of the murder weapon.
 C1_Trial1_I_75 = Albeit, it’s true that it was mine before…
 C1_Trial1_I_76 = But!
@@ -893,14 +967,14 @@ C1_Trial1_J_44 = I couldn’t bear the thought, and I stabbed him without thinki
 C1_Trial1_J_45 = That was when Juno saw you.
 C1_Trial1_J_46 = The girl startled me. I ran off.
 C1_Trial1_J_47 = I realised my coat was bloody, so I hid it on the ship.
-C1_Trial1_J_48 = Then, I waited for an opportunity and faked the message.
-C1_Trial1_J_49 = All I had to do then was play dead until someone found me.
+C1_Trial1_J_48 = Everything went so fast, I didn’t know what I was doing.
+C1_Trial1_J_49 = In the end, I decided to play dead until someone found me.
 C1_Trial1_J_50 = Well, that was unexpected, that’s for sure.
 C1_Trial1_J_51 = Gerald… How could you?
 C1_Trial1_J_52 = I thought we were friends…
 C1_Trial1_J_53 = …
-C1_Trial1_J_54 = In this world, it’s you or the others.
-C1_Trial1_J_55 = I did what I had to do to survive.
+C1_Trial1_J_54 = I never meant to…
+C1_Trial1_J_55 = I…
 C1_Trial1_J_56 = …
 C1_Trial1_J_57 = <color=#72B6E8>Am I satisfied with this confession?</color>
 
@@ -915,18 +989,28 @@ C1_Trial1_J_FullStory_6 = Murder is murder, after all.
 C1_Trial1_J_FullStory_7 = <color=#72B6E8>Hmm… I still feel like he’s hiding something.</color>
 C1_Trial1_J_FullStory_8 = <color=#72B6E8>Something that still wasn’t explained.</color>
 
-C1_Trial1_J_FullStory_9 = I find it hard to believe that you never once cleaned the knife.
-C1_Trial1_J_FullStory_10 = It’s as if…
-C1_Trial1_J_FullStory_11 = I planned to pin his death on you from the start?
-C1_Trial1_J_FullStory_12 = Yeah, I did.
-C1_Trial1_J_FullStory_13 = I wanted him gone for years.
-C1_Trial1_J_FullStory_14 = When you gave me the knife, it clicked.
-C1_Trial1_J_FullStory_15 = I knew I could kill him and put the blame on you.
-C1_Trial1_J_FullStory_16 = I just had to place a fake message and kill him with your knife.
-C1_Trial1_J_FullStory_17 = And to be extra sure, I knew I could use your book against you.
-C1_Trial1_J_FullStory_18 = But I never knew that my plan would, in fact, incriminate me instead.
-C1_Trial1_J_FullStory_19 = You… I can’t believe this.
-C1_Trial1_J_FullStory_20 = Believe what you want to survive. It’s what matters in the end.
+C1_Trial1_J_FullStory_Knife_1 = I find it hard to believe that you never once cleaned the knife.
+C1_Trial1_J_FullStory_Knife_2 = It’s as if…
+C1_Trial1_J_FullStory_Knife_3 = I planned this for months?
+C1_Trial1_J_FullStory_Knife_4 = Yeah, that’s true.
+C1_Trial1_J_FullStory_Knife_5 = I wanted him gone for years.
+C1_Trial1_J_FullStory_Knife_6 = When you gave me the knife, it clicked.
+C1_Trial1_J_FullStory_Knife_7 = I had just gotten my hands on the murder weapon.
+C1_Trial1_J_FullStory_Knife_8 = All I had to do was kill the captain and incriminate one of the sailors.
+C1_Trial1_J_FullStory_Knife_9 = But… It took me months to reach a decision.
+C1_Trial1_J_FullStory_Knife_10 = And in the end, you tried to incriminate me.
+C1_Trial1_J_FullStory_Knife_11 = You… I trusted you.
+C1_Trial1_J_FullStory_Knife_12 = …
+
+C1_Trial1_J_FullStory_Message_1 = When did you fake the message? 
+C1_Trial1_J_FullStory_Message_2 = And why misspell it? You knew how to write it.
+C1_Trial1_J_FullStory_Message_3 = …
+C1_Trial1_J_FullStory_Message_4 = I… I didn’t write that message.
+C1_Trial1_J_FullStory_Message_5 = What?! That’s impossible.
+C1_Trial1_J_FullStory_Message_6 = He’s lying, of course.
+C1_Trial1_J_FullStory_Message_7 = Such a rookie mistake… He can’t bring himself to admit it…
+C1_Trial1_J_FullStory_Message_8 = I… No…
+C1_Trial1_J_FullStory_Message_9 = My officer will escort this lying conman out of here. 
 
 C1_Trial1_J_FullStory_Fail_1 = … Heh.
 C1_Trial1_J_FullStory_Fail_2 = In the end, you are still just a flower girl, aren’t you?
@@ -951,7 +1035,7 @@ C1_Trial1_J_72 = Why did you hide the knife from us?
 C1_Trial1_J_73 = It was obvious from my fingerprints that I was innocent.
 C1_Trial1_J_74 = That’s true.
 C1_Trial1_J_75 = I find it odd that you would try to conceal it.
-C1_Trial1_J_76 = Like your “friend” said, I did what I had to do
+C1_Trial1_J_76 = I did what I had to do
 C1_Trial1_J_77 = What?!
 C1_Trial1_J_78 = Then… you knew I was innocent from the start!
 C1_Trial1_J_79 = Sheriff… Surely, you jest. Right?

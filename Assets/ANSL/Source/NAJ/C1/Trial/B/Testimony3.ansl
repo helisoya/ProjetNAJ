@@ -49,7 +49,6 @@ dialog(Char_Policeman;NovaKaliaSoldier;C1_Trial_Testimony3_Start_11)
 dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_12)
 
 :setCourtroomCamToProsecutorImmediate()
-
 dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_13)
 dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_14)
 dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_15)
@@ -59,24 +58,37 @@ showDialogWindow(false)
 
 :setRannAngry(Coat)
 :setRannEyeNeutral(Coat)
-:setGeraldSad(NoCoat)
+:setGeraldEyeSurprise(NoCoat)
+:setGeraldSurprise(NoCoat)
+screenshake(0.2;0.1)
+playSFX(Damage)
 :setCourtroomCamToWitness(true)
 
 dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_18)
-dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony3_Start_19)
-
-:setCourtroomCamToJudge()
-
-dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_20)
-dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_21)
 
 :setCourtroomCamToDefenseImmediate()
+:setRobertNormal()
+:setRobertEyeNormal()
+screenshake(0.2;0.1)
+playSFX(Damage)
+dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Start_19)
+dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Start_20)
+dialog(Char_Rann;RannCoat;C1_Trial_Testimony3_Start_21)
 
-dialog(null;null;C1_Trial_Testimony3_Start_22)
-dialog(null;null;C1_Trial_Testimony3_Start_23)
-dialog(null;null;C1_Trial_Testimony3_Start_24)
-dialog(null;null;C1_Trial_Testimony3_Start_25)
+:setCourtroomCamToProsecutorImmediate()
+dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_22)
+dialog(Char_Robert;Robert;C1_Trial_Testimony3_Start_23)
+
+:setCourtroomCamToDefenseImmediate()
+dialog(Char_Rann;null;C1_Trial_Testimony3_Start_24)
+
+:setCourtroomCamToJudge()
+dialog(Char_Judge;Judge;C1_Trial_Testimony3_Start_25)
+
+:setCourtroomCamToDefenseImmediate()
 dialog(null;null;C1_Trial_Testimony3_Start_26)
+dialog(null;null;C1_Trial_Testimony3_Start_27)
+dialog(null;null;C1_Trial_Testimony3_Start_28)
 
 showDialogWindow(false)
 fadeBg(1;true)

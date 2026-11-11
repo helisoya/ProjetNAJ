@@ -1,4 +1,4 @@
-#67527C52D0389FC962E6FD54A0C79F60-8956126B45292CBB910B7AE6D1BF3C1C
+#E0DBA2FF74D30783560012281827EA07-8956126B45292CBB910B7AE6D1BF3C1C
 89c1_commonc1_trial_B
 90Location_C1_TrialPart2
 50Courthouse
@@ -66,11 +66,11 @@
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_17
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_18
 100false
-71RobertThinking
-75RobertNormal
+71RobertNormal
+75RobertHappy
 67ProsecutionCam0.25false
 66ProsecutionCam0.25true
-36Char_RobertRobertC1_Trial1_E_19
+36Char_RobertnullC1_Trial1_E_19
 66JudgeCam
 67JudgeCam
 71RobertNormal
@@ -267,12 +267,17 @@
 66WitnessCam
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_79
 36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_80
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_80b
+36Char_PolicemanNovaKaliaSoldierC1_Trial1_E_80c
 100false
 71RannCoatNormal
 75RannCoatNeutral
 69RannCoatHandsOnDesk0.1
-67DefenseCam0.25false
-66DefenseCam0.25true
+67ProsecutionCam0.25false
+66ProsecutionCam0.25true
+36Char_RobertRobertC1_Trial1_E_80d
+66DefenseCam
+67DefenseCam
 36nullnullC1_Trial1_E_81
 36nullnullC1_Trial1_E_82
 100false

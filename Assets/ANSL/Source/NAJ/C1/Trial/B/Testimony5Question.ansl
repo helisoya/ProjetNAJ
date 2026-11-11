@@ -50,12 +50,36 @@ case Profile/C1_Gerald:
 	:setJudgeEyeNormal()
 	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_45)
 
+	:setRobertEyeNormal()
+	:setRobertNormal()
 	:setCourtroomCamToWitnessImmediate()
 	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_46)
+	showDialogWindow(false)
 
-	:setGeraldOnBar(NoCoat)
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_47)
-	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_48)
+	:setCourtroomCamToProsecutor(true)
+	dialog(Char_Robert;Robert;C1_Trial_Testimony5_Press3_47)
+
+	:setCourtroomCamToJudge()
+	dialog(Char_Judge;Judge;C1_Trial_Testimony5_Press3_48)
+
+	showEvidenceInfo(C1_DeathMessage;Right)
+	:setCourtroomCamToProsecutorImmediate()
+	dialog(Char_Robert;Robert;C1_Trial_Testimony5_Press3_49)
+
+	:setGeraldEyeSurprise(NoCoat)
+	:setCourtroomCamToWitnessImmediate()
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_50)
+
+	:setCourtroomCamToProsecutorImmediate()
+	dialog(Char_Robert;Robert;C1_Trial_Testimony5_Press3_51)
+
+	:setCourtroomCamToDefenseImmediate()
+	dialog(Char_Rann;RannCoat;C1_Trial_Testimony5_Press3_52)
+	showDialogWindow(false)
+
+	:setGeraldEyeNormal(NoCoat)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_53)
+	dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony5_Press3_54)
 
 	load(Testimony5End)
 

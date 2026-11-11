@@ -1009,53 +1009,59 @@
 	},
 	"103_0": {
 		"scope": "ansl",
+		"prefix": "stopUIAnimation",
+		"body": ["stopUIAnimation(Id)"],
+		"description": "Stops a UI Animation"
+	},
+	"104_0": {
+		"scope": "ansl",
 		"prefix": "switch",
 		"body": ["switch(Variable)\n\tcase default:\n\n\tcase 0:\n\nendswitch"],
 		"description": "Checks a single variables. You can use 'case default:' to check when none of the checks are valid"
 	},
-	"104_0": {
+	"105_0": {
 		"scope": "ansl",
 		"prefix": "unloadBundle",
 		"body": ["unloadBundle(Bundle;DataType)"],
 		"description": "Unloads a bundle from memory (AudioClip / TextAsset / Sprite / Texture2D / GameObject)"
 	},
-	"105_0": {
+	"106_0": {
 		"scope": "ansl",
 		"prefix": "unlockAchievement",
 		"body": ["unlockAchievement(Id)"],
 		"description": "Unlocks a steam achievement"
 	},
-	"106_0": {
+	"107_0": {
 		"scope": "ansl",
 		"prefix": "unlockLog",
 		"body": ["unlockLog(Log;ShowPopup)"],
 		"description": "Unlocks a log"
 	},
-	"107_0": {
+	"108_0": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Value)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"107_1": {
+	"108_1": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;Operator;Variable)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"107_2": {
+	"108_2": {
 		"scope": "ansl",
 		"prefix": "variable",
 		"body": ["variable(Name;default)"],
 		"description": "Changes a variable's value. Operator can be +, -, and default"
 	},
-	"108_0": {
+	"109_0": {
 		"scope": "ansl",
 		"prefix": "waitForContextEnd",
 		"body": ["waitForContextEnd(contextId)"],
 		"description": "Waits for the end of a context"
 	},
-	"109_0": {
+	"110_0": {
 		"scope": "ansl",
 		"prefix": "wait",
 		"body": ["wait(Seconds)"],
@@ -1129,503 +1135,515 @@
 	},
 	"Macro_11": {
 		"scope": "ansl",
+		"prefix": ":setRobertInspectGun",
+		"body": [":setRobertInspectGun()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_12": {
+		"scope": "ansl",
 		"prefix": ":setRobertEyeThinking",
 		"body": [":setRobertEyeThinking()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_12": {
+	"Macro_13": {
 		"scope": "ansl",
 		"prefix": ":setRobertEyeNormal",
 		"body": [":setRobertEyeNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_13": {
+	"Macro_14": {
+		"scope": "ansl",
+		"prefix": ":setRobertEyeHappy",
+		"body": [":setRobertEyeHappy()"],
+		"description": "This is a user generated macro"
+	},
+	"Macro_15": {
 		"scope": "ansl",
 		"prefix": ":setRobertEyeSuspicious",
 		"body": [":setRobertEyeSuspicious()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_14": {
+	"Macro_16": {
 		"scope": "ansl",
 		"prefix": ":setRobertEyeAngry",
 		"body": [":setRobertEyeAngry()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_15": {
+	"Macro_17": {
 		"scope": "ansl",
 		"prefix": ":setGeraldNormal",
 		"body": [":setGeraldNormal(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_16": {
+	"Macro_18": {
 		"scope": "ansl",
 		"prefix": ":setGeraldSad",
 		"body": [":setGeraldSad(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_17": {
+	"Macro_19": {
 		"scope": "ansl",
 		"prefix": ":setGeraldDropKnife",
 		"body": [":setGeraldDropKnife(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_18": {
+	"Macro_20": {
 		"scope": "ansl",
 		"prefix": ":setGeraldSurprise",
 		"body": [":setGeraldSurprise(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_19": {
+	"Macro_21": {
 		"scope": "ansl",
 		"prefix": ":setGeraldBrushHair",
 		"body": [":setGeraldBrushHair(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_20": {
+	"Macro_22": {
 		"scope": "ansl",
 		"prefix": ":setGeraldPunchBar",
 		"body": [":setGeraldPunchBar(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_21": {
+	"Macro_23": {
 		"scope": "ansl",
 		"prefix": ":setGeraldTapHead",
 		"body": [":setGeraldTapHead(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_22": {
+	"Macro_24": {
 		"scope": "ansl",
 		"prefix": ":setGeraldThinking",
 		"body": [":setGeraldThinking(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_23": {
+	"Macro_25": {
 		"scope": "ansl",
 		"prefix": ":setGeraldOnBar",
 		"body": [":setGeraldOnBar(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_24": {
+	"Macro_26": {
 		"scope": "ansl",
 		"prefix": ":setGeraldUseKnife",
 		"body": [":setGeraldUseKnife(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_25": {
+	"Macro_27": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeNormal",
 		"body": [":setGeraldEyeNormal(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_26": {
+	"Macro_28": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeSerious",
 		"body": [":setGeraldEyeSerious(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_27": {
+	"Macro_29": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeMad",
 		"body": [":setGeraldEyeMad(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_28": {
+	"Macro_30": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeWink",
 		"body": [":setGeraldEyeWink(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_29": {
+	"Macro_31": {
 		"scope": "ansl",
 		"prefix": ":setGeraldEyeSurprise",
 		"body": [":setGeraldEyeSurprise(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_30": {
+	"Macro_32": {
 		"scope": "ansl",
 		"prefix": ":setRannNormal",
 		"body": [":setRannNormal(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_31": {
+	"Macro_33": {
 		"scope": "ansl",
 		"prefix": ":setRannStress",
 		"body": [":setRannStress(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_32": {
+	"Macro_34": {
 		"scope": "ansl",
 		"prefix": ":setRannHandsOnDesk",
 		"body": [":setRannHandsOnDesk(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_33": {
+	"Macro_35": {
 		"scope": "ansl",
 		"prefix": ":setRannAngry",
 		"body": [":setRannAngry(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_34": {
+	"Macro_36": {
 		"scope": "ansl",
 		"prefix": ":setRannThinking",
 		"body": [":setRannThinking(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_35": {
+	"Macro_37": {
 		"scope": "ansl",
 		"prefix": ":setRannReadingBook",
 		"body": [":setRannReadingBook(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_36": {
+	"Macro_38": {
 		"scope": "ansl",
 		"prefix": ":setRannDamageToAngry",
 		"body": [":setRannDamageToAngry(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_37": {
+	"Macro_39": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeNormal",
 		"body": [":setRannEyeNormal(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_38": {
+	"Macro_40": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeSurprise",
 		"body": [":setRannEyeSurprise(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_39": {
+	"Macro_41": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeLockIn",
 		"body": [":setRannEyeLockIn(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_40": {
+	"Macro_42": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeNeutral",
 		"body": [":setRannEyeNeutral(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_41": {
+	"Macro_43": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeSad",
 		"body": [":setRannEyeSad(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_42": {
+	"Macro_44": {
 		"scope": "ansl",
 		"prefix": ":setRannEyeOops",
 		"body": [":setRannEyeOops(Type)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_43": {
+	"Macro_45": {
 		"scope": "ansl",
 		"prefix": ":setJudgeNormal",
 		"body": [":setJudgeNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_44": {
+	"Macro_46": {
 		"scope": "ansl",
 		"prefix": ":setJudgeReadyStrike",
 		"body": [":setJudgeReadyStrike()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_45": {
+	"Macro_47": {
 		"scope": "ansl",
 		"prefix": ":setJudgeHoldingHammer",
 		"body": [":setJudgeHoldingHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_46": {
+	"Macro_48": {
 		"scope": "ansl",
 		"prefix": ":setJudgeOnShell",
 		"body": [":setJudgeOnShell()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_47": {
+	"Macro_49": {
 		"scope": "ansl",
 		"prefix": ":setJudgeStress",
 		"body": [":setJudgeStress()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_48": {
+	"Macro_50": {
 		"scope": "ansl",
 		"prefix": ":setJudgeReadingBook",
 		"body": [":setJudgeReadingBook()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_49": {
+	"Macro_51": {
 		"scope": "ansl",
 		"prefix": ":setJudgeTurningHammer",
 		"body": [":setJudgeTurningHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_50": {
+	"Macro_52": {
 		"scope": "ansl",
 		"prefix": ":setJudgeRestingHammer",
 		"body": [":setJudgeRestingHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_51": {
+	"Macro_53": {
 		"scope": "ansl",
 		"prefix": ":setJudgeStrike",
 		"body": [":setJudgeStrike()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_52": {
+	"Macro_54": {
 		"scope": "ansl",
 		"prefix": ":setJudgeDamageToNormal",
 		"body": [":setJudgeDamageToNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_53": {
+	"Macro_55": {
 		"scope": "ansl",
 		"prefix": ":setJudgeDamageToHoldingHammer",
 		"body": [":setJudgeDamageToHoldingHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_54": {
+	"Macro_56": {
 		"scope": "ansl",
 		"prefix": ":setJudgeThrowBookAway",
 		"body": [":setJudgeThrowBookAway()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_55": {
+	"Macro_57": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeNormal",
 		"body": [":setJudgeEyeNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_56": {
+	"Macro_58": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeHappy",
 		"body": [":setJudgeEyeHappy()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_57": {
+	"Macro_59": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeThinking",
 		"body": [":setJudgeEyeThinking()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_58": {
+	"Macro_60": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeSurprise",
 		"body": [":setJudgeEyeSurprise()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_59": {
+	"Macro_61": {
 		"scope": "ansl",
 		"prefix": ":setJudgeEyeAngry",
 		"body": [":setJudgeEyeAngry()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_60": {
+	"Macro_62": {
 		"scope": "ansl",
 		"prefix": ":setJunoNormal",
 		"body": [":setJunoNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_61": {
+	"Macro_63": {
 		"scope": "ansl",
 		"prefix": ":setJunoSurprise",
 		"body": [":setJunoSurprise()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_62": {
+	"Macro_64": {
 		"scope": "ansl",
 		"prefix": ":setJunoThinking",
 		"body": [":setJunoThinking()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_63": {
+	"Macro_65": {
 		"scope": "ansl",
 		"prefix": ":setJunoBow",
 		"body": [":setJunoBow()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_64": {
+	"Macro_66": {
 		"scope": "ansl",
 		"prefix": ":setJunoEyeNormal",
 		"body": [":setJunoEyeNormal()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_65": {
+	"Macro_67": {
 		"scope": "ansl",
 		"prefix": ":setJunoEyeSerious",
 		"body": [":setJunoEyeSerious()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_66": {
+	"Macro_68": {
 		"scope": "ansl",
 		"prefix": ":setJunoEyeSurprise",
 		"body": [":setJunoEyeSurprise()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_67": {
+	"Macro_69": {
 		"scope": "ansl",
 		"prefix": ":removeHealth",
 		"body": [":removeHealth(Amount)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_68": {
+	"Macro_70": {
 		"scope": "ansl",
 		"prefix": ":regenHealth",
 		"body": [":regenHealth(Amount)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_69": {
+	"Macro_71": {
 		"scope": "ansl",
 		"prefix": ":regenHealthToMax",
 		"body": [":regenHealthToMax()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_70": {
+	"Macro_72": {
 		"scope": "ansl",
 		"prefix": ":setBackgroundWithLoading",
 		"body": [":setBackgroundWithLoading(Background;UseDefaultData)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_71": {
+	"Macro_73": {
 		"scope": "ansl",
 		"prefix": ":playJudgeHammerAnimationOnly",
 		"body": [":playJudgeHammerAnimationOnly()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_72": {
+	"Macro_74": {
 		"scope": "ansl",
 		"prefix": ":playJudgeHammerAnimation",
 		"body": [":playJudgeHammerAnimation(NextJudgeBody;NextCam)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_73": {
+	"Macro_75": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToLobby",
 		"body": [":setCourtroomCamToLobby()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_74": {
+	"Macro_76": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToAll",
 		"body": [":setCourtroomCamToAll()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_75": {
+	"Macro_77": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToHammer",
 		"body": [":setCourtroomCamToHammer()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_76": {
+	"Macro_78": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToJudge",
 		"body": [":setCourtroomCamToJudge()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_77": {
+	"Macro_79": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToDefenseImmediate",
 		"body": [":setCourtroomCamToDefenseImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_78": {
+	"Macro_80": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToDefense",
 		"body": [":setCourtroomCamToDefense(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_79": {
+	"Macro_81": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToProsecutorImmediate",
 		"body": [":setCourtroomCamToProsecutorImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_80": {
+	"Macro_82": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToProsecutor",
 		"body": [":setCourtroomCamToProsecutor(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_81": {
+	"Macro_83": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessImmediate",
 		"body": [":setCourtroomCamToWitnessImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_82": {
+	"Macro_84": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitness",
 		"body": [":setCourtroomCamToWitness(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_83": {
+	"Macro_85": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessLeftImmediate",
 		"body": [":setCourtroomCamToWitnessLeftImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_84": {
+	"Macro_86": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessLeft",
 		"body": [":setCourtroomCamToWitnessLeft(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_85": {
+	"Macro_87": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessRightImmediate",
 		"body": [":setCourtroomCamToWitnessRightImmediate()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_86": {
+	"Macro_88": {
 		"scope": "ansl",
 		"prefix": ":setCourtroomCamToWitnessRight",
 		"body": [":setCourtroomCamToWitnessRight(WaitForEnd)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_87": {
+	"Macro_89": {
 		"scope": "ansl",
 		"prefix": ":playTestimonyAnimation",
 		"body": [":playTestimonyAnimation()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_88": {
+	"Macro_90": {
 		"scope": "ansl",
 		"prefix": ":playRebuttalAnimation",
 		"body": [":playRebuttalAnimation()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_89": {
+	"Macro_91": {
 		"scope": "ansl",
 		"prefix": ":playGuiltyAnimation",
 		"body": [":playGuiltyAnimation()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_90": {
+	"Macro_92": {
 		"scope": "ansl",
 		"prefix": ":playNotGuiltyAnimation",
 		"body": [":playNotGuiltyAnimation()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_91": {
+	"Macro_93": {
 		"scope": "ansl",
 		"prefix": ":playPressAnimation",
 		"body": [":playPressAnimation()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_92": {
+	"Macro_94": {
 		"scope": "ansl",
 		"prefix": ":playObjectionAnimation",
 		"body": [":playObjectionAnimation()"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_93": {
+	"Macro_95": {
 		"scope": "ansl",
 		"prefix": ":DebugMacro",
 		"body": [":DebugMacro(Name)"],
 		"description": "This is a user generated macro"
 	},
-	"Macro_94": {
+	"Macro_96": {
 		"scope": "ansl",
 		"prefix": ":DebugMacro2",
 		"body": [":DebugMacro2()"],

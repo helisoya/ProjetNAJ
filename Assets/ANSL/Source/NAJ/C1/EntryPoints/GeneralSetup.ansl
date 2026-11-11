@@ -10,6 +10,7 @@ createUserEvidence(C1_DeathMessage;0;C1)
 createUserProfile(C1_Rann;C1)
 createUserProfile(C1_Sartt;C1)
 createUserProfile(C1_Gerald;C1)
+createUserProfile(C1_Herri;C1)
 createUserProfile(C1_Judge;C1)
 createUserProfile(C1_Sherif;C1)
 createUserProfile(C1_Juno;C1)
@@ -40,6 +41,10 @@ createUserVariable(C1_AttackedJuno;0)
 # 1 -> Did at "Who killed the Captain"
 # 2 -> Did at Knife
 # 3 -> Did a Herbarium
+
+createUserVariable(C1_AttackedJunoAlt;0)
+# 0 -> Did not incriminate instead of Herri
+# 1 -> Did
 
 createUserVariable(LifePoints;3)
 createUserVariable(MaxLifePoints;3)

@@ -403,28 +403,59 @@ choice(List)
 		ask(Evidence)
 
 		case Evidence/C1_Knife:
-			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_9)
-			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_10)
+			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_Knife_1)
+			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_Knife_2)
 			showDialogWindow(false)
 
 			:setCourtroomCamToWitness(true)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_11)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_12)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_13)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_14)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_15)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_16)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_17)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_18)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Knife_3)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Knife_4)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Knife_5)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Knife_6)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Knife_7)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Knife_8)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Knife_9)
 			showDialogWindow(false)
 
 			:setRannAngry(Coat)
 			:setCourtroomCamToDefense(true)
-			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_19)
+			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_Knife_10)
+			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_Knife_11)
 			showDialogWindow(false)
 
 			:setCourtroomCamToWitness(true)
-			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_20)
+			dialog(Char_Gerald;null;C1_Trial1_J_FullStory_Knife_12)
+
+
+		case Evidence/C1_DeathMessage:
+			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_Message_1)
+			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_Message_2)
+			showDialogWindow(false)
+
+			:setCourtroomCamToWitness(true)
+			dialog(Char_Gerald;null;C1_Trial1_J_FullStory_Message_3)
+			dialog(Char_Gerald;GeraldNoCoat;C1_Trial1_J_FullStory_Message_4)
+			showDialogWindow(false)
+
+			:setRannAngry(Coat)
+			:setCourtroomCamToDefense(true)
+			dialog(Char_Rann;RannCoat;C1_Trial1_J_FullStory_Message_5)
+			showDialogWindow(false)
+
+			:setRobertEyeThinking()
+			:setRobertNormal()
+			:setCourtroomCamToProsecutor(true)
+			dialog(Char_Robert;Robert;C1_Trial1_J_FullStory_Message_6)
+			dialog(Char_Robert;Robert;C1_Trial1_J_FullStory_Message_7)
+			showDialogWindow(false)
+
+			:setCourtroomCamToWitness(true)
+			dialog(Char_Gerald;null;C1_Trial1_J_FullStory_Message_8)
+			showDialogWindow(false)
+
+			:setRobertEyeNormal()
+			:setCourtroomCamToProsecutor(true)
+			dialog(Char_Robert;Robert;C1_Trial1_J_FullStory_Message_9)
 
 		case default:
 			:setGeraldEyeNormal(NoCoat)

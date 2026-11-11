@@ -16,6 +16,7 @@ addProfile(C1_Judge)
 addProfile(C1_Sherif)
 addProfile(C1_Judge)
 addProfile(C1_Juno)
+addProfile(C1_Herri)
 
 :setBackgroundWithLoading(Common/Courtroom;false)
 

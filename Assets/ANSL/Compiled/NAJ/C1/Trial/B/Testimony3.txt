@@ -1,4 +1,4 @@
-#C6E566DA7A53BC1CD90515C613AA96AD-8956126B45292CBB910B7AE6D1BF3C1C
+#94BC1E6C5B6A293518BF814459116AA5-8956126B45292CBB910B7AE6D1BF3C1C
 100false
 381true
 50null
@@ -50,22 +50,39 @@
 69RannCoatAngry0.1
 71RannCoatNormal
 75RannCoatNeutral
-69GeraldNoCoatSad0.1
+71GeraldNoCoatSurprise
+75GeraldNoCoatSerious
+69GeraldNoCoatSurprise0.1
+610.20.1
+51Damage
 67WitnessCam0.25false
 66WitnessCam0.25true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Start_18
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Start_19
-66JudgeCam
-67JudgeCam
-36Char_JudgeJudgeC1_Trial_Testimony3_Start_20
-36Char_JudgeJudgeC1_Trial_Testimony3_Start_21
 66DefenseCam
 67DefenseCam
-36nullnullC1_Trial_Testimony3_Start_22
-36nullnullC1_Trial_Testimony3_Start_23
-36nullnullC1_Trial_Testimony3_Start_24
-36nullnullC1_Trial_Testimony3_Start_25
+69RobertNormal0.1
+71RobertNormal
+75RobertNormal
+610.20.1
+51Damage
+36Char_RannRannCoatC1_Trial_Testimony3_Start_19
+36Char_RannRannCoatC1_Trial_Testimony3_Start_20
+36Char_RannRannCoatC1_Trial_Testimony3_Start_21
+67ProsecutionCam
+66ProsecutionCam
+36Char_RobertRobertC1_Trial_Testimony3_Start_22
+36Char_RobertRobertC1_Trial_Testimony3_Start_23
+66DefenseCam
+67DefenseCam
+36Char_RannnullC1_Trial_Testimony3_Start_24
+66JudgeCam
+67JudgeCam
+36Char_JudgeJudgeC1_Trial_Testimony3_Start_25
+66DefenseCam
+67DefenseCam
 36nullnullC1_Trial_Testimony3_Start_26
+36nullnullC1_Trial_Testimony3_Start_27
+36nullnullC1_Trial_Testimony3_Start_28
 100false
 381true
 67WitnessCam
@@ -84,11 +101,11 @@
 36nullnullC1_Trial_Testimony3_Testimony_0
 50Testimony_Slow
 4
-9294186False2130False3161False4184False5225False
+93111103False2147False3178False4201False5242False
 181
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_1falsenoInput
-101False9029029486130
+101False107307311103147
 100false
 51Press
 52Presstrue
@@ -128,11 +145,11 @@
 381true
 380false
 182
-4385
+43102
 182
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_2falsenoInput
-102False13429029486161
+102False151307311103178
 100false
 51Press
 52Presstrue
@@ -159,11 +176,11 @@
 381true
 380false
 183
-4385
+43102
 183
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_3falsenoInput
-103False165290294130184
+103False182307311147201
 100false
 51Press
 52Presstrue
@@ -182,11 +199,11 @@
 381true
 380false
 184
-4385
+43102
 184
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_4falsenoInput
-104False188290294161225
+104False205307311178242
 100false
 51Press
 52Presstrue
@@ -223,11 +240,11 @@
 381true
 380false
 185
-4385
+43102
 185
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_5falsenoInput
-105False229290294184270Evidence/C1_AutopsyReport
+105False246307311201287Evidence/C1_AutopsyReport
 100false
 51Press
 52Presstrue
@@ -268,10 +285,10 @@
 67WitnessCam
 66WitnessCam
 380false
-43270
+43287
 181
 21false
-3294
+3311
 100false
 69RannCoatThinking0.1
 381true
@@ -288,11 +305,11 @@
 67WitnessCam
 66WitnessCam
 380false
-4385
+43102
 181
 21false
 45../Common/ExaminationFail
-4385
+43102
 100false
 50null
 51Objection
