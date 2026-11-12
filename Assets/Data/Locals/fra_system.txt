@@ -51,7 +51,7 @@ SettingsMenu_Graphics_Shadows = Qualité des ombres
 SettingsMenu_Sound = Son
 SettingsMenu_Sound_Music = Musique
 SettingsMenu_Sound_Ambient = Ambiance
-SettingsMenu_Sound_Sfx = Sfx
+SettingsMenu_Sound_Sfx = SFX
 SettingsMenu_Sound_Voice = Voix
 
 SettingsMenu_Text = Texte
@@ -97,7 +97,7 @@ SettingsMenu_Game_BackgroundManager_Weather = Effets météo
 SettingsMenu_Game_BackgroundManager_Foliage = Végétation
 SettingsMenu_Game_BackgroundManager_TerrainQuality = Qualité du terrain
 
-SettingsMenu_Game_DialogUI_BackgroundOpacity = Opacité boite de dialogue
+SettingsMenu_Game_DialogUI_BackgroundOpacity = Opacité boîte de dialogue
 SettingsMenu_Game_DialogUI_SpeedModifier = Vitesse dialogue
 
 SettingsMenu_Game_ANSLManager_AutoplayTimer = Pause (mode automatique)
@@ -148,4 +148,4 @@ SettingsMenu_Inputs_SwitchLeft = Basculer gauche (Menu)
 SettingsMenu_Inputs_SwitchRight = Basculer droite (Menu)
 SettingsMenu_Inputs_InventoryPresent = Présenter preuve/presser
 
-CreditsMenu_NAJCredits = <b>Julien Oudot</b><br>  Programmation<br>  Narration<br>  Visuels<br>  Musiques<br><br><b>Marvin Lamacchia</b><br>  SFX<br>  Ambiance<br><br><b>Remerciements</b><br>  Feliji<br>  queenmagateau<br>  Samy DIF<br>  Kilik<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter
+CreditsMenu_NAJCredits = <b>Julien Oudot</b><br>  Programmation<br>  Narration<br>  Visuels<br>  Musique<br><br><b>Marvin Lamacchia</b><br>  SFX<br>  Ambiance<br><br><b>Remerciements</b><br>  Feliji<br>  queenmagateau<br>  Samy DIF<br>  Kilik<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter

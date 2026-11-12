@@ -18,7 +18,7 @@ SaveMenu_Title_Save = Select a slot to save to
 SaveMenu_Title_Load = Select a slot to load from
 SaveMenu_CorruptedSave = Corrupted Save
 
-SaveMenu_Popup_Title = Use this slot ?
+SaveMenu_Popup_Title = Use this slot?
 SaveMenu_Popup_Confirm = Confirm
 SaveMenu_Popup_Cancel = Cancel
 
@@ -45,24 +45,24 @@ SettingsMenu_Graphics = Graphics
 SettingsMenu_Graphics_Fullscreen = Fullscreen
 SettingsMenu_Graphics_Resolution = Resolution
 SettingsMenu_Graphics_VSync = VSync
-SettingsMenu_Graphics_AntiAliasing = AntiAliasing
-SettingsMenu_Graphics_Shadows = Shadows Quality
+SettingsMenu_Graphics_AntiAliasing = Anti-aliasing
+SettingsMenu_Graphics_Shadows = Shadow Quality
 
 SettingsMenu_Sound = Sound
 SettingsMenu_Sound_Music = Music
-SettingsMenu_Sound_Ambient = Ambient
-SettingsMenu_Sound_Sfx = Sfx
+SettingsMenu_Sound_Ambient = Ambience
+SettingsMenu_Sound_Sfx = SFX
 SettingsMenu_Sound_Voice = Voices
 
 SettingsMenu_Text = Text
 
 SettingsMenu_Text_Channel_0_Font = UI Font
 SettingsMenu_Text_Channel_0_Size = UI Size
-SettingsMenu_Text_Channel_0_Color = UI Color
+SettingsMenu_Text_Channel_0_Color = UI Colour
 
-SettingsMenu_Text_Channel_1_Font = Dialog Font
-SettingsMenu_Text_Channel_1_Size = Dialog Size
-SettingsMenu_Text_Channel_1_Color = Dialog Color
+SettingsMenu_Text_Channel_1_Font = Dialogue Font
+SettingsMenu_Text_Channel_1_Size = Dialogue Size
+SettingsMenu_Text_Channel_1_Color = Dialogue Colour
 
 SettingsMenu_Text_Language = Languages
 SettingsMenu_Text_Language_eng = English
@@ -77,7 +77,7 @@ SettingsMenu_Text_Sizes_5 = 26
 
 SettingsMenu_Keyboard = Keyboard inputs
 SettingsMenu_Gamepad = Gamepad inputs
-SettingsMenu_Rebinding = Input key for : {0}
+SettingsMenu_Rebinding = Input key for: {0}
 
 SettingsMenu_Inputs_Autoplay = Autoplay
 SettingsMenu_Inputs_SkipMode = Skip
@@ -90,15 +90,15 @@ SettingsMenu_Game_InteractionMode_HighlightType_None = None
 SettingsMenu_Game_InteractionMode_HighlightType_Selected = Only Selected
 SettingsMenu_Game_InteractionMode_HighlightType_All = All
 SettingsMenu_Game_InteractionMode_HighlightStrength = Interaction highlight strength
-SettingsMenu_Game_InteractionMode_HighlightColor = Interaction highlight color
-SettingsMenu_Game_InteractionMode_SelectionColor = Interaction selection color
+SettingsMenu_Game_InteractionMode_HighlightColor = Interaction highlight colour
+SettingsMenu_Game_InteractionMode_SelectionColor = Interaction selection colour
 
 SettingsMenu_Game_BackgroundManager_Weather = Weather effects
 SettingsMenu_Game_BackgroundManager_Foliage = Foliage
 SettingsMenu_Game_BackgroundManager_TerrainQuality = Terrain Quality
 
-SettingsMenu_Game_DialogUI_BackgroundOpacity = Dialog box opacity
-SettingsMenu_Game_DialogUI_SpeedModifier = Dialog Speed
+SettingsMenu_Game_DialogUI_BackgroundOpacity = Dialogue box opacity
+SettingsMenu_Game_DialogUI_SpeedModifier = Dialogue Speed
 
 SettingsMenu_Game_ANSLManager_AutoplayTimer = Autoplay timer
 
@@ -130,7 +130,7 @@ GeneralMenu_Back = Back
 
 CaseSelectionMenu_Title = Chapter Selection
 CaseSelectionMenu_Select = Select
-CaseSelectionMenu_Confirm = Start this chapter ?
+CaseSelectionMenu_Confirm = Start this chapter?
 CaseSelectionMenu_Yes = Yes
 CaseSelectionMenu_No = No
 CaseSelectionMenu_Cancel = Cancel
@@ -148,4 +148,4 @@ SettingsMenu_Inputs_SwitchLeft = Switch Left (Menu)
 SettingsMenu_Inputs_SwitchRight = Switch Right (Menu)
 SettingsMenu_Inputs_InventoryPresent = Present Evidence/Press
 
-CreditsMenu_NAJCredits = <b>Julien Oudot</b><br>  Programming<br>  Narration<br>  Visuals<br>  Musics<br><br><b>Marvin Lamacchia</b><br>  SFX<br>  Ambience<br><br><b>Thanks</b><br>  Feliji<br>  queenmagateau<br>  Samy DIF<br>  Kilik<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter
+CreditsMenu_NAJCredits = <b>Julien Oudot</b><br>  Programming<br>  Narration<br>  Visuals<br>  Music<br><br><b>Marvin Lamacchia</b><br>  SFX<br>  Ambience<br><br><b>Thanks</b><br>  Feliji<br>  queenmagateau<br>  Samy DIF<br>  Kilik<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter

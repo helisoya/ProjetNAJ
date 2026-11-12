@@ -26,7 +26,7 @@ C1_Trial_A_17 = … I will, however, make an exception in this case.
 C1_Trial_A_18 = Let us begin, then. 
 C1_Trial_A_19 = Please explain what happened, Sheriff.
 C1_Trial_A_20 = With pleasure.
-C1_Trial_A_21 = As you probably know, a ship crashed in Western Taliak two days ago.
+C1_Trial_A_21 = As you probably know, a ship wrecked itself in Western Taliak two days ago.
 C1_Trial_A_22 = Ah, yes. The explosion woke me up. I was lucky that my lodge didn’t get hit.
 C1_Trial_A_23 = Truly. However, we didn’t get notified until the following morning.
 C1_Trial_A_24 = When we did, we immediately rushed to the scene.
@@ -44,7 +44,7 @@ C1_Trial_A_35 = It also states that he knew Mister <color=red>Landry</color> per
 C1_Trial_A_36 = Landry? Oh, now I get why you wanted to expedite this matter.
 C1_Trial_A_37 = Yes. Well…
 C1_Trial_A_38 = The victim was stabbed to death. A single blow to the heart.
-C1_Trial_A_39 = It seems that the captain survived the crash but was killed afterwards.
+C1_Trial_A_39 = It seems that the captain survived the collision but was killed afterwards.
 C1_Trial_A_40 = Here is the autopsy report we made just before retreating.
 C1_Trial_A_41 = I see.
 C1_Trial_A_42 = By the way, who is our defendant? I believe you failed to introduce her.
@@ -204,7 +204,7 @@ C1_Trial_B_14 = Sheriff? But surely you can’t deny that she is injured.
 C1_Trial_B_15 = I won’t deny that she is injured… right now.
 C1_Trial_B_16 = But let me ask you something. When did she get hurt?
 C1_Trial_B_17 = Oh, er…
-C1_Trial_B_18 = I got hurt during the crash. I was thrown overboard when it happened.
+C1_Trial_B_18 = I got hurt during the collision. I was thrown overboard when it happened.
 C1_Trial_B_19 = So no one can verify that you got hurt before the murder.
 C1_Trial_B_20 = For all we know, you hurt yourself on purpose after killing the captain.
 C1_Trial_B_21 = I’m sure you did it to throw us off.
@@ -297,7 +297,7 @@ C1_Trial_Testimony2_Press5_5 = <color=#72B6E8>It means that the coat the killer 
 C1_Trial_Testimony2_Loop_1 = <color=#72B6E8>Not much information this time…</color>
 C1_Trial_Testimony2_Loop_2 = <color=#72B6E8>Still, I must find something. I have no choice.</color>
 
-C1_Trial_C_1 = I will reiterate, it is impossible for me to be the killer.
+C1_Trial_C_1 = I will reiterate: it is impossible for me to be the killer.
 C1_Trial_C_2 = What is it this time?
 C1_Trial_C_3 = The killer’s coat was bloody and burnt, right?
 C1_Trial_C_4 = Yes, this is what our friend here just told us.
@@ -310,14 +310,14 @@ C1_Trial_C_10 = …
 C1_Trial_C_11 = …
 C1_Trial_C_12 = Wait. Where’s the blood? And the burn marks are missing too!
 C1_Trial_C_13 = They are missing because I wasn’t the one Juno saw.
-C1_Trial_C_14 = During the crash, I was hit by the turbulent waves.
+C1_Trial_C_14 = During the collision, I was hit by the turbulent waves.
 C1_Trial_C_15 = After which, I was thrown overboard and my coat got torn during my fall.
 C1_Trial_C_16 = In short, this proves I didn’t kill the captain!
 C1_Trial_C_17 = T-That would make sense.
 C1_Trial_C_18 = Once again, who can attest that you are not lying?
 C1_Trial_C_19 = You keep claiming that you didn’t kill the captain, that you got injured and couldn’t run.
 C1_Trial_C_20 = But let me give you my simple theory.
-C1_Trial_C_21 = You survived the crash and killed the captain for some reason.
+C1_Trial_C_21 = You survived the collision and killed the captain for some reason.
 C1_Trial_C_22 = Miss Dr’hma saw you and screamed.
 C1_Trial_C_23 = Panicking, you ran away.
 C1_Trial_C_24 = Then, you threw your coat into the sea and got a new one.
@@ -382,7 +382,7 @@ C1_Trial_Question1_Sheriff_1 = The sheriff must have done it!
 C1_Trial_Question1_Sheriff_2 = I mean, he’s wearing a coat like Juno said.
 C1_Trial_Question1_Sheriff_3 = Miss Retyr… I know our sheriff is a bit… virulent at times.
 C1_Trial_Question1_Sheriff_4 = But he is no murderer, you have my word.
-C1_Trial_Question1_Sheriff_5 = Besides, didn’t the witness tell us that the coat wasn’t the same color as the police?
+C1_Trial_Question1_Sheriff_5 = Besides, didn’t the witness tell us that the coat wasn’t the same colour as the police?
 C1_Trial_Question1_Sheriff_6 = Oh.
 C1_Trial_Question1_Sheriff_7 = Don’t worry, seafaring girl. I won’t take it personally.
 C1_Trial_Question1_Sheriff_8 = Guh…
@@ -406,7 +406,7 @@ C1_Trial_Question1_Animal_9 = To conclude, no animals.
 C1_Trial_D_1 = Well, it seems likely that a crew member is the killer.
 C1_Trial_D_2 = Juno saw the culprit wearing the crew’s uniform after all.
 C1_Trial_D_3 = And judging from the burn marks on it, it seems they survived the explosion.
-C1_Trial_D_4 = You mean someone else survived the crash, and then killed the captain?
+C1_Trial_D_4 = You mean someone else survived the collision, and then killed the captain?
 C1_Trial_D_5 = Yes. I don’t know why they would have killed the captain, though.
 C1_Trial_D_6 = But perhaps they ran away and hid after being caught red-handed by Juno.
 C1_Trial_D_7 = Maybe they are still hiding near the shipwreck.
@@ -443,8 +443,8 @@ C1_Trial_D_36 = As you wish.
 C1_Trial1_D_37 = <color=#72B6E8>Phew…</color>
 C1_Trial1_D_38 = <color=#72B6E8>I… I did it!</color>
 C1_Trial1_D_39 = <color=#72B6E8>Soon, I might be found innocent of this foul murder.</color>
-C1_Trial1_D_40 = <color=#72B6E8>But this brings up a new question : who did it?</color>
-C1_Trial1_D_41 = <color=#72B6E8>Did someone really survive the crash and kill the captain?</color>
+C1_Trial1_D_40 = <color=#72B6E8>But this brings up a new question: who did it?</color>
+C1_Trial1_D_41 = <color=#72B6E8>Did someone really survive the collision and kill the captain?</color>
 C1_Trial1_D_42 = <color=#72B6E8>And if so, why?</color>
 C1_Trial1_D_43 = Erm… Hello.
 C1_Trial1_D_44 = Ah. Juno, was it?
@@ -460,7 +460,7 @@ C1_Trial1_D_53 = You did what you had to do.
 C1_Trial1_D_54 = Besides, your testimony helped sway the judge to my side, it seems.
 C1_Trial1_D_55 = Now all I need to do is to find the real culprit.
 C1_Trial1_D_56 = Hmm… I wonder who I really saw.
-C1_Trial1_D_57 = And why would someone kill their captain right after a crash?
+C1_Trial1_D_57 = And why would someone kill their captain right after a collision?
 C1_Trial1_D_58 = I don’t know. Maybe they had an argument.
 C1_Trial1_D_59 = The Captain wasn’t really popular with the crew; maybe that’s part of the reason.
 C1_Trial1_D_60 = …
