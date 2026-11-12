@@ -26,7 +26,7 @@ Evidence_C1_Injury_Name = Leg Injury
 Evidence_C1_Injury_Desc = I am injured and cannot run.
 
 Evidence_C1_Knife_Name = Knife
-Evidence_C1_Knife_Desc = The murder Weapon. Bears my prints on the blade, and unknown ones on the handle.
+Evidence_C1_Knife_Desc = The murder Weapon. "Bears Ronne Retyr's prints on the blade, and unknown ones on the handle."
 
 Evidence_C1_AutopsyReport_Name = Autopsy Report
 Evidence_C1_AutopsyReport_Desc = Cause of death : Direct hit to the heart.
@@ -34,7 +34,7 @@ Evidence_C1_AutopsyReport_Desc = Cause of death : Direct hit to the heart.
 Evidence_C1_DebtReport_Name = Debt Report
 Evidence_C1_DebtReport_Desc = Says that someone named "G.M." is heavily indebted to the captain.
 
-Evidence_C1_DeathMessage_Name = Death Message
+Evidence_C1_DeathMessage_Name = Captain's Message
 Evidence_C1_DeathMessage_Desc = "Ronne" written in the captain's blood.
 
 Evidence_C1_Axe_Name = Axe

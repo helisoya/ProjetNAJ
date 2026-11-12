@@ -189,7 +189,7 @@ namespace ANF.ANSL
             if (!context.isPaused && !skipModeEnabled && !autoPlayEnabled)
             {
                 if (audioManager != null)
-                    audioManager.PlayUICursorConfirmSFX();
+                    audioManager.PlaySFX("TextConfirm", 1.0f);
 
                 inputDetected = true;
             }

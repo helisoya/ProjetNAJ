@@ -1,4 +1,4 @@
-#67BDF6487B6A9B53DA192F183A7B06A8-8956126B45292CBB910B7AE6D1BF3C1C
+#081BF32AD4A82FAB5A5E94B8E263F564-8956126B45292CBB910B7AE6D1BF3C1C
 100false
 381true
 67WitnessCam
@@ -63,17 +63,18 @@
 71RannCoatNormal
 75RannCoatNeutral
 69JudgeNormal0.1
+1100.6
 380false
 51Rebuttal
 52Rebuttaltrue
 36nullnullC1_Trial_Testimony5_Testimony_0
 50Testimony_Fast
 4
-9324171False2113False3152False
+9324172False2114False3153False
 181
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Testimony_1falsenoInput
-101False7532032471113
+101False7632032472114
 100false
 51Press
 52Presstrue
@@ -111,11 +112,11 @@
 66WitnessCam
 380false
 182
-4370
+4371
 182
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Testimony_2falsenoInput
-102False11732032471152
+102False11832032472153
 100false
 51Press
 52Presstrue
@@ -150,11 +151,11 @@
 1100.15
 380false
 183
-4370
+4371
 183
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Testimony_3falsenoInput
-103False156320324113301
+103False157320324114301
 100false
 51Press
 52Presstrue
@@ -186,7 +187,7 @@
 66DefenseCam
 67DefenseCam
 36nullnullC1_Trial_Testimony5_Press3_9
-280Choice_No188nullnullnullChoice_Yes284nullnullnull
+280Choice_No189nullnullnullChoice_Yes285nullnullnull
 69RannCoatNormal0.1
 71RannCoatNormal
 75RannCoatNeutral
@@ -197,7 +198,7 @@
 67JudgeCam
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_12
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_13
-2Any283Evidence/C1_Knife199default245
+2Any284Evidence/C1_Knife200default246
 50null
 69RannCoatReadingBook
 71JudgeSurprise
@@ -243,7 +244,7 @@
 67DefenseCam
 36Char_RannRannCoatC1_Trial_Testimony5_Press3_31
 45Testimony5Question
-43283
+43284
 22true
 191truetrue
 69RannCoatHandsOnDesk0.1
@@ -265,10 +266,10 @@
 51LoseLife
 610.10.25truetrue
 108LifePoints-1
-41267269LifePoints < 0
+41268270LifePoints < 0
 108LifePoints=0
-43270
-43270
+43271
+43271
 190falsefalse
 12falsetrue
 71JudgeAngry
@@ -277,16 +278,16 @@
 67JudgeCam
 36Char_JudgeJudgeC1_Trial_Testimony5_Press3_Fail_5
 22false
-41279281LifePoints <= 0
+41280282LifePoints <= 0
 45../Common/Death
-43282
-43282
 43283
-43288
+43283
+43284
+43289
 71RannCoatNormal
 75RannCoatNeutral
 36nullnullC1_Trial_Testimony5_Press3_Cancel_1
-43288
+43289
 100false
 381true
 69RannCoatNormal0.1
@@ -298,7 +299,6 @@
 75JudgeNormal
 67WitnessCam
 66WitnessCam
-380false
 43301
 181
 21false
@@ -318,9 +318,9 @@
 67WitnessCam
 66WitnessCam
 380false
-4370
+4371
 181
 21false
 45../Common/ExaminationFail
-4370
+4371
 46ErrorTestimony 5 Exit at wrong file

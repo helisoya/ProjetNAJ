@@ -183,6 +183,38 @@ namespace ANF.GUI
 
         public override void RedrawLocalizedElements()
         {
+            PersistentDataManager.instance.GetGlobalData().GetComponent(out Locals.Locals locals);
+            TMP_Dropdown tmp;
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))
+            {
+                Dictionary<string, SettingsContainer.SettingsObjectData> datas = settings.GetValues();
+
+                foreach (KeyValuePair<string, List<KeyValuePair<string, Selectable>>> tab in selectables)
+                {
+                    foreach (KeyValuePair<string, Selectable> setting in tab.Value)
+                    {
+                        SettingsContainer.SettingsObjectData data = datas[setting.Key];
+
+                        if (data != null && data.drawParameters.dropdownLabels != null
+                            && (tmp = (TMP_Dropdown)setting.Value))
+                        {
+                            // Redraw dropdown
+
+                            tmp.ClearOptions();
+
+                            List<string> labels = new List<string>();
+                            foreach (string labelKey in data.drawParameters.dropdownLabels)
+                            {
+                                labels.Add(locals != null ? locals.GetLocal(labelKey) : labelKey);
+                            }
+
+                            tmp.AddOptions(labels);
+                            tmp.SetValueWithoutNotify((int)data.value);
+                        }
+                    }
+                }
+            }
         }
     }
 

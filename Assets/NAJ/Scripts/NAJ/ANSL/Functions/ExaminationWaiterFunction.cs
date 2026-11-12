@@ -110,7 +110,7 @@ namespace NAJ.ANSL
             if (!detectedGoingRight)
             {
                 if (audioManager != null)
-                    audioManager.PlayUICursorMoveSFX();
+                    audioManager.PlaySFX("TextConfirm", 1.0f);
 
                 detectedGoingLeft = true;
             }
@@ -122,7 +122,7 @@ namespace NAJ.ANSL
             if (!detectedGoingLeft)
             {
                 if (audioManager != null)
-                    audioManager.PlayUICursorMoveSFX();
+                    audioManager.PlaySFX("TextConfirm", 1.0f);
 
                 detectedGoingRight = true;
             }
@@ -132,7 +132,7 @@ namespace NAJ.ANSL
         private void OnChangePart(uint targetLine)
         {
             if (audioManager != null)
-                audioManager.PlayUICursorConfirmSFX();
+                audioManager.PlaySFX("TextConfirm", 1.0f);
 
             detectedChangePart = true;
             detectedChangePartValue = targetLine;

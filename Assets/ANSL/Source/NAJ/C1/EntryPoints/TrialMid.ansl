@@ -12,11 +12,12 @@ addEvidence(C1_AutopsyReport)
 addProfile(C1_Rann)
 addProfile(C1_Sartt)
 addProfile(C1_Gerald)
+addProfile(C1_Herri)
 addProfile(C1_Judge)
 addProfile(C1_Sherif)
 addProfile(C1_Judge)
 addProfile(C1_Juno)
-addProfile(C1_Herri)
+
 
 :setBackgroundWithLoading(Common/Courtroom;false)
 

@@ -77,6 +77,7 @@ namespace ANF.GUI
         {
             data.label = label;
             data.bgSprite = bgSprite;
+            data.saveIsCorrupted = isCorrupted;
 
             labelText.GetText().text = label;
             backgroundImage.sprite = bgSprite;

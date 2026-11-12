@@ -70,6 +70,8 @@ fadeBg(1;true)
 :setRannEyeNeutral(Coat)
 :setJudgeNormal()
 
+wait(0.6)
+
 fadeBg(0;false)
 
 :playRebuttalAnimation()
@@ -297,7 +299,6 @@ press 3
 	:setJudgeEyeNormal()
 	:setJudgeEyeNormal()
 	:setCourtroomCamToWitnessImmediate()
-	fadeBg(0;false)
 
 loop
 	showDialogWindow(false)

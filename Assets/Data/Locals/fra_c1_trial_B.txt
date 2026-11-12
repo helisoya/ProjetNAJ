@@ -4,7 +4,7 @@
 
 # <color=#72B6E8>
 
-C1_Trial_Evidence_DeathMessage_1 = <color=#72B6E8>Message ajouté à l'inventaire.</color>
+C1_Trial_Evidence_DeathMessage_1 = <color=#72B6E8>Message du capitaine ajouté à l'inventaire.</color>
 C1_Trial_Evidence_DebtPapers_1 = <color=#72B6E8>Rapport de dette ajouté à l'inventaire.</color>
 C1_Trial_Evidence_Knife_1 = <color=#72B6E8>Couteau ajouté à l'inventaire.</color>
 
@@ -187,8 +187,8 @@ C1_Trial_Testimony3_Press5_2 = Non, j'étais inconscient à ce moment-là.
 C1_Trial_Testimony3_Press5_3 = … Dire que quelqu'un allait poignarder le vieux loup…
 C1_Trial_Testimony3_Press5_4 = Et si aucun tiers n'a tué le capitaine, tu restes notre principale suspecte, Mlle Retyr.
 C1_Trial_Testimony3_Press5_5 = Je suis innocente !
-C1_Trial_Testimony3_Press5_6 = Mais quel choix avons-nous ?
-C1_Trial_Testimony3_Press5_7 = Personne n’est en vie. C'est juste toi et moi.
+C1_Trial_Testimony3_Press5_6 = J'aimerai que tu ais raison.
+C1_Trial_Testimony3_Press5_7 = Mais si personne d'autre n'a survécu, le tueur doit être l'un d'entre nous.
 C1_Trial_Testimony3_Press5_8 = … Je n'arrive pas à croire que tu aies fait ça.
 C1_Trial_Testimony3_Press5_9 = Je… Non…
 C1_Trial_Testimony3_Press5_10 = <color=#72B6E8>J'ai vraiment besoin de trouver quelque chose, rapidement.</color>

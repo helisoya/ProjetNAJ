@@ -202,7 +202,6 @@ press 5
 	fadeBg(1;true)
 	:setRannNormal(Coat)
 	:setCourtroomCamToWitnessImmediate()
-	fadeBg(0;false)
 
 loop
 	showDialogWindow(false)

@@ -1,4 +1,4 @@
-#94BC1E6C5B6A293518BF814459116AA5-8956126B45292CBB910B7AE6D1BF3C1C
+#E0EC3A78B038191B3F068EF16B6E18A1-8956126B45292CBB910B7AE6D1BF3C1C
 100false
 381true
 50null
@@ -8,6 +8,7 @@
 75GeraldNoCoatSerious
 69GeraldNoCoatThinking0.1
 69RobertNormal0.1
+1100.6
 380false
 51Testimony
 52Testimonytrue
@@ -95,17 +96,18 @@
 71RannCoatNormal
 75RannCoatNeutral
 69RobertNormal0.1
+1100.6
 380false
 51Rebuttal
 52Rebuttaltrue
 36nullnullC1_Trial_Testimony3_Testimony_0
 50Testimony_Slow
 4
-93111103False2147False3178False4201False5242False
+93121105False2149False3180False4203False5244False
 181
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_1falsenoInput
-101False107307311103147
+101False109308312105149
 100false
 51Press
 52Presstrue
@@ -145,11 +147,11 @@
 381true
 380false
 182
-43102
+43104
 182
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_2falsenoInput
-102False151307311103178
+102False153308312105180
 100false
 51Press
 52Presstrue
@@ -176,11 +178,11 @@
 381true
 380false
 183
-43102
+43104
 183
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_3falsenoInput
-103False182307311147201
+103False184308312149203
 100false
 51Press
 52Presstrue
@@ -199,11 +201,11 @@
 381true
 380false
 184
-43102
+43104
 184
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_4falsenoInput
-104False205307311178242
+104False207308312180244
 100false
 51Press
 52Presstrue
@@ -240,11 +242,11 @@
 381true
 380false
 185
-43102
+43104
 185
 21true
 36Char_GeraldGeraldNoCoatC1_Trial_Testimony3_Testimony_5falsenoInput
-105False246307311201287Evidence/C1_AutopsyReport
+105False248308312203288Evidence/C1_AutopsyReport
 100false
 51Press
 52Presstrue
@@ -284,11 +286,10 @@
 75RannCoatNeutral
 67WitnessCam
 66WitnessCam
-380false
-43287
+43288
 181
 21false
-3311
+3312
 100false
 69RannCoatThinking0.1
 381true
@@ -305,11 +306,11 @@
 67WitnessCam
 66WitnessCam
 380false
-43102
+43104
 181
 21false
 45../Common/ExaminationFail
-43102
+43104
 100false
 50null
 51Objection

@@ -4,7 +4,7 @@
 
 # <color=#72B6E8>
 
-C1_Trial_Evidence_DeathMessage_1 = <color=#72B6E8>Death message added to the inventory.</color>
+C1_Trial_Evidence_DeathMessage_1 = <color=#72B6E8>Captain's message added to the inventory.</color>
 C1_Trial_Evidence_DebtPapers_1 = <color=#72B6E8>Debt papers added to the inventory.</color>
 C1_Trial_Evidence_Knife_1 = <color=#72B6E8>Knife added to the inventory.</color>
 
@@ -188,8 +188,8 @@ C1_Trial_Testimony3_Press5_2 = No. I was out cold at that point.
 C1_Trial_Testimony3_Press5_3 = …To think someone would stab the old wolf…
 C1_Trial_Testimony3_Press5_4 = And if no third party killed the Captain, I’m afraid you are still our prime suspect, Miss Retyr.
 C1_Trial_Testimony3_Press5_5 = I didn’t!
-C1_Trial_Testimony3_Press5_6 = But what choice do we have?
-C1_Trial_Testimony3_Press5_7 = No one’s alive. It’s just you and me.
+C1_Trial_Testimony3_Press5_6 = Believe me, I want to trust you.
+C1_Trial_Testimony3_Press5_7 = But if no one else survived, the killer must be one of us.
 C1_Trial_Testimony3_Press5_8 = … I can’t believe you did this.
 C1_Trial_Testimony3_Press5_9 = I- No…
 C1_Trial_Testimony3_Press5_10 = <color=#72B6E8>I really need to find something, quickly.</color>
@@ -247,8 +247,8 @@ C1_Trial_Testimony4_Start_8 = Then that person must be our mysterious killer!
 C1_Trial_Testimony4_Start_9 = I think we can all agree on that.
 C1_Trial_Testimony4_Start_10 = Still, it is a shame we can’t identify who our witness did hear.
 C1_Trial_Testimony4_Start_11 = …
-C1_Trial_Testimony4_Start_12 = And this person you heard, were they a woman, or a man ?
-C1_Trial_Testimony4_Start_13 = …Dunno. Maybe a man ? Maybe a woman…
+C1_Trial_Testimony4_Start_12 = And this person you heard, were they a woman, or a man?
+C1_Trial_Testimony4_Start_13 = …Dunno. Maybe a man? Maybe a woman…
 C1_Trial_Testimony4_Start_14 = I can’t remember…
 C1_Trial_Testimony4_Start_15 = … I see.
 C1_Trial_Testimony4_Start_16 = I rest my case that our mysterious person is the defendant.
@@ -324,7 +324,7 @@ C1_Trial_Testimony4_Post_Gerald_1 = <color=#72B6E8>Gerald? No, no.</color>
 C1_Trial_Testimony4_Post_Gerald_2 = <color=#72B6E8>He wouldn’t do these sorts of things, right?</color>
 
 C1_Trial_Testimony4_Post_Juno_1 = <color=#72B6E8>Juno… Can I really trust her?</color>
-C1_Trial_Testimony4_Post_Juno_2 = <color=#72B6E8>Wait, no. She wasn’t on the ship. What am I thinking ?</color>
+C1_Trial_Testimony4_Post_Juno_2 = <color=#72B6E8>Wait, no. She wasn’t on the ship. What am I thinking?</color>
 
 C1_Trial_Testimony4_Post_13 = Gerald! What can you tell me about Herri, the ship’s cook?
 C1_Trial_Testimony4_Post_14 = What did his voice sound like?
@@ -518,7 +518,7 @@ C1_Trial1_H_57 = Right, I’m doing all this using deductive reasoning, not memo
 C1_Trial1_H_58 = I don’t actually need to remember what happened during the crash.
 C1_Trial1_H_59 = Hey, Your Honour?
 C1_Trial1_H_60 = Hmm?
-C1_Trial1_H_61 = The murder weapon. The knife. Could I see it ? I want to check something.
+C1_Trial1_H_61 = The murder weapon. The knife. Could I see it? I want to check something.
 C1_Trial1_H_62 = Huh? Oh, sure.
 C1_Trial1_H_63 = … Wait. Where is it? I can’t find it in the court record.
 C1_Trial1_H_64 = Now that I think about it…
@@ -625,7 +625,7 @@ C1_Trial_Testimony5_Press3_21 = …
 C1_Trial_Testimony5_Press3_22 = Yes. Aside from the misspell, it would be quite difficult to kill anyone holding a knife by the blade.
 C1_Trial_Testimony5_Press3_23 = Not only that, I would also cut myself.
 C1_Trial_Testimony5_Press3_24 = -And as you can see : I’m not hurt.
-C1_Trial_Testimony5_Press3_25 = But then… How did your fingerprints end up on the blade ?
+C1_Trial_Testimony5_Press3_25 = But then… How did your fingerprints end up on the blade?
 C1_Trial_Testimony5_Press3_26 = At some point during the trip, I helped Gerald tend to the ship’s plants.
 C1_Trial_Testimony5_Press3_27 = He was struggling, so I helped him by grabbing the blade directly.
 C1_Trial_Testimony5_Press3_28 = It seems nobody bothered to clean the knife since then.
@@ -639,11 +639,11 @@ C1_Trial_Testimony5_Press3_IncriminateFail_2 = …
 C1_Trial_Testimony5_Press3_IncriminateFail_3 = …
 C1_Trial_Testimony5_Press3_IncriminateFail_4 = Ha ha… Let me try again…
 
-C1_Trial_Testimony5_Press3_IncriminateJuno_1 = Juno must be our mysterious person, right ?
+C1_Trial_Testimony5_Press3_IncriminateJuno_1 = Juno must be our mysterious person, right?
 C1_Trial_Testimony5_Press3_IncriminateJuno_2 = …
-C1_Trial_Testimony5_Press3_IncriminateJuno_3 = And when did she ever get her hands on this knife ?
+C1_Trial_Testimony5_Press3_IncriminateJuno_3 = And when did she ever get her hands on this knife?
 C1_Trial_Testimony5_Press3_IncriminateJuno_4 = Ah, erm…
-C1_Trial_Testimony5_Press3_IncriminateJuno_5 = When she… killed the captain ?
+C1_Trial_Testimony5_Press3_IncriminateJuno_5 = When she… killed the captain?
 C1_Trial_Testimony5_Press3_IncriminateJuno_6 = Miss Retyr, we’ve had this talk before.
 C1_Trial_Testimony5_Press3_IncriminateJuno_7 = Miss Dr’hma cannot be the culprit. It makes no sense that she came into possession of this knife.
 C1_Trial_Testimony5_Press3_IncriminateJuno_8 = Ah, ah…
@@ -803,7 +803,7 @@ C1_Trial1_I_69 = I’m talking about how only he could have done this.
 C1_Trial1_I_70 = Only he could have been the killer?!
 C1_Trial1_I_71 = How so?
 C1_Trial1_I_72 = Well, actually. His “deductions” actually incriminate him.
-C1_Trial1_I_73 = He’s the only person I know who could write my name <color=red>“Ronne”</color> aside from the Sheriff, because of the herbarium.
+C1_Trial1_I_73 = He’s the only person I know who could write my name as <color=red>“Ronne”</color> aside from the Sheriff, because of the herbarium.
 C1_Trial1_I_74 = Moreover, he was in possession of the murder weapon.
 C1_Trial1_I_75 = Albeit, it’s true that it was mine before…
 C1_Trial1_I_76 = But!
@@ -1003,7 +1003,7 @@ C1_Trial1_J_FullStory_Knife_11 = You… I trusted you.
 C1_Trial1_J_FullStory_Knife_12 = …
 
 C1_Trial1_J_FullStory_Message_1 = When did you fake the message? 
-C1_Trial1_J_FullStory_Message_2 = And why misspell it? You knew how to write it.
+C1_Trial1_J_FullStory_Message_2 = And why misspell my name? You knew how to write it.
 C1_Trial1_J_FullStory_Message_3 = …
 C1_Trial1_J_FullStory_Message_4 = I… I didn’t write that message.
 C1_Trial1_J_FullStory_Message_5 = What?! That’s impossible.

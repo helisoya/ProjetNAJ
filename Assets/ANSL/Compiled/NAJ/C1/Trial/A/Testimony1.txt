@@ -1,4 +1,4 @@
-#860FCAB69C3A3AAFE693489B40AD13CD-8956126B45292CBB910B7AE6D1BF3C1C
+#69610109E7A8CCE878203917781426AB-8956126B45292CBB910B7AE6D1BF3C1C
 50null
 100false
 381true
@@ -16,11 +16,11 @@
 36nullnullC1_Trial_Testimony1_Testimony_0
 50Testimony_Slow
 4
-9241118False273False3106False4140False5180False
+9240118False273False3106False4140False5180False
 181
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_1falsenoInput
-101False222372411873
+101False222362401873
 69RannCoatReadingBook
 71RannCoatNormal
 75RannCoatNormal
@@ -75,7 +75,7 @@
 182
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_2falsenoInput
-102False7723724118106
+102False7723624018106
 100false
 51Press
 52Presstrue
@@ -108,7 +108,7 @@
 183
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_3falsenoInput
-103False11023724173140
+103False11023624073140
 100false
 51Press
 52Presstrue
@@ -142,7 +142,7 @@
 184
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_4falsenoInput
-104False144237241106180
+104False144236240106180
 69RannCoatHandsOnDesk0.1
 71RannCoatNormal
 75RannCoatSad
@@ -182,7 +182,7 @@
 185
 21true
 36Char_JunoJunoC1_Trial_Testimony1_Testimony_5falsenoInput
-105False184237241140217Evidence/C1_Injury
+105False184236240140216Evidence/C1_Injury
 100false
 51Press
 52Presstrue
@@ -214,11 +214,10 @@
 67WitnessCam
 66WitnessCam
 69RannCoatNormal0.1
-380false
-43217
+43216
 181
 21false
-3241
+3240
 100false
 69RannCoatThinking0.1
 381true

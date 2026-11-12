@@ -167,7 +167,6 @@ press 4
 	:setRannNormal(Coat)
 	:setRannEyeNeutral(Coat)
 	wait(0.15)
-	fadeBg(0;false)
 
 loop
 	showDialogWindow(false)

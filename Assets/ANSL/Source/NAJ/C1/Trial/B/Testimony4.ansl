@@ -47,10 +47,10 @@ dialog(Char_Judge;Judge;C1_Trial_Testimony4_Start_6)
 :setRannEyeNeutral(Coat)
 dialog(Char_Gerald;GeraldNoCoat;C1_Trial_Testimony4_Start_7)
 
-
 :setCourtroomCamToDefenseImmediate()
 dialog(Char_Rann;RannCoat;C1_Trial_Testimony4_Start_8)
 
+:setJudgeEyeNormal()
 :setCourtroomCamToJudge()
 dialog(Char_Judge;Judge;C1_Trial_Testimony4_Start_9)
 dialog(Char_Judge;Judge;C1_Trial_Testimony4_Start_10)
@@ -229,7 +229,6 @@ press 4
 	showDialogWindow(false)
 
 	fadeBg(1;true)
-	fadeBg(0;false)
 
 loop
 	showDialogWindow(false)

@@ -15,108 +15,27 @@ ANF
 
 
 To Release
-- Revoir / Aggrandir la partie investigation                                          V
-- Easter Eggs ? (Zone secrete dans l'investigation ?)                                 1
-- Animaux dans la partie investigation                                                V
-- Menu principal (Credits, Background, Icones Cases)                                  V
-- Icones Preuves / Portraits                                                          V
-- Selection d'Entry Points                                                            V
-- Trad Française                                                                      A vérifier
-- Opti UI (mettre les trucs dès le départ, masquer quand pas visible)                 V
 - Revoir modèles                                                                      -
 	- Tous (au niveau des trous)                                                      Ok?
 - Revoir décors                                                                       -
 	- Courthouse (fenetre)                                                            V
 	- Intro (bateau, rue principale de Kalia)                                         Ok?
 	- Buissons?                                                                       Rend Pas bien
-- Revoir menus                                                                        -
-	- Menu quêtes / logs ? (Les virer / Au moins les expliquer)                       Retiré
-	- Switch Souris / Clavier marche pas bien des fois (Settings)                     Fixé?
-- Inté son                                                                            -
-	- SFX                                                                             V
-	- Ambient                                                                         V
-	- BGM                                                                             V
-	- Son menus                                                                       V
-	- Mixage                                                                          A revoir
-- Inté steam                                                                          -
-	- Steam Cloud                                                                     Ok?
-	- Succès                                                                          Ajouter plus ? (sinon OK)
-- Review
-	- Rework Splash Screen (Ne pas oublier Unity d'ailleur)                           V
-	- Mode Interaction Icones Exit bas trop haut                                      V
-	- Bug Inventaire marqueur ? (a reproduire)                                        V
-	- Opti taille bundles                                                             A revérifier en test
-	- Temps chargement plus long en build (faire des async avec certaines res)        Pas fou
-	- Mettre un texte si on trouve la porte secrète après la hache                    V
-	- Modifier ask pour avoir des réponses custom par preuves fausse                  V
-	- Intro / Bato Fondu trop rapide, faire une petite pause                          V
-	- Icones (Au moins herbarium pas posé dans la spritesheet)                        V
-	- Impossible de save                                                              V
-	- Brouillard intro cassé                                                          V
-	- Vitesse dialogue dans les options                                               V
-	- Clignement d'yeux trop rapide                                                   V
-	- Mouvements d'eau avec le bato                                                   V
-	- Loop eau foireuse                                                               Marvin
-	- Secret Cave pas trouvé                                                          V
-	- Remplacer eau menu principal / cliff / waterfall (elle bouge, oupsi)            v
-	- Valeur par defaut settings a l'air cassé (vitesse dialog)                       V
-	- Autosave pas déclenché                                                          V
-	- Tiling kayous cassé                                                             V
+- Review                                                                              -
 	- Mouvements au crash site
-	- Pas de capitaine au crash site: (                                               V
-	- 1er Coup de marteau mauvais placement camera                                    V
-	- Preuve obtenu -> Ajouter un fade Bg                                             V
-	- Vitesse par défaut plus rapide pour le texte                                    V
-	- Intro procès damage sans sfx                                                    V
-	- Inventaire scale mal (dépasse le dialogue)                                      Volontaire mais foireux
-	- 1er témoignage "A cause de ça" en rouge                                         V
-	- 2ème témoignage "c'est possible" attribué au juge > sheriff                     V
-	- fov camera pas bon ? (Cam Juge correspond pas totalement)                       FOV bon, cam Juge est juste pété, a revoir
-	- Barre de vie trop grosse                                                        V
-	- SUCCES : Accuser Juno à tout les moments possible                               V
-	- Duel Intermission Juge Sheriff a des lines non attribués                        V
-	- Trou bras droit soldat                                                          V
-	- typo preuve papiers de detes                                                    V
-	- Papiers secrets anim juge trop tard, on la voit se finir                        Ok?
-	- Avant intro Gerald, Rann parle sur du texte pensé                               V
-	- 3ème témoingnage loop </color<                                                  V
-	- Anim Damage/Angry de Rann cassé                                                 V
-	- SUCCES : Accuser le Juge comme coupable
-	- Main gauche Gerald (au moins No coat) cassé                                     V
-	- Temoignage 5 : Anim gerald se reset trop tôt (début phase 1/2)                  V
 	- Revoir les infos preuves en général                                             Ok?
-	- Après présentation herbier, cam ne switch pas sur Rann "As you recall, ..."     V
-	- Présenter fausse preuve / mourir avant témoignage 6 softlock                    V
-	- Chargement de save, icones inventaire cassé (peut être choix aussi)             V
-	- It took you this long to realise pas en bleu                                    V
-	- SUCCES : Trouver le secret de Gerald
 	- Pb chargement background / scene ?                                              A reproduire, jsp pas ce qui a déclenché ça (new game > main menu > trial A > ecran noir)
 	- Message de Game Over Custom (A la fin on sait qui est le tueur, pas au début)
 	- UI Leak Mémoire                                                                 A Revoir
-	- Shérif Leak Mémoire                                                             V
-	- History commence en haut (inactif casse des trucs)                              V
-	- Icone par défaut en intéraction ?                                               V
 	- Change Scene qui wait rien du tout                                              Déjà réglé ?
 - Retours Playtests 2                                                                 -
-	- Hache comme item d'inventaire ?                                                 V
-	- Secret cassé, entrer avec la hache, quitter et revenir -> déjà ouvert           V
 	- Bug Succès lié à Juno, on peut l'avoir sans se tromper à la Q1                  Normalement Fix, a retester
-	- Hitbox à revoir mode intéraction                                                V
-	- Compliqué de naviguer et savoir avec quoi on intéragit                          A retester
-	- Retours Madeleine :                                                             -
-		- Comment Juno est arrivée là ? La zone était pas baricadée ?                 Pas important ?
-		- Revoir Gerald qui dit mal notre nom                                         Pas important ?
-		- Clareté noms propres / Lieux / ... -> Codex ?                               Mettre en rouge
-		- Scroll molette / Clavier trop lent                                          V
-		- Cut dans l'intro de gerald trop rapide ? (couleur de box différente)        "Fixé"
-		- Fix Shader Pixelate                                                         V
-		- Le truc qui cloche de Gerald pas forcément évident                          V
-		- Revoir la question 1 (parler du coat)                                       V
-		- Revoir timeline (inconscience de Gerald)                                    V
-		- Ajouter un type étrange qui pourrait être le pseudo-coupable                V
-		- Pause menu -> pas de back / ouverture rapide ?
-		- Icone temps de chargement                                                   V
 		
+		
+Final Review
+- Revoir trad FR
+
+
 
 Musiques :
 - Theme/Menu principal

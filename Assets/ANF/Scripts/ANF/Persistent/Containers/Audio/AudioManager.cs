@@ -252,6 +252,10 @@ namespace ANF.Persistent
                     volume = json.GetFloat("currentAmbientVolume");
                 audioManager.PlayAmbient(json.GetString("currentAmbient"), volume);
             }
+            else if (audioManager != null)
+            {
+                audioManager.PlayAmbient(null, 1.0f);
+            }
 
 
             if (json.ContainsKey("currentMusic") && audioManager != null)
@@ -260,6 +264,10 @@ namespace ANF.Persistent
                 if (json.ContainsKey("currentMusicVolume"))
                     volume = json.GetFloat("currentMusicVolume");
                 audioManager.PlayMusic(json.GetString("currentMusic"), volume);
+            }
+            else if (audioManager != null)
+            {
+                audioManager.PlayMusic(null, 1.0f);
             }
 
             if (json.ContainsKey("currentTextBlip") && audioManager != null)

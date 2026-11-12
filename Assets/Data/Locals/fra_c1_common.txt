@@ -26,7 +26,7 @@ Evidence_C1_Injury_Name = Blessure à la jambe
 Evidence_C1_Injury_Desc = Je suis blessé et ne peux pas courir.
 
 Evidence_C1_Knife_Name = Couteau
-Evidence_C1_Knife_Desc = L'arme du crime. Porte mes empreintes sur la lame et des empreintes inconnues sur le manche.
+Evidence_C1_Knife_Desc = L'arme du crime. "Porte les empreintes de Ronne Retyr sur la lame, ainsi que des empreintes inconnues sur le manche."
 
 Evidence_C1_AutopsyReport_Name = Rapport d'autopsie
 Evidence_C1_AutopsyReport_Desc = Cause de la mort : coup direct au cœur.
@@ -34,7 +34,7 @@ Evidence_C1_AutopsyReport_Desc = Cause de la mort : coup direct au cœur.
 Evidence_C1_DebtReport_Name = Rapport de dette
 Evidence_C1_DebtReport_Desc = Stipule qu'un certain "G.M." est fortement endetté auprès du capitaine.
 
-Evidence_C1_DeathMessage_Name = Message
+Evidence_C1_DeathMessage_Name = Message du capitaine
 Evidence_C1_DeathMessage_Desc = "Ronne" est écrit avec le sang du capitaine.
 
 Evidence_C1_Axe_Name = Hache

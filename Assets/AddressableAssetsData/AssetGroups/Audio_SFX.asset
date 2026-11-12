@@ -30,7 +30,7 @@ MonoBehaviour:
     - Common_SFX
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 27f6351397da749418f71acc90a6eba4
-    m_Address: Audio/SFX/ShipDamage
+    m_Address: Audio/SFX/ShipCrash
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -123,6 +123,12 @@ MonoBehaviour:
     - Audio
     - Common_SFX
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af87a0cd8320a3c44855afac5b3e1b24
+    m_Address: Audio/SFX/ShipDamage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b35f9c217608eef4b900d0624d6801a1
     m_Address: Audio/SFX/LoseLife
     m_ReadOnly: 0
@@ -172,6 +178,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e82605280ad5ecc48bbdc5d1ea9cc61b
+    m_Address: Audio/SFX/TextConfirm
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    - Common_SFX
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fe18b66dea479b9499874a2d9c2c1500
     m_Address: Audio/SFX/NotGuilty

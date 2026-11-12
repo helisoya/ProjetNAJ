@@ -1,4 +1,4 @@
-#214986DEEE156347EF99C9E3CB8EACBB-8956126B45292CBB910B7AE6D1BF3C1C
+#49A2B624A60C3283FD2432D1F41FEA69-8956126B45292CBB910B7AE6D1BF3C1C
 100false
 6649.26189-9.196307-46.78981
 672.958-182.5780.0
@@ -42,6 +42,8 @@
 36RannnullC1_Intro_B_20
 36RannnullC1_Intro_B_21
 69GeraldCoatDropKnife
+71GeraldCoatNormal
+75GeraldCoatSerious
 36Char_GeraldGeraldCoatC1_Intro_B_22
 36Char_GeraldGeraldCoatC1_Intro_B_23
 36Char_GeraldGeraldCoatC1_Intro_B_24
@@ -56,6 +58,8 @@
 36Char_GeraldGeraldCoatC1_Intro_B_33
 36Char_GeraldGeraldCoatC1_Intro_B_34
 36Char_GeraldGeraldCoatC1_Intro_B_35
+71GeraldCoatNormal
+75GeraldCoatNormal
 36Char_GeraldGeraldCoatC1_Intro_B_36
 36RannnullC1_Intro_B_37
 36RannnullC1_Intro_B_38
@@ -217,7 +221,7 @@
 100false
 610.50.5
 811
-51ShipDamage
+51ShipCrash
 49null
 84false
 1107

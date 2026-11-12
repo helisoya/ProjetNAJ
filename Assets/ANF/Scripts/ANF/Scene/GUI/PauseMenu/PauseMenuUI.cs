@@ -54,7 +54,7 @@ namespace ANF.GUI
                 SetEnabled(true);
             }
 
-            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent(out SettingsContainer settings))
                 cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
         }
 
@@ -86,11 +86,6 @@ namespace ANF.GUI
 
             gui.SetComponentsPaused(guiComponentsToPause, false);
             manager.GetWorld().SetPausedAll(false);
-            if (gui.GetComponent<DialogUI>(out DialogUI dialog))
-            {
-                if (dialog.isEnabled)
-                    dialog.SetPaused(false);
-            }
         }
 
         public override void OnEnabled()
@@ -102,11 +97,6 @@ namespace ANF.GUI
 
             gui.SetComponentsPaused(guiComponentsToPause, true);
             manager.GetWorld().SetPausedAll(true);
-            if (gui.GetComponent<DialogUI>(out DialogUI dialog))
-            {
-                if (dialog.isEnabled)
-                    dialog.SetPaused(true);
-            }
         }
 
         public override void OnPaused()
@@ -206,7 +196,7 @@ namespace ANF.GUI
         /// <param name="force">True if the id check should be skipped</param>
         public void SetCurrentButton(int id, bool force = false)
         {
-            if (currentPauseSubmenu == null && (force || currentButtonIdx != id))
+            if (force || currentButtonIdx != id)
             {
                 if (audioManager != null)
                     audioManager.PlayUICursorMoveSFX();
@@ -222,7 +212,7 @@ namespace ANF.GUI
         /// </summary>
         public void SelectCurrentButton()
         {
-            if (isEnabled && !isPaused && currentPauseSubmenu == null)
+            if (isEnabled && !isPaused)
             {
                 if (audioManager != null)
                     audioManager.PlayUICursorConfirmSFX();
@@ -236,7 +226,8 @@ namespace ANF.GUI
 		/// </summary>
         private void IncrementButtonWithInput()
         {
-            SetCurrentButton((currentButtonIdx + currentButtonInputSide + buttons.Length) % buttons.Length);
+            if (currentPauseSubmenu == null)
+                SetCurrentButton((currentButtonIdx + currentButtonInputSide + buttons.Length) % buttons.Length);
         }
 
         /// <summary>

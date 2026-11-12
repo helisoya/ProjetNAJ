@@ -55,6 +55,7 @@ dialog(Rann;null;C1_Intro_B_20)
 dialog(Rann;null;C1_Intro_B_21)
 
 :setGeraldDropKnife(Coat)
+:setGeraldEyeSerious(Coat)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_22)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_23)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_24)
@@ -71,6 +72,8 @@ dialog(Char_Gerald;GeraldCoat;C1_Intro_B_32)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_33)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_34)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_35)
+
+:setGeraldEyeNormal(Coat)
 dialog(Char_Gerald;GeraldCoat;C1_Intro_B_36)
 
 dialog(Rann;null;C1_Intro_B_37)
@@ -292,7 +295,7 @@ screenshake(0.5;0.5)
 
 # Transition to Investigation
 setFg(1)
-playSFX(ShipDamage)
+playSFX(ShipCrash)
 playAmbient(null)
 
 setFogEnabled(false)

@@ -92,6 +92,8 @@ fadeBg(1;true)
 
 # Lobby Scene
 
+wait(2)
+
 :setCourtroomCamToLobby()
 playMusic(Courthouse)
 
@@ -249,5 +251,7 @@ dialog(null;null;C1_Trial1_D_100)
 showDialogWindow(false)
 
 fadeFg(1;true)
+
+wait(2)
 
 load(../B/Start)

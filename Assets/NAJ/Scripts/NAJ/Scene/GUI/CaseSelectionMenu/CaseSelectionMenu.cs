@@ -449,7 +449,11 @@ namespace NAJ.GUI
             if (onConfirmButton)
             {
                 if (audioManager != null)
+                {
                     audioManager.PlayUICursorConfirmSFX();
+                    audioManager.PlayAmbient(null, 1.0f);
+                    audioManager.PlayMusic(null, 1.0f);
+                }
 
                 PersistentDataManager.instance.GetPlayerData().ResetAll();
                 if (PersistentDataManager.instance.GetPlayerData().GetComponent(out PlayerVariableContainer playerVariableContainer))
