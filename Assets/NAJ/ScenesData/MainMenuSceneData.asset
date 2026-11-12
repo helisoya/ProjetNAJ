@@ -74,5 +74,5 @@ MonoBehaviour:
         defaultWeather: 
         defaultSkybox: Day
         music: 
-        ambient: 
+        ambient: SeaCalm
         backgroundType: 0
