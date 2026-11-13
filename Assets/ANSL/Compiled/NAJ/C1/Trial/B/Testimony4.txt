@@ -1,4 +1,4 @@
-#3873093D0E7D0F36ACD8C08206BEC271-8956126B45292CBB910B7AE6D1BF3C1C
+#3989144418CC39912DDD6B51B7E5A686-8956126B45292CBB910B7AE6D1BF3C1C
 100false
 381true
 67WitnessCam
@@ -256,6 +256,7 @@
 45../Common/ExaminationFail
 43100
 50null
+380false
 69RannCoatHandsOnDesk0.1
 71RannCoatNormal
 75RannCoatNeutral
@@ -269,6 +270,7 @@
 69JudgeHoldingHammer
 67JudgeCam
 66JudgeCam
+25
 36Char_JudgeJudgeC1_Trial_Testimony4_Post_1
 36Char_JudgeJudgeC1_Trial_Testimony4_Post_2
 67ProsecutionCam

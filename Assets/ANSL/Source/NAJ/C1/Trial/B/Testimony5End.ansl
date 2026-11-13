@@ -194,6 +194,8 @@ playMusic(null)
 showDialogWindow(false)
 :playObjectionAnimation()
 
+autosave()
+
 :setCourtroomCamToDefense(true)
 dialog(Char_Rann;RannCoat;C1_Trial1_I_1)
 showDialogWindow(false)
@@ -350,7 +352,7 @@ dialog(Char_Rann;RannCoat;C1_Trial1_I_55)
 dialog(Char_Rann;RannCoat;C1_Trial1_I_56)
 
 :setRobertEyeAngry()
-:setRobertOnPouch()
+:setRobertAngry()
 :setCourtroomCamToProsecutorImmediate()
 dialog(Char_Robert;Robert;C1_Trial1_I_57)
 

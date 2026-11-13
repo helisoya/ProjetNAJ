@@ -252,9 +252,14 @@ endexamination
 
 playMusic(null)
 
+fadeBg(0;false)
+
 :setRannHandsOnDesk(Coat)
 :setRannEyeNeutral(Coat)
 :playJudgeHammerAnimation(HoldingHammer;JudgeCam)
+
+autosave()
+
 dialog(Char_Judge;Judge;C1_Trial_Testimony4_Post_1)
 dialog(Char_Judge;Judge;C1_Trial_Testimony4_Post_2)
 

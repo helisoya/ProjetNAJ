@@ -345,7 +345,7 @@ namespace ANF.GUI
             if (isEnabled && !isPaused && showingChoice)
             {
                 Vector2 input = context.ReadValue<Vector2>();
-                float value = input.x == 0 ? input.y : input.x;
+                float value = Mathf.Abs(input.x) < 0.9f ? input.y : input.x;
 
                 if (Mathf.Abs(value) >= 0.9f)
                 {

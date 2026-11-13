@@ -6363,7 +6363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Scene.InteractableObject
   ID: Right
   icon: {fileID: 2800000, guid: 9d294c3fe7cc01f4fba33ddb8a34bc95, type: 3}
-  centerOffset: {x: 0, y: 0, z: 0}
+  centerOffset: {x: 0, y: -2, z: 0}
   objectRenderers: []
   interactionCollider: {fileID: 766609512}
 --- !u!65 &766609512

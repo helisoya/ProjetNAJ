@@ -48,6 +48,10 @@ Define setRobertAimingGun()
 setCharacterBody(Robert;AimingGun;0.1)
 EndDefine
 
+Define setRobertAngry()
+setCharacterBody(Robert;Angry;0.1)
+EndDefine
+
 Define setRobertInspectGun()
 setCharacterBody(Robert;InspectGun)
 EndDefine

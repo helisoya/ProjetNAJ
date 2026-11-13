@@ -36,6 +36,8 @@ namespace NAJ.ANSL
         private bool detectedPress = false;
         private bool rebindEvents = false;
 
+        private bool moveInputAtZero;
+
         private ExaminationUI examinationUI;
         private InventoryUI inventoryUI;
         private AudioManager audioManager;
@@ -84,9 +86,18 @@ namespace NAJ.ANSL
                 examinationUI.onChangePart.AddListener(OnChangePart);
                 examinationUI.onPressPart.AddListener(OnPress);
 
-                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPress;
-                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
-                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
+                PlayerInput playerInput = PersistentDataManager.instance.GetANFInput().GetInput();
+
+                playerInput.actions.FindAction("Present").performed += OnPress;
+                playerInput.actions.FindAction("Move").performed += OnMove;
+                playerInput.actions.FindAction("Move").canceled += OnMove;
+                playerInput.actions.FindAction("Next").performed += OnNext;
+                playerInput.actions.FindAction("SwitchLeft").performed += OnSwitchLeft;
+                playerInput.actions.FindAction("SwitchRight").performed += OnSwitchRight;
+
+                float moveX = playerInput.actions.FindAction("Move").ReadValue<Vector2>().x;
+                moveInputAtZero = Mathf.Abs(moveX) <= 0.5f;
+                Debug.LogWarning($"Reset at zero ? {moveInputAtZero}");
 
                 if (manager.GetGUIManager().GetComponent(out InputReminderUI inputReminderUI))
                     inputReminderUI.SetReminderEnabled("press", true);
@@ -157,16 +168,45 @@ namespace NAJ.ANSL
                 OnGoRight();
         }
 
+        private void OnSwitchLeft(InputAction.CallbackContext context)
+        {
+            if (context.ReadValueAsButton() && inProgress && !inventoryUI.isEnabled && inventoryUI.selectedItem == null
+                && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
+                OnGoLeft();
+        }
+
+        private void OnSwitchRight(InputAction.CallbackContext context)
+        {
+            if (context.ReadValueAsButton() && inProgress && !inventoryUI.isEnabled && inventoryUI.selectedItem == null
+                && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
+                OnGoRight();
+        }
+
         private void OnMove(InputAction.CallbackContext context)
         {
             if (inProgress && !inventoryUI.isEnabled
                 && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
             {
                 float x = context.ReadValue<Vector2>().x;
-                if (x < 0.5f)
-                    OnGoLeft();
-                else if (x > 0.5f)
-                    OnGoRight();
+
+                if (!moveInputAtZero)
+                {
+                    if (Mathf.Abs(x) <= 0.5f)
+                        moveInputAtZero = true;
+                }
+                else
+                {
+                    if (x < -0.9f)
+                    {
+                        moveInputAtZero = false;
+                        OnGoLeft();
+                    }
+                    else if (x > 0.9f)
+                    {
+                        moveInputAtZero = false;
+                        OnGoRight();
+                    }
+                }
             }
         }
 
@@ -199,7 +239,10 @@ namespace NAJ.ANSL
 
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed += OnPress;
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
+                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled += OnMove;
                 PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed += OnNext;
+                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchLeft").performed += OnSwitchLeft;
+                PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchRight").performed += OnSwitchRight;
 
                 if (dialogUI)
                 {
@@ -316,7 +359,10 @@ namespace NAJ.ANSL
 
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Present").performed -= OnPress;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed -= OnMove;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").canceled -= OnMove;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Next").performed -= OnNext;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchLeft").performed -= OnSwitchLeft;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("SwitchRight").performed -= OnSwitchRight;
 
             examinationUI = null;
             inventoryUI = null;

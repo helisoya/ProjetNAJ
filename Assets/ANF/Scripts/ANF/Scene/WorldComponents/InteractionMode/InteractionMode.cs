@@ -590,12 +590,11 @@ namespace ANF.Scene
 
             if (isEnabled && !isPaused && inInteractionMode)
             {
+                keyboardMode = true;
                 bool noMovement = true;
 
                 if (Mathf.Abs(value.x) >= 0.9f)
                 {
-                    keyboardMode = true;
-
                     noMovement = false;
                     if (currentButtonInputSide == 0)
                     {
@@ -614,7 +613,8 @@ namespace ANF.Scene
             }
             else
             {
-                keyboardMode = Mathf.Abs(value.x) >= 0.9f;
+                if (Mathf.Abs(value.x) >= 0.9f)
+                    keyboardMode = true;
             }
         }
 

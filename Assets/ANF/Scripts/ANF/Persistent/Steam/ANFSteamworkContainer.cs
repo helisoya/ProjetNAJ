@@ -66,10 +66,13 @@ namespace ANF.Persistent
 		/// <param name="achievementName">The achievement's ID</param>
         public void UnlockAchievement(string achievementName)
         {
+            Debug.Log("Unlocking " + achievementName);
 #if !DISABLESTEAMWORKS
             if (SteamManager.Initialized)
             {
-                if (SteamUserStats.GetAchievement(achievementName, out bool gotten) && !gotten)
+                bool found = SteamUserStats.GetAchievement(achievementName, out bool gotten);
+                Debug.Log("Found :" + found + " Gotten : " + gotten);
+                if (found && !gotten)
                 {
                     SteamUserStats.SetAchievement(achievementName);
                     SteamUserStats.StoreStats();

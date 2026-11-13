@@ -15,12 +15,6 @@ ANF
 
 
 To Release
-- Revoir modèles                                                                      -
-	- Tous (au niveau des trous)                                                      Ok?
-- Revoir décors                                                                       -
-	- Courthouse (fenetre)                                                            V
-	- Intro (bateau, rue principale de Kalia)                                         Ok?
-	- Buissons?                                                                       Rend Pas bien
 - Review                                                                              -
 	- Mouvements au crash site
 	- Revoir les infos preuves en général                                             Ok?
@@ -28,12 +22,7 @@ To Release
 	- Message de Game Over Custom (A la fin on sait qui est le tueur, pas au début)
 	- UI Leak Mémoire                                                                 A Revoir
 	- Change Scene qui wait rien du tout                                              Déjà réglé ?
-- Retours Playtests 2                                                                 -
-	- Bug Succès lié à Juno, on peut l'avoir sans se tromper à la Q1                  Normalement Fix, a retester
-		
-		
-Final Review
-- Revoir trad FR
+
 
 
 

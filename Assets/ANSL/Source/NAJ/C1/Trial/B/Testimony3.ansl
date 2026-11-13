@@ -311,6 +311,8 @@ showDialogWindow(false)
 playMusic(null)
 :playObjectionAnimation()
 
+autosave()
+
 :setCourtroomCamToDefense(true)
 dialog(Char_Rann;RannCoat;C1_Trial1_F_1)
 showDialogWindow(false)
