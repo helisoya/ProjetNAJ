@@ -165,7 +165,7 @@ MonoBehaviour:
         defaultVSyncCount: 1
         defaultAntiAliasing: 2
         defaultShadowCascadeCount: 4
-        defaultTargetFPS: 60
+        defaultTargetFPS: 120
     - rid: 5696403994774339689
       type: {class: NAJCaseInventoryContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}
       data: 

@@ -43,7 +43,7 @@ namespace ANF.Utils
 
         public void Update()
         {
-            if (navigateAction.action.inProgress)
+            if (navigateAction.action.triggered)
                 ScrollToSelection();
         }
 
