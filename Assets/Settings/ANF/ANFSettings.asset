@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773bfc7de97ad5247b9061be4feb35ce, type: 3}
   m_Name: ANFSettings
   m_EditorClassIdentifier: Assembly-CSharp::ANF.Persistent.ANFSettings
-  startingScript: /NAJ/C1/EntryPoints/TrialStart
+  startingScript: /NAJ/C1/EntryPoints/Intro
   mainMenuScene: NAJMainMenu
   gameScene: NAJGame
   saveFolder: Saves/
@@ -165,6 +165,7 @@ MonoBehaviour:
         defaultVSyncCount: 1
         defaultAntiAliasing: 2
         defaultShadowCascadeCount: 4
+        defaultTargetFPS: 60
     - rid: 5696403994774339689
       type: {class: NAJCaseInventoryContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}
       data: 

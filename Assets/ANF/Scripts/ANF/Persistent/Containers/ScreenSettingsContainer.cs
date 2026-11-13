@@ -20,11 +20,13 @@ namespace ANF.Persistent
         [SerializeField] private int defaultVSyncCount = 1;
         [SerializeField] private int defaultAntiAliasing = 2;
         [SerializeField] private int defaultShadowCascadeCount = 4;
+        [SerializeField] private int defaultTargetFPS = 60;
         private Resolution resolution;
         private bool fullscreen;
         private int vSyncCount;
         private int antiAliasing;
         private int shadowCascadeCount;
+        private int targetFPS;
 
         public DataContainer CloneContainer()
         {
@@ -36,7 +38,8 @@ namespace ANF.Persistent
                 defaultHeight = defaultHeight,
                 defaultVSyncCount = defaultVSyncCount,
                 defaultAntiAliasing = defaultAntiAliasing,
-                defaultShadowCascadeCount = defaultShadowCascadeCount
+                defaultShadowCascadeCount = defaultShadowCascadeCount,
+                defaultTargetFPS = defaultTargetFPS
             };
         }
 
@@ -51,7 +54,8 @@ namespace ANF.Persistent
             {
                 resolution = Screen.currentResolution;
                 fullscreen = Screen.fullScreen;
-                vSyncCount = QualitySettings.vSyncCount = vSyncCount;
+                vSyncCount = QualitySettings.vSyncCount;
+                targetFPS = Application.targetFrameRate;
 
                 UniversalRenderPipelineAsset pipelineAsset = GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset;
                 antiAliasing = pipelineAsset.msaaSampleCount;
@@ -64,9 +68,11 @@ namespace ANF.Persistent
                 SetFullscreen(defaultFullscreen);
                 SetResolution(resolution);
                 SetVSyncCount(defaultVSyncCount);
-                SetAntiAliasing(antiAliasing);
-                SetShadowQuality(shadowCascadeCount);
+                SetAntiAliasing(defaultAntiAliasing);
+                SetShadowQuality(defaultShadowCascadeCount);
             }
+
+            SetTargetFPS(defaultTargetFPS);
         }
 
         public bool Load(JSON json)
@@ -88,6 +94,9 @@ namespace ANF.Persistent
             if (json.ContainsKey("shadows"))
                 shadowCascadeCount = json.GetInt("shadows");
 
+            if (json.ContainsKey("targetFPS"))
+                targetFPS = json.GetInt("targetFPS");
+
             if (json.ContainsKey("width"))
                 width = json.GetInt("width");
             if (json.ContainsKey("height"))
@@ -96,6 +105,7 @@ namespace ANF.Persistent
                 denominator = json.GetJNumber("refreshRateDenomiator").AsUInt();
             if (json.ContainsKey("refreshRateNumerator"))
                 numerator = json.GetJNumber("refreshRateNumerator").AsUInt();
+
 
             SetResolution(new Resolution()
             {
@@ -107,6 +117,7 @@ namespace ANF.Persistent
             SetVSyncCount(vSyncCount);
             SetAntiAliasing(antiAliasing);
             SetShadowQuality(shadowCascadeCount);
+            SetTargetFPS(targetFPS);
 
             return true;
         }
@@ -121,6 +132,7 @@ namespace ANF.Persistent
             json.Add("vSyncCount", vSyncCount);
             json.Add("antiAliasing", antiAliasing);
             json.Add("shadows", shadowCascadeCount);
+            json.Add("targetFPS", targetFPS);
         }
 
         /// <summary>
@@ -153,6 +165,16 @@ namespace ANF.Persistent
         {
             this.vSyncCount = vSyncCount;
             QualitySettings.vSyncCount = vSyncCount;
+        }
+
+        /// <summary>
+        /// Sets the game's target FPS
+        /// </summary>
+        /// <param name="targetFPS">The new target FPS</param>
+        public void SetTargetFPS(int targetFPS)
+        {
+            this.targetFPS = targetFPS;
+            Application.targetFrameRate = targetFPS;
         }
 
         /// <summary>
@@ -220,6 +242,15 @@ namespace ANF.Persistent
         public int GetShadowQuality()
         {
             return shadowCascadeCount;
+        }
+
+        /// <summary>
+        /// Gets the game's target FPS
+        /// </summary>
+        /// <returns>The game's target FPS</returns>
+        public int GetTargetFPS()
+        {
+            return targetFPS;
         }
     }
 }

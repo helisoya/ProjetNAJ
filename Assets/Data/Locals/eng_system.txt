@@ -47,6 +47,7 @@ SettingsMenu_Graphics_Resolution = Resolution
 SettingsMenu_Graphics_VSync = VSync
 SettingsMenu_Graphics_AntiAliasing = Anti-aliasing
 SettingsMenu_Graphics_Shadows = Shadow Quality
+SettingsMenu_Graphics_TargetFPS = Target FPS
 
 SettingsMenu_Sound = Sound
 SettingsMenu_Sound_Music = Music

@@ -18,6 +18,7 @@ namespace ANF.GUI
         private TMP_Dropdown antiAliasingDropdown;
         private TMP_Dropdown shadowsDropdown;
         private Toggle vSyncToggle;
+        private TMP_Dropdown targetFPSDropdown;
 
         public override void PopulateTab()
         {
@@ -69,6 +70,25 @@ namespace ANF.GUI
                     vSyncToggle.onValueChanged.AddListener((bool vSync) =>
                     {
                         screenSettings.SetVSyncCount(vSync ? 1 : 0);
+                    });
+                }
+
+                {
+                    int[] fpsValues = { 30, 60, 120 };
+                    List<string> fpsLabels = new List<string>(
+                        new string[] { "30", "60", "120" }
+                        );
+                    int selectedIndex = Array.IndexOf(fpsValues, screenSettings.GetTargetFPS());
+                    if (selectedIndex == -1)
+                        selectedIndex = 0;
+
+                    targetFPSDropdown = menu.CreateDropdown("SettingsMenu_Graphics_TargetFPS", graphicsMenu);
+                    targetFPSDropdown.ClearOptions();
+                    targetFPSDropdown.AddOptions(fpsLabels);
+                    targetFPSDropdown.SetValueWithoutNotify(selectedIndex);
+                    targetFPSDropdown.onValueChanged.AddListener((int idx) =>
+                    {
+                        screenSettings.SetTargetFPS(fpsValues[idx]);
                     });
                 }
 
