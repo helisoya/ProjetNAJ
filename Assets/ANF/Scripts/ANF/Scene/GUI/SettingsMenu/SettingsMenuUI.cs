@@ -97,7 +97,7 @@ namespace ANF.GUI
             }
 
             if (navigateAction.action.triggered)
-                movingWithInput = !movingWithInput;
+                movingWithInput = true;
 
             if (!movingWithInput)
                 return;
@@ -167,16 +167,26 @@ namespace ANF.GUI
             }
         }
 
+        private void OnMousePosition(InputAction.CallbackContext context)
+        {
+            if (isEnabled && !isPaused)
+            {
+                movingWithInput = false;
+            }
+        }
+
         public override void OnRegisterInputs()
         {
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Pause").performed += OnPauseInput;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed += OnPauseInput;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MousePosition").performed += OnMousePosition;
         }
 
         public override void OnUnRegisterInputs()
         {
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Pause").performed -= OnPauseInput;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Back").performed -= OnPauseInput;
+            PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MousePosition").performed -= OnMousePosition;
         }
 
         public override bool OnChangeScene()

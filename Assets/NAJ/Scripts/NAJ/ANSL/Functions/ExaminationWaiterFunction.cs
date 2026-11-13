@@ -97,7 +97,6 @@ namespace NAJ.ANSL
 
                 float moveX = playerInput.actions.FindAction("Move").ReadValue<Vector2>().x;
                 moveInputAtZero = Mathf.Abs(moveX) <= 0.5f;
-                Debug.LogWarning($"Reset at zero ? {moveInputAtZero}");
 
                 if (manager.GetGUIManager().GetComponent(out InputReminderUI inputReminderUI))
                     inputReminderUI.SetReminderEnabled("press", true);
