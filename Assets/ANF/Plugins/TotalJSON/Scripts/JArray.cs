@@ -889,6 +889,37 @@ namespace Leguar.TotalJSON
         }
 
         /// <summary>
+        /// Get this array as a Vector2Int
+        /// </summary>
+        /// <returns>
+        /// A Vector2Int
+        /// </returns>
+        /// <exception cref="JValueTypeException">
+        /// If any value in array is other than JSON object or null.
+        /// </exception>
+        public Vector2Int AsVector2Int()
+        {
+            Vector2Int result = new Vector2Int();
+
+            int count = values.Count;
+            if (count != 2)
+                return result;
+
+            for (int n = 0; n < 2; n++)
+            {
+                if (values[n] is not JNumber)
+                {
+                    throw (new JValueTypeException(n, values[n], "JNumber"));
+                }
+            }
+
+            result.x = ((JNumber)values[0]).AsInt();
+            result.y = ((JNumber)values[1]).AsInt();
+
+            return result;
+        }
+
+        /// <summary>
         /// Get this array as a Vector3
         /// </summary>
         /// <returns>

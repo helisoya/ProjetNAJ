@@ -39,6 +39,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - General
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 851624c7628c95f42a535d116e1a96e8
+    m_Address: General/deductions
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - General
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: aaf798e181b6a384abed23c67ce09ed4
     m_Address: General/quests
     m_ReadOnly: 0

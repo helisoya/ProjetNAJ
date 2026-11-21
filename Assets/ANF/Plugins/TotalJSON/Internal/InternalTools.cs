@@ -55,6 +55,12 @@ namespace Leguar.TotalJSON.Internal
             }
 
             // List/array
+            if (value is Vector2Int)
+            {
+                return vector2IntToJArray((Vector2Int)(value), new JArray(), stack);
+            }
+
+            // List/array
             if (value is Vector3)
             {
                 return vector3ToJArray((Vector3)(value), new JArray(), stack);
@@ -113,6 +119,13 @@ namespace Leguar.TotalJSON.Internal
             targetJArray.Add(sourceColor.g);
             targetJArray.Add(sourceColor.b);
             targetJArray.Add(sourceColor.a);
+            return targetJArray;
+        }
+
+        internal static JArray vector2IntToJArray(Vector2Int sourceVector, JArray targetJArray, List<object> stack)
+        {
+            targetJArray.Add(sourceVector.x);
+            targetJArray.Add(sourceVector.y);
             return targetJArray;
         }
 

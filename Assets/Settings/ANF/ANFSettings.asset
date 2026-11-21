@@ -42,6 +42,9 @@ MonoBehaviour:
       rid: 8808018580948385883
   - id: 
     data:
+      rid: 7934596464453615701
+  - id: 
+    data:
       rid: 992773608557510784
   registeredGlobalDataContainers:
   - id: 
@@ -517,6 +520,9 @@ MonoBehaviour:
       data: 
     - rid: 6964546988055199858
       type: {class: PlayerLocals, ns: ANF.Locals, asm: Assembly-CSharp}
+      data: 
+    - rid: 7934596464453615701
+      type: {class: DeductionsContainer, ns: NAJ.Persistent, asm: Assembly-CSharp}
       data: 
     - rid: 8808018580948385883
       type: {class: AddressableResourceManager, ns: ANF.Persistent, asm: Assembly-CSharp}
