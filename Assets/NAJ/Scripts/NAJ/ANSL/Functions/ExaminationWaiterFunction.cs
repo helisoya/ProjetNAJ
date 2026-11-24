@@ -156,34 +156,34 @@ namespace NAJ.ANSL
         private void OnPress(InputAction.CallbackContext context)
         {
             if (context.ReadValueAsButton() && inProgress && !inventoryUI.isEnabled && inventoryUI.selectedItem == null
-                && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
+                && !this.context.isPaused && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
                 OnPress();
         }
 
         private void OnNext(InputAction.CallbackContext context)
         {
             if (context.ReadValueAsButton() && inProgress && !inventoryUI.isEnabled && inventoryUI.selectedItem == null
-                && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
+                && !this.context.isPaused && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
                 OnGoRight();
         }
 
         private void OnSwitchLeft(InputAction.CallbackContext context)
         {
             if (context.ReadValueAsButton() && inProgress && !inventoryUI.isEnabled && inventoryUI.selectedItem == null
-                && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
+                && !this.context.isPaused && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
                 OnGoLeft();
         }
 
         private void OnSwitchRight(InputAction.CallbackContext context)
         {
             if (context.ReadValueAsButton() && inProgress && !inventoryUI.isEnabled && inventoryUI.selectedItem == null
-                && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
+                && !this.context.isPaused && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
                 OnGoRight();
         }
 
         private void OnMove(InputAction.CallbackContext context)
         {
-            if (inProgress && !inventoryUI.isEnabled
+            if (inProgress && !inventoryUI.isEnabled && !this.context.isPaused
                 && !(manager.GetGUIManager().GetComponent(out PauseMenuUI pauseMenu) && pauseMenu.isEnabled))
             {
                 float x = context.ReadValue<Vector2>().x;

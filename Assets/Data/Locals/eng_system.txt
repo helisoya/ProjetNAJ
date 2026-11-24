@@ -143,10 +143,15 @@ InputReminder_Evidence = Evidence
 InputReminder_Check = Check
 InputReminder_Present = Present
 InputReminder_Press = Press
+InputReminder_Deductions = Deductions
+InputReminder_DeductionsConfirm = Confirm
 
 SettingsMenu_Inputs_Inventory = Inventory
 SettingsMenu_Inputs_SwitchLeft = Switch Left (Menu)
 SettingsMenu_Inputs_SwitchRight = Switch Right (Menu)
 SettingsMenu_Inputs_InventoryPresent = Present Evidence/Press
+SettingsMenu_Inputs_Deductions = Deductions
+
+DeductionsMenu_EndError = Can't confirm now
 
 CreditsMenu_NAJCredits = <b>Julien Oudot</b><br>  Programming<br>  Narration<br>  Visuals<br>  Music<br><br><b>Marvin Lamacchia</b><br>  SFX<br>  Ambience<br><br><b>Thanks</b><br>  Feliji<br>  queenmagateau<br>  Samy DIF<br>  Kilik<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter

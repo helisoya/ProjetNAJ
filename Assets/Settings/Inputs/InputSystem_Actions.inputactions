@@ -47,6 +47,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "Deductions",
+                    "type": "Button",
+                    "id": "fa7fd190-3bc3-4b77-974e-d1b3387c683a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "Inventory",
                     "type": "Button",
                     "id": "c1cb91d6-44c6-4243-a0de-827e4c8769ff",
@@ -398,6 +408,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1386cb52-0755-4312-af55-00e70766efe6",
+                    "path": "<Keyboard>/u",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Deductions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3c8392e-e0d0-4326-a555-7712779b8185",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Deductions",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

@@ -1049,6 +1049,9 @@ MonoBehaviour:
           - inputAction: {fileID: 3883995784832279789, guid: 052faaac586de48259a63d0c4782560b, type: 3}
             labelKey: SettingsMenu_Inputs_InventoryPresent
             bindingIndex: 0
+          - inputAction: {fileID: -4213705216692576383, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+            labelKey: SettingsMenu_Inputs_Deductions
+            bindingIndex: 0
         - tabName: SettingsMenu_Gamepad
           bindings:
           - inputAction: {fileID: -845975696802725631, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -1071,6 +1074,9 @@ MonoBehaviour:
             bindingIndex: 1
           - inputAction: {fileID: 3883995784832279789, guid: 052faaac586de48259a63d0c4782560b, type: 3}
             labelKey: SettingsMenu_Inputs_InventoryPresent
+            bindingIndex: 1
+          - inputAction: {fileID: -4213705216692576383, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+            labelKey: SettingsMenu_Inputs_Deductions
             bindingIndex: 1
     - rid: 5904634178622980249
       type: {class: GUISlideInOutTransition, ns: ANF.GUI, asm: Assembly-CSharp}

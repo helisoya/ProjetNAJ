@@ -13,7 +13,7 @@ namespace NAJ.Persistent
     [System.Serializable]
     public class DeductionsContainer : DataContainer
     {
-        private List<DeductionNode> nodes;
+        private Dictionary<string, DeductionNode> nodes;
 
         public DataContainer CloneContainer()
         {
@@ -32,25 +32,75 @@ namespace NAJ.Persistent
         public void Reset()
         {
             int currentIdx = 0;
+            List<string> ids = new List<string>(nodes.Keys);
 
             while (currentIdx < nodes.Count)
             {
-                if (nodes[currentIdx].deleteOnReset)
-                    nodes.RemoveAt(currentIdx);
+                string currentId = ids[currentIdx];
+                if (nodes[currentId].deleteOnReset)
+                    nodes.Remove(currentId);
                 else
                 {
-                    nodes[currentIdx].SetVisible(nodes[currentIdx].defaultIsVisible);
-                    nodes[currentIdx].SetIsActiveLink(nodes[currentIdx].defaultIsActiveLink);
-                    currentIdx++;
+                    nodes[currentId].SetVisible(nodes[currentId].defaultIsVisible);
+                    nodes[currentId].SetIsActiveLink(nodes[currentId].defaultIsActiveLink);
+
                 }
+                currentIdx++;
             }
+        }
+
+        /// <summary>
+		/// Creates a user deduction node that will be destroyed on reset
+		/// </summary>
+		/// <param name="nodeId">The node's id</param>
+		/// <param name="isVisible">True if the node is visible by default</param>
+		/// <param name="nodePosition">The node's position</param>
+        /// <param name="labelPosition">The node's label position</param>
+        /// <param name="uiSizeFactor">The node's size factor</param>
+		/// <param name="linkedNode">The linked node if applicable</param>
+		/// <param name="isActiveLink">True if active when linked to a node</param>
+		/// <param name="isEndNode">True if it is an end node</param>
+		/// <param name="endScript">The end script for an end node</param>
+		/// <param name="prerequistes">The node prerequiste nodes</param>
+        public void CreateUserNode(string nodeId, bool isVisible, Vector2Int nodePosition,
+            DeductionNode.LabelPosition labelPosition, float uiSizeFactor, string linkedNode = null, bool isActiveLink = true,
+            bool isEndNode = true, string endScript = null, string[] prerequistes = null)
+        {
+            if (!nodes.ContainsKey(nodeId))
+            {
+                nodes.Add(nodeId, new DeductionNode(nodeId, isVisible, nodePosition, labelPosition,
+                    uiSizeFactor, true, linkedNode, isActiveLink,
+                    isEndNode, endScript, prerequistes));
+            }
+        }
+
+        /// <summary>
+		/// Gets all existing nodes
+		/// </summary>
+		/// <returns>The nodes</returns>
+        public Dictionary<string, DeductionNode> GetNodes()
+        {
+            return nodes;
+        }
+
+        /// <summary>
+		/// Gets a specific deduction node
+		/// </summary>
+		/// <param name="nodeId">The node's id</param>
+		/// <returns>The node if found</returns>
+        public DeductionNode GetNode(string nodeId)
+        {
+            if (nodes.TryGetValue(nodeId, out DeductionNode node))
+                return node;
+
+            return null;
         }
 
         public void Save(JSON json)
         {
             JArray array = new JArray();
             JSON temp;
-            foreach (DeductionNode node in nodes)
+            foreach (DeductionNode node in nodes.Values)
             {
                 temp = new JSON();
                 temp.Add("id", node.id);
@@ -67,6 +117,8 @@ namespace NAJ.Persistent
                         temp.Add("endScript", node.endScript);
                     temp.Add("prerequistes", node.prerequistes);
                     temp.Add("nodePosition", node.nodePosition);
+                    temp.Add("uiSizeFactor", node.uiSizeFactor);
+                    temp.Add("labelPosition", (int)node.labelPosition);
                     temp.Add("defaultIsVisible", node.defaultIsVisible);
                     temp.Add("defaultIsActiveLink", node.defaultIsActiveLink);
                 }
@@ -98,14 +150,11 @@ namespace NAJ.Persistent
 
                         if (!deleteOnReset)
                         {
-                            foreach (DeductionNode node in nodes)
+                            if (nodes.TryGetValue(id, out DeductionNode node))
                             {
-                                if (node.id.Equals(id))
-                                {
-                                    node.SetVisible(isVisible);
-                                    node.SetIsActiveLink(isActiveLink);
-                                    break;
-                                }
+                                node.SetVisible(isVisible);
+                                node.SetIsActiveLink(isActiveLink);
+                                break;
                             }
                         }
                         else
@@ -115,11 +164,15 @@ namespace NAJ.Persistent
                             string endScript = null;
                             string[] prerequistes = null;
                             Vector2Int nodePosition = Vector2Int.zero;
+                            DeductionNode.LabelPosition labelPosition = DeductionNode.LabelPosition.Left;
+                            float uiSizeFactor = 1.0f;
                             bool defaultIsVisible = true;
                             bool defaultIsActiveLink = true;
 
                             if (tmp.ContainsKey("linkedNode"))
                                 linkedNode = tmp.GetString("linkedNode");
+                            if (tmp.ContainsKey("uiSizeFactor"))
+                                uiSizeFactor = tmp.GetFloat("uiSizeFactor");
                             if (tmp.ContainsKey("endScript"))
                                 endScript = tmp.GetString("endScript");
                             if (tmp.ContainsKey("isEndNode"))
@@ -128,15 +181,18 @@ namespace NAJ.Persistent
                                 prerequistes = tmp.GetJArray("prerequistes").AsStringArray();
                             if (tmp.ContainsKey("nodePosition"))
                                 nodePosition = tmp.GetJArray("nodePosition").AsVector2Int();
+                            if (tmp.ContainsKey("labelPosition"))
+                                labelPosition = (DeductionNode.LabelPosition)tmp.GetInt("labelPosition");
                             if (tmp.ContainsKey("defaultIsVisible"))
                                 defaultIsVisible = tmp.GetBool("defaultIsVisible");
                             if (tmp.ContainsKey("defaultIsActiveLink"))
                                 defaultIsActiveLink = tmp.GetBool("defaultIsActiveLink");
 
-                            DeductionNode deductionNode = new DeductionNode(id, defaultIsVisible, nodePosition, deleteOnReset, linkedNode, defaultIsActiveLink, isEndNode, endScript, prerequistes);
+                            DeductionNode deductionNode = new DeductionNode(id, defaultIsVisible, nodePosition, labelPosition,
+                                uiSizeFactor, deleteOnReset, linkedNode, defaultIsActiveLink, isEndNode, endScript, prerequistes);
                             deductionNode.SetVisible(isVisible);
                             deductionNode.SetIsActiveLink(isActiveLink);
-                            nodes.Add(deductionNode);
+                            nodes.Add(id, deductionNode);
                         }
                     }
                 }
@@ -151,18 +207,20 @@ namespace NAJ.Persistent
 		/// <param name="filePath">The path to the node file</param>
         private void GenerateVariablesList(string filePath)
         {
-            nodes = new List<DeductionNode>();
+            nodes = new Dictionary<string, DeductionNode>();
 
             if (!PersistentDataManager.instance.GetPlayerData().GetComponent(out ResourceManager resourceManager))
                 return;
 
             string currentId = null;
             Vector2Int position = Vector2Int.zero;
+            DeductionNode.LabelPosition labelPosition = DeductionNode.LabelPosition.Left;
             bool isVisible = true;
             string linkedNode = null;
             bool isActiveLink = true;
             bool isEndNode = false;
             string endScript = null;
+            float uiSizeFactor = 1.0f;
             string[] prerequistes = null;
 
             List<string> lines = FileManager.ReadTextAsset(resourceManager.GetResource<TextAsset>(filePath));
@@ -177,8 +235,8 @@ namespace NAJ.Persistent
 
                     if (currentId != null)
                     {
-                        nodes.Add(new DeductionNode(currentId, isVisible,
-                            position, false, linkedNode, isActiveLink,
+                        nodes.Add(currentId, new DeductionNode(currentId, isVisible,
+                            position, labelPosition, uiSizeFactor, false, linkedNode, isActiveLink,
                             isEndNode, endScript, prerequistes));
                     }
 
@@ -190,6 +248,8 @@ namespace NAJ.Persistent
                     isEndNode = false;
                     endScript = null;
                     prerequistes = null;
+                    uiSizeFactor = 1.0f;
+                    labelPosition = DeductionNode.LabelPosition.Left;
                 }
                 else
                 {
@@ -214,9 +274,15 @@ namespace NAJ.Persistent
                         if (bool.TryParse(cleanedLine, out bool result))
                             isVisible = result;
                     }
+                    else if (line.StartsWith("uiSize:"))
+                    {
+                        cleanedLine = line.Substring("uiSize:".Length).Replace(" ", "").Replace("\t", "").ToLower();
+                        if (float.TryParse(cleanedLine, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out float result))
+                            uiSizeFactor = result;
+                    }
                     else if (line.StartsWith("linkedNode:"))
                     {
-                        cleanedLine = line.Substring("isVisible:".Length).Replace(" ", "").Replace("\t", "");
+                        cleanedLine = line.Substring("linkedNode:".Length).Replace(" ", "").Replace("\t", "");
                         linkedNode = cleanedLine;
                     }
                     else if (line.StartsWith("isActiveLink:"))
@@ -241,13 +307,33 @@ namespace NAJ.Persistent
                         cleanedLine = line.Substring("prerequistes:".Length).Replace(" ", "").Replace("\t", "");
                         prerequistes = cleanedLine.Split(',');
                     }
+                    else if (line.StartsWith("textPosition:"))
+                    {
+                        cleanedLine = line.Substring("textPosition:".Length).Replace(" ", "").Replace("\t", "").ToLower();
+                        switch (cleanedLine)
+                        {
+                            case "left":
+                                labelPosition = DeductionNode.LabelPosition.Left;
+                                break;
+                            case "top":
+                                labelPosition = DeductionNode.LabelPosition.Top;
+                                break;
+                            case "bottom":
+                                labelPosition = DeductionNode.LabelPosition.Bottom;
+                                break;
+                            case "right":
+                                labelPosition = DeductionNode.LabelPosition.Right;
+                                break;
+                        }
+                    }
+
                 }
             }
 
             if (currentId != null)
             {
-                nodes.Add(new DeductionNode(currentId, isVisible,
-                    position, false, linkedNode, isActiveLink,
+                nodes.Add(currentId, new DeductionNode(currentId, isVisible,
+                    position, labelPosition, uiSizeFactor, false, linkedNode, isActiveLink,
                     isEndNode, endScript, prerequistes));
             }
 

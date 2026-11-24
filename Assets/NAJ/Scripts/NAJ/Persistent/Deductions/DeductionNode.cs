@@ -10,6 +10,16 @@ namespace NAJ.Persistent
 	/// </summary>
     public class DeductionNode
     {
+        /// <summary>
+		/// The node's label anchor point
+		/// </summary>
+        public enum LabelPosition
+        {
+            Left,
+            Right,
+            Top,
+            Bottom
+        }
         public string id { get; private set; }
         public bool isVisible { get; private set; }
         public string linkedNode { get; private set; }
@@ -18,13 +28,16 @@ namespace NAJ.Persistent
         public string endScript { get; private set; }
         public string[] prerequistes { get; private set; }
         public Vector2Int nodePosition { get; private set; }
+        public LabelPosition labelPosition { get; private set; }
+        public float uiSizeFactor { get; private set; }
         public bool deleteOnReset { get; private set; }
 
         public bool defaultIsVisible { get; private set; }
         public bool defaultIsActiveLink { get; private set; }
 
 
-        public DeductionNode(string id, bool isVisible, Vector2Int nodePosition, bool deleteOnReset = false, string linkedNode = null, bool isActiveLink = true,
+        public DeductionNode(string id, bool isVisible, Vector2Int nodePosition, LabelPosition labelPosition, float uiSizeFactor = 1.0f,
+            bool deleteOnReset = false, string linkedNode = null, bool isActiveLink = true,
             bool isEndNode = true, string endScript = null, string[] prerequistes = null)
         {
             this.id = id;
@@ -35,6 +48,9 @@ namespace NAJ.Persistent
             this.isEndNode = isEndNode;
             this.endScript = endScript;
             this.prerequistes = prerequistes;
+            this.deleteOnReset = deleteOnReset;
+            this.labelPosition = labelPosition;
+            this.uiSizeFactor = uiSizeFactor;
 
             this.defaultIsVisible = isVisible;
             this.defaultIsActiveLink = isActiveLink;

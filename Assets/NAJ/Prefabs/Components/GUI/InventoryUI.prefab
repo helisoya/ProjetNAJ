@@ -2286,7 +2286,8 @@ MonoBehaviour:
   canBeSaved: 1
   enabledByDefault: 0
   root: {fileID: 8789518158234457186}
-  lockComponents: []
+  lockComponents:
+  - NAJ.GUI.DeductionsUI
   enabledTransition:
     rid: 5904634178622980240
   pausedTransition:
@@ -2322,6 +2323,7 @@ MonoBehaviour:
   - skipMode
   - inventory
   - press
+  - deductions
   checkGroup: {fileID: 7541645160196183}
   checkImage: {fileID: 3632330610854831030}
   checkLeft: {fileID: 2949946691197591214}

@@ -2,6 +2,8 @@
 #
 # [ID]
 # position: X,Y (The node's position)
+# uiSize: 1 (The node's size factor)
+# textPosition: Left/Right/Top/Bottom (Where should the text be attached)
 # isVisible: True (True if the node is visible by default)
 # linkedNode: ID (The linked node's ID)
 # isActiveLink: True (True if active in a switch)
@@ -10,44 +12,56 @@
 # prerequistes: Node1, Node2, ... (The list of nodes that are required to make this one visible)
 
 [Deduction_Test1]
-position: 0,0
+position: 1,0
+textPosition: Left
 isVisible: true
 
 [Deduction_Test_Link1]
-position: 0,1
+position: 1,1
+textPosition: Left
 isVisible: true
 linkedNode: Deduction_Test_Link2
 isActiveLink: true
 
 [Deduction_Test_Link2]
-position: 0,1
-isVisible: false
+position: 1,1
+textPosition: Left
+isVisible: true
 linkedNode: Deduction_Test_Link1
 isActiveLink: false
 
 [Deduction_Test3]
-position: 0,2
-isVisible: false
+position: 1,2
+textPosition: Left
+isVisible: true
 
 [Deduction_Test_Auto1]
-position: 1,1
+position: 2,1
+uiSize: 1.5
+textPosition: Bottom
 isVisible: true
 prerequistes: Deduction_Test1, Deduction_Test_Link1
 
 [Deduction_Test_Auto2]
-position: 1,1
+position: 2,1
+uiSize: 1.5
+textPosition: Bottom
 isVisible: true
 prerequistes: Deduction_Test3, Deduction_Test_Link2
 
 [Deduction_Test_End1]
-position: 2,1
+position: 3,1
+uiSize: 3
+textPosition: Bottom
 isVisible: true
 prerequistes: Deduction_Test_Auto1
 isEndNode: true
 endScript: End1
 
 [Deduction_Test_End2]
-position: 2,1
+position: 3,1
+uiSize: 3
+textPosition: Bottom
 isVisible: true
 prerequistes: Deduction_Test_Auto2
 isEndNode: true

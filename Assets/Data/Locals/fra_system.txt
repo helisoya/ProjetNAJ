@@ -143,10 +143,15 @@ InputReminder_Evidence = Preuves
 InputReminder_Check = Examiner
 InputReminder_Present = Présenter
 InputReminder_Press = Presser
+InputReminder_Deductions = Déductions
+InputReminder_DeductionsConfirm = Confirmer
 
 SettingsMenu_Inputs_Inventory = Inventaire
 SettingsMenu_Inputs_SwitchLeft = Basculer gauche (Menu)
 SettingsMenu_Inputs_SwitchRight = Basculer droite (Menu)
 SettingsMenu_Inputs_InventoryPresent = Présenter preuve/presser
+SettingsMenu_Inputs_Deductions = Déductions
+
+DeductionsMenu_EndError = Impossible de confirmer pour l'instant
 
 CreditsMenu_NAJCredits = <b>Julien Oudot</b><br>  Programmation<br>  Narration<br>  Visuels<br>  Musique<br><br><b>Marvin Lamacchia</b><br>  SFX<br>  Ambiance<br><br><b>Remerciements</b><br>  Feliji<br>  queenmagateau<br>  Samy DIF<br>  Kilik<br><br><b>Plugins</b><br>  Steamworks.NET<br>  Dotween<br>  mackysoft<br>  TotalJSON<br>  matrixrex<br>  TerrainPainter

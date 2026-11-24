@@ -1,6 +1,7 @@
 Menus
 - Exposer les différents paramètres Dotween (Transitions, couleurs, ...)              ?
 - Regrouper les inputs clavier pour le UI
+- SetPausedAll ne marche pas toujours (ordre d'appel dans DeductionsUI, InventoryUI)
 
 Inputs
 - Toujours les inputs Inventaire / Options (Clic Droit/i)
@@ -50,7 +51,7 @@ queenmagateau
 Kilik
 
 Les plugins (Eau, Dotween, ...)
-
+Radishmouse22 (LineRendererUI)
 
 
 

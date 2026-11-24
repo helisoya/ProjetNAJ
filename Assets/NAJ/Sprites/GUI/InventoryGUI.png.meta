@@ -338,7 +338,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -347,6 +347,50 @@ TextureImporter:
       bones: []
       spriteID: 685aea5776f862545a140c47b66b22ce
       internalID: -2037834085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryGUI_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 51
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0998348fb504a0a48b4f1fc19e12ee08
+      internalID: 1291069730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryGUI_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 21
+        width: 138
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1838f8f882e032642976a57888b00d9b
+      internalID: 870469215
       vertices: []
       indices: 
       edges: []
@@ -367,6 +411,8 @@ TextureImporter:
     nameFileIdTable:
       InventoryGUI_0: -1393729414
       InventoryGUI_1: -1008291662
+      InventoryGUI_10: 1291069730
+      InventoryGUI_11: 870469215
       InventoryGUI_2: -1683377000
       InventoryGUI_3: 533888553
       InventoryGUI_4: 705420484
