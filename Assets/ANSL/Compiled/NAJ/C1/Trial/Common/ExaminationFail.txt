@@ -1,61 +1,61 @@
-#3DCC622E19C987F6EDBAD2134CE9BB3A-8956126B45292CBB910B7AE6D1BF3C1C
-100false
-69RannCoatHandsOnDesk0.1
-71RannCoatNormal
-75RannCoatNeutral
-51Objection
-52Objectiontrue
-22true
-191truetrue
-67DefenseCam0.25false
-66DefenseCam0.25true
-36Char_RannRannCoatC1_Trial_Fail_1
-71JudgeNormal
-75JudgeNormal
-66JudgeCam
-67JudgeCam
-71RannCoatNormal
-75RannCoatOops
-69RannCoatStress0.1
-36Char_JudgeJudgeC1_Trial_Fail_2
-66DefenseCam
-67DefenseCam
-36Char_RannRannCoatC1_Trial_Fail_3
-36Char_RannRannCoatC1_Trial_Fail_4
-71JudgeAngry
-75JudgeAngry
-66JudgeCam
-67JudgeCam
-69RannCoatAngry0.1
-71RannCoatNormal
-75RannCoatNeutral
-36Char_JudgeJudgeC1_Trial_Fail_5
-69JudgeReadyStrike0.1
-36Char_JudgeJudgeC1_Trial_Fail_6
-51LoseLife
-610.10.25truetrue
-108LifePoints-1
-413739LifePoints < 0
-108LifePoints=0
-4340
-4340
-190falsefalse
-12falsetrue
-66DefenseCam
-67DefenseCam
-36nullnullC1_Trial_Fail_7
-36nullnullC1_Trial_Fail_8
-100false
-22false
-414951LifePoints <= 0
-45Death
-4360
-381true
-67WitnessCam
-66WitnessCam
-71JudgeNormal
-75JudgeNormal
-69JudgeNormal0.1
-69RannCoatNormal0.1
-380false
-4360
+#3DCC622E19C987F6EDBAD2134CE9BB3A-2D9306BD4812D6D3E0A23AF161868C94
+106false
+75RannCoatHandsOnDesk0.1
+77RannCoatNormal
+81RannCoatNeutral
+57Objection
+58Objectiontrue
+28true
+241truetrue
+73DefenseCam0.25false
+72DefenseCam0.25true
+42Char_RannRannCoatC1_Trial_Fail_1
+77JudgeNormal
+81JudgeNormal
+72JudgeCam
+73JudgeCam
+77RannCoatNormal
+81RannCoatOops
+75RannCoatStress0.1
+42Char_JudgeJudgeC1_Trial_Fail_2
+72DefenseCam
+73DefenseCam
+42Char_RannRannCoatC1_Trial_Fail_3
+42Char_RannRannCoatC1_Trial_Fail_4
+77JudgeAngry
+81JudgeAngry
+72JudgeCam
+73JudgeCam
+75RannCoatAngry0.1
+77RannCoatNormal
+81RannCoatNeutral
+42Char_JudgeJudgeC1_Trial_Fail_5
+75JudgeReadyStrike0.1
+42Char_JudgeJudgeC1_Trial_Fail_6
+57LoseLife
+670.10.25truetrue
+114LifePoints-1
+473739LifePoints < 0
+114LifePoints=0
+4940
+4940
+240falsefalse
+15falsetrue
+72DefenseCam
+73DefenseCam
+42nullnullC1_Trial_Fail_7
+42nullnullC1_Trial_Fail_8
+106false
+28false
+474951LifePoints <= 0
+51Death
+4960
+441true
+73WitnessCam
+72WitnessCam
+77JudgeNormal
+81JudgeNormal
+75JudgeNormal0.1
+75RannCoatNormal0.1
+440false
+4960

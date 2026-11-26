@@ -1,21 +1,21 @@
-#50A9055333D57BA49F1AEA203F69156C-8956126B45292CBB910B7AE6D1BF3C1C
-36Char_RivalnullTalk_Rival_Verre_1
-36Char_LoupGarounullTalk_Rival_Verre_1
-69RivalAngry
-36Char_RivalnullTalk_Rival_Verre_3
-280Choice_IAmLoyalToYou5nullnullnullChoice_IAmLoyalToHer13nullnullnull
-36Char_LoupGarounullTalk_Rival_Alliance_1
-36Char_LoupGarounullTalk_Rival_Alliance_2
-36Char_LoupGarounullTalk_Rival_Alliance_3
-69RivalHappy
-36Char_RivalnullTalk_Rival_Alliance_4
-108RivalReactionToDrinkQuest=2
-108ValueRival+3
-4320
-36Char_LoupGarounullTalk_Rival_Alliance_1
-36Char_LoupGarounullTalk_Rival_Alliance_2
-36Char_RivalnullTalk_Rival_Alliance_3
-36Char_RivalnullTalk_Rival_Alliance_4
-108RivalReactionToDrinkQuest=1
-108ValueRival-2
-4320
+#50A9055333D57BA49F1AEA203F69156C-2D9306BD4812D6D3E0A23AF161868C94
+42Char_RivalnullTalk_Rival_Verre_1
+42Char_LoupGarounullTalk_Rival_Verre_1
+75RivalAngry
+42Char_RivalnullTalk_Rival_Verre_3
+340Choice_IAmLoyalToYou5nullnullnullChoice_IAmLoyalToHer13nullnullnull
+42Char_LoupGarounullTalk_Rival_Alliance_1
+42Char_LoupGarounullTalk_Rival_Alliance_2
+42Char_LoupGarounullTalk_Rival_Alliance_3
+75RivalHappy
+42Char_RivalnullTalk_Rival_Alliance_4
+114RivalReactionToDrinkQuest=2
+114ValueRival+3
+4920
+42Char_LoupGarounullTalk_Rival_Alliance_1
+42Char_LoupGarounullTalk_Rival_Alliance_2
+42Char_RivalnullTalk_Rival_Alliance_3
+42Char_RivalnullTalk_Rival_Alliance_4
+114RivalReactionToDrinkQuest=1
+114ValueRival-2
+4920

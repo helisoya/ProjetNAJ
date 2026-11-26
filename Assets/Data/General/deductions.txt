@@ -11,58 +11,8 @@
 # endScript: Path (The end script to load if this node is selected)
 # prerequistes: Node1, Node2, ... (The list of nodes that are required to make this one visible)
 
-[Deduction_Test1]
-position: 1,0
-textPosition: Left
-isVisible: true
-
-[Deduction_Test_Link1]
-position: 1,1
-textPosition: Left
-isVisible: true
-linkedNode: Deduction_Test_Link2
-isActiveLink: true
-
-[Deduction_Test_Link2]
-position: 1,1
-textPosition: Left
-isVisible: true
-linkedNode: Deduction_Test_Link1
-isActiveLink: false
-
-[Deduction_Test3]
-position: 1,2
-textPosition: Left
-isVisible: true
-
-[Deduction_Test_Auto1]
-position: 2,1
-uiSize: 1.5
-textPosition: Bottom
-isVisible: true
-prerequistes: Deduction_Test1, Deduction_Test_Link1
-
-[Deduction_Test_Auto2]
-position: 2,1
-uiSize: 1.5
-textPosition: Bottom
-isVisible: true
-prerequistes: Deduction_Test3, Deduction_Test_Link2
-
-[Deduction_Test_End1]
-position: 3,1
-uiSize: 3
-textPosition: Bottom
-isVisible: true
-prerequistes: Deduction_Test_Auto1
-isEndNode: true
-endScript: End1
-
-[Deduction_Test_End2]
-position: 3,1
-uiSize: 3
-textPosition: Bottom
-isVisible: true
-prerequistes: Deduction_Test_Auto2
-isEndNode: true
-endScript: End2
+# Exemple : 
+# [Deduction_Test1]
+# position: 1,0
+# textPosition: Left
+# isVisible: true

@@ -395,6 +395,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: InventoryGUI_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 51
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a56bb30aec94814ebb766cd8b22ba1a
+      internalID: 937255621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -413,6 +435,7 @@ TextureImporter:
       InventoryGUI_1: -1008291662
       InventoryGUI_10: 1291069730
       InventoryGUI_11: 870469215
+      InventoryGUI_12: 937255621
       InventoryGUI_2: -1683377000
       InventoryGUI_3: 533888553
       InventoryGUI_4: 705420484

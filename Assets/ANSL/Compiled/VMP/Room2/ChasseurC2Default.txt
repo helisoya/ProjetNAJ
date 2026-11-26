@@ -1,11 +1,11 @@
-#BCA1CE32AADD8413E7540F3263EAD151-8956126B45292CBB910B7AE6D1BF3C1C
-4118SecretChasseur == 1 && ConfrontedChasseurSecret == 0
-36nullnullTalk_Chasseur_Confirm_ConfrontGarlic_1
-280Choice_Yes3nullnullnullChoice_No5nullnullnull
-45ChasseurConfront
-437
-45ChasseurC2DefaultDialog
-437
-4310
-45ChasseurC2DefaultDialog
-4310
+#BCA1CE32AADD8413E7540F3263EAD151-2D9306BD4812D6D3E0A23AF161868C94
+4718SecretChasseur == 1 && ConfrontedChasseurSecret == 0
+42nullnullTalk_Chasseur_Confirm_ConfrontGarlic_1
+340Choice_Yes3nullnullnullChoice_No5nullnullnull
+51ChasseurConfront
+497
+51ChasseurC2DefaultDialog
+497
+4910
+51ChasseurC2DefaultDialog
+4910

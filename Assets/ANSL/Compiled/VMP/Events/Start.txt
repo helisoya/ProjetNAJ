@@ -1,50 +1,50 @@
-#99C6FC05B4A5AC5313B80AB1D178E875-8956126B45292CBB910B7AE6D1BF3C1C
-50Intro
-89vmp_test
-90Location_VMP_Intro
-25
-63Room1
-23BarontrueFront
-23ChasseurtrueFront
-23FilstrueFront
-23HumaintrueFront
-23RivaltrueFront
-23BoristrueFront
-108SearchCounter=0
-108LookCounter=2
-400false
-36nullnullScene_Intro_1
-36nullnullScene_Intro_2
-36nullnullScene_Intro_3
-36nullnullScene_Intro_4
-36nullnullScene_Intro_5
-36nullnullScene_Intro_6
-36nullnullScene_Intro_7
-36nullnullScene_Intro_8
-68Baron10.5false
-36nullnullScene_Intro_9
-68Baron00.5true
-68Fils10.5false
-36nullnullScene_Intro_10
-68Fils00.5true
-68Humain10.5false
-36nullnullScene_Intro_11
-68Humain00.5true
-68Rival10.5false
-36nullnullScene_Intro_12
-68Rival00.5true
-68Chasseur10.5false
-36nullnullScene_Intro_13
-68Chasseur00.5true
-76BaronBaronSpot
-77BaronBaronSpot
-68Baron10.5false
-36nullnullScene_Intro_14
-36nullnullScene_Intro_15
-36nullnullScene_Intro_16
-58Chasseur
-58Fils
-58Humain
-58Rival
-45/VMP/Common/PrintLookCounter
-45/VMP/Room1/Interaction
+#99C6FC05B4A5AC5313B80AB1D178E875-2D9306BD4812D6D3E0A23AF161868C94
+56Intro
+95vmp_test
+96Location_VMP_Intro
+31
+69Room1
+29BarontrueFront
+29ChasseurtrueFront
+29FilstrueFront
+29HumaintrueFront
+29RivaltrueFront
+29BoristrueFront
+114SearchCounter=0
+114LookCounter=2
+460false
+42nullnullScene_Intro_1
+42nullnullScene_Intro_2
+42nullnullScene_Intro_3
+42nullnullScene_Intro_4
+42nullnullScene_Intro_5
+42nullnullScene_Intro_6
+42nullnullScene_Intro_7
+42nullnullScene_Intro_8
+74Baron10.5false
+42nullnullScene_Intro_9
+74Baron00.5true
+74Fils10.5false
+42nullnullScene_Intro_10
+74Fils00.5true
+74Humain10.5false
+42nullnullScene_Intro_11
+74Humain00.5true
+74Rival10.5false
+42nullnullScene_Intro_12
+74Rival00.5true
+74Chasseur10.5false
+42nullnullScene_Intro_13
+74Chasseur00.5true
+82BaronBaronSpot
+83BaronBaronSpot
+74Baron10.5false
+42nullnullScene_Intro_14
+42nullnullScene_Intro_15
+42nullnullScene_Intro_16
+64Chasseur
+64Fils
+64Humain
+64Rival
+51/VMP/Common/PrintLookCounter
+51/VMP/Room1/Interaction

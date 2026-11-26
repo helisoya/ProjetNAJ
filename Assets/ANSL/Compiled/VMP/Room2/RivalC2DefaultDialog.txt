@@ -1,28 +1,28 @@
-#7B6B0382D22B928B8E4EA90AF8EC069E-8956126B45292CBB910B7AE6D1BF3C1C
-4115RivalReactionToDrinkQuest == 1
-69RivalAngry
-36Char_RivalnullTalk_Rival_LoyalBaron_1
-36Char_RivalnullTalk_Rival_LoyalBaron_2
-4327
-36Char_RivalnullTalk_Rival_LateLoyaltyCheck_1
-36Char_RivalnullTalk_Rival_LateLoyaltyCheck_2
-69RivalHappy
-36Char_RivalnullTalk_Rival_LateLoyaltyCheck_3
-280Choice_Yes10nullnullnullChoice_No18nullnullnull
-36Char_LoupGarounullTalk_Rival_LateLoyalRival_1
-36Char_LoupGarounullTalk_Rival_LateLoyalRival_2
-36Char_LoupGarounullTalk_Rival_LateLoyalRival_3
-69RivalAngry
-36Char_RivalnullTalk_Rival_LateLoyalRival_4
-108RivalReactionToDrinkQuest=2
-108ValueRival+2
-4326
-36Char_LoupGarounullTalk_Rival_Centrist_1
-36Char_LoupGarounullTalk_Rival_Centrist_2
-36Char_RivalnullTalk_Rival_Centrist_3
-36Char_RivalnullTalk_Rival_Centrist_4
-36Char_RivalnullTalk_Rival_Centrist_5
-36Char_RivalnullTalk_Rival_Centrist_6
-108ValueRival-1
-4326
-4327
+#7B6B0382D22B928B8E4EA90AF8EC069E-2D9306BD4812D6D3E0A23AF161868C94
+4715RivalReactionToDrinkQuest == 1
+75RivalAngry
+42Char_RivalnullTalk_Rival_LoyalBaron_1
+42Char_RivalnullTalk_Rival_LoyalBaron_2
+4927
+42Char_RivalnullTalk_Rival_LateLoyaltyCheck_1
+42Char_RivalnullTalk_Rival_LateLoyaltyCheck_2
+75RivalHappy
+42Char_RivalnullTalk_Rival_LateLoyaltyCheck_3
+340Choice_Yes10nullnullnullChoice_No18nullnullnull
+42Char_LoupGarounullTalk_Rival_LateLoyalRival_1
+42Char_LoupGarounullTalk_Rival_LateLoyalRival_2
+42Char_LoupGarounullTalk_Rival_LateLoyalRival_3
+75RivalAngry
+42Char_RivalnullTalk_Rival_LateLoyalRival_4
+114RivalReactionToDrinkQuest=2
+114ValueRival+2
+4926
+42Char_LoupGarounullTalk_Rival_Centrist_1
+42Char_LoupGarounullTalk_Rival_Centrist_2
+42Char_RivalnullTalk_Rival_Centrist_3
+42Char_RivalnullTalk_Rival_Centrist_4
+42Char_RivalnullTalk_Rival_Centrist_5
+42Char_RivalnullTalk_Rival_Centrist_6
+114ValueRival-1
+4926
+4927

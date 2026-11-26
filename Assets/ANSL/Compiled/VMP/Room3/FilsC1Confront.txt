@@ -1,36 +1,36 @@
-#02881C0DA1F8029FBCC3ED4D5A747C2F-8956126B45292CBB910B7AE6D1BF3C1C
-36Char_LoupGarounullTalk_Fils_Ask_1
-36Char_FilsnullTalk_Fils_Ask_2
-36Char_LoupGarounullTalk_Fils_Ask_3
-69FilsAngry
-36Char_FilsnullTalk_Fils_Ask_4
-36Char_LoupGarounullTalk_Fils_Ask_5
-36Char_FilsnullTalk_Fils_Ask_6
-36nullnullTalk_Fils_Ask_7
-108ValueFils-1
-411033SecretFils == 1
-36Char_LoupGarounullTalk_Fils_Clue_1
-280Choice_ReprimendHim12nullnullnullChoice_ItsCool19nullnullnull
-36Char_LoupGarounullTalk_Fils_Confront_1
-36Char_FilsnullTalk_Fils_Confront_2
-36Char_FilsnullTalk_Fils_Confront_3
-108FilsWeirdQuest=3
-108ValueFils-3
-108ValueBaron+2
-4332
-36Char_LoupGarounullTalk_Fils_Nice_1
-36Char_LoupGarounullTalk_Fils_Nice_2
-69FilsNormal
-36Char_FilsnullTalk_Fils_Nice_3
-36Char_FilsnullTalk_Fils_Nice_4
-36Char_FilsnullTalk_Fils_Nice_5
-36Char_FilsnullTalk_Fils_Nice_6
-36Char_FilsnullTalk_Fils_Nice_7
-36Char_FilsnullTalk_Fils_Nice_8
-108FilsWeirdQuest=4
-108ValueFils+3
-108LieToChasseurQuest=1
-4332
-4335
-108FilsWeirdQuest=2
-4335
+#02881C0DA1F8029FBCC3ED4D5A747C2F-2D9306BD4812D6D3E0A23AF161868C94
+42Char_LoupGarounullTalk_Fils_Ask_1
+42Char_FilsnullTalk_Fils_Ask_2
+42Char_LoupGarounullTalk_Fils_Ask_3
+75FilsAngry
+42Char_FilsnullTalk_Fils_Ask_4
+42Char_LoupGarounullTalk_Fils_Ask_5
+42Char_FilsnullTalk_Fils_Ask_6
+42nullnullTalk_Fils_Ask_7
+114ValueFils-1
+471033SecretFils == 1
+42Char_LoupGarounullTalk_Fils_Clue_1
+340Choice_ReprimendHim12nullnullnullChoice_ItsCool19nullnullnull
+42Char_LoupGarounullTalk_Fils_Confront_1
+42Char_FilsnullTalk_Fils_Confront_2
+42Char_FilsnullTalk_Fils_Confront_3
+114FilsWeirdQuest=3
+114ValueFils-3
+114ValueBaron+2
+4932
+42Char_LoupGarounullTalk_Fils_Nice_1
+42Char_LoupGarounullTalk_Fils_Nice_2
+75FilsNormal
+42Char_FilsnullTalk_Fils_Nice_3
+42Char_FilsnullTalk_Fils_Nice_4
+42Char_FilsnullTalk_Fils_Nice_5
+42Char_FilsnullTalk_Fils_Nice_6
+42Char_FilsnullTalk_Fils_Nice_7
+42Char_FilsnullTalk_Fils_Nice_8
+114FilsWeirdQuest=4
+114ValueFils+3
+114LieToChasseurQuest=1
+4932
+4935
+114FilsWeirdQuest=2
+4935

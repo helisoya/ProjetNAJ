@@ -31,6 +31,9 @@ namespace NAJ.GUI
             EndPopup
         }
 
+        [Header("ANSL Popup")]
+        [SerializeField] private CanvasGroup anslPopupGroup;
+
         [Header("Popups")]
         [SerializeField] private RectTransform defaultPopup;
         [SerializeField] private LocalizedText defaultPopupLabel;
@@ -87,8 +90,20 @@ namespace NAJ.GUI
             this.canSelectEndNode = canSelectEndNode;
         }
 
+        /// <summary>
+		/// Shows the ANSL Popup
+		/// </summary>
+        public void ShowANSLPopup()
+        {
+            anslPopupGroup.DOKill();
+            anslPopupGroup.DOFade(1.0f, 0.5f).SetEase(Ease.OutQuad).OnComplete(
+                () => { anslPopupGroup.DOFade(0.0f, 0.5f).SetEase(Ease.OutQuad).SetDelay(2.0f); }
+            );
+        }
+
         public override void OnInitialize()
         {
+            anslPopupGroup.alpha = 0;
             canSelectEndNode = false;
             statusCache = new Dictionary<string, DeductionsUINode.Status>();
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Deductions").performed += OnDeductionsInput;
@@ -361,7 +376,8 @@ namespace NAJ.GUI
                 }
 
                 RecheckNodeVisibility(true);
-                SetCurrentButton(0, true);
+                if (nodes.Length != 0)
+                    SetCurrentButton(0, true);
             }
             else
             {
@@ -391,6 +407,9 @@ namespace NAJ.GUI
 
         public void SetCurrentButton(int id, bool force = false)
         {
+            if (nodes.Length == 0)
+                return;
+
             string linkedNode = nodes[id].GetData().linkedNode;
             int linkedIdx = -1;
 
@@ -435,6 +454,9 @@ namespace NAJ.GUI
 		/// </summary>
         private void IncrementButtonWithInput()
         {
+            if (nodes.Length == 0)
+                return;
+
             int minScore = 9999;
             int minIdx = -1;
 
@@ -471,7 +493,7 @@ namespace NAJ.GUI
 		/// </summary>
         public void SelectCurrentButton()
         {
-            if (currentMode != UIMode.Default)
+            if (currentMode != UIMode.Default || nodes.Length == 0)
                 return;
 
             if (audioManager != null)
@@ -497,7 +519,7 @@ namespace NAJ.GUI
                 bool leftVisible = statusCache[nodes[Mathf.Max(linkedIdx, currentNodeIdx)].GetData().id] != DeductionsUINode.Status.Hidden;
                 bool rightVisible = statusCache[nodes[Mathf.Min(linkedIdx, currentNodeIdx)].GetData().id] != DeductionsUINode.Status.Hidden;
                 linkPopupLeft.localScale = leftVisible ? Vector2.one : Vector2.zero;
-                linkPopupRight.localScale = rightVisible ? Vector2.zero : Vector2.one;
+                linkPopupRight.localScale = rightVisible ? Vector2.one : Vector2.zero;
 
                 if (leftVisible)
                     linkPopupLabelLeft.SetNewKey(nodes[Mathf.Max(linkedIdx, currentNodeIdx)].GetData().GetDesc());
@@ -593,11 +615,15 @@ namespace NAJ.GUI
         {
             linkPopupOnLeftSide = onLeftSide;
 
+            int linkedIdx = FindNodeIndex(nodes[currentNodeIdx].GetData().linkedNode);
+            bool leftVisible = statusCache[nodes[Mathf.Max(linkedIdx, currentNodeIdx)].GetData().id] != DeductionsUINode.Status.Hidden;
+            bool rightVisible = statusCache[nodes[Mathf.Min(linkedIdx, currentNodeIdx)].GetData().id] != DeductionsUINode.Status.Hidden;
+
             if (onLeftSide)
             {
                 linkPopupLeft.SetAsLastSibling();
-                linkPopupLeft.DOScale(1.1f, 0.5f).SetEase(Ease.OutQuad);
-                linkPopupRight.DOScale(1.0f, 0.5f).SetEase(Ease.OutQuad);
+                linkPopupLeft.DOScale(leftVisible ? 1.1f : 0.0f, 0.5f).SetEase(Ease.OutQuad);
+                linkPopupRight.DOScale(rightVisible ? 1.0f : 0.0f, 0.5f).SetEase(Ease.OutQuad);
                 linkPopupLeftActiveObj.DOFade(1.0f, 0.25f).SetEase(Ease.OutQuad);
                 linkPopupRightActiveObj.DOFade(0.0f, 0.25f).SetEase(Ease.OutQuad);
                 linkPopupLeftActiveObj.blocksRaycasts = true;
@@ -606,8 +632,8 @@ namespace NAJ.GUI
             else
             {
                 linkPopupLeft.SetAsFirstSibling();
-                linkPopupLeft.DOScale(1.0f, 0.5f).SetEase(Ease.OutQuad);
-                linkPopupRight.DOScale(1.1f, 0.5f).SetEase(Ease.OutQuad);
+                linkPopupLeft.DOScale(leftVisible ? 1.0f : 0.0f, 0.5f).SetEase(Ease.OutQuad);
+                linkPopupRight.DOScale(rightVisible ? 1.1f : 0.0f, 0.5f).SetEase(Ease.OutQuad);
                 linkPopupLeftActiveObj.DOFade(0.0f, 0.25f).SetEase(Ease.OutQuad);
                 linkPopupRightActiveObj.DOFade(1.0f, 0.25f).SetEase(Ease.OutQuad);
                 linkPopupLeftActiveObj.blocksRaycasts = false;
@@ -668,9 +694,13 @@ namespace NAJ.GUI
             endNodeId = -1;
 
             foreach (DeductionsUINode uINode in nodes)
-            {
+                uINode.ResetLinkCount();
+
+            foreach (DeductionsUINode uINode in nodes)
                 RecheckNodeVisibilityRecursive(immediate, uINode);
-            }
+
+            foreach (DeductionsUINode uINode in nodes)
+                uINode.UpdateLinkCountVisual(immediate);
 
             if (gui.GetComponent(out InputReminderUI inputReminder))
                 inputReminder.SetReminderEnabled("deductionsConfirm", endNodeId != -1 && canSelectEndNode);
@@ -690,6 +720,7 @@ namespace NAJ.GUI
 
             bool computed = node.IsActiveAndVisible();
             bool prerequisteWrong = false;
+            List<DeductionsUINode> cacheLinks = new List<DeductionsUINode>();
             if (node.prerequistes != null)
             {
                 foreach (string prerequiste in node.prerequistes)
@@ -698,6 +729,7 @@ namespace NAJ.GUI
                     {
                         if (prerequisteNode.GetData().id.Equals(prerequiste))
                         {
+                            cacheLinks.Add(prerequisteNode);
                             if (RecheckNodeVisibilityRecursive(immediate, prerequisteNode) != DeductionsUINode.Status.Shown)
                             {
                                 prerequisteWrong = true;
@@ -719,6 +751,14 @@ namespace NAJ.GUI
             if (status != uINode.status)
             {
                 uINode.SetStatus(status, immediate);
+            }
+
+            if (status == DeductionsUINode.Status.Shown)
+            {
+                foreach (DeductionsUINode link in cacheLinks)
+                {
+                    link.IncrementLinkCount();
+                }
             }
 
             if (status == DeductionsUINode.Status.Shown && node.isEndNode)
@@ -754,10 +794,14 @@ namespace NAJ.GUI
             {
                 json.Add("cachedPreviousReminders", new JArray(cachedPreviousReminders));
             }
+            json.Add("canSelectEndNode", canSelectEndNode);
         }
 
         public override bool OnLoad(JSON json)
         {
+            if (json.ContainsKey("canSelectEndNode"))
+                canSelectEndNode = json.GetBool("canSelectEndNode");
+
             if (json.ContainsKey("cachedPreviousReminders"))
             {
                 JArray array = json.GetJArray("cachedPreviousReminders");

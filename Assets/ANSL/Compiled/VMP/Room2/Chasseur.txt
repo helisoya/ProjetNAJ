@@ -1,52 +1,52 @@
-#C0433C264A0C44D4E35118D03C53FF53-8956126B45292CBB910B7AE6D1BF3C1C
-4113TalkedChasseur == 1 && CycleCount == 0
-36nullnullTalk_Character_Done_1
-4349
-68Chasseur00.5true
-76ChasseurFront
-77ChasseurFront
-68Chasseur10.5false
-104CycleCount8037
-36nullnullChoice_InteractCharacter
-280Choice_Talk10nullnullnullChoice_Search25nullnullnullChoice_Nothing35nullnullnull
-411113TalkedChasseur == 1
-36nullnullTalk_Character_Done_1
-4324
-411416LieToChasseurQuest == 1
-45ChasseurLieQuest
-4322
-411719CycleCount == 1
-45ChasseurC1Default
-4321
-45ChasseurC2Default
-4321
-4322
-108TalkedChasseur=1
-4324
-4336
-412632SearchCounter > 0
-108SearchCounter-1
-108SecretChasseur=1
-36nullnullSteal_Chasseur_1
-36nullnullSteal_Chasseur_2
-45/VMP/Common/PrintSearchCounter
-4334
-36nullnullCounter_Search_0
-4334
-4336
-4336
-4343
-36Char_ChasseurnullTalk_Chasseur_Presentation_1
-36Char_LoupGarounullTalk_Chasseur_Presentation_2
-36Char_ChasseurnullTalk_Chasseur_Presentation_3
-36nullnullTalk_Chasseur_Presentation_4
-108TalkedChasseur=1
-4343
-68Chasseur00.5true
-76ChasseurChasseurSpot
-77ChasseurChasseurSpot
-69ChasseurAngry
-68Chasseur10.5false
-4349
-45/VMP/Common/CycleCheck
-45Interaction
+#C0433C264A0C44D4E35118D03C53FF53-2D9306BD4812D6D3E0A23AF161868C94
+4713TalkedChasseur == 1 && CycleCount == 0
+42nullnullTalk_Character_Done_1
+4949
+74Chasseur00.5true
+82ChasseurFront
+83ChasseurFront
+74Chasseur10.5false
+110CycleCount8037
+42nullnullChoice_InteractCharacter
+340Choice_Talk10nullnullnullChoice_Search25nullnullnullChoice_Nothing35nullnullnull
+471113TalkedChasseur == 1
+42nullnullTalk_Character_Done_1
+4924
+471416LieToChasseurQuest == 1
+51ChasseurLieQuest
+4922
+471719CycleCount == 1
+51ChasseurC1Default
+4921
+51ChasseurC2Default
+4921
+4922
+114TalkedChasseur=1
+4924
+4936
+472632SearchCounter > 0
+114SearchCounter-1
+114SecretChasseur=1
+42nullnullSteal_Chasseur_1
+42nullnullSteal_Chasseur_2
+51/VMP/Common/PrintSearchCounter
+4934
+42nullnullCounter_Search_0
+4934
+4936
+4936
+4943
+42Char_ChasseurnullTalk_Chasseur_Presentation_1
+42Char_LoupGarounullTalk_Chasseur_Presentation_2
+42Char_ChasseurnullTalk_Chasseur_Presentation_3
+42nullnullTalk_Chasseur_Presentation_4
+114TalkedChasseur=1
+4943
+74Chasseur00.5true
+82ChasseurChasseurSpot
+83ChasseurChasseurSpot
+75ChasseurAngry
+74Chasseur10.5false
+4949
+51/VMP/Common/CycleCheck
+51Interaction

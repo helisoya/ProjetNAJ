@@ -1,68 +1,68 @@
-#DA7FE127FEF068CF76CABB50144DAE19-8956126B45292CBB910B7AE6D1BF3C1C
-4113TalkedBaron == 1 && CycleCount == 0
-36nullnullTalk_Character_Done_1
-4365
-68Baron00.5true
-76BaronFront
-77BaronFront
-68Baron10.5false
-104CycleCount8052
-36nullnullChoice_InteractCharacter
-280Choice_Talk10nullnullnullChoice_Search40nullnullnullChoice_Nothing50nullnullnull
-411113TalkedBaron == 1
-36nullnullTalk_Character_Done_1
-4339
-411420DrinkQuest == 3 && CycleCount == 2
-411517FilsWeirdQuest == 4
-45BaronFilsQuestWeirdGood
-4319
-45BaronFilsQuestWeirdNeutral
-4319
-4321
-4321
-412224DrinkQuest == 2 && CycleCount == 1
-45BaronDrinkQuestOnTime
-4325
-4325
-412628DrinkQuest == 2 && CycleCount == 2
-45BaronDrinkQuestLate
-4329
-4329
-413032DrinkQuest < 2 && CycleCount == 2
-45BaronDrinkQuestFail
-4333
-4333
-413436DrinkQuest < 2 && CycleCount == 1
-45BaronDrinkQuestC1No
-4337
-4337
-108TalkedBaron=1
-4339
-4351
-414147SearchCounter > 0
-108SearchCounter-1
-108SecretBaron=1
-36nullnullSteal_Baron_1
-36nullnullSteal_Baron_2
-45/VMP/Common/PrintSearchCounter
-4349
-36nullnullCounter_Search_0
-4349
-4351
-4351
-4359
-36Char_BaronnullTalk_Baron_Presentation_1
-36Char_BaronnullTalk_Baron_Presentation_2
-36nullnullTalk_Baron_Presentation_3
-36Char_LoupGarounullTalk_Baron_Presentation_4
-108DrinkQuest=1
-108TalkedBaron=1
-4359
-68Baron00.5true
-76BaronBaronSpot
-77BaronBaronSpot
-69BaronNormal
-68Baron10.5false
-4365
-45/VMP/Common/CycleCheck
-45Interaction
+#DA7FE127FEF068CF76CABB50144DAE19-2D9306BD4812D6D3E0A23AF161868C94
+4713TalkedBaron == 1 && CycleCount == 0
+42nullnullTalk_Character_Done_1
+4965
+74Baron00.5true
+82BaronFront
+83BaronFront
+74Baron10.5false
+110CycleCount8052
+42nullnullChoice_InteractCharacter
+340Choice_Talk10nullnullnullChoice_Search40nullnullnullChoice_Nothing50nullnullnull
+471113TalkedBaron == 1
+42nullnullTalk_Character_Done_1
+4939
+471420DrinkQuest == 3 && CycleCount == 2
+471517FilsWeirdQuest == 4
+51BaronFilsQuestWeirdGood
+4919
+51BaronFilsQuestWeirdNeutral
+4919
+4921
+4921
+472224DrinkQuest == 2 && CycleCount == 1
+51BaronDrinkQuestOnTime
+4925
+4925
+472628DrinkQuest == 2 && CycleCount == 2
+51BaronDrinkQuestLate
+4929
+4929
+473032DrinkQuest < 2 && CycleCount == 2
+51BaronDrinkQuestFail
+4933
+4933
+473436DrinkQuest < 2 && CycleCount == 1
+51BaronDrinkQuestC1No
+4937
+4937
+114TalkedBaron=1
+4939
+4951
+474147SearchCounter > 0
+114SearchCounter-1
+114SecretBaron=1
+42nullnullSteal_Baron_1
+42nullnullSteal_Baron_2
+51/VMP/Common/PrintSearchCounter
+4949
+42nullnullCounter_Search_0
+4949
+4951
+4951
+4959
+42Char_BaronnullTalk_Baron_Presentation_1
+42Char_BaronnullTalk_Baron_Presentation_2
+42nullnullTalk_Baron_Presentation_3
+42Char_LoupGarounullTalk_Baron_Presentation_4
+114DrinkQuest=1
+114TalkedBaron=1
+4959
+74Baron00.5true
+82BaronBaronSpot
+83BaronBaronSpot
+75BaronNormal
+74Baron10.5false
+4965
+51/VMP/Common/CycleCheck
+51Interaction

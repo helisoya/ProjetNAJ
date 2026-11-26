@@ -21,6 +21,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Scripts
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14b281c5d4c8fbf46b628442d7d0cfc2
+    m_Address: ANSL/NAJ/Tests/DeductionEnd1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4899af57df5ccb74791da7fb827e2f91
+    m_Address: ANSL/NAJ/Tests/Deductions
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 69a63778aa615764ebc0103cca84ed32
     m_Address: ANSL/NAJ/Tests/CrossExamination
     m_ReadOnly: 0
@@ -35,6 +47,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 92559bfb38d8c7e439454b5d8f18eb6a
     m_Address: ANSL/NAJ/Tests/EvidenceInfo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c640310931f32bc4daaf940eee39be6a
+    m_Address: ANSL/NAJ/Tests/DeductionEnd2
     m_ReadOnly: 0
     m_SerializedLabels:
     - Scripts

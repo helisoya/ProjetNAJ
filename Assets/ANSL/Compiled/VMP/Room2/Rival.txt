@@ -1,59 +1,59 @@
-#FD2D1FD0D6D6FEC1F2E6BB491D228E80-8956126B45292CBB910B7AE6D1BF3C1C
-4113TalkedRival == 1 && CycleCount == 0
-36nullnullTalk_Character_Done_1
-4356
-68Rival00.5true
-76RivalFront
-77RivalFront
-68Rival10.5false
-104CycleCount8044
-36nullnullChoice_InteractCharacter
-280Choice_Talk10nullnullnullChoice_Search32nullnullnullChoice_Nothing42nullnullnull
-411113TalkedRival == 1
-36nullnullTalk_Character_Done_1
-4331
-411420CycleCount == 1
-411517DrinkQuest == 3 && RivalReactionToDrinkQuest == 0
-45RivalReactionDrinkQuest
-4319
-45RivalC1Default
-4319
-4321
-4321
-412228CycleCount == 2
-412325PutPressureOnRival == 1
-45RivalPressureQuest
-4327
-45RivalC2Default
-4327
-4329
-4329
-108TalkedRival=1
-4331
-4343
-413339SearchCounter > 0
-108SearchCounter-1
-108SecretRival=1
-36nullnullSteal_Rival_1
-36nullnullSteal_Rival_2
-45/VMP/Common/PrintSearchCounter
-4341
-36nullnullCounter_Search_0
-4341
-4343
-4343
-4350
-36Char_RivalnullTalk_Rival_Presentation_1
-36Char_LoupGarounullTalk_Rival_Presentation_2
-36Char_RivalnullTalk_Rival_Presentation_3
-36nullnullTalk_Rival_Presentation_4
-108TalkedRival=1
-4350
-68Rival00.5true
-76RivalRivalSpot
-77RivalRivalSpot
-69RivalNormal
-68Rival10.5false
-4356
-45/VMP/Common/CycleCheck
-45Interaction
+#FD2D1FD0D6D6FEC1F2E6BB491D228E80-2D9306BD4812D6D3E0A23AF161868C94
+4713TalkedRival == 1 && CycleCount == 0
+42nullnullTalk_Character_Done_1
+4956
+74Rival00.5true
+82RivalFront
+83RivalFront
+74Rival10.5false
+110CycleCount8044
+42nullnullChoice_InteractCharacter
+340Choice_Talk10nullnullnullChoice_Search32nullnullnullChoice_Nothing42nullnullnull
+471113TalkedRival == 1
+42nullnullTalk_Character_Done_1
+4931
+471420CycleCount == 1
+471517DrinkQuest == 3 && RivalReactionToDrinkQuest == 0
+51RivalReactionDrinkQuest
+4919
+51RivalC1Default
+4919
+4921
+4921
+472228CycleCount == 2
+472325PutPressureOnRival == 1
+51RivalPressureQuest
+4927
+51RivalC2Default
+4927
+4929
+4929
+114TalkedRival=1
+4931
+4943
+473339SearchCounter > 0
+114SearchCounter-1
+114SecretRival=1
+42nullnullSteal_Rival_1
+42nullnullSteal_Rival_2
+51/VMP/Common/PrintSearchCounter
+4941
+42nullnullCounter_Search_0
+4941
+4943
+4943
+4950
+42Char_RivalnullTalk_Rival_Presentation_1
+42Char_LoupGarounullTalk_Rival_Presentation_2
+42Char_RivalnullTalk_Rival_Presentation_3
+42nullnullTalk_Rival_Presentation_4
+114TalkedRival=1
+4950
+74Rival00.5true
+82RivalRivalSpot
+83RivalRivalSpot
+75RivalNormal
+74Rival10.5false
+4956
+51/VMP/Common/CycleCheck
+51Interaction

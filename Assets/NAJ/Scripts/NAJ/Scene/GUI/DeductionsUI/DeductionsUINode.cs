@@ -8,6 +8,7 @@ using NAJ.Persistent;
 using Radishmouse;
 using Unity.Collections;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -40,6 +41,7 @@ namespace NAJ.GUI
 		private Material material;
 		private DeductionsUI deductionsUI;
 		public int id { get; private set; }
+		private int linkCount = 0;
 
 		/// <summary>
 		/// Cleans up the component before shut down
@@ -71,6 +73,7 @@ namespace NAJ.GUI
 		public void Init(DeductionNode data, Status status, float baseSize,
 			UILineRenderer[] prerequistesLinkImages, Material material, DeductionsUI deductionsUI, int id)
 		{
+			linkCount = 0;
 			this.deductionsUI = deductionsUI;
 			this.id = id;
 			this.data = data;
@@ -84,6 +87,38 @@ namespace NAJ.GUI
 			SetLabelKey(data.GetName(), false);
 			SetLabelPosition(data.labelPosition);
 			SetStatus(status);
+		}
+
+		/// <summary>
+		/// Resets the link count
+		/// </summary>
+		public void ResetLinkCount()
+		{
+			linkCount = 0;
+		}
+
+		/// <summary>
+		/// Increments the link count
+		/// </summary>
+		public void IncrementLinkCount()
+		{
+			linkCount++;
+		}
+
+		/// <summary>
+		/// Updates the visual part linked to the link count
+		/// </summary>
+		/// <param name="immediate"></param>
+		public void UpdateLinkCountVisual(bool immediate)
+		{
+			if (data.isEndNode || !string.IsNullOrEmpty(data.linkedNode) || status != Status.Shown)
+				return;
+
+			Color colorTarget = linkCount == 0 ? Color.gray : Color.yellow;
+			if (immediate)
+				visualImage.color = colorTarget;
+			else
+				visualImage.DOColor(colorTarget, 0.5f).SetEase(Ease.OutQuad);
 		}
 
 		/// <summary>
@@ -239,7 +274,9 @@ namespace NAJ.GUI
 		/// </summary>
 		public void Highlight()
 		{
-			Color colorTarget = status == Status.NotActiveLink ? new Color(0.6f, 0.6f, 0.6f) : new Color(1.0f, 1.0f, 0.116f);
+			Color colorTarget =
+				(status == Status.NotActiveLink || (linkCount == 0 && !data.isEndNode && string.IsNullOrEmpty(data.linkedNode))) ?
+				new Color(0.6f, 0.6f, 0.6f) : new Color(1.0f, 1.0f, 0.116f);
 			visualImage.DOColor(colorTarget, 0.5f).SetEase(Ease.OutQuad);
 
 			float targetSize = status == Status.Hidden ? 0.0f : 1.1f;
@@ -251,7 +288,9 @@ namespace NAJ.GUI
 		/// </summary>
 		public void UnHighlight()
 		{
-			Color colorTarget = status == Status.NotActiveLink ? Color.gray : Color.yellow;
+			Color colorTarget =
+				(status == Status.NotActiveLink || (linkCount == 0 && !data.isEndNode && string.IsNullOrEmpty(data.linkedNode))) ?
+				Color.gray : Color.yellow;
 			visualImage.DOColor(colorTarget, 0.5f).SetEase(Ease.OutQuad);
 
 			float targetSize = status == Status.Hidden ? 0.0f : 1.0f;

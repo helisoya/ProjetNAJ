@@ -1,55 +1,55 @@
-#86740BA522FF21E70A8CD93EC27AA891-8956126B45292CBB910B7AE6D1BF3C1C
-41150LookCounter > 0
-108LookCounter-1
-41312ConfrontedChasseurSecret == 2
-36nullnullWatch_Boris_Keys_1
-36nullnullWatch_Boris_Keys_2
-36nullnullWatch_Boris_Keys_3
-280Choice_Yes7nullnullnullChoice_No9nullnullnull
-45/VMP/Endings/StoleKeyBackEnding
-4311
-36nullnullWatch_Boris_Keys_4
-4311
-4313
-4313
-92BorisScene00.5true
-68Boris10.5false
-104BorisCounter46016119222325428531
-36nullnullWatch_Boris_1
-108BorisCounter+1
-4346
-36nullnullWatch_Boris_2
-108BorisCounter+1
-4346
-36nullnullWatch_Boris_3
-108BorisCounter+1
-4346
-36nullnullWatch_Boris_4
-108BorisCounter+1
-4346
-36nullnullWatch_Boris_5
-108BorisCounter+1
-4346
-413234ConfrontedChasseurSecret == 2
-60
-4335
-4335
-413637DrinkQuest == 2
-4345
-36Char_BorisnullTalk_Boris_Presentation_1
-36Char_BorisnullTalk_Boris_Presentation_2
-36Char_BorisnullTalk_Boris_Presentation_3
-36Char_BorisnullTalk_Boris_Presentation_4
-36Char_BorisnullTalk_Boris_Presentation_5
-36Char_BorisnullTalk_Boris_Presentation_6
-36Char_BorisnullTalk_Boris_Presentation_7
-4345
-4346
-68Boris00.5true
-92BorisScene10.5false
-45/VMP/Common/PrintLookCounter
-4352
-36nullnullCounter_Look_0
-4352
-45/VMP/Common/CycleCheck
-45Interaction
+#86740BA522FF21E70A8CD93EC27AA891-2D9306BD4812D6D3E0A23AF161868C94
+47150LookCounter > 0
+114LookCounter-1
+47312ConfrontedChasseurSecret == 2
+42nullnullWatch_Boris_Keys_1
+42nullnullWatch_Boris_Keys_2
+42nullnullWatch_Boris_Keys_3
+340Choice_Yes7nullnullnullChoice_No9nullnullnull
+51/VMP/Endings/StoleKeyBackEnding
+4911
+42nullnullWatch_Boris_Keys_4
+4911
+4913
+4913
+98BorisScene00.5true
+74Boris10.5false
+110BorisCounter46016119222325428531
+42nullnullWatch_Boris_1
+114BorisCounter+1
+4946
+42nullnullWatch_Boris_2
+114BorisCounter+1
+4946
+42nullnullWatch_Boris_3
+114BorisCounter+1
+4946
+42nullnullWatch_Boris_4
+114BorisCounter+1
+4946
+42nullnullWatch_Boris_5
+114BorisCounter+1
+4946
+473234ConfrontedChasseurSecret == 2
+66
+4935
+4935
+473637DrinkQuest == 2
+4945
+42Char_BorisnullTalk_Boris_Presentation_1
+42Char_BorisnullTalk_Boris_Presentation_2
+42Char_BorisnullTalk_Boris_Presentation_3
+42Char_BorisnullTalk_Boris_Presentation_4
+42Char_BorisnullTalk_Boris_Presentation_5
+42Char_BorisnullTalk_Boris_Presentation_6
+42Char_BorisnullTalk_Boris_Presentation_7
+4945
+4946
+74Boris00.5true
+98BorisScene10.5false
+51/VMP/Common/PrintLookCounter
+4952
+42nullnullCounter_Look_0
+4952
+51/VMP/Common/CycleCheck
+51Interaction

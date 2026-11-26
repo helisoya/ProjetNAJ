@@ -71,7 +71,7 @@ namespace NAJ.Persistent
 		/// <returns>The node's name key</returns>
         public string GetName()
         {
-            return id + "_name";
+            return id + "_Name";
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace NAJ.Persistent
 		/// <returns>The node's description key</returns>
         public string GetDesc()
         {
-            return id + "_desc";
+            return id + "_Desc";
         }
 
         /// <summary>

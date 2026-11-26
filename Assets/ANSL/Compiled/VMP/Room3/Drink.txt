@@ -1,17 +1,17 @@
-#1061DE4715B52886A3D741DF4709FD4C-8956126B45292CBB910B7AE6D1BF3C1C
-41112LookCounter > 0
-108LookCounter-1
-4135DrinkQuest == 0
-36nullnullWatch_Glass_NoBaron_1
-4310
-36nullnullWatch_Glass_Baron_1
-108DrinkQuest=2
-92Drink00.5true
-59Drink
-4310
-45/VMP/Common/PrintLookCounter
-4314
-36nullnullCounter_Look_0
-4314
-45/VMP/Common/CycleCheck
-45Interaction
+#1061DE4715B52886A3D741DF4709FD4C-2D9306BD4812D6D3E0A23AF161868C94
+47112LookCounter > 0
+114LookCounter-1
+4735DrinkQuest == 0
+42nullnullWatch_Glass_NoBaron_1
+4910
+42nullnullWatch_Glass_Baron_1
+114DrinkQuest=2
+98Drink00.5true
+65Drink
+4910
+51/VMP/Common/PrintLookCounter
+4914
+42nullnullCounter_Look_0
+4914
+51/VMP/Common/CycleCheck
+51Interaction

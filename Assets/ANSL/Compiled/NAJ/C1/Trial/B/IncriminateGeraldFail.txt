@@ -1,40 +1,40 @@
-#B7BDBEBF15B6F814C47B4BEF93B6C574-8956126B45292CBB910B7AE6D1BF3C1C
-22true
-191truetrue
-36Char_RannRannCoatC1_Trial1_I_Fail_1
-100false
-67ProsecutionCam0.25false
-66ProsecutionCam0.25true
-71RannCoatNormal
-75RannCoatOops
-69RannCoatStress0.1
-36Char_RobertRobertC1_Trial1_I_Fail_2
-66DefenseCam
-67DefenseCam
-36Char_RannRannCoatC1_Trial1_I_Fail_3
-36Char_RannRannCoatC1_Trial1_I_Fail_4true
-51LoseLife
-610.10.25truetrue
-108LifePoints-1
-411820LifePoints < 0
-108LifePoints=0
-4321
-4321
-190falsefalse
-12falsetrue
-36Char_RannRannCoatC1_Trial1_I_Fail_5
-22false
-412628LifePoints <= 0
-45../Common/Death
-4339
-71JudgeAngry
-75JudgeAngry
-66JudgeCam
-67JudgeCam
-69RannCoatHandsOnDesk0.1
-71RannCoatNormal
-75RannCoatNeutral
-36Char_JudgeJudgeC1_Trial1_I_Fail_6
-36Char_JudgeJudgeC1_Trial1_I_Fail_7
-45IncriminateGerald
-4339
+#B7BDBEBF15B6F814C47B4BEF93B6C574-2D9306BD4812D6D3E0A23AF161868C94
+28true
+241truetrue
+42Char_RannRannCoatC1_Trial1_I_Fail_1
+106false
+73ProsecutionCam0.25false
+72ProsecutionCam0.25true
+77RannCoatNormal
+81RannCoatOops
+75RannCoatStress0.1
+42Char_RobertRobertC1_Trial1_I_Fail_2
+72DefenseCam
+73DefenseCam
+42Char_RannRannCoatC1_Trial1_I_Fail_3
+42Char_RannRannCoatC1_Trial1_I_Fail_4true
+57LoseLife
+670.10.25truetrue
+114LifePoints-1
+471820LifePoints < 0
+114LifePoints=0
+4921
+4921
+240falsefalse
+15falsetrue
+42Char_RannRannCoatC1_Trial1_I_Fail_5
+28false
+472628LifePoints <= 0
+51../Common/Death
+4939
+77JudgeAngry
+81JudgeAngry
+72JudgeCam
+73JudgeCam
+75RannCoatHandsOnDesk0.1
+77RannCoatNormal
+81RannCoatNeutral
+42Char_JudgeJudgeC1_Trial1_I_Fail_6
+42Char_JudgeJudgeC1_Trial1_I_Fail_7
+51IncriminateGerald
+4939

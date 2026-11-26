@@ -1,16 +1,16 @@
-#A5CCB872DF1EB8AA19F8B2CCAD8FE5CD-8956126B45292CBB910B7AE6D1BF3C1C
-401true
-56
-63Room3
-4146DrinkQuest > 1
-59Drink
-437
-437
-41810CycleCount < 2 || FilsMirrorQuest > 0
-59Mirror
-4311
-4311
-23HumainfalseHumainSpot
-23FilsfalseFilsSpot
-400false
-45Interaction
+#A5CCB872DF1EB8AA19F8B2CCAD8FE5CD-2D9306BD4812D6D3E0A23AF161868C94
+461true
+62
+69Room3
+4746DrinkQuest > 1
+65Drink
+497
+497
+47810CycleCount < 2 || FilsMirrorQuest > 0
+65Mirror
+4911
+4911
+29HumainfalseHumainSpot
+29FilsfalseFilsSpot
+460false
+51Interaction

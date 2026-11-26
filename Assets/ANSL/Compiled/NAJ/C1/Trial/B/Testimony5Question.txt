@@ -1,177 +1,177 @@
-#1E2CBBE46217F44FB770D54AC6F081E6-8956126B45292CBB910B7AE6D1BF3C1C
-69RannCoatNormal0.1
-71RannCoatNormal
-75RannCoatNeutral
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_32
+#1E2CBBE46217F44FB770D54AC6F081E6-2D9306BD4812D6D3E0A23AF161868C94
+75RannCoatNormal0.1
+77RannCoatNormal
+81RannCoatNeutral
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_32
 2Profile176Profile/C1_Gerald5Profile/C1_Juno97default161
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_34
-100false
-51Damage
-610.10.2
-71GeraldNoCoatSurprise
-75GeraldNoCoatSerious
-69GeraldNoCoatSurprise0.1
-67WitnessCam0.25false
-66WitnessCam0.25true
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_35
-69RobertRelaxed0.1
-71RobertThinking
-75RobertNormal
-66JudgeCam
-67JudgeCam
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_36
-67ProsecutionCam
-66ProsecutionCam
-36Char_RobertRobertC1_Trial_Testimony5_Press3_37
-36Char_RobertRobertC1_Trial_Testimony5_Press3_38
-36Char_RobertRobertC1_Trial_Testimony5_Press3_39
-100false
-51Damage
-610.10.2
-67WitnessCam0.25false
-66WitnessCam0.25true
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_40
-69GeraldNoCoatOnBar0.1
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_41
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_42
-100false
-69RannCoatAngry0.1
-67DefenseCam0.25false
-66DefenseCam0.25true
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_43
-69GeraldNoCoatThinking0.1
-71GeraldNoCoatNormal
-75GeraldNoCoatSerious
-71JudgeThinking
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_34
+106false
+57Damage
+670.10.2
+77GeraldNoCoatSurprise
+81GeraldNoCoatSerious
+75GeraldNoCoatSurprise0.1
+73WitnessCam0.25false
+72WitnessCam0.25true
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_35
+75RobertRelaxed0.1
+77RobertThinking
+81RobertNormal
+72JudgeCam
+73JudgeCam
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_36
+73ProsecutionCam
+72ProsecutionCam
+42Char_RobertRobertC1_Trial_Testimony5_Press3_37
+42Char_RobertRobertC1_Trial_Testimony5_Press3_38
+42Char_RobertRobertC1_Trial_Testimony5_Press3_39
+106false
+57Damage
+670.10.2
+73WitnessCam0.25false
+72WitnessCam0.25true
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_40
+75GeraldNoCoatOnBar0.1
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_41
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_42
+106false
+75RannCoatAngry0.1
+73DefenseCam0.25false
+72DefenseCam0.25true
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_43
+75GeraldNoCoatThinking0.1
+77GeraldNoCoatNormal
+81GeraldNoCoatSerious
+77JudgeThinking
+81JudgeNormal
+106false
+72HammerCam
+73HammerCam
+75JudgeStrike
+1160.5
+57Gavel
+1160.5
 75JudgeNormal
-100false
-66HammerCam
-67HammerCam
-69JudgeStrike
-1100.5
-51Gavel
-1100.5
-69JudgeNormal
-67JudgeCam
-66JudgeCam
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_44
-71JudgeNormal
-75JudgeNormal
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_45
-71RobertNormal
-75RobertNormal
-69RobertNormal0.1
-67WitnessCam
-66WitnessCam
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_46
-100false
-67ProsecutionCam0.25false
-66ProsecutionCam0.25true
-36Char_RobertRobertC1_Trial_Testimony5_Press3_47
-66JudgeCam
-67JudgeCam
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_48
-20Evidence/C1_DeathMessageRight
-67ProsecutionCam
-66ProsecutionCam
-36Char_RobertRobertC1_Trial_Testimony5_Press3_49
-71GeraldNoCoatSurprise
-75GeraldNoCoatSerious
-67WitnessCam
-66WitnessCam
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_50
-67ProsecutionCam
-66ProsecutionCam
-36Char_RobertRobertC1_Trial_Testimony5_Press3_51
-66DefenseCam
-67DefenseCam
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_52
-100false
-11
-71GeraldNoCoatNormal
-75GeraldNoCoatNormal
-67WitnessCam0.25false
-66WitnessCam0.25true
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_53
-36Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_54
-45Testimony5End
-43176
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_1
-100false
-71RobertThinking
-75RobertNormal
-67ProsecutionCam0.25false
-66ProsecutionCam0.25true
-36Char_RobertnullC1_Trial_Testimony5_Press3_IncriminateJuno_2
-71RobertNormal
-75RobertNormal
-36Char_RobertRobertC1_Trial_Testimony5_Press3_IncriminateJuno_3
-100false
-69RannCoatStress0.1
-71RannCoatNormal
-75RannCoatOops
-67DefenseCam0.25false
-66DefenseCam0.25true
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_4
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_5
-22true
-191truetrue
-71JudgeAngry
-75JudgeAngry
-66JudgeCam
-67JudgeCam
-41122124C1_AttackedJuno == 1
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_6
-43125
-43125
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_7
-66DefenseCam
-67DefenseCam
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_8
-66JudgeCam
-67JudgeCam
-41132134C1_AttackedJuno == 1
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_9
-43135
-43135
-51LoseLife
-610.10.25truetrue
-108LifePoints-1
-41139141LifePoints < 0
-108LifePoints=0
-43142
-43142
-190falsefalse
-12falsetrue
-36Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_10
-22false
-41147149C1_AttackedJuno == 1
-108C1_AttackedJuno=2
-43150
-43150
-41151153LifePoints <= 0
-45../Common/Death
-43160
-71JudgeNormal
-75JudgeNormal
-66DefenseCam
-67DefenseCam
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_11
-45Testimony5Question
-43160
-43176
-69RannCoatStress0.1
-71RannCoatNormal
-75RannCoatOops
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_1
-66JudgeCam
-67JudgeCam
-36Char_JudgenullC1_Trial_Testimony5_Press3_IncriminateFail_2
-67ProsecutionCam
-66ProsecutionCam
-36Char_RobertnullC1_Trial_Testimony5_Press3_IncriminateFail_3
-66DefenseCam
-67DefenseCam
-36Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_4
-45Testimony5Question
-43176
+73JudgeCam
+72JudgeCam
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_44
+77JudgeNormal
+81JudgeNormal
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_45
+77RobertNormal
+81RobertNormal
+75RobertNormal0.1
+73WitnessCam
+72WitnessCam
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_46
+106false
+73ProsecutionCam0.25false
+72ProsecutionCam0.25true
+42Char_RobertRobertC1_Trial_Testimony5_Press3_47
+72JudgeCam
+73JudgeCam
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_48
+26Evidence/C1_DeathMessageRight
+73ProsecutionCam
+72ProsecutionCam
+42Char_RobertRobertC1_Trial_Testimony5_Press3_49
+77GeraldNoCoatSurprise
+81GeraldNoCoatSerious
+73WitnessCam
+72WitnessCam
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_50
+73ProsecutionCam
+72ProsecutionCam
+42Char_RobertRobertC1_Trial_Testimony5_Press3_51
+72DefenseCam
+73DefenseCam
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_52
+106false
+14
+77GeraldNoCoatNormal
+81GeraldNoCoatNormal
+73WitnessCam0.25false
+72WitnessCam0.25true
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_53
+42Char_GeraldGeraldNoCoatC1_Trial_Testimony5_Press3_54
+51Testimony5End
+49176
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_1
+106false
+77RobertThinking
+81RobertNormal
+73ProsecutionCam0.25false
+72ProsecutionCam0.25true
+42Char_RobertnullC1_Trial_Testimony5_Press3_IncriminateJuno_2
+77RobertNormal
+81RobertNormal
+42Char_RobertRobertC1_Trial_Testimony5_Press3_IncriminateJuno_3
+106false
+75RannCoatStress0.1
+77RannCoatNormal
+81RannCoatOops
+73DefenseCam0.25false
+72DefenseCam0.25true
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_4
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_5
+28true
+241truetrue
+77JudgeAngry
+81JudgeAngry
+72JudgeCam
+73JudgeCam
+47122124C1_AttackedJuno == 1
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_6
+49125
+49125
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_7
+72DefenseCam
+73DefenseCam
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_8
+72JudgeCam
+73JudgeCam
+47132134C1_AttackedJuno == 1
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_9
+49135
+49135
+57LoseLife
+670.10.25truetrue
+114LifePoints-1
+47139141LifePoints < 0
+114LifePoints=0
+49142
+49142
+240falsefalse
+15falsetrue
+42Char_JudgeJudgeC1_Trial_Testimony5_Press3_IncriminateJuno_10
+28false
+47147149C1_AttackedJuno == 1
+114C1_AttackedJuno=2
+49150
+49150
+47151153LifePoints <= 0
+51../Common/Death
+49160
+77JudgeNormal
+81JudgeNormal
+72DefenseCam
+73DefenseCam
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateJuno_11
+51Testimony5Question
+49160
+49176
+75RannCoatStress0.1
+77RannCoatNormal
+81RannCoatOops
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_1
+72JudgeCam
+73JudgeCam
+42Char_JudgenullC1_Trial_Testimony5_Press3_IncriminateFail_2
+73ProsecutionCam
+72ProsecutionCam
+42Char_RobertnullC1_Trial_Testimony5_Press3_IncriminateFail_3
+72DefenseCam
+73DefenseCam
+42Char_RannRannCoatC1_Trial_Testimony5_Press3_IncriminateFail_4
+51Testimony5Question
+49176

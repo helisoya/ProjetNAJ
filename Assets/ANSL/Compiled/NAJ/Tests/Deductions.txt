@@ -1,0 +1,27 @@
+#F1C36178D5C526A3EFA4E338F9553322-2D9306BD4812D6D3E0A23AF161868C94
+95testNAJ
+96TestDeductions
+5Deduction_Test1false10Left1.0nulltruefalsenullnull
+5Deduction_Test2false12Left1.0nulltruefalsenullnull
+5Deduction_Test_Link1false11Left1.0Deduction_Test_Link2truefalsenullnull
+5Deduction_Test_Link2false11Left1.0Deduction_Test_Link1falsefalsenullnull
+5Deduction_Test_Auto1true21Bottom1.5nulltruefalsenullDeduction_Test1Deduction_Test_Link1
+5Deduction_Test_Auto2true21Bottom1.5nulltruefalsenullDeduction_Test2Deduction_Test_Link2
+5Deduction_Test_End1true31Bottom3.0nulltruetrueDeductionEnd1Deduction_Test_Auto1
+5Deduction_Test_End2true31Bottom3.0nulltruetrueDeductionEnd2Deduction_Test_Auto2
+11false
+42nullnullTest_Deduction_Text_1
+22Deduction_Test1true
+25
+42nullnullTest_Deduction_Text_2
+22Deduction_Test2true
+25
+42nullnullTest_Deduction_Text_3
+22Deduction_Test_Link1true
+25
+42nullnullTest_Deduction_Text_4
+22Deduction_Test_Link2true
+25
+42nullnullTest_Deduction_Text_5
+11true
+42nullnullTest_Deduction_Text_6

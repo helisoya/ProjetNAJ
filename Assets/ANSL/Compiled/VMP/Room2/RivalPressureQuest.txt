@@ -1,19 +1,19 @@
-#83305703185B37E55D98EEAB703AF71B-8956126B45292CBB910B7AE6D1BF3C1C
-108RivalPressureQuest=2
-41210RivalReactionToDrinkQuest == 1
-36Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_1
-36Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_2
-36Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_3
-69RivalAngry
-36Char_RivalnullTalk_Rival_Pressure_LoyalBaron_4
-36Char_RivalnullTalk_Rival_Pressure_LoyalBaron_5
-108ValueRival-2
-4318
-36Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_1
-36Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_2
-36Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_3
-69RivalHappy
-36Char_RivalnullTalk_Rival_Pressure_LoyalRival_4
-108ValueRival+1
-45RivalGetInfosFromFils
-4318
+#83305703185B37E55D98EEAB703AF71B-2D9306BD4812D6D3E0A23AF161868C94
+114RivalPressureQuest=2
+47210RivalReactionToDrinkQuest == 1
+42Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_1
+42Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_2
+42Char_LoupGarounullTalk_Rival_Pressure_LoyalBaron_3
+75RivalAngry
+42Char_RivalnullTalk_Rival_Pressure_LoyalBaron_4
+42Char_RivalnullTalk_Rival_Pressure_LoyalBaron_5
+114ValueRival-2
+4918
+42Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_1
+42Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_2
+42Char_LoupGarounullTalk_Rival_Pressure_LoyalRival_3
+75RivalHappy
+42Char_RivalnullTalk_Rival_Pressure_LoyalRival_4
+114ValueRival+1
+51RivalGetInfosFromFils
+4918

@@ -1,26 +1,26 @@
-#11694513746161964A1E25DD0D02B498-8956126B45292CBB910B7AE6D1BF3C1C
-68Chasseur00.5true
-68Baron10.5false
-36Char_BaronnullScene_End_BaronHelp_1
-36Char_BaronnullScene_End_BaronHelp_2
-68Baron00.5true
-68Rival10.5false
-36Char_RivalnullScene_End_BaronHelp_3
-36Char_RivalnullScene_End_BaronHelp_4
-68Rival00.5true
-68Baron10.5false
-36Char_BaronnullScene_End_BaronHelp_5
-36nullnullScene_End_BaronHelp_6
-280Choice_HelpRival13nullnullnullChoice_HelpBaron19nullnullnull
-108ValueBaron-3
-36Char_LoupGarounullScene_End_AccusationBaron_1
-36Char_LoupGarounullScene_End_AccusationBaron_2
-36Char_LoupGarounullScene_End_AccusationBaron_3
-45/VMP/Endings/BaronDead
-4325
-108ValueRival-3
-36Char_LoupGarounullScene_End_AccusationRival_1
-36Char_LoupGarounullScene_End_AccusationRival_2
-36Char_LoupGarounullScene_End_AccusationRival_3
-45/VMP/Endings/RivalDead
-4325
+#11694513746161964A1E25DD0D02B498-2D9306BD4812D6D3E0A23AF161868C94
+74Chasseur00.5true
+74Baron10.5false
+42Char_BaronnullScene_End_BaronHelp_1
+42Char_BaronnullScene_End_BaronHelp_2
+74Baron00.5true
+74Rival10.5false
+42Char_RivalnullScene_End_BaronHelp_3
+42Char_RivalnullScene_End_BaronHelp_4
+74Rival00.5true
+74Baron10.5false
+42Char_BaronnullScene_End_BaronHelp_5
+42nullnullScene_End_BaronHelp_6
+340Choice_HelpRival13nullnullnullChoice_HelpBaron19nullnullnull
+114ValueBaron-3
+42Char_LoupGarounullScene_End_AccusationBaron_1
+42Char_LoupGarounullScene_End_AccusationBaron_2
+42Char_LoupGarounullScene_End_AccusationBaron_3
+51/VMP/Endings/BaronDead
+4925
+114ValueRival-3
+42Char_LoupGarounullScene_End_AccusationRival_1
+42Char_LoupGarounullScene_End_AccusationRival_2
+42Char_LoupGarounullScene_End_AccusationRival_3
+51/VMP/Endings/RivalDead
+4925

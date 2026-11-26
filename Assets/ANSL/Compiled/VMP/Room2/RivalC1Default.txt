@@ -1,11 +1,11 @@
-#BE2FCD527023001250631510AA7E4721-8956126B45292CBB910B7AE6D1BF3C1C
-4118SecretRival == 1 && ConfrontedRivalSecret == 0
-36nullnullTalk_Rival_Confirm_Concealer_1
-280Choice_Yes3nullnullnullChoice_No5nullnullnull
-45RivalConfront
-437
-45RivalC1DefaultDialog
-437
-4310
-45RivalC1DefaultDialog
-4310
+#BE2FCD527023001250631510AA7E4721-2D9306BD4812D6D3E0A23AF161868C94
+4718SecretRival == 1 && ConfrontedRivalSecret == 0
+42nullnullTalk_Rival_Confirm_Concealer_1
+340Choice_Yes3nullnullnullChoice_No5nullnullnull
+51RivalConfront
+497
+51RivalC1DefaultDialog
+497
+4910
+51RivalC1DefaultDialog
+4910

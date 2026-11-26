@@ -75,6 +75,19 @@ namespace NAJ.Persistent
         }
 
         /// <summary>
+		/// Deletes a user deduction node
+		/// </summary>
+		/// <param name="id">The node'id</param>
+        public void DeleteUserNode(string id)
+        {
+            if (nodes.TryGetValue(id, out DeductionNode deductionNode) && deductionNode.deleteOnReset)
+            {
+                nodes.Remove(id);
+            }
+        }
+
+
+        /// <summary>
 		/// Gets all existing nodes
 		/// </summary>
 		/// <returns>The nodes</returns>

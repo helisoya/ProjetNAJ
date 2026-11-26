@@ -55,6 +55,42 @@ Test_UIAnimation_1 = Test Start
 Test_UIAnimation_2 = Wow.
 Test_UIAnimation_3 = Not waiting for end.
 
+Deduction_Test1_Name = A key
+Deduction_Test1_Desc = My house's key.
+
+Deduction_Test2_Name = Window
+Deduction_Test2_Desc = The window of my house.
+
+Deduction_Test_Link1_Name = The lock is not broken
+Deduction_Test_Link1_Desc = The door's lock is not broken.
+
+Deduction_Test_Link2_Name = The lock is broken
+Deduction_Test_Link2_Desc = The door's lock is broken.
+
+Deduction_Test_Auto1_Name = Use the key
+Deduction_Test_Auto1_Desc = Keys can be used to open doors, gordon.
+
+Deduction_Test_Auto2_Name = Use the window
+Deduction_Test_Auto2_Desc = Since I can't open the door, I'll need to get in via the window.
+
+Deduction_Test_End1_Name = I'm in : )
+Deduction_Test_End1_Desc = I did it, I won the game.
+
+Deduction_Test_End2_Name = I am in prison : (
+Deduction_Test_End2_Desc = The police thought I was robbing my own house. I got arrested for beiing an idiot : (
+
+
+Test_Deduction_Text_1 = Deductions Test
+Test_Deduction_Text_2 = Unlocked Normal 1
+Test_Deduction_Text_3 = Unlocked Normal 2
+Test_Deduction_Text_4 = Unlocked Link 1
+Test_Deduction_Text_5 = Unlocked Link 2
+Test_Deduction_Text_6 = You may select a deduction now
+
+Test_Deduction_Text_End1_1 = I am happy.
+
+Test_Deduction_Text_End2_1 = Why did you choose this ending ? Now I can't get out of prison : /
+
 # ---------------------------------------------------------
 # -------------------- Mockups ----------------------------
 # ---------------------------------------------------------

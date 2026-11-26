@@ -1,30 +1,30 @@
-#062B09DA34996AA6B871D17FC970D6BB-8956126B45292CBB910B7AE6D1BF3C1C
-36nullnullTalk_Chasseur_Confirm_Lie_1
-280Choice_Yes2nullnullnullChoice_RevealHisSecret13FilsWeirdQuest==4nullnullChoice_NotNow23nullnullnull
-36Char_LoupGarounullTalk_Chasseur_Ours_1
-36Char_ChasseurnullTalk_Chasseur_Ours_2
-36Char_LoupGarounullTalk_Chasseur_Ours_3
-36Char_LoupGarounullTalk_Chasseur_Ours_4
-36Char_LoupGarounullTalk_Chasseur_Ours_5
-36Char_LoupGarounullTalk_Chasseur_Ours_6
-69ChasseurNormal
-36Char_ChasseurnullTalk_Chasseur_Ours_7
-108LieToChasseurQuest=2
-108ValueFils+3
-4329
-36Char_LoupGarounullTalk_Chasseur_Fils_1
-36Char_ChasseurnullTalk_Chasseur_Fils_2
-36Char_LoupGarounullTalk_Chasseur_Fils_3
-36Char_LoupGarounullTalk_Chasseur_Fils_4
-69ChasseurNormal
-36Char_ChasseurnullTalk_Chasseur_Fils_5
-108LieToChasseurQuest=3
-108ValueFils-3
-108ValueChasseur+2
-4329
-104CycleCount28124226
-45ChasseurC1Default
-4328
-45ChasseurC2Default
-4328
-4329
+#062B09DA34996AA6B871D17FC970D6BB-2D9306BD4812D6D3E0A23AF161868C94
+42nullnullTalk_Chasseur_Confirm_Lie_1
+340Choice_Yes2nullnullnullChoice_RevealHisSecret13FilsWeirdQuest==4nullnullChoice_NotNow23nullnullnull
+42Char_LoupGarounullTalk_Chasseur_Ours_1
+42Char_ChasseurnullTalk_Chasseur_Ours_2
+42Char_LoupGarounullTalk_Chasseur_Ours_3
+42Char_LoupGarounullTalk_Chasseur_Ours_4
+42Char_LoupGarounullTalk_Chasseur_Ours_5
+42Char_LoupGarounullTalk_Chasseur_Ours_6
+75ChasseurNormal
+42Char_ChasseurnullTalk_Chasseur_Ours_7
+114LieToChasseurQuest=2
+114ValueFils+3
+4929
+42Char_LoupGarounullTalk_Chasseur_Fils_1
+42Char_ChasseurnullTalk_Chasseur_Fils_2
+42Char_LoupGarounullTalk_Chasseur_Fils_3
+42Char_LoupGarounullTalk_Chasseur_Fils_4
+75ChasseurNormal
+42Char_ChasseurnullTalk_Chasseur_Fils_5
+114LieToChasseurQuest=3
+114ValueFils-3
+114ValueChasseur+2
+4929
+110CycleCount28124226
+51ChasseurC1Default
+4928
+51ChasseurC2Default
+4928
+4929

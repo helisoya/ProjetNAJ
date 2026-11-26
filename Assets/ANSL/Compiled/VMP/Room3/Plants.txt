@@ -1,18 +1,18 @@
-#F90FCED50A00C8FF03403E6AD449DDCE-8956126B45292CBB910B7AE6D1BF3C1C
-41113LookCounter > 0
-4128CycleCount >= 2 && FilsMirrorQuest == 0
-36nullnullWatch_Plants_Mirror_1
-36nullnullWatch_Plants_Mirror_2
-108FilsMirrorQuest=1
-92Mirror00.5true
-59Mirror
-4310
-36nullnullWatch_Plants_1
-4310
-108LookCounter-1
-45/VMP/Common/PrintLookCounter
-4315
-36nullnullCounter_Look_0
-4315
-45/VMP/Common/CycleCheck
-45Interaction
+#F90FCED50A00C8FF03403E6AD449DDCE-2D9306BD4812D6D3E0A23AF161868C94
+47113LookCounter > 0
+4728CycleCount >= 2 && FilsMirrorQuest == 0
+42nullnullWatch_Plants_Mirror_1
+42nullnullWatch_Plants_Mirror_2
+114FilsMirrorQuest=1
+98Mirror00.5true
+65Mirror
+4910
+42nullnullWatch_Plants_1
+4910
+114LookCounter-1
+51/VMP/Common/PrintLookCounter
+4915
+42nullnullCounter_Look_0
+4915
+51/VMP/Common/CycleCheck
+51Interaction
