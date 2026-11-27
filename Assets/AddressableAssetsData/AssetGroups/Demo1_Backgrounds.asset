@@ -15,6 +15,21 @@ MonoBehaviour:
   m_GroupName: Demo1_Backgrounds
   m_GUID: bbc5c4b3a89f9734a85f58239045bf04
   m_SerializeEntries:
+  - m_GUID: 4302daa8f2840fa458272dd4a90df6ec
+    m_Address: Backgrounds/TestBackgroundInteraction
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 534859a3d578afb438b51d3e9be30dc6
+    m_Address: Backgrounds/TestBackground2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ae2519eaa4b6b248b9dc23775180e4e
+    m_Address: Backgrounds/TestBackground
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6eda7c23923102d4d934fc39ee6a9f86
     m_Address: Backgrounds/Prototype/Courtroom
     m_ReadOnly: 0

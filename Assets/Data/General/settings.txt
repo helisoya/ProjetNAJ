@@ -31,6 +31,8 @@ InteractionMode_HighlightStrength Float 0.5 SettingsMenu_Game SettingsMenu_Game_
 InteractionMode_HighlightColor Color #37afbf SettingsMenu_Game SettingsMenu_Game_InteractionMode_HighlightColor
 InteractionMode_SelectedColor Color #57bf45 SettingsMenu_Game SettingsMenu_Game_InteractionMode_SelectionColor
 
+MainCameraController_ScrollSpeed Float 40 SettingsMenu_Game SettingsMenu_Game_MainCameraController_ScrollSpeed (10.0, 80.0)
+
 DialogUI_BackgroundOpacity Float 1 SettingsMenu_Game SettingsMenu_Game_DialogUI_BackgroundOpacity (0.1,1)
 DialogUI_SpeedModifier Float 1.25 SettingsMenu_Game SettingsMenu_Game_DialogUI_SpeedModifier (0.25,2.0)
 

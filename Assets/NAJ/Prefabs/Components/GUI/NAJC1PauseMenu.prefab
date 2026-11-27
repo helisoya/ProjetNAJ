@@ -211,6 +211,7 @@ MonoBehaviour:
   - ANF.GUI.ChoiceUI
   - ANF.GUI.MapUI
   - ANF.GUI.InputReminderUI
+  - ANF.GUI.CameraManualPanUI
   - NAJ.GUI.InventoryUI
   - NAJ.GUI.ExaminationUI
   - ANF.GUI.AnimationUI

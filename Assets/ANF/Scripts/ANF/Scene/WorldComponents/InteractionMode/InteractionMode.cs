@@ -49,6 +49,7 @@ namespace ANF.Scene
 
         private AudioManager audioManager;
         private BackgroundManager backgroundManager;
+        private MainCameraController mainCameraController;
         private Dictionary<string, InteractableObject> registeredObjects = new Dictionary<string, InteractableObject>();
         private List<InteractableObject> currentInteractionObjects = new List<InteractableObject>();
         private int currentIndex;
@@ -63,6 +64,7 @@ namespace ANF.Scene
 
         private JSON loadedDataCache = null;
         private int currentLoadCacheFrameLife = 0;
+        private bool canMoveCamera = false;
 
         public bool inInteractionMode { get; private set; } = false;
         public string selectedScript { get; private set; } = null;
@@ -219,8 +221,9 @@ namespace ANF.Scene
         /// <summary>
 		/// Starts the interaction mode
 		/// </summary>
-        public void StartInteractionMode()
+        public void StartInteractionMode(bool canMoveCamera = false)
         {
+            this.canMoveCamera = canMoveCamera;
             foreach (string guiComponent in guiComponentsToDisable)
             {
                 if (manager.GetGUIManager().GetComponent<GUIComponent>(guiComponent, out GUIComponent component))
@@ -265,6 +268,10 @@ namespace ANF.Scene
                 Physics.SyncTransforms(); // To force colliders to world (could be temp set to local instead)
                 if (keyboardMode)
                 {
+                    if (canMoveCamera)
+                        mainCameraController.LookAt(
+                            currentInteractionObjects[currentIndex].GetApproximateVisualPosition(),
+                            false, 0.5f);
                     UpdateIconPosition(currentInteractionObjects[currentIndex]);
                     UpdateIconTexture(currentInteractionObjects[currentIndex]);
                 }
@@ -350,7 +357,14 @@ namespace ANF.Scene
 
                     UpdateIconTexture(currentInteractionObjects[currentIndex]);
                     if (keyboardMode)
+                    {
+                        if (canMoveCamera)
+                            mainCameraController.LookAt(
+                                currentInteractionObjects[currentIndex].GetApproximateVisualPosition(),
+                                false, 0.5f);
                         UpdateIconPosition(currentInteractionObjects[currentIndex]);
+                    }
+
                 }
                 else
                 {
@@ -427,16 +441,20 @@ namespace ANF.Scene
                 selectedColor = (Color)settings.Register("InteractionMode_SelectedColor",
                     SettingsContainer.SettingsDataType.Color,
                     OnSelectedColorChange);
+
+
+                cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown",
+                    SettingsContainer.SettingsDataType.Float,
+                    OnCursorCooldownChange);
             }
         }
 
         public override void OnStart()
         {
             PersistentDataManager.instance.GetGlobalData().GetComponent(out audioManager);
-            manager.GetWorld().GetComponent(out backgroundManager);
 
-            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
-                cursorMoveCooldown = (float)settings.Register("GeneralMenu_CursorCooldown", SettingsContainer.SettingsDataType.Float, OnCursorCooldownChange);
+            manager.GetWorld().GetComponent(out backgroundManager);
+            manager.GetWorld().GetComponent(out mainCameraController);
 
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("MousePosition").performed += OnMousePosition;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Move").performed += OnMove;
@@ -503,7 +521,7 @@ namespace ANF.Scene
                         return;
 
                     reloadInteractionMode = false;
-                    StartInteractionMode();
+                    StartInteractionMode(canMoveCamera);
                     return;
                 }
 
@@ -533,6 +551,11 @@ namespace ANF.Scene
                         if (canTryMouseClick)
                             ConfirmObject(id);
                     }
+                }
+                else
+                {
+                    if (currentIndex >= 0 && currentIndex < currentInteractionObjects.Count)
+                        UpdateIconPosition(currentInteractionObjects[currentIndex]);
                 }
                 canTryMouseClick = false;
             }
@@ -657,7 +680,12 @@ namespace ANF.Scene
                 settings.Unregister("InteractionMode_HighlightType", OnHighlightTypeChange);
                 settings.Unregister("InteractionMode_HighlightColor", OnHighlightColorChange);
                 settings.Unregister("InteractionMode_SelectedColor", OnSelectedColorChange);
+                settings.Unregister("GeneralMenu_CursorCooldown", OnCursorCooldownChange);
             }
+            mainCameraController = null;
+            backgroundManager = null;
+            audioManager = null;
+
             return true;
         }
 
@@ -742,6 +770,7 @@ namespace ANF.Scene
             if (inInteractionMode)
             {
                 json.Add("inInteractionMode", inInteractionMode);
+                json.Add("canMoveCamera", canMoveCamera);
             }
         }
 
@@ -768,6 +797,11 @@ namespace ANF.Scene
                 inInteractionMode = true;
                 reloadInteractionMode = true;
             }
+
+            if (json.ContainsKey("canMoveCamera"))
+                canMoveCamera = json.GetBool("canMoveCamera");
+            else
+                canMoveCamera = false;
 
             return loadedDataCache == null;
         }

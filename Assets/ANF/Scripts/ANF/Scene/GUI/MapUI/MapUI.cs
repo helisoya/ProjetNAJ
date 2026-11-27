@@ -386,6 +386,8 @@ namespace ANF.GUI
             backgroundImg.sprite = null;
             currentMapDefs = null;
             OnUnRegisterInputs();
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                settings.Unregister("GeneralMenu_CursorCooldown", OnCursorCooldownChange);
             return true;
         }
 

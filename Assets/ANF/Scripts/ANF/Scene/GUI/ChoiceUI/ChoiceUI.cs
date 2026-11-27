@@ -410,6 +410,9 @@ namespace ANF.GUI
             audioManager = null;
             resourceManager = null;
             OnUnRegisterInputs();
+
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                settings.Unregister("GeneralMenu_CursorCooldown", OnCursorCooldownChange);
             return true;
         }
 

@@ -8,10 +8,10 @@ namespace ANF.Utils
 	/// </summary>
     public abstract class LerpInstance<Type>
     {
-        protected Type start;
-        protected float t;
-        protected Type target;
-        protected float transitionDuration;
+        public Type start { get; protected set; }
+        public float t { get; protected set; }
+        public Type target { get; protected set; }
+        public float transitionDuration { get; protected set; }
 
         public bool lerping { get; protected set; }
 

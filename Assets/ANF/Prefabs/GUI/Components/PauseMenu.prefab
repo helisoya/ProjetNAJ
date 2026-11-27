@@ -211,6 +211,7 @@ MonoBehaviour:
   - ANF.GUI.ChoiceUI
   - ANF.GUI.MapUI
   - ANF.GUI.InputReminderUI
+  - ANF.GUI.CameraManualPanUI
   mainMenuMode: 0
   buttonsRoot: {fileID: 2752175258711624528}
   buttonDatas:

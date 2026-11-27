@@ -121,6 +121,8 @@ namespace ANF.GUI
             audioManager = null;
             PersistentDataManager.instance.GetANFInput().GetInput().actions.FindAction("Pause").performed -= OnPauseInput;
             OnUnRegisterInputs();
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                settings.Unregister("GeneralMenu_CursorCooldown", OnCursorCooldownChange);
             return true;
         }
 

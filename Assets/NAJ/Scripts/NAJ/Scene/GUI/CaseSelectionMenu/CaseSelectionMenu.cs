@@ -560,6 +560,8 @@ namespace NAJ.GUI
         {
             audioManager = null;
             OnUnRegisterInputs();
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                settings.Unregister("GeneralMenu_CursorCooldown", OnCursorCooldownChange);
             return true;
         }
 

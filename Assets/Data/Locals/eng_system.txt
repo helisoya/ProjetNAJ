@@ -94,6 +94,8 @@ SettingsMenu_Game_InteractionMode_HighlightStrength = Interaction highlight stre
 SettingsMenu_Game_InteractionMode_HighlightColor = Interaction highlight colour
 SettingsMenu_Game_InteractionMode_SelectionColor = Interaction selection colour
 
+SettingsMenu_Game_MainCameraController_ScrollSpeed = Pan Speed (Interaction)
+
 SettingsMenu_Game_BackgroundManager_Weather = Weather effects
 SettingsMenu_Game_BackgroundManager_Foliage = Foliage
 SettingsMenu_Game_BackgroundManager_TerrainQuality = Terrain Quality

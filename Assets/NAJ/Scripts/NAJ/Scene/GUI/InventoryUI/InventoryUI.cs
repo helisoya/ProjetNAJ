@@ -824,6 +824,8 @@ namespace NAJ.GUI
 
             resourceManager = null;
             audioManager = null;
+            if (PersistentDataManager.instance.GetGlobalData().GetComponent<SettingsContainer>(out SettingsContainer settings))
+                settings.Unregister("GeneralMenu_CursorCooldown", OnCursorCooldownChange);
             return true;
         }
 

@@ -43,6 +43,8 @@ MonoBehaviour:
   - id: 
     data: {fileID: 5724826130367448010, guid: aba63e862a4e40342bdc09a648bd32e8, type: 3}
   - id: 
+    data: {fileID: 160320122608603352, guid: d97fbed4cddc0e54f9791ac3ad9c05b9, type: 3}
+  - id: 
     data: {fileID: 237637143809057935, guid: d9020a8440f88274a9580a6195b6588e, type: 3}
   - id: 
     data: {fileID: 2868892919424814067, guid: 699f3d6f850bf21438a4c3235dc549bc, type: 3}
@@ -107,6 +109,7 @@ MonoBehaviour:
         baseColor: {r: 0.34707898, g: 1.1152072, b: 1.218224, a: 0.5921569}
         selectedColor: {r: 0.688111, g: 1.4964385, b: 0.53928256, a: 0.59607846}
         prefabIcon: {fileID: 1171909878602773229, guid: 41dab6944be8e794d80b4be30237bbb3, type: 3}
+        defaultIcon: {fileID: 0}
     - rid: 3436799780606181458
       type: {class: StaticObjectManager, ns: ANF.Scene, asm: Assembly-CSharp}
       data:
@@ -120,6 +123,8 @@ MonoBehaviour:
         enabledByDefault: 1
         startPosition: {x: 0, y: 0, z: -10}
         startRotation: {x: 0, y: 0, z: 0}
+        manualRotationSpeed: 5
+        screenEdgePercentage: 20
         uiToShake: []
         shakeWorldToUIRation: 100
     - rid: 3493723745760837703

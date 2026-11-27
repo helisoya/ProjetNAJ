@@ -383,6 +383,24 @@
 		"body": ["interaction()"],
 		"description": "Starts the interaction mode"
 	},
+	"48_1": {
+		"scope": "ansl",
+		"prefix": "interaction",
+		"body": ["interaction(AngleMin;AngleMax)"],
+		"description": "Starts the interaction mode"
+	},
+	"48_2": {
+		"scope": "ansl",
+		"prefix": "interaction",
+		"body": ["interaction(AngleMin;AngleMax;UpdateFocalPoint)"],
+		"description": "Starts the interaction mode"
+	},
+	"48_3": {
+		"scope": "ansl",
+		"prefix": "interaction",
+		"body": ["interaction(AngleMin;AngleMax;UpdateFocalPoint;SkipCameraRotation)"],
+		"description": "Starts the interaction mode"
+	},
 	"50_0": {
 		"scope": "ansl",
 		"prefix": "loadBundle",

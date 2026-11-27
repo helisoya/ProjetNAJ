@@ -94,6 +94,8 @@ SettingsMenu_Game_InteractionMode_HighlightStrength = Force surbrillance
 SettingsMenu_Game_InteractionMode_HighlightColor = Couleur surbrillance (base)
 SettingsMenu_Game_InteractionMode_SelectionColor = Couleur surbrillance (sélectionné)
 
+SettingsMenu_Game_MainCameraController_ScrollSpeed = Vitesse déplacement (Intéraction)
+
 SettingsMenu_Game_BackgroundManager_Weather = Effets météo
 SettingsMenu_Game_BackgroundManager_Foliage = Végétation
 SettingsMenu_Game_BackgroundManager_TerrainQuality = Qualité du terrain

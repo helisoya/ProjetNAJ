@@ -56,6 +56,8 @@ MonoBehaviour:
   - id: 
     data: {fileID: 5724826130367448010, guid: 022905ec658687a479fc48d91f16fa39, type: 3}
   - id: 
+    data: {fileID: 160320122608603352, guid: d97fbed4cddc0e54f9791ac3ad9c05b9, type: 3}
+  - id: 
     data: {fileID: 6844632179404603474, guid: d732c073e0f794a4ab38f63bc1a57be0, type: 3}
   - id: 
     data: {fileID: 237637143809057935, guid: 6cf9e0c16fec62f4d9fca3a93dc77fe6, type: 3}
@@ -170,6 +172,8 @@ MonoBehaviour:
         enabledByDefault: 1
         startPosition: {x: 0, y: 0, z: -10}
         startRotation: {x: 0, y: 0, z: 0}
+        manualRotationSpeed: 5
+        screenEdgePercentage: 20
         uiToShake:
         - ANF.GUI.DialogUI
         - NAJ.GUI.ExaminationUI

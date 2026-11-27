@@ -46,6 +46,8 @@ MonoBehaviour:
   - id: 
     data: {fileID: 5724826130367448010, guid: 022905ec658687a479fc48d91f16fa39, type: 3}
   - id: 
+    data: {fileID: 160320122608603352, guid: d97fbed4cddc0e54f9791ac3ad9c05b9, type: 3}
+  - id: 
     data: {fileID: 237637143809057935, guid: 6cf9e0c16fec62f4d9fca3a93dc77fe6, type: 3}
   - id: 
     data: {fileID: 7502116054405208522, guid: e70c0214d98967445badb02e7039cadc, type: 3}
@@ -137,6 +139,8 @@ MonoBehaviour:
         enabledByDefault: 1
         startPosition: {x: 0, y: 0, z: -10}
         startRotation: {x: 0, y: 0, z: 0}
+        manualRotationSpeed: 5
+        screenEdgePercentage: 20
         uiToShake: []
         shakeWorldToUIRation: 100
     - rid: 3493723745760837703

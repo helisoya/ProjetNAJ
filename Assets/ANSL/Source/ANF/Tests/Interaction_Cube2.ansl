@@ -1,4 +1,3 @@
-setBackground(TestBackgroundInteraction)
 setInteractionHidden(Test2;true)
 setInteractionScript(Test;Interaction_Cube1)
 

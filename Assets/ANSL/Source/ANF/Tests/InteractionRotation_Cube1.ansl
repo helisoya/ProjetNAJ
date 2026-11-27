@@ -1,0 +1,4 @@
+setInteractionScript(Test;InteractionRotation_Cube1)
+setInteractionScript(Test2;InteractionRotation_Cube2)
+
+interaction(-180;180;false)
